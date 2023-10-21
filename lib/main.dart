@@ -33,11 +33,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'Treasures',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
@@ -47,11 +50,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'Magic Items',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
@@ -61,11 +67,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'NPCs',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
@@ -75,11 +84,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'Traps',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
@@ -89,11 +101,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'Encounters',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
@@ -103,11 +118,14 @@ void main() {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                    padding: const EdgeInsets.all(16.0)),
+                    padding: const EdgeInsets.all(14.0)),
                 child: const Text(
                   'Spell Sets',
                   style: TextStyle(
-                      fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(214, 211, 152, 1.0),
+                      letterSpacing: 2.5),
                 ),
                 onPressed: () {},
               ),
