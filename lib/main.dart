@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:generator5e/treasures.dart';
+import 'package:generator5e/traps.dart';
+import 'package:generator5e/npcs.dart';
+import 'package:generator5e/trinkets.dart';
+import 'package:generator5e/wildmagic.dart';
+import 'package:generator5e/magicitems.dart';
+import 'package:generator5e/spellsets.dart';
+import 'package:generator5e/encounters.dart';
+
 
 void main() {
   runApp(MaterialApp(
@@ -81,7 +89,7 @@ Widget build(BuildContext ctx) {
                     height: 104,
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(ctx, TreasuresPage()); },
+                        Navigator.push(ctx, TrapsPage()); },
                       child: const Align(
                         alignment: Alignment.bottomCenter,
                         child: Padding(
@@ -107,7 +115,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, NPCsPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
@@ -133,7 +141,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, WildMagicPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
@@ -163,7 +171,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, MagicItemsPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
@@ -189,7 +197,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, TrinketsPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
@@ -215,7 +223,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, SpellSetsPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
@@ -241,7 +249,7 @@ Widget build(BuildContext ctx) {
                           height: 104,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(ctx, TreasuresPage()); },
+                              Navigator.push(ctx, EncountersPage()); },
                             child: const Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
