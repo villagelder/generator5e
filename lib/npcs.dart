@@ -2,8 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TreasuresPage extends MaterialPageRoute<Null>{
-  TreasuresPage() : super(builder: (BuildContext ctx) {
+class NPCsPage extends MaterialPageRoute<Null>{
+  NPCsPage() : super(builder: (BuildContext ctx) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(210, 210, 172, 1.0),
       appBar: AppBar(
@@ -23,7 +23,7 @@ class TreasuresPage extends MaterialPageRoute<Null>{
               height: 48,
               child: Center(
                 child: Text(
-                  '5e Treasures',
+                  '5e NPCs',
                   style: TextStyle(
                     fontSize: 32,
                     color: Color.fromRGBO(34, 56, 69, 1.0),

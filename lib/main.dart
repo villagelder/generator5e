@@ -1,8 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:generator5e/encounters.dart';
+import 'package:generator5e/magicitems.dart';
+import 'package:generator5e/npcs.dart';
+import 'package:generator5e/spellsets.dart';
+import 'package:generator5e/traps.dart';
+import 'package:generator5e/treasures.dart';
+import 'package:generator5e/trinkets.dart';
+import 'package:generator5e/wildmagic.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+    home: MyApp(),
+  ));
+}
+
+const ImageProvider image = AssetImage('assets/images/trapNetR.jpg');
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext ctx) {
+    double screenWidth = MediaQuery.of(ctx).size.width;
+    double screenHeight = MediaQuery.of(ctx).size.height;
+
+    return Scaffold(
       backgroundColor: const Color.fromRGBO(210, 210, 172, 1.0),
       appBar: AppBar(
         title: const Text(
@@ -16,156 +36,284 @@ void main() {
       body: Center(
         child: ListView(
           children: [
-           const Padding(
-             padding: EdgeInsets.all(12.0),
-             child: SizedBox(
-              height: 48,
-              child: Center(
-                  child: Text(
-                    '5e Generators',
-                    style: TextStyle(
-                      fontSize: 32,
-                      color: Color.fromRGBO(34, 56, 69, 1.0),
-                    ),
-                  )),
-          ),
-           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                         ),
-                      child: const Text(
-                        'Treasures',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
+            const Padding(
+              padding: EdgeInsets.all(12.0),
+              child: SizedBox(
+                height: 48,
+                child: Center(
+                    child: Text(
+                  '5e Generators',
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Color.fromRGBO(34, 56, 69, 1.0),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                          ),
-                      child: const Text(
-                        'Magic Items',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                          ),
-                      child: const Text(
-                        'NPCs',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                          ),
-                      child: const Text(
-                        'Wild Magic',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                ],
+                )),
               ),
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                         ),
-                      child: const Text(
-                        'Traps',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, TreasuresPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Treasures',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
                           ),
-                      child: const Text(
-                        'Trinkets',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
+                        ),
+                      )),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
-                         ),
-                      child: const Text(
-                        'Spell Sets',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(115, 37, 38, 1.0),
-                          minimumSize: Size(180, 108),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, TrapsPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Traps',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
                           ),
-                      child: const Text(
-                        'Encounters',
-                        style: TextStyle(
-                            fontSize: 28, color: Color.fromRGBO(214, 211, 152, 1.0)),
-                      ),
-                      onPressed: () {},
+                        ),
+                      )),
                     ),
-                  ),
-                ],
-              ),
-
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, NPCsPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'NPCs',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, WildMagicPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Wild Magic',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, MagicItemsPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Magic Items',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, TrinketsPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Trinkets',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, SpellSetsPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Spell Sets',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                      child: Center(
+                          child: Container(
+                        width: screenWidth * 0.33,
+                        height: screenHeight * 0.15,
+                        child: Ink.image(
+                          image: AssetImage('assets/images/trapNetR.jpg'),
+                          fit: BoxFit.fill,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(ctx, EncountersPage());
+                            },
+                            child: const Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Encounters',
+                                  style: TextStyle(
+                                      fontSize: 21.0,
+                                      fontWeight: FontWeight.bold,
+                                      color:
+                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      )),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ],
-        ),],
+        ),
       ),
-    ),
-  ),
-  ));
+    );
+  }
 }
