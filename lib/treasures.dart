@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -43,13 +42,25 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                     ],
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('Generate Treasure'),
+                SizedBox(
+                  width: MediaQuery.of(ctx).size.width * 0.8,
+                  height: MediaQuery.of(ctx).size.height * 0.1,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.amber.shade200,
+                      backgroundColor: Colors.brown.shade800,
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      'Generate Treasure',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Text('32000 gp, 30000 pp, a dragon horn medallion engraved '
+                  padding: EdgeInsets.all(40.0),
+                  child: Text(
+                      '32000 gp, 30000 pp, a dragon horn medallion engraved '
                       'with an ancient coat of arms (2500 gp), a dragon horn '
                       'medallion engraved with arcane runes (2500 gp), a gilded '
                       'wooden medallion inlaid with a meandros of orichalcum (2500 gp), '
@@ -60,7 +71,8 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                       'an onyx plate engraved with a labyrinth (2500 gp), Spell Scroll (Maze) '
                       '(very rare, dmg 200), Spell Scroll (Power Word Stun) (very rare, dmg 200), '
                       'Spell Scroll (Telepathy) (very rare, dmg 200), Spell Scroll (Foresight) '
-                      '(legendary, dmg 200)'),
+                      '(legendary, dmg 200)',
+                      style: TextStyle(fontSize: 16)),
                 ),
               ],
             ),
@@ -90,28 +102,36 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButton<String>(
-      value: dropdownValue,
-      icon: const Icon(Icons.arrow_drop_down_outlined),
-      elevation: 16,
-      style:
-          const TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold),
-      underline: Container(
-        height: 2,
-        color: Colors.blueGrey,
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.4,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            value: dropdownValue,
+            icon: const Icon(Icons.arrow_drop_down_outlined),
+            elevation: 16,
+            style: const TextStyle(
+                color: Colors.brown, fontSize: 20, fontWeight: FontWeight.bold),
+            underline: Container(
+              height: 2,
+              color: Colors.blueGrey,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                dropdownValue = value!;
+              });
+            },
+            items: trList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
       ),
-      onChanged: (String? value) {
-        // This is called when the user selects an item.
-        setState(() {
-          dropdownValue = value!;
-        });
-      },
-      items: trList.map<DropdownMenuItem<String>>((String value) {
-        return DropdownMenuItem<String>(
-          value: value,
-          child: Text(value),
-        );
-      }).toList(),
     );
   }
 }
@@ -121,28 +141,36 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButton<String>(
-      value: dropdownValue,
-      icon: const Icon(Icons.arrow_drop_down_outlined),
-      elevation: 16,
-      style:
-          const TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold),
-      underline: Container(
-        height: 2,
-        color: Colors.blueGrey,
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.4,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            value: dropdownValue,
+            icon: const Icon(Icons.arrow_drop_down_outlined),
+            elevation: 16,
+            style: const TextStyle(
+                color: Colors.brown, fontSize: 20, fontWeight: FontWeight.bold),
+            underline: Container(
+              height: 2,
+              color: Colors.blueGrey,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                dropdownValue = value!;
+              });
+            },
+            items: crList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
       ),
-      onChanged: (String? value) {
-        // This is called when the user selects an item.
-        setState(() {
-          dropdownValue = value!;
-        });
-      },
-      items: crList.map<DropdownMenuItem<String>>((String value) {
-        return DropdownMenuItem<String>(
-          value: value,
-          child: Text(value),
-        );
-      }).toList(),
     );
   }
 }
