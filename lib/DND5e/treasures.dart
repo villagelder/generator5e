@@ -9,10 +9,11 @@ class TreasuresPage extends MaterialPageRoute<Null> {
               title: const Text(
                 'DragonVault',
                 style: TextStyle(
-                  color: Color.fromRGBO(210, 210, 172, 1.0),
+                  fontFamily: 'Georgia',
+                  color: Color.fromRGBO(255, 245, 188, 1.0),
                 ),
               ),
-              backgroundColor:  Colors.blueGrey.shade900,
+              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
             ),
             body: SingleChildScrollView(
               scrollDirection: Axis.vertical,
@@ -26,10 +27,24 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                         child: Text(
                           '5e Treasure Generator',
                           style: TextStyle(
+                            fontFamily: 'Georgia',
                             fontSize: 32,
+                            fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(34, 56, 69, 1.0),
                           ),
                         ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(ctx).size.width * 0.84,
+                    child: const Padding(
+                      padding: EdgeInsets.fromLTRB(0, 12.0, 0, 12.0),
+                      child: Text(
+                        'Select your Challenge Rating and Treasure Type, then push \'Generate Treasure\' to '
+                        'generate new treasure. Scroll to the bottom and push the Copy icon to copy the treasure text.',
+                        style: TextStyle(
+                            fontFamily: 'Georgia', fontStyle: FontStyle.italic),
                       ),
                     ),
                   ),
@@ -50,7 +65,8 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                       height: MediaQuery.of(ctx).size.height * 0.1,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.amber.shade50,
+                          foregroundColor:
+                              const Color.fromRGBO(255, 245, 188, 1.0),
                           backgroundColor: Colors.lightGreen.shade900,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
@@ -59,7 +75,10 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                         onPressed: () {},
                         child: const Text(
                           'Generate Treasure',
-                          style: TextStyle(fontSize: 24),
+                          style: TextStyle(
+                              fontFamily: 'Georgia',
+                              fontSize: 24,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                     ),
@@ -81,13 +100,14 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                             '(very rare, dmg 200), Spell Scroll (Power Word Stun) (very rare, dmg 200), '
                             'Spell Scroll (Telepathy) (very rare, dmg 200), Spell Scroll (Foresight) '
                             '(legendary, dmg 200)',
-                            style: TextStyle(fontSize: 16)),
+                            style:
+                                TextStyle(fontFamily: 'Georgia', fontSize: 16)),
                       ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 0, 20.0),
                         child: Icon(
                           Icons.copy,
-                          color: Colors.brown.shade800,
+                          color: Colors.blueGrey.shade900,
                           size: 40.0,
                         ),
                       ),
@@ -126,7 +146,9 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+            color: const Color.fromRGBO(38, 50, 56, 1.0),
+            style: BorderStyle.solid,
+            width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.4,
       child: DropdownButtonHideUnderline(
@@ -137,7 +159,11 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: const TextStyle(
-                color: Colors.brown, fontSize: 20, fontWeight: FontWeight.bold),
+              color: Color.fromRGBO(38, 50, 56, 1.0),
+              fontFamily: 'Georgia',
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            ),
             underline: Container(
               height: 2,
               color: Colors.blueGrey,
@@ -181,7 +207,10 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: const TextStyle(
-                color: Colors.brown, fontSize: 20, fontWeight: FontWeight.bold),
+                color: Color.fromRGBO(38, 50, 56, 1.0),
+                fontFamily: 'Georgia',
+                fontSize: 20,
+                fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
               color: Colors.blueGrey,

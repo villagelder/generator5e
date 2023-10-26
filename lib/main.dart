@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/encounters.dart';
-import 'package:generator5e/magicitems.dart';
-import 'package:generator5e/npcs.dart';
-import 'package:generator5e/spellsets.dart';
-import 'package:generator5e/traps.dart';
-import 'package:generator5e/treasures.dart';
-import 'package:generator5e/trinkets.dart';
-import 'package:generator5e/wildmagic.dart';
+import 'package:generator5e/DND5e/encounters.dart';
+import 'package:generator5e/DND5e/magicitems.dart';
+import 'package:generator5e/DND5e/npcs.dart';
+import 'package:generator5e/DND5e/spellsets.dart';
+import 'package:generator5e/DND5e/traps.dart';
+import 'package:generator5e/DND5e/treasures.dart';
+import 'package:generator5e/DND5e/trinkets.dart';
+import 'package:generator5e/DND5e/wildmagic.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext ctx) {
-    double screenWidth = MediaQuery.of(ctx).size.width;
-    double screenHeight = MediaQuery.of(ctx).size.height;
+  Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       backgroundColor: Colors.blueGrey.shade100,
@@ -45,25 +45,27 @@ class MyApp extends StatelessWidget {
         title: const Text(
           'DragonVault',
           style: TextStyle(
-            color: Color.fromRGBO(151, 147, 95, 1.0),
+            fontFamily: 'Georgia',
+            color: Color.fromRGBO(255, 245, 188, 1.0),
           ),
         ),
-        backgroundColor: Colors.black87,
+        backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
       ),
       body: Center(
         child: Column(
           children: [
-            const Padding(
-              padding: EdgeInsets.all(12.0),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
               child: SizedBox(
                 height: 48,
                 child: Center(
                     child: Text(
                   '5e Generators',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 32,
-                    color: Colors.black54,
+                    fontFamily: 'Georgia',
+                    fontWeight: FontWeight.w500,
+                    fontSize: screenHeight * 0.05,
+                    color: const Color.fromRGBO(38, 50, 56, 1.0),
                   ),
                 )),
               ),
@@ -87,17 +89,18 @@ class MyApp extends StatelessWidget {
                                 backgroundColor: Colors.blueGrey.shade900,
                               ),
                               onPressed: () {
-                                Navigator.push(ctx, TreasuresPage());
+                                Navigator.push(context, TreasuresPage());
                               },
-                              child: const Align(
+                              child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
                                   'Treasures',
                                   style: TextStyle(
-                                      fontSize: 22.0,
+                                      fontFamily: 'Georgia',
+                                      fontSize: screenHeight * 0.035,
                                       fontWeight: FontWeight.bold,
-                                      color:
-                                          Color.fromRGBO(255, 254, 179, 1.0)),
+                                      color: const Color.fromRGBO(
+                                          255, 245, 188, 1.0)),
                                 ),
                               ),
                             ),
@@ -117,18 +120,20 @@ class MyApp extends StatelessWidget {
                             backgroundColor: Colors.blueGrey.shade800,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, TrapsPage());
+                            Navigator.push(context, TrapsPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
                                 'Traps',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.035,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -149,18 +154,20 @@ class MyApp extends StatelessWidget {
                             backgroundColor: Colors.blueGrey.shade700,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, NPCsPage());
+                            Navigator.push(context, WildMagicPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
-                                'Non-Players',
+                                'Wild Magic',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.033,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -181,18 +188,20 @@ class MyApp extends StatelessWidget {
                             backgroundColor: Colors.blueGrey.shade600,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, WildMagicPage());
+                            Navigator.push(context, NPCsPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
-                                'Wild Magic',
+                                'NPCs',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.035,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -214,21 +223,23 @@ class MyApp extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
-                            backgroundColor: Colors.blueGrey.shade500,
+                            backgroundColor: Colors.blueGrey.shade900,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, MagicItemsPage());
+                            Navigator.push(context, MagicItemsPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
                                 'Magic Items',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.03,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -246,21 +257,23 @@ class MyApp extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
-                            backgroundColor: Colors.blueGrey.shade400,
+                            backgroundColor: Colors.blueGrey.shade800,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, TrinketsPage());
+                            Navigator.push(context, TrinketsPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
                                 'Trinkets',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.035,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -278,21 +291,23 @@ class MyApp extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
-                            backgroundColor: Colors.blueGrey.shade300,
+                            backgroundColor: Colors.blueGrey.shade700,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, SpellSetsPage());
+                            Navigator.push(context, SpellSetsPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
                                 'Spell Sets',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.035,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
@@ -310,21 +325,23 @@ class MyApp extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
-                            backgroundColor: Colors.blueGrey.shade200,
+                            backgroundColor: Colors.blueGrey.shade600,
                           ),
                           onPressed: () {
-                            Navigator.push(ctx, EncountersPage());
+                            Navigator.push(context, EncountersPage());
                           },
-                          child: const Align(
+                          child: Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: Text(
                                 'Encounters',
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontFamily: 'Georgia',
+                                    fontSize: screenHeight * 0.032,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
+                                    color: const Color.fromRGBO(
+                                        255, 245, 188, 1.0)),
                               ),
                             ),
                           ),
