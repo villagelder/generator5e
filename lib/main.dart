@@ -10,9 +10,26 @@ import 'package:generator5e/wildmagic.dart';
 
 void main() {
   runApp(const MaterialApp(
+    title: 'villagelder',
+    // theme: CustomTheme.lightTheme,
     home: MyApp(),
   ));
 }
+
+// class CustomTheme {
+//   static ThemeData get lightTheme {
+//     return ThemeData(
+//       backgroundColor: Colors.grey.shade200,
+//         primaryColor: Colors.red.shade900,
+//         scaffoldBackgroundColor: Colors.amber,
+//         fontFamily: 'Georgia',
+//         buttonTheme: ButtonThemeData(
+//           shape:
+//               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+//           buttonColor: Colors.red.shade900,
+//         ));
+//   }
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,15 +40,15 @@ class MyApp extends StatelessWidget {
     double screenHeight = MediaQuery.of(ctx).size.height;
 
     return Scaffold(
-      //backgroundColor: const Color.fromRGBO(210, 210, 172, 1.0),
+      backgroundColor: Colors.blueGrey.shade100,
       appBar: AppBar(
         title: const Text(
           'DragonVault',
           style: TextStyle(
-              //  color: Color.fromRGBO(210, 210, 172, 1.0),
-              ),
+            color: Color.fromRGBO(151, 147, 95, 1.0),
+          ),
         ),
-        // backgroundColor: const Color.fromRGBO(34, 56, 69, 1.0),
+        backgroundColor: Colors.black87,
       ),
       body: Center(
         child: Column(
@@ -44,8 +61,9 @@ class MyApp extends StatelessWidget {
                     child: Text(
                   '5e Generators',
                   style: TextStyle(
+                    fontWeight: FontWeight.bold,
                     fontSize: 32,
-                    //   color: Color.fromRGBO(34, 56, 69, 1.0),
+                    color: Colors.black54,
                   ),
                 )),
               ),
@@ -62,6 +80,12 @@ class MyApp extends StatelessWidget {
                             width: screenWidth * 0.4,
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                backgroundColor: Colors.blueGrey.shade900,
+                              ),
                               onPressed: () {
                                 Navigator.push(ctx, TreasuresPage());
                               },
@@ -73,7 +97,7 @@ class MyApp extends StatelessWidget {
                                       fontSize: 22.0,
                                       fontWeight: FontWeight.bold,
                                       color:
-                                          Color.fromRGBO(214, 211, 152, 1.0)),
+                                          Color.fromRGBO(255, 254, 179, 1.0)),
                                 ),
                               ),
                             ),
@@ -86,6 +110,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade800,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, TrapsPage());
                           },
@@ -98,7 +128,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -112,6 +142,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade700,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, NPCsPage());
                           },
@@ -124,7 +160,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -138,6 +174,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade600,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, WildMagicPage());
                           },
@@ -150,7 +192,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -168,6 +210,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade500,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, MagicItemsPage());
                           },
@@ -180,7 +228,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -194,6 +242,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade400,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, TrinketsPage());
                           },
@@ -206,7 +260,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -220,6 +274,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade300,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, SpellSetsPage());
                           },
@@ -232,7 +292,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),
@@ -246,6 +306,12 @@ class MyApp extends StatelessWidget {
                         width: screenWidth * 0.4,
                         height: screenHeight * 0.15,
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.blueGrey.shade200,
+                          ),
                           onPressed: () {
                             Navigator.push(ctx, EncountersPage());
                           },
@@ -258,7 +324,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromRGBO(214, 211, 152, 1.0)),
+                                    color: Color.fromRGBO(255, 254, 179, 1.0)),
                               ),
                             ),
                           ),

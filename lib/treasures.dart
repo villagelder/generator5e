@@ -4,7 +4,7 @@ class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
       : super(builder: (BuildContext ctx) {
           return Scaffold(
-            backgroundColor: const Color.fromRGBO(210, 210, 172, 1.0),
+            backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
                 'DragonVault',
@@ -12,7 +12,7 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                   color: Color.fromRGBO(210, 210, 172, 1.0),
                 ),
               ),
-              backgroundColor: const Color.fromRGBO(34, 56, 69, 1.0),
+              backgroundColor:  Colors.blueGrey.shade900,
             ),
             body: SingleChildScrollView(
               scrollDirection: Axis.vertical,
@@ -50,8 +50,8 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                       height: MediaQuery.of(ctx).size.height * 0.1,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.amber.shade200,
-                          backgroundColor: Colors.brown.shade800,
+                          foregroundColor: Colors.amber.shade50,
+                          backgroundColor: Colors.lightGreen.shade900,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
