@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/DND5e/spellsets.dart';
-import 'package:generator5e/DND5e/traps.dart';
-import 'package:generator5e/DND5e/treasures.dart';
-import 'package:generator5e/DND5e/trinkets.dart';
-import 'package:generator5e/DND5e/wildmagic.dart';
+import 'package:generator5e/screens/DND5e/spellsets.dart';
+import 'package:generator5e/screens/DND5e/traps.dart';
+import 'package:generator5e/screens/DND5e/treasures.dart';
+import 'package:generator5e/screens/DND5e/trinkets.dart';
+import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
 import 'encounters.dart';
 import 'magicitems.dart';
