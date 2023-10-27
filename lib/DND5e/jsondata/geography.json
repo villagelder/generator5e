@@ -1,0 +1,730 @@
+[
+  {
+    "location": "Neverwinter",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Candlekeep",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Dale Lands",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Waterdeep",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Baldur\u0027s Gate",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Corymyr",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Netheril",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Thay",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Sword Coast",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Underdark",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Mere of Dead Men",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Neverwinter Wood",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Luskan",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Western Heartlands",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Hordelands",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Rashemen",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Narfell",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Damara",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Moonsea",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "High Forest",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Shaar",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Aglarond",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Luiren",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Great Dales",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "The Dragon Coast",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Sembia",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Anauroch",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Arabel",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Westgate",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Suzail",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Abanasinia",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Balifor",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Blode",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Blood Sea Isles",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Cristyne",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Enstar",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Estwilde",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Goodlund",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Hylo",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Icereach",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Kayolin",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Kern",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Kharolis",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Khur",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Lemish",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Nordmaar",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Northern Ergoth",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Nostar",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Plains of Dust",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Qualinesti",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Sancrist",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Schallsea",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Silvanesti",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Teyr",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Thoradin",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Krolan",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Haltigoth",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Firstwal",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Mageholm",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "Arl\u0027s Watch",
+    "gameworld": "Dragonlance"
+  },
+  {
+    "location": "The Great Kingdom",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Ahlissa",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Bandit Kingdoms",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Archbarony of Blackmoor",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Bone March",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Free City of Greyhawk",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Highfolk",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Lands of Iuz",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Lendore Islands",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "North Province",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Free State of Onnwall",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Tribes of Paynims",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Pomarj",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Principality of Ulek",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Archbarony of Ratik",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "City of Rel Astra",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Rovers of the Barrens",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Scarlet Brotherhood",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Kingdom of Schnai",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Sea Barons",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Hold of Sea Princes",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "The Shield Lands",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "South Province",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Spindrift Isles",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Hold of Stonefist",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Theocracy of the Pale",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Tusmit",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Valley of the Mage",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Archclericy of Veluna",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "Wegwuir Hordes",
+    "gameworld": "Greyhawk"
+  },
+  {
+    "location": "The Anattan Wastes",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Crimson Savannah",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "J\u0027eztere",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "L\u0027rax",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Thaythilor",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Awthuuk",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Kakikix",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Nirik",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Tarkeg",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Z\u0027aythar",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Kano Swamp",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Koschak Mountains",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "The Deadlands",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Obsidian Plain",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Obsidian Fortress",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "The Jagged Cliffs",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Thamasku",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Bvannen Cave City",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Parleth",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Reg-Tol",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Sol-Fehn",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Sunnil",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Vir-Rath",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "The Misty Border",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Sea of Silt",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Black Isle",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Isle of Bones",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Trembling Plains",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Valley of the Cerulean Storm",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Valley of the Last Sea",
+    "gameworld": "Dark Sun"
+  },
+  {
+    "location": "Balinoks Mountains",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Hills of Bleak Vistas",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Kartakass",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Sithicus",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Forlorn",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Lechberg",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Levkarest",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Ilvin",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Struben",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Old Svalich Woods",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Vor Ziyden",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Chiara",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "L\u0027Morai",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Bloodfang Hills",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Graenseskov (\"Borderwood\")",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Aggarath",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Kalidnay",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Sunderheart",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "The Shadow Rift",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Mount Baratak",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Dyrskov (\"Beastwood\")",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Hazlan",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Shadow Rift",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Bleak Sisters Mountains",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Borca",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Invidia",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Hroth",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Locknar Cove",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Mordent",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Dementlieu",
+    "gameworld": "Ravenloft"
+  },
+  {
+    "location": "Hillsfar",
+    "gameworld": "Forgotten Realms"
+  },
+  {
+    "location": "Blackwood Jungle",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Dajar Orioth",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Jaelarthal",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Madwood",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Majarin",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Shae Deseir",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Thal Taluna",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Valen\u0027s Isle",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Zaenya\u0027s Well",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Lathleer",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Wyr",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Duskwood",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Gray Wood",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Ghanthwood",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Wrogar Keep",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Otharaunt",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Aundair",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Breland",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Wroat",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Mournland",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Karrnath",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Korth",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Karrlakton",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Rekkenmark",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Atur",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Thrane",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Darguun",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Rhukaan Draal",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Brokentooth",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Gorgonhorn",
+    "gameworld": "Eberron"
+  },
+  {
+    "location": "Wyvernskull",
+    "gameworld": "Eberron"
+  }
+]

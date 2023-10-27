@@ -1,0 +1,122 @@
+[
+  {
+    "PROFBONUS": "2",
+    "KI_SORCERY": "0",
+    "SOURCE": "PLHBK",
+    "RAGES": "2"
+  },
+  {
+    "PROFBONUS": "2",
+    "KI_SORCERY": "2",
+    "SOURCE": "PLHBK",
+    "RAGES": "2"
+  },
+  {
+    "PROFBONUS": "2",
+    "KI_SORCERY": "3",
+    "SOURCE": "PLHBK",
+    "RAGES": "3"
+  },
+  {
+    "PROFBONUS": "2",
+    "KI_SORCERY": "4",
+    "SOURCE": "PLHBK",
+    "RAGES": "3"
+  },
+  {
+    "PROFBONUS": "3",
+    "KI_SORCERY": "5",
+    "SOURCE": "PLHBK",
+    "RAGES": "3"
+  },
+  {
+    "PROFBONUS": "3",
+    "KI_SORCERY": "6",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "3",
+    "KI_SORCERY": "7",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "3",
+    "KI_SORCERY": "8",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "4",
+    "KI_SORCERY": "9",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "4",
+    "KI_SORCERY": "10",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "4",
+    "KI_SORCERY": "11",
+    "SOURCE": "PLHBK",
+    "RAGES": "4"
+  },
+  {
+    "PROFBONUS": "4",
+    "KI_SORCERY": "12",
+    "SOURCE": "PLHBK",
+    "RAGES": "5"
+  },
+  {
+    "PROFBONUS": "5",
+    "KI_SORCERY": "13",
+    "SOURCE": "PLHBK",
+    "RAGES": "5"
+  },
+  {
+    "PROFBONUS": "5",
+    "KI_SORCERY": "14",
+    "SOURCE": "PLHBK",
+    "RAGES": "5"
+  },
+  {
+    "PROFBONUS": "5",
+    "KI_SORCERY": "15",
+    "SOURCE": "PLHBK",
+    "RAGES": "5"
+  },
+  {
+    "PROFBONUS": "5",
+    "KI_SORCERY": "16",
+    "SOURCE": "PLHBK",
+    "RAGES": "5"
+  },
+  {
+    "PROFBONUS": "6",
+    "KI_SORCERY": "17",
+    "SOURCE": "PLHBK",
+    "RAGES": "6"
+  },
+  {
+    "PROFBONUS": "6",
+    "KI_SORCERY": "18",
+    "SOURCE": "PLHBK",
+    "RAGES": "6"
+  },
+  {
+    "PROFBONUS": "6",
+    "KI_SORCERY": "19",
+    "SOURCE": "PLHBK",
+    "RAGES": "6"
+  },
+  {
+    "PROFBONUS": "6",
+    "KI_SORCERY": "20",
+    "SOURCE": "PLHBK",
+    "RAGES": "99"
+  }
+]

@@ -1,0 +1,778 @@
+[
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Knowledge",
+    "SPELLS0": "55",
+    "SPELLS1": "189"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Knowledge",
+    "SPELLS0": "19",
+    "SPELLS1": "318"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Knowledge",
+    "SPELLS0": "241",
+    "SPELLS1": "307"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Knowledge",
+    "SPELLS0": "13",
+    "SPELLS1": "62"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Knowledge",
+    "SPELLS0": "198",
+    "SPELLS1": "287"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Life",
+    "SPELLS0": "34",
+    "SPELLS1": "85"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Life",
+    "SPELLS0": "201",
+    "SPELLS1": "312"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Life",
+    "SPELLS0": "28",
+    "SPELLS1": "282"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Life",
+    "SPELLS0": "90",
+    "SPELLS1": "165"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Life",
+    "SPELLS0": "218",
+    "SPELLS1": "271"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Light",
+    "SPELLS0": "41",
+    "SPELLS1": "126"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Light",
+    "SPELLS0": "143",
+    "SPELLS1": "286"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Light",
+    "SPELLS0": "89",
+    "SPELLS1": "137"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Light",
+    "SPELLS0": "165",
+    "SPELLS1": "345"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Light",
+    "SPELLS0": "142",
+    "SPELLS1": "287"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Nature",
+    "SPELLS0": "5",
+    "SPELLS1": "306"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Nature",
+    "SPELLS0": "27",
+    "SPELLS1": "310"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Nature",
+    "SPELLS0": "254",
+    "SPELLS1": "356"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Nature",
+    "SPELLS0": "107",
+    "SPELLS1": "161"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Nature",
+    "SPELLS0": "194",
+    "SPELLS1": "336"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Tempest",
+    "SPELLS0": "146",
+    "SPELLS1": "332"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Tempest",
+    "SPELLS0": "169",
+    "SPELLS1": "294"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Tempest",
+    "SPELLS0": "42",
+    "SPELLS1": "303"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Tempest",
+    "SPELLS0": "75",
+    "SPELLS1": "188"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Tempest",
+    "SPELLS0": "93",
+    "SPELLS1": "194"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Trickery",
+    "SPELLS0": "45",
+    "SPELLS1": "99"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Trickery",
+    "SPELLS0": "231",
+    "SPELLS1": "246"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Trickery",
+    "SPELLS0": "38",
+    "SPELLS1": "102"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Trickery",
+    "SPELLS0": "98",
+    "SPELLS1": "256"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "Trickery",
+    "SPELLS0": "109",
+    "SPELLS1": "234"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "1",
+    "TYPE": "Domain",
+    "SPECIALNAME": "War",
+    "SPELLS0": "105",
+    "SPELLS1": "296"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "3",
+    "TYPE": "Domain",
+    "SPECIALNAME": "War",
+    "SPELLS0": "216",
+    "SPELLS1": "312"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "5",
+    "TYPE": "Domain",
+    "SPECIALNAME": "War",
+    "SPELLS0": "84",
+    "SPELLS1": "311"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "7",
+    "TYPE": "Domain",
+    "SPECIALNAME": "War",
+    "SPELLS0": "150",
+    "SPELLS1": "316"
+  },
+  {
+    "CLASS": "Cleric",
+    "LEVEL": "9",
+    "TYPE": "Domain",
+    "SPECIALNAME": "War",
+    "SPELLS0": "142",
+    "SPELLS1": "182"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Arctic",
+    "SPELLS0": "183",
+    "SPELLS1": "310"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Arctic",
+    "SPELLS0": "303",
+    "SPELLS1": "304"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Arctic",
+    "SPELLS0": "150",
+    "SPELLS1": "188"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Arctic",
+    "SPELLS0": "57",
+    "SPELLS1": "61"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Coast",
+    "SPELLS0": "231",
+    "SPELLS1": "233"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Coast",
+    "SPELLS0": "351",
+    "SPELLS1": "352"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Coast",
+    "SPELLS0": "75",
+    "SPELLS1": "150"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Coast",
+    "SPELLS0": "66",
+    "SPELLS1": "287"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Desert",
+    "SPELLS0": "39",
+    "SPELLS1": "299"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Desert",
+    "SPELLS0": "79",
+    "SPELLS1": "267"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Desert",
+    "SPELLS0": "35",
+    "SPELLS1": "172"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Desert",
+    "SPELLS0": "194",
+    "SPELLS1": "348"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Forest",
+    "SPELLS0": "27",
+    "SPELLS1": "309"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Forest",
+    "SPELLS0": "42",
+    "SPELLS1": "254"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Forest",
+    "SPELLS0": "104",
+    "SPELLS1": "150"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Forest",
+    "SPELLS0": "57",
+    "SPELLS1": "336"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Grassland",
+    "SPELLS0": "195",
+    "SPELLS1": "246"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Grassland",
+    "SPELLS0": "89",
+    "SPELLS1": "174"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Grassland",
+    "SPELLS0": "104",
+    "SPELLS1": "150"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Grassland",
+    "SPELLS0": "111",
+    "SPELLS1": "194"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Mountain",
+    "SPELLS0": "309",
+    "SPELLS1": "310"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Mountain",
+    "SPELLS0": "205",
+    "SPELLS1": "223"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Mountain",
+    "SPELLS0": "315",
+    "SPELLS1": "316"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Mountain",
+    "SPELLS0": "247",
+    "SPELLS1": "348"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Swamp",
+    "SPELLS0": "87",
+    "SPELLS1": "224"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Swamp",
+    "SPELLS0": "314",
+    "SPELLS1": "352"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Swamp",
+    "SPELLS0": "150",
+    "SPELLS1": "207"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Swamp",
+    "SPELLS0": "194",
+    "SPELLS1": "348"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "3",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Underdark",
+    "SPELLS0": "309",
+    "SPELLS1": "353"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "5",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Underdark",
+    "SPELLS0": "152",
+    "SPELLS1": "314"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "7",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Underdark",
+    "SPELLS0": "163",
+    "SPELLS1": "315"
+  },
+  {
+    "CLASS": "Druid",
+    "LEVEL": "9",
+    "TYPE": "Circle",
+    "SPECIALNAME": "Underdark",
+    "SPELLS0": "53",
+    "SPELLS1": "194"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "3",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Devotion",
+    "SPELLS0": "268",
+    "SPELLS1": "285"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "5",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Devotion",
+    "SPELLS0": "201",
+    "SPELLS1": "361"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "9",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Devotion",
+    "SPELLS0": "28",
+    "SPELLS1": "102"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "13",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Devotion",
+    "SPELLS0": "150",
+    "SPELLS1": "165"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "17",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Devotion",
+    "SPELLS0": "56",
+    "SPELLS1": "142"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "3",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Ancients",
+    "SPELLS0": "118",
+    "SPELLS1": "306"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "5",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Ancients",
+    "SPELLS0": "233",
+    "SPELLS1": "235"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "9",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Ancients",
+    "SPELLS0": "254",
+    "SPELLS1": "267"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "13",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Ancients",
+    "SPELLS0": "188",
+    "SPELLS1": "316"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "17",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Ancients",
+    "SPELLS0": "57",
+    "SPELLS1": "336"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "3",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Vengeance",
+    "SPELLS0": "24",
+    "SPELLS1": "186"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "5",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Vengeance",
+    "SPELLS0": "183",
+    "SPELLS1": "233"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "9",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Vengeance",
+    "SPELLS0": "174",
+    "SPELLS1": "267"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "13",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Vengeance",
+    "SPELLS0": "26",
+    "SPELLS1": "98"
+  },
+  {
+    "CLASS": "Paladin",
+    "LEVEL": "17",
+    "TYPE": "Oath",
+    "SPECIALNAME": "Vengeance",
+    "SPELLS0": "182",
+    "SPELLS1": "287"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "1",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Archfey",
+    "SPELLS0": "126",
+    "SPELLS1": "302"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "2",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Archfey",
+    "SPELLS0": "43",
+    "SPELLS1": "248"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "3",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Archfey",
+    "SPELLS0": "38",
+    "SPELLS1": "254"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "4",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Archfey",
+    "SPELLS0": "107",
+    "SPELLS1": "163"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "5",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Archfey",
+    "SPELLS0": "109",
+    "SPELLS1": "290"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "1",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Fiend",
+    "SPELLS0": "41",
+    "SPELLS1": "55"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "2",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Fiend",
+    "SPELLS0": "37",
+    "SPELLS1": "286"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "3",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Fiend",
+    "SPELLS0": "137",
+    "SPELLS1": "314"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "4",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Fiend",
+    "SPELLS0": "139",
+    "SPELLS1": "345"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "5",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Fiend",
+    "SPELLS0": "142",
+    "SPELLS1": "171"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "1",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Great Old One",
+    "SPELLS0": "103",
+    "SPELLS1": "323"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "2",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Great Old One",
+    "SPELLS0": "97",
+    "SPELLS1": "248"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "3",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Great Old One",
+    "SPELLS0": "50",
+    "SPELLS1": "291"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "4",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Great Old One",
+    "SPELLS0": "107",
+    "SPELLS1": "122"
+  },
+  {
+    "CLASS": "Warlock",
+    "LEVEL": "5",
+    "TYPE": "Otherworldly Patron",
+    "SPECIALNAME": "Great Old One",
+    "SPELLS0": "109",
+    "SPELLS1": "324"
+  }
+]

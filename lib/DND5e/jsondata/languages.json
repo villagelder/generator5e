@@ -1,0 +1,104 @@
+[
+  {
+    "Language": "Common",
+    "Speakers": "Humans",
+    "Category": "Standard",
+    "Script": "Common"
+  },
+  {
+    "Language": "Dwarvish",
+    "Speakers": "Dwarves",
+    "Category": "Standard",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Elvish",
+    "Speakers": "Elves",
+    "Category": "Standard",
+    "Script": "Elvish"
+  },
+  {
+    "Language": "Giant",
+    "Speakers": "Ogres, giants",
+    "Category": "Standard",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Gnomish",
+    "Speakers": "Gnomes",
+    "Category": "Standard",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Goblin",
+    "Speakers": "Goblinoids",
+    "Category": "Standard",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Halfling",
+    "Speakers": "Halflings",
+    "Category": "Standard",
+    "Script": "Common"
+  },
+  {
+    "Language": "Orc",
+    "Speakers": "Orcs",
+    "Category": "Standard",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Abyssal",
+    "Speakers": "Demons",
+    "Category": "Exotic",
+    "Script": "Infernal"
+  },
+  {
+    "Language": "Celestial",
+    "Speakers": "Celestial",
+    "Category": "Exotic",
+    "Script": "Celestial"
+  },
+  {
+    "Language": "Draconic",
+    "Speakers": "Dragons, dragonborn",
+    "Category": "Exotic",
+    "Script": "Draconic"
+  },
+  {
+    "Language": "Deep Speech",
+    "Speakers": "Mind flayers, beholders",
+    "Category": "Exotic",
+    "Script": "Oral only"
+  },
+  {
+    "Language": "Infernal",
+    "Speakers": "Devils",
+    "Category": "Exotic",
+    "Script": "Infernal"
+  },
+  {
+    "Language": "Primordial",
+    "Speakers": "Elementals",
+    "Category": "Exotic",
+    "Script": "Dwarvish"
+  },
+  {
+    "Language": "Sylvan",
+    "Speakers": "Fey creatures",
+    "Category": "Exotic",
+    "Script": "Elvish"
+  },
+  {
+    "Language": "Undercommon",
+    "Speakers": "Underdark traders, Drow",
+    "Category": "Exotic",
+    "Script": "Elvish"
+  },
+  {
+    "Language": "Druidic",
+    "Speakers": "Druids",
+    "Category": "Exotic",
+    "Script": "Elvish"
+  }
+]

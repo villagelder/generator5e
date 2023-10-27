@@ -1,0 +1,282 @@
+[
+  {
+    "ID": "1",
+    "EYECOLOR": "Brown",
+    "HAIRCOLOR": "Brown",
+    "BUILD": "Limber",
+    "SKIN": "Khaki"
+  },
+  {
+    "ID": "2",
+    "EYECOLOR": "Blue",
+    "HAIRCOLOR": "Black",
+    "BUILD": "Delicate",
+    "SKIN": "Fawn"
+  },
+  {
+    "ID": "3",
+    "EYECOLOR": "Green",
+    "HAIRCOLOR": "Blonde",
+    "BUILD": "Robust",
+    "SKIN": "Terra-cotta"
+  },
+  {
+    "ID": "4",
+    "EYECOLOR": "Hazel",
+    "HAIRCOLOR": "Sandy Blonde",
+    "BUILD": "Strapping",
+    "SKIN": "Ochre"
+  },
+  {
+    "ID": "5",
+    "EYECOLOR": "Yellow",
+    "HAIRCOLOR": "Gray",
+    "BUILD": "Athletic",
+    "SKIN": "Russet"
+  },
+  {
+    "ID": "6",
+    "EYECOLOR": "Gold",
+    "HAIRCOLOR": "Dark Gray",
+    "BUILD": "Meager",
+    "SKIN": "Sepia"
+  },
+  {
+    "ID": "7",
+    "EYECOLOR": "Grey",
+    "HAIRCOLOR": "Light Gray",
+    "BUILD": "Sinewy",
+    "SKIN": "Umber"
+  },
+  {
+    "ID": "8",
+    "EYECOLOR": "Silver",
+    "HAIRCOLOR": "White",
+    "BUILD": "Overweight",
+    "SKIN": "Green"
+  },
+  {
+    "ID": "9",
+    "EYECOLOR": "Light Green",
+    "HAIRCOLOR": "Bronze Blond",
+    "BUILD": "Solid",
+    "SKIN": "Black"
+  },
+  {
+    "ID": "10",
+    "EYECOLOR": "Pale Blue",
+    "HAIRCOLOR": "Ginger Blond",
+    "BUILD": "Hulky",
+    "SKIN": "Gold"
+  },
+  {
+    "ID": "11",
+    "EYECOLOR": "Magenta",
+    "HAIRCOLOR": "Strawberry Blond",
+    "BUILD": "Agile",
+    "SKIN": "Pale Blue"
+  },
+  {
+    "ID": "12",
+    "EYECOLOR": "Ivory",
+    "HAIRCOLOR": "Ash Brown",
+    "BUILD": "Muscular",
+    "SKIN": "Savannah"
+  },
+  {
+    "ID": "13",
+    "EYECOLOR": "Purple",
+    "HAIRCOLOR": "Sandy Brown",
+    "BUILD": "Skinny",
+    "SKIN": "Light Green"
+  },
+  {
+    "ID": "14",
+    "EYECOLOR": "Charcoal",
+    "HAIRCOLOR": "Auburn",
+    "BUILD": "Bovine",
+    "SKIN": "Brown"
+  },
+  {
+    "ID": "15",
+    "EYECOLOR": "Steel Grey",
+    "HAIRCOLOR": "Copper Red",
+    "BUILD": "Tough",
+    "SKIN": "Light Magenta"
+  },
+  {
+    "ID": "16",
+    "EYECOLOR": "Dark Blue",
+    "HAIRCOLOR": "Red",
+    "BUILD": "Scrawny",
+    "SKIN": "Reddish-yellow"
+  },
+  {
+    "ID": "17",
+    "EYECOLOR": "Dark Green",
+    "HAIRCOLOR": "Flaming Red",
+    "BUILD": "Rotund",
+    "SKIN": "Tawny Beige"
+  },
+  {
+    "ID": "18",
+    "EYECOLOR": "Orange",
+    "HAIRCOLOR": "Wheaten Blond",
+    "BUILD": "Scraggy",
+    "SKIN": "Deep Russet"
+  },
+  {
+    "ID": "19",
+    "EYECOLOR": "Red",
+    "HAIRCOLOR": "Ginger Brown",
+    "BUILD": "Weak",
+    "SKIN": "Golden Brown"
+  },
+  {
+    "ID": "20",
+    "EYECOLOR": "Tan",
+    "HAIRCOLOR": "Sandy Brown",
+    "BUILD": "Meaty",
+    "SKIN": "Beige"
+  },
+  {
+    "ID": "21",
+    "EYECOLOR": "White",
+    "HAIRCOLOR": "Chestnut",
+    "BUILD": "Heavy",
+    "SKIN": "Pale Green"
+  },
+  {
+    "ID": "22",
+    "EYECOLOR": "Black",
+    "HAIRCOLOR": "Russet Brown",
+    "BUILD": "Haggard",
+    "SKIN": "Fair"
+  },
+  {
+    "ID": "23",
+    "EYECOLOR": "Pink",
+    "HAIRCOLOR": "Sable Brown",
+    "BUILD": "Fat",
+    "SKIN": "Peach"
+  },
+  {
+    "ID": "24",
+    "EYECOLOR": "Sand Opal",
+    "HAIRCOLOR": "Sorrel Brown",
+    "BUILD": "Wiry",
+    "SKIN": "Warm Brown"
+  },
+  {
+    "ID": "25",
+    "EYECOLOR": "Sapphire",
+    "HAIRCOLOR": "Jet Black",
+    "BUILD": "Slim",
+    "SKIN": "Black"
+  },
+  {
+    "ID": "26",
+    "EYECOLOR": "Capri Blue",
+    "HAIRCOLOR": "Raven",
+    "BUILD": "Plump",
+    "SKIN": "Cool Sepia"
+  },
+  {
+    "ID": "27",
+    "EYECOLOR": "Black Diamond",
+    "HAIRCOLOR": "Ash Gray",
+    "BUILD": "Broad",
+    "SKIN": "Reddish Gray"
+  },
+  {
+    "ID": "28",
+    "EYECOLOR": "Crystal",
+    "HAIRCOLOR": "Iron Gray",
+    "BUILD": "Average",
+    "SKIN": "Bronze"
+  },
+  {
+    "ID": "29",
+    "EYECOLOR": "Emerald",
+    "HAIRCOLOR": "Salt and Pepper",
+    "BUILD": "Potbellied",
+    "SKIN": "Orange-red"
+  },
+  {
+    "ID": "30",
+    "EYECOLOR": "Mocca",
+    "HAIRCOLOR": "Steel Gray",
+    "BUILD": "Heavyset",
+    "SKIN": "Ruddy Gray"
+  },
+  {
+    "ID": "31",
+    "EYECOLOR": "Olivine",
+    "HAIRCOLOR": "Snow White",
+    "BUILD": "Underweight",
+    "SKIN": "Golden Brown"
+  },
+  {
+    "ID": "32",
+    "EYECOLOR": "Rose",
+    "HAIRCOLOR": "Pearl White",
+    "BUILD": "Pudgy",
+    "SKIN": "White"
+  },
+  {
+    "ID": "33",
+    "EYECOLOR": "Green Opal",
+    "HAIRCOLOR": "Purple",
+    "BUILD": "Staunch",
+    "SKIN": "Rich Umber"
+  },
+  {
+    "ID": "34",
+    "EYECOLOR": "Indigo",
+    "HAIRCOLOR": "Blue",
+    "BUILD": "Emaciated",
+    "SKIN": "Coral"
+  },
+  {
+    "ID": "35",
+    "EYECOLOR": "Dark Indigo",
+    "HAIRCOLOR": "Light Blue",
+    "BUILD": "Beastly",
+    "SKIN": "Copper"
+  },
+  {
+    "ID": "36",
+    "EYECOLOR": "Cobalt",
+    "HAIRCOLOR": "Green",
+    "BUILD": "Puny",
+    "SKIN": "Light Brown"
+  },
+  {
+    "ID": "37",
+    "EYECOLOR": "Mint Alabaster",
+    "HAIRCOLOR": "Dark Green",
+    "BUILD": "Gangly",
+    "SKIN": "Olive"
+  },
+  {
+    "ID": "38",
+    "EYECOLOR": "Fuchsia",
+    "HAIRCOLOR": "Yellow-green",
+    "BUILD": "Brawny",
+    "SKIN": "Pink"
+  },
+  {
+    "ID": "39",
+    "EYECOLOR": "Tanzanite",
+    "HAIRCOLOR": "Gold",
+    "BUILD": "Medium",
+    "SKIN": "Tannish-yellow"
+  },
+  {
+    "ID": "40",
+    "EYECOLOR": "Amethyst",
+    "HAIRCOLOR": "Silver",
+    "BUILD": "Beefcake",
+    "SKIN": "Yellow"
+  }
+]

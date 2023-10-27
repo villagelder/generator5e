@@ -1,0 +1,50 @@
+[
+  {
+    "ARMOR_PROF": "Light Armor",
+    "DESCRIPTION": "You can use light, less-restrictive armor that still allows agile movement.",
+    "ARMORS0": "1",
+    "ARMORS1": "2",
+    "ARMORS2": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ARMOR_PROF": "Medium Armor",
+    "DESCRIPTION": "You can use moderate but more restrictive armor that still allows some agility.",
+    "ARMORS0": "4",
+    "ARMORS1": "5",
+    "ARMORS2": "6",
+    "ARMORS3": "7",
+    "ARMORS4": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ARMOR_PROF": "Heavy Armor",
+    "DESCRIPTION": "You can use armors that are heavy and do not allow agile movement but offer the most protection against physical attack.",
+    "ARMORS0": "9",
+    "ARMORS1": "10",
+    "ARMORS2": "11",
+    "ARMORS3": "12",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ARMOR_PROF": "Shields",
+    "DESCRIPTION": "You can wield a shield to augment your protection in battle.",
+    "ARMORS0": "13",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ARMOR_PROF": "Druidic Armor",
+    "DESCRIPTION": "You can wear light and medium armor and use shields, but you will not use anything made of metal as it disconnects you from your connection with Nature.",
+    "ARMORS0": "1",
+    "ARMORS1": "2",
+    "ARMORS2": "3",
+    "ARMORS3": "4",
+    "ARMORS4": "13",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ARMOR_PROF": "No Armor Training",
+    "DESCRIPTION": "You are not trained in the use of any armor.",
+    "SOURCE": "PLHBK"
+  }
+]

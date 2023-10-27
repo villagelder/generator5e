@@ -1,0 +1,3042 @@
+[
+  {
+    "ITEM": "Abacus",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Scholar",
+    "COST": "2",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Acid (vial)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "COST": "25",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Alchemist\u0027s Fire (flask)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "COST": "50",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Arrows (20)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Ammunition",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Blowgun needles (50)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Ammunition",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Crossbow bolts (20)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Ammunition",
+    "COST": "1",
+    "WEIGHT": "1.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sling bullets (20)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Ammunition",
+    "COST": "0.04",
+    "WEIGHT": "1.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Antitoxin (vial)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Healing",
+    "COST": "50",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Crystal (arcane focus)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "10",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Orb (arcane focus)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "20",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rod (arcane focus)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "10",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Staff (arcane focus)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wand (arcane focus)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "10",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Backpack",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Survival",
+    "COST": "2",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ball bearings (bag of 1000)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barrel",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "2",
+    "WEIGHT": "70",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Basket",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "4",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bedroll",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "1",
+    "WEIGHT": "7",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bell",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "1",
+    "WEIGHT": "0.15",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Blanket",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "0.2",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Block and tackle",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Book",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Scholar",
+    "COST": "25",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bottle (glass)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Container",
+    "COST": "2",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bucket",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Container",
+    "SUBTYPE2": "Farming",
+    "COST": "0.05",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Caltrops (bag of 20)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Stealth",
+    "COST": "1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Candle",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Scholar",
+    "COST": "0.01",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Case (crossbow bolt)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Case (map or scroll)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Container",
+    "SUBTYPE2": "Scholar",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chain (10 feet)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Maritime",
+    "SUBTYPE3": "Siege",
+    "COST": "5",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chalk (1 piece)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Investigative",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "0.01",
+    "WEIGHT": "0.05",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chest",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "5",
+    "WEIGHT": "25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Climber\u0027s Kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Siege",
+    "SUBTYPE2": "Survival",
+    "COST": "25",
+    "WEIGHT": "12",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Clothes (common)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "0.5",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Clothes (costume)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Clothes (fine)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "15",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Clothes (traveler\u0027s)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "2",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Component pouch",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Arcane",
+    "SUBTYPE2": "Container",
+    "SUBTYPE3": "Divine",
+    "SUBTYPE4": "Druidic",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Crowbar",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "COST": "2",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sprig of mistletoe",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Druidic",
+    "COST": "1",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Totem",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Druidic",
+    "COST": "1",
+    "WEIGHT": "0.4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wooden staff",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Druidic",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Yew wand",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Druidic",
+    "COST": "10",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Fishing Tackle",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Miscellaneous",
+    "SUBTYPE1": "Survival",
+    "COST": "1",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Flask",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Survival",
+    "COST": "0.02",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tankard",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "0.02",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Grappling hook",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Siege",
+    "SUBTYPE2": "Stealth",
+    "SUBTYPE3": "Survival",
+    "COST": "2",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hammer",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "COST": "1",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hammer (sledge)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Siege",
+    "COST": "1",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Healer\u0027s Kit",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Healing",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Survival",
+    "COST": "5",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Amulet (holy symbol)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Divine",
+    "COST": "5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Emblem (holy symbol)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Divine",
+    "COST": "5",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Reliquary (holy symbol)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Divine",
+    "COST": "5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Holy water (flask)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Dungeoneering",
+    "COST": "25",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hourglass",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Scholar",
+    "COST": "25",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hunting Trap",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Survival",
+    "COST": "5",
+    "WEIGHT": "25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ink (1 ounce bottle)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Arcane",
+    "SUBTYPE2": "Divine",
+    "SUBTYPE3": "Scholar",
+    "COST": "10",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Quill Ink pen",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Arcane",
+    "SUBTYPE2": "Divine",
+    "SUBTYPE3": "Scholar",
+    "COST": "0.02",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Jug",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "0.02",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pitcher",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "0.02",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ladder (10-foot)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Siege",
+    "COST": "0.1",
+    "WEIGHT": "25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lamp",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Maritime",
+    "SUBTYPE2": "Scholar",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lantern (bullseye)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Scholar",
+    "COST": "10",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lantern (hooded)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Scholar",
+    "COST": "5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lock",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "10",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Magnifying glass",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Investigative",
+    "SUBTYPE2": "Scholar",
+    "COST": "100",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Manacles",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mess Kit",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "0.2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mirror (steel)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Investigative",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Scholar",
+    "COST": "5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Oil (flask)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Survival",
+    "COST": "0.1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Paper (one sheet)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Investigative",
+    "SUBTYPE3": "Scholar",
+    "COST": "0.2",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Parchment (one sheet)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Investigative",
+    "SUBTYPE3": "Scholar",
+    "COST": "0.1",
+    "WEIGHT": "0.3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Perfume (vial)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Exotic",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pick (miner\u0027s)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Piton",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Siege",
+    "SUBTYPE2": "Survival",
+    "COST": "0.05",
+    "WEIGHT": "0.025",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Poison (basic vial)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Exotic",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "100",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pole (10-foot)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "0.05",
+    "WEIGHT": "7",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pot (iron)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Survival",
+    "COST": "2",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Potion of Healing",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Druidic",
+    "SUBTYPE3": "Healing",
+    "COST": "50",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pouch",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Quiver",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Survival",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ram (portable)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Siege",
+    "COST": "4",
+    "WEIGHT": "35",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rations (1 day)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "0.5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Robes",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "1",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rope (hempen) 50 feet",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Farming",
+    "SUBTYPE2": "Siege",
+    "SUBTYPE3": "Survival",
+    "COST": "1",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rope (silk) 50 feet",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Farming",
+    "SUBTYPE2": "Siege",
+    "SUBTYPE3": "Survival",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sack",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Survival",
+    "COST": "0.01",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Scale (merchant\u0027s)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Trade Goods",
+    "COST": "5",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sealing wax",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Scholar",
+    "COST": "0.5",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shovel",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Farming",
+    "COST": "2",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Signal whistle",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Siege",
+    "COST": "0.05",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Signet ring",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Clothing",
+    "SUBTYPE2": "Divine",
+    "SUBTYPE3": "Scholar",
+    "COST": "5",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Soap",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "0.02",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Spellbook",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "COST": "50",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Iron Spikes (10)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Farming",
+    "SUBTYPE3": "Survival",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Spyglass",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Maritime",
+    "SUBTYPE1": "Scholar",
+    "SUBTYPE2": "Siege",
+    "COST": "1000",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tent (2-person)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "2",
+    "WEIGHT": "20",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tinderbox",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Torch",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Survival",
+    "COST": "0.01",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Vial",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Arcane",
+    "SUBTYPE2": "Divine",
+    "SUBTYPE3": "Scholar",
+    "COST": "1",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Waterskin",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Survival",
+    "COST": "0.2",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Whetstone",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Dungeoneering",
+    "SUBTYPE2": "Farming",
+    "SUBTYPE3": "Survival",
+    "COST": "0.01",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Prayer Book",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Scholar",
+    "COST": "25",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pouch (belt)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Vestments (cleric)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Clothing",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Alchemist\u0027s supplies",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Crafting",
+    "COST": "50",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Brewer\u0027s supplies",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "20",
+    "WEIGHT": "9",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Calligrapher\u0027s supplies",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Scholar",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Carpenter\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Siege",
+    "COST": "8",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cartographer\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Maritime",
+    "SUBTYPE2": "Scholar",
+    "SUBTYPE3": "Survival",
+    "COST": "15",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cobbler\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Crafting",
+    "COST": "5",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cook\u0027s utensils",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Survival",
+    "COST": "1",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Glassblower\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Exotic",
+    "SUBTYPE3": "Miscellaneous",
+    "COST": "30",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Jeweler\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Leatherworker\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Survival",
+    "COST": "5",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mason\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Dungeoneering",
+    "SUBTYPE3": "Miscellaneous",
+    "SUBTYPE4": "Siege",
+    "COST": "10",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Painter\u0027s supplies",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Scholar",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Potter\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "10",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Smith\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Farming",
+    "SUBTYPE3": "Miscellaneous",
+    "COST": "20",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tinker\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Investigative",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "50",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Weaver\u0027s Tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Woodcarver\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Construction",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Disguise Kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Miscellaneous",
+    "SUBTYPE1": "Stealth",
+    "COST": "25",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Forgery Kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Miscellaneous",
+    "SUBTYPE1": "Stealth",
+    "COST": "15",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dice set",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "0.1",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dragonchess set",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Scholar",
+    "COST": "1",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Playing card set",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Performance",
+    "COST": "0.5",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Three-Dragon Ante set",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "COST": "1",
+    "WEIGHT": "0.3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Herbalism kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Druidic",
+    "SUBTYPE2": "Healing",
+    "SUBTYPE3": "Scholar",
+    "COST": "5",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bagpipes",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "30",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Drum",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "6",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dulcimer",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "25",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Flute",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lute",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "35",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lyre",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "30",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Horn",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "3",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pan flute",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "12",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shawm",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Viol",
+    "CATEGORY": "Instrument",
+    "SUBTYPE0": "Music",
+    "SUBTYPE1": "Performance",
+    "COST": "30",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Navigator\u0027s tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Maritime",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Poisoner\u0027s kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Exotic",
+    "SUBTYPE3": "Stealth",
+    "COST": "50",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Thieves\u0027 tools",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Exotic",
+    "SUBTYPE2": "Stealth",
+    "COST": "25",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Burglar\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Exotic",
+    "SUBTYPE1": "Stealth",
+    "COST": "16",
+    "WEIGHT": "20",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Diplomat\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Scholar",
+    "COST": "39",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dungeoneer\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Survival",
+    "COST": "12",
+    "WEIGHT": "16",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Entertainer\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Performance",
+    "COST": "40",
+    "WEIGHT": "18",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Explorer\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Survival",
+    "COST": "10",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Priest\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Druidic",
+    "COST": "19",
+    "WEIGHT": "9",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Scholar\u0027s Pack",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Clothing",
+    "SUBTYPE2": "Divine",
+    "SUBTYPE3": "Scholar",
+    "COST": "40",
+    "WEIGHT": "12",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Camel",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Exotic",
+    "SUBTYPE1": "Mount",
+    "COST": "50",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Donkey",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "COST": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mule",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "COST": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Elephant",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Exotic",
+    "SUBTYPE1": "Mount",
+    "COST": "200",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Horse (draft)",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Mount",
+    "COST": "50",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Horse (riding)",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Mount",
+    "COST": "75",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pony",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Mount",
+    "COST": "30",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Horse (war)",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "400",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (padded)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "20",
+    "WEIGHT": "16",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (leather)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "40",
+    "WEIGHT": "20",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (studded leather)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "180",
+    "WEIGHT": "26",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (scale mail)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "200",
+    "WEIGHT": "90",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding(half plate)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "3000",
+    "WEIGHT": "80",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (ring mail)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "120",
+    "WEIGHT": "80",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (chain mail)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "300",
+    "WEIGHT": "110",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (splint mail)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "800",
+    "WEIGHT": "120",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Barding (plate mail)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "War",
+    "COST": "6000",
+    "WEIGHT": "130",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bit and bridle",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Carriage",
+    "CATEGORY": "Vehicle",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Farming",
+    "SUBTYPE2": "Mount",
+    "COST": "100",
+    "WEIGHT": "600",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cart",
+    "CATEGORY": "Vehicle",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Mount",
+    "COST": "15",
+    "WEIGHT": "200",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chariot",
+    "CATEGORY": "Vehicle",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Mount",
+    "COST": "250",
+    "WEIGHT": "100",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Feed (per day)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "COST": "0.05",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saddle (exotic)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Exotic",
+    "SUBTYPE1": "Farming",
+    "SUBTYPE2": "Mount",
+    "COST": "60",
+    "WEIGHT": "40",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saddle (military)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "SUBTYPE2": "War",
+    "COST": "20",
+    "WEIGHT": "30",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saddle (pack)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Farming",
+    "SUBTYPE1": "Mount",
+    "SUBTYPE2": "War",
+    "COST": "20",
+    "WEIGHT": "30",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saddle (riding)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Mount",
+    "SUBTYPE1": "Survival",
+    "SUBTYPE2": "War",
+    "COST": "10",
+    "WEIGHT": "25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saddlebags",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Mount",
+    "COST": "4",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sled",
+    "CATEGORY": "Vehicle",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Mount",
+    "COST": "20",
+    "WEIGHT": "300",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wagon",
+    "CATEGORY": "Vehicle",
+    "SUBTYPE0": "Container",
+    "SUBTYPE1": "Mount",
+    "COST": "35",
+    "WEIGHT": "400",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Galley",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "COST": "30000",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Keelboat",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "COST": "3000",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Longship",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "COST": "10000",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rowboat",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "COST": "50",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sailing ship",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "COST": "10000",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Warship",
+    "CATEGORY": "Sea Vessel",
+    "SUBTYPE0": "Maritime",
+    "SUBTYPE1": "War",
+    "COST": "10000",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wheat",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.01",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Flour",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.02",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chicken",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.02",
+    "WEIGHT": "1.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Salt",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.05",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Iron",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Canvas",
+    "CATEGORY": "Textile",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Copper",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cotton cloth",
+    "CATEGORY": "Textile",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ginger",
+    "CATEGORY": "Spice",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Goat",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "1",
+    "WEIGHT": "80",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cinnamon",
+    "CATEGORY": "Spice",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pepper",
+    "CATEGORY": "Spice",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sheep",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "2",
+    "WEIGHT": "95",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Clove",
+    "CATEGORY": "Spice",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "3",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pig",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "3",
+    "WEIGHT": "200",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Silver",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Linen",
+    "CATEGORY": "Textile",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Silk",
+    "CATEGORY": "Textile",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "10",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cow",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "10",
+    "WEIGHT": "900",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Saffron",
+    "CATEGORY": "Spice",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "15",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ox",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "15",
+    "WEIGHT": "1500",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Gold",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "50",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Platinum",
+    "CATEGORY": "Mineral",
+    "SUBTYPE0": "Trade Goods",
+    "COST": "500",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ale, gallon",
+    "CATEGORY": "Drink",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.2",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ale, mug",
+    "CATEGORY": "Drink",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.04",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Banquet (per person)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bread, loaf",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.02",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cheese, hunk",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.1",
+    "WEIGHT": "1.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (squalid)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (poor)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (modest)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (comfortable)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "0.8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (wealthy)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Inn - room for one night (aristocratic)",
+    "CATEGORY": "Lodging",
+    "SUBTYPE0": "Lodging",
+    "COST": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (squalid)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.03",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (poor)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.06",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (modest)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (comfortable)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (wealthy)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meal per day (aristrocratic)",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Meat chunk",
+    "CATEGORY": "Food",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.03",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wine common (pitcher)",
+    "CATEGORY": "Drink",
+    "SUBTYPE0": "Tavern",
+    "COST": "0.2",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wine fine (bottle)",
+    "CATEGORY": "Drink",
+    "SUBTYPE0": "Tavern",
+    "COST": "10",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Coach cab - city to city (per mile)",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Travel",
+    "COST": "0.03",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Coach cab - in town (per mile)",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Travel",
+    "COST": "0.03",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hireling - skilled",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hireling - unskilled",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Messenger",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "0.02",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Road toll",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "0.01",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ship\u0027s passage",
+    "CATEGORY": "Service",
+    "SUBTYPE0": "Miscellaneous",
+    "COST": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Club",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "0.1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dagger",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "SUBTYPE1": "Ranged",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Greatclub",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "0.2",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Handaxe",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Javelin",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "0.5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Light hammer",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "2",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mace",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Quarterstaff",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "0.2",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sickle",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Spear",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "SUBTYPE1": "Ranged",
+    "COST": "1",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Light crossbow",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "25",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dart",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "0.05",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shortbow",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Sling",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "0.1",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Battle Axe",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "10",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Flail",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "10",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Glaive",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "20",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Greataxe",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "30",
+    "WEIGHT": "7",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Greatsword",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "50",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Halberd",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "20",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lance",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "10",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Longsword",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "15",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Maul",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "10",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Morningstar",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "15",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pike",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "5",
+    "WEIGHT": "18",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rapier",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Scimitar",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "25",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shortsword",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "10",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Trident",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "5",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "War pick",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "5",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Warhammer",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "15",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Whip",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Melee",
+    "COST": "2",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Blowgun",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "10",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hand crossbow",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "75",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Heavy crossbow",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "50",
+    "WEIGHT": "18",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Longbow",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "50",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Net",
+    "CATEGORY": "Weapon",
+    "SUBTYPE0": "Ranged",
+    "COST": "1",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Padded Armor",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Light Armor",
+    "COST": "5",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Leather Armor",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Light Armor",
+    "COST": "10",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Studded Leather Armor",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Light Armor",
+    "COST": "45",
+    "WEIGHT": "13",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hide Armor",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Medium Armor",
+    "COST": "10",
+    "WEIGHT": "12",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chain Shirt",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Medium Armor",
+    "COST": "50",
+    "WEIGHT": "20",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Scale mail",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Medium Armor",
+    "COST": "50",
+    "WEIGHT": "45",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Breastplate",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Medium Armor",
+    "COST": "400",
+    "WEIGHT": "20",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Half plate",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Medium Armor",
+    "COST": "750",
+    "WEIGHT": "40",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ring mail",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Heavy Armor",
+    "COST": "30",
+    "WEIGHT": "40",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Chain mail",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Heavy Armor",
+    "COST": "75",
+    "WEIGHT": "55",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Splint mail",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Heavy Armor",
+    "COST": "200",
+    "WEIGHT": "60",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Plate mail",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Heavy Armor",
+    "COST": "1500",
+    "WEIGHT": "65",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shield",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Shield",
+    "COST": "10",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shield  (wooden)",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Shield",
+    "COST": "10",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Incense (5 sticks)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Arcane",
+    "SUBTYPE1": "Divine",
+    "SUBTYPE2": "Healing",
+    "SUBTYPE3": "Scholar",
+    "COST": "2",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dice set (weighted)",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Performance",
+    "COST": "2",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Playing card set (marked)",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Performance",
+    "COST": "1",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Trick Boxes",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Performance",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Trick Rings",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Performance",
+    "COST": "1",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Trick Bottles",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Performance",
+    "COST": "3",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Love letter",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lock of hair",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bottle of perfume",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Locket",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.14",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Guild letter",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Notes (stash)",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Scroll of Pedigree",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Purse",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Container",
+    "COST": "3",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rabbit\u0027s foot",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bear claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cougar paw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Monkey Paw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.25",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lion claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "2",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shark tooth (large)",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wolf skull",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Shrunken head",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Ivory figurine",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "2",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Deer antler",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Antler figurine",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Gorilla paw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Monkey foot",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tiger claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cheetah paw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Cheetah tail",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lion tail",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hippopotamus tooth",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Polar bear claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Grizzly bear claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "1",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rhinoceros horn",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "2",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bison horn",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Elk antler",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Eagle claw",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Eagle feather",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hawk feather",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Quagga pelt",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "2",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Tiger pelt",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "3",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Fox pelt",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Leopard fang",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Wallaby foot",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Kangaroo ear",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Hartebeest horn",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.5",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Mummified frog",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0.3",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Letter with an unanswered question",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Scholar",
+    "SUBTYPE1": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.14",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Knife",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Alchemical",
+    "SUBTYPE1": "Crafting",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Scholar",
+    "COST": "0.4",
+    "WEIGHT": "0.2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Insignia",
+    "CATEGORY": "Textile",
+    "SUBTYPE0": "Clothing",
+    "SUBTYPE1": "Crafting",
+    "COST": "0.1",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "War trophy",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Dice set (bone)",
+    "CATEGORY": "Gaming",
+    "SUBTYPE0": "Gaming",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pet mouse",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "0.3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pet snake",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pet lizard",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Pet bird",
+    "CATEGORY": "Animal",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "COST": "2",
+    "WEIGHT": "0.25",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Map (known)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Miscellaneous",
+    "SUBTYPE2": "Scholar",
+    "SUBTYPE3": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.14",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Map (unknown)",
+    "CATEGORY": "Gear",
+    "SUBTYPE0": "Dungeoneering",
+    "SUBTYPE1": "Investigative",
+    "SUBTYPE2": "Scholar",
+    "SUBTYPE3": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.14",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Merchants\u0027 Kit",
+    "CATEGORY": "Tool",
+    "SUBTYPE0": "Crafting",
+    "SUBTYPE1": "Maritime",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Trade Goods",
+    "COST": "30",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Lion\u0027s head helm",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Light Armor",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Performance",
+    "SUBTYPE4": "War",
+    "COST": "15",
+    "WEIGHT": "4",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bear\u0027s head helm",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Light Armor",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Performance",
+    "SUBTYPE4": "War",
+    "COST": "10",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Rhino head helm",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Light Armor",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Performance",
+    "SUBTYPE4": "War",
+    "COST": "20",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Young dragon head helm",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Light Armor",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Performance",
+    "SUBTYPE4": "War",
+    "COST": "200",
+    "WEIGHT": "12",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Bull\u0027s head helm",
+    "CATEGORY": "Armor",
+    "SUBTYPE0": "Divine",
+    "SUBTYPE1": "Light Armor",
+    "SUBTYPE2": "Miscellaneous",
+    "SUBTYPE3": "Performance",
+    "SUBTYPE4": "War",
+    "COST": "8",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Guild certification",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ITEM": "Declaration of Knighthood",
+    "CATEGORY": "Trinket",
+    "SUBTYPE0": "Storyline",
+    "COST": "0",
+    "WEIGHT": "0.07",
+    "SOURCE": "PLHBK"
+  }
+]

@@ -1,0 +1,1335 @@
+[
+  {
+    "EYECOLOR": "Brown",
+    "COLORSTD": "Black",
+    "COLORQUALITY": "deep",
+    "HAIRCOLOR": "Brown",
+    "BUILDINFIRM": "weak",
+    "BUILDSMALL": "meager",
+    "BUILDLARGE": "robust",
+    "SKIN": "Khaki",
+    "SCALES": "Verticle-striped",
+    "FRILL": "neck frill",
+    "MARKSONBODY": "severed",
+    "MARKSONFACE": "gold-capped tooth",
+    "CLOTHING": "boots",
+    "TEXTILE": "leather",
+    "SMALLMARKS": "missing prominent teeth",
+    "WEAPONSCAR": "weapon",
+    "OTHERSCAR": "acid-burned",
+    "DISEASESDEFORM": "leprosy",
+    "POISONS": "sassone leaf",
+    "BEASTQUAL": "golden",
+    "DANGANIMAL": "polar bear",
+    "MONSTER": "beholder",
+    "CULTURE": "orc",
+    "JEWELRY": "anklet",
+    "TORSO": "his upper back",
+    "HEAD": "back of his head",
+    "FACE": "his right eye",
+    "WINGTAIL": "top",
+    "SEVERED": "leg",
+    "LEG": "his upper right leg",
+    "ARM": "his his left bicep",
+    "HAND": "top of his right hand",
+    "FOOT": "top of his right foot",
+    "JEWELTYPE": "gold",
+    "BODYSECTION": "tail",
+    "SYMBOLS": "Tribal symbols",
+    "SIGILMEANING": "Earth"
+  },
+  {
+    "EYECOLOR": "Blue",
+    "COLORSTD": "Brown",
+    "COLORQUALITY": "light",
+    "HAIRCOLOR": "Black",
+    "BUILDINFIRM": "infirm",
+    "BUILDSMALL": "delicate",
+    "BUILDLARGE": "strapping",
+    "SKIN": "Fawn",
+    "SCALES": "Spotted",
+    "FRILL": "knobbed frill",
+    "MARKSONBODY": "amputated",
+    "MARKSONFACE": "sharpened teeth",
+    "CLOTHING": "pants",
+    "TEXTILE": "camlet",
+    "SMALLMARKS": "only three fingers each hand",
+    "WEAPONSCAR": "the claws of a",
+    "OTHERSCAR": "scorched",
+    "DISEASESDEFORM": "an unknown rotting disease",
+    "POISONS": "striped toadstool",
+    "BEASTQUAL": "brown",
+    "DANGANIMAL": "lion",
+    "MONSTER": "dragon",
+    "CULTURE": "human",
+    "JEWELRY": "bracelet",
+    "TORSO": "his lower back",
+    "HEAD": "top of his head",
+    "FACE": "his left eye",
+    "WINGTAIL": "tip",
+    "SEVERED": "lower leg",
+    "LEG": "his lower right leg",
+    "ARM": "his left tricep",
+    "HAND": "palm of his right hand",
+    "FOOT": "ankle of his right foot",
+    "JEWELTYPE": "platinum",
+    "BODYSECTION": "torso",
+    "SYMBOLS": "Bulldog",
+    "SIGILMEANING": "Fire"
+  },
+  {
+    "EYECOLOR": "Green",
+    "COLORSTD": "Blue",
+    "COLORQUALITY": "sandy",
+    "HAIRCOLOR": "Blonde",
+    "BUILDINFIRM": "scraggy",
+    "BUILDSMALL": "graceful",
+    "BUILDLARGE": "athletic",
+    "SKIN": "Terra-cotta",
+    "SCALES": "Mottled",
+    "FRILL": "horned frill",
+    "MARKSONBODY": "cut off",
+    "MARKSONFACE": "silver-capped tooth",
+    "CLOTHING": "shirt",
+    "TEXTILE": "wool",
+    "SMALLMARKS": "only three toes on each foot",
+    "WEAPONSCAR": "the tail of a",
+    "OTHERSCAR": "burned",
+    "DISEASESDEFORM": "smallpox",
+    "POISONS": "poison dart frog",
+    "BEASTQUAL": "white",
+    "DANGANIMAL": "pack of wild dogs",
+    "MONSTER": "gelatinous cube",
+    "CULTURE": "half-orc",
+    "JEWELRY": "nose ring",
+    "TORSO": "his chest",
+    "HEAD": "right side of his head",
+    "FACE": "both of his eyes",
+    "WINGTAIL": "entire",
+    "SEVERED": "arm",
+    "LEG": "his right calf",
+    "ARM": "his left upper arm",
+    "HAND": "thumb of his right hand",
+    "FOOT": "inside of his right foot",
+    "JEWELTYPE": "silver",
+    "BODYSECTION": "head",
+    "SYMBOLS": "Celtic rope",
+    "SIGILMEANING": "Water"
+  },
+  {
+    "EYECOLOR": "Hazel",
+    "COLORSTD": "Green",
+    "COLORQUALITY": "dark",
+    "HAIRCOLOR": "Sandy Blonde",
+    "BUILDINFIRM": "wiry",
+    "BUILDSMALL": "small",
+    "BUILDLARGE": "overweight",
+    "SKIN": "Ochre",
+    "SCALES": "Grid",
+    "FRILL": "bony frill",
+    "MARKSONBODY": "mutilated",
+    "MARKSONFACE": "copper-capped tooth",
+    "CLOTHING": "tunic",
+    "TEXTILE": "alligator skin",
+    "SMALLMARKS": "very long fingers",
+    "WEAPONSCAR": "the bite of a",
+    "OTHERSCAR": "decayed",
+    "DISEASESDEFORM": "chicken pox",
+    "POISONS": "arsenic",
+    "BEASTQUAL": "gray",
+    "DANGANIMAL": "turtle",
+    "MONSTER": "banshee",
+    "CULTURE": "half-elf",
+    "JEWELRY": "tongue stud",
+    "TORSO": "his entire back",
+    "HEAD": "left side of his head",
+    "FACE": "his nose",
+    "WINGTAIL": "blade bone",
+    "SEVERED": "forearm",
+    "LEG": "his right shin",
+    "ARM": "his left shoulder",
+    "HAND": "index finger of his right hand",
+    "FOOT": "outside of his right foot",
+    "JEWELTYPE": "bronze",
+    "BODYSECTION": "buttocks",
+    "SYMBOLS": "Dwarven warrior",
+    "SIGILMEANING": "Air"
+  },
+  {
+    "EYECOLOR": "Yellow",
+    "COLORSTD": "Pink",
+    "COLORQUALITY": "mottled",
+    "HAIRCOLOR": "Gray",
+    "BUILDINFIRM": "delicate",
+    "BUILDSMALL": "skinny",
+    "BUILDLARGE": "solid",
+    "SKIN": "Russet",
+    "SCALES": "Diamond pattern",
+    "FRILL": "collar frill",
+    "MARKSONBODY": "fake",
+    "MARKSONFACE": "platinum-capped tooth",
+    "CLOTHING": "gambeson",
+    "TEXTILE": "bear hide",
+    "SMALLMARKS": "very long toes",
+    "WEAPONSCAR": "the teeth of a",
+    "OTHERSCAR": "severe frostbite",
+    "DISEASESDEFORM": "proteus syndrome",
+    "POISONS": "dark reaver powder",
+    "BEASTQUAL": "polar",
+    "DANGANIMAL": "shark",
+    "MONSTER": "yugolith",
+    "CULTURE": "goblin",
+    "JEWELRY": "lip ring",
+    "TORSO": "his abdomen",
+    "HEAD": "his jaw",
+    "FACE": "left side of his nose",
+    "WINGTAIL": "humerus",
+    "SEVERED": "hand",
+    "LEG": "outside of his right thigh",
+    "ARM": "his left forearm",
+    "HAND": "middle finger of his right hand",
+    "FOOT": "big toe of his right foot",
+    "JEWELTYPE": "ivory",
+    "BODYSECTION": "leg",
+    "SYMBOLS": "Shield",
+    "SIGILMEANING": "Lightning"
+  },
+  {
+    "EYECOLOR": "Gold",
+    "COLORSTD": "Yellow",
+    "COLORQUALITY": "speckled",
+    "HAIRCOLOR": "Dark Gray",
+    "BUILDINFIRM": "haggard",
+    "BUILDSMALL": "haggard",
+    "BUILDLARGE": "hulky",
+    "SKIN": "Sepia",
+    "SCALES": "Sandstone",
+    "FRILL": "dimpled frill",
+    "MARKSONBODY": "malformed",
+    "MARKSONFACE": "missing tooth",
+    "CLOTHING": "doublet",
+    "TEXTILE": "polar bear hide",
+    "SMALLMARKS": "webbed fingers",
+    "OTHERSCAR": "poisoned",
+    "DISEASESDEFORM": "acromegaly",
+    "POISONS": "giant wasp poison",
+    "BEASTQUAL": "black",
+    "DANGANIMAL": "rhinoceros",
+    "MONSTER": "will-o-wisp",
+    "CULTURE": "troglodyte",
+    "JEWELRY": "brow ring",
+    "TORSO": "his stomach",
+    "HEAD": "left side of his jaw",
+    "FACE": "right side of his nose",
+    "WINGTAIL": "membrane",
+    "SEVERED": "fingers on his right hand",
+    "LEG": "his right knee",
+    "ARM": "his left wrist",
+    "HAND": "little finger of his right hand",
+    "FOOT": "little toe of his right foot",
+    "JEWELTYPE": "abalone",
+    "BODYSECTION": "arm",
+    "SYMBOLS": "Royal cat",
+    "SIGILMEANING": "Acid"
+  },
+  {
+    "EYECOLOR": "Grey",
+    "COLORSTD": "Gold",
+    "COLORQUALITY": "crystal",
+    "HAIRCOLOR": "Light Gray",
+    "BUILDINFIRM": "slim",
+    "BUILDSMALL": "sinewy",
+    "BUILDLARGE": "muscular",
+    "SKIN": "Umber",
+    "SCALES": "Thin-striped",
+    "FRILL": "extensive frill",
+    "MARKSONBODY": "whip scars",
+    "MARKSONFACE": "gouged left eye",
+    "CLOTHING": "amusse",
+    "TEXTILE": "pelican",
+    "SMALLMARKS": "webbed toes",
+    "OTHERSCAR": "breath",
+    "DISEASESDEFORM": "tree-bark disease",
+    "POISONS": "wyvern poison",
+    "BEASTQUAL": "green",
+    "DANGANIMAL": "sabre-toothed tiger",
+    "MONSTER": "harpy",
+    "CULTURE": "drow elf",
+    "JEWELRY": "nipple ring",
+    "TORSO": "his left ribs",
+    "HEAD": "right side of his jaw",
+    "FACE": "his mouth",
+    "SEVERED": "thumb on his right hand",
+    "LEG": "inside of his right thigh",
+    "ARM": "his left elbow",
+    "HAND": "all fingers and thumb of his right hand",
+    "FOOT": "all toes of his right foot",
+    "JEWELTYPE": "ruby",
+    "BODYSECTION": "hand",
+    "SYMBOLS": "Lightning bolt",
+    "SIGILMEANING": "Golem"
+  },
+  {
+    "EYECOLOR": "Silver",
+    "COLORSTD": "Grey",
+    "COLORQUALITY": "smoky",
+    "HAIRCOLOR": "White",
+    "BUILDINFIRM": "scrawny",
+    "BUILDSMALL": "plump",
+    "BUILDLARGE": "bovine",
+    "SKIN": "Green",
+    "SCALES": "Broad-striped",
+    "FRILL": "occipital frill",
+    "MARKSONBODY": "long scar",
+    "MARKSONFACE": "gouged right eye",
+    "CLOTHING": "pigache shoes",
+    "TEXTILE": "sable",
+    "SMALLMARKS": "a face covered in freckles",
+    "DISEASESDEFORM": "porphyria",
+    "POISONS": "greenblood oil",
+    "BEASTQUAL": "yellow",
+    "DANGANIMAL": "dragon",
+    "MONSTER": "griffon",
+    "CULTURE": "high elf",
+    "JEWELRY": "earring",
+    "TORSO": "his right ribs",
+    "HEAD": "right side of his face",
+    "FACE": "his lips",
+    "SEVERED": "fingers on his left hand",
+    "LEG": "his right buttocks",
+    "ARM": "his entire left arm",
+    "HAND": "top of his left hand",
+    "FOOT": "some toes of his right foot",
+    "JEWELTYPE": "emerald",
+    "BODYSECTION": "foot",
+    "SYMBOLS": "Shark",
+    "SIGILMEANING": "Father"
+  },
+  {
+    "EYECOLOR": "Green",
+    "COLORSTD": "Silver",
+    "COLORQUALITY": "cloudy",
+    "HAIRCOLOR": "Bronze Blond",
+    "BUILDINFIRM": "underweight",
+    "BUILDSMALL": "overweight",
+    "BUILDLARGE": "tough",
+    "SKIN": "Black",
+    "SCALES": "Multi-striped",
+    "FRILL": "ear frill",
+    "MARKSONBODY": "very large mole",
+    "MARKSONFACE": "raking scar across left eye",
+    "CLOTHING": "scarf",
+    "TEXTILE": "samite",
+    "SMALLMARKS": "a body covered in freckles",
+    "DISEASESDEFORM": "cutaneous leishmaniasis",
+    "POISONS": "undead dragon bile",
+    "BEASTQUAL": "giant",
+    "DANGANIMAL": "wyvern",
+    "MONSTER": "golem",
+    "CULTURE": "moon elf",
+    "JEWELRY": "necklace",
+    "HEAD": "entirety of his face",
+    "FACE": "around his mouth",
+    "SEVERED": "thumb on his left hand",
+    "LEG": "his right hip",
+    "ARM": "his left hand",
+    "HAND": "palm of his left hand",
+    "FOOT": "top of his left foot",
+    "JEWELTYPE": "white diamond",
+    "BODYSECTION": "auxiliary",
+    "SYMBOLS": "Fish",
+    "SIGILMEANING": "Mother"
+  },
+  {
+    "EYECOLOR": "Pale Blue",
+    "COLORSTD": "Green",
+    "COLORQUALITY": "aged",
+    "HAIRCOLOR": "Ginger Blond",
+    "BUILDINFIRM": "skinny",
+    "BUILDSMALL": "fat",
+    "BUILDLARGE": "rotund",
+    "SKIN": "Gold",
+    "SCALES": "Speckled",
+    "FRILL": "crest",
+    "MARKSONBODY": "small scar",
+    "MARKSONFACE": "raking scar across right eye",
+    "CLOTHING": "helm",
+    "SMALLMARKS": "a pock-marked face",
+    "DISEASESDEFORM": "elephantiasis",
+    "POISONS": "lich dust",
+    "BEASTQUAL": "blue",
+    "DANGANIMAL": "alligator",
+    "MONSTER": "mimic",
+    "CULTURE": "wood elf",
+    "JEWELRY": "collar",
+    "HEAD": "left side of his face",
+    "SEVERED": "left ear",
+    "LEG": "his right foot",
+    "ARM": "his right bicep",
+    "HAND": "thumb of his left hand",
+    "FOOT": "ankle of his left foot",
+    "JEWELTYPE": "amethyst",
+    "BODYSECTION": "wing",
+    "SYMBOLS": "Dragon\u0027s head",
+    "SIGILMEANING": "Sister"
+  },
+  {
+    "EYECOLOR": "Magenta",
+    "COLORSTD": "Pale Blue",
+    "COLORQUALITY": "faded",
+    "HAIRCOLOR": "Strawberry Blond",
+    "BUILDINFIRM": "sluggish",
+    "BUILDSMALL": "agile",
+    "BUILDLARGE": "meaty",
+    "SKIN": "Pale Blue",
+    "SCALES": "Marbled",
+    "FRILL": "bony crest",
+    "MARKSONBODY": "light freckles",
+    "MARKSONFACE": "patch over left eye",
+    "CLOTHING": "surcoat",
+    "SMALLMARKS": "additional finger on one hand",
+    "DISEASESDEFORM": "necrosis",
+    "POISONS": "purple worm poison",
+    "BEASTQUAL": "red",
+    "DANGANIMAL": "bear",
+    "MONSTER": "owlbear",
+    "CULTURE": "sun elf",
+    "JEWELRY": "amulet",
+    "HEAD": "his forehead",
+    "SEVERED": "right ear",
+    "LEG": "his upper his left leg",
+    "ARM": "his right tricep",
+    "HAND": "index finger of his left hand",
+    "FOOT": "inside of his left foot",
+    "JEWELTYPE": "coin-crafted",
+    "SYMBOLS": "Horse",
+    "SIGILMEANING": "Brother"
+  },
+  {
+    "EYECOLOR": "Ivory",
+    "COLORSTD": "Magenta",
+    "COLORQUALITY": "fading",
+    "HAIRCOLOR": "Ash Brown",
+    "BUILDINFIRM": "emaciated",
+    "BUILDSMALL": "muscular",
+    "BUILDLARGE": "heavy",
+    "SKIN": "Savannah",
+    "SCALES": "Smoky",
+    "FRILL": "high crest",
+    "MARKSONBODY": "gouged",
+    "MARKSONFACE": "patch over right eye",
+    "CLOTHING": "corset",
+    "SMALLMARKS": "additional toe on one foot",
+    "POISONS": "oil of taggit",
+    "BEASTQUAL": "bronze",
+    "DANGANIMAL": "giant frog",
+    "MONSTER": "pseudodragon",
+    "CULTURE": "halfling",
+    "JEWELRY": "reliquary",
+    "HEAD": "right side of his neck",
+    "SEVERED": "tail",
+    "LEG": "his lower his left leg",
+    "ARM": "his right upper arm",
+    "HAND": "middle finger of his left hand",
+    "FOOT": "outside of his left foot",
+    "JEWELTYPE": "webbed",
+    "SYMBOLS": "Goblin\u0027s Head",
+    "SIGILMEANING": "Family"
+  },
+  {
+    "EYECOLOR": "Purple",
+    "COLORSTD": "Purple",
+    "COLORQUALITY": "translucent",
+    "HAIRCOLOR": "Ruddy Brown",
+    "BUILDINFIRM": "puny",
+    "BUILDSMALL": "solid",
+    "BUILDLARGE": "well-built",
+    "SKIN": "Light Green",
+    "SCALES": "Faded",
+    "FRILL": "low crest",
+    "MARKSONBODY": "light freckles",
+    "MARKSONFACE": "burn scars around left eye",
+    "CLOTHING": "cote",
+    "POISONS": "malyss root paste",
+    "BEASTQUAL": "silver",
+    "DANGANIMAL": "giant lizard",
+    "MONSTER": "kobold",
+    "CULTURE": "yuan-ti",
+    "JEWELRY": "choker",
+    "HEAD": "left side of his neck",
+    "SEVERED": "left wing",
+    "LEG": "his left calf",
+    "ARM": "his right shoulder",
+    "HAND": "little finger of his left hand",
+    "FOOT": "big toe of his left foot",
+    "JEWELTYPE": "copal",
+    "SYMBOLS": "Hanging Corpse",
+    "SIGILMEANING": "Baby"
+  },
+  {
+    "EYECOLOR": "Charcoal",
+    "COLORSTD": "Blue-green",
+    "COLORQUALITY": "rich",
+    "HAIRCOLOR": "Auburn",
+    "BUILDINFIRM": "gangly",
+    "BUILDSMALL": "athletic",
+    "BUILDLARGE": "ripped",
+    "SKIN": "Brown",
+    "FRILL": "long dewlap",
+    "MARKSONBODY": "raking scar",
+    "MARKSONFACE": "burn scars around right eye",
+    "CLOTHING": "surcoat",
+    "POISONS": "black lotus extract",
+    "BEASTQUAL": "great",
+    "DANGANIMAL": "wolf",
+    "MONSTER": "zombie",
+    "CULTURE": "merfolk",
+    "JEWELRY": "armlet",
+    "HEAD": "front of his neck",
+    "SEVERED": "right wing",
+    "LEG": "his left shin",
+    "ARM": "his right forearm",
+    "HAND": "all fingers and thumb of his left hand",
+    "FOOT": "little toe of his left foot",
+    "JEWELTYPE": "brown leather",
+    "SYMBOLS": "Spear",
+    "SIGILMEANING": "Elemental"
+  },
+  {
+    "EYECOLOR": "Steel Grey",
+    "COLORSTD": "Yellow-green",
+    "COLORQUALITY": "pale",
+    "HAIRCOLOR": "Copper Red",
+    "BUILDINFIRM": "lazy",
+    "BUILDSMALL": "average",
+    "BUILDLARGE": "broad",
+    "SKIN": "Light Magenta",
+    "FRILL": "large dewlap",
+    "MARKSONBODY": "dark freckles",
+    "MARKSONFACE": "port-wine stain around left eye",
+    "CLOTHING": "high boots",
+    "POISONS": "deathblade",
+    "BEASTQUAL": "legendary",
+    "DANGANIMAL": "buffalo",
+    "MONSTER": "lich",
+    "CULTURE": "dragonborn",
+    "JEWELRY": "bangle",
+    "SEVERED": "left horn",
+    "LEG": "outside of his left thigh",
+    "ARM": "his right wrist",
+    "HAND": "top of his both hands",
+    "FOOT": "all toes of his left foot",
+    "JEWELTYPE": "gray leather",
+    "SYMBOLS": "Sword",
+    "SIGILMEANING": "Divine"
+  },
+  {
+    "EYECOLOR": "Blue-green",
+    "COLORSTD": "Orange",
+    "COLORQUALITY": "metallic",
+    "HAIRCOLOR": "Bright Red",
+    "BUILDINFIRM": "unhealthy",
+    "BUILDSMALL": "slim",
+    "BUILDLARGE": "potbellied",
+    "SKIN": "Reddish-yellow",
+    "FRILL": "spiked dewlap",
+    "MARKSONBODY": "horrible burn scar",
+    "MARKSONFACE": "port-wine stain around right eye",
+    "CLOTHING": "journade",
+    "POISONS": "mummy rot",
+    "BEASTQUAL": "ancient",
+    "DANGANIMAL": "boar",
+    "MONSTER": "demilich",
+    "CULTURE": "gnoll",
+    "JEWELRY": "hairpin",
+    "SEVERED": "right horn",
+    "LEG": "his left knee",
+    "ARM": "his right elbow",
+    "HAND": "palm of his both hands",
+    "FOOT": "some toes of his left foot",
+    "JEWELTYPE": "copper",
+    "SYMBOLS": "Dagger",
+    "SIGILMEANING": "Magic"
+  },
+  {
+    "EYECOLOR": "Yellow-green",
+    "COLORSTD": "Red",
+    "COLORQUALITY": "shiny",
+    "HAIRCOLOR": "Flaming Red",
+    "BUILDINFIRM": "lethargic",
+    "BUILDSMALL": "wiry",
+    "BUILDLARGE": "heavyset",
+    "SKIN": "Tawny Beige",
+    "FRILL": "spiked frill",
+    "MARKSONBODY": "port-wine stain",
+    "MARKSONFACE": "lazy eyelid on right eye",
+    "BEASTQUAL": "young",
+    "DANGANIMAL": "pack of feral pigs",
+    "MONSTER": "mummy",
+    "JEWELRY": "tiara",
+    "LEG": "inside of his left thigh",
+    "ARM": "his entire right arm",
+    "HAND": "thumb of his both hands",
+    "FOOT": "top of both feet",
+    "JEWELTYPE": "pewter",
+    "SYMBOLS": "Bow and arrow",
+    "SIGILMEANING": "Arcane"
+  },
+  {
+    "EYECOLOR": "Orange",
+    "COLORSTD": "White",
+    "COLORQUALITY": "dull",
+    "HAIRCOLOR": "Wheaten Blond",
+    "BUILDINFIRM": "sickly",
+    "BUILDSMALL": "flabby",
+    "BUILDLARGE": "pudgy",
+    "SKIN": "Deep Russet",
+    "FRILL": "horned crest",
+    "MARKSONBODY": "terribly burn mark",
+    "MARKSONFACE": "lazy eyelid on left eye",
+    "BEASTQUAL": "shadow",
+    "DANGANIMAL": "flock of vultures",
+    "MONSTER": "purple worm",
+    "JEWELRY": "circlet",
+    "LEG": "his left buttocks",
+    "ARM": "his right hand",
+    "HAND": "index finger of his both hands",
+    "FOOT": "ankle of both feet",
+    "JEWELTYPE": "coral",
+    "SYMBOLS": "Deer",
+    "SIGILMEANING": "Float"
+  },
+  {
+    "EYECOLOR": "Red",
+    "COLORSTD": "Dark green",
+    "COLORQUALITY": "hazy",
+    "HAIRCOLOR": "Ginger Brown",
+    "BUILDINFIRM": "feeble",
+    "BUILDSMALL": "soft",
+    "BUILDLARGE": "powerful",
+    "SKIN": "Golden Brown",
+    "FRILL": "bubbled frill",
+    "MARKSONBODY": "large birthmark",
+    "MARKSONFACE": "cauliflower left ear",
+    "BEASTQUAL": "purple",
+    "DANGANIMAL": "gorilla",
+    "MONSTER": "shade",
+    "JEWELRY": "ring",
+    "LEG": "his left hip",
+    "ARM": "both of his hands",
+    "HAND": "middle finger of his both hands",
+    "FOOT": "inside of both feet",
+    "JEWELTYPE": "electrum",
+    "SYMBOLS": "Stag\u0027s head",
+    "SIGILMEANING": "Illusion"
+  },
+  {
+    "EYECOLOR": "Tan",
+    "COLORSTD": "Maroon",
+    "COLORQUALITY": "alloy",
+    "HAIRCOLOR": "Sandy Brown",
+    "BUILDINFIRM": "debilitated",
+    "BUILDSMALL": "healthy",
+    "BUILDLARGE": "staunch",
+    "SKIN": "Beige",
+    "FRILL": "bubbled crest",
+    "MARKSONBODY": "horrible burn scars",
+    "MARKSONFACE": "cauliflower right ear",
+    "BEASTQUAL": "crystal",
+    "DANGANIMAL": "swarm of insects",
+    "MONSTER": "carrion crawler",
+    "JEWELRY": "belly chain",
+    "LEG": "his left foot",
+    "ARM": "both of his arms",
+    "HAND": "little finger of his both hands",
+    "FOOT": "outside of both feet",
+    "JEWELTYPE": "shakudo",
+    "SYMBOLS": "Boar\u0027s head",
+    "SIGILMEANING": "Light"
+  },
+  {
+    "EYECOLOR": "White",
+    "COLORSTD": "Dark red",
+    "HAIRCOLOR": "Chestnut",
+    "BUILDINFIRM": "in poor health",
+    "BUILDSMALL": "able-bodied",
+    "BUILDLARGE": "beastly",
+    "SKIN": "Pale Green",
+    "FRILL": "spikes down spine",
+    "MARKSONBODY": "large scar",
+    "BEASTQUAL": "mountain",
+    "DANGANIMAL": "baboon",
+    "MONSTER": "ankheg",
+    "JEWELRY": "breastplate",
+    "LEG": "both of his upper legs",
+    "HAND": "all fingers and thumb of his both hands",
+    "FOOT": "big toes on both feet",
+    "JEWELTYPE": "blue shibuichi",
+    "SYMBOLS": "Lion\u0027s head",
+    "SIGILMEANING": "Darkness"
+  },
+  {
+    "EYECOLOR": "Black",
+    "COLORSTD": "Dark blue",
+    "HAIRCOLOR": "Russet Brown",
+    "BUILDINFIRM": "out of shape",
+    "BUILDSMALL": "limber",
+    "BUILDLARGE": "brawny",
+    "SKIN": "Fair",
+    "FRILL": "large plates down the back",
+    "MARKSONBODY": "clustered moles",
+    "BEASTQUAL": "hill",
+    "DANGANIMAL": "cheetah",
+    "MONSTER": "dragon turtle",
+    "JEWELRY": "brooch",
+    "LEG": "both of his lower legs",
+    "FOOT": "little toes on both feet",
+    "JEWELTYPE": "green shibuichi",
+    "SYMBOLS": "Kitten",
+    "SIGILMEANING": "Shadow"
+  },
+  {
+    "EYECOLOR": "Pink",
+    "COLORSTD": "Dark green",
+    "HAIRCOLOR": "Sable Brown",
+    "BUILDINFIRM": "unwell",
+    "BUILDSMALL": "medium",
+    "BUILDLARGE": "vigorous",
+    "SKIN": "Peach",
+    "MARKSONBODY": "dark spot",
+    "BEASTQUAL": "storm",
+    "DANGANIMAL": "crocodile",
+    "MONSTER": "giant",
+    "JEWELRY": "tusk ring",
+    "LEG": "both of his calfs",
+    "FOOT": "all toes on both feet",
+    "JEWELTYPE": "jade",
+    "SYMBOLS": "Puppy",
+    "SIGILMEANING": "Blade"
+  },
+  {
+    "EYECOLOR": "Opal",
+    "COLORSTD": "Dark grey",
+    "HAIRCOLOR": "Sorrel Brown",
+    "BUILDINFIRM": "ailing",
+    "BUILDSMALL": "slender",
+    "BUILDLARGE": "sinewy",
+    "SKIN": "Warm Brown",
+    "MARKSONBODY": "light spot",
+    "BEASTQUAL": "undead",
+    "DANGANIMAL": "leopard",
+    "MONSTER": "fomorian",
+    "JEWELRY": "ear spiral",
+    "LEG": "both of his shins",
+    "FOOT": "some toes on both feet",
+    "JEWELTYPE": "ebon shibuichi",
+    "SYMBOLS": "Zombie claw",
+    "SIGILMEANING": "Hammer"
+  },
+  {
+    "EYECOLOR": "Sapphire",
+    "COLORSTD": "Dark purple",
+    "HAIRCOLOR": "Jet Black",
+    "BUILDINFIRM": "peaked",
+    "BUILDLARGE": "big",
+    "SKIN": "Black",
+    "MARKSONBODY": "deep piercing scar",
+    "BEASTQUAL": "terrifying",
+    "DANGANIMAL": "panther",
+    "MONSTER": "ghoul",
+    "JEWELRY": "nipple shield",
+    "LEG": "outside of both of his thighs",
+    "JEWELTYPE": "garnet",
+    "SYMBOLS": "Skull",
+    "SIGILMEANING": "Animal"
+  },
+  {
+    "EYECOLOR": "Capri Blue",
+    "COLORSTD": "Light purple",
+    "HAIRCOLOR": "Raven",
+    "BUILDINFIRM": "shaky",
+    "BUILDLARGE": "hulking",
+    "SKIN": "Cool Sepia",
+    "MARKSONBODY": "arcane sigil",
+    "BEASTQUAL": "deadly",
+    "DANGANIMAL": "eel",
+    "MONSTER": "gnoll",
+    "JEWELRY": "chatelaine",
+    "LEG": "both of his knees",
+    "JEWELTYPE": "sapphire",
+    "SYMBOLS": "Skull and crossbones",
+    "SIGILMEANING": "Nature"
+  },
+  {
+    "EYECOLOR": "Black Diamond",
+    "COLORSTD": "Light brown",
+    "HAIRCOLOR": "Ash Gray",
+    "BUILDINFIRM": "unathletic",
+    "BUILDLARGE": "burly",
+    "SKIN": "Reddish Gray",
+    "MARKSONBODY": "goring scar",
+    "BEASTQUAL": "dire",
+    "DANGANIMAL": "hammerhead shark",
+    "MONSTER": "gorgon",
+    "JEWELRY": "prayer beads",
+    "LEG": "inside of both of his thighs",
+    "JEWELTYPE": "sunstone",
+    "SYMBOLS": "Crossbow",
+    "SIGILMEANING": "Monster"
+  },
+  {
+    "EYECOLOR": "Crystal",
+    "COLORSTD": "Tan",
+    "HAIRCOLOR": "Iron Gray",
+    "BUILDINFIRM": "fragile",
+    "BUILDLARGE": "sturdy",
+    "SKIN": "Bronze",
+    "MARKSONBODY": "divine sigil",
+    "BEASTQUAL": "pygmy",
+    "DANGANIMAL": "giant crab",
+    "MONSTER": "roc bird",
+    "JEWELRY": "prayer rope",
+    "LEG": "both buttocks",
+    "JEWELTYPE": "tiger\u0027s eye",
+    "SYMBOLS": "Elven maiden",
+    "SIGILMEANING": "Silent"
+  },
+  {
+    "EYECOLOR": "Emerald",
+    "COLORSTD": "Light grey",
+    "HAIRCOLOR": "Salt and Pepper",
+    "BUILDLARGE": "stout",
+    "SKIN": "Orange-red",
+    "MARKSONBODY": "small bite scar",
+    "BEASTQUAL": "water",
+    "DANGANIMAL": "hyena",
+    "MONSTER": "satyr",
+    "JEWELRY": "puzzle ring",
+    "LEG": "both hips",
+    "JEWELTYPE": "topaz",
+    "SYMBOLS": "Wizard\u0027s tower",
+    "SIGILMEANING": "Unseen"
+  },
+  {
+    "EYECOLOR": "Mocca",
+    "COLORSTD": "Light orange",
+    "HAIRCOLOR": "Steel Gray",
+    "BUILDLARGE": "thickset",
+    "SKIN": "Ruddy Gray",
+    "MARKSONBODY": "very large mole",
+    "BEASTQUAL": "ice",
+    "DANGANIMAL": "horn shark",
+    "MONSTER": "giant salamander",
+    "JEWELRY": "signet ring",
+    "LEG": "both of his feet",
+    "JEWELTYPE": "tourmaline",
+    "SYMBOLS": "Castle",
+    "SIGILMEANING": "Hero"
+  },
+  {
+    "EYECOLOR": "Olivine",
+    "COLORSTD": "Dark orange",
+    "HAIRCOLOR": "Snow White",
+    "SKIN": "Golden Brown",
+    "MARKSONBODY": "hair patch birthmark",
+    "BEASTQUAL": "fire",
+    "DANGANIMAL": "jaguar",
+    "MONSTER": "giant eagle",
+    "JEWELRY": "thumb ring",
+    "LEG": "his entire right leg",
+    "JEWELTYPE": "turquoise",
+    "SYMBOLS": "Boat",
+    "SIGILMEANING": "Champion"
+  },
+  {
+    "EYECOLOR": "Rose",
+    "COLORSTD": "Burnt orange",
+    "HAIRCOLOR": "Pearl White",
+    "SKIN": "White",
+    "MARKSONBODY": "large scar",
+    "BEASTQUAL": "earth",
+    "DANGANIMAL": "giant octopus",
+    "MONSTER": "treant",
+    "JEWELRY": "locket",
+    "LEG": "his entire left leg",
+    "JEWELTYPE": "malachite",
+    "SYMBOLS": "Sailing Ship",
+    "SIGILMEANING": "Noble"
+  },
+  {
+    "EYECOLOR": "Green Opal",
+    "COLORSTD": "Charcoal",
+    "HAIRCOLOR": "Purple",
+    "SKIN": "Rich Umber",
+    "BEASTQUAL": "wind",
+    "DANGANIMAL": "giant squid",
+    "MONSTER": "xorn",
+    "JEWELRY": "emblem",
+    "LEG": "all of both of his legs",
+    "JEWELTYPE": "moonstone",
+    "SYMBOLS": "Heart",
+    "SIGILMEANING": "Brave"
+  },
+  {
+    "EYECOLOR": "Indigo",
+    "HAIRCOLOR": "Blue",
+    "SKIN": "Coral",
+    "BEASTQUAL": "air",
+    "DANGANIMAL": "orangutan",
+    "MONSTER": "wyvern",
+    "JEWELRY": "pendant",
+    "JEWELTYPE": "obsidian",
+    "SYMBOLS": "Cross",
+    "SIGILMEANING": "Lost"
+  },
+  {
+    "EYECOLOR": "Dark Indigo",
+    "HAIRCOLOR": "Light Blue",
+    "SKIN": "Copper",
+    "BEASTQUAL": "electric",
+    "DANGANIMAL": "hippopotamus",
+    "MONSTER": "wraith",
+    "JEWELRY": "medallion",
+    "JEWELTYPE": "onyx",
+    "SYMBOLS": "King\u0027s crown",
+    "SIGILMEANING": "Forgotten"
+  },
+  {
+    "EYECOLOR": "Cobalt",
+    "HAIRCOLOR": "Green",
+    "SKIN": "Light Brown",
+    "BEASTQUAL": "rabid",
+    "DANGANIMAL": "giant porcupine",
+    "MONSTER": "vampire",
+    "JEWELRY": "cameo",
+    "JEWELTYPE": "opal",
+    "SYMBOLS": "Knight",
+    "SIGILMEANING": "Life"
+  },
+  {
+    "EYECOLOR": "Mint Alabaster",
+    "HAIRCOLOR": "Dark Green",
+    "SKIN": "Olive",
+    "BEASTQUAL": "feral",
+    "DANGANIMAL": "giant scorpion",
+    "MONSTER": "skeleton",
+    "JEWELRY": "rope necklace",
+    "JEWELTYPE": "carnelian",
+    "SYMBOLS": "Knight\u0027s helm",
+    "SIGILMEANING": "Death"
+  },
+  {
+    "EYECOLOR": "Fuchsia",
+    "HAIRCOLOR": "Yellow-green",
+    "SKIN": "Pink",
+    "BEASTQUAL": "woolly",
+    "DANGANIMAL": "rattlesnake",
+    "MONSTER": "slaad",
+    "JEWELRY": "jewelled caul",
+    "JEWELTYPE": "quartz",
+    "SYMBOLS": "Unicorn\u0027s head",
+    "SIGILMEANING": "Fear"
+  },
+  {
+    "EYECOLOR": "Tanzanite",
+    "HAIRCOLOR": "Gold",
+    "SKIN": "Tannish-yellow",
+    "DANGANIMAL": "moose",
+    "MONSTER": "rust monster",
+    "JEWELRY": "plain ring band",
+    "JEWELTYPE": "rose quartz",
+    "SYMBOLS": "Catapult",
+    "SIGILMEANING": "Insane"
+  },
+  {
+    "EYECOLOR": "Amethyst",
+    "HAIRCOLOR": "Silver",
+    "SKIN": "Yellow",
+    "DANGANIMAL": "elk",
+    "MONSTER": "specter",
+    "JEWELTYPE": "marble",
+    "SYMBOLS": "Horse\u0027s head",
+    "SIGILMEANING": "Insanity"
+  },
+  {
+    "EYECOLOR": "Red",
+    "HAIRCOLOR": "Charcoal",
+    "SKIN": "Dark Red",
+    "DANGANIMAL": "giant vulture",
+    "MONSTER": "medusa",
+    "JEWELTYPE": "seashell",
+    "SYMBOLS": "Lion\u0027s paw",
+    "SIGILMEANING": "Healing"
+  },
+  {
+    "EYECOLOR": "Amber",
+    "HAIRCOLOR": "Ebon",
+    "SKIN": "Maroon",
+    "DANGANIMAL": "stingray",
+    "MONSTER": "hobgoblin",
+    "JEWELTYPE": "praziolite",
+    "SYMBOLS": "Gauntlet",
+    "SIGILMEANING": "Immortality"
+  },
+  {
+    "EYECOLOR": "Avocado",
+    "HAIRCOLOR": "Bronze",
+    "SKIN": "Smoky Red",
+    "DANGANIMAL": "tiger shark",
+    "MONSTER": "hydra",
+    "JEWELTYPE": "human bone",
+    "SYMBOLS": "Tiara",
+    "SIGILMEANING": "Immortal"
+  },
+  {
+    "EYECOLOR": "Ruby",
+    "HAIRCOLOR": "Aged White",
+    "DANGANIMAL": "vulture",
+    "MONSTER": "bugbear",
+    "JEWELTYPE": "animal bone",
+    "SYMBOLS": "Diamond",
+    "SIGILMEANING": "Protection"
+  },
+  {
+    "HAIRCOLOR": "Dark Blue",
+    "DANGANIMAL": "water buffalo",
+    "MONSTER": "ghost",
+    "JEWELTYPE": "clam shell",
+    "SYMBOLS": "Clover",
+    "SIGILMEANING": "Guard"
+  },
+  {
+    "HAIRCOLOR": "Dark Brown",
+    "DANGANIMAL": "weasel",
+    "MONSTER": "troll",
+    "JEWELTYPE": "puka shell",
+    "SYMBOLS": "4-leaf clover",
+    "SIGILMEANING": "Feeble"
+  },
+  {
+    "HAIRCOLOR": "Dark Red",
+    "DANGANIMAL": "wildebeest",
+    "MONSTER": "ogre",
+    "JEWELTYPE": "crystal",
+    "SYMBOLS": "Horse and rider",
+    "SIGILMEANING": "Ancient"
+  },
+  {
+    "HAIRCOLOR": "Blood Red",
+    "DANGANIMAL": "phase spider",
+    "MONSTER": "minotaur",
+    "JEWELTYPE": "glass",
+    "SYMBOLS": "Spiral",
+    "SIGILMEANING": "Zone"
+  },
+  {
+    "HAIRCOLOR": "Maroon",
+    "DANGANIMAL": "zebra",
+    "MONSTER": "ankheg",
+    "JEWELTYPE": "silk",
+    "SYMBOLS": "Square",
+    "SIGILMEANING": "Blind"
+  },
+  {
+    "HAIRCOLOR": "Dark Purple",
+    "DANGANIMAL": "zebra shark",
+    "MONSTER": "bulette",
+    "JEWELTYPE": "redwood",
+    "SYMBOLS": "Cube",
+    "SIGILMEANING": "Deaf"
+  },
+  {
+    "HAIRCOLOR": "Deep Magenta",
+    "DANGANIMAL": "yak",
+    "MONSTER": "chimera",
+    "JEWELTYPE": "oakwood",
+    "SYMBOLS": "Circle",
+    "SIGILMEANING": "Cursed"
+  },
+  {
+    "HAIRCOLOR": "Dark Teal",
+    "DANGANIMAL": "blood hawk",
+    "MONSTER": "ettin",
+    "JEWELTYPE": "maplewood",
+    "SYMBOLS": "Crescent moon",
+    "SIGILMEANING": "Talking"
+  },
+  {
+    "HAIRCOLOR": "Shadow Brown",
+    "DANGANIMAL": "hawk",
+    "MONSTER": "giant spider",
+    "SYMBOLS": "Sun symbol",
+    "SIGILMEANING": "Whispering"
+  },
+  {
+    "HAIRCOLOR": "Shadow",
+    "DANGANIMAL": "giant bat",
+    "MONSTER": "giant wasp",
+    "SYMBOLS": "Scythe",
+    "SIGILMEANING": "Rot"
+  },
+  {
+    "DANGANIMAL": "ape",
+    "MONSTER": "elemental",
+    "SYMBOLS": "Death figure",
+    "SIGILMEANING": "Rotten"
+  },
+  {
+    "DANGANIMAL": "giant centipede",
+    "MONSTER": "winter wolf",
+    "SYMBOLS": "Naked woman",
+    "SIGILMEANING": "Decay"
+  },
+  {
+    "DANGANIMAL": "constrictor snake",
+    "MONSTER": "worg",
+    "SYMBOLS": "Naked man",
+    "SIGILMEANING": "Guardian"
+  },
+  {
+    "DANGANIMAL": "swarm of vipers",
+    "SYMBOLS": "Seashell",
+    "SIGILMEANING": "Psyche"
+  },
+  {
+    "DANGANIMAL": "giant owl",
+    "SYMBOLS": "Sea Wave",
+    "SIGILMEANING": "Psychic"
+  },
+  {
+    "DANGANIMAL": "giant toad",
+    "SYMBOLS": "Tornado",
+    "SIGILMEANING": "Mental"
+  },
+  {
+    "DANGANIMAL": "tiger",
+    "SIGILMEANING": "Cerebral"
+  },
+  {
+    "DANGANIMAL": "mammoth",
+    "SIGILMEANING": "Brain"
+  },
+  {
+    "DANGANIMAL": "swarm of quippers",
+    "SIGILMEANING": "Thinking"
+  },
+  {
+    "DANGANIMAL": "giant fire beetle",
+    "SIGILMEANING": "Thought"
+  },
+  {
+    "DANGANIMAL": "swarm of rats",
+    "SIGILMEANING": "Magnificent"
+  },
+  {
+    "DANGANIMAL": "giant eel",
+    "SIGILMEANING": "Symbol"
+  },
+  {
+    "SIGILMEANING": "Teleport"
+  },
+  {
+    "SIGILMEANING": "Force"
+  },
+  {
+    "SIGILMEANING": "Cage"
+  },
+  {
+    "SIGILMEANING": "Food"
+  },
+  {
+    "SIGILMEANING": "Water"
+  },
+  {
+    "SIGILMEANING": "Ale"
+  },
+  {
+    "SIGILMEANING": "Shield"
+  },
+  {
+    "SIGILMEANING": "Armor"
+  },
+  {
+    "SIGILMEANING": "Trap"
+  },
+  {
+    "SIGILMEANING": "Trapped"
+  },
+  {
+    "SIGILMEANING": "Living"
+  },
+  {
+    "SIGILMEANING": "Dead"
+  },
+  {
+    "SIGILMEANING": "Lesser"
+  },
+  {
+    "SIGILMEANING": "Greator"
+  },
+  {
+    "SIGILMEANING": "Warding"
+  },
+  {
+    "SIGILMEANING": "Dancing"
+  },
+  {
+    "SIGILMEANING": "Knocking"
+  },
+  {
+    "SIGILMEANING": "Stone"
+  },
+  {
+    "SIGILMEANING": "Wood"
+  },
+  {
+    "SIGILMEANING": "Charming"
+  },
+  {
+    "SIGILMEANING": "Feather"
+  },
+  {
+    "SIGILMEANING": "Short"
+  },
+  {
+    "SIGILMEANING": "Long"
+  },
+  {
+    "SIGILMEANING": "Large"
+  },
+  {
+    "SIGILMEANING": "Illusory"
+  },
+  {
+    "SIGILMEANING": "Thunder"
+  },
+  {
+    "SIGILMEANING": "Crying"
+  },
+  {
+    "SIGILMEANING": "Sobbing"
+  },
+  {
+    "SIGILMEANING": "Angry"
+  },
+  {
+    "SIGILMEANING": "Polymorph"
+  },
+  {
+    "SIGILMEANING": "Confusion"
+  },
+  {
+    "SIGILMEANING": "Circle"
+  },
+  {
+    "SIGILMEANING": "Square"
+  },
+  {
+    "SIGILMEANING": "Pyramid"
+  },
+  {
+    "SIGILMEANING": "Triangle"
+  },
+  {
+    "SIGILMEANING": "Hold"
+  },
+  {
+    "SIGILMEANING": "Dancing"
+  },
+  {
+    "SIGILMEANING": "Summoner"
+  },
+  {
+    "SIGILMEANING": "Conjurer"
+  },
+  {
+    "SIGILMEANING": "Illusionist"
+  },
+  {
+    "SIGILMEANING": "Healer"
+  },
+  {
+    "SIGILMEANING": "Necromancer"
+  },
+  {
+    "SIGILMEANING": "Wizard"
+  },
+  {
+    "SIGILMEANING": "Phantasm"
+  },
+  {
+    "SIGILMEANING": "Illusion"
+  },
+  {
+    "SIGILMEANING": "Enchantress"
+  },
+  {
+    "SIGILMEANING": "Warrior"
+  },
+  {
+    "SIGILMEANING": "Paladin"
+  },
+  {
+    "SIGILMEANING": "Damned"
+  },
+  {
+    "SIGILMEANING": "Blessed"
+  },
+  {
+    "SIGILMEANING": "Cursed"
+  },
+  {
+    "SIGILMEANING": "Sea"
+  },
+  {
+    "SIGILMEANING": "Oceans"
+  },
+  {
+    "SIGILMEANING": "Forests"
+  },
+  {
+    "SIGILMEANING": "Woods"
+  },
+  {
+    "SIGILMEANING": "Anger"
+  },
+  {
+    "SIGILMEANING": "Bard"
+  },
+  {
+    "SIGILMEANING": "Thief"
+  },
+  {
+    "SIGILMEANING": "Rogue"
+  },
+  {
+    "SIGILMEANING": "Assassin"
+  },
+  {
+    "SIGILMEANING": "Caves"
+  },
+  {
+    "SIGILMEANING": "Unwanted"
+  },
+  {
+    "SIGILMEANING": "Few"
+  },
+  {
+    "SIGILMEANING": "Proud"
+  },
+  {
+    "SIGILMEANING": "Unending"
+  },
+  {
+    "SIGILMEANING": "Dancer"
+  },
+  {
+    "SIGILMEANING": "Keeper"
+  },
+  {
+    "SIGILMEANING": "Protector"
+  },
+  {
+    "SIGILMEANING": "Protectorate"
+  }
+]

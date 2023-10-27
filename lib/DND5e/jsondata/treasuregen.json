@@ -1,0 +1,52 @@
+[
+  {
+    "ID": "1",
+    "CHALLENGE_RATING": 4,
+    "ROLL": 30,
+    "COPPER": "5d6",
+    "SILVER": "0",
+    "ELECTRUM": "0",
+    "GOLD": "0",
+    "PLATINUM": "0"
+  },
+  {
+    "ID": "2",
+    "CHALLENGE_RATING": 4,
+    "ROLL": 60,
+    "COPPER": "5d6",
+    "SILVER": "4d6",
+    "ELECTRUM": "3d6",
+    "GOLD": "3d6",
+    "PLATINUM": "1d6"
+  },
+  {
+    "ID": "2",
+    "CHALLENGE_RATING": 4,
+    "ROLL": 60,
+    "COPPER": "5d6",
+    "SILVER": "4d6",
+    "ELECTRUM": "3d6",
+    "GOLD": "3d6",
+    "PLATINUM": "1d6"
+  },
+  {
+    "ID": "2",
+    "CHALLENGE_RATING": 4,
+    "ROLL": 60,
+    "COPPER": "5d6",
+    "SILVER": "4d6",
+    "ELECTRUM": "3d6",
+    "GOLD": "3d6",
+    "PLATINUM": "1d6"
+  },
+  {
+    "ID": "2",
+    "CHALLENGE_RATING": 4,
+    "ROLL": 60,
+    "COPPER": "5d6",
+    "SILVER": "4d6",
+    "ELECTRUM": "3d6",
+    "GOLD": "3d6",
+    "PLATINUM": "1d6"
+  }
+]

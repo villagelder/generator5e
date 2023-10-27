@@ -1,0 +1,298 @@
+[
+  {
+    "ID": "1",
+    "ITEM": "Alchemist\u0027s supplies",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "50",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "2",
+    "ITEM": "Brewer\u0027s supplies",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "20",
+    "WEIGHT": "9",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "3",
+    "ITEM": "Calligrapher\u0027s supplies",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "4",
+    "ITEM": "Carpenter\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "8",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "5",
+    "ITEM": "Cartographer\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "15",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "6",
+    "ITEM": "Cobbler\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "5",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "7",
+    "ITEM": "Cook\u0027s utensils",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "1",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "8",
+    "ITEM": "Glassblower\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "30",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "9",
+    "ITEM": "Jeweler\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "10",
+    "ITEM": "Leatherworker\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "5",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "11",
+    "ITEM": "Disguise Kit",
+    "TYPE": "Kit",
+    "COST": "25",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "12",
+    "ITEM": "Forgery Kit",
+    "TYPE": "Kit",
+    "COST": "15",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "13",
+    "ITEM": "Mason\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "10",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "14",
+    "ITEM": "Painter\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "10",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "15",
+    "ITEM": "Potter\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "10",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "16",
+    "ITEM": "Smith\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "20",
+    "WEIGHT": "8",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "17",
+    "ITEM": "Tinker\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "50",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "18",
+    "ITEM": "Weaver\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "19",
+    "ITEM": "Woodcarver\u0027s tools",
+    "TYPE": "Artisan\u0027s tools",
+    "COST": "1",
+    "WEIGHT": "5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "20",
+    "ITEM": "Dice Set",
+    "TYPE": "Gaming Set",
+    "COST": "0.1",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "21",
+    "ITEM": "Dragonchess set",
+    "TYPE": "Gaming Set",
+    "COST": "1",
+    "WEIGHT": "0.5",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "22",
+    "ITEM": "Playing card set",
+    "TYPE": "Gaming Set",
+    "COST": "0.5",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "23",
+    "ITEM": "Three-Dragon Ante set",
+    "TYPE": "Gaming Set",
+    "COST": "1",
+    "WEIGHT": "0.1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "24",
+    "ITEM": "Herbalism Kit",
+    "TYPE": "Kit",
+    "COST": "5",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "25",
+    "ITEM": "Bagpipes",
+    "TYPE": "Musical instrument",
+    "COST": "30",
+    "WEIGHT": "6",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "26",
+    "ITEM": "Drum",
+    "TYPE": "Musical instrument",
+    "COST": "6",
+    "WEIGHT": "3",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "27",
+    "ITEM": "Dulcimer",
+    "TYPE": "Musical instrument",
+    "COST": "25",
+    "WEIGHT": "10",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "28",
+    "ITEM": "Flute",
+    "TYPE": "Musical instrument",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "29",
+    "ITEM": "Lute",
+    "TYPE": "Musical instrument",
+    "COST": "35",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "30",
+    "ITEM": "Lyre",
+    "TYPE": "Musical instrument",
+    "COST": "30",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "31",
+    "ITEM": "Horn",
+    "TYPE": "Musical instrument",
+    "COST": "3",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "32",
+    "ITEM": "Pan flute",
+    "TYPE": "Musical instrument",
+    "COST": "12",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "33",
+    "ITEM": "Shawm",
+    "TYPE": "Musical instrument",
+    "COST": "2",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "34",
+    "ITEM": "Viol",
+    "TYPE": "Musical instrument",
+    "COST": "30",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "35",
+    "ITEM": "Navigator\u0027s tools",
+    "TYPE": "Tools",
+    "COST": "25",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "36",
+    "ITEM": "Poisoner\u0027s kit",
+    "TYPE": "Kit",
+    "COST": "50",
+    "WEIGHT": "2",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "ID": "37",
+    "ITEM": "Thieves\u0027 tools",
+    "TYPE": "Tools",
+    "COST": "25",
+    "WEIGHT": "1",
+    "SOURCE": "PLHBK"
+  }
+]

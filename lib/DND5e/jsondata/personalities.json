@@ -1,0 +1,5484 @@
+[
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Disciple",
+    "DESCRIPTION": "I idolize a particular hero of my faith, and constantly refer to that person\u0027s deeds and example.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Empathetic",
+    "DESCRIPTION": "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Seer",
+    "DESCRIPTION": "I see omens in every event and action. The gods try to speak to us, we just need to listen.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Optimistic",
+    "DESCRIPTION": "Nothing can shake my optimistic attitude.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Anecdotal",
+    "DESCRIPTION": "I quote (or misquote) sacred texts and proverbs in almost every situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Receptive",
+    "DESCRIPTION": "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Ostentatious",
+    "DESCRIPTION": "I\u0027ve enjoyed fine food, drink, and high society among my temple\u0027s elite. Rough living grates on me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Cloistered",
+    "DESCRIPTION": "I\u0027ve spent so long in the temples that I have little practical experience dealing with people in the outside world.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Tradition",
+    "DESCRIPTION": "The ancient traditions of worship and sacrifice must be preserved and upheld.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Charity",
+    "DESCRIPTION": "I always try to help those in need, no matter what the personal cost.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Change",
+    "DESCRIPTION": "We must help bring about the changes the gods are constantly working in the world.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Power",
+    "DESCRIPTION": "I hope to one day rise to the top of my faiths religious hierarchy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Faith",
+    "DESCRIPTION": "I trust that my deity will guide my actions, I have faith that if I work hard, things will go well.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Ancient Relic",
+    "DESCRIPTION": "I would die to recover an ancient relic of my faith that was lost long ago.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Revenge",
+    "DESCRIPTION": "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Life Debt",
+    "DESCRIPTION": "I owe my life to the priest who took me in when my parents died.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Ignoble",
+    "DESCRIPTION": "Everything I do is for the common people.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Temple Defense",
+    "DESCRIPTION": "I will do anything to protect the temple where I served.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Sacred Text",
+    "DESCRIPTION": "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Self-righteous",
+    "DESCRIPTION": "I judge others harshly, and myself even more severely.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Naïve",
+    "DESCRIPTION": "I put too much trust in those who wield power within\nmy temple’s hierarchy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Trusting",
+    "DESCRIPTION": "My piety sometimes leads me to blindly trust those that profess faith in my god.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Rigid",
+    "DESCRIPTION": "I am inflexible in my thinking.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Suspicious",
+    "DESCRIPTION": "I am suspicious of strangers and expect the worst of them.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Acolyte",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Beset",
+    "DESCRIPTION": "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Cheat",
+    "DESCRIPTION": "I cheat at games of chance.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Forge",
+    "DESCRIPTION": "I shave coins or forge documents.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Prey",
+    "DESCRIPTION": "I insinuate myself into people\u0027s lives to prey on their weakness and secure their fortunes.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Disguise",
+    "DESCRIPTION": "I put on new identities like clothes.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Pickpocket",
+    "DESCRIPTION": "I run sleight-of-hand cons on street corners.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Scam",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Fakery",
+    "DESCRIPTION": "I convince people that worthless junk is worth their hard-earned money.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Lover",
+    "DESCRIPTION": "I fall in and out of love easily, and am always pursuing someone.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Joker",
+    "DESCRIPTION": "I have a joke for every occasion, especially occasions where humor is inappropriate.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Flatterer",
+    "DESCRIPTION": "Flattery is my preferred trick for getting what I want.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Gambler",
+    "DESCRIPTION": "I’m a born gambler who can\u0027t resist taking a risk for a potential payoff.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Liar",
+    "DESCRIPTION": "I lie about almost everything, even when there’s no good reason to.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Indignant",
+    "DESCRIPTION": "Sarcasm and insults are my weapons of choice.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Perfidious",
+    "DESCRIPTION": "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Kleptomaniac",
+    "DESCRIPTION": "I pocket anything I see that might have some value.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Independence",
+    "DESCRIPTION": "I am a free spirit— no one tells me what to do. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Fairness",
+    "DESCRIPTION": "I never target people who can’t afford to lose a few coins. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Charity",
+    "DESCRIPTION": "I distribute the money I acquire to the people who really need it. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Creativity",
+    "DESCRIPTION": "I never run the same con twice. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Friendship",
+    "DESCRIPTION": "Material goods come and go. Bonds of friendship last forever. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I’m determined to make something of myself. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Elusion",
+    "DESCRIPTION": "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Despisable Mentor",
+    "DESCRIPTION": "I owe everything to my mentor—a horrible person who’s probably rotting in jail somewhere.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Abject Parent",
+    "DESCRIPTION": "Somewhere out there, I have a child who doesn’t know me. I’m making the world better for him or her.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Lost Regality",
+    "DESCRIPTION": "I come from a noble family, and one day I’ll reclaim my lands and title from those who stole them from me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Retribution",
+    "DESCRIPTION": "A powerful person killed someone I love. Some day soon, I’ll have my revenge.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Amends",
+    "DESCRIPTION": "I swindled and ruined a person who didn’t deserve it. I seek to atone for my misdeeds but might never be able to forgive myself.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Amorous",
+    "DESCRIPTION": "I can’t resist a pretty face.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Irresponsible",
+    "DESCRIPTION": "I\u0027m always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in..",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Egoistic",
+    "DESCRIPTION": "I’m convinced that no one could ever fool me the way I fool others.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Greedy",
+    "DESCRIPTION": "I’m too greedy for my own good. I can’t resist taking a risk if there’s money involved.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Misanthropic",
+    "DESCRIPTION": "I can’t resist swindling people who are more powerful than me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Charlatan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Cowardly",
+    "DESCRIPTION": "I hate to admit it and will hate myself for it, but I\u0027ll run and preserve my own hide if the going gets tough.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Blackmailer",
+    "DESCRIPTION": "You extort others for payments through intimidation and threats of injury.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Burglar",
+    "DESCRIPTION": "You break into others\u0027 homes and shops to steal their valuables.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Enforcer",
+    "DESCRIPTION": "You are the strong arm for a crime boss, terrorizing and harming individuals for crossing your boss.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Fence",
+    "DESCRIPTION": "You are a distributor for buying and selling stolen goods.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Highway robber",
+    "DESCRIPTION": "You skulk the major roadways to pounce on unguarded travelers and caravans to steal their valuables.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Hired killer",
+    "DESCRIPTION": "You are contracted when other criminals want someone deprived of life, and you are just the person for the job.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Pickpocket",
+    "DESCRIPTION": "You slink the streets of markets and villages deftly lifting the coin purses and jewelry from unsuspecting villagers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Smuggler",
+    "DESCRIPTION": "You specialize in importing and exporting unlawful goods between kingdoms.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Calculating",
+    "DESCRIPTION": "I always have a plan for what to do when things go wrong.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Unconcerned",
+    "DESCRIPTION": "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Discerning",
+    "DESCRIPTION": "The first thing I do in a new place is note the locations of everything valuable - or where such things could be hidden.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Affable",
+    "DESCRIPTION": "I would rather make a new friend than a new enemy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Mistrustful",
+    "DESCRIPTION": "I am incredibly slow to trust. Those who seem the fairest often have the most to hide.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Reckless",
+    "DESCRIPTION": "I don\u0027t pay attention to the risks in a situation. Never tell me the odds.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Headstrong",
+    "DESCRIPTION": "The best way to get me to do something is to tell me I can\u0027t do it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Hothead",
+    "DESCRIPTION": "I blow up at the slightest insult.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Honor",
+    "DESCRIPTION": "I don’t steal from others in the trade. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "Chains are meant to be broken, as are those who would forge them. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Charity",
+    "DESCRIPTION": "I steal from the wealthy so that I can help people in need. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Greed",
+    "DESCRIPTION": "I will do whatever it takes to become wealthy. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Redemption",
+    "DESCRIPTION": "There’s a spark of good in everyone. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Beholden",
+    "DESCRIPTION": "I’m trying to pay off an old debt I owe to a generous benefactor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Supportive",
+    "DESCRIPTION": "My ill-gotten gains go to support my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Requital",
+    "DESCRIPTION": "Something important was taken from me, and I aim to steal it back.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Paramount",
+    "DESCRIPTION": "I will become the greatest thief that ever lived.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Redemption",
+    "DESCRIPTION": "I’m guilty of a terrible crime. I hope I can redeem myself for it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Fatal mistake",
+    "DESCRIPTION": "Someone I loved died because of a mistake I made. That will never happen again.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Obsessive",
+    "DESCRIPTION": "When I see something valuable, I can’t think about anything but how to steal it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Selfish",
+    "DESCRIPTION": "When faced with a choice between money and my friends, I usually choose the money.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Ingenuous",
+    "DESCRIPTION": "If there’s a plan, I’ll forget it. If I don’t forget it, I’ll ignore it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Apparent",
+    "DESCRIPTION": "I have a “tell” that reveals when I\u0027m lying.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Recreant",
+    "DESCRIPTION": "I turn tail and run when things look bad.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Criminal",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Pernicious",
+    "DESCRIPTION": "An innocent person is in prison for a crime that I\ncommitted. I’m okay with that.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Actor",
+    "DESCRIPTION": "You take on fictional roles and reinact their story before your audience in dramatic, comedic, tragic, or inspirational fashion.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Dancer",
+    "DESCRIPTION": "You rhytmically move your body to the music, leaping and skipping with excitement and emotion before your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Fire-eater",
+    "DESCRIPTION": "You daringly play with wands of fire, often swaying them to the rhythms of music before your and climatically swalling them before your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Jester",
+    "DESCRIPTION": "You play the part of a fool or clown with witticisms, jokes, and pranks for the delight of your audience, particularly children.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Juggler",
+    "DESCRIPTION": "Your delight your audience by throwing (often in simultaneous motion), catching, or balancing a variety of objects.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Instrumentalist",
+    "DESCRIPTION": "You play a myriad songs on a musical instrument (or multiple instruments) with skill for the pleasure of your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Poet",
+    "DESCRIPTION": "You are an author and orator of literary works with a rhythmical composition, telling of ancient kingdoms and chivalric affairs.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Singer",
+    "DESCRIPTION": "You are a skilled singer serenading your audience with beautiful and dramatic ballads of glory, honor, and lost love.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Storyteller",
+    "DESCRIPTION": "You orate dramatic tales of bygone battles, ghostly apparitions, and harrowing adventures with breathtaking skill for your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Routine",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Tumbler",
+    "DESCRIPTION": "You are a skilled gymnast using your body in daring athletic performance to jump, tumble, dodge, and catch for your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Narrator",
+    "DESCRIPTION": "I know a story relevant to almost every situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Gossiper",
+    "DESCRIPTION": "Whenever I come to a new place, I collect local rumors and spread gossip.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Romantic",
+    "DESCRIPTION": "I’m a hopeless romantic, always searching for that “special someone.”",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Affable",
+    "DESCRIPTION": "Nobody stays angry at me or around me for long, since I can defuse any amount of tension.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Banterer",
+    "DESCRIPTION": "I love a good insult, even one directed at me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Ostentatious",
+    "DESCRIPTION": "I get bitter if I’m not the center of attention.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Perfectionist",
+    "DESCRIPTION": "I’ll settle for nothing less than perfection.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Fickle",
+    "DESCRIPTION": "I change my mood or my mind as quickly as I change key in a song.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Beauty",
+    "DESCRIPTION": "When I perform, I make the world better than it was. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Tradition",
+    "DESCRIPTION": "The stories, legends, and songs o f the past must never be forgotten, for they teach us who we are. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Creativity",
+    "DESCRIPTION": "The world is in need of new ideas and bold action. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Greed",
+    "DESCRIPTION": "I’m only in it for the money and fame. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I like seeing the smiles on people’s faces when I perform. That’s all that matters. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Honesty",
+    "DESCRIPTION": "Art should reflect the soul; it should come from within and reveal who we really are. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Forlorn",
+    "DESCRIPTION": "My instrument is my most treasured possession, and it reminds me of someone I love.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Taken",
+    "DESCRIPTION": "Someone stole my precious instrument, and someday I’ll get it back.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Exalted",
+    "DESCRIPTION": "I want to be famous, whatever it takes.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Reverence",
+    "DESCRIPTION": "I idolize a hero of the old tales and measure my deeds against that person’s.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Justified",
+    "DESCRIPTION": "I will do anything to prove myself superior to my hated rival.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Unselfish",
+    "DESCRIPTION": "I would do anything for the other members of my old troupe.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Glorious",
+    "DESCRIPTION": "I’ll do anything to win fame and renown.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Amorous",
+    "DESCRIPTION": "I’m a sucker for a pretty face.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Scandalous",
+    "DESCRIPTION": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Scurrilous",
+    "DESCRIPTION": "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Audacious",
+    "DESCRIPTION": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Entertainer",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Unreliable",
+    "DESCRIPTION": "Despite my best efforts, I am unreliable to my friends.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Tyrant\u0027s agents",
+    "DESCRIPTION": "I stood up to a tyrant’s agents.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Natural disaster",
+    "DESCRIPTION": "I saved people during a natural disaster.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Terrible monster",
+    "DESCRIPTION": "I stood alone against a terrible monster.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Corrupt merchant",
+    "DESCRIPTION": "I stole from a corrupt merchant to help the poor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Invaders",
+    "DESCRIPTION": "I led a militia to fight off an invading army.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Tyrant\u0027s rule",
+    "DESCRIPTION": "I broke into a tyrant’s castle and stole weapons to arm the people.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Tyrant\u0027s soldiers",
+    "DESCRIPTION": "I trained the peasantry to use farm implements as weapons against a tyrant’s soldiers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Passive resistance",
+    "DESCRIPTION": "A lord rescinded an unpopular decree after I led a symbolic act of protect against it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Magical blessing",
+    "DESCRIPTION": "A celestial, fey, or similar creature gave me a blessing or revealed my secret origin.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Defining Event",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Hero\u0027s commendation",
+    "DESCRIPTION": "Recruited into a lord’s army, I rose to leadership and was commended for my heroism.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Accountable",
+    "DESCRIPTION": "I judge people by their actions, not their words.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Advocate",
+    "DESCRIPTION": "If someone is in trouble, I’m always ready to lend help.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Steadfast",
+    "DESCRIPTION": "When I set my mind to something, I follow through no matter what gets in my way.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Impartial",
+    "DESCRIPTION": "I have a strong sense of fair play and always try to find the most equitable solution to arguments.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Bolster",
+    "DESCRIPTION": "I’m confident in my own abilities and do what I can to instill confidence in others.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Bold",
+    "DESCRIPTION": "Thinking is for other people. I prefer action.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Absurd",
+    "DESCRIPTION": "I misuse long words in an attempt to sound smarter.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Preoccupied",
+    "DESCRIPTION": "I get bored easily. When am I going to get on with my destiny?",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "People deserve to be treated with dignity and respect. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Fairness",
+    "DESCRIPTION": "No one should get preferential treatment before the law, and no one is above the law. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "Tyrants must not be allowed to oppress the people. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Might",
+    "DESCRIPTION": "If I become strong, I can take what I want - what I deserve. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Sincerity",
+    "DESCRIPTION": "There’s no good in pretending to be something I’m not. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Destiny",
+    "DESCRIPTION": "Nothing and no one can steer me away from my higher calling. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Astray",
+    "DESCRIPTION": "I have a family, but I have no idea where they are. One day, I hope to see them again.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Guardian",
+    "DESCRIPTION": "I worked the land, I love the land, and I will protect the land.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Vindictive",
+    "DESCRIPTION": "A proud noble once gave me a horrible beating, and I will take my revenge on any bully I encounter.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "In tribute",
+    "DESCRIPTION": "My tools are symbols of my past life, and I carry them so that I will never forget my roots.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Protector",
+    "DESCRIPTION": "I protect those who cannot protect themselves.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Lonely",
+    "DESCRIPTION": "I wish my childhood sweetheart had come with me to pursue my destiny.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Condemned",
+    "DESCRIPTION": "The tyrant who rules my land will stop at nothing to see me killed.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Predestined",
+    "DESCRIPTION": "I’m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Exiled",
+    "DESCRIPTION": "The people who knew me when I was young know my shameful secret, so I can never go home again.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Profligacy",
+    "DESCRIPTION": "I have a weakness for the vices of the city, especially hard drink.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Insolence",
+    "DESCRIPTION": "Secretly, I believe that things would be better if I were a tyrant lording over the land.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Folk Hero",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Dubious",
+    "DESCRIPTION": "I have trouble trusting in my allies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Alchemists and apothecaries",
+    "DESCRIPTION": "I am associated with traders in herbs, slaves, and potions for various types of healing and enhancements.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Armorers, locksmiths, and finesmiths",
+    "DESCRIPTION": "I am familiar with the best armorsmiths and locksmiths and and the traders in their wares.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Brewers, distillers, and vintners",
+    "DESCRIPTION": "I am acquainted with those whom make wines, ales, and other spirits and the farmers and traders needed for its supplies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Calligraphers, scribes, and scriveners",
+    "DESCRIPTION": "I am well-informed in the business of written knowledge, its suppliers, and its employers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Carpenters, roofers, and plasterers",
+    "DESCRIPTION": "I deal with contracters and engineers of construction all the time.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Cartographers, surveyors, and chart-makers",
+    "DESCRIPTION": "I am versant with explorers and mappers in the area and know where to find any necessary supplies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Cobblers and shoemakers",
+    "DESCRIPTION": "I deal with shoemakers, bootmakers, cobblers, and their suppliers regularly.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Cooks and bakers",
+    "DESCRIPTION": "I know where to find all of the good cooks, bakers, and chefs in the area - and where to find the best supplies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Glassblowers and glaziers",
+    "DESCRIPTION": "I am skilled with creating glass and dealing with glaziers and glassblowers in the region.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Jewelers and gemcutters",
+    "DESCRIPTION": "I am proficient in crafting jewelry and gemcutting, and I know all of the best contacts in the business.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "11",
+    "TRNAME": "Leatherworkers, skinners, and tanners",
+    "DESCRIPTION": "Tanning and furrying are my business and I know the trappers and hunters who can get me the best.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "12",
+    "TRNAME": "Masons and stonecutters",
+    "DESCRIPTION": "The monuments and temples in the area are attributed to me and the people I employ.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "13",
+    "TRNAME": "Painters, limners, and sign-makers",
+    "DESCRIPTION": "Only I can appreciate the artist and their craft - and I know where to buy and where to sell.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "14",
+    "TRNAME": "Potters and tile-makers",
+    "DESCRIPTION": "Ceramics are my specialty and I know the trade and its makers from mud to oven to paint.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "15",
+    "TRNAME": "Shipwrights and sailmakers",
+    "DESCRIPTION": "I know everyone at the harbor and can find anyone to buy or sell ship supplies and even build a ship.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "16",
+    "TRNAME": "Smiths and metal-forgers",
+    "DESCRIPTION": "I know all of the best miners and caravans to buy and sell metal ores and smithy supplies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "17",
+    "TRNAME": "Tinkers, pewterers, and casters",
+    "DESCRIPTION": "I deal with many traders of fine mechanizations and unusual items.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "18",
+    "TRNAME": "Wagon-makers and wheelwrights",
+    "DESCRIPTION": "I do business with all of the caravans and traders and supply the best wheels and wagons available.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "19",
+    "TRNAME": "Weavers and dyers",
+    "DESCRIPTION": "Textiles are my business and I know where to find the best pigments, cloths, and weavers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Guild Business",
+    "SPECIALTY": "1",
+    "DIEROLL": "20",
+    "TRNAME": "Woodcarvers, coopers, and bowyers",
+    "DESCRIPTION": "I know where to find all of the best traders and crafters of wood, including bowyers and fletchers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Perfectionist",
+    "DESCRIPTION": "I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Art snob",
+    "DESCRIPTION": "I’m a snob who looks down on those who can’t appreciate fine art.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Inquisitive",
+    "DESCRIPTION": "I always want to know how things work and what makes people tick.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Bombastic",
+    "DESCRIPTION": "I’m full of witty aphorisms and have a proverb for every occasion.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Blunt",
+    "DESCRIPTION": "I’m rude to people who lack my commitment to hard work and fair play.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Discursive",
+    "DESCRIPTION": "I like to talk at length about my profession.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Thrifty",
+    "DESCRIPTION": "I don’t part with my money easily and will haggle tirelessly to get the best deal possible.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Superior",
+    "DESCRIPTION": "I’m well known for my work, and I want to make sure everyone appreciates it. I\u0027m always taken aback when people haven’t heard of me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Community",
+    "DESCRIPTION": "It is the duty of all civilized people to strengthen the bonds of community and the security of civilization. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Generosity",
+    "DESCRIPTION": "My talents were given to me so that I could use them to benefit the world. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "Everyone should be free to pursue his or her own livelihood. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Greed",
+    "DESCRIPTION": "I’m only in it for the money. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I’m committed to the people I care about, not to ideals. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I work hard to be the best there is at my craft.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Nostalgic",
+    "DESCRIPTION": "The workshop where I learned my trade is the most important place in the world to me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Pursuant",
+    "DESCRIPTION": "I created a great work for someone, and then found them unworthy to receive it. I’m still looking for someone worthy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Grateful",
+    "DESCRIPTION": "I owe my guild a great debt for forging me into the person I am today.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Rapturous",
+    "DESCRIPTION": "I pursue wealth to secure someone’s love.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Validated",
+    "DESCRIPTION": "One day I will return to my guild and prove that I am the greatest artisan of them all.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Avenging",
+    "DESCRIPTION": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Acquisitive",
+    "DESCRIPTION": "I’ll do anything to get my hands on something rare or priceless.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Suspicious",
+    "DESCRIPTION": "I’m quick to assume that someone is trying to cheat me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Enigmatic",
+    "DESCRIPTION": "No one must ever learn that I once stole money from guild coffers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Covetous",
+    "DESCRIPTION": "I’m never satisfied with what I have - I always want more.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Aspirant",
+    "DESCRIPTION": "I would kill to acquire a noble title.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Artisan",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Envious",
+    "DESCRIPTION": "I’m horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I’m surrounded by rivals.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Spiritual enlightment",
+    "DESCRIPTION": "I was searching for spiritual enlightenment.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Communal living",
+    "DESCRIPTION": "I was partaking of communal living in accordance with the dictates of a religious order.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Improper exile",
+    "DESCRIPTION": "I was exiled for a crime I didn’t commit.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Tragic recluse",
+    "DESCRIPTION": "I retreated from society after a life-altering event.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Peaceful solitude",
+    "DESCRIPTION": "I needed a quiet place to work on my art, literature, music, or manifesto.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Nature\u0027s hermit",
+    "DESCRIPTION": "I needed to commune with nature, far from civilization.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Ancient warden",
+    "DESCRIPTION": "I was the caretaker of an ancient ruin or relic.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Life of Seclusion",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Holy pilgrimage",
+    "DESCRIPTION": "I was a pilgrim in search of a person, place, or relic of spiritual significance.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Unsociable",
+    "DESCRIPTION": "I’ve been isolated for so long that I rarely speak,\npreferring gestures and the occasional grunt.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Serene",
+    "DESCRIPTION": "I am utterly serene, even in the face of disaster.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Edifying",
+    "DESCRIPTION": "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Empathizing",
+    "DESCRIPTION": "I feel tremendous empathy for all who suffer.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Uncivilized",
+    "DESCRIPTION": "I’m oblivious to etiquette and social expectations.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Predestined",
+    "DESCRIPTION": "I connect everything that happens to me to a grand, cosmic plan.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Cogitative",
+    "DESCRIPTION": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Philosophical",
+    "DESCRIPTION": "I am working on a grand philosophical theory and love sharing my ideas.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Greater Good",
+    "DESCRIPTION": "My gifts are meant to be shared with all, not used for my own benefit. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Logic",
+    "DESCRIPTION": "Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Free Thinking",
+    "DESCRIPTION": "Inquiry and curiosity are the pillars of progress. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Power",
+    "DESCRIPTION": "Solitude and contemplation are paths toward mystical or magical power. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Live and Let Live",
+    "DESCRIPTION": "Meddling in the affairs of others only causes trouble. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Self-Knowledge",
+    "DESCRIPTION": "If you know yourself, there’s nothing left to know. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Brotherhood",
+    "DESCRIPTION": "Nothing is more important than the other members of my hermitage, order, or association.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Hunted",
+    "DESCRIPTION": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Seeker",
+    "DESCRIPTION": "I’m still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Forlorn",
+    "DESCRIPTION": "I entered seclusion because I loved someone I could not have.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Dark",
+    "DESCRIPTION": "Should my discovery come to light, it could bring ruin to the world.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Fated",
+    "DESCRIPTION": "My isolation gave me great insight into a great evil that only I can destroy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Gourmandizing",
+    "DESCRIPTION": "Now that I\u0027ve returned to the world, I enjoy its delights a little too much.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Menacing",
+    "DESCRIPTION": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Dogmatic",
+    "DESCRIPTION": "I am dogmatic in my thoughts and philosophy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Contentious",
+    "DESCRIPTION": "I let my need to win arguments overshadow friendships and harmony.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Bedeviled",
+    "DESCRIPTION": "I’d risk too much to uncover a lost bit of knowledge.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Hermit",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Reticent",
+    "DESCRIPTION": "I like keeping secrets and won’t share them with anyone.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Eloquent",
+    "DESCRIPTION": "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the\nworld.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Benevolent",
+    "DESCRIPTION": "The common folk love me for my kindness and\ngenerosity.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Magnificent",
+    "DESCRIPTION": "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Trendy",
+    "DESCRIPTION": "I take great pains to always look my best and follow the latest fashions.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Imperious",
+    "DESCRIPTION": "I don’t like to get my hands dirty, and I won’t be caught dead in unsuitable accommodations.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Modest",
+    "DESCRIPTION": "Despite my noble birth, I do not place myself above other folk. We all have the same blood.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Incredulous",
+    "DESCRIPTION": "My favor, once lost, is lost forever.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Ruinous",
+    "DESCRIPTION": "If you do me an injury, I will crush you, ruin your name, and salt your fields.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Responsibility",
+    "DESCRIPTION": "It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Independence",
+    "DESCRIPTION": "I must prove that I can handle myself without the coddling of my family. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Power",
+    "DESCRIPTION": "If I can attain more power, no one will tell me what to do. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Family",
+    "DESCRIPTION": "Blood runs thicker than water. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Noble Obligation",
+    "DESCRIPTION": "It is my duty to protect and care for the people beneath me. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I will face any challenge to win the approval of my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Alliance",
+    "DESCRIPTION": "My house’s alliance with another noble family\nmust be sustained at all costs.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Kindred",
+    "DESCRIPTION": "Nothing is more important than the other members of my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Renegade",
+    "DESCRIPTION": "I am in love with the heir of a family that my family despises.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Loyalty",
+    "DESCRIPTION": "My loyalty to my sovereign is unwavering.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Commoner",
+    "DESCRIPTION": "The common folk must see me as a hero of the people.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Contemptuous",
+    "DESCRIPTION": "I secretly believe that everyone is beneath me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Defamed",
+    "DESCRIPTION": "I hide a truly scandalous secret that could ruin my family forever.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Irascible",
+    "DESCRIPTION": "I too often hear veiled insults and threats in every word addressed to me, and I’m quick to anger.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Insatiable",
+    "DESCRIPTION": "I have an insatiable desire for carnal pleasures.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Conceited",
+    "DESCRIPTION": "In fact, the world does revolve around me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Noble",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Scandalous",
+    "DESCRIPTION": "By my words and actions, I often bring shame to\nmy family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Forester",
+    "DESCRIPTION": "You make your home in a dense tree forest and are most comfortable when you encounter other wooded realms.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Trapper",
+    "DESCRIPTION": "You are skilled in trapping beasts for their pelts (and other parts) and are accustomed to surviving in the wilderness.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Homesteader",
+    "DESCRIPTION": "You have made your home in the hinterland surviving against the dangerous odds.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Guide",
+    "DESCRIPTION": "You are a skilled guide for tracking and mapping the wild areas of the realms.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Exile or outcast",
+    "DESCRIPTION": "Whether rightly or wrongly, you have been banished from your kingdom or tribe, forcing you to survive on your own in the wilderness.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Bounty hunter",
+    "DESCRIPTION": "You are skilled at traveling wilderness and towns, finding those you are paid to bring (or deliver) to justice.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Pilgrim",
+    "DESCRIPTION": "You are part of a new colony (for your clan or kingdom) of settlers in an untamed wilderness, staving off wild beasts from your habitat.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Tribal nomad",
+    "DESCRIPTION": "You are part of a small nomadic tribe of natives that roams the wilderness, living with the lands and not destroying it with permanency.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Hunter-gatherer",
+    "DESCRIPTION": "You are part of a small clan that roams the wilderness seasonally, seeking foraging and hunting opportunities.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Origin",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Tribal marauder",
+    "DESCRIPTION": "You are part of a war tribe that battles other clans and kingdoms for spoils of war.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Wanderlust",
+    "DESCRIPTION": "I’m driven by a wanderlust that led me away from home.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Safeguarding",
+    "DESCRIPTION": "I watch over my friends as if they were a litter of newborn pups.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Determined",
+    "DESCRIPTION": "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I’d do it again if I had to.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Knowledgeable",
+    "DESCRIPTION": "I have a lesson for every situation, drawn from observing nature.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Regardful",
+    "DESCRIPTION": "I place no stock in wealthy or well-mannered folk. Money and manners won’t save you from a hungry owlbear.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Fiddling",
+    "DESCRIPTION": "I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Philotherian",
+    "DESCRIPTION": "I feel far more comfortable around animals than people.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Feral",
+    "DESCRIPTION": "I was, in fact, raised by wolves.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Change",
+    "DESCRIPTION": "Life is like the seasons, in constant change, and we must change with it. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Greater Good",
+    "DESCRIPTION": "It is each person’s responsibility to make the most happiness for the whole tribe. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Honor",
+    "DESCRIPTION": "If I dishonor myself, I dishonor my whole clan. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Might",
+    "DESCRIPTION": "The strongest are meant to rule. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Nature",
+    "DESCRIPTION": "The natural world is more important than all the constructs of civilization. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Glory",
+    "DESCRIPTION": "I must earn glory in battle, for myself and my clan. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Origins",
+    "DESCRIPTION": "My family, clan, or tribe is the most important thing in my life, even when they are far from me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Pristine",
+    "DESCRIPTION": "An injury to the unspoiled wilderness of my home is an injury to me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Vengeance",
+    "DESCRIPTION": "I will bring terrible wrath down on the evildoers who destroyed my homeland.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Bygone",
+    "DESCRIPTION": "I am the last of my tribe, and it is up to me to ensure their names enter legend.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Cataclysm",
+    "DESCRIPTION": "I suffer awful visions of a coming disaster and will do anything to prevent it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Propagation",
+    "DESCRIPTION": "It is my duty to provide children to sustain my tribe.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Debauchery",
+    "DESCRIPTION": "I am too enamored of ale, wine, and other intoxicants.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Reckless",
+    "DESCRIPTION": "There’s no room for caution in a life lived to the fullest.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Silent scorn",
+    "DESCRIPTION": "I remember every insult I’ve received and nurse a silent resentment toward anyone who’s ever wronged me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Distrustful",
+    "DESCRIPTION": "I am slow to trust members of other races, tribes, and societies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Brutality",
+    "DESCRIPTION": "Violence is my answer to almost any challenge.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Outlander",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Evolution",
+    "DESCRIPTION": "Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Alchemist",
+    "DESCRIPTION": "You are practiced in the mixing of natural chemicals and magical elixirs to profound effect.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Astronomer",
+    "DESCRIPTION": "You understand the night sky, understanding the apparent movement of the stars and their relation to one another.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Discredited academic",
+    "DESCRIPTION": "You were once a respected scholar who has been discredited, rightfully or wrongfully, and is now shunned by academic societies.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Librarian",
+    "DESCRIPTION": "You are learned in a wide variety of literature and reference material, skilled in categorizing and accounting books, scrolls, and tomes.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Professor",
+    "DESCRIPTION": "You are qualified to teach on certain subjects having a vastly better understanding of that subject than even other academics.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Researcher",
+    "DESCRIPTION": "You are skilled in finding specific information from a variety of sources, notably ancient texts, scrolls, and contemporary reference books.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Wizard\u0027s apprentice",
+    "DESCRIPTION": "You worked directly with a knowledgeable wizard who passed on his arcane knowledge in exchange for menial chores around the sanctum.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Specialty",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Scribe",
+    "DESCRIPTION": "You were employed by a noble, a government, or a scholar to pen their words directly to scrolls or copy already-authored books.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Verbose",
+    "DESCRIPTION": "I use polysyllabic words that convey the impression of great erudition.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Boastful",
+    "DESCRIPTION": "I\u0027ve read every book in the world’s greatest libraries - or I like to boast that I have.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Brilliant",
+    "DESCRIPTION": "I\u0027m used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Analytical",
+    "DESCRIPTION": "There’s nothing I like more than a good mystery.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Evenhanded",
+    "DESCRIPTION": "I’m willing to listen to every side of an argument before I make my own judgment.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Patronizing",
+    "DESCRIPTION": "I . . . speak . . . slowly . . . When talking . . . To idiots, . . . Which . . . Almost . . . Everyone . . . Is . . . Compared . . . To me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Blundering",
+    "DESCRIPTION": "I am horribly, horribly awkward in social situations.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Paranoid",
+    "DESCRIPTION": "I’m convinced that people are always trying to steal my secrets.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Knowledge",
+    "DESCRIPTION": "The path to power and self-improvement is through knowledge. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Beauty",
+    "DESCRIPTION": "What is beautiful points us beyond itself toward what is true. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Logic",
+    "DESCRIPTION": "Emotions must not cloud our logical thinking. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "No Limits",
+    "DESCRIPTION": "Nothing should fetter the infinite possibility inherent in all existence. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Power",
+    "DESCRIPTION": "Knowledge is the path to power and domination. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Self-Improvement",
+    "DESCRIPTION": "The goal of a life of study is the betterment of oneself. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Instructor",
+    "DESCRIPTION": "It is my duty to protect my students.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Guardian",
+    "DESCRIPTION": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Preservation",
+    "DESCRIPTION": "I work to preserve a library, university, scriptorium, or monastery.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Narrative",
+    "DESCRIPTION": "My life’s work is a series of tomes related to a specific field of lore.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Study",
+    "DESCRIPTION": "I\u0027ve been searching my whole life for the answer to a certain question.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Restoration",
+    "DESCRIPTION": "I sold my soul for knowledge. I hope to do great deeds and win it back.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Distracted",
+    "DESCRIPTION": "I am easily distracted by the promise of information.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Disquisitive",
+    "DESCRIPTION": "Most people scream and run when they see a demon. I stop and take notes on its anatomy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Unyielding",
+    "DESCRIPTION": "Unlocking an ancient mystery is worth the price of a civilization.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Convoluted",
+    "DESCRIPTION": "I overlook obvious solutions in favor of complicated ones.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Crass",
+    "DESCRIPTION": "I speak without really thinking through my words, invariably insulting others.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sage",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Brazen",
+    "DESCRIPTION": "I can’t keep a secret to save my life, or anyone else’s.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Dependable",
+    "DESCRIPTION": "My friends know they can rely on me, no matter what.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Assiduous",
+    "DESCRIPTION": "I work hard so that I can play hard when the work is done.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Traveler",
+    "DESCRIPTION": "I enjoy sailing into new ports and making new friends over a flagon of ale.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Exaggerator",
+    "DESCRIPTION": "I stretch the truth for the sake of a good story.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Instigator",
+    "DESCRIPTION": "To me, a tavern brawl is a nice way to get to know a new city.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Gambler",
+    "DESCRIPTION": "I never pass up a friendly wager.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Boorish",
+    "DESCRIPTION": "My language is as foul as an otyugh nest.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Beguiler",
+    "DESCRIPTION": "I like a job well done, especially if I can convince someone else to do it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Fairness",
+    "DESCRIPTION": "We all do the work, so we all share in the rewards. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Mastery",
+    "DESCRIPTION": "I’m a predator, and the other ships on the sea are my prey. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I’m committed to my crewmates, not to ideals. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "Someday I’ll own my own ship and chart my own destiny. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Loyalty",
+    "DESCRIPTION": "I’m loyal to my captain first, everything else second.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Devotion",
+    "DESCRIPTION": "The ship is most important—crewmates and captains come and go.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Sentimental",
+    "DESCRIPTION": "I’ll always remember my first ship.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Paramour",
+    "DESCRIPTION": "In a harbor town, I have a paramour whose eyes nearly stole me from the sea.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Cheated",
+    "DESCRIPTION": "I was cheated out of my fair share of the profits, and I want to get my due.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Revenge",
+    "DESCRIPTION": "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Dutiful",
+    "DESCRIPTION": "I follow orders, even if I think they’re wrong.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Lazy",
+    "DESCRIPTION": "I’ll say anything to avoid having to do extra work.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Antonymous",
+    "DESCRIPTION": "Once someone questions my courage, I never back down no matter how dangerous the situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Dissipation",
+    "DESCRIPTION": "Once I start drinking, it’s hard for me to stop.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Acquisitive",
+    "DESCRIPTION": "I can’t help but pocket loose coins and other trinkets I come across.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Sailor",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Incorrigible",
+    "DESCRIPTION": "My pride will probably lead to my destruction.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Officer",
+    "DESCRIPTION": "You were a leader of a division on the battlefield, leading your troops into gruesome bloody battles.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Scout",
+    "DESCRIPTION": "You were tasked with surveillance and exploration missions for your army.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Infantry",
+    "DESCRIPTION": "As the main force during battles, you were in the ground forces attacking as the main force, witnessing victory, defeat, and death all around.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Cavalry",
+    "DESCRIPTION": "You were part of the mounted troops (typically war horses) during wartime.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Healer",
+    "DESCRIPTION": "You acted as a battlefield medic, aiding and rescuing casualties from the battlefield.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Quartermaster",
+    "DESCRIPTION": "You supervised stores and distributed supplies and provisions to the troops in the army.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Standard bearer",
+    "DESCRIPTION": "You bore the flag for your troops\u0027 representation and communication on the battlefield.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Position",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Support staff",
+    "DESCRIPTION": "You were part of the support staff of military campaigns, such as blacksmith, tanner, or cook.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Courteous",
+    "DESCRIPTION": "I\u0027m always polite and respectful.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Traumatized",
+    "DESCRIPTION": "I’m haunted by memories of war. I can’t get the images of violence out of my mind.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Leery",
+    "DESCRIPTION": "I’ve lost too many friends, and I’m slow to make new ones.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Narrator",
+    "DESCRIPTION": "I’m full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Gutsy",
+    "DESCRIPTION": "I can stare down a hell hound without flinching.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Bellicose",
+    "DESCRIPTION": "I enjoy being strong and like breaking things.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Crude",
+    "DESCRIPTION": "I have a crude sense of humor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Direct",
+    "DESCRIPTION": "I face problems head-on. A simple, direct solution is the best path to success.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Greater Good",
+    "DESCRIPTION": "Our lot is to lay down our lives in defense of others. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Responsibility",
+    "DESCRIPTION": "I do what I must and obey just authority. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Independence",
+    "DESCRIPTION": "When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Might",
+    "DESCRIPTION": "In life as in war, the stronger force wins. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Live and Let Live",
+    "DESCRIPTION": "Ideals aren’t worth killing over or going to war for. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Nation",
+    "DESCRIPTION": "My city, nation, or people are all that matter. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Fidelity",
+    "DESCRIPTION": "I would still lay down my life for the people I served with.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Integrity",
+    "DESCRIPTION": "Someone saved my life on the battlefield. To this day, I will never leave a friend behind.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Honor",
+    "DESCRIPTION": "My honor is my life.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Retribution",
+    "DESCRIPTION": "I’ll never forget the crushing defeat my company suffered or the enemies who dealt it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Comradeship",
+    "DESCRIPTION": "Those who fight beside me are those worth dying for.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Righteous",
+    "DESCRIPTION": "I fight for those who cannot fight for themselves.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Panicky",
+    "DESCRIPTION": "The monstrous enemy we faced in battle still leaves me quivering with fear.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Derision",
+    "DESCRIPTION": "I have little respect for anyone who is not a proven warrior.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Torment",
+    "DESCRIPTION": "I made a terrible mistake in battle cost many lives - and I would do anything to keep that mistake secret.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Hostile",
+    "DESCRIPTION": "My hatred of my enemies is blind and unreasoning.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Authoritative",
+    "DESCRIPTION": "I obey the law, even if the law causes misery.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Soldier",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Obstinate",
+    "DESCRIPTION": "I’d rather eat my armor than admit when I’m wrong.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Agglomerate",
+    "DESCRIPTION": "I hide scraps of food and trinkets away in my pockets.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Inquisitorial",
+    "DESCRIPTION": "I ask a lot of questions.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Conceal",
+    "DESCRIPTION": "I like to squeeze into small places where no one else can get to me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Uneasy",
+    "DESCRIPTION": "I sleep with my back to a wall or tree, with everything I own wrapped in a bundle in my arms.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Boorish",
+    "DESCRIPTION": "I eat like a pig and have bad manners.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Skeptical",
+    "DESCRIPTION": "I think anyone who’s nice to me is hiding evil intent.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Filthy",
+    "DESCRIPTION": "I don’t like to bathe.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Brusque",
+    "DESCRIPTION": "I bluntly say what other people are hinting at or hiding.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "All people, rich or poor, deserve respect. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Community",
+    "DESCRIPTION": "We have to take care of each other, because no one else is going to do it. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Change",
+    "DESCRIPTION": "The low are lifted up, and the high and mighty are brought down. Change is the nature of things.\n(Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Retribution",
+    "DESCRIPTION": "The rich need to be shown what life and death are like in the gutters. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I help the people who help me—that’s what keeps us alive. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I\u0027m going to prove that I\u0027m worthy of a better life.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Safeguard",
+    "DESCRIPTION": "My town or city is my home, and I’ll fight to defend it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Compassion",
+    "DESCRIPTION": "I sponsor an orphanage to keep others from enduring that I was forced to endure.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Survival",
+    "DESCRIPTION": "I owe my survival to another urchin who taught me to live on the streets.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Gratitude",
+    "DESCRIPTION": "I owe a debt I can never repay to the person who took pity on me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Fugitive",
+    "DESCRIPTION": "I escaped my life of poverty by robbing an important person, and I’m wanted for it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Misfortune",
+    "DESCRIPTION": "No one else should have to endure the hardships I’ve been through.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Prudent",
+    "DESCRIPTION": "If I\u0027m outnumbered, I will run away from a fight.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Voracious",
+    "DESCRIPTION": "Gold seems like a lot of money to me, and I’ll do just about anything for more of it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Incredulous",
+    "DESCRIPTION": "I will never fully trust anyone other than myself.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Dishonorable",
+    "DESCRIPTION": "I’d rather kill someone in their sleep then fight fair.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Unsound",
+    "DESCRIPTION": "It’s not stealing if I need it more than someone else.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Urchin",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Callous",
+    "DESCRIPTION": "People who can\u0027t take care of themselves get what they deserve.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Soldier Spy",
+    "DESCRIPTION": "You are a soldier, or hired support, within the ranks of the enemy, reporting troop movements back to your ruler.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Informer",
+    "DESCRIPTION": "You are an informant of your own people, ratting on those that would betray your king.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Investigator",
+    "DESCRIPTION": "You are a surreptitious investigator for your queen or a wealthy noble, reporting all of your findings almost invisibly.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Observer",
+    "DESCRIPTION": "You appear to be a commoner or merchant, when in fact you are a keen observer of the local politics, reporting all.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Emissary",
+    "DESCRIPTION": "You are a charismatic diplomat with the true intention of observing and spying every move of your host kingdom to your proprietor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Mole",
+    "DESCRIPTION": "You have infiltrated an enemy guild, noble house, or even the royal family, reporting on their every move.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Radical",
+    "DESCRIPTION": "You infiltrate enemy royal houses or esteemed guilds to find their weaknesses, terrorize, and destroy them!",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Espionage",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Righteous Spy",
+    "DESCRIPTION": "You penetrate evil organizations to discover their leaders and their secrets, and expose them for what they are…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Calculating",
+    "DESCRIPTION": "I always have a plan for what to do when things go wrong.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Unconcerned",
+    "DESCRIPTION": "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Attentive",
+    "DESCRIPTION": "I am always on the lookout for new information regarding the local politics or troop movements.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Subtle",
+    "DESCRIPTION": "I appear courteous and charismatic, when in fact I am midleading and deceptive.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Reticent",
+    "DESCRIPTION": "I am quiet but very, very observant - with rarely a witness that remembers me…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Determined",
+    "DESCRIPTION": "I will find the evidence that will bring my enemies to their knees.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Resourceful",
+    "DESCRIPTION": "Should I find myself in an awkward circumstance, I can certainly explain my way out of it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Intrusive",
+    "DESCRIPTION": "I ask a lot of questions… to gain a lot of answers… and bring you down…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Honor",
+    "DESCRIPTION": "First rule of spy club… you don\u0027t talk about spy club. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Integrity",
+    "DESCRIPTION": "I scrutinize those whom would abuse their power.  (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Mercenary",
+    "DESCRIPTION": "I discover horrible secrets to empower enemy and keep my comfortable standard of living. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Avarice",
+    "DESCRIPTION": "I watch, I pass a note, and I maneuver - to eventually take over the world!  (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Self-preservation",
+    "DESCRIPTION": "I am loyal only to the side that assures my safety. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Self-sacrificing",
+    "DESCRIPTION": "I am deceptive as a necessary means to bring down an abhorrent evil. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Bound",
+    "DESCRIPTION": "I am bound to this way of life by a more powerful authority.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Vengeance",
+    "DESCRIPTION": "I will have justice against the guild or kingdom that murdered my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Reclamation",
+    "DESCRIPTION": "I wait patiently in the shadows… to restore my rightful place in my kingdom.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Exiled",
+    "DESCRIPTION": "No one here knows, but I was exiled from my former kingdom for a grip accusation…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Erudite",
+    "DESCRIPTION": "My station may appear convincing, but I am actually seeking lost ancient secrets.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Misanthropic",
+    "DESCRIPTION": "I can’t resist swindling people who are more powerful than me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Nonsensical",
+    "DESCRIPTION": "My disposition is often inane and illogical, but therein lies the whale in cauldron…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Rapacious",
+    "DESCRIPTION": "When faced with a choice between money and  - nevermind, there is no choice!",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Overanalyzing",
+    "DESCRIPTION": "I look at the plan, go over the plan, detail the plan, change the plan, look at the plan, go over the plan…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Ambitious",
+    "DESCRIPTION": "I am ambitious in my efforts, to a fault.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Distracted",
+    "DESCRIPTION": "I am easily distracted by the promise of information.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Spy",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Arrogant",
+    "DESCRIPTION": "People should adore me for the opportunities I grace them with.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Mermillo",
+    "DESCRIPTION": "You entertain the crowds to glorify the god of the sea, preferring a net combined with a spear, chain spear, or trident.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Hand-to-Hand",
+    "DESCRIPTION": "You surprise your foes in the arena, choosing to fight with no weapons. And you win!",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Dual Weapons",
+    "DESCRIPTION": "You fight with two one-handed weapons in a flashy and entertaining fashion.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Arena Archer",
+    "DESCRIPTION": "You prefer to stay as far from your enemies as possible and fill them with javelins and arrows, or other ranged weapons, and a dagger sidearm.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Polearm",
+    "DESCRIPTION": "You entertain the crowd with a dazzling performance and amazing accuracy with a polearm.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Acrobat",
+    "DESCRIPTION": "Using a finesse weapon, spear, or quarterstaff you dazzle your audience with acrobatic maneuvers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Provocator",
+    "DESCRIPTION": "Wearing half armor consisting of a greave, a manica, and a breastplate, you enter the arena with javelins and a shortsword.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Swordplay",
+    "DESCRIPTION": "You dazzle your audience with swordplay, using any sword or scimitar.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Bestiarius",
+    "DESCRIPTION": "You fight with a beast\u0027s head helm, such as a lion, bear, or bull, and wielding a great weapon, terrifying the enemy and your audience.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Arena Style",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Laquerius",
+    "DESCRIPTION": "You fight with a lasso and a dagger, intending to snare and stab your enemy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Chronicler",
+    "DESCRIPTION": "I know a story from the arena relevant to almost every situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Traumatized",
+    "DESCRIPTION": "I’m haunted by memories of war. I can’t get the images of violence out of my mind.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Leery",
+    "DESCRIPTION": "I’ve lost too many friends, and I’m slow to make new ones.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Gutsy",
+    "DESCRIPTION": "I can stare down a hell hound without flinching.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Absurd",
+    "DESCRIPTION": "I misuse long words in an attempt to sound smarter.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Boastful",
+    "DESCRIPTION": "I get bitter if I’m not the center of attention.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Crude",
+    "DESCRIPTION": "I have a crude sense of humor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Direct",
+    "DESCRIPTION": "I face problems head-on. A simple, direct solution is the best path to success.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Vindication",
+    "DESCRIPTION": "When I destroy my enemy, I make the world better than it was. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Heritage",
+    "DESCRIPTION": "The stories, legends, and songs of the arena must never be forgotten, for they teach us who we are. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Aspiring",
+    "DESCRIPTION": "The world is in need of new arenas and bold gladiators. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Brutal",
+    "DESCRIPTION": "I’m it for the coition, the mushrooms, and the barbrity of it all. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Performer",
+    "DESCRIPTION": "When I destroy my enemy I like seeing the smiles and hearing the cheers of my audience. That’s all that matters. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Metaphysical",
+    "DESCRIPTION": "Battle should reflect the soul; it should reveal who we really are... (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Desolate",
+    "DESCRIPTION": "My weapon is my most treasured possession, and it reminds me of someone I love.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Stolen",
+    "DESCRIPTION": "Someone swiped my precious weapon, and someday I’ll get it back.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Adored",
+    "DESCRIPTION": "I want to be famous, whatever it takes.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Reverence",
+    "DESCRIPTION": "I idolize a gladiator of the old tales and measure my deeds against him/her.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Unwilling",
+    "DESCRIPTION": "I will do anything to prove myself against my captor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Unselfish",
+    "DESCRIPTION": "I would do anything to spare another in the arena.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Glorious",
+    "DESCRIPTION": "I’ll do anything to win fame and renown.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Romantic",
+    "DESCRIPTION": "I’m a sucker for a pretty face.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Heinous",
+    "DESCRIPTION": "A heinous crime prevents me from returning home, ever again.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Defamatory",
+    "DESCRIPTION": "I once challenged a noble who still wants my head, but the crowds at the arena love me, and I still live…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Bold",
+    "DESCRIPTION": "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Gladiator",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Treacherous",
+    "DESCRIPTION": "I haven\u0027t stayed alive in the arena this long by being nice.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Arcane Traders",
+    "DESCRIPTION": "A guild for wizards, sorcerers, warlocks, and alchemists.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Caravan Masters",
+    "DESCRIPTION": "A guild for those that operate caravans, expeditions, and trade campaigns.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Blackmarket Brokers",
+    "DESCRIPTION": "A guild for those that trade in illegal items.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Slave Traders",
+    "DESCRIPTION": "A brutal guild for traders in human, demi-human, and monster slaves.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Mercenary Traders",
+    "DESCRIPTION": "A guild that trades in sellswords, explorers, guides, hirelings, and other mercenaries.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Finery Merchants",
+    "DESCRIPTION": "A guild for those that trade in fine items like jewelry, cut gemstones, porcelain, and other fine items.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Produce Traders",
+    "DESCRIPTION": "A guild for those that trade in agricultural deliveries and farm hands.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Bordello Masters",
+    "DESCRIPTION": "A guild for houses of ill repute to enforce, protect, and encourage its wares.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "9",
+    "TRNAME": "Animal Traders",
+    "DESCRIPTION": "A guild for those that trade in riding and other domestic animals, such as horses, livestock, and dire wolves.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "10",
+    "TRNAME": "Menagerie Merchants",
+    "DESCRIPTION": "A guild for those that deal in the trophy trading of exotic beasts, alive and dead.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "11",
+    "TRNAME": "Shadow Keepers",
+    "DESCRIPTION": "A guild for fences, rogues, and brigands, and their wares.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "12",
+    "TRNAME": "Sholarly Traders",
+    "DESCRIPTION": "A guild for scholars such as scribes, librarians, academics, philosophers, wizards, and alchemists.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "13",
+    "TRNAME": "Beguile Merchants",
+    "DESCRIPTION": "A guild for hiring and training of various actors and impersonators to masquerade and mislead at parties, events, and even royal affairs. ",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "14",
+    "TRNAME": "Stonewares and Miners Guild",
+    "DESCRIPTION": "A guild for the best masons, ceramics artisans, miners, and trade in industry metals such as iron and copper.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "15",
+    "TRNAME": "Antiquities Merchants",
+    "DESCRIPTION": "A guild for those trading in rare artifacts, antiquities, and other exotic items. ",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "16",
+    "TRNAME": "Smithy Merchants",
+    "DESCRIPTION": "A guild for those that trade in smiths, casters, and mine laborers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "17",
+    "TRNAME": "Precious Metals Merchants",
+    "DESCRIPTION": "A guild that taxes and deals in delivery of precious metals and raw gemstone and its miners.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "18",
+    "TRNAME": "Carpenters Traders",
+    "DESCRIPTION": "A guild that deals with carpenters, woodcarvers, wood cutters, lumberjacks, transporters, and builders.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "19",
+    "TRNAME": "Textile Traders",
+    "DESCRIPTION": "A guild for those that manage textiles, their workers, and the delivery of their various textile resources.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Association",
+    "SPECIALTY": "1",
+    "DIEROLL": "20",
+    "TRNAME": "Arms Traders",
+    "DESCRIPTION": "A guild to manage weaponsmiths, dealers, guardianship, and trade in weapons and armor.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Perfectionist",
+    "DESCRIPTION": "I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Art snob",
+    "DESCRIPTION": "I’m a snob who looks down on those who can’t appreciate fine art.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Inquisitive",
+    "DESCRIPTION": "I always want to know how things work and what makes people tick.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Bombastic",
+    "DESCRIPTION": "I’m full of witty aphorisms and have a proverb for every occasion.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Blunt",
+    "DESCRIPTION": "I’m rude to people who lack my commitment to hard work and fair play.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Brutal",
+    "DESCRIPTION": "I am particularly vile and malicious to the people that work for me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Thrifty",
+    "DESCRIPTION": "I don’t part with my money easily and will haggle tirelessly to get the best deal possible.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Superior",
+    "DESCRIPTION": "I’m well known for my work, and I want to make sure everyone appreciates it. I\u0027m always taken aback when people haven’t heard of me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Community",
+    "DESCRIPTION": "It is the duty of all civilized people to strengthen the bonds of community and the security of civilization. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Generosity",
+    "DESCRIPTION": "My talents were given to me so that I could use them to benefit the world. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "Everyone should be free to pursue his or her own livelihood. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Greed",
+    "DESCRIPTION": "People are simply an asset; I’m only in it for the money. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I’m committed to the people I care about, not to ideals. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I work hard to be the best there is at my craft.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Nostalgic",
+    "DESCRIPTION": "The workshop where I learned my trade is the most important place in the world to me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Pursuant",
+    "DESCRIPTION": "I created a great work for someone, and then found them unworthy to receive it. I’m still looking for someone worthy.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Grateful",
+    "DESCRIPTION": "I owe my guild a great debt for forging me into the person I am today.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Rapturous",
+    "DESCRIPTION": "I pursue wealth to secure someone’s love.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Validated",
+    "DESCRIPTION": "One day I will return to my guild and prove that I am the greatest artisan of them all.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Avenging",
+    "DESCRIPTION": "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Acquisitive",
+    "DESCRIPTION": "I’ll do anything to get my hands on something rare or priceless.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Suspicious",
+    "DESCRIPTION": "I’m quick to assume that someone is trying to cheat me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Enigmatic",
+    "DESCRIPTION": "No one must ever learn that I once stole money from guild coffers.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Covetous",
+    "DESCRIPTION": "I’m never satisfied with what I have - I always want more.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Aspirant",
+    "DESCRIPTION": "I would kill to acquire a noble title.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Guild Merchant",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Envious",
+    "DESCRIPTION": "I’m horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I’m surrounded by rivals.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Eloquent",
+    "DESCRIPTION": "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the\nworld.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Benevolent",
+    "DESCRIPTION": "The common folk love me for my kindness and\ngenerosity.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Magnificent",
+    "DESCRIPTION": "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Trendy",
+    "DESCRIPTION": "I take great pains to always look my best and follow the latest fashions.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Imperious",
+    "DESCRIPTION": "I don’t like to get my hands dirty, and I won’t be caught dead in unsuitable accommodations.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Modest",
+    "DESCRIPTION": "Despite my noble birth, I do not place myself above other folk. We all have the same blood.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Incredulous",
+    "DESCRIPTION": "My favor, once lost, is lost forever.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Ruinous",
+    "DESCRIPTION": "If you do me an injury, I will crush you, ruin your name, and salt your fields.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Responsibility",
+    "DESCRIPTION": "It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Independence",
+    "DESCRIPTION": "I must prove that I can handle myself without the coddling of my family. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Power",
+    "DESCRIPTION": "If I can attain more power, no one will tell me what to do. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Family",
+    "DESCRIPTION": "Blood runs thicker than water. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Noble Obligation",
+    "DESCRIPTION": "It is my duty to protect and care for the people beneath me. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "I will face any challenge to win the approval of my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Alliance",
+    "DESCRIPTION": "My house’s alliance with another noble family\nmust be sustained at all costs.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Kindred",
+    "DESCRIPTION": "Nothing is more important than the other members of my family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Renegade",
+    "DESCRIPTION": "I am in love with the heir of a family that my family despises.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Loyalty",
+    "DESCRIPTION": "My loyalty to my sovereign is unwavering.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Commoner",
+    "DESCRIPTION": "The common folk must see me as a hero of the people.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Contemptuous",
+    "DESCRIPTION": "I secretly believe that everyone is beneath me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Defamed",
+    "DESCRIPTION": "I hide a truly scandalous secret that could ruin my family forever.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Irascible",
+    "DESCRIPTION": "I too often hear veiled insults and threats in every word addressed to me, and I’m quick to anger.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Insatiable",
+    "DESCRIPTION": "I have an insatiable desire for carnal pleasures.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Conceited",
+    "DESCRIPTION": "In fact, the world does revolve around me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Scandalous",
+    "DESCRIPTION": "By my words and actions, I often bring shame to\nmy family.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Divine Inspiration",
+    "DESCRIPTION": "My god (goddess) sent me divine harbingers to bring honor and glory to his name."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Chivalric Devotion",
+    "DESCRIPTION": "I am a knight to prove my love, my adoration, and devotion to one I cannot have."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "King and Country",
+    "DESCRIPTION": "My ruler has compelled me to serve my country as a noble knight."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Honor Thy Family",
+    "DESCRIPTION": "I am a knight to honor my father who was a knight before me, and whose father was knight before him, and…"
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Ascetic Ideology",
+    "DESCRIPTION": "To be a knight is to put worldly needs aside and devote oneself to the common good, thus purifying one\u0027s soul."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Temple Doctrine",
+    "DESCRIPTION": "My temple priest compelled me to become a knight in the name of the temple and our goddess, whom is the best goddess."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Arcane Directive",
+    "DESCRIPTION": "It was written in a magical book that I should become a knight."
+  },
+  {
+    "BACKNAME": "Knight",
+    "CHARACTERISTIC": "Impetus",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Knight\u0027s Wrath",
+    "DESCRIPTION": "As a knight, I will bring my wrath upon my enemies, whom shall kneel before me - or die…"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Dependable",
+    "DESCRIPTION": "My friends know they can rely on me, no matter what.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Assiduous",
+    "DESCRIPTION": "I work hard so that I can play hard when the work is done.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Traveler",
+    "DESCRIPTION": "I enjoy sailing into new ports and making new friends over a flagon of ale.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Exaggerator",
+    "DESCRIPTION": "I stretch the truth for the sake of a good story.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Instigator",
+    "DESCRIPTION": "To me, a tavern brawl is a nice way to get to know a new city.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Gambler",
+    "DESCRIPTION": "I never pass up a friendly wager.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "7",
+    "TRNAME": "Boorish",
+    "DESCRIPTION": "My language is as foul as an otyugh nest.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Trait",
+    "SPECIALTY": "0",
+    "DIEROLL": "8",
+    "TRNAME": "Beguiler",
+    "DESCRIPTION": "I like a job well done, especially if I can convince someone else to do it.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Respect",
+    "DESCRIPTION": "The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Fairness",
+    "DESCRIPTION": "We all do the work, so we all share in the rewards. (Lawful)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Freedom",
+    "DESCRIPTION": "The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Mastery",
+    "DESCRIPTION": "I’m a predator, and the other ships on the sea are my prey. (Evil)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "People",
+    "DESCRIPTION": "I’m committed to my crewmates, not to ideals. (Neutral)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Ideal",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Aspiration",
+    "DESCRIPTION": "Someday I’ll own my own ship and chart my own destiny. (Any)",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Loyalty",
+    "DESCRIPTION": "I’m loyal to my captain first, everything else second.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Devotion",
+    "DESCRIPTION": "The ship is most important—crewmates and captains come and go.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Sentimental",
+    "DESCRIPTION": "I’ll always remember my first ship.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Paramour",
+    "DESCRIPTION": "In a harbor town, I have a paramour whose eyes nearly stole me from the sea.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Cheated",
+    "DESCRIPTION": "I was cheated out of my fair share of the profits, and I want to get my due.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Bond",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Revenge",
+    "DESCRIPTION": "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "1",
+    "TRNAME": "Dutiful",
+    "DESCRIPTION": "I follow orders, even if I think they’re wrong.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "2",
+    "TRNAME": "Lazy",
+    "DESCRIPTION": "I’ll say anything to avoid having to do extra work.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "3",
+    "TRNAME": "Antonymous",
+    "DESCRIPTION": "Once someone questions my courage, I never back down no matter how dangerous the situation.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "4",
+    "TRNAME": "Dissipation",
+    "DESCRIPTION": "Once I start drinking, it’s hard for me to stop.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "5",
+    "TRNAME": "Acquisitive",
+    "DESCRIPTION": "I can’t help but pocket loose coins and other trinkets I come across.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Flaw",
+    "SPECIALTY": "0",
+    "DIEROLL": "6",
+    "TRNAME": "Incorrigible",
+    "DESCRIPTION": "My pride will probably lead to my destruction.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "1",
+    "TRNAME": "Lost at Sea",
+    "DESCRIPTION": "I was adrift at sea and a pirate ship rescued me and took me in, and I liked it…",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "2",
+    "TRNAME": "Enslaved",
+    "DESCRIPTION": "My village was attacked and I was taken captive and enslaved by pirates, until I eventually became one of them.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "3",
+    "TRNAME": "Banished",
+    "DESCRIPTION": "I was banished from my kingdom so I took to a life at sea - and became a pirate!",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "4",
+    "TRNAME": "Sold",
+    "DESCRIPTION": "I was a slave who was sold to a pirate captain, but eventually killed him and took his ship.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "5",
+    "TRNAME": "Captive",
+    "DESCRIPTION": "My ship was attacked by pirates and the few survivors were taken captive - and I found this life fit me just fine.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "6",
+    "TRNAME": "Escaped",
+    "DESCRIPTION": "I was held captive and forced to fight with pirates for a very long time, but I finally escaped… but that has not stopped their pursuit of me.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "7",
+    "TRNAME": "Rebellion",
+    "DESCRIPTION": "I was part of a naval rebellion, but the rebellion failed; so we fled with the ship and became pirates.",
+    "SOURCE": "PLHBK"
+  },
+  {
+    "BACKNAME": "Pirate",
+    "CHARACTERISTIC": "Sea Saga",
+    "SPECIALTY": "1",
+    "DIEROLL": "8",
+    "TRNAME": "Valiance",
+    "DESCRIPTION": "They call us pirates, but we call ourselves the imperial resistance.",
+    "SOURCE": "PLHBK"
+  }
+]
