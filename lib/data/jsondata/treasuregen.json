@@ -13,7 +13,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "2",
@@ -29,7 +35,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "3",
@@ -45,7 +57,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "4",
@@ -61,7 +79,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "5",
@@ -77,7 +101,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "6",
@@ -93,7 +123,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 10,
     "GPMULTIPLIER": 1,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "7",
@@ -109,7 +145,13 @@
     "SPMULTIPLIER": 10,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 10,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "8",
@@ -125,7 +167,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 10,
     "GPMULTIPLIER": 10,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "9",
@@ -141,7 +189,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 10,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "10",
@@ -157,7 +211,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 10,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "11",
@@ -173,7 +233,13 @@
     "SPMULTIPLIER": 100,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 100,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "12",
@@ -189,7 +255,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 100,
     "GPMULTIPLIER": 100,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "13",
@@ -205,7 +277,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 100,
-    "PPMULTIPLIER": 10
+    "PPMULTIPLIER": 10,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "14",
@@ -221,7 +299,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 100,
-    "PPMULTIPLIER": 10
+    "PPMULTIPLIER": 10,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "15",
@@ -237,7 +321,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1000,
     "GPMULTIPLIER": 100,
-    "PPMULTIPLIER": 1
+    "PPMULTIPLIER": 1,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "16",
@@ -269,7 +359,13 @@
     "SPMULTIPLIER": 1,
     "EPMULTIPLIER": 1,
     "GPMULTIPLIER": 1000,
-    "PPMULTIPLIER": 100
+    "PPMULTIPLIER": 100,
+    "GEMS": "0",
+    "GEMSVALUE": "0",
+    "ART": "0",
+    "ARTVALUE": "0",
+    "MAGICITEMS": "0",
+    "MAGICITEMTYPE": "0"
   },
   {
     "ID": "15",
