@@ -3,16 +3,11 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:generator5e/services/diceRoller.dart';
 
-class TreasureGenerator5e{
-
-  static void getIndividualByCR(){
-  var myFile = File('data/jsondata/treasuregen.json');
-  myFile.readAsString().then((contents) => {
-    final parsedJson = Treasures.fromJsonjsonDecode(contents);
+class TreasureGenerator5e {
+  static Future<List<Map>> readJsonFile(String filePath) async {
+    String filePath = "generator5e/data/jsondata/treasuregen.json";
+    var input = await File(filePath).readAsString();
+    var map = jsonDecode(input);
+    return map['users'];
   }
-
-
-  }
-
-
 }
