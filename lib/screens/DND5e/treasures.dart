@@ -1,4 +1,10 @@
+import 'dart:convert';
+import 'dart:core';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:generator5e/models/treasures.dart';
+import 'package:generator5e/services/treasureGenerator5e.dart';
 
 class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
@@ -72,7 +78,9 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          TreasureText();
+                        },
                         child: const Text(
                           'Generate Treasure',
                           style: TextStyle(
@@ -85,24 +93,7 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                   ),
                   Column(
                     children: [
-                      const Padding(
-                        padding: EdgeInsets.all(40.0),
-                        child: Text(
-                            '32000 gp, 30000 pp, a dragon horn medallion engraved '
-                            'with an ancient coat of arms (2500 gp), a dragon horn '
-                            'medallion engraved with arcane runes (2500 gp), a gilded '
-                            'wooden medallion inlaid with a meandros of orichalcum (2500 gp), '
-                            'a gilded wooden shield brooch engraved with floral vines (2500 gp), '
-                            'a gold bracer set with a rosette of opal (2500 gp), a silk brocade '
-                            'tabard trimmed with ermine (2500 gp), a silk carpet embroidered with '
-                            'gold (2500 gp), an amber puzzle box engraved with dwarven axeheads (2500 gp), '
-                            'an onyx plate engraved with a labyrinth (2500 gp), Spell Scroll (Maze) '
-                            '(very rare, dmg 200), Spell Scroll (Power Word Stun) (very rare, dmg 200), '
-                            'Spell Scroll (Telepathy) (very rare, dmg 200), Spell Scroll (Foresight) '
-                            '(legendary, dmg 200)',
-                            style:
-                                TextStyle(fontFamily: 'Georgia', fontSize: 16)),
-                      ),
+                      TreasureText(),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 0, 20.0),
                         child: Icon(
@@ -136,6 +127,39 @@ class TreasureTypeDDB extends StatefulWidget {
 
 const List<String> crList = <String>['CR 0-4', 'CR 5-10', 'CR 11-16', 'CR 17+'];
 const List<String> trList = <String>['Individual', 'Hoard'];
+
+class _TreasureTextState extends State<TreasureText> {
+  String value = "1,000,000 gp.";
+  List<Treasures> treasures = [];
+
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('data/jsondata/treasuregen.json');
+    final data = await json.decode(response);
+    print(data);
+    setState(() {
+      treasures = data["treasures"];
+      print(
+          'roll: ' + treasures[0].id + 'roll: ' + treasures[0].roll.toString());
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(40.0),
+      child: Text(treasures[0].roll.toString(),
+          style: TextStyle(fontFamily: 'Georgia', fontSize: 16)),
+    );
+  }
+}
+
+class TreasureText extends StatefulWidget {
+  const TreasureText({super.key});
+
+  @override
+  State<TreasureText> createState() => _TreasureTextState();
+}
 
 class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
   String dropdownValue = trList.first;

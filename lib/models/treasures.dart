@@ -1,7 +1,9 @@
-class Treasures{
+import 'dart:core';
+
+class Treasures {
   String id;
   String type;
-  int challenge_rating;
+  int challengeRating;
   int roll;
   String copper;
   String silver;
@@ -14,15 +16,60 @@ class Treasures{
   int gpmultiplier;
   int ppmultiplier;
   String gems;
-  String gemsvalue;
+  int gemsvalue;
   String art;
-  String artvalue;
+  int artvalue;
   String magicitems;
   String magicitemtype;
 
-  Treasures(this.id, this.type,this.challenge_rating, this.roll, this.copper,
-      this.silver, this.electrum, this.gold, this.platinum, this.cpmultiplier, this.spmultiplier,this.epmultiplier,
-      this.gpmultiplier, this.ppmultiplier, this.gems, this.gemsvalue, this.art, this.artvalue, this.magicitems, this.magicitemtype);
+  Treasures(
+      this.id,
+      this.type,
+      this.challengeRating,
+      this.roll,
+      this.copper,
+      this.silver,
+      this.electrum,
+      this.gold,
+      this.platinum,
+      this.cpmultiplier,
+      this.spmultiplier,
+      this.epmultiplier,
+      this.gpmultiplier,
+      this.ppmultiplier,
+      this.gems,
+      this.gemsvalue,
+      this.art,
+      this.artvalue,
+      this.magicitems,
+      this.magicitemtype);
+
+  factory Treasures.fromJson(dynamic json) {
+    return Treasures(
+        json['id'] as String,
+        json['type'] as String,
+        json['challengeRating'] as int,
+        json['roll'] as int,
+        json['copper'] as String,
+        json['silver'] as String,
+        json['electrum'] as String,
+        json['gold'] as String,
+        json['platinum'] as String,
+        json['cpmultiplier'] as int,
+        json['spmultiplier'] as int,
+        json['epmultiplier'] as int,
+        json['gpmultiplier'] as int,
+        json['ppmultiplier'] as int,
+        json['gems'] as String,
+        json['gemsvalue'] as int,
+        json['art'] as String,
+        json['artvalue'] as int,
+        json['magicitems'] as String,
+        json['magicitemtype'] as String);
+  }
+
+  @override
+  String toString() {
+    return '{ ${this.id}, ${this.type}, ${this.challengeRating}, ${this.roll}, ${this.copper}, ${this.silver},    ${this.electrum}, ${this.gold}, ${this.platinum}, ${this.cpmultiplier}, ${this.spmultiplier}, ${this.epmultiplier},${this.gpmultiplier}, ${this.ppmultiplier}, ${this.gems}, ${this.gemsvalue}, ${this.art}, ${this.artvalue},${this.magicitems}, ${this.magicitemtype} }';
+  }
 }
-
-
