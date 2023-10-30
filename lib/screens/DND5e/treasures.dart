@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -193,10 +194,23 @@ class TextChanger extends StatefulWidget {
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
   String dynamicText = 'Initial Text';
+  List _items = [];
+
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/treasuregen.json');
+    final data = await json.decode(response);
+    setState(() {
+      _items = data["treasures"];
+    });
+  }
 
   updateText() {
     setState(() {
-      dynamicText = 'This is new text value';
+      readJson();
+      int r = Random().nextInt(30) + 1;
+      dynamicText =
+          'ID: ${_items[r]['id']}, ROLL: ${_items[r]['roll']}, TYPE: ${_items[r]['type']}';
       // Replace with your logic
     });
   }
