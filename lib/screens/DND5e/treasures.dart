@@ -1,10 +1,7 @@
 import 'dart:convert';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '../../models/treasures.dart';
 
 class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
@@ -64,69 +61,13 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
-                    child: SizedBox(
-                      width: MediaQuery.of(ctx).size.width * 0.84,
-                      height: MediaQuery.of(ctx).size.height * 0.1,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor:
-                              const Color.fromRGBO(255, 245, 188, 1.0),
-                          backgroundColor: Colors.lightGreen.shade900,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                        onPressed: () {
-                        },
-                        child: const Text(
-                          'Generate Treasure',
-                          style: TextStyle(
-                              fontFamily: 'Georgia',
-                              fontSize: 24,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Column(
-                    children: [
-                       const Padding(
-                        padding: EdgeInsets.all(40.0),
-                        child: Text(
-                            '32000 gp, 30000 pp, a dragon horn medallion engraved '
-                            'with an ancient coat of arms (2500 gp), a dragon horn '
-                            'medallion engraved with arcane runes (2500 gp), a gilded '
-                            'wooden medallion inlaid with a meandros of orichalcum (2500 gp), '
-                            'a gilded wooden shield brooch engraved with floral vines (2500 gp), '
-                            'a gold bracer set with a rosette of opal (2500 gp), a silk brocade '
-                            'tabard trimmed with ermine (2500 gp), a silk carpet embroidered with '
-                            'gold (2500 gp), an amber puzzle box engraved with dwarven axeheads (2500 gp), '
-                            'an onyx plate engraved with a labyrinth (2500 gp), Spell Scroll (Maze) '
-                            '(very rare, dmg 200), Spell Scroll (Power Word Stun) (very rare, dmg 200), '
-                            'Spell Scroll (Telepathy) (very rare, dmg 200), Spell Scroll (Foresight) '
-                            '(legendary, dmg 200)',
-                            style:
-                                TextStyle(fontFamily: 'Georgia', fontSize: 16)),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 20.0),
-                        child: Icon(
-                          Icons.copy,
-                          color: Colors.blueGrey.shade900,
-                          size: 40.0,
-                        ),
-                      ),
-                    ],
-                  ),
+                  TextChanger(),
                 ],
               ),
             ),
           );
         });
 }
-
 
 class ChallengeRatingDDB extends StatefulWidget {
   const ChallengeRatingDDB({super.key});
@@ -242,11 +183,67 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
   }
 }
 
-// Future<void> readJson() async {
-//   final String response = await rootBundle.loadString('assets/jsondata/treasuregen.json');
-//   final data = await json.decode(response);
-//   print(data.toString());
-//   setState(() {
-//     _items = data["treasures"];
-//   });
-// }
+class TextChanger extends StatefulWidget {
+  const TextChanger({super.key});
+
+  @override
+  State<TextChanger> createState() => _TextChangerState();
+}
+
+class _TextChangerState extends State<TextChanger> {
+  // Declare the variable
+  String dynamicText = 'Initial Text';
+
+  updateText() {
+    setState(() {
+      dynamicText = 'This is new text value';
+      // Replace with your logic
+    });
+  }
+
+  @override
+  Widget build(BuildContext ctx) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.84,
+            height: MediaQuery.of(ctx).size.height * 0.1,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                backgroundColor: Colors.lightGreen.shade900,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+              ),
+              onPressed: () => updateText(),
+              child: const Text(
+                'Generate Treasure',
+                style: TextStyle(
+                    fontFamily: 'Georgia',
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(40.0),
+          child: Text(dynamicText,
+              // 'ID: ${trObj.id}, CR: ${trObj.challengeRating.toString()}, Roll: ${trObj.roll.toString()}',
+              style: const TextStyle(fontFamily: 'Georgia', fontSize: 16)),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 0, 0, 20.0),
+          child: Icon(
+            Icons.copy,
+            color: Colors.blueGrey.shade900,
+            size: 40.0,
+          ),
+        ),
+      ],
+    );
+  }
+}
