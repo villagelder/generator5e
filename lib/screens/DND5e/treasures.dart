@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generator5e/services/treasureGenerator5e.dart';
 
 class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
@@ -50,16 +51,6 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                         style: TextStyle(
                             fontFamily: 'Georgia', fontStyle: FontStyle.italic),
                       ),
-                    ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.all(12.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        ChallengeRatingDDB(),
-                        TreasureTypeDDB(),
-                      ],
                     ),
                   ),
                   TextChanger(),
@@ -193,7 +184,9 @@ class TextChanger extends StatefulWidget {
 
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
-  String dynamicText = 'Initial Text';
+  TreasureGenerator5e trGen = TreasureGenerator5e();
+
+  String dynamicText = 'Roll for treasure.';
   List _items = [];
 
   Future<void> readJson() async {
@@ -219,6 +212,16 @@ class _TextChangerState extends State<TextChanger> {
   Widget build(BuildContext ctx) {
     return Column(
       children: [
+        const Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ChallengeRatingDDB(),
+              TreasureTypeDDB(),
+            ],
+          ),
+        ),
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
           child: SizedBox(

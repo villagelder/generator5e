@@ -4,7 +4,8 @@ class Treasures {
   int id;
   String type;
   int challengeRating;
-  int roll;
+  int minroll;
+  int maxroll;
   String copper;
   String silver;
   String electrum;
@@ -26,7 +27,8 @@ class Treasures {
       this.id,
       this.type,
       this.challengeRating,
-      this.roll,
+      this.minroll,
+      this.maxroll,
       this.copper,
       this.silver,
       this.electrum,
@@ -49,7 +51,8 @@ class Treasures {
         json['id'] as int,
         json['type'] as String,
         json['challengeRating'] as int,
-        json['roll'] as int,
+        json['minroll'] as int,
+        json['maxroll'] as int,
         json['copper'] as String,
         json['silver'] as String,
         json['electrum'] as String,
@@ -70,6 +73,6 @@ class Treasures {
 
   @override
   String toString() {
-    return '{ ${this.id}, ${this.type}, ${this.challengeRating}, ${this.roll}, ${this.copper}, ${this.silver},    ${this.electrum}, ${this.gold}, ${this.platinum}, ${this.cpmultiplier}, ${this.spmultiplier}, ${this.epmultiplier},${this.gpmultiplier}, ${this.ppmultiplier}, ${this.gems}, ${this.gemsvalue}, ${this.art}, ${this.artvalue},${this.magicitems}, ${this.magicitemtype} }';
+    return '{ ${this.id}, ${this.type}, ${this.challengeRating}, ${this.minroll}, ${this.maxroll}, ${this.copper}, ${this.silver},    ${this.electrum}, ${this.gold}, ${this.platinum}, ${this.cpmultiplier}, ${this.spmultiplier}, ${this.epmultiplier},${this.gpmultiplier}, ${this.ppmultiplier}, ${this.gems}, ${this.gemsvalue}, ${this.art}, ${this.artvalue},${this.magicitems}, ${this.magicitemtype} }';
   }
 }

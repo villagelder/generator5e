@@ -1,41 +1,57 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+import 'package:generator5e/services/diceRoller.dart';
+
+import '../models/treasures.dart';
+
 class TreasureGenerator5e {
-  //
-  //
-  // Random random = Random();
-  // int randNum = random.nextInt(30) + 1;
-  // Treasures tr = treasuresList[randNum];
-  // debugPrint(
-  //     'ID: ${tr.id} Type: ${tr.type} CR: ${tr.challengeRating} Roll: ${tr.roll}');
-  // return treasuresList;
-  // }
-}
+  Iterable _items = [];
+  List<Treasures> trList = [];
+  Treasures? trObj;
 
-String getFilePathByTopic(String topic) {
-  String filePath = "generator5e/data/jsondata/";
-
-  switch (topic) {
-    case "treasures":
-      {
-        filePath = "generator5e/data/jsondata/treasuregen.json";
-      }
-      break;
-    case "armors":
-      {
-        filePath = "generator5e/data/jsondata/armors.json";
-      }
-      break;
+  static Treasures? getTreasures(TreasureGenerator5e tGen) {
+    return tGen.trObj;
   }
-  return filePath;
+
+  findTreasureBySelections(String cr, String type) {
+    int roll = DiceRoller.roll1d100();
+    int chRating = translateCR(cr);
+    getTreasuresObjects();
+    type = type.toLowerCase();
+    for (var tr in trList) {
+      if (tr.challengeRating == chRating &&
+          tr.type == type &&
+          tr.minroll >= roll &&
+          tr.maxroll <= roll) {
+        trObj = tr;
+      }
+    }
+  }
+
+  static int translateCR(String cr) {
+    cr = cr.toLowerCase();
+    switch (cr) {
+      case 'cr 17+':
+        return 17;
+      case 'cr 5-10':
+        return 10;
+      case 'cr 11-16':
+        return 16;
+      default:
+        return 4;
+    }
+  }
+
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/treasuregen.json');
+    final data = await json.decode(response);
+    _items = data["treasures"] as List;
+  }
+
+  getTreasuresObjects() {
+    readJson();
+    trList = _items.map((tJson) => Treasures.fromJson(tJson)).toList();
+  }
 }
-
-// static List<Treasures> getAllTreasures() {
-//   Map<String, dynamic> treasureMap = readJsonFileAsString("treasures");
-//   return Treasures.fromJson(treasureMap) as List<Treasures>;
-// }
-
-// Future<File> writeCounter(int counter) async {
-//   final file = await _localFile;
-//
-//   // Write the file
-//   return file.writeAsString('$counter');
-// }
