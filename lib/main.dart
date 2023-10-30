@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:generator5e/screens/DND5e/encounters.dart';
 import 'package:generator5e/screens/DND5e/magicitems.dart';
@@ -7,7 +9,10 @@ import 'package:generator5e/screens/DND5e/traps.dart';
 import 'package:generator5e/screens/DND5e/treasures.dart';
 import 'package:generator5e/screens/DND5e/trinkets.dart';
 import 'package:generator5e/screens/DND5e/wildmagic.dart';
-import 'package:generator5e/services/treasureGenerator5e.dart';
+
+
+
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -358,3 +363,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+

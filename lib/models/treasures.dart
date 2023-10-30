@@ -1,7 +1,7 @@
 import 'dart:core';
 
 class Treasures {
-  String id;
+  int id;
   String type;
   int challengeRating;
   int roll;
@@ -46,7 +46,7 @@ class Treasures {
 
   factory Treasures.fromJson(dynamic json) {
     return Treasures(
-        json['id'] as String,
+        json['id'] as int,
         json['type'] as String,
         json['challengeRating'] as int,
         json['roll'] as int,
