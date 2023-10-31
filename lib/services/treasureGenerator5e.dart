@@ -1,31 +1,46 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:generator5e/models/gemitem.dart';
 import 'package:generator5e/services/diceRoller.dart';
+import 'package:generator5e/services/utility.dart';
 
+import '../models/artitem.dart';
+import '../models/magicitems.dart';
 import '../models/treasures.dart';
 
 class TreasureGenerator5e {
-  List _items = [];
+  List _treasureitems = [];
+  List _magicitems = [];
+  List _gemItems = [];
+  List _artItems = [];
+  List<GemItem> gemObjList = [];
   List<Treasures> trObjList = [];
+  List<ArtItem> artObjList = [];
+  List<MagicItem> magicItemObjList = [];
   int roll = 0;
 
-   Treasures? findTreasureBySelections(String cr, String type) {
+  Treasures? rollTreasureBySelections(String cr, String type) {
     roll = DiceRoller.roll1d100();
     int chRating = translateCR(cr);
+    int legendaryFactor = DiceRoller.rollDie(4) + 1;
+
+    if (type == 'Legendary') {
+      type = 'Hoard';
+    }
     readJsonTreasureTable();
     getTreasuresObjectList();
+
     type = type.toLowerCase();
     for (Treasures tr in trObjList) {
       if (tr.challengeRating == chRating &&
           tr.type == type &&
           roll >= tr.minroll &&
-          roll <= tr.maxroll
-      ) {
+          roll <= tr.maxroll) {
         return tr;
       }
     }
-       return null;
+    return null;
   }
 
   static int translateCR(String cr) {
@@ -46,45 +61,101 @@ class TreasureGenerator5e {
     final String response =
         await rootBundle.loadString('assets/jsondata/treasuregen.json');
     final data = await json.decode(response);
-    _items = data["treasures"] as List;
+    _treasureitems = data["treasures"] as List;
+  }
+
+  Future<void> readJsonMagicItemsTable() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/magicitems.json');
+    final data = await json.decode(response);
+    _magicitems = data["magicitems"] as List;
+  }
+
+  Future<void> readJsonGemItemsTable() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/gemitems.json');
+    final data = await json.decode(response);
+    _gemItems = data["gemitems"] as List;
+  }
+
+  Future<void> readJsonArtItemsTable() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/artitems.json');
+    final data = await json.decode(response);
+    _artItems = data["artitems"] as List;
+  }
+
+  getArtItemsObjectList() {
+    artObjList = _artItems.map((artJson) => ArtItem.fromJson(artJson)).toList();
+  }
+
+  getGemItemsObjectList() {
+    gemObjList = _gemItems.map((gJson) => GemItem.fromJson(gJson)).toList();
   }
 
   getTreasuresObjectList() {
-    trObjList = _items.map((tJson) => Treasures.fromJson(tJson)).toList();
+    trObjList =
+        _treasureitems.map((tJson) => Treasures.fromJson(tJson)).toList();
   }
 
-  List<String> generate(String cr, String type) {
+  getMagicItemObjectList() {
+    magicItemObjList =
+        _magicitems.map((mJson) => MagicItem.fromJson(mJson)).toList();
+  }
+
+  String generate(String cr, String type) {
+    bool isLegendary = false;
     List<String> tl = [];
-    Treasures? trObj = findTreasureBySelections(cr, type);
-    if (trObj != null){
-      return calculateCoins(trObj);
+
+    if (type == 'Legendary') {
+      isLegendary = true;
+      type = 'hoard';
     }
 
-    return tl;
+    Treasures? trObj = rollTreasureBySelections(cr, type);
+    Treasures? trObj2 = rollTreasureBySelections(cr, type);
 
+    if (trObj != null) {
+      //get coins
+      tl.addAll(calculateCoins(trObj, trObj2!, isLegendary));
+      //get gems
+      tl.addAll(calculateGems(trObj, trObj2!, isLegendary));
+      //get art
+      tl.addAll(calculateArt(trObj, trObj2!, isLegendary));
+      //get magic items
+      tl.addAll(calculateMagicItems(trObj, trObj2!, isLegendary));
+    }
 
-    //get coins
+    if (tl.isEmpty) {
+      return 'No Treasure';
+    }
 
-    //get gems
-
-    //get art
-
-    //get magic items
-
-
+    return tl.toString();
   }
 
-  List<String> calculateCoins(Treasures trObj){
+  List<String> calculateCoins(
+      Treasures trObj, Treasures trObj2, bool isLegendary) {
     List<String> coinList = [];
     List<String> diceText = [];
-    int sum;
+    List<String> diceText2 = [];
+    int sum = 0;
     String coin;
 
-    print(trObj?.copper);
     //copper
     diceText = DiceRoller.parseDiceText(trObj.copper);
     if (diceText.isNotEmpty) {
-      sum = DiceRoller.rollDiceAndSum(int.parse(diceText[0]), int.parse(diceText[1])) * trObj.cpmultiplier;
+      sum = DiceRoller.rollDiceAndSum(
+              int.parse(diceText[0]), int.parse(diceText[1])) *
+          trObj.cpmultiplier;
+
+      if (isLegendary) {
+        diceText2 = DiceRoller.parseDiceText(trObj2.copper);
+        sum = sum +
+            DiceRoller.rollDiceAndSum(
+                    int.parse(diceText2[0]), int.parse(diceText2[1])) *
+                trObj2.cpmultiplier;
+      }
+
       coin = '$sum cp';
       coinList.add(coin);
     }
@@ -92,7 +163,18 @@ class TreasureGenerator5e {
     //silver
     diceText = DiceRoller.parseDiceText(trObj.silver);
     if (diceText.isNotEmpty) {
-      sum = DiceRoller.rollDiceAndSum(int.parse(diceText[0]), int.parse(diceText[1])) * trObj.spmultiplier;
+      sum = DiceRoller.rollDiceAndSum(
+              int.parse(diceText[0]), int.parse(diceText[1])) *
+          trObj.spmultiplier;
+
+      if (isLegendary) {
+        diceText2 = DiceRoller.parseDiceText(trObj2.silver);
+        sum = sum +
+            DiceRoller.rollDiceAndSum(
+                    int.parse(diceText2[0]), int.parse(diceText2[1])) *
+                trObj2.spmultiplier;
+      }
+
       coin = '$sum sp';
       coinList.add(coin);
     }
@@ -100,7 +182,18 @@ class TreasureGenerator5e {
     //electrum
     diceText = DiceRoller.parseDiceText(trObj.electrum);
     if (diceText.isNotEmpty) {
-      sum = DiceRoller.rollDiceAndSum(int.parse(diceText[0]), int.parse(diceText[1])) * trObj.epmultiplier;;
+      sum = DiceRoller.rollDiceAndSum(
+              int.parse(diceText[0]), int.parse(diceText[1])) *
+          trObj.epmultiplier;
+
+      if (isLegendary) {
+        diceText2 = DiceRoller.parseDiceText(trObj2.electrum);
+        sum = sum +
+            DiceRoller.rollDiceAndSum(
+                    int.parse(diceText2[0]), int.parse(diceText2[1])) *
+                trObj2.epmultiplier;
+      }
+
       coin = '$sum ep';
       coinList.add(coin);
     }
@@ -108,7 +201,18 @@ class TreasureGenerator5e {
     //gold
     diceText = DiceRoller.parseDiceText(trObj.gold);
     if (diceText.isNotEmpty) {
-      sum = DiceRoller.rollDiceAndSum(int.parse(diceText[0]), int.parse(diceText[1])) * trObj.gpmultiplier;
+      sum = DiceRoller.rollDiceAndSum(
+              int.parse(diceText[0]), int.parse(diceText[1])) *
+          trObj.gpmultiplier;
+
+      if (isLegendary) {
+        diceText2 = DiceRoller.parseDiceText(trObj2.gold);
+        sum = sum +
+            DiceRoller.rollDiceAndSum(
+                    int.parse(diceText2[0]), int.parse(diceText2[1])) *
+                trObj2.gpmultiplier;
+      }
+
       coin = '$sum gp';
       coinList.add(coin);
     }
@@ -116,11 +220,191 @@ class TreasureGenerator5e {
     //platinum
     diceText = DiceRoller.parseDiceText(trObj.platinum);
     if (diceText.isNotEmpty) {
-      sum = DiceRoller.rollDiceAndSum(int.parse(diceText[0]), int.parse(diceText[1])) * trObj.ppmultiplier;;
+      sum = DiceRoller.rollDiceAndSum(
+              int.parse(diceText[0]), int.parse(diceText[1])) *
+          trObj.ppmultiplier;
+
+      if (isLegendary) {
+        diceText2 = DiceRoller.parseDiceText(trObj2.platinum);
+        sum = sum +
+            DiceRoller.rollDiceAndSum(
+                    int.parse(diceText2[0]), int.parse(diceText2[1])) *
+                trObj2.ppmultiplier;
+      }
+
       coin = '$sum pp';
       coinList.add(coin);
     }
 
     return coinList;
+  }
+
+  List<GemItem> getGemsByValue(String value) {
+    return gemObjList.where((g) => g.value == value).toList();
+  }
+
+  List<String> calculateGems(
+      Treasures trObj, Treasures trObj2, bool isLegendary) {
+    List<String> gemsList = [];
+    readJsonGemItemsTable();
+    getGemItemsObjectList();
+    if (trObj.gems == "0") {
+      return gemsList;
+    }
+    Map<String, int> gemMap = {};
+
+    List<GemItem> gemsByValueList = getGemsByValue(trObj.gemsvalue.toString());
+    List<String> parsedDice = DiceRoller.parseDiceText(trObj.gems);
+
+    int numberOfGems = DiceRoller.rollDiceAndSum(
+        int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+    for (int i = 0; i < numberOfGems; i++) {
+      String gem = gemsByValueList[
+              Utility.getRandomIndexFromListSize(gemsByValueList.length)]
+          .stone;
+      gemMap.update(gem, (value) => ++value, ifAbsent: () => 1);
+    }
+
+    if (isLegendary && trObj2.gems != "0") {
+      List<GemItem> gemsByValueList =
+          getGemsByValue(trObj2.gemsvalue.toString());
+      List<String> parsedDice = DiceRoller.parseDiceText(trObj2.gems);
+
+      int numberOfGems = DiceRoller.rollDiceAndSum(
+          int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+      for (int i = 0; i < numberOfGems; i++) {
+        String gem = gemsByValueList[
+                Utility.getRandomIndexFromListSize(gemsByValueList.length)]
+            .stone;
+        gemMap.update(gem, (value) => ++value, ifAbsent: () => 1);
+      }
+    }
+
+    gemMap.forEach((key, value) {
+      String k = key.toLowerCase();
+      String v = value.toString();
+      String worth = "${trObj.gemsvalue.toString()} gp";
+      String str = '$k ($worth)';
+      if (value > 1) {
+        str = '$k ($worth, x$v)';
+      }
+      gemsList.add(str);
+    });
+
+    return gemsList;
+  }
+
+  List<String> calculateArt(
+      Treasures trObj, Treasures trObj2, bool isLegendary) {
+    List<String> artList = [];
+    readJsonArtItemsTable();
+    getArtItemsObjectList();
+    if (trObj.art == "0") {
+      return artList;
+    }
+    Map<String, int> artMap = {};
+
+    List<ArtItem> artByValueList = getArtByValue(trObj.artvalue.toString());
+    List<String> parsedDice = DiceRoller.parseDiceText(trObj.art);
+
+    int numberOfArts = DiceRoller.rollDiceAndSum(
+        int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+    for (int i = 0; i < numberOfArts; i++) {
+      String art = artByValueList[
+              Utility.getRandomIndexFromListSize(artByValueList.length)]
+          .artobject;
+      artMap.update(art, (value) => ++value, ifAbsent: () => 1);
+    }
+
+    if (trObj2.art != "0" && isLegendary) {
+      List<ArtItem> artByValueList = getArtByValue(trObj2.artvalue.toString());
+      List<String> parsedDice = DiceRoller.parseDiceText(trObj2.art);
+      int numberOfArts = DiceRoller.rollDiceAndSum(
+          int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+      for (int i = 0; i < numberOfArts; i++) {
+        String art = artByValueList[
+                Utility.getRandomIndexFromListSize(artByValueList.length)]
+            .artobject;
+        artMap.update(art, (value) => ++value, ifAbsent: () => 1);
+      }
+    }
+
+    artMap.forEach((key, value) {
+      String k = key.toLowerCase();
+      String v = value.toString();
+      String worth = "${trObj.artvalue.toString()} gp";
+      String str = '$k ($worth)';
+      if (value > 1) {
+        str = '$k ($worth, x$v)';
+      }
+      artList.add(str);
+    });
+
+    return artList;
+  }
+
+  List<ArtItem> getArtByValue(String value) {
+    return artObjList.where((a) => a.value == value).toList();
+  }
+
+  List<String> calculateMagicItems(
+      Treasures trObj, Treasures trObj2, bool isLegendary) {
+    List<String> miList = [];
+    readJsonMagicItemsTable();
+    getMagicItemObjectList();
+
+    if (trObj.magicitems == "0" && trObj2.magicitems == "0") {
+      return miList;
+    }
+    Map<String, int> miMap = {};
+    List<MagicItem> magicItemsByRank = getMagicItemsByRank(trObj.magicitemtype);
+    List<String> parsedDice = DiceRoller.parseDiceText(trObj.magicitems);
+
+    int numberOfMagicItems = DiceRoller.rollDiceAndSum(
+        int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+    for (int i = 0; i < numberOfMagicItems; i++) {
+      String magicItem = magicItemsByRank[
+              Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
+          .magicitem;
+      miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
+    }
+    if (isLegendary && trObj2.magicitems != "0") {
+      List<MagicItem> magicItemsByRank =
+          getMagicItemsByRank(trObj2.magicitemtype);
+      List<String> parsedDice = DiceRoller.parseDiceText(trObj2.magicitems);
+
+      int numberOfMagicItems = DiceRoller.rollDiceAndSum(
+          int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+
+      for (int i = 0; i < numberOfMagicItems; i++) {
+        String magicItem = magicItemsByRank[
+                Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
+            .magicitem;
+        miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
+      }
+    }
+
+    miMap.forEach((key, value) {
+      String k = key;
+      String v = value.toString();
+      String str = '$k';
+      if (value > 1) {
+        str = '$k (x$v)';
+      }
+      miList.add(str);
+    });
+
+    return miList;
+  }
+
+  List<MagicItem> getMagicItemsByRank(String magicitemtype) {
+    return magicItemObjList
+        .where((mi) => mi.magictype == magicitemtype)
+        .toList();
   }
 }

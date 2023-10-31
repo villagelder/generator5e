@@ -1,11 +1,5 @@
-import 'dart:convert';
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:generator5e/services/treasureGenerator5e.dart';
-
-import '../../models/treasures.dart';
 
 class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
@@ -55,7 +49,7 @@ class TreasuresPage extends MaterialPageRoute<Null> {
                       ),
                     ),
                   ),
-                  TextChanger(),
+                  const TextChanger(),
                 ],
               ),
             ),
@@ -78,7 +72,7 @@ class TreasureTypeDDB extends StatefulWidget {
 }
 
 const List<String> crList = <String>['CR 0-4', 'CR 5-10', 'CR 11-16', 'CR 17+'];
-const List<String> trList = <String>['Individual', 'Hoard'];
+const List<String> trList = <String>['Individual', 'Hoard', 'Legendary'];
 
 class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
   static String ttValue = trList.first;
@@ -131,7 +125,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
 }
 
 class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
-  static String CRValue = crList.first;
+  static String crValue = crList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +140,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: CRValue,
+            value: crValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: const TextStyle(
@@ -161,7 +155,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                CRValue = value!;
+                crValue = value!;
               });
             },
             items: crList.map<DropdownMenuItem<String>>((String value) {
@@ -191,8 +185,10 @@ class _TextChangerState extends State<TextChanger> {
 
   updateText() {
     setState(() {
-      dynamicText = trGen.generate(_ChallengeRatingDDBState.CRValue, _TreasureTypeDDBState.ttValue).toString();
-
+      dynamicText = trGen
+          .generate(
+              _ChallengeRatingDDBState.crValue, _TreasureTypeDDBState.ttValue)
+          .toString();
     });
   }
 
@@ -237,7 +233,6 @@ class _TextChangerState extends State<TextChanger> {
         Padding(
           padding: const EdgeInsets.all(40.0),
           child: Text(dynamicText,
-              
               style: const TextStyle(fontFamily: 'Georgia', fontSize: 16)),
         ),
         Padding(

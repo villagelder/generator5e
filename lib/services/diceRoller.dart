@@ -2,11 +2,10 @@ import 'dart:math';
 import 'package:collection/collection.dart';
 
 class DiceRoller {
+  static List<String> parseDiceText(String dicetext) {
+    List<String> pd = [];
 
-  static List<String> parseDiceText(String dicetext){
-    List<String> pd =[];
-
-    if (dicetext != "0"){
+    if (dicetext != "0") {
       dicetext = dicetext.toLowerCase();
       pd = dicetext.split("d");
     }
@@ -25,8 +24,8 @@ class DiceRoller {
   static int rollDiceAndSum(int n, int sides) {
     List<int> dice = rollDice(n, sides);
     return dice.sum;
-
   }
+
   static List rollDiceWithModifier(int number, int sides, int modifier) {
     var diceList = [];
     for (int i = 0; i < number; i++) {

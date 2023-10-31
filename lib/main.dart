@@ -10,12 +10,8 @@ import 'package:generator5e/screens/DND5e/treasures.dart';
 import 'package:generator5e/screens/DND5e/trinkets.dart';
 import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
-
-
-import 'package:flutter/services.dart';
-
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     title: 'villagelder',
     home: MyApp(),
   ));
@@ -363,5 +359,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

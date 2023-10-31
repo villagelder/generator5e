@@ -1,2186 +1,2188 @@
-[
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "1",
-    "MAXROLL": "50",
-    "MAGICITEM": "Potion of Healing"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "51",
-    "MAXROLL": "60",
-    "MAGICITEM": "Spell Scroll, 0"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "61",
-    "MAXROLL": "70",
-    "MAGICITEM": "Potion of Climbing"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "71",
-    "MAXROLL": "90",
-    "MAGICITEM": "Spell Scroll, 1"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "91",
-    "MAXROLL": "94",
-    "MAGICITEM": "Spell Scroll, 2"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "95",
-    "MAXROLL": "98",
-    "MAGICITEM": "Potion of Greater Healing"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Bag of Holding"
-  },
-  {
-    "MAGICRANK": "A",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Driftglobe"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "1",
-    "MAXROLL": "15",
-    "MAGICITEM": "Potion of Greater Healing"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "16",
-    "MAXROLL": "22",
-    "MAGICITEM": "Potion of Fire Breath"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "23",
-    "MAXROLL": "29",
-    "MAGICITEM": "Potion of Resistance"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "30",
-    "MAXROLL": "34",
-    "MAGICITEM": "Ammunition, +1"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "35",
-    "MAXROLL": "39",
-    "MAGICITEM": "Potion of Animal Friendship"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "40",
-    "MAXROLL": "44",
-    "MAGICITEM": "Potion of Hill Giant Strength"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "45",
-    "MAXROLL": "49",
-    "MAGICITEM": "Potion of Growth"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "50",
-    "MAXROLL": "54",
-    "MAGICITEM": "Potion of Water Breathing"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "55",
-    "MAXROLL": "59",
-    "MAGICITEM": "Spell Scroll, 2"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "60",
-    "MAXROLL": "64",
-    "MAGICITEM": "Spell Scroll, 3"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "65",
-    "MAXROLL": "67",
-    "MAGICITEM": "Bag of Holding"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "68",
-    "MAXROLL": "70",
-    "MAGICITEM": "Keoghtom\u0027s Ointment"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "71",
-    "MAXROLL": "73",
-    "MAGICITEM": "Oil of Slipperiness"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "74",
-    "MAXROLL": "75",
-    "MAGICITEM": "Dust of Disappearance"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "76",
-    "MAXROLL": "77",
-    "MAGICITEM": "Dust of Dryness"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "78",
-    "MAXROLL": "79",
-    "MAGICITEM": "Dust of Sneezing and Choking"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "80",
-    "MAXROLL": "81",
-    "MAGICITEM": "Elemental Gem"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "82",
-    "MAXROLL": "83",
-    "MAGICITEM": "Philter of Love"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "84",
-    "MAXROLL": "84",
-    "MAGICITEM": "Alchemy Jug"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "85",
-    "MAXROLL": "85",
-    "MAGICITEM": "Cap of Water Breathing"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "86",
-    "MAXROLL": "86",
-    "MAGICITEM": "Cloak of the Manta Ray"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "87",
-    "MAXROLL": "87",
-    "MAGICITEM": "Driftglobe"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "88",
-    "MAXROLL": "88",
-    "MAGICITEM": "Goggles of Night"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "89",
-    "MAXROLL": "89",
-    "MAGICITEM": "Helm of Comprehending Languages"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "90",
-    "MAXROLL": "90",
-    "MAGICITEM": "Immovable Rod"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "91",
-    "MAXROLL": "91",
-    "MAGICITEM": "Lantern of Revealing"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Mariner\u0027s Armor"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Mithral Armor"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Potion of Poison"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Ring of Swimming"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Robe of Useful Items"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Rope of Climbing"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Saddle of the Cavalier"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Wand of Magic Detection"
-  },
-  {
-    "MAGICRANK": "B",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Wand of Secrets"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "1",
-    "MAXROLL": "15",
-    "MAGICITEM": "Potion of Superior Healing"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "16",
-    "MAXROLL": "22",
-    "MAGICITEM": "Spell Scroll, 4"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "23",
-    "MAXROLL": "27",
-    "MAGICITEM": "Ammunition, +2"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "28",
-    "MAXROLL": "32",
-    "MAGICITEM": "Potion of Clairvoyance"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "33",
-    "MAXROLL": "37",
-    "MAGICITEM": "Potion of Diminution"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "38",
-    "MAXROLL": "42",
-    "MAGICITEM": "Potion of Gaseous Form"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "43",
-    "MAXROLL": "47",
-    "MAGICITEM": "Potion of Frost Giant Strength"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "48",
-    "MAXROLL": "52",
-    "MAGICITEM": "Potion of Stone Giant Strength"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "53",
-    "MAXROLL": "57",
-    "MAGICITEM": "Potion of Heroism"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "58",
-    "MAXROLL": "62",
-    "MAGICITEM": "Potion of Invulnerability"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "63",
-    "MAXROLL": "57",
-    "MAGICITEM": "Potion of Mind Reading"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "68",
-    "MAXROLL": "72",
-    "MAGICITEM": "Spell Scroll, 5"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "73",
-    "MAXROLL": "75",
-    "MAGICITEM": "Elixir of Health"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "76",
-    "MAXROLL": "78",
-    "MAGICITEM": "Oil of Etherealness"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "79",
-    "MAXROLL": "81",
-    "MAGICITEM": "Potion of Fire Giant Strength"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "82",
-    "MAXROLL": "84",
-    "MAGICITEM": "Quaal\u0027s Feather Token"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "85",
-    "MAXROLL": "87",
-    "MAGICITEM": "Scroll of Protection"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "88",
-    "MAXROLL": "89",
-    "MAGICITEM": "Bag of Beans"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "90",
-    "MAXROLL": "91",
-    "MAGICITEM": "Bead of Force"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Chime of Opening"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Decanter of Endless Water"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Eyes of Minute Seeing"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Folding Boat"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Heward\u0027s Handy Haversack"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Horseshoes of Speed"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Necklace of Fireballs"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Periapt of Health"
-  },
-  {
-    "MAGICRANK": "C",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Sending Stones"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "1",
-    "MAXROLL": "20",
-    "MAGICITEM": "Potion of Supreme Healing"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "21",
-    "MAXROLL": "30",
-    "MAGICITEM": "Potion of Invisibility"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "31",
-    "MAXROLL": "40",
-    "MAGICITEM": "Potion of Speed"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "41",
-    "MAXROLL": "50",
-    "MAGICITEM": "Spell Scroll, 6"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "51",
-    "MAXROLL": "57",
-    "MAGICITEM": "Spell Scroll, 7"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "58",
-    "MAXROLL": "62",
-    "MAGICITEM": "Ammunition, +3"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "63",
-    "MAXROLL": "67",
-    "MAGICITEM": "Oil of Sharpness"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "68",
-    "MAXROLL": "72",
-    "MAGICITEM": "Potion of Flying"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "73",
-    "MAXROLL": "77",
-    "MAGICITEM": "Potion of Cloud Giant Strength"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "78",
-    "MAXROLL": "82",
-    "MAGICITEM": "Potion of Longevity"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "83",
-    "MAXROLL": "87",
-    "MAGICITEM": "Potion of Vitality"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "88",
-    "MAXROLL": "92",
-    "MAGICITEM": "Spell Scroll, 8"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "93",
-    "MAXROLL": "95",
-    "MAGICITEM": "Horseshoes of Zephyr"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "96",
-    "MAXROLL": "98",
-    "MAGICITEM": "Nolzur\u0027s Marvelous Pigments"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Bag of Devouring"
-  },
-  {
-    "MAGICRANK": "D",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Portable Hole"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "1",
-    "MAXROLL": "30",
-    "MAGICITEM": "Spell Scroll, 8"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "31",
-    "MAXROLL": "55",
-    "MAGICITEM": "Potion of Storm Giant Strength"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "56",
-    "MAXROLL": "70",
-    "MAGICITEM": "Potion of Supreme Healing"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "71",
-    "MAXROLL": "85",
-    "MAGICITEM": "Spell Scroll, 9"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "86",
-    "MAXROLL": "93",
-    "MAGICITEM": "Universal Solvent"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "94",
-    "MAXROLL": "98",
-    "MAGICITEM": "Arrow of Slaying"
-  },
-  {
-    "MAGICRANK": "E",
-    "MINROLL": "99",
-    "MAXROLL": "100",
-    "MAGICITEM": "Sovereign Glue"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "1",
-    "MAXROLL": "15",
-    "MAGICITEM": "Weapon, +1"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "16",
-    "MAXROLL": "18",
-    "MAGICITEM": "Shield, +1"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "19",
-    "MAXROLL": "21",
-    "MAGICITEM": "Sentinel Shield"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "22",
-    "MAXROLL": "23",
-    "MAGICITEM": "Amulet of Proof Against Detection and Location"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "24",
-    "MAXROLL": "25",
-    "MAGICITEM": "Boots of Elvenkind"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "26",
-    "MAXROLL": "27",
-    "MAGICITEM": "Boots of Striding and Springing"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "28",
-    "MAXROLL": "29",
-    "MAGICITEM": "Bracers of Archery"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "30",
-    "MAXROLL": "31",
-    "MAGICITEM": "Brooch of Shielding"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "32",
-    "MAXROLL": "33",
-    "MAGICITEM": "Broom of Flying"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "34",
-    "MAXROLL": "35",
-    "MAGICITEM": "Cloak of Elvenkind"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "36",
-    "MAXROLL": "37",
-    "MAGICITEM": "Cloak of Protection"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "38",
-    "MAXROLL": "39",
-    "MAGICITEM": "Gauntlets of Ogre Power"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "40",
-    "MAXROLL": "41",
-    "MAGICITEM": "Hat of Disguise"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "42",
-    "MAXROLL": "43",
-    "MAGICITEM": "Javelin of Lightning"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "44",
-    "MAXROLL": "45",
-    "MAGICITEM": "Pearl of Power"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "46",
-    "MAXROLL": "47",
-    "MAGICITEM": "Rod of the Pact Keeper, +1"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "48",
-    "MAXROLL": "49",
-    "MAGICITEM": "Slippers of Spider Climbing"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "50",
-    "MAXROLL": "51",
-    "MAGICITEM": "Staff of the Adder"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "52",
-    "MAXROLL": "53",
-    "MAGICITEM": "Staff of the Python"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "54",
-    "MAXROLL": "55",
-    "MAGICITEM": "Sword of Vengeance"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "56",
-    "MAXROLL": "57",
-    "MAGICITEM": "Trident of Fish Command"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "58",
-    "MAXROLL": "59",
-    "MAGICITEM": "Wand of Magic Missiles"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "60",
-    "MAXROLL": "61",
-    "MAGICITEM": "Wand of the War Mage, +1"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "62",
-    "MAXROLL": "63",
-    "MAGICITEM": "Wand of Web"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "64",
-    "MAXROLL": "65",
-    "MAGICITEM": "Weapon of Warning"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "66",
-    "MAXROLL": "66",
-    "MAGICITEM": "Adamantine Chain Mail"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "67",
-    "MAXROLL": "67",
-    "MAGICITEM": "Adamantine Chain Shirt"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "68",
-    "MAXROLL": "68",
-    "MAGICITEM": "Adamantine Scale Mail"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "69",
-    "MAXROLL": "69",
-    "MAGICITEM": "Bag of Tricks (gray)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "70",
-    "MAXROLL": "70",
-    "MAGICITEM": "Bag of Tricks (rust)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "71",
-    "MAXROLL": "71",
-    "MAGICITEM": "Bag of Tricks (tan)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "72",
-    "MAXROLL": "72",
-    "MAGICITEM": "Boots of the Winterlands"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "73",
-    "MAXROLL": "73",
-    "MAGICITEM": "Circlet of Blasting"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "74",
-    "MAXROLL": "74",
-    "MAGICITEM": "Deck of Illusions"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "75",
-    "MAXROLL": "75",
-    "MAGICITEM": "Eversmoking Bottle"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "76",
-    "MAXROLL": "76",
-    "MAGICITEM": "Eyes of Charming"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "77",
-    "MAXROLL": "77",
-    "MAGICITEM": "Eyes of the Eagle"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "78",
-    "MAXROLL": "78",
-    "MAGICITEM": "Figurine of Wondrous Power (silver raven)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "79",
-    "MAXROLL": "79",
-    "MAGICITEM": "Gem of Brightness"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "80",
-    "MAXROLL": "80",
-    "MAGICITEM": "Gloves of Missile Snaring"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "81",
-    "MAXROLL": "81",
-    "MAGICITEM": "Gloves of Swimming and Climbing"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "82",
-    "MAXROLL": "82",
-    "MAGICITEM": "Gloves of Thievery"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "83",
-    "MAXROLL": "83",
-    "MAGICITEM": "Headband of Intellect"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "84",
-    "MAXROLL": "84",
-    "MAGICITEM": "Helm of Telepathy"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "85",
-    "MAXROLL": "85",
-    "MAGICITEM": "Instrument of the Bards (Doss Lute)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "86",
-    "MAXROLL": "86",
-    "MAGICITEM": "Instrument of the Bards (Fachlucan Bandore)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "87",
-    "MAXROLL": "87",
-    "MAGICITEM": "Instrument of the Bards (Mac-Fuimidh Cittern)"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "88",
-    "MAXROLL": "88",
-    "MAGICITEM": "Medallion of Thoughts"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "89",
-    "MAXROLL": "89",
-    "MAGICITEM": "Necklace of Adaptation"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "90",
-    "MAXROLL": "90",
-    "MAGICITEM": "Periapt of Wound Closure"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "91",
-    "MAXROLL": "91",
-    "MAGICITEM": "Pipes of Haunting"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Pipes of the Sewers"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Ring of Jumping"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Ring of Mind Shielding"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Ring of Warmth"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Ring of Water Walking"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Quiver of Ehlonna"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Stone of Good Luck"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Wind Fan"
-  },
-  {
-    "MAGICRANK": "F",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Winged Boots"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "1",
-    "MAXROLL": "11",
-    "MAGICITEM": "Weapon, +2"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "12",
-    "MAXROLL": "14",
-    "MAGICITEM": "Figurine of Wondrous Power (roll d8)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "15",
-    "MAXROLL": "15",
-    "MAGICITEM": "Adamantine Breastplate"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "16",
-    "MAXROLL": "16",
-    "MAGICITEM": "Adamantine Splint Armor"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "17",
-    "MAXROLL": "17",
-    "MAGICITEM": "Amulet of Health"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "18",
-    "MAXROLL": "18",
-    "MAGICITEM": "Armor of Vulnerability"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "19",
-    "MAXROLL": "19",
-    "MAGICITEM": "Arrow-catching Shield"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "20",
-    "MAXROLL": "20",
-    "MAGICITEM": "Belt of Dwarvenkind"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "21",
-    "MAXROLL": "21",
-    "MAGICITEM": "Belt of Hill Giant Strength"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "22",
-    "MAXROLL": "22",
-    "MAGICITEM": "Berserker Axe"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "23",
-    "MAXROLL": "23",
-    "MAGICITEM": "Boots of Levitation"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "24",
-    "MAXROLL": "24",
-    "MAGICITEM": "Boots of Speed"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "25",
-    "MAXROLL": "25",
-    "MAGICITEM": "Bowl of Commanding Water Elementals"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "26",
-    "MAXROLL": "26",
-    "MAGICITEM": "Bracers of Defense"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "27",
-    "MAXROLL": "27",
-    "MAGICITEM": "Brazier of Commanding Fire Elementals"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "28",
-    "MAXROLL": "28",
-    "MAGICITEM": "Cape of the Mountebank"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "29",
-    "MAXROLL": "29",
-    "MAGICITEM": "Censer of Controlling Air Elementals"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "30",
-    "MAXROLL": "30",
-    "MAGICITEM": "Chain Mail Armor +1"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "31",
-    "MAXROLL": "31",
-    "MAGICITEM": "Chain Mail Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "32",
-    "MAXROLL": "32",
-    "MAGICITEM": "Chain Shirt Armor +1"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "33",
-    "MAXROLL": "33",
-    "MAGICITEM": "Chain Shirt Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "34",
-    "MAXROLL": "34",
-    "MAGICITEM": "Cloak of Displacement"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "35",
-    "MAXROLL": "35",
-    "MAGICITEM": "Cloak of the Bat"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "36",
-    "MAXROLL": "36",
-    "MAGICITEM": "Cube of Force"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "37",
-    "MAXROLL": "37",
-    "MAGICITEM": "Daern\u0027s Instant Fortress"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "38",
-    "MAXROLL": "38",
-    "MAGICITEM": "Dagger of Venom"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "39",
-    "MAXROLL": "39",
-    "MAGICITEM": "Dimensional Shackles"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "40",
-    "MAXROLL": "40",
-    "MAGICITEM": "Dragon Slayer"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "41",
-    "MAXROLL": "41",
-    "MAGICITEM": "Elven Chain"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "42",
-    "MAXROLL": "42",
-    "MAGICITEM": "Flame Tongue"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "43",
-    "MAXROLL": "43",
-    "MAGICITEM": "Gem of Seeing"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "44",
-    "MAXROLL": "44",
-    "MAGICITEM": "Giant Slayer"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "45",
-    "MAXROLL": "45",
-    "MAGICITEM": "Glamoured Studded Leather"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "46",
-    "MAXROLL": "46",
-    "MAGICITEM": "Helm of Teleportation"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "47",
-    "MAXROLL": "47",
-    "MAGICITEM": "Horn of Blasting"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "48",
-    "MAXROLL": "48",
-    "MAGICITEM": "Horn of Valhalla (silver or brass)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "49",
-    "MAXROLL": "49",
-    "MAGICITEM": "Instrument of the Bards (Canaith Mandolin)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "50",
-    "MAXROLL": "50",
-    "MAGICITEM": "Instrument of the Bards (Cli Lyre)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "51",
-    "MAXROLL": "51",
-    "MAGICITEM": "Ioun Stone (Awareness)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "52",
-    "MAXROLL": "52",
-    "MAGICITEM": "Ioun Stone (Protection)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "53",
-    "MAXROLL": "53",
-    "MAGICITEM": "Ioun Stone (Reserve)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "54",
-    "MAXROLL": "54",
-    "MAGICITEM": "Ioun Stone (Sustenance)"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "55",
-    "MAXROLL": "55",
-    "MAGICITEM": "Iron Bands of Bilarro"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "56",
-    "MAXROLL": "56",
-    "MAGICITEM": "Leather Armor +1"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "57",
-    "MAXROLL": "57",
-    "MAGICITEM": "Leather Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "58",
-    "MAXROLL": "58",
-    "MAGICITEM": "Mace of Disruption"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "59",
-    "MAXROLL": "59",
-    "MAGICITEM": "Mace of Smiting"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "60",
-    "MAXROLL": "60",
-    "MAGICITEM": "Mace of Terror"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "61",
-    "MAXROLL": "61",
-    "MAGICITEM": "Mantle of Spell Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "62",
-    "MAXROLL": "62",
-    "MAGICITEM": "Necklace of Prayer Beads"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "63",
-    "MAXROLL": "63",
-    "MAGICITEM": "Periapt of Proof Against Poison"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "64",
-    "MAXROLL": "64",
-    "MAGICITEM": "Ring of Animal Influence"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "65",
-    "MAXROLL": "65",
-    "MAGICITEM": "Ring of Evasion"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "66",
-    "MAXROLL": "66",
-    "MAGICITEM": "Ring of Feather Falling"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "67",
-    "MAXROLL": "67",
-    "MAGICITEM": "Ring of Free Action"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "68",
-    "MAXROLL": "68",
-    "MAGICITEM": "Ring of Protection"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "69",
-    "MAXROLL": "69",
-    "MAGICITEM": "Ring of Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "70",
-    "MAXROLL": "70",
-    "MAGICITEM": "Ring of Spell Storing"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "71",
-    "MAXROLL": "71",
-    "MAGICITEM": "Ring of The Ram"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "72",
-    "MAXROLL": "72",
-    "MAGICITEM": "Ring of X-Ray Vision"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "73",
-    "MAXROLL": "73",
-    "MAGICITEM": "Robe of Eyes"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "74",
-    "MAXROLL": "74",
-    "MAGICITEM": "Rod of Rulership"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "75",
-    "MAXROLL": "75",
-    "MAGICITEM": "Rod of The Pact Keeper, +2"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "76",
-    "MAXROLL": "76",
-    "MAGICITEM": "Rope of Entanglement"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "77",
-    "MAXROLL": "77",
-    "MAGICITEM": "Scale Mail Armor +1"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "78",
-    "MAXROLL": "78",
-    "MAGICITEM": "Scale Mail Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "79",
-    "MAXROLL": "79",
-    "MAGICITEM": "Shield, +2"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "80",
-    "MAXROLL": "80",
-    "MAGICITEM": "Shield of Missile Attraction"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "81",
-    "MAXROLL": "81",
-    "MAGICITEM": "Staff of Charming"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "82",
-    "MAXROLL": "82",
-    "MAGICITEM": "Staff of Healing"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "83",
-    "MAXROLL": "83",
-    "MAGICITEM": "Staff of Swarming Insects"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "84",
-    "MAXROLL": "84",
-    "MAGICITEM": "Staff of The Woodlands"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "85",
-    "MAXROLL": "85",
-    "MAGICITEM": "Staff of Withering"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "86",
-    "MAXROLL": "86",
-    "MAGICITEM": "Stone of Controlling Earth Elementals"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "87",
-    "MAXROLL": "87",
-    "MAGICITEM": "Sun Blade"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "88",
-    "MAXROLL": "88",
-    "MAGICITEM": "Sword of Life Stealing"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "89",
-    "MAXROLL": "89",
-    "MAGICITEM": "Sword of Wounding"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "90",
-    "MAXROLL": "90",
-    "MAGICITEM": "Tentacle Rod"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "91",
-    "MAXROLL": "91",
-    "MAGICITEM": "Vicious Weapon"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Wand of Binding"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Wand of Enemy Detection"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Wand of Fear"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Wand of Fireballs"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Wand of Lightning Bolts"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Wand of Paralysis"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Wand of The War Mage, +2"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Wand of Wonder"
-  },
-  {
-    "MAGICRANK": "G",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Wings of Flying"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "1",
-    "MAXROLL": "10",
-    "MAGICITEM": "Weapon, +3"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "11",
-    "MAXROLL": "12",
-    "MAGICITEM": "Amulet of the Planes"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "13",
-    "MAXROLL": "14",
-    "MAGICITEM": "Carpet of Flying"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "15",
-    "MAXROLL": "16",
-    "MAGICITEM": "Crystal Ball (Very Rare Version)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "17",
-    "MAXROLL": "18",
-    "MAGICITEM": "Ring of Regeneration"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "19",
-    "MAXROLL": "20",
-    "MAGICITEM": "Ring of Shooting Stars"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "21",
-    "MAXROLL": "22",
-    "MAGICITEM": "Ring of Telekinesis"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "23",
-    "MAXROLL": "24",
-    "MAGICITEM": "Robe of Scintillating Colors"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "25",
-    "MAXROLL": "26",
-    "MAGICITEM": "Robe of Stars"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "27",
-    "MAXROLL": "28",
-    "MAGICITEM": "Rod of Absorption"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "29",
-    "MAXROLL": "30",
-    "MAGICITEM": "Rod of Alertness"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "31",
-    "MAXROLL": "32",
-    "MAGICITEM": "Rod of Security"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "33",
-    "MAXROLL": "34",
-    "MAGICITEM": "Rod of the Pact Keeper, +3"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "35",
-    "MAXROLL": "36",
-    "MAGICITEM": "Scimitar of Speed"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "37",
-    "MAXROLL": "38",
-    "MAGICITEM": "Shield, +3"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "39",
-    "MAXROLL": "40",
-    "MAGICITEM": "Staff of Fire"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "41",
-    "MAXROLL": "42",
-    "MAGICITEM": "Staff of Frost"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "43",
-    "MAXROLL": "44",
-    "MAGICITEM": "Staff of Power"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "45",
-    "MAXROLL": "46",
-    "MAGICITEM": "Staff of Striking"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "47",
-    "MAXROLL": "48",
-    "MAGICITEM": "Staff of Thunder And Lightning"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "49",
-    "MAXROLL": "50",
-    "MAGICITEM": "Sword of Sharpness"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "51",
-    "MAXROLL": "52",
-    "MAGICITEM": "Wand of Polymorph"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "53",
-    "MAXROLL": "54",
-    "MAGICITEM": "Wand of the War Mage, +3"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "55",
-    "MAXROLL": "55",
-    "MAGICITEM": "Adamantine Half Plate Armor"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "56",
-    "MAXROLL": "56",
-    "MAGICITEM": "Adamantine Plate Armor"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "57",
-    "MAXROLL": "57",
-    "MAGICITEM": "Animated Shield"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "58",
-    "MAXROLL": "58",
-    "MAGICITEM": "Belt of Fire Giant Strength"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "59",
-    "MAXROLL": "59",
-    "MAGICITEM": "Belt of Frost (Or Stone) Giant Strength"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "60",
-    "MAXROLL": "60",
-    "MAGICITEM": "Breastplate Armor +1"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "61",
-    "MAXROLL": "61",
-    "MAGICITEM": "Breastplate Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "62",
-    "MAXROLL": "62",
-    "MAGICITEM": "Candle of Invocation"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "63",
-    "MAXROLL": "63",
-    "MAGICITEM": "Chain Mail Armor +2"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "64",
-    "MAXROLL": "64",
-    "MAGICITEM": "Chain Shirt Armor +2"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "65",
-    "MAXROLL": "65",
-    "MAGICITEM": "Cloak of Arachnida"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "66",
-    "MAXROLL": "66",
-    "MAGICITEM": "Dancing Sword"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "67",
-    "MAXROLL": "67",
-    "MAGICITEM": "Demon Armor"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "68",
-    "MAXROLL": "68",
-    "MAGICITEM": "Dragon Scale Mail"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "69",
-    "MAXROLL": "69",
-    "MAGICITEM": "Dwarven Plate"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "70",
-    "MAXROLL": "70",
-    "MAGICITEM": "Dwarven Thrower"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "71",
-    "MAXROLL": "71",
-    "MAGICITEM": "Efreeti Bottle"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "72",
-    "MAXROLL": "72",
-    "MAGICITEM": "Figurine of Wondrous Power (Obsidian Steed)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "73",
-    "MAXROLL": "73",
-    "MAGICITEM": "Frost Brand"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "74",
-    "MAXROLL": "74",
-    "MAGICITEM": "Helm of Brilliance"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "75",
-    "MAXROLL": "75",
-    "MAGICITEM": "Horn of Valhalla (Bronze)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "76",
-    "MAXROLL": "76",
-    "MAGICITEM": "Instrument of the Bards (Anstruth Harp)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "77",
-    "MAXROLL": "77",
-    "MAGICITEM": "Ioun Stone (Absorption)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "78",
-    "MAXROLL": "78",
-    "MAGICITEM": "Ioun Stone (Agility)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "79",
-    "MAXROLL": "79",
-    "MAGICITEM": "Ioun Stone (Fortitude)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "80",
-    "MAXROLL": "80",
-    "MAGICITEM": "Ioun Stone (Insight)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "81",
-    "MAXROLL": "81",
-    "MAGICITEM": "Ioun Stone (Intellect)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "82",
-    "MAXROLL": "82",
-    "MAGICITEM": "Ioun Stone (Leadership)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "83",
-    "MAXROLL": "83",
-    "MAGICITEM": "Ioun Stone (Strength)"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "84",
-    "MAXROLL": "84",
-    "MAGICITEM": "Leather Armor +2"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "85",
-    "MAXROLL": "85",
-    "MAGICITEM": "Manual of Bodily Health"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "86",
-    "MAXROLL": "86",
-    "MAGICITEM": "Manual of Gainful Exercise"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "87",
-    "MAXROLL": "87",
-    "MAGICITEM": "Manual of Golems"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "88",
-    "MAXROLL": "88",
-    "MAGICITEM": "Manual of Quickness of Action"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "89",
-    "MAXROLL": "89",
-    "MAGICITEM": "Mirror of Life Trapping"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "90",
-    "MAXROLL": "90",
-    "MAGICITEM": "Nine Lives Stealer"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "91",
-    "MAXROLL": "91",
-    "MAGICITEM": "Oathbow"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Scale Mail Armor +2"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Spellguard Shield"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Splint Armor +1"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Splint Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Studded Leather Armor +1"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Studded Leather Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Tome of Clear Thought"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Tome of Leadership And Influence"
-  },
-  {
-    "MAGICRANK": "H",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Tome of Understanding"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "1",
-    "MAXROLL": "5",
-    "MAGICITEM": "Defender"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "6",
-    "MAXROLL": "10",
-    "MAGICITEM": "Hammer of Thunderbolts"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "11",
-    "MAXROLL": "15",
-    "MAGICITEM": "Luck Blade"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "16",
-    "MAXROLL": "20",
-    "MAGICITEM": "Sword of Answering"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "21",
-    "MAXROLL": "23",
-    "MAGICITEM": "Holy Avenger"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "24",
-    "MAXROLL": "26",
-    "MAGICITEM": "Ring of Djinni Summoning"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "27",
-    "MAXROLL": "29",
-    "MAGICITEM": "Ring of Invisibility"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "30",
-    "MAXROLL": "32",
-    "MAGICITEM": "Ring of Spell Turning"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "33",
-    "MAXROLL": "35",
-    "MAGICITEM": "Rod of Lordly Might"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "36",
-    "MAXROLL": "38",
-    "MAGICITEM": "Staff of the Magi"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "39",
-    "MAXROLL": "41",
-    "MAGICITEM": "Vorpal Sword"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "42",
-    "MAXROLL": "43",
-    "MAGICITEM": "Belt of Cloud Giant Strength"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "44",
-    "MAXROLL": "45",
-    "MAGICITEM": "Breastplate Armor +2"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "46",
-    "MAXROLL": "47",
-    "MAGICITEM": "Chain Mail Armor +3"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "48",
-    "MAXROLL": "49",
-    "MAGICITEM": "Chain Shirt Armor +3"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "50",
-    "MAXROLL": "51",
-    "MAGICITEM": "Cloak of Invisibility"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "52",
-    "MAXROLL": "53",
-    "MAGICITEM": "Crystal Ball (Legendary Version)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "54",
-    "MAXROLL": "55",
-    "MAGICITEM": "Half Plate Armor +1"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "56",
-    "MAXROLL": "57",
-    "MAGICITEM": "Iron Flask"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "58",
-    "MAXROLL": "59",
-    "MAGICITEM": "Leather Armor +3"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "60",
-    "MAXROLL": "61",
-    "MAGICITEM": "Plate Armor +1"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "62",
-    "MAXROLL": "63",
-    "MAGICITEM": "Robe of the Archmagi"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "64",
-    "MAXROLL": "65",
-    "MAGICITEM": "Rod of Resurrection"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "66",
-    "MAXROLL": "67",
-    "MAGICITEM": "Scale Mail Armor +1"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "68",
-    "MAXROLL": "69",
-    "MAGICITEM": "Scarab of Protection"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "70",
-    "MAXROLL": "71",
-    "MAGICITEM": "Splint Armor +2"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "72",
-    "MAXROLL": "73",
-    "MAGICITEM": "Studded Leather Armor +2"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "74",
-    "MAXROLL": "75",
-    "MAGICITEM": "Well of Many Worlds"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "76",
-    "MAXROLL": "76",
-    "MAGICITEM": "Magic Armor (Roll D12)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "77",
-    "MAXROLL": "77",
-    "MAGICITEM": "Apparatus of Kwalish"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "78",
-    "MAXROLL": "78",
-    "MAGICITEM": "Armor of Invulnerability"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "79",
-    "MAXROLL": "79",
-    "MAGICITEM": "Belt of Storm Giant Strength"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "80",
-    "MAXROLL": "80",
-    "MAGICITEM": "Cubic Gate"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "81",
-    "MAXROLL": "81",
-    "MAGICITEM": "Deck of Many Things"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "82",
-    "MAXROLL": "82",
-    "MAGICITEM": "Efreeti Chain"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "83",
-    "MAXROLL": "83",
-    "MAGICITEM": "Armor of Resistance (Half Plate)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "84",
-    "MAXROLL": "84",
-    "MAGICITEM": "Horn of Valhalla (Iron)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "85",
-    "MAXROLL": "85",
-    "MAGICITEM": "Instrument of the Bards (Ollamh Harp)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "86",
-    "MAXROLL": "86",
-    "MAGICITEM": "Ioun Stone (Greater Absorption)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "87",
-    "MAXROLL": "87",
-    "MAGICITEM": "Ioun Stone (Mastery)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "88",
-    "MAXROLL": "88",
-    "MAGICITEM": "Ioun Stone (Regeneration)"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "89",
-    "MAXROLL": "89",
-    "MAGICITEM": "Plater Armor of Etherealness"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "90",
-    "MAXROLL": "90",
-    "MAGICITEM": "Plate Armor of Resistance"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "91",
-    "MAXROLL": "91",
-    "MAGICITEM": "Ring of Air Elemental Command"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "92",
-    "MAXROLL": "92",
-    "MAGICITEM": "Ring of Earth Elemental Command"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "93",
-    "MAXROLL": "93",
-    "MAGICITEM": "Ring of Fire Elemental Command"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "94",
-    "MAXROLL": "94",
-    "MAGICITEM": "Ring of Three Wishes"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "95",
-    "MAXROLL": "95",
-    "MAGICITEM": "Ring of Water Elemental Command"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "96",
-    "MAXROLL": "96",
-    "MAGICITEM": "Sphere of Annihilation"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "97",
-    "MAXROLL": "97",
-    "MAGICITEM": "Talisman of Pure Good"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "98",
-    "MAXROLL": "98",
-    "MAGICITEM": "Talisman of the Sphere"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "99",
-    "MAXROLL": "99",
-    "MAGICITEM": "Talisman of Ultimate Evil"
-  },
-  {
-    "MAGICRANK": "I",
-    "MINROLL": "100",
-    "MAXROLL": "100",
-    "MAGICITEM": "Tome of the Stilled Tongue"
-  }
-]
+{
+  "magicitems": [
+    {
+      "magictype": "A",
+      "minroll": "1",
+      "maxroll": "50",
+      "magicitem": "Potion of Healing"
+    },
+    {
+      "magictype": "A",
+      "minroll": "51",
+      "maxroll": "60",
+      "magicitem": "Spell Scroll, 0"
+    },
+    {
+      "magictype": "A",
+      "minroll": "61",
+      "maxroll": "70",
+      "magicitem": "Potion of Climbing"
+    },
+    {
+      "magictype": "A",
+      "minroll": "71",
+      "maxroll": "90",
+      "magicitem": "Spell Scroll, 1"
+    },
+    {
+      "magictype": "A",
+      "minroll": "91",
+      "maxroll": "94",
+      "magicitem": "Spell Scroll, 2"
+    },
+    {
+      "magictype": "A",
+      "minroll": "95",
+      "maxroll": "98",
+      "magicitem": "Potion of Greater Healing"
+    },
+    {
+      "magictype": "A",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Bag of Holding"
+    },
+    {
+      "magictype": "A",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Driftglobe"
+    },
+    {
+      "magictype": "B",
+      "minroll": "1",
+      "maxroll": "15",
+      "magicitem": "Potion of Greater Healing"
+    },
+    {
+      "magictype": "B",
+      "minroll": "16",
+      "maxroll": "22",
+      "magicitem": "Potion of Fire Breath"
+    },
+    {
+      "magictype": "B",
+      "minroll": "23",
+      "maxroll": "29",
+      "magicitem": "Potion of Resistance"
+    },
+    {
+      "magictype": "B",
+      "minroll": "30",
+      "maxroll": "34",
+      "magicitem": "Ammunition, +1"
+    },
+    {
+      "magictype": "B",
+      "minroll": "35",
+      "maxroll": "39",
+      "magicitem": "Potion of Animal Friendship"
+    },
+    {
+      "magictype": "B",
+      "minroll": "40",
+      "maxroll": "44",
+      "magicitem": "Potion of Hill Giant Strength"
+    },
+    {
+      "magictype": "B",
+      "minroll": "45",
+      "maxroll": "49",
+      "magicitem": "Potion of Growth"
+    },
+    {
+      "magictype": "B",
+      "minroll": "50",
+      "maxroll": "54",
+      "magicitem": "Potion of Water Breathing"
+    },
+    {
+      "magictype": "B",
+      "minroll": "55",
+      "maxroll": "59",
+      "magicitem": "Spell Scroll, 2"
+    },
+    {
+      "magictype": "B",
+      "minroll": "60",
+      "maxroll": "64",
+      "magicitem": "Spell Scroll, 3"
+    },
+    {
+      "magictype": "B",
+      "minroll": "65",
+      "maxroll": "67",
+      "magicitem": "Bag of Holding"
+    },
+    {
+      "magictype": "B",
+      "minroll": "68",
+      "maxroll": "70",
+      "magicitem": "Keoghtom\u0027s Ointment"
+    },
+    {
+      "magictype": "B",
+      "minroll": "71",
+      "maxroll": "73",
+      "magicitem": "Oil of Slipperiness"
+    },
+    {
+      "magictype": "B",
+      "minroll": "74",
+      "maxroll": "75",
+      "magicitem": "Dust of Disappearance"
+    },
+    {
+      "magictype": "B",
+      "minroll": "76",
+      "maxroll": "77",
+      "magicitem": "Dust of Dryness"
+    },
+    {
+      "magictype": "B",
+      "minroll": "78",
+      "maxroll": "79",
+      "magicitem": "Dust of Sneezing and Choking"
+    },
+    {
+      "magictype": "B",
+      "minroll": "80",
+      "maxroll": "81",
+      "magicitem": "Elemental Gem"
+    },
+    {
+      "magictype": "B",
+      "minroll": "82",
+      "maxroll": "83",
+      "magicitem": "Philter of Love"
+    },
+    {
+      "magictype": "B",
+      "minroll": "84",
+      "maxroll": "84",
+      "magicitem": "Alchemy Jug"
+    },
+    {
+      "magictype": "B",
+      "minroll": "85",
+      "maxroll": "85",
+      "magicitem": "Cap of Water Breathing"
+    },
+    {
+      "magictype": "B",
+      "minroll": "86",
+      "maxroll": "86",
+      "magicitem": "Cloak of the Manta Ray"
+    },
+    {
+      "magictype": "B",
+      "minroll": "87",
+      "maxroll": "87",
+      "magicitem": "Driftglobe"
+    },
+    {
+      "magictype": "B",
+      "minroll": "88",
+      "maxroll": "88",
+      "magicitem": "Goggles of Night"
+    },
+    {
+      "magictype": "B",
+      "minroll": "89",
+      "maxroll": "89",
+      "magicitem": "Helm of Comprehending Languages"
+    },
+    {
+      "magictype": "B",
+      "minroll": "90",
+      "maxroll": "90",
+      "magicitem": "Immovable Rod"
+    },
+    {
+      "magictype": "B",
+      "minroll": "91",
+      "maxroll": "91",
+      "magicitem": "Lantern of Revealing"
+    },
+    {
+      "magictype": "B",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Mariner\u0027s Armor"
+    },
+    {
+      "magictype": "B",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Mithral Armor"
+    },
+    {
+      "magictype": "B",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Potion of Poison"
+    },
+    {
+      "magictype": "B",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Ring of Swimming"
+    },
+    {
+      "magictype": "B",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Robe of Useful Items"
+    },
+    {
+      "magictype": "B",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Rope of Climbing"
+    },
+    {
+      "magictype": "B",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Saddle of the Cavalier"
+    },
+    {
+      "magictype": "B",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Wand of Magic Detection"
+    },
+    {
+      "magictype": "B",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Wand of Secrets"
+    },
+    {
+      "magictype": "C",
+      "minroll": "1",
+      "maxroll": "15",
+      "magicitem": "Potion of Superior Healing"
+    },
+    {
+      "magictype": "C",
+      "minroll": "16",
+      "maxroll": "22",
+      "magicitem": "Spell Scroll, 4"
+    },
+    {
+      "magictype": "C",
+      "minroll": "23",
+      "maxroll": "27",
+      "magicitem": "Ammunition, +2"
+    },
+    {
+      "magictype": "C",
+      "minroll": "28",
+      "maxroll": "32",
+      "magicitem": "Potion of Clairvoyance"
+    },
+    {
+      "magictype": "C",
+      "minroll": "33",
+      "maxroll": "37",
+      "magicitem": "Potion of Diminution"
+    },
+    {
+      "magictype": "C",
+      "minroll": "38",
+      "maxroll": "42",
+      "magicitem": "Potion of Gaseous Form"
+    },
+    {
+      "magictype": "C",
+      "minroll": "43",
+      "maxroll": "47",
+      "magicitem": "Potion of Frost Giant Strength"
+    },
+    {
+      "magictype": "C",
+      "minroll": "48",
+      "maxroll": "52",
+      "magicitem": "Potion of Stone Giant Strength"
+    },
+    {
+      "magictype": "C",
+      "minroll": "53",
+      "maxroll": "57",
+      "magicitem": "Potion of Heroism"
+    },
+    {
+      "magictype": "C",
+      "minroll": "58",
+      "maxroll": "62",
+      "magicitem": "Potion of Invulnerability"
+    },
+    {
+      "magictype": "C",
+      "minroll": "63",
+      "maxroll": "57",
+      "magicitem": "Potion of Mind Reading"
+    },
+    {
+      "magictype": "C",
+      "minroll": "68",
+      "maxroll": "72",
+      "magicitem": "Spell Scroll, 5"
+    },
+    {
+      "magictype": "C",
+      "minroll": "73",
+      "maxroll": "75",
+      "magicitem": "Elixir of Health"
+    },
+    {
+      "magictype": "C",
+      "minroll": "76",
+      "maxroll": "78",
+      "magicitem": "Oil of Etherealness"
+    },
+    {
+      "magictype": "C",
+      "minroll": "79",
+      "maxroll": "81",
+      "magicitem": "Potion of Fire Giant Strength"
+    },
+    {
+      "magictype": "C",
+      "minroll": "82",
+      "maxroll": "84",
+      "magicitem": "Quaal\u0027s Feather Token"
+    },
+    {
+      "magictype": "C",
+      "minroll": "85",
+      "maxroll": "87",
+      "magicitem": "Scroll of Protection"
+    },
+    {
+      "magictype": "C",
+      "minroll": "88",
+      "maxroll": "89",
+      "magicitem": "Bag of Beans"
+    },
+    {
+      "magictype": "C",
+      "minroll": "90",
+      "maxroll": "91",
+      "magicitem": "Bead of Force"
+    },
+    {
+      "magictype": "C",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Chime of Opening"
+    },
+    {
+      "magictype": "C",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Decanter of Endless Water"
+    },
+    {
+      "magictype": "C",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Eyes of Minute Seeing"
+    },
+    {
+      "magictype": "C",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Folding Boat"
+    },
+    {
+      "magictype": "C",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Heward\u0027s Handy Haversack"
+    },
+    {
+      "magictype": "C",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Horseshoes of Speed"
+    },
+    {
+      "magictype": "C",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Necklace of Fireballs"
+    },
+    {
+      "magictype": "C",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Periapt of Health"
+    },
+    {
+      "magictype": "C",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Sending Stones"
+    },
+    {
+      "magictype": "D",
+      "minroll": "1",
+      "maxroll": "20",
+      "magicitem": "Potion of Supreme Healing"
+    },
+    {
+      "magictype": "D",
+      "minroll": "21",
+      "maxroll": "30",
+      "magicitem": "Potion of Invisibility"
+    },
+    {
+      "magictype": "D",
+      "minroll": "31",
+      "maxroll": "40",
+      "magicitem": "Potion of Speed"
+    },
+    {
+      "magictype": "D",
+      "minroll": "41",
+      "maxroll": "50",
+      "magicitem": "Spell Scroll, 6"
+    },
+    {
+      "magictype": "D",
+      "minroll": "51",
+      "maxroll": "57",
+      "magicitem": "Spell Scroll, 7"
+    },
+    {
+      "magictype": "D",
+      "minroll": "58",
+      "maxroll": "62",
+      "magicitem": "Ammunition, +3"
+    },
+    {
+      "magictype": "D",
+      "minroll": "63",
+      "maxroll": "67",
+      "magicitem": "Oil of Sharpness"
+    },
+    {
+      "magictype": "D",
+      "minroll": "68",
+      "maxroll": "72",
+      "magicitem": "Potion of Flying"
+    },
+    {
+      "magictype": "D",
+      "minroll": "73",
+      "maxroll": "77",
+      "magicitem": "Potion of Cloud Giant Strength"
+    },
+    {
+      "magictype": "D",
+      "minroll": "78",
+      "maxroll": "82",
+      "magicitem": "Potion of Longevity"
+    },
+    {
+      "magictype": "D",
+      "minroll": "83",
+      "maxroll": "87",
+      "magicitem": "Potion of Vitality"
+    },
+    {
+      "magictype": "D",
+      "minroll": "88",
+      "maxroll": "92",
+      "magicitem": "Spell Scroll, 8"
+    },
+    {
+      "magictype": "D",
+      "minroll": "93",
+      "maxroll": "95",
+      "magicitem": "Horseshoes of Zephyr"
+    },
+    {
+      "magictype": "D",
+      "minroll": "96",
+      "maxroll": "98",
+      "magicitem": "Nolzur\u0027s Marvelous Pigments"
+    },
+    {
+      "magictype": "D",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Bag of Devouring"
+    },
+    {
+      "magictype": "D",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Portable Hole"
+    },
+    {
+      "magictype": "E",
+      "minroll": "1",
+      "maxroll": "30",
+      "magicitem": "Spell Scroll, 8"
+    },
+    {
+      "magictype": "E",
+      "minroll": "31",
+      "maxroll": "55",
+      "magicitem": "Potion of Storm Giant Strength"
+    },
+    {
+      "magictype": "E",
+      "minroll": "56",
+      "maxroll": "70",
+      "magicitem": "Potion of Supreme Healing"
+    },
+    {
+      "magictype": "E",
+      "minroll": "71",
+      "maxroll": "85",
+      "magicitem": "Spell Scroll, 9"
+    },
+    {
+      "magictype": "E",
+      "minroll": "86",
+      "maxroll": "93",
+      "magicitem": "Universal Solvent"
+    },
+    {
+      "magictype": "E",
+      "minroll": "94",
+      "maxroll": "98",
+      "magicitem": "Arrow of Slaying"
+    },
+    {
+      "magictype": "E",
+      "minroll": "99",
+      "maxroll": "100",
+      "magicitem": "Sovereign Glue"
+    },
+    {
+      "magictype": "F",
+      "minroll": "1",
+      "maxroll": "15",
+      "magicitem": "Weapon, +1"
+    },
+    {
+      "magictype": "F",
+      "minroll": "16",
+      "maxroll": "18",
+      "magicitem": "Shield, +1"
+    },
+    {
+      "magictype": "F",
+      "minroll": "19",
+      "maxroll": "21",
+      "magicitem": "Sentinel Shield"
+    },
+    {
+      "magictype": "F",
+      "minroll": "22",
+      "maxroll": "23",
+      "magicitem": "Amulet of Proof Against Detection and Location"
+    },
+    {
+      "magictype": "F",
+      "minroll": "24",
+      "maxroll": "25",
+      "magicitem": "Boots of Elvenkind"
+    },
+    {
+      "magictype": "F",
+      "minroll": "26",
+      "maxroll": "27",
+      "magicitem": "Boots of Striding and Springing"
+    },
+    {
+      "magictype": "F",
+      "minroll": "28",
+      "maxroll": "29",
+      "magicitem": "Bracers of Archery"
+    },
+    {
+      "magictype": "F",
+      "minroll": "30",
+      "maxroll": "31",
+      "magicitem": "Brooch of Shielding"
+    },
+    {
+      "magictype": "F",
+      "minroll": "32",
+      "maxroll": "33",
+      "magicitem": "Broom of Flying"
+    },
+    {
+      "magictype": "F",
+      "minroll": "34",
+      "maxroll": "35",
+      "magicitem": "Cloak of Elvenkind"
+    },
+    {
+      "magictype": "F",
+      "minroll": "36",
+      "maxroll": "37",
+      "magicitem": "Cloak of Protection"
+    },
+    {
+      "magictype": "F",
+      "minroll": "38",
+      "maxroll": "39",
+      "magicitem": "Gauntlets of Ogre Power"
+    },
+    {
+      "magictype": "F",
+      "minroll": "40",
+      "maxroll": "41",
+      "magicitem": "Hat of Disguise"
+    },
+    {
+      "magictype": "F",
+      "minroll": "42",
+      "maxroll": "43",
+      "magicitem": "Javelin of Lightning"
+    },
+    {
+      "magictype": "F",
+      "minroll": "44",
+      "maxroll": "45",
+      "magicitem": "Pearl of Power"
+    },
+    {
+      "magictype": "F",
+      "minroll": "46",
+      "maxroll": "47",
+      "magicitem": "Rod of the Pact Keeper, +1"
+    },
+    {
+      "magictype": "F",
+      "minroll": "48",
+      "maxroll": "49",
+      "magicitem": "Slippers of Spider Climbing"
+    },
+    {
+      "magictype": "F",
+      "minroll": "50",
+      "maxroll": "51",
+      "magicitem": "Staff of the Adder"
+    },
+    {
+      "magictype": "F",
+      "minroll": "52",
+      "maxroll": "53",
+      "magicitem": "Staff of the Python"
+    },
+    {
+      "magictype": "F",
+      "minroll": "54",
+      "maxroll": "55",
+      "magicitem": "Sword of Vengeance"
+    },
+    {
+      "magictype": "F",
+      "minroll": "56",
+      "maxroll": "57",
+      "magicitem": "Trident of Fish Command"
+    },
+    {
+      "magictype": "F",
+      "minroll": "58",
+      "maxroll": "59",
+      "magicitem": "Wand of Magic Missiles"
+    },
+    {
+      "magictype": "F",
+      "minroll": "60",
+      "maxroll": "61",
+      "magicitem": "Wand of the War Mage, +1"
+    },
+    {
+      "magictype": "F",
+      "minroll": "62",
+      "maxroll": "63",
+      "magicitem": "Wand of Web"
+    },
+    {
+      "magictype": "F",
+      "minroll": "64",
+      "maxroll": "65",
+      "magicitem": "Weapon of Warning"
+    },
+    {
+      "magictype": "F",
+      "minroll": "66",
+      "maxroll": "66",
+      "magicitem": "Adamantine Chain Mail"
+    },
+    {
+      "magictype": "F",
+      "minroll": "67",
+      "maxroll": "67",
+      "magicitem": "Adamantine Chain Shirt"
+    },
+    {
+      "magictype": "F",
+      "minroll": "68",
+      "maxroll": "68",
+      "magicitem": "Adamantine Scale Mail"
+    },
+    {
+      "magictype": "F",
+      "minroll": "69",
+      "maxroll": "69",
+      "magicitem": "Bag of Tricks (gray)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "70",
+      "maxroll": "70",
+      "magicitem": "Bag of Tricks (rust)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "71",
+      "maxroll": "71",
+      "magicitem": "Bag of Tricks (tan)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "72",
+      "maxroll": "72",
+      "magicitem": "Boots of the Winterlands"
+    },
+    {
+      "magictype": "F",
+      "minroll": "73",
+      "maxroll": "73",
+      "magicitem": "Circlet of Blasting"
+    },
+    {
+      "magictype": "F",
+      "minroll": "74",
+      "maxroll": "74",
+      "magicitem": "Deck of Illusions"
+    },
+    {
+      "magictype": "F",
+      "minroll": "75",
+      "maxroll": "75",
+      "magicitem": "Eversmoking Bottle"
+    },
+    {
+      "magictype": "F",
+      "minroll": "76",
+      "maxroll": "76",
+      "magicitem": "Eyes of Charming"
+    },
+    {
+      "magictype": "F",
+      "minroll": "77",
+      "maxroll": "77",
+      "magicitem": "Eyes of the Eagle"
+    },
+    {
+      "magictype": "F",
+      "minroll": "78",
+      "maxroll": "78",
+      "magicitem": "Figurine of Wondrous Power (silver raven)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "79",
+      "maxroll": "79",
+      "magicitem": "Gem of Brightness"
+    },
+    {
+      "magictype": "F",
+      "minroll": "80",
+      "maxroll": "80",
+      "magicitem": "Gloves of Missile Snaring"
+    },
+    {
+      "magictype": "F",
+      "minroll": "81",
+      "maxroll": "81",
+      "magicitem": "Gloves of Swimming and Climbing"
+    },
+    {
+      "magictype": "F",
+      "minroll": "82",
+      "maxroll": "82",
+      "magicitem": "Gloves of Thievery"
+    },
+    {
+      "magictype": "F",
+      "minroll": "83",
+      "maxroll": "83",
+      "magicitem": "Headband of Intellect"
+    },
+    {
+      "magictype": "F",
+      "minroll": "84",
+      "maxroll": "84",
+      "magicitem": "Helm of Telepathy"
+    },
+    {
+      "magictype": "F",
+      "minroll": "85",
+      "maxroll": "85",
+      "magicitem": "Instrument of the Bards (Doss Lute)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "86",
+      "maxroll": "86",
+      "magicitem": "Instrument of the Bards (Fachlucan Bandore)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "87",
+      "maxroll": "87",
+      "magicitem": "Instrument of the Bards (Mac-Fuimidh Cittern)"
+    },
+    {
+      "magictype": "F",
+      "minroll": "88",
+      "maxroll": "88",
+      "magicitem": "Medallion of Thoughts"
+    },
+    {
+      "magictype": "F",
+      "minroll": "89",
+      "maxroll": "89",
+      "magicitem": "Necklace of Adaptation"
+    },
+    {
+      "magictype": "F",
+      "minroll": "90",
+      "maxroll": "90",
+      "magicitem": "Periapt of Wound Closure"
+    },
+    {
+      "magictype": "F",
+      "minroll": "91",
+      "maxroll": "91",
+      "magicitem": "Pipes of Haunting"
+    },
+    {
+      "magictype": "F",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Pipes of the Sewers"
+    },
+    {
+      "magictype": "F",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Ring of Jumping"
+    },
+    {
+      "magictype": "F",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Ring of Mind Shielding"
+    },
+    {
+      "magictype": "F",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Ring of Warmth"
+    },
+    {
+      "magictype": "F",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Ring of Water Walking"
+    },
+    {
+      "magictype": "F",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Quiver of Ehlonna"
+    },
+    {
+      "magictype": "F",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Stone of Good Luck"
+    },
+    {
+      "magictype": "F",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Wind Fan"
+    },
+    {
+      "magictype": "F",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Winged Boots"
+    },
+    {
+      "magictype": "G",
+      "minroll": "1",
+      "maxroll": "11",
+      "magicitem": "Weapon, +2"
+    },
+    {
+      "magictype": "G",
+      "minroll": "12",
+      "maxroll": "14",
+      "magicitem": "Figurine of Wondrous Power (roll d8)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "15",
+      "maxroll": "15",
+      "magicitem": "Adamantine Breastplate"
+    },
+    {
+      "magictype": "G",
+      "minroll": "16",
+      "maxroll": "16",
+      "magicitem": "Adamantine Splint Armor"
+    },
+    {
+      "magictype": "G",
+      "minroll": "17",
+      "maxroll": "17",
+      "magicitem": "Amulet of Health"
+    },
+    {
+      "magictype": "G",
+      "minroll": "18",
+      "maxroll": "18",
+      "magicitem": "Armor of Vulnerability"
+    },
+    {
+      "magictype": "G",
+      "minroll": "19",
+      "maxroll": "19",
+      "magicitem": "Arrow-catching Shield"
+    },
+    {
+      "magictype": "G",
+      "minroll": "20",
+      "maxroll": "20",
+      "magicitem": "Belt of Dwarvenkind"
+    },
+    {
+      "magictype": "G",
+      "minroll": "21",
+      "maxroll": "21",
+      "magicitem": "Belt of Hill Giant Strength"
+    },
+    {
+      "magictype": "G",
+      "minroll": "22",
+      "maxroll": "22",
+      "magicitem": "Berserker Axe"
+    },
+    {
+      "magictype": "G",
+      "minroll": "23",
+      "maxroll": "23",
+      "magicitem": "Boots of Levitation"
+    },
+    {
+      "magictype": "G",
+      "minroll": "24",
+      "maxroll": "24",
+      "magicitem": "Boots of Speed"
+    },
+    {
+      "magictype": "G",
+      "minroll": "25",
+      "maxroll": "25",
+      "magicitem": "Bowl of Commanding Water Elementals"
+    },
+    {
+      "magictype": "G",
+      "minroll": "26",
+      "maxroll": "26",
+      "magicitem": "Bracers of Defense"
+    },
+    {
+      "magictype": "G",
+      "minroll": "27",
+      "maxroll": "27",
+      "magicitem": "Brazier of Commanding Fire Elementals"
+    },
+    {
+      "magictype": "G",
+      "minroll": "28",
+      "maxroll": "28",
+      "magicitem": "Cape of the Mountebank"
+    },
+    {
+      "magictype": "G",
+      "minroll": "29",
+      "maxroll": "29",
+      "magicitem": "Censer of Controlling Air Elementals"
+    },
+    {
+      "magictype": "G",
+      "minroll": "30",
+      "maxroll": "30",
+      "magicitem": "Chain Mail Armor +1"
+    },
+    {
+      "magictype": "G",
+      "minroll": "31",
+      "maxroll": "31",
+      "magicitem": "Chain Mail Armor of Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "32",
+      "maxroll": "32",
+      "magicitem": "Chain Shirt Armor +1"
+    },
+    {
+      "magictype": "G",
+      "minroll": "33",
+      "maxroll": "33",
+      "magicitem": "Chain Shirt Armor of Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "34",
+      "maxroll": "34",
+      "magicitem": "Cloak of Displacement"
+    },
+    {
+      "magictype": "G",
+      "minroll": "35",
+      "maxroll": "35",
+      "magicitem": "Cloak of the Bat"
+    },
+    {
+      "magictype": "G",
+      "minroll": "36",
+      "maxroll": "36",
+      "magicitem": "Cube of Force"
+    },
+    {
+      "magictype": "G",
+      "minroll": "37",
+      "maxroll": "37",
+      "magicitem": "Daern\u0027s Instant Fortress"
+    },
+    {
+      "magictype": "G",
+      "minroll": "38",
+      "maxroll": "38",
+      "magicitem": "Dagger of Venom"
+    },
+    {
+      "magictype": "G",
+      "minroll": "39",
+      "maxroll": "39",
+      "magicitem": "Dimensional Shackles"
+    },
+    {
+      "magictype": "G",
+      "minroll": "40",
+      "maxroll": "40",
+      "magicitem": "Dragon Slayer"
+    },
+    {
+      "magictype": "G",
+      "minroll": "41",
+      "maxroll": "41",
+      "magicitem": "Elven Chain"
+    },
+    {
+      "magictype": "G",
+      "minroll": "42",
+      "maxroll": "42",
+      "magicitem": "Flame Tongue"
+    },
+    {
+      "magictype": "G",
+      "minroll": "43",
+      "maxroll": "43",
+      "magicitem": "Gem of Seeing"
+    },
+    {
+      "magictype": "G",
+      "minroll": "44",
+      "maxroll": "44",
+      "magicitem": "Giant Slayer"
+    },
+    {
+      "magictype": "G",
+      "minroll": "45",
+      "maxroll": "45",
+      "magicitem": "Glamoured Studded Leather"
+    },
+    {
+      "magictype": "G",
+      "minroll": "46",
+      "maxroll": "46",
+      "magicitem": "Helm of Teleportation"
+    },
+    {
+      "magictype": "G",
+      "minroll": "47",
+      "maxroll": "47",
+      "magicitem": "Horn of Blasting"
+    },
+    {
+      "magictype": "G",
+      "minroll": "48",
+      "maxroll": "48",
+      "magicitem": "Horn of Valhalla (silver or brass)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "49",
+      "maxroll": "49",
+      "magicitem": "Instrument of the Bards (Canaith Mandolin)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "50",
+      "maxroll": "50",
+      "magicitem": "Instrument of the Bards (Cli Lyre)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "51",
+      "maxroll": "51",
+      "magicitem": "Ioun Stone (Awareness)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "52",
+      "maxroll": "52",
+      "magicitem": "Ioun Stone (Protection)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "53",
+      "maxroll": "53",
+      "magicitem": "Ioun Stone (Reserve)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "54",
+      "maxroll": "54",
+      "magicitem": "Ioun Stone (Sustenance)"
+    },
+    {
+      "magictype": "G",
+      "minroll": "55",
+      "maxroll": "55",
+      "magicitem": "Iron Bands of Bilarro"
+    },
+    {
+      "magictype": "G",
+      "minroll": "56",
+      "maxroll": "56",
+      "magicitem": "Leather Armor +1"
+    },
+    {
+      "magictype": "G",
+      "minroll": "57",
+      "maxroll": "57",
+      "magicitem": "Leather Armor of Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "58",
+      "maxroll": "58",
+      "magicitem": "Mace of Disruption"
+    },
+    {
+      "magictype": "G",
+      "minroll": "59",
+      "maxroll": "59",
+      "magicitem": "Mace of Smiting"
+    },
+    {
+      "magictype": "G",
+      "minroll": "60",
+      "maxroll": "60",
+      "magicitem": "Mace of Terror"
+    },
+    {
+      "magictype": "G",
+      "minroll": "61",
+      "maxroll": "61",
+      "magicitem": "Mantle of Spell Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "62",
+      "maxroll": "62",
+      "magicitem": "Necklace of Prayer Beads"
+    },
+    {
+      "magictype": "G",
+      "minroll": "63",
+      "maxroll": "63",
+      "magicitem": "Periapt of Proof Against Poison"
+    },
+    {
+      "magictype": "G",
+      "minroll": "64",
+      "maxroll": "64",
+      "magicitem": "Ring of Animal Influence"
+    },
+    {
+      "magictype": "G",
+      "minroll": "65",
+      "maxroll": "65",
+      "magicitem": "Ring of Evasion"
+    },
+    {
+      "magictype": "G",
+      "minroll": "66",
+      "maxroll": "66",
+      "magicitem": "Ring of Feather Falling"
+    },
+    {
+      "magictype": "G",
+      "minroll": "67",
+      "maxroll": "67",
+      "magicitem": "Ring of Free Action"
+    },
+    {
+      "magictype": "G",
+      "minroll": "68",
+      "maxroll": "68",
+      "magicitem": "Ring of Protection"
+    },
+    {
+      "magictype": "G",
+      "minroll": "69",
+      "maxroll": "69",
+      "magicitem": "Ring of Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "70",
+      "maxroll": "70",
+      "magicitem": "Ring of Spell Storing"
+    },
+    {
+      "magictype": "G",
+      "minroll": "71",
+      "maxroll": "71",
+      "magicitem": "Ring of The Ram"
+    },
+    {
+      "magictype": "G",
+      "minroll": "72",
+      "maxroll": "72",
+      "magicitem": "Ring of X-Ray Vision"
+    },
+    {
+      "magictype": "G",
+      "minroll": "73",
+      "maxroll": "73",
+      "magicitem": "Robe of Eyes"
+    },
+    {
+      "magictype": "G",
+      "minroll": "74",
+      "maxroll": "74",
+      "magicitem": "Rod of Rulership"
+    },
+    {
+      "magictype": "G",
+      "minroll": "75",
+      "maxroll": "75",
+      "magicitem": "Rod of The Pact Keeper, +2"
+    },
+    {
+      "magictype": "G",
+      "minroll": "76",
+      "maxroll": "76",
+      "magicitem": "Rope of Entanglement"
+    },
+    {
+      "magictype": "G",
+      "minroll": "77",
+      "maxroll": "77",
+      "magicitem": "Scale Mail Armor +1"
+    },
+    {
+      "magictype": "G",
+      "minroll": "78",
+      "maxroll": "78",
+      "magicitem": "Scale Mail Armor of Resistance"
+    },
+    {
+      "magictype": "G",
+      "minroll": "79",
+      "maxroll": "79",
+      "magicitem": "Shield, +2"
+    },
+    {
+      "magictype": "G",
+      "minroll": "80",
+      "maxroll": "80",
+      "magicitem": "Shield of Missile Attraction"
+    },
+    {
+      "magictype": "G",
+      "minroll": "81",
+      "maxroll": "81",
+      "magicitem": "Staff of Charming"
+    },
+    {
+      "magictype": "G",
+      "minroll": "82",
+      "maxroll": "82",
+      "magicitem": "Staff of Healing"
+    },
+    {
+      "magictype": "G",
+      "minroll": "83",
+      "maxroll": "83",
+      "magicitem": "Staff of Swarming Insects"
+    },
+    {
+      "magictype": "G",
+      "minroll": "84",
+      "maxroll": "84",
+      "magicitem": "Staff of The Woodlands"
+    },
+    {
+      "magictype": "G",
+      "minroll": "85",
+      "maxroll": "85",
+      "magicitem": "Staff of Withering"
+    },
+    {
+      "magictype": "G",
+      "minroll": "86",
+      "maxroll": "86",
+      "magicitem": "Stone of Controlling Earth Elementals"
+    },
+    {
+      "magictype": "G",
+      "minroll": "87",
+      "maxroll": "87",
+      "magicitem": "Sun Blade"
+    },
+    {
+      "magictype": "G",
+      "minroll": "88",
+      "maxroll": "88",
+      "magicitem": "Sword of Life Stealing"
+    },
+    {
+      "magictype": "G",
+      "minroll": "89",
+      "maxroll": "89",
+      "magicitem": "Sword of Wounding"
+    },
+    {
+      "magictype": "G",
+      "minroll": "90",
+      "maxroll": "90",
+      "magicitem": "Tentacle Rod"
+    },
+    {
+      "magictype": "G",
+      "minroll": "91",
+      "maxroll": "91",
+      "magicitem": "Vicious Weapon"
+    },
+    {
+      "magictype": "G",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Wand of Binding"
+    },
+    {
+      "magictype": "G",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Wand of Enemy Detection"
+    },
+    {
+      "magictype": "G",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Wand of Fear"
+    },
+    {
+      "magictype": "G",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Wand of Fireballs"
+    },
+    {
+      "magictype": "G",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Wand of Lightning Bolts"
+    },
+    {
+      "magictype": "G",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Wand of Paralysis"
+    },
+    {
+      "magictype": "G",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Wand of The War Mage, +2"
+    },
+    {
+      "magictype": "G",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Wand of Wonder"
+    },
+    {
+      "magictype": "G",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Wings of Flying"
+    },
+    {
+      "magictype": "H",
+      "minroll": "1",
+      "maxroll": "10",
+      "magicitem": "Weapon, +3"
+    },
+    {
+      "magictype": "H",
+      "minroll": "11",
+      "maxroll": "12",
+      "magicitem": "Amulet of the Planes"
+    },
+    {
+      "magictype": "H",
+      "minroll": "13",
+      "maxroll": "14",
+      "magicitem": "Carpet of Flying"
+    },
+    {
+      "magictype": "H",
+      "minroll": "15",
+      "maxroll": "16",
+      "magicitem": "Crystal Ball (Very Rare Version)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "17",
+      "maxroll": "18",
+      "magicitem": "Ring of Regeneration"
+    },
+    {
+      "magictype": "H",
+      "minroll": "19",
+      "maxroll": "20",
+      "magicitem": "Ring of Shooting Stars"
+    },
+    {
+      "magictype": "H",
+      "minroll": "21",
+      "maxroll": "22",
+      "magicitem": "Ring of Telekinesis"
+    },
+    {
+      "magictype": "H",
+      "minroll": "23",
+      "maxroll": "24",
+      "magicitem": "Robe of Scintillating Colors"
+    },
+    {
+      "magictype": "H",
+      "minroll": "25",
+      "maxroll": "26",
+      "magicitem": "Robe of Stars"
+    },
+    {
+      "magictype": "H",
+      "minroll": "27",
+      "maxroll": "28",
+      "magicitem": "Rod of Absorption"
+    },
+    {
+      "magictype": "H",
+      "minroll": "29",
+      "maxroll": "30",
+      "magicitem": "Rod of Alertness"
+    },
+    {
+      "magictype": "H",
+      "minroll": "31",
+      "maxroll": "32",
+      "magicitem": "Rod of Security"
+    },
+    {
+      "magictype": "H",
+      "minroll": "33",
+      "maxroll": "34",
+      "magicitem": "Rod of the Pact Keeper, +3"
+    },
+    {
+      "magictype": "H",
+      "minroll": "35",
+      "maxroll": "36",
+      "magicitem": "Scimitar of Speed"
+    },
+    {
+      "magictype": "H",
+      "minroll": "37",
+      "maxroll": "38",
+      "magicitem": "Shield, +3"
+    },
+    {
+      "magictype": "H",
+      "minroll": "39",
+      "maxroll": "40",
+      "magicitem": "Staff of Fire"
+    },
+    {
+      "magictype": "H",
+      "minroll": "41",
+      "maxroll": "42",
+      "magicitem": "Staff of Frost"
+    },
+    {
+      "magictype": "H",
+      "minroll": "43",
+      "maxroll": "44",
+      "magicitem": "Staff of Power"
+    },
+    {
+      "magictype": "H",
+      "minroll": "45",
+      "maxroll": "46",
+      "magicitem": "Staff of Striking"
+    },
+    {
+      "magictype": "H",
+      "minroll": "47",
+      "maxroll": "48",
+      "magicitem": "Staff of Thunder And Lightning"
+    },
+    {
+      "magictype": "H",
+      "minroll": "49",
+      "maxroll": "50",
+      "magicitem": "Sword of Sharpness"
+    },
+    {
+      "magictype": "H",
+      "minroll": "51",
+      "maxroll": "52",
+      "magicitem": "Wand of Polymorph"
+    },
+    {
+      "magictype": "H",
+      "minroll": "53",
+      "maxroll": "54",
+      "magicitem": "Wand of the War Mage, +3"
+    },
+    {
+      "magictype": "H",
+      "minroll": "55",
+      "maxroll": "55",
+      "magicitem": "Adamantine Half Plate Armor"
+    },
+    {
+      "magictype": "H",
+      "minroll": "56",
+      "maxroll": "56",
+      "magicitem": "Adamantine Plate Armor"
+    },
+    {
+      "magictype": "H",
+      "minroll": "57",
+      "maxroll": "57",
+      "magicitem": "Animated Shield"
+    },
+    {
+      "magictype": "H",
+      "minroll": "58",
+      "maxroll": "58",
+      "magicitem": "Belt of Fire Giant Strength"
+    },
+    {
+      "magictype": "H",
+      "minroll": "59",
+      "maxroll": "59",
+      "magicitem": "Belt of Frost (Or Stone) Giant Strength"
+    },
+    {
+      "magictype": "H",
+      "minroll": "60",
+      "maxroll": "60",
+      "magicitem": "Breastplate Armor +1"
+    },
+    {
+      "magictype": "H",
+      "minroll": "61",
+      "maxroll": "61",
+      "magicitem": "Breastplate Armor of Resistance"
+    },
+    {
+      "magictype": "H",
+      "minroll": "62",
+      "maxroll": "62",
+      "magicitem": "Candle of Invocation"
+    },
+    {
+      "magictype": "H",
+      "minroll": "63",
+      "maxroll": "63",
+      "magicitem": "Chain Mail Armor +2"
+    },
+    {
+      "magictype": "H",
+      "minroll": "64",
+      "maxroll": "64",
+      "magicitem": "Chain Shirt Armor +2"
+    },
+    {
+      "magictype": "H",
+      "minroll": "65",
+      "maxroll": "65",
+      "magicitem": "Cloak of Arachnida"
+    },
+    {
+      "magictype": "H",
+      "minroll": "66",
+      "maxroll": "66",
+      "magicitem": "Dancing Sword"
+    },
+    {
+      "magictype": "H",
+      "minroll": "67",
+      "maxroll": "67",
+      "magicitem": "Demon Armor"
+    },
+    {
+      "magictype": "H",
+      "minroll": "68",
+      "maxroll": "68",
+      "magicitem": "Dragon Scale Mail"
+    },
+    {
+      "magictype": "H",
+      "minroll": "69",
+      "maxroll": "69",
+      "magicitem": "Dwarven Plate"
+    },
+    {
+      "magictype": "H",
+      "minroll": "70",
+      "maxroll": "70",
+      "magicitem": "Dwarven Thrower"
+    },
+    {
+      "magictype": "H",
+      "minroll": "71",
+      "maxroll": "71",
+      "magicitem": "Efreeti Bottle"
+    },
+    {
+      "magictype": "H",
+      "minroll": "72",
+      "maxroll": "72",
+      "magicitem": "Figurine of Wondrous Power (Obsidian Steed)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "73",
+      "maxroll": "73",
+      "magicitem": "Frost Brand"
+    },
+    {
+      "magictype": "H",
+      "minroll": "74",
+      "maxroll": "74",
+      "magicitem": "Helm of Brilliance"
+    },
+    {
+      "magictype": "H",
+      "minroll": "75",
+      "maxroll": "75",
+      "magicitem": "Horn of Valhalla (Bronze)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "76",
+      "maxroll": "76",
+      "magicitem": "Instrument of the Bards (Anstruth Harp)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "77",
+      "maxroll": "77",
+      "magicitem": "Ioun Stone (Absorption)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "78",
+      "maxroll": "78",
+      "magicitem": "Ioun Stone (Agility)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "79",
+      "maxroll": "79",
+      "magicitem": "Ioun Stone (Fortitude)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "80",
+      "maxroll": "80",
+      "magicitem": "Ioun Stone (Insight)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "81",
+      "maxroll": "81",
+      "magicitem": "Ioun Stone (Intellect)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "82",
+      "maxroll": "82",
+      "magicitem": "Ioun Stone (Leadership)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "83",
+      "maxroll": "83",
+      "magicitem": "Ioun Stone (Strength)"
+    },
+    {
+      "magictype": "H",
+      "minroll": "84",
+      "maxroll": "84",
+      "magicitem": "Leather Armor +2"
+    },
+    {
+      "magictype": "H",
+      "minroll": "85",
+      "maxroll": "85",
+      "magicitem": "Manual of Bodily Health"
+    },
+    {
+      "magictype": "H",
+      "minroll": "86",
+      "maxroll": "86",
+      "magicitem": "Manual of Gainful Exercise"
+    },
+    {
+      "magictype": "H",
+      "minroll": "87",
+      "maxroll": "87",
+      "magicitem": "Manual of Golems"
+    },
+    {
+      "magictype": "H",
+      "minroll": "88",
+      "maxroll": "88",
+      "magicitem": "Manual of Quickness of Action"
+    },
+    {
+      "magictype": "H",
+      "minroll": "89",
+      "maxroll": "89",
+      "magicitem": "Mirror of Life Trapping"
+    },
+    {
+      "magictype": "H",
+      "minroll": "90",
+      "maxroll": "90",
+      "magicitem": "Nine Lives Stealer"
+    },
+    {
+      "magictype": "H",
+      "minroll": "91",
+      "maxroll": "91",
+      "magicitem": "Oathbow"
+    },
+    {
+      "magictype": "H",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Scale Mail Armor +2"
+    },
+    {
+      "magictype": "H",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Spellguard Shield"
+    },
+    {
+      "magictype": "H",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Splint Armor +1"
+    },
+    {
+      "magictype": "H",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Splint Armor of Resistance"
+    },
+    {
+      "magictype": "H",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Studded Leather Armor +1"
+    },
+    {
+      "magictype": "H",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Studded Leather Armor of Resistance"
+    },
+    {
+      "magictype": "H",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Tome of Clear Thought"
+    },
+    {
+      "magictype": "H",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Tome of Leadership And Influence"
+    },
+    {
+      "magictype": "H",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Tome of Understanding"
+    },
+    {
+      "magictype": "I",
+      "minroll": "1",
+      "maxroll": "5",
+      "magicitem": "Defender"
+    },
+    {
+      "magictype": "I",
+      "minroll": "6",
+      "maxroll": "10",
+      "magicitem": "Hammer of Thunderbolts"
+    },
+    {
+      "magictype": "I",
+      "minroll": "11",
+      "maxroll": "15",
+      "magicitem": "Luck Blade"
+    },
+    {
+      "magictype": "I",
+      "minroll": "16",
+      "maxroll": "20",
+      "magicitem": "Sword of Answering"
+    },
+    {
+      "magictype": "I",
+      "minroll": "21",
+      "maxroll": "23",
+      "magicitem": "Holy Avenger"
+    },
+    {
+      "magictype": "I",
+      "minroll": "24",
+      "maxroll": "26",
+      "magicitem": "Ring of Djinni Summoning"
+    },
+    {
+      "magictype": "I",
+      "minroll": "27",
+      "maxroll": "29",
+      "magicitem": "Ring of Invisibility"
+    },
+    {
+      "magictype": "I",
+      "minroll": "30",
+      "maxroll": "32",
+      "magicitem": "Ring of Spell Turning"
+    },
+    {
+      "magictype": "I",
+      "minroll": "33",
+      "maxroll": "35",
+      "magicitem": "Rod of Lordly Might"
+    },
+    {
+      "magictype": "I",
+      "minroll": "36",
+      "maxroll": "38",
+      "magicitem": "Staff of the Magi"
+    },
+    {
+      "magictype": "I",
+      "minroll": "39",
+      "maxroll": "41",
+      "magicitem": "Vorpal Sword"
+    },
+    {
+      "magictype": "I",
+      "minroll": "42",
+      "maxroll": "43",
+      "magicitem": "Belt of Cloud Giant Strength"
+    },
+    {
+      "magictype": "I",
+      "minroll": "44",
+      "maxroll": "45",
+      "magicitem": "Breastplate Armor +2"
+    },
+    {
+      "magictype": "I",
+      "minroll": "46",
+      "maxroll": "47",
+      "magicitem": "Chain Mail Armor +3"
+    },
+    {
+      "magictype": "I",
+      "minroll": "48",
+      "maxroll": "49",
+      "magicitem": "Chain Shirt Armor +3"
+    },
+    {
+      "magictype": "I",
+      "minroll": "50",
+      "maxroll": "51",
+      "magicitem": "Cloak of Invisibility"
+    },
+    {
+      "magictype": "I",
+      "minroll": "52",
+      "maxroll": "53",
+      "magicitem": "Crystal Ball (Legendary Version)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "54",
+      "maxroll": "55",
+      "magicitem": "Half Plate Armor +1"
+    },
+    {
+      "magictype": "I",
+      "minroll": "56",
+      "maxroll": "57",
+      "magicitem": "Iron Flask"
+    },
+    {
+      "magictype": "I",
+      "minroll": "58",
+      "maxroll": "59",
+      "magicitem": "Leather Armor +3"
+    },
+    {
+      "magictype": "I",
+      "minroll": "60",
+      "maxroll": "61",
+      "magicitem": "Plate Armor +1"
+    },
+    {
+      "magictype": "I",
+      "minroll": "62",
+      "maxroll": "63",
+      "magicitem": "Robe of the Archmagi"
+    },
+    {
+      "magictype": "I",
+      "minroll": "64",
+      "maxroll": "65",
+      "magicitem": "Rod of Resurrection"
+    },
+    {
+      "magictype": "I",
+      "minroll": "66",
+      "maxroll": "67",
+      "magicitem": "Scale Mail Armor +1"
+    },
+    {
+      "magictype": "I",
+      "minroll": "68",
+      "maxroll": "69",
+      "magicitem": "Scarab of Protection"
+    },
+    {
+      "magictype": "I",
+      "minroll": "70",
+      "maxroll": "71",
+      "magicitem": "Splint Armor +2"
+    },
+    {
+      "magictype": "I",
+      "minroll": "72",
+      "maxroll": "73",
+      "magicitem": "Studded Leather Armor +2"
+    },
+    {
+      "magictype": "I",
+      "minroll": "74",
+      "maxroll": "75",
+      "magicitem": "Well of Many Worlds"
+    },
+    {
+      "magictype": "I",
+      "minroll": "76",
+      "maxroll": "76",
+      "magicitem": "Magic Armor (Roll D12)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "77",
+      "maxroll": "77",
+      "magicitem": "Apparatus of Kwalish"
+    },
+    {
+      "magictype": "I",
+      "minroll": "78",
+      "maxroll": "78",
+      "magicitem": "Armor of Invulnerability"
+    },
+    {
+      "magictype": "I",
+      "minroll": "79",
+      "maxroll": "79",
+      "magicitem": "Belt of Storm Giant Strength"
+    },
+    {
+      "magictype": "I",
+      "minroll": "80",
+      "maxroll": "80",
+      "magicitem": "Cubic Gate"
+    },
+    {
+      "magictype": "I",
+      "minroll": "81",
+      "maxroll": "81",
+      "magicitem": "Deck of Many Things"
+    },
+    {
+      "magictype": "I",
+      "minroll": "82",
+      "maxroll": "82",
+      "magicitem": "Efreeti Chain"
+    },
+    {
+      "magictype": "I",
+      "minroll": "83",
+      "maxroll": "83",
+      "magicitem": "Armor of Resistance (Half Plate)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "84",
+      "maxroll": "84",
+      "magicitem": "Horn of Valhalla (Iron)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "85",
+      "maxroll": "85",
+      "magicitem": "Instrument of the Bards (Ollamh Harp)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "86",
+      "maxroll": "86",
+      "magicitem": "Ioun Stone (Greater Absorption)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "87",
+      "maxroll": "87",
+      "magicitem": "Ioun Stone (Mastery)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "88",
+      "maxroll": "88",
+      "magicitem": "Ioun Stone (Regeneration)"
+    },
+    {
+      "magictype": "I",
+      "minroll": "89",
+      "maxroll": "89",
+      "magicitem": "Plater Armor of Etherealness"
+    },
+    {
+      "magictype": "I",
+      "minroll": "90",
+      "maxroll": "90",
+      "magicitem": "Plate Armor of Resistance"
+    },
+    {
+      "magictype": "I",
+      "minroll": "91",
+      "maxroll": "91",
+      "magicitem": "Ring of Air Elemental Command"
+    },
+    {
+      "magictype": "I",
+      "minroll": "92",
+      "maxroll": "92",
+      "magicitem": "Ring of Earth Elemental Command"
+    },
+    {
+      "magictype": "I",
+      "minroll": "93",
+      "maxroll": "93",
+      "magicitem": "Ring of Fire Elemental Command"
+    },
+    {
+      "magictype": "I",
+      "minroll": "94",
+      "maxroll": "94",
+      "magicitem": "Ring of Three Wishes"
+    },
+    {
+      "magictype": "I",
+      "minroll": "95",
+      "maxroll": "95",
+      "magicitem": "Ring of Water Elemental Command"
+    },
+    {
+      "magictype": "I",
+      "minroll": "96",
+      "maxroll": "96",
+      "magicitem": "Sphere of Annihilation"
+    },
+    {
+      "magictype": "I",
+      "minroll": "97",
+      "maxroll": "97",
+      "magicitem": "Talisman of Pure Good"
+    },
+    {
+      "magictype": "I",
+      "minroll": "98",
+      "maxroll": "98",
+      "magicitem": "Talisman of the Sphere"
+    },
+    {
+      "magictype": "I",
+      "minroll": "99",
+      "maxroll": "99",
+      "magicitem": "Talisman of Ultimate Evil"
+    },
+    {
+      "magictype": "I",
+      "minroll": "100",
+      "maxroll": "100",
+      "magicitem": "Tome of the Stilled Tongue"
+    }
+  ]
+}
