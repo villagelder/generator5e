@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/services/treasureGenerator5e.dart';
 
+import '../../models/treasures.dart';
+
 class TreasuresPage extends MaterialPageRoute<Null> {
   TreasuresPage()
       : super(builder: (BuildContext ctx) {
@@ -79,7 +81,7 @@ const List<String> crList = <String>['CR 0-4', 'CR 5-10', 'CR 11-16', 'CR 17+'];
 const List<String> trList = <String>['Individual', 'Hoard'];
 
 class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
-  String dropdownValue = trList.first;
+  static String ttValue = trList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +98,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: dropdownValue,
+            value: ttValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: const TextStyle(
@@ -112,7 +114,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                dropdownValue = value!;
+                ttValue = value!;
               });
             },
             items: trList.map<DropdownMenuItem<String>>((String value) {
@@ -129,7 +131,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
 }
 
 class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
-  String dropdownValue = crList.first;
+  static String CRValue = crList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -144,7 +146,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: dropdownValue,
+            value: CRValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: const TextStyle(
@@ -159,7 +161,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                dropdownValue = value!;
+                CRValue = value!;
               });
             },
             items: crList.map<DropdownMenuItem<String>>((String value) {
@@ -184,27 +186,13 @@ class TextChanger extends StatefulWidget {
 
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
-  TreasureGenerator5e trGen = TreasureGenerator5e();
-
   String dynamicText = 'Roll for treasure.';
-  List _items = [];
-
-  Future<void> readJson() async {
-    final String response =
-        await rootBundle.loadString('assets/jsondata/treasuregen.json');
-    final data = await json.decode(response);
-    setState(() {
-      _items = data["treasures"];
-    });
-  }
+  TreasureGenerator5e trGen = TreasureGenerator5e();
 
   updateText() {
     setState(() {
-      readJson();
-      int r = Random().nextInt(30) + 1;
-      dynamicText =
-          'ID: ${_items[r]['id']}, ROLL: ${_items[r]['roll']}, TYPE: ${_items[r]['type']}';
-      // Replace with your logic
+      dynamicText = trGen.generate(_ChallengeRatingDDBState.CRValue, _TreasureTypeDDBState.ttValue).toString();
+
     });
   }
 
@@ -249,7 +237,7 @@ class _TextChangerState extends State<TextChanger> {
         Padding(
           padding: const EdgeInsets.all(40.0),
           child: Text(dynamicText,
-              // 'ID: ${trObj.id}, CR: ${trObj.challengeRating.toString()}, Roll: ${trObj.roll.toString()}',
+              
               style: const TextStyle(fontFamily: 'Georgia', fontSize: 16)),
         ),
         Padding(

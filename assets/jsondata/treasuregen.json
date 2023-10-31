@@ -1,7 +1,7 @@
 {
   "treasures": [
     {
-      "id": "1",
+      "id": 1,
       "type": "individual",
       "challengeRating": 4,
       "minroll": 1,
@@ -24,7 +24,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "2",
+      "id": 2,
       "type": "individual",
       "challengeRating": 4,
       "minroll": 31,
@@ -47,7 +47,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "3",
+      "id": 3,
       "type": "individual",
       "challengeRating": 4,
       "minroll": 61,
@@ -70,7 +70,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "4",
+      "id": 4,
       "type": "individual",
       "challengeRating": 4,
       "minroll": 71,
@@ -93,7 +93,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "5",
+      "id": 5,
       "type": "individual",
       "challengeRating": 4,
       "minroll": 96,
@@ -116,7 +116,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "6",
+      "id": 6,
       "type": "individual",
       "challengeRating": 10,
       "minroll": 1,
@@ -139,7 +139,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "7",
+      "id": 7,
       "type": "individual",
       "challengeRating": 10,
       "minroll": 31,
@@ -162,7 +162,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "8",
+      "id": 8,
       "type": "individual",
       "challengeRating": 10,
       "minroll": 61,
@@ -185,7 +185,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "9",
+      "id": 9,
       "type": "individual",
       "challengeRating": 10,
       "minroll": 71,
@@ -208,7 +208,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "10",
+      "id": 10,
       "type": "individual",
       "challengeRating": 10,
       "minroll": 96,
@@ -231,7 +231,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "11",
+      "id": 11,
       "type": "individual",
       "challengeRating": 16,
       "minroll": 1,
@@ -254,7 +254,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "12",
+      "id": 12,
       "type": "individual",
       "challengeRating": 16,
       "minroll": 21,
@@ -277,7 +277,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "13",
+      "id": 13,
       "type": "individual",
       "challengeRating": 16,
       "minroll": 36,
@@ -300,7 +300,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "14",
+      "id": 14,
       "type": "individual",
       "challengeRating": 16,
       "minroll": 76,
@@ -323,7 +323,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "15",
+      "id": 15,
       "type": "individual",
       "challengeRating": 17,
       "minroll": 1,
@@ -346,7 +346,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "16",
+      "id": 16,
       "type": "individual",
       "challengeRating": 17,
       "minroll": 16,
@@ -369,7 +369,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "14",
+      "id": 17,
       "type": "individual",
       "challengeRating": 17,
       "minroll": 56,
@@ -392,7 +392,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "15",
+      "id": 18,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 1,
@@ -415,7 +415,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "16",
+      "id": 19,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 7,
@@ -438,7 +438,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "17",
+      "id": 20,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 17,
@@ -461,7 +461,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "18",
+      "id": 21,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 27,
@@ -484,7 +484,7 @@
       "magicitemtype": "0"
     },
     {
-      "id": "19",
+      "id": 22,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 37,
@@ -507,7 +507,7 @@
       "magicitemtype": "A"
     },
     {
-      "id": "20",
+      "id": 23,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 45,
@@ -530,7 +530,7 @@
       "magicitemtype": "A"
     },
     {
-      "id": "21",
+      "id": 24,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 53,
@@ -553,7 +553,7 @@
       "magicitemtype": "A"
     },
     {
-      "id": "22",
+      "id": 25,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 61,
@@ -576,7 +576,7 @@
       "magicitemtype": "B"
     },
     {
-      "id": "23",
+      "id": 26,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 66,
@@ -599,7 +599,7 @@
       "magicitemtype": "B"
     },
     {
-      "id": "23",
+      "id": 27,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 71,
@@ -622,7 +622,7 @@
       "magicitemtype": "B"
     },
     {
-      "id": "24",
+      "id": 28,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 76,
@@ -645,7 +645,7 @@
       "magicitemtype": "C"
     },
     {
-      "id": "25",
+      "id": 29,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 79,
@@ -668,7 +668,7 @@
       "magicitemtype": "C"
     },
     {
-      "id": "26",
+      "id": 30,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 81,
@@ -691,7 +691,7 @@
       "magicitemtype": "C"
     },
     {
-      "id": "27",
+      "id": 31,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 86,
@@ -714,7 +714,7 @@
       "magicitemtype": "F"
     },
     {
-      "id": "28",
+      "id": 32,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 93,
@@ -737,7 +737,7 @@
       "magicitemtype": "F"
     },
     {
-      "id": "29",
+      "id": 33,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 98,
@@ -752,7 +752,7 @@
       "epmultiplier": 1,
       "gpmultiplier": 10,
       "ppmultiplier": 1,
-      "gems": 0,
+      "gems": "0",
       "gemsvalue": 0,
       "art": "2d4",
       "artvalue": 25,
@@ -760,7 +760,7 @@
       "magicitemtype": "G"
     },
     {
-      "id": "30",
+      "id": 34,
       "type": "hoard",
       "challengeRating": 4,
       "minroll": 100,

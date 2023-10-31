@@ -1,14 +1,32 @@
 import 'dart:math';
+import 'package:collection/collection.dart';
 
 class DiceRoller {
-  static List rollDice(int number, int sides) {
-    var diceList = [];
+
+  static List<String> parseDiceText(String dicetext){
+    List<String> pd =[];
+
+    if (dicetext != "0"){
+      dicetext = dicetext.toLowerCase();
+      pd = dicetext.split("d");
+    }
+
+    return pd;
+  }
+
+  static List<int> rollDice(int number, int sides) {
+    List<int> diceList = [];
     for (int i = 0; i < number; i++) {
       diceList.add(rollDie(sides));
     }
     return diceList;
   }
 
+  static int rollDiceAndSum(int n, int sides) {
+    List<int> dice = rollDice(n, sides);
+    return dice.sum;
+
+  }
   static List rollDiceWithModifier(int number, int sides, int modifier) {
     var diceList = [];
     for (int i = 0; i < number; i++) {
@@ -55,40 +73,40 @@ class DiceRoller {
     return rollDice(2, 20);
   }
 
-  static List coinFlip() {
-    return rollDice(1, 2);
+  static int coinFlip() {
+    return rollDie(2);
   }
 
-  static List roll1d3() {
-    return rollDice(1, 3);
+  static int roll1d3() {
+    return rollDie(3);
   }
 
-  static List roll1d4() {
-    return rollDice(1, 4);
+  static int roll1d4() {
+    return rollDie(4);
   }
 
-  static List roll1d6() {
-    return rollDice(1, 6);
+  static int roll1d6() {
+    return rollDie(6);
   }
 
-  static List roll1d8() {
-    return rollDice(1, 8);
+  static int roll1d8() {
+    return rollDie(8);
   }
 
-  static List roll1d10() {
-    return rollDice(1, 10);
+  static int roll1d10() {
+    return rollDie(10);
   }
 
-  static List roll1d12() {
-    return rollDice(1, 12);
+  static int roll1d12() {
+    return rollDie(12);
   }
 
-  static List roll1d20() {
-    return rollDice(1, 20);
+  static int roll1d20() {
+    return rollDie(20);
   }
 
-  static List roll1d30() {
-    return rollDice(1, 30);
+  static int roll1d30() {
+    return rollDie(30);
   }
 
   static int roll1d100() {
