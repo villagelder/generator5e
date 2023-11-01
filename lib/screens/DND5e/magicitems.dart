@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../services/treasureGenerator5e.dart';
 
@@ -98,13 +99,7 @@ const List<String> itemTypeList = <String>[
   'Weapon',
   'Wondrous Item'
 ];
-const List<String> numberList = <String>[
-  '1',
-  '2',
-  '3',
-  '4',
-  '5'
-];
+const List<String> numberList = <String>['1', '2', '3', '5', '10'];
 
 class _RarityDDBState extends State<RarityDDB> {
   static String rarityValue = rarityList.first;
@@ -264,7 +259,7 @@ class _TextChangerState extends State<TextChanger> {
 
   updateText() {
     setState(() {
-      dynamicText =  'changed';
+      dynamicText = 'changed';
       // dynamicText = trGen
       //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
       //     .toString();
@@ -274,64 +269,69 @@ class _TextChangerState extends State<TextChanger> {
   @override
   Widget build(BuildContext ctx) {
     return Column(
-        children: [
-          const Padding(
-            padding: EdgeInsets.all(12.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                RarityDDB(),
-                NumberDDB(),
-              ],
-            ),
+      children: [
+        const Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              RarityDDB(),
+              NumberDDB(),
+            ],
           ),
-          const Padding(
-            padding: EdgeInsets.all(12.0),
-            child: Column(
-
-              children: [
-                ItemTypeDDB(),
-              ],
-            ),
+        ),
+        const Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              ItemTypeDDB(),
+            ],
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
-            child: SizedBox(
-              width: MediaQuery.of(ctx).size.width * 0.84,
-              height: MediaQuery.of(ctx).size.height * 0.1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
-                  backgroundColor: Colors.lightGreen.shade900,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.84,
+            height: MediaQuery.of(ctx).size.height * 0.1,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                backgroundColor: Colors.lightGreen.shade900,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
                 ),
-                onPressed: () => updateText(),
-                child: const Text(
-                  'Generate Magic Item',
-                  style: TextStyle(
-                      fontFamily: 'Georgia',
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600),
-                ),
+              ),
+              onPressed: () => updateText(),
+              child: const Text(
+                'Generate Magic Item',
+                style: TextStyle(
+                    fontFamily: 'Georgia',
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600),
               ),
             ),
           ),
-          Padding(
-            padding:  EdgeInsets.all(40.0),
-            child: Text(dynamicText,
-                style:  TextStyle(fontFamily: 'Georgia', fontSize: MediaQuery.of(ctx).size.height * 0.04,)),
+        ),
+        Padding(
+          padding: EdgeInsets.all(40.0),
+          child: Text(dynamicText,
+              style: TextStyle(
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(ctx).size.height * 0.03,
+              )),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 32, 0, 0),
+          child: IconButton(
+            iconSize: 36,
+            icon: const Icon(Icons.copy),
+            color: Colors.blueGrey.shade900,
+            onPressed: () {
+              Clipboard.setData(ClipboardData(text: dynamicText));
+            },
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0, 0, 0, 20.0),
-            child: Icon(
-              Icons.copy,
-              color: Colors.blueGrey.shade900,
-              size: 40.0,
-            ),
-          ),
-        ],
+        ),
+      ],
     );
   }
 }

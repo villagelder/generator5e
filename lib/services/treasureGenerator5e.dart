@@ -130,7 +130,16 @@ class TreasureGenerator5e {
       return 'No Treasure';
     }
 
-    return tl.toString();
+    var trl = StringBuffer();
+    for (int i = 0; i < tl.length; i++) {
+      if (i != tl.length - 1) {
+        trl.write('${tl[i]}, ');
+      } else {
+        trl.write(tl[i]);
+      }
+    }
+
+    return trl.toString();
   }
 
   List<String> calculateCoins(
@@ -357,33 +366,52 @@ class TreasureGenerator5e {
     readJsonMagicItemsTable();
     getMagicItemObjectList();
 
-    if (trObj.magicitems == "0" && trObj2.magicitems == "0") {
-      return miList;
-    }
     Map<String, int> miMap = {};
-    List<MagicItem> magicItemsByRank = getMagicItemsByRank(trObj.magicitemtype);
-    List<String> parsedDice = DiceRoller.parseDiceText(trObj.magicitems);
+    List<MagicItem> magicItemsByRank = [];
 
-    int numberOfMagicItems = DiceRoller.rollDiceAndSum(
-        int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+    if (trObj.magicitemtype != "0") {
+      magicItemsByRank = getMagicItemsByRank(trObj.magicitemtype);
+    }
+    int numberOfMagicItems = 1;
 
-    for (int i = 0; i < numberOfMagicItems; i++) {
+    if (trObj.magicitems != "1" && trObj.magicitems != "0") {
+      List<String> parsedDice = DiceRoller.parseDiceText(trObj.magicitems);
+
+      numberOfMagicItems = DiceRoller.rollDiceAndSum(
+          int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+    }
+
+    for (int i = 0;
+        magicItemsByRank.isNotEmpty && i < numberOfMagicItems;
+        i++) {
       String magicItem = magicItemsByRank[
               Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
           .magicitem;
       miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
     }
+
+    //add legendary hoard
+    int numberOfMagicItems2 = 0;
     if (isLegendary && trObj2.magicitems != "0") {
-      List<MagicItem> magicItemsByRank =
-          getMagicItemsByRank(trObj2.magicitemtype);
-      List<String> parsedDice = DiceRoller.parseDiceText(trObj2.magicitems);
+      numberOfMagicItems2 = 1;
+      List<MagicItem> magicItemsByRank2 = [];
 
-      int numberOfMagicItems = DiceRoller.rollDiceAndSum(
-          int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+      if (trObj2.magicitemtype != "0") {
+        magicItemsByRank2 = getMagicItemsByRank(trObj2.magicitemtype);
+      }
 
-      for (int i = 0; i < numberOfMagicItems; i++) {
-        String magicItem = magicItemsByRank[
-                Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
+      if (trObj2.magicitems != "1" && trObj2.magicitems != "0") {
+        List<String> parsedDice = DiceRoller.parseDiceText(trObj2.magicitems);
+        numberOfMagicItems2 = DiceRoller.rollDiceAndSum(
+            int.parse(parsedDice[0]), int.parse(parsedDice[1]));
+      }
+      print(
+          'magicItemsByRank: ${magicItemsByRank2.length}, ObjectMagicItems: ${trObj2.magicitems}');
+      for (int i = 0;
+          magicItemsByRank2.isNotEmpty && i < numberOfMagicItems2;
+          i++) {
+        String magicItem = magicItemsByRank2[
+                Utility.getRandomIndexFromListSize(magicItemsByRank2.length)]
             .magicitem;
         miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
       }
