@@ -41,13 +41,13 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
                   ),
                   SizedBox(
                     width: MediaQuery.of(ctx).size.width * 0.84,
-                    child: const Padding(
-                      padding: EdgeInsets.fromLTRB(0, 12.0, 0, 12.0),
+                    child:  Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
                       child: Text(
                         'Select your magic item Rarity, Type, and Number, then push \'Generate Magic Item\' to '
                         'generate new magic items.',
                         style: TextStyle(
-                            fontFamily: 'Georgia', fontStyle: FontStyle.italic),
+                            fontFamily: 'Georgia', fontSize: MediaQuery.of(ctx).size.height * 0.022, fontStyle: FontStyle.italic),
                       ),
                     ),
                   ),
@@ -114,7 +114,8 @@ class _RarityDDBState extends State<RarityDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.5,
+      width: MediaQuery.of(context).size.width * 0.47,
+      height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -122,10 +123,10 @@ class _RarityDDBState extends State<RarityDDB> {
             value: rarityValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
-            style: const TextStyle(
-              color: Color.fromRGBO(38, 50, 56, 1.0),
+            style: TextStyle(
+              color: const Color.fromRGBO(38, 50, 56, 1.0),
               fontFamily: 'Georgia',
-              fontSize: 20,
+              fontSize: MediaQuery.of(context).size.height * 0.025,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -163,6 +164,7 @@ class _NumberDDBState extends State<NumberDDB> {
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.3,
+      height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -170,10 +172,10 @@ class _NumberDDBState extends State<NumberDDB> {
             value: numberValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
-            style: const TextStyle(
-                color: Color.fromRGBO(38, 50, 56, 1.0),
+            style: TextStyle(
+                color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: 20,
+                fontSize: MediaQuery.of(context).size.height * 0.025,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -210,6 +212,7 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.84,
+      height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -217,10 +220,10 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
             value: typeValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
-            style: const TextStyle(
-                color: Color.fromRGBO(38, 50, 56, 1.0),
+            style: TextStyle(
+                color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: 20,
+                fontSize: MediaQuery.of(context).size.height * 0.025,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -302,12 +305,12 @@ class _TextChangerState extends State<TextChanger> {
                 ),
               ),
               onPressed: () => updateText(),
-              child: const Text(
+              child: Text(
                 'Generate Magic Item',
                 style: TextStyle(
                     fontFamily: 'Georgia',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600),
+                    fontSize: MediaQuery.of(ctx).size.height * .035,
+                    fontWeight: FontWeight.w700),
               ),
             ),
           ),
