@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:generator5e/models/gemitem.dart';
 import 'package:generator5e/services/diceRoller.dart';
+import 'package:generator5e/services/magicItemGenerator.dart';
 import 'package:generator5e/services/utility.dart';
 
 import '../models/artitem.dart';
@@ -19,6 +20,7 @@ class TreasureGenerator5e {
   List<ArtItem> artObjList = [];
   List<MagicItem> magicItemObjList = [];
   int roll = 0;
+  MagicItemGenerator5e mig5 = MagicItemGenerator5e();
 
   Treasures? rollTreasureBySelections(String cr, String type) {
     roll = DiceRoller.roll1d100();
@@ -387,6 +389,9 @@ class TreasureGenerator5e {
       String magicItem = magicItemsByRank[
               Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
           .magicitem;
+      if (magicItem.contains("Spell Scroll")) {
+        magicItem = mig5.randomizeScroll(magicItem);
+      }
       miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
     }
 
