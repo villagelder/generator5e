@@ -1,13 +1,14 @@
+import 'dart:async' show Future, FutureOr;
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:generator5e/models/gemitem.dart';
 import 'package:generator5e/services/diceRoller.dart';
-import 'package:generator5e/services/magicItemGenerator.dart';
 import 'package:generator5e/services/utility.dart';
 
 import '../models/artitem.dart';
 import '../models/magicitems.dart';
+import '../models/spell.dart';
 import '../models/treasures.dart';
 
 class TreasureGenerator5e {
@@ -15,17 +16,20 @@ class TreasureGenerator5e {
   List _magicitems = [];
   List _gemItems = [];
   List _artItems = [];
+  List _spellsJson = [];
+
   List<GemItem> gemObjList = [];
   List<Treasures> trObjList = [];
   List<ArtItem> artObjList = [];
   List<MagicItem> magicItemObjList = [];
+  List<Spell> spellsObjList = [];
+
   int roll = 0;
-  MagicItemGenerator5e mig5 = MagicItemGenerator5e();
 
   Treasures? rollTreasureBySelections(String cr, String type) {
     roll = DiceRoller.roll1d100();
     int chRating = translateCR(cr);
-    int legendaryFactor = DiceRoller.rollDie(4) + 1;
+    //  int legendaryFactor = DiceRoller.rollDie(4) + 1;
 
     if (type == 'Legendary') {
       type = 'Hoard';
@@ -87,6 +91,13 @@ class TreasureGenerator5e {
     _artItems = data["artitems"] as List;
   }
 
+  Future<void> readSpellsJson() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/spell.json');
+    final spdata = await json.decode(response);
+    _spellsJson = spdata["spell"] as List;
+  }
+
   getArtItemsObjectList() {
     artObjList = _artItems.map((artJson) => ArtItem.fromJson(artJson)).toList();
   }
@@ -100,9 +111,25 @@ class TreasureGenerator5e {
         _treasureitems.map((tJson) => Treasures.fromJson(tJson)).toList();
   }
 
+  getSpellsObjectList() {
+    spellsObjList = _spellsJson.map((sJson) => Spell.fromJson(sJson)).toList();
+  }
+
   getMagicItemObjectList() {
     magicItemObjList =
         _magicitems.map((mJson) => MagicItem.fromJson(mJson)).toList();
+  }
+
+  String randomizeScroll(String genericScroll) {
+    List<String> scrollPieces = genericScroll.split(", ");
+    readSpellsJson();
+    getSpellsObjectList();
+    String level = scrollPieces[1];
+    spellsObjList = getSpellsByLevel(level);
+
+    Spell spell =
+        spellsObjList[Utility.getRandomIndexFromListSize(spellsObjList.length)];
+    return 'Scroll of ${spell.name}';
   }
 
   String generate(String cr, String type) {
@@ -390,7 +417,7 @@ class TreasureGenerator5e {
               Utility.getRandomIndexFromListSize(magicItemsByRank.length)]
           .magicitem;
       if (magicItem.contains("Spell Scroll")) {
-        magicItem = mig5.randomizeScroll(magicItem);
+        magicItem = randomizeScroll(magicItem);
       }
       miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
     }
@@ -439,5 +466,9 @@ class TreasureGenerator5e {
     return magicItemObjList
         .where((mi) => mi.magictype == magicitemtype)
         .toList();
+  }
+
+  List<Spell> getSpellsByLevel(String level) {
+    return spellsObjList.where((sp) => sp.level == level).toList();
   }
 }
