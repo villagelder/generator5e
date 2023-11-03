@@ -20,15 +20,16 @@ class MagicItemGenerator5e {
   }
 
   Future<void> readSpellsJson() async {
-    final String response =
-        await rootBundle.loadString('assets/jsondata/spells.json');
-    final data = await json.decode(response);
-    _spellsFromData = data["spells"] as List;
+    final String response = await rootBundle.loadString('assets/jsondata/spells.json');
+    final spdata = await json.decode(response);
+    _spellsFromData = spdata["spell"] as List;
   }
+
+
 
   getSpellsObjectList() {
     spellsObjList =
-        _spellsFromData.map((tJson) => Spell.fromJson(tJson)).toList();
+        _spellsFromData.map((sJson) => Spell.fromJson(sJson)).toList();
   }
 
   List<Spell> getSpellsByLevel(String level) {
