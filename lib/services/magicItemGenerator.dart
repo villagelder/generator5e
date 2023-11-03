@@ -1,1 +1,3 @@
-class MagicItemGenerator5e {}
+class MagicItemGenerator5e {
+  List _magicitems = [];
+}

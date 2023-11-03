@@ -1,4 +1,4 @@
-import 'dart:async' show Future, FutureOr;
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
@@ -7,7 +7,7 @@ import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/utility.dart';
 
 import '../models/artitem.dart';
-import '../models/magicitems.dart';
+import '../models/randommagicitems.dart';
 import '../models/spell.dart';
 import '../models/treasures.dart';
 
@@ -21,7 +21,7 @@ class TreasureGenerator5e {
   List<GemItem> gemObjList = [];
   List<Treasures> trObjList = [];
   List<ArtItem> artObjList = [];
-  List<MagicItem> magicItemObjList = [];
+  List<RandomMagicItem> randomMagicItemObjList = [];
   List<Spell> spellsObjList = [];
 
   int roll = 0;
@@ -70,11 +70,11 @@ class TreasureGenerator5e {
     _treasureitems = data["treasures"] as List;
   }
 
-  Future<void> readJsonMagicItemsTable() async {
+  Future<void> readJsonRandomMagicItemsTable() async {
     final String response =
-        await rootBundle.loadString('assets/jsondata/magicitems.json');
+        await rootBundle.loadString('assets/jsondata/magicitemstable.json');
     final data = await json.decode(response);
-    _magicitems = data["magicitems"] as List;
+    _magicitems = data["randommagicitems"] as List;
   }
 
   Future<void> readJsonGemItemsTable() async {
@@ -116,8 +116,8 @@ class TreasureGenerator5e {
   }
 
   getMagicItemObjectList() {
-    magicItemObjList =
-        _magicitems.map((mJson) => MagicItem.fromJson(mJson)).toList();
+    randomMagicItemObjList =
+        _magicitems.map((mJson) => RandomMagicItem.fromJson(mJson)).toList();
   }
 
   String randomizeScroll(String genericScroll) {
@@ -127,9 +127,13 @@ class TreasureGenerator5e {
     String level = scrollPieces[1];
     spellsObjList = getSpellsByLevel(level);
 
-    Spell spell =
-        spellsObjList[Utility.getRandomIndexFromListSize(spellsObjList.length)];
-    return 'Scroll of ${spell.name}';
+    if (spellsObjList.isNotEmpty) {
+      Spell spell = spellsObjList[
+          Utility.getRandomIndexFromListSize(spellsObjList.length)];
+      return 'Scroll of ${spell.name}';
+    }
+
+    return genericScroll;
   }
 
   String generate(String cr, String type) {
@@ -152,7 +156,7 @@ class TreasureGenerator5e {
       //get art
       tl.addAll(calculateArt(trObj, trObj2!, isLegendary));
       //get magic items
-      tl.addAll(calculateMagicItems(trObj, trObj2!, isLegendary));
+      tl.addAll(calculateRandomMagicItems(trObj, trObj2!, isLegendary));
     }
 
     if (tl.isEmpty) {
@@ -297,7 +301,7 @@ class TreasureGenerator5e {
     int numberOfGems = DiceRoller.rollDiceAndSum(
         int.parse(parsedDice[0]), int.parse(parsedDice[1]));
 
-    for (int i = 0; i < numberOfGems; i++) {
+    for (int i = 0; gemsByValueList.isNotEmpty && i < numberOfGems; i++) {
       String gem = gemsByValueList[
               Utility.getRandomIndexFromListSize(gemsByValueList.length)]
           .stone;
@@ -312,7 +316,7 @@ class TreasureGenerator5e {
       int numberOfGems = DiceRoller.rollDiceAndSum(
           int.parse(parsedDice[0]), int.parse(parsedDice[1]));
 
-      for (int i = 0; i < numberOfGems; i++) {
+      for (int i = 0; gemsByValueList.isNotEmpty && i < numberOfGems; i++) {
         String gem = gemsByValueList[
                 Utility.getRandomIndexFromListSize(gemsByValueList.length)]
             .stone;
@@ -350,7 +354,7 @@ class TreasureGenerator5e {
     int numberOfArts = DiceRoller.rollDiceAndSum(
         int.parse(parsedDice[0]), int.parse(parsedDice[1]));
 
-    for (int i = 0; i < numberOfArts; i++) {
+    for (int i = 0; artByValueList.isNotEmpty && i < numberOfArts; i++) {
       String art = artByValueList[
               Utility.getRandomIndexFromListSize(artByValueList.length)]
           .artobject;
@@ -363,7 +367,7 @@ class TreasureGenerator5e {
       int numberOfArts = DiceRoller.rollDiceAndSum(
           int.parse(parsedDice[0]), int.parse(parsedDice[1]));
 
-      for (int i = 0; i < numberOfArts; i++) {
+      for (int i = 0; artByValueList.isNotEmpty && i < numberOfArts; i++) {
         String art = artByValueList[
                 Utility.getRandomIndexFromListSize(artByValueList.length)]
             .artobject;
@@ -389,14 +393,14 @@ class TreasureGenerator5e {
     return artObjList.where((a) => a.value == value).toList();
   }
 
-  List<String> calculateMagicItems(
+  List<String> calculateRandomMagicItems(
       Treasures trObj, Treasures trObj2, bool isLegendary) {
     List<String> miList = [];
-    readJsonMagicItemsTable();
+    readJsonRandomMagicItemsTable();
     getMagicItemObjectList();
 
     Map<String, int> miMap = {};
-    List<MagicItem> magicItemsByRank = [];
+    List<RandomMagicItem> magicItemsByRank = [];
 
     if (trObj.magicitemtype != "0") {
       magicItemsByRank = getMagicItemsByRank(trObj.magicitemtype);
@@ -426,7 +430,7 @@ class TreasureGenerator5e {
     int numberOfMagicItems2 = 0;
     if (isLegendary && trObj2.magicitems != "0") {
       numberOfMagicItems2 = 1;
-      List<MagicItem> magicItemsByRank2 = [];
+      List<RandomMagicItem> magicItemsByRank2 = [];
 
       if (trObj2.magicitemtype != "0") {
         magicItemsByRank2 = getMagicItemsByRank(trObj2.magicitemtype);
@@ -437,8 +441,7 @@ class TreasureGenerator5e {
         numberOfMagicItems2 = DiceRoller.rollDiceAndSum(
             int.parse(parsedDice[0]), int.parse(parsedDice[1]));
       }
-      print(
-          'magicItemsByRank: ${magicItemsByRank2.length}, ObjectMagicItems: ${trObj2.magicitems}');
+
       for (int i = 0;
           magicItemsByRank2.isNotEmpty && i < numberOfMagicItems2;
           i++) {
@@ -462,8 +465,8 @@ class TreasureGenerator5e {
     return miList;
   }
 
-  List<MagicItem> getMagicItemsByRank(String magicitemtype) {
-    return magicItemObjList
+  List<RandomMagicItem> getMagicItemsByRank(String magicitemtype) {
+    return randomMagicItemObjList
         .where((mi) => mi.magictype == magicitemtype)
         .toList();
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '../../services/treasureGenerator5e.dart';
+import 'package:generator5e/services/magicItemGenerator.dart';
 
 class MagicItemsPage extends MaterialPageRoute<Null> {
   MagicItemsPage()
@@ -41,13 +40,15 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
                   ),
                   SizedBox(
                     width: MediaQuery.of(ctx).size.width * 0.84,
-                    child:  Padding(
+                    child: Padding(
                       padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
                       child: Text(
                         'Select your magic item Rarity, Type, and Number, then push \'Generate Magic Item\' to '
                         'generate new magic items.',
                         style: TextStyle(
-                            fontFamily: 'Georgia', fontSize: MediaQuery.of(ctx).size.height * 0.022, fontStyle: FontStyle.italic),
+                            fontFamily: 'Georgia',
+                            fontSize: MediaQuery.of(ctx).size.height * 0.022,
+                            fontStyle: FontStyle.italic),
                       ),
                     ),
                   ),
@@ -258,7 +259,7 @@ class TextChanger extends StatefulWidget {
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
   String dynamicText = 'Roll for magic item.';
-  TreasureGenerator5e trGen = TreasureGenerator5e();
+  MagicItemGenerator5e mig = MagicItemGenerator5e();
 
   updateText() {
     setState(() {
@@ -292,7 +293,8 @@ class _TextChangerState extends State<TextChanger> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
           child: SizedBox(
             width: MediaQuery.of(ctx).size.width * 0.84,
             height: MediaQuery.of(ctx).size.height * 0.1,
