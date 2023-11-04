@@ -448,6 +448,9 @@ class TreasureGenerator5e {
         String magicItem = magicItemsByRank2[
                 Utility.getRandomIndexFromListSize(magicItemsByRank2.length)]
             .magicitem;
+        if (magicItem.contains("Spell Scroll")) {
+          magicItem = randomizeScroll(magicItem);
+        }
         miMap.update(magicItem, (value) => ++value, ifAbsent: () => 1);
       }
     }

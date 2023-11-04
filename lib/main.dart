@@ -128,15 +128,17 @@ class MyApp extends StatelessWidget {
                             child: Align(
                               alignment: Alignment.center,
                               child: Padding(
-                                padding: const EdgeInsets.all(2.0),
-                                child: Text(
-                                  'Traps',
-                                  style: TextStyle(
-                                      fontFamily: 'Georgia',
-                                      fontSize: screenHeight * 0.035,
-                                      fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                padding:  EdgeInsets.fromLTRB(screenWidth * 0.029, 0, 0, 0),
+                                child: Center(
+                                  child: Text(
+                                    'Traps & Hazards',
+                                    style: TextStyle(
+                                        fontFamily: 'Georgia',
+                                        fontSize: screenHeight * 0.035,
+                                        fontWeight: FontWeight.bold,
+                                        color: const Color.fromRGBO(
+                                            255, 245, 188, 1.0)),
+                                  ),
                                 ),
                               ),
                             ),

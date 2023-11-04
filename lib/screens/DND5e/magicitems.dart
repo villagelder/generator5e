@@ -100,7 +100,7 @@ const List<String> itemTypeList = <String>[
   'Weapon',
   'Wondrous Item'
 ];
-const List<String> numberList = <String>['1', '2', '3', '5', '10'];
+const List<String> numberList = <String>['1', '2', '3', '5', '8'];
 
 class _RarityDDBState extends State<RarityDDB> {
   static String rarityValue = rarityList.first;
