@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.blueGrey.shade100,
       appBar: AppBar(
         title: const Text(
-          'DragonVault',
+          'DragonVault Generators',
           style: TextStyle(
             fontFamily: 'Georgia',
             color: Color.fromRGBO(255, 245, 188, 1.0),

@@ -1,15 +1,16 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class TrinketsPage extends MaterialPageRoute<Null>{
   TrinketsPage() : super(builder: (BuildContext ctx) {
+    double screenWidth = MediaQuery.of(ctx).size.width;
+    double screenHeight = MediaQuery.of(ctx).size.height;
     return Scaffold(
     backgroundColor: Colors.blueGrey.shade100,
     appBar: AppBar(
       title: const Text(
-        'DragonVault',
+        'DragonVault Generators',
         style: TextStyle(
           fontFamily: 'Georgia',
           color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -21,18 +22,18 @@ class TrinketsPage extends MaterialPageRoute<Null>{
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          const Padding(
-            padding: EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+           Padding(
+            padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
             child: SizedBox(
-              height: 48,
+              height: screenHeight * .05,
               child: Center(
                 child: Text(
                   '5e Trinkets',
                   style: TextStyle(
                     fontFamily: 'Georgia',
-                    fontSize: 32,
+                    fontSize: screenHeight * 0.044,
                     fontWeight: FontWeight.w500,
-                    color: Color.fromRGBO(34, 56, 69, 1.0),
+                    color: const Color.fromRGBO(34, 56, 69, 1.0),
                   ),
                 ),
               ),
@@ -41,7 +42,7 @@ class TrinketsPage extends MaterialPageRoute<Null>{
           SizedBox(
             width: MediaQuery.of(ctx).size.width * 0.84,
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
               child: Text(
                 'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
                 style: TextStyle(

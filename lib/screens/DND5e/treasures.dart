@@ -12,7 +12,7 @@ class TreasuresPage extends MaterialPageRoute<Null> {
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault',
+                'DragonVault Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -25,7 +25,8 @@ class TreasuresPage extends MaterialPageRoute<Null> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
+                    padding: EdgeInsets.fromLTRB(
+                        0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
                     child: SizedBox(
                       height: screenHeight * .05,
                       child: Center(
@@ -202,64 +203,67 @@ class _TextChangerState extends State<TextChanger> {
 
   @override
   Widget build(BuildContext ctx) {
-    return Column(
-      children: [
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ChallengeRatingDDB(),
-            TreasureTypeDDB(),
-          ],
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-              0, MediaQuery.of(ctx).size.width * 0.06, 0, 0),
-          child: SizedBox(
-            width: MediaQuery.of(ctx).size.width * 0.863,
-            height: MediaQuery.of(ctx).size.width * 0.18,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
-                backgroundColor: Colors.lightGreen.shade900,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
+    return Padding(
+      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.015, 0, 0),
+      child: Column(
+        children: [
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ChallengeRatingDDB(),
+              TreasureTypeDDB(),
+            ],
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+                0, MediaQuery.of(ctx).size.width * 0.06, 0, 0),
+            child: SizedBox(
+              width: MediaQuery.of(ctx).size.width * 0.863,
+              height: MediaQuery.of(ctx).size.width * 0.18,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                  backgroundColor: Colors.lightGreen.shade900,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
-              ),
-              onPressed: () => updateText(),
-              child: Text(
-                'Generate Treasure',
-                style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: MediaQuery.of(ctx).size.height * .035,
-                    fontWeight: FontWeight.w700),
+                onPressed: () => updateText(),
+                child: Text(
+                  'Generate Treasure',
+                  style: TextStyle(
+                      fontFamily: 'Georgia',
+                      fontSize: MediaQuery.of(ctx).size.height * .035,
+                      fontWeight: FontWeight.w700),
+                ),
               ),
             ),
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-              MediaQuery.of(ctx).size.width * 0.07,
-              MediaQuery.of(ctx).size.height * 0.03,
-              MediaQuery.of(ctx).size.width * 0.07,
-              0),
-          child: Text(dynamicText,
-              style: TextStyle(
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(ctx).size.height * 0.03,
-              )),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(0, 36, 0, 0),
-          child: IconButton(
-            iconSize: 36,
-            icon: const Icon(Icons.copy),
-            color: Colors.blueGrey.shade900,
-            onPressed: () {
-              Clipboard.setData(ClipboardData(text: dynamicText));
-            },
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+                MediaQuery.of(ctx).size.width * 0.07,
+                MediaQuery.of(ctx).size.height * 0.03,
+                MediaQuery.of(ctx).size.width * 0.07,
+                0),
+            child: Text(dynamicText,
+                style: TextStyle(
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery.of(ctx).size.height * 0.03,
+                )),
           ),
-        ),
-      ],
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 36, 0, 0),
+            child: IconButton(
+              iconSize: 36,
+              icon: const Icon(Icons.copy),
+              color: Colors.blueGrey.shade900,
+              onPressed: () {
+                Clipboard.setData(ClipboardData(text: dynamicText));
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

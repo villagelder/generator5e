@@ -5,11 +5,13 @@ import 'package:flutter/services.dart';
 class WildMagicPage extends MaterialPageRoute<Null> {
   WildMagicPage()
       : super(builder: (BuildContext ctx) {
+          double screenWidth = MediaQuery.of(ctx).size.width;
+          double screenHeight = MediaQuery.of(ctx).size.height;
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault',
+                'DragonVault Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -21,18 +23,18 @@ class WildMagicPage extends MaterialPageRoute<Null> {
               scrollDirection: Axis.vertical,
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
                     child: SizedBox(
-                      height: 48,
+                      height: screenHeight * .05,
                       child: Center(
                         child: Text(
                           '5e Wild Magic',
                           style: TextStyle(
                             fontFamily: 'Georgia',
-                            fontSize: 32,
+                            fontSize: screenHeight * 0.044,
                             fontWeight: FontWeight.w500,
-                            color: Color.fromRGBO(34, 56, 69, 1.0),
+                            color: const Color.fromRGBO(34, 56, 69, 1.0),
                           ),
                         ),
                       ),

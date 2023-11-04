@@ -5,11 +5,13 @@ import 'package:generator5e/services/magicItemGenerator.dart';
 class NPCsPage extends MaterialPageRoute<Null> {
   NPCsPage()
       : super(builder: (BuildContext ctx) {
+          double screenWidth = MediaQuery.of(ctx).size.width;
+          double screenHeight = MediaQuery.of(ctx).size.height;
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault',
+                'DragonVault Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -21,30 +23,29 @@ class NPCsPage extends MaterialPageRoute<Null> {
               scrollDirection: Axis.vertical,
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 15.0, 0, 0),
                     child: SizedBox(
-                      height: 48,
+                      height: screenHeight * .05,
                       child: Center(
                         child: Text(
                           '5e NPCs',
                           style: TextStyle(
                             fontFamily: 'Georgia',
-                            fontSize: 32,
+                            fontSize: MediaQuery.of(ctx).size.height * 0.044,
                             fontWeight: FontWeight.w500,
-                            color: Color.fromRGBO(34, 56, 69, 1.0),
+                            color: const Color.fromRGBO(34, 56, 69, 1.0),
                           ),
                         ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    width: MediaQuery.of(ctx).size.width * 0.84,
+                    width: MediaQuery.of(ctx).size.width * 0.9,
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
                       child: Text(
-                        'Select your magic item Rarity, Type, and Number, then push \'Generate Magic Item\' to '
-                        'generate new magic items.',
+                        'Choose your options for your new NPC and push \'Generate NPC\'.',
                         style: TextStyle(
                             fontFamily: 'Georgia',
                             fontSize: MediaQuery.of(ctx).size.height * 0.022,
@@ -60,11 +61,11 @@ class NPCsPage extends MaterialPageRoute<Null> {
         });
 }
 
-class NumberDDB extends StatefulWidget {
-  const NumberDDB({super.key});
+class NpcDDB extends StatefulWidget {
+  const NpcDDB({super.key});
 
   @override
-  State<NumberDDB> createState() => _NumberDDBState();
+  State<NpcDDB> createState() => _NpcDDBState();
 }
 
 class AlignmentDDB extends StatefulWidget {
@@ -74,11 +75,11 @@ class AlignmentDDB extends StatefulWidget {
   State<AlignmentDDB> createState() => _AlignmentDDBState();
 }
 
-class ItemTypeDDB extends StatefulWidget {
-  const ItemTypeDDB({super.key});
+class AgeDDB extends StatefulWidget {
+  const AgeDDB({super.key});
 
   @override
-  State<ItemTypeDDB> createState() => _ItemTypeDDBState();
+  State<AgeDDB> createState() => _AgeDDBState();
 }
 
 class RaceDDB extends StatefulWidget {
@@ -106,42 +107,84 @@ const List<String> raceList = <String>[
   'Monstrous'
 ];
 
-const List<String> itemTypeList = <String>[
-  'All Items',
-  'Armor',
-  'Potion',
-  'Ring',
-  'Rod',
-  'Scroll',
-  'Staff',
-  'Wand',
-  'Weapon',
-  'Wondrous Item'
-];
-
 const List<String> genderList = <String>[
   'Any Gender',
   'Male',
   'Female',
-  'LGBTQIA+',
-  'Exotic'
+  'Male or Female',
+  'LGBTQIA+'
+];
+const List<String> ageList = <String>[
+  'Any Age',
+  'Child',
+  'Adolescent',
+  'Adult',
+  'Elder',
+  'Venerable'
 ];
 
-const List<String> numberList = <String>[
+const List<String> npcList = <String>[
   'Any Pursuit',
-  'Warrior',
-  'Arcanist',
-  'Devotee',
-  'Specialist',
   'Artisan',
-  'Noble',
   'Commoner',
   'Militia',
-  'Scholar',
+  'Nobility',
+  'Outlaw',
   'Performer',
-  'Servant',
-  'Outlaw'
+  'Scholar',
+  'Villain'
 ];
+
+class _AgeDDBState extends State<AgeDDB> {
+  static String ageValue = ageList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: const Color.fromRGBO(38, 50, 56, 1.0),
+            style: BorderStyle.solid,
+            width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.35,
+      height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            value: ageValue,
+            icon: const Icon(Icons.arrow_drop_down_outlined),
+            elevation: 16,
+            style: TextStyle(
+              color: const Color.fromRGBO(38, 50, 56, 1.0),
+              fontFamily: 'Georgia',
+              fontSize: MediaQuery.of(context).size.height * 0.025,
+              fontWeight: FontWeight.w500,
+            ),
+            underline: Container(
+              height: 2,
+              color: Colors.blueGrey,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                ageValue = value!;
+              });
+            },
+            items: ageList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 class _RaceDDBState extends State<RaceDDB> {
   static String raceValue = raceList.first;
@@ -156,7 +199,7 @@ class _RaceDDBState extends State<RaceDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.4,
+      width: MediaQuery.of(context).size.width * 0.5,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -207,7 +250,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.45,
+      width: MediaQuery.of(context).size.width * 0.5,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -245,8 +288,8 @@ class _GenderDDBState extends State<GenderDDB> {
   }
 }
 
-class _NumberDDBState extends State<NumberDDB> {
-  static String numberValue = numberList.first;
+class _NpcDDBState extends State<NpcDDB> {
+  static String numberValue = npcList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -256,7 +299,7 @@ class _NumberDDBState extends State<NumberDDB> {
         border: Border.all(
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.4,
+      width: MediaQuery.of(context).size.width * 0.9,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -280,7 +323,7 @@ class _NumberDDBState extends State<NumberDDB> {
                 numberValue = value!;
               });
             },
-            items: numberList.map<DropdownMenuItem<String>>((String value) {
+            items: npcList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -341,54 +384,6 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
   }
 }
 
-class _ItemTypeDDBState extends State<ItemTypeDDB> {
-  static String typeValue = itemTypeList.first;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.84,
-      height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            value: typeValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
-            elevation: 16,
-            style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.blueGrey,
-            ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                typeValue = value!;
-              });
-            },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class TextChanger extends StatefulWidget {
   const TextChanger({super.key});
 
@@ -398,7 +393,7 @@ class TextChanger extends StatefulWidget {
 
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
-  String dynamicText = 'Roll for magic item.';
+  String dynamicText = 'Roll your NPC.';
   MagicItemGenerator5e mig = MagicItemGenerator5e();
 
   updateText() {
@@ -414,19 +409,21 @@ class _TextChangerState extends State<TextChanger> {
   Widget build(BuildContext ctx) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.all(12.0),
-          child: Row(
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(context).size.height * 0.02, 0, 0),
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               RaceDDB(),
-              NumberDDB(),
+              AgeDDB(),
             ],
           ),
         ),
-        const Padding(
-          padding: EdgeInsets.all(12.0),
-          child: Row(
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(context).size.height * 0.02, 0, 0),
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               GenderDDB(),
@@ -434,19 +431,22 @@ class _TextChangerState extends State<TextChanger> {
             ],
           ),
         ),
-        const Padding(
-          padding: EdgeInsets.all(12.0),
-          child: Column(
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(context).size.height * 0.02, 0, 0),
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ItemTypeDDB(),
+              NpcDDB(),
             ],
           ),
         ),
+
         Padding(
           padding: EdgeInsets.fromLTRB(
-              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+              0, MediaQuery.of(context).size.height * 0.02, 0, 0),
           child: SizedBox(
-            width: MediaQuery.of(ctx).size.width * 0.84,
+            width: MediaQuery.of(ctx).size.width * 0.9,
             height: MediaQuery.of(ctx).size.height * 0.1,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -468,7 +468,8 @@ class _TextChangerState extends State<TextChanger> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(40.0),
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(context).size.height * 0.025, 0, 0),
           child: Text(dynamicText,
               style: TextStyle(
                 fontFamily: 'Georgia',
@@ -476,7 +477,8 @@ class _TextChangerState extends State<TextChanger> {
               )),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(0, 32, 0, 0),
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(context).size.height * 0.025, 0, 0),
           child: IconButton(
             iconSize: 36,
             icon: const Icon(Icons.copy),
@@ -485,6 +487,98 @@ class _TextChangerState extends State<TextChanger> {
               Clipboard.setData(ClipboardData(text: dynamicText));
             },
           ),
+        ),
+      ],
+    );
+  }
+}
+
+//stats, personality, features
+//PersonalityCheckbox, FeaturesCheckbox(), StatsCheckbox
+
+class DetailsCheckbox extends StatefulWidget {
+  const DetailsCheckbox({super.key});
+
+  @override
+  State<DetailsCheckbox> createState() => _DetailsCheckboxState();
+}
+
+class _DetailsCheckboxState extends State<DetailsCheckbox> {
+  bool? isChecked = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * .60,
+      child: CheckboxListTile(
+        contentPadding: EdgeInsets.zero,
+        title: const Text("Details", textAlign: TextAlign.right),
+        value: isChecked,
+        activeColor: Colors.green,
+        onChanged: (bool? value) {
+          setState(() {
+            isChecked = value;
+          });
+        },
+      ),
+    );
+  }
+}
+
+class PersonalityCheckbox extends StatefulWidget {
+  const PersonalityCheckbox({super.key});
+
+  @override
+  State<PersonalityCheckbox> createState() => _PersonalityCheckboxState();
+}
+
+class _PersonalityCheckboxState extends State<PersonalityCheckbox> {
+  bool? isChecked = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return CheckboxListTile(
+      controlAffinity: ListTileControlAffinity.platform,
+      contentPadding: EdgeInsets.zero,
+      title: Transform.translate(
+          offset: const Offset(42, 0), child: const Text("Traits")),
+      value: isChecked,
+      activeColor: Colors.green,
+      onChanged: (bool? value) {
+        setState(() {
+          isChecked = value;
+        });
+      },
+    );
+  }
+}
+
+class StatsCheckbox extends StatefulWidget {
+  const StatsCheckbox({super.key});
+
+  @override
+  State<StatsCheckbox> createState() => _StatsCheckboxState();
+}
+
+class _StatsCheckboxState extends State<StatsCheckbox> {
+  bool? isChecked = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        CheckboxListTile(
+          controlAffinity: ListTileControlAffinity.trailing,
+          contentPadding: EdgeInsets.zero,
+          title: Transform.translate(
+              offset: const Offset(42, 0), child: const Text("Stats")),
+          value: isChecked,
+          activeColor: Colors.green,
+          onChanged: (bool? value) {
+            setState(() {
+              isChecked = value;
+            });
+          },
         ),
       ],
     );

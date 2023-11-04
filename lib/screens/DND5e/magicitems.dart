@@ -9,7 +9,7 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault',
+                'DragonVault Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -21,18 +21,18 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
               scrollDirection: Axis.vertical,
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
                     child: SizedBox(
-                      height: 48,
+                      height: MediaQuery.of(ctx).size.height * 0.06,
                       child: Center(
                         child: Text(
                           '5e Magic Items',
                           style: TextStyle(
                             fontFamily: 'Georgia',
-                            fontSize: 32,
+                            fontSize: MediaQuery.of(ctx).size.height * 0.044,
                             fontWeight: FontWeight.w500,
-                            color: Color.fromRGBO(34, 56, 69, 1.0),
+                            color: const Color.fromRGBO(34, 56, 69, 1.0),
                           ),
                         ),
                       ),
@@ -41,7 +41,7 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
                   SizedBox(
                     width: MediaQuery.of(ctx).size.width * 0.84,
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
                       child: Text(
                         'Select your magic item Rarity, Type, and Number, then push \'Generate Magic Item\' to '
                         'generate new magic items.',
@@ -82,6 +82,7 @@ class RarityDDB extends StatefulWidget {
 }
 
 const List<String> rarityList = <String>[
+  'Any Rarity',
   'Common',
   'Uncommon',
   'Rare',
@@ -206,42 +207,48 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.84,
-      height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            value: typeValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
-            elevation: 16,
-            style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.blueGrey,
+    return Padding(
+      padding: EdgeInsets.fromLTRB(
+          0, MediaQuery.of(context).size.height * 0.0175, 0, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          border: Border.all(
+              color: Colors.brown.shade800,
+              style: BorderStyle.solid,
+              width: 2.0),
+        ),
+        width: MediaQuery.of(context).size.width * 0.84,
+        height: MediaQuery.of(context).size.height * 0.075,
+        child: DropdownButtonHideUnderline(
+          child: ButtonTheme(
+            alignedDropdown: true,
+            child: DropdownButton<String>(
+              value: typeValue,
+              icon: const Icon(Icons.arrow_drop_down_outlined),
+              elevation: 16,
+              style: TextStyle(
+                  color: const Color.fromRGBO(38, 50, 56, 1.0),
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery.of(context).size.height * 0.025,
+                  fontWeight: FontWeight.w500),
+              underline: Container(
+                height: 2,
+                color: Colors.blueGrey,
+              ),
+              onChanged: (String? value) {
+                // This is called when the user selects an item.
+                setState(() {
+                  typeValue = value!;
+                });
+              },
+              items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
             ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                typeValue = value!;
-              });
-            },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
           ),
         ),
       ),
@@ -275,7 +282,7 @@ class _TextChangerState extends State<TextChanger> {
     return Column(
       children: [
         const Padding(
-          padding: EdgeInsets.all(12.0),
+          padding: EdgeInsets.fromLTRB(0, 42, 0, 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

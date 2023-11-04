@@ -5,11 +5,13 @@ import 'package:generator5e/services/magicItemGenerator.dart';
 class SpellSetsPage extends MaterialPageRoute<Null> {
   SpellSetsPage()
       : super(builder: (BuildContext ctx) {
+          double screenWidth = MediaQuery.of(ctx).size.width;
+          double screenHeight = MediaQuery.of(ctx).size.height;
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault',
+                'DragonVault Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -21,18 +23,18 @@ class SpellSetsPage extends MaterialPageRoute<Null> {
               scrollDirection: Axis.vertical,
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(0, 12.0, 0, 0),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
                     child: SizedBox(
-                      height: 48,
+                      height: screenHeight * .05,
                       child: Center(
                         child: Text(
                           '5e Spell Sets',
                           style: TextStyle(
                             fontFamily: 'Georgia',
-                            fontSize: 32,
+                            fontSize: screenHeight * 0.044,
                             fontWeight: FontWeight.w500,
-                            color: Color.fromRGBO(34, 56, 69, 1.0),
+                            color: const Color.fromRGBO(34, 56, 69, 1.0),
                           ),
                         ),
                       ),
@@ -109,7 +111,8 @@ const List<String> itemTypeList = <String>[
 const List<String> focusList = <String>[
   'Arcane Trickster',
   'Transmuter',
-  'Eldritch Knight'];
+  'Eldritch Knight'
+];
 
 class _ClassDDBState extends State<ClassDDB> {
   static String classValue = classList.first;
@@ -221,7 +224,7 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
         border: Border.all(
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.84,
+      width: MediaQuery.of(context).size.width * 0.85,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -284,7 +287,7 @@ class _TextChangerState extends State<TextChanger> {
     return Column(
       children: [
         const Padding(
-          padding: EdgeInsets.all(12.0),
+          padding: EdgeInsets.fromLTRB(0, 24.0, 0, 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -294,7 +297,7 @@ class _TextChangerState extends State<TextChanger> {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.all(12.0),
+          padding: EdgeInsets.fromLTRB(0, 24.0, 0, 0),
           child: Column(
             children: [
               ItemTypeDDB(),
@@ -303,7 +306,7 @@ class _TextChangerState extends State<TextChanger> {
         ),
         Padding(
           padding: EdgeInsets.fromLTRB(
-              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+              0, MediaQuery.of(ctx).size.height * 0.022, 0, 0),
           child: SizedBox(
             width: MediaQuery.of(ctx).size.width * 0.84,
             height: MediaQuery.of(ctx).size.height * 0.1,
