@@ -95,23 +95,17 @@ class GenderDDB extends StatefulWidget {
   State<GenderDDB> createState() => _GenderDDBState();
 }
 
-const List<String> alignList = <String>[
-  'Any','Good',
-'Neutral',
-'Evil'
-];
+const List<String> alignList = <String>['Any Align', 'Good', 'Neutral', 'Evil'];
 
 const List<String> raceList = <String>[
-  'Elf',
-  'Halfling',
-  'Dwarf',
+  'Any Race',
   'Human',
-  'Dragonborn',
-  'Tiefling',
-  'Gnome',
-  'Orc',
-  'Mixed Race',
+  'Classic',
+  'Small Race',
+  '5e Realms',
+  'Monstrous'
 ];
+
 const List<String> itemTypeList = <String>[
   'All Items',
   'Armor',
@@ -130,16 +124,23 @@ const List<String> genderList = <String>[
   'Male',
   'Female',
   'LGBTQIA+',
-  'Hermaphrodite'
+  'Exotic'
 ];
 
 const List<String> numberList = <String>[
-  'Adventurer',
+  'Any Pursuit',
+  'Warrior',
+  'Arcanist',
+  'Devotee',
+  'Specialist',
   'Artisan',
-  'Aristocrat',
-  'Laborer',
+  'Noble',
+  'Commoner',
+  'Militia',
+  'Scholar',
   'Performer',
   'Servant',
+  'Outlaw'
 ];
 
 class _RaceDDBState extends State<RaceDDB> {
@@ -206,7 +207,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.5,
+      width: MediaQuery.of(context).size.width * 0.45,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -303,7 +304,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
         border: Border.all(
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.3,
+      width: MediaQuery.of(context).size.width * 0.35,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
