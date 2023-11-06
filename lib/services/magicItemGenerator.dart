@@ -4,9 +4,13 @@ import 'package:flutter/services.dart';
 import 'package:generator5e/models/magicitem.dart';
 import 'package:generator5e/services/utility.dart';
 
+import '../models/spell.dart';
+
 class MagicItemGenerator5e {
   List _magicitems = [];
   List<MagicItem> magicItemObjList = [];
+  List _spellsJson = [];
+  List<Spell> spellsObjList = [];
 
   Future<void> readJsonMagicItems() async {
     final String response =
@@ -62,8 +66,12 @@ class MagicItemGenerator5e {
     if (magicItemObjList.isNotEmpty) {
       for (int i = 0; i < itemCount; i++) {
         int ix = Utility.getRandomIndexFromListSize(magicItemObjList.length);
-        if (!magicItemsList.contains(magicItemObjList[ix].name)) {
-          magicItemsList.add(magicItemObjList[ix].name);
+        String magicItem = magicItemObjList[ix].name;
+        if (!magicItemsList.contains(magicItem)) {
+          if (magicItem.contains("Spell Scroll")) {
+            magicItem = randomizeScroll(magicItem);
+          }
+          magicItemsList.add(magicItem);
         } else {
           i--;
           continue;
@@ -84,5 +92,36 @@ class MagicItemGenerator5e {
     }
 
     return items.toString();
+  }
+
+  getSpellsObjectList() {
+    spellsObjList = _spellsJson.map((sJson) => Spell.fromJson(sJson)).toList();
+  }
+
+  List<Spell> getSpellsByLevel(String level) {
+    return spellsObjList.where((sp) => sp.level == level).toList();
+  }
+
+  Future<void> readSpellsJson() async {
+    final String response =
+        await rootBundle.loadString('assets/jsondata/spell.json');
+    final spdata = await json.decode(response);
+    _spellsJson = spdata["spell"] as List;
+  }
+
+  String randomizeScroll(String genericScroll) {
+    List<String> scrollPieces = genericScroll.split(", ");
+    readSpellsJson();
+    getSpellsObjectList();
+    String level = scrollPieces[1];
+    spellsObjList = getSpellsByLevel(level);
+
+    if (spellsObjList.isNotEmpty) {
+      Spell spell = spellsObjList[
+          Utility.getRandomIndexFromListSize(spellsObjList.length)];
+      return 'Scroll of ${spell.name}';
+    }
+
+    return genericScroll;
   }
 }

@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/screens/DND5e/encounters.dart';
-import 'package:generator5e/screens/DND5e/magicitems.dart';
-import 'package:generator5e/screens/DND5e/npcs.dart';
-import 'package:generator5e/screens/DND5e/spellsets.dart';
-import 'package:generator5e/screens/DND5e/traps.dart';
+import 'package:generator5e/screens/DND5e/generators5e.dart';
 import 'package:generator5e/screens/DND5e/treasures.dart';
-import 'package:generator5e/screens/DND5e/trinkets.dart';
-import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -14,21 +8,6 @@ void main() {
     home: MyApp(),
   ));
 }
-
-// class CustomTheme {
-//   static ThemeData get lightTheme {
-//     return ThemeData(
-//       backgroundColor: Colors.grey.shade200,
-//         primaryColor: Colors.red.shade900,
-//         scaffoldBackgroundColor: Colors.amber,
-//         fontFamily: 'Georgia',
-//         buttonTheme: ButtonThemeData(
-//           shape:
-//               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-//           buttonColor: Colors.red.shade900,
-//         ));
-//   }
-// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -54,12 +33,12 @@ class MyApp extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, screenHeight * .05, 0, 0),
               child: SizedBox(
-                height: screenHeight * .05,
+                height: screenHeight * .07,
                 child: Center(
                     child: Text(
-                  '5e Generators',
+                  'DragonVault',
                   style: TextStyle(
                     fontFamily: 'Georgia',
                     fontWeight: FontWeight.w500,
@@ -69,298 +48,91 @@ class MyApp extends StatelessWidget {
                 )),
               ),
             ),
-            SizedBox(
-              width: screenWidth * 0.86,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
-                    child: Column(
-                      children: [
-                        Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
-                            child: Center(
-                              child: SizedBox(
-                                width: screenWidth * 0.4,
-                                height: screenHeight * 0.15,
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                    backgroundColor: Colors.blueGrey.shade900,
-                                  ),
-                                  onPressed: () {
-                                    Navigator.push(context, TreasuresPage());
-                                  },
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      'Treasures',
-                                      style: TextStyle(
-                                          fontFamily: 'Georgia',
-                                          fontSize: screenHeight * 0.035,
-                                          fontWeight: FontWeight.bold,
-                                          color: const Color.fromRGBO(
-                                              255, 245, 188, 1.0)),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            )),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade800,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, TrapsPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: EdgeInsets.fromLTRB(
-                                      screenWidth * 0.029, 0, 0, 0),
-                                  child: Center(
-                                    child: Text(
-                                      'Traps & Hazards',
-                                      style: TextStyle(
-                                          fontFamily: 'Georgia',
-                                          fontSize: screenHeight * 0.035,
-                                          fontWeight: FontWeight.bold,
-                                          color: const Color.fromRGBO(
-                                              255, 245, 188, 1.0)),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade700,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, WildMagicPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'Wild Magic',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.033,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade600,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, NPCsPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'NPCs',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.035,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                      ],
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, screenHeight * .03, 0, 0),
+              child: SizedBox(
+                width: screenWidth * 0.7,
+                height: screenHeight * 0.175,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    backgroundColor: Colors.blueGrey.shade900,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, TreasuresPage());
+                  },
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      '5e Characters',
+                      style: TextStyle(
+                          fontFamily: 'Georgia',
+                          fontSize: screenHeight * 0.045,
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade900,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, MagicItemsPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'Magic Items',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.03,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade800,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, TrinketsPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'Trinkets',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.035,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade700,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, SpellSetsPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'Spell Sets',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.035,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 12.0, 0, 0),
-                          child: Center(
-                              child: SizedBox(
-                            width: screenWidth * 0.4,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade600,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, EncountersPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(2.0),
-                                  child: Text(
-                                    'Encounters',
-                                    style: TextStyle(
-                                        fontFamily: 'Georgia',
-                                        fontSize: screenHeight * 0.032,
-                                        fontWeight: FontWeight.bold,
-                                        color: const Color.fromRGBO(
-                                            255, 245, 188, 1.0)),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )),
-                        ),
-                      ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, screenHeight * .03, 0, 0),
+              child: SizedBox(
+                width: screenWidth * 0.7,
+                height: screenHeight * 0.175,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    backgroundColor: Colors.blueGrey.shade900,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, Generators5ePage());
+                  },
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      '5e Generators',
+                      style: TextStyle(
+                          fontFamily: 'Georgia',
+                          fontSize: screenHeight * 0.045,
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
                     ),
                   ),
-                ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, screenHeight * .03, 0, 0),
+              child: SizedBox(
+                width: screenWidth * 0.7,
+                height: screenHeight * 0.175,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    backgroundColor: Colors.blueGrey.shade900,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, TreasuresPage());
+                  },
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Other Fantasy Generators',
+                      style: TextStyle(
+                          fontFamily: 'Georgia',
+                          fontSize: screenHeight * 0.045,
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
+                    ),
+                  ),
+                ),
               ),
             ),
           ],
