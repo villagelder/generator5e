@@ -1513,15 +1513,291 @@
       "source": "SRD"
     },
     {
-      "id": 999,
-      "name": "name",
+      "id": 127,
+      "name": "Cube of Force",
       "type": "wondrous item",
       "subtypes": "",
       "total": "",
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.\n\nYou can use an action to press one of the cube’s faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube’s sixth face, or the cube runs out of charges. You can change the barrier’s effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.\n\nIf your movement causes the barrier to come into contact with a solid object that can’t pass through the cube, you can’t move any closer to that object as long as the barrier remains.",
+      "source": "SRD"
+    },
+    {
+      "id": 128,
+      "name": "Dagger of Venom",
+      "type": "wondrous item",
+      "subtypes": "dagger",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nYou can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can’t be used this way again until the next dawn.",
+      "source": "SRD"
+    },
+    {
+      "id": 129,
+      "name": "Dimensional Shackles",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don’t prevent the creature from passing through an interdimensional portal.\n\nYou and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a success, the creature breaks free and destroys the shackles.",
+      "source": "SRD"
+    },
+    {
+      "id": 130,
+      "name": "Dragon Slayer Greatsword",
+      "type": "weapon",
+      "subtypes": "greatsword, scimitar, shortsword, longsword, rapier",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nWhen you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon’s type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.",
+      "source": "SRD"
+    },
+    {
+      "id": 131,
+      "name": "Elven Chain",
+      "type": "armor",
+      "subtypes": "chain shirt, chainmail",
+      "total": "",
+      "detail": "",
+      "attunement": true,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor.",
+      "source": "SRD"
+    },
+    {
+      "id": 132,
+      "name": "Dragon Slayer Scimitar",
+      "type": "weapon",
+      "subtypes": "greatsword, scimitar, shortsword, longsword, rapier",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nWhen you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon’s type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.",
+      "source": "SRD"
+    },
+    {
+      "id": 133,
+      "name": "Dragon Slayer",
+      "type": "weapon",
+      "subtypes": "greatsword, scimitar, shortsword, longsword, rapier",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nWhen you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon’s type. For the purpose of this weapon, “dragon” refers to any creature with the dragon type, including dragon turtles and wyverns.",
+      "source": "SRD"
+    },
+    {
+      "id": 134,
+      "name": "Feather Token",
+      "type": "wondrous item",
+      "subtypes": "anchor, bird, fan, swan boat, tree, whip",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "This tiny object looks like a feather. Different types of feather tokens exist, each with a different singleuse effect.",
+      "source": "SRD"
+    },
+    {
+      "id": 135,
+      "name": "Flame Tongue",
+      "type": "weapon",
+      "subtypes": "greatsword, scimitar, shortsword, longsword, rapier, hand axe, battleaxe, greataxe",
+      "total": "",
+      "detail": "",
+      "attunement": true,
+      "rarity": "rare",
+      "description": "You can use a bonus action to speak this magic sword’s command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
+      "source": "SRD"
+    },
+    {
+      "id": 136,
+      "name": "Folding Boat",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.\n\nOne command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.\n\nThe second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.\n\nWhen the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.\n\nThe third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can’t fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.",
+      "source": "SRD"
+    },
+    {
+      "id": 137,
+      "name": "Gem of Seeing",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": true,
+      "rarity": "rare",
+      "description": "This gem has 3 charges. As an action, you can speak the gem’s command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.\n\nThe gem regains 1d3 expended charges daily at dawn.",
+      "source": "SRD"
+    },
+    {
+      "id": 138,
+      "name": "Giant Slayer",
+      "type": "weapon",
+      "subtypes": "greatsword, scimitar, shortsword, longsword, rapier, hand axe, battleaxe, greataxe",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nWhen you hit a giant with it, the giant takes an extra 2d6 damage of the weapon’s type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.",
+      "source": "SRD"
+    },
+    {
+      "id": 139,
+      "name": "Glamoured Studded Leather",
+      "type": "armor",
+      "subtypes": "studded leather",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor’s command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor.",
+      "source": "SRD"
+    },
+    {
+      "id": 140,
+      "name": "Handy Haversack",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents.\n\nPlacing an object in the haversack follows the normal rules for interacting with objects. Retrieving an item from the haversack requires you to use an action. When you reach into the haversack for a specific item, the item is always magically on top.\n\nThe haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate.\n\nPlacing the haversack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can’t be reopened.",
+      "source": "SRD"
+    },
+    {
+      "id": 141,
+      "name": "Helm of Teleportation",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": true,
+      "rarity": "rare",
+      "description": "This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn.",
+      "source": "SRD"
+    },
+    {
+      "id": 142,
+      "name": "Horn of Blasting",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You can use an action to speak the horn’s command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn’t deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.\n\nEach use of the horn’s magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.",
+      "source": "SRD"
+    },
+    {
+      "id": 143,
+      "name": "Silver Horn of Valhalla",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can’t be used again until 7 days have passed.\n\nFour types of horn of Valhalla are known to exist, each made of a different metal. The horn’s type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn’s type or determines it randomly.\n\nIf you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
+      "source": "SRD"
+    },
+    {
+      "id": 144,
+      "name": "Brass Horn of Valhalla",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can’t be used again until 7 days have passed.\n\nFour types of horn of Valhalla are known to exist, each made of a different metal. The horn’s type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn’s type or determines it randomly.\n\nIf you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
+      "source": "SRD"
+    },
+    {
+      "id": 145,
+      "name": "Bronze Horn of Valhalla",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "very rare",
+      "description": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can’t be used again until 7 days have passed.\n\nFour types of horn of Valhalla are known to exist, each made of a different metal. The horn’s type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn’s type or determines it randomly.\n\nIf you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
+      "source": "SRD"
+    },
+    {
+      "id": 146,
+      "name": "Iron Horn of Valhalla",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "legendary",
+      "description": "You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can’t be used again until 7 days have passed.\n\nFour types of horn of Valhalla are known to exist, each made of a different metal. The horn’s type determines how many berserkers answer its summons, as well as the requirement for its use. The GM chooses the horn’s type or determines it randomly.\n\nIf you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.",
+      "source": "SRD"
+    },
+    {
+      "id": 147,
+      "name": "Horseshoes Of Speed",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature’s walking speed by 30 feet.",
+      "source": "SRD"
+    },
+    {
+      "id": 148,
+      "name": "Instant Fortress",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty.\n\nThe fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.\n\nEach creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren’t being worn or carried take this damage and are pushed automatically.\n\nThe tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.",
+      "source": "SRD"
+    },
+    {
+      "id": 149,
+      "name": "Iron Bands of Binding",
+      "type": "wondrous item",
+      "subtypes": "",
+      "total": "",
+      "detail": "",
+      "attunement": false,
+      "rarity": "rare",
+      "description": "This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.\n\nMake a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more.\n\nA creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed.\n\nOnce the bands are used, they can’t be used again until the next dawn.",
+      "source": "SRD"
+    },
+    {
+      "id": 150,
+      "name": "Mace of Disruption",
+      "type": "weapon",
+      "subtypes": "mace",
+      "total": "",
+      "detail": "",
+      "attunement": true,
+      "rarity": "rare",
+      "description": "When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.\n\nWhile you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.",
       "source": "SRD"
     },
     {
@@ -1533,7 +1809,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1545,7 +1821,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1557,7 +1833,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1569,7 +1845,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1581,7 +1857,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1593,7 +1869,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1605,7 +1881,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1617,7 +1893,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     },
     {
@@ -1629,43 +1905,7 @@
       "detail": "",
       "attunement": true,
       "rarity": "rare",
-      "description": "description",
-      "source": "SRD"
-    },
-    {
-      "id": 999,
-      "name": "name",
-      "type": "wondrous item",
-      "subtypes": "",
-      "total": "",
-      "detail": "",
-      "attunement": true,
-      "rarity": "rare",
-      "description": "description",
-      "source": "SRD"
-    },
-    {
-      "id": 999,
-      "name": "name",
-      "type": "wondrous item",
-      "subtypes": "",
-      "total": "",
-      "detail": "",
-      "attunement": true,
-      "rarity": "rare",
-      "description": "description",
-      "source": "SRD"
-    },
-    {
-      "id": 999,
-      "name": "name",
-      "type": "wondrous item",
-      "subtypes": "",
-      "total": "",
-      "detail": "",
-      "attunement": true,
-      "rarity": "rare",
-      "description": "description",
+      "description": "",
       "source": "SRD"
     }
   ]
