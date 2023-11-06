@@ -74,6 +74,13 @@ class ItemTypeDDB extends StatefulWidget {
   State<ItemTypeDDB> createState() => _ItemTypeDDBState();
 }
 
+class ItemSubTypeDDB extends StatefulWidget {
+  const ItemSubTypeDDB({super.key});
+
+  @override
+  State<ItemSubTypeDDB> createState() => _ItemSubTypeDDBState();
+}
+
 class RarityDDB extends StatefulWidget {
   const RarityDDB({super.key});
 
@@ -87,7 +94,8 @@ const List<String> rarityList = <String>[
   'Uncommon',
   'Rare',
   'Very Rare',
-  'Legendary'
+  'Legendary',
+  'Artifact'
 ];
 const List<String> itemTypeList = <String>[
   'All Items',
@@ -116,7 +124,7 @@ class _RarityDDBState extends State<RarityDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.47,
+      width: MediaQuery.of(context).size.width * 0.45,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -128,7 +136,7 @@ class _RarityDDBState extends State<RarityDDB> {
             style: TextStyle(
               color: const Color.fromRGBO(38, 50, 56, 1.0),
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.025,
+              fontSize: MediaQuery.of(context).size.height * 0.023,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -165,7 +173,7 @@ class _NumberDDBState extends State<NumberDDB> {
         border: Border.all(
             color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.3,
+      width: MediaQuery.of(context).size.width * 0.35,
       height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -177,7 +185,7 @@ class _NumberDDBState extends State<NumberDDB> {
             style: TextStyle(
                 color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.025,
+                fontSize: MediaQuery.of(context).size.height * 0.023,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -203,52 +211,94 @@ class _NumberDDBState extends State<NumberDDB> {
 }
 
 class _ItemTypeDDBState extends State<ItemTypeDDB> {
-  static String typeValue = itemTypeList.first;
+  static String itemValue = itemTypeList.first;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.fromLTRB(
-          0, MediaQuery.of(context).size.height * 0.0175, 0, 0),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.0),
-          border: Border.all(
-              color: Colors.brown.shade800,
-              style: BorderStyle.solid,
-              width: 2.0),
-        ),
-        width: MediaQuery.of(context).size.width * 0.84,
-        height: MediaQuery.of(context).size.height * 0.075,
-        child: DropdownButtonHideUnderline(
-          child: ButtonTheme(
-            alignedDropdown: true,
-            child: DropdownButton<String>(
-              value: typeValue,
-              icon: const Icon(Icons.arrow_drop_down_outlined),
-              elevation: 16,
-              style: TextStyle(
-                  color: const Color.fromRGBO(38, 50, 56, 1.0),
-                  fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.025,
-                  fontWeight: FontWeight.w500),
-              underline: Container(
-                height: 2,
-                color: Colors.blueGrey,
-              ),
-              onChanged: (String? value) {
-                // This is called when the user selects an item.
-                setState(() {
-                  typeValue = value!;
-                });
-              },
-              items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.845,
+      height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            value: itemValue,
+            icon: const Icon(Icons.arrow_drop_down_outlined),
+            elevation: 16,
+            style: TextStyle(
+                color: const Color.fromRGBO(38, 50, 56, 1.0),
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.023,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.blueGrey,
             ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                itemValue = value!;
+              });
+            },
+            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ItemSubTypeDDBState extends State<ItemSubTypeDDB> {
+  static String itemValue = itemTypeList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.4,
+      height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            value: itemValue,
+            icon: const Icon(Icons.arrow_drop_down_outlined),
+            elevation: 16,
+            style: TextStyle(
+                color: const Color.fromRGBO(38, 50, 56, 1.0),
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.023,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.blueGrey,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                itemValue = value!;
+              });
+            },
+            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -271,9 +321,8 @@ class _TextChangerState extends State<TextChanger> {
   updateText() {
     setState(() {
       dynamicText = 'changed';
-      // dynamicText = trGen
-      //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
-      //     .toString();
+      dynamicText = mig.generateRandomMagicItems(_RarityDDBState.rarityValue,
+          _ItemTypeDDBState.itemValue, int.parse(_NumberDDBState.numberValue));
     });
   }
 
@@ -281,19 +330,23 @@ class _TextChangerState extends State<TextChanger> {
   Widget build(BuildContext ctx) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(0, 42, 0, 0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              RarityDDB(),
-              NumberDDB(),
-            ],
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.845,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                RarityDDB(),
+                NumberDDB(),
+              ],
+            ),
           ),
         ),
         const Padding(
-          padding: EdgeInsets.all(12.0),
-          child: Column(
+          padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ItemTypeDDB(),
             ],
@@ -315,7 +368,7 @@ class _TextChangerState extends State<TextChanger> {
               ),
               onPressed: () => updateText(),
               child: Text(
-                'Generate Magic Item',
+                'Generate Magic Items',
                 style: TextStyle(
                     fontFamily: 'Georgia',
                     fontSize: MediaQuery.of(ctx).size.height * .035,
@@ -325,12 +378,15 @@ class _TextChangerState extends State<TextChanger> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(40.0),
-          child: Text(dynamicText,
-              style: TextStyle(
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(ctx).size.height * 0.03,
-              )),
+          padding: EdgeInsets.fromLTRB(0, 20.0, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.7,
+            child: Text(dynamicText,
+                style: TextStyle(
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery.of(ctx).size.height * 0.03,
+                )),
+          ),
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 32, 0, 0),

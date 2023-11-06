@@ -1,15 +1,15 @@
 import 'dart:core';
 
-class RandomMagicItem {
+class TreasureMagicItem {
   String magictype;
   String minroll;
   String maxroll;
   String magicitem;
 
-  RandomMagicItem(this.magictype, this.minroll, this.maxroll, this.magicitem);
+  TreasureMagicItem(this.magictype, this.minroll, this.maxroll, this.magicitem);
 
-  factory RandomMagicItem.fromJson(dynamic json) {
-    return RandomMagicItem(
+  factory TreasureMagicItem.fromJson(dynamic json) {
+    return TreasureMagicItem(
         json['magictype'] as String,
         json['minroll'] as String,
         json['maxroll'] as String,

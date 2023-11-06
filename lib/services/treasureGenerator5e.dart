@@ -7,8 +7,8 @@ import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/utility.dart';
 
 import '../models/artitem.dart';
-import '../models/randommagicitems.dart';
 import '../models/spell.dart';
+import '../models/treasure5emagicitems.dart';
 import '../models/treasures.dart';
 
 class TreasureGenerator5e {
@@ -21,7 +21,7 @@ class TreasureGenerator5e {
   List<GemItem> gemObjList = [];
   List<Treasures> trObjList = [];
   List<ArtItem> artObjList = [];
-  List<RandomMagicItem> randomMagicItemObjList = [];
+  List<TreasureMagicItem> randomMagicItemObjList = [];
   List<Spell> spellsObjList = [];
 
   int roll = 0;
@@ -74,7 +74,7 @@ class TreasureGenerator5e {
     final String response =
         await rootBundle.loadString('assets/jsondata/magicitemstable.json');
     final data = await json.decode(response);
-    _magicitems = data["randommagicitems"] as List;
+    _magicitems = data["treasuremagicitem"] as List;
   }
 
   Future<void> readJsonGemItemsTable() async {
@@ -117,7 +117,7 @@ class TreasureGenerator5e {
 
   getMagicItemObjectList() {
     randomMagicItemObjList =
-        _magicitems.map((mJson) => RandomMagicItem.fromJson(mJson)).toList();
+        _magicitems.map((mJson) => TreasureMagicItem.fromJson(mJson)).toList();
   }
 
   String randomizeScroll(String genericScroll) {
@@ -156,19 +156,19 @@ class TreasureGenerator5e {
       //get art
       tl.addAll(calculateArt(trObj, trObj2!, isLegendary));
       //get magic items
-      tl.addAll(calculateRandomMagicItems(trObj, trObj2!, isLegendary));
+      tl.addAll(calculateRandomMagicItems(trObj!, trObj2, isLegendary));
     }
 
     if (tl.isEmpty) {
-      return 'No Treasure';
+      return 'No treasure was found.';
     }
 
     var trl = StringBuffer();
     for (int i = 0; i < tl.length; i++) {
       if (i != tl.length - 1) {
-        trl.write('${tl[i]}, ');
+        trl.write('• ${tl[i]}\n');
       } else {
-        trl.write(tl[i]);
+        trl.write('• ${tl[i]}');
       }
     }
 
@@ -400,7 +400,7 @@ class TreasureGenerator5e {
     getMagicItemObjectList();
 
     Map<String, int> miMap = {};
-    List<RandomMagicItem> magicItemsByRank = [];
+    List<TreasureMagicItem> magicItemsByRank = [];
 
     if (trObj.magicitemtype != "0") {
       magicItemsByRank = getMagicItemsByRank(trObj.magicitemtype);
@@ -430,7 +430,7 @@ class TreasureGenerator5e {
     int numberOfMagicItems2 = 0;
     if (isLegendary && trObj2.magicitems != "0") {
       numberOfMagicItems2 = 1;
-      List<RandomMagicItem> magicItemsByRank2 = [];
+      List<TreasureMagicItem> magicItemsByRank2 = [];
 
       if (trObj2.magicitemtype != "0") {
         magicItemsByRank2 = getMagicItemsByRank(trObj2.magicitemtype);
@@ -468,7 +468,7 @@ class TreasureGenerator5e {
     return miList;
   }
 
-  List<RandomMagicItem> getMagicItemsByRank(String magicitemtype) {
+  List<TreasureMagicItem> getMagicItemsByRank(String magicitemtype) {
     return randomMagicItemObjList
         .where((mi) => mi.magictype == magicitemtype)
         .toList();

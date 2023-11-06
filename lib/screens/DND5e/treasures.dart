@@ -204,7 +204,8 @@ class _TextChangerState extends State<TextChanger> {
   @override
   Widget build(BuildContext ctx) {
     return Padding(
-      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.015, 0, 0),
+      padding:
+          EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.015, 0, 0),
       child: Column(
         children: [
           const Row(
@@ -240,16 +241,17 @@ class _TextChangerState extends State<TextChanger> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(
-                MediaQuery.of(ctx).size.width * 0.07,
-                MediaQuery.of(ctx).size.height * 0.03,
-                MediaQuery.of(ctx).size.width * 0.07,
-                0),
-            child: Text(dynamicText,
+            padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+            child: SizedBox(
+              width: MediaQuery.of(ctx).size.width * 0.7,
+              child: Text(
+                dynamicText,
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   fontSize: MediaQuery.of(ctx).size.height * 0.03,
-                )),
+                ),
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 36, 0, 0),
