@@ -1,0 +1,826 @@
+{
+  "nouns": [
+    {
+      "id": 1,
+      "type": "humanoid",
+      "synonyms": [
+        "goblin",
+        "tortle",
+        "kobold",
+        "lizardfolk",
+        "aarakocra",
+        "fairy",
+        "dwarf",
+        "hobgoblin",
+        "kenku",
+        "firbolg",
+        "harengon",
+        "githyanki",
+        "githzerai",
+        "bugbear",
+        "bullywug",
+        "duergar",
+        "dragonborn",
+        "troglodyte",
+        "tiefling",
+        "orc",
+        "human",
+        "tabaxi",
+        "leonin",
+        "elf",
+        "halfling",
+        "pixie",
+        "gnome"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "humanoidPart",
+      "synonyms": [
+        "hand",
+        "foot",
+        "eyeball",
+        "ear",
+        "finger",
+        "scalp",
+        "bone",
+        "shrunken head"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "mineral",
+      "synonyms": [
+        "crystal",
+        "iron",
+        "gold",
+        "rock",
+        "stone",
+        "marble",
+        "bone",
+        "adamantine",
+        "mithral",
+        "petrified wood",
+        "flint",
+        "pumice",
+        "shale",
+        "lodestone",
+        "limestone",
+        "glass",
+        "granite",
+        "slate",
+        "quartz",
+        "obsidian"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "rockPiece",
+      "synonyms": [
+        "piece",
+        "shard",
+        "chunk",
+        "block",
+        "lump",
+        "nugget"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "preciousMetal",
+      "synonyms": [
+        "copper",
+        "silver",
+        "brass",
+        "bronze",
+        "gold",
+        "electrum",
+        "platinum"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "idol",
+      "synonyms": [
+        "fetish",
+        "idol",
+        "charm",
+        "phylactery",
+        "talisman",
+        "amulet",
+        "trinket",
+        "brooch",
+        "pin",
+        "figurine",
+        "carving",
+        "statuette"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "kingdom",
+      "synonyms": [
+        "dukedom",
+        "kingdom",
+        "nation",
+        "realm",
+        "castle",
+        "city-state",
+        "fortress",
+        "empire",
+        "land",
+        "dominion"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "darkPlace",
+      "synonyms": [
+        "shadows",
+        "moonlight",
+        "starlight",
+        "caverns",
+        "catacombs",
+        "land",
+        "dominion"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "armorMetal",
+      "synonyms": [
+        "iron",
+        "bronze",
+        "copper",
+        "adamantine",
+        "mithril",
+        "steel"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "game",
+      "synonyms": [
+        "chess",
+        "three-dragon ante",
+        "mancala",
+        "goose",
+        "checkers",
+        "go",
+        "backgammon",
+        "patolli",
+        "senet",
+        "mehen",
+        "nine men's morris",
+        "tafl",
+        "mercenaries"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "scholarItem",
+      "synonyms": [
+        "armillary sphere",
+        "astrolabe",
+        "celestial sphere",
+        "telescope",
+        "spyglass",
+        "magnifying glass"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "jewelry",
+      "synonyms": [
+        "ring",
+        "necklace",
+        "pendant",
+        "bracelet",
+        "chain",
+        "bangle",
+        "wedding ring",
+        "locket",
+        "choker",
+        "cufflink",
+        "toe ring",
+        "nose ring",
+        "earring"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "coin",
+      "synonyms": [
+        "tongquian",
+        "bar",
+        "pence",
+        "farthing",
+        "groat",
+        "wen",
+        "coin",
+        "qian",
+        "yen",
+        "koka",
+        "leopard",
+        "crown",
+        "noble",
+        "pound",
+        "angel",
+        "shilling",
+        "mark",
+        "ora"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "logo",
+      "synonyms": [
+        "tree",
+        "dragon",
+        "coin",
+        "gemstone",
+        "skull",
+        "knot",
+        "ship",
+        "anchor",
+        "wyvern",
+        "beholder",
+        "tower",
+        "castle",
+        "bow",
+        "musket",
+        "sword",
+        "flail",
+        "morningstar",
+        "dagger",
+        "crossbones",
+        "shield",
+        "helm"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "material",
+      "synonyms": [
+        "rope",
+        "leather",
+        "wool",
+        "cotton",
+        "linen"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "dream",
+      "synonyms": [
+        "vision",
+        "omen",
+        "dream",
+        "nightmare",
+        "reverie",
+        "specter",
+        "harbinger",
+        "portent",
+        "augury",
+        "foreboding",
+        "prophecy"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "document",
+      "synonyms": [
+        "deed",
+        "certificate",
+        "scroll",
+        "writ",
+        "document",
+        "tablet",
+        "pamphlet",
+        "borchure"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "allMetal",
+      "synonyms": [
+        "copper",
+        "silver",
+        "brass",
+        "bronze",
+        "gold",
+        "electrum",
+        "platinum",
+        "iron",
+        "nickel",
+        "lead",
+        "tin",
+        "adamantine",
+        "mithril",
+        "steel"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "book",
+      "synonyms": [
+        "album",
+        "treatise",
+        "manual",
+        "journal",
+        "chronicle",
+        "notebook",
+        "dissertation",
+        "booklet",
+        "tome",
+        "book",
+        "scroll",
+        "booklet",
+        "folio",
+        "omnibus",
+        "codex",
+        "compendium",
+        "atlas",
+        "lexicon",
+        "textbook",
+        "volume",
+        "novel",
+        "dictionary"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "journal",
+      "synonyms": [
+        "journal",
+        "diary",
+        "log",
+        "account",
+        "chronicle",
+        "record"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "ancient",
+      "synonyms": [
+        "old",
+        "ancient",
+        "age-old",
+        "antique",
+        "archaic",
+        "timeworn",
+        "antiquated",
+        "primeval",
+        "primordial",
+        "relic"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "collection",
+      "synonyms": [
+        "set",
+        "pair",
+        "collection",
+        "trio",
+        "lot",
+        "pack",
+        "handful",
+        "assortment"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "symbol",
+      "synonyms": [
+        "design",
+        "emblem",
+        "symbol",
+        "motif",
+        "pattern",
+        "figure",
+        "representation",
+        "stamp"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "dragon",
+      "synonyms": [
+        "drake",
+        "wyvern",
+        "dragon",
+        "dragon turtle",
+        "dragonnel",
+        "faerie dragon",
+        "greatwyrm",
+        "serpent",
+        "wyrmling",
+        "pseudodragon"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "aberration",
+      "synonyms": [
+        "aboleth",
+        "ceremorph",
+        "balhannoth",
+        "spectator",
+        "devourer",
+        "neogi",
+        "otyugh",
+        "mouther",
+        "grell",
+        "gazer",
+        "beholder",
+        "slaad",
+        "choker",
+        "cloaker",
+        "elder brain",
+        "brain eater",
+        "mind flayer"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "birdBeast",
+      "synonyms": [
+        "parrot",
+        "falcon",
+        "hawk",
+        "eagle",
+        "lark",
+        "bird",
+        "toucan",
+        "heron",
+        "puffbird",
+        "turkey",
+        "wren",
+        "crow",
+        "sparrow",
+        "jay",
+        "tern",
+        "raven",
+        "ostrich",
+        "owl",
+        "hummingbird",
+        "penguin",
+        "goose",
+        "albatross",
+        "pelican",
+        "woodpecker",
+        "finch",
+        "duck",
+        "chicken",
+        "pigeon",
+        "seagull"
+      ]
+    },
+    {
+      "id": 30,
+      "type": "dinosaurBeast",
+      "synonyms": [
+        "parasauolophus",
+        "elasmosaurus",
+        "pterodactyl",
+        "brachiosaurus",
+        "stegosaurus",
+        "velociraptor",
+        "triceratops",
+        "pteranodon",
+        "dilophosaurus",
+        "tyrannosaurus",
+        "ankylosaurus",
+        "spinosaurus"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "mammalMildBeast",
+      "synonyms": [
+        "aardvark",
+        "hare",
+        "anteater",
+        "rabbit",
+        "horse",
+        "armadillo",
+        "ox",
+        "sloth",
+        "elephant",
+        "giraffe",
+        "kangaroo",
+        "hippopotamus",
+        "elk",
+        "panda",
+        "koala",
+        "squirrel",
+        "rhinoceros",
+        "camel",
+        "beaver",
+        "chipmunk"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "mammalFierceBeast",
+      "synonyms": [
+        "lion",
+        "fox",
+        "bear",
+        "cheetah",
+        "tiger",
+        "weasel",
+        "civit",
+        "linsang",
+        "hyena",
+        "meerkat",
+        "mongoose",
+        "otter",
+        "raccoon",
+        "genet",
+        "binturong",
+        "jaguar",
+        "leopard",
+        "jackal",
+        "badger",
+        "coyote",
+        "wolf",
+        "dog"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "apeMonkeyBeast",
+      "synonyms": [
+        "monkey",
+        "ape",
+        "gorilla",
+        "orangutan",
+        "macaque",
+        "monkey",
+        "gibbon",
+        "langur",
+        "bonobo",
+        "chimpanzee",
+        "marmoset",
+        "mandrill",
+        "howler",
+        "tamarin",
+        "baboon"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "iceAgeBeast",
+      "synonyms": [
+        "wooly mammoth",
+        "dire wolf",
+        "saber-tooth cat",
+        "mastodon",
+        "woolly rhinoceros",
+        "cave bear",
+        "muskox",
+        "giant ground sloth",
+        "short-faced bear"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "reptileBeast",
+      "synonyms": [
+        "horned lizard",
+        "spiny-tailed lizard",
+        "skink",
+        "lizard",
+        "snake",
+        "turtle",
+        "iguana",
+        "alligator",
+        "gila monster",
+        "gecko",
+        "crocodile"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "insectBeast",
+      "synonyms": [
+        "louse",
+        "bug",
+        "termite",
+        "flea",
+        "fly",
+        "beetle",
+        "dragonfly",
+        "ant",
+        "scarab",
+        "bee",
+        "wasp",
+        "scorpionfly",
+        "mosquito"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "arachnidBeast",
+      "synonyms": [
+        "spider",
+        "scorpion",
+        "tarantula",
+        "tick",
+        "orbweaver",
+        "ricinulei",
+        "whip scorpion",
+        "tailless whip scorpion"
+      ]
+    },
+    {
+      "id": 37,
+      "type": "seaBeast",
+      "synonyms": [
+        "slug",
+        "oyster",
+        "prawn",
+        "umbrella shell",
+        "quahog",
+        "tun snail",
+        "sea cucumber",
+        "swordfish",
+        "starfish",
+        "sea horse",
+        "sea otter",
+        "sea lion",
+        "sea turtle",
+        "conch",
+        "anemone",
+        "walrus",
+        "polar bear",
+        "porpoise",
+        "crocodile",
+        "jellyfish",
+        "manatee",
+        "mussel",
+        "seal",
+        "shrimp",
+        "dolphin",
+        "whale",
+        "shark",
+        "fish",
+        "squid",
+        "octopus",
+        "eel",
+        "ribbon worm",
+        "tube worm",
+        "nautilis",
+        "crab",
+        "lobster",
+        "coral",
+        "cuttlefish"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "amphibianBeast",
+      "synonyms": [
+        "frog",
+        "toad",
+        "newt",
+        "salamander",
+        "mudpuppy",
+        "siren",
+        "bullfrog"
+      ]
+    },
+    {
+      "id": 39,
+      "type": "monster",
+      "synonyms": [
+        "dragon",
+        "creature",
+        "monster",
+        "fiend",
+        "construct",
+        "elemental",
+        "fey",
+        "giant",
+        "undead",
+        "monstrosity",
+        "ooze"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    },
+    {
+      "id": 999,
+      "type": "type",
+      "synonyms": [
+        "elements"
+      ]
+    }
+  ]
+}

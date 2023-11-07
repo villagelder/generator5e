@@ -1,63 +1,63 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class TrinketsPage extends MaterialPageRoute<Null>{
-  TrinketsPage() : super(builder: (BuildContext ctx) {
-    double screenWidth = MediaQuery.of(ctx).size.width;
-    double screenHeight = MediaQuery.of(ctx).size.height;
-    return Scaffold(
-    backgroundColor: Colors.blueGrey.shade100,
-    appBar: AppBar(
-      title: const Text(
-        'DragonVault Generators',
-        style: TextStyle(
-          fontFamily: 'Georgia',
-          color: Color.fromRGBO(255, 245, 188, 1.0),
-        ),
-      ),
-      backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
-    ),
-    body: SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Column(
-        children: [
-           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-            child: SizedBox(
-              height: screenHeight * .05,
-              child: Center(
-                child: Text(
-                  '5e Trinkets',
-                  style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: screenHeight * 0.044,
-                    fontWeight: FontWeight.w500,
-                    color: const Color.fromRGBO(34, 56, 69, 1.0),
-                  ),
+class TrinketsPage extends MaterialPageRoute<Null> {
+  TrinketsPage()
+      : super(builder: (BuildContext ctx) {
+          double screenWidth = MediaQuery.of(ctx).size.width;
+          double screenHeight = MediaQuery.of(ctx).size.height;
+          return Scaffold(
+            backgroundColor: Colors.blueGrey.shade100,
+            appBar: AppBar(
+              title: const Text(
+                'DragonVault Generators',
+                style: TextStyle(
+                  fontFamily: 'Georgia',
+                  color: Color.fromRGBO(255, 245, 188, 1.0),
                 ),
               ),
+              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
             ),
-          ),
-          SizedBox(
-            width: MediaQuery.of(ctx).size.width * 0.84,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
-              child: Text(
-                'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
-                style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: MediaQuery.of(ctx).size.height * 0.022,
-                    fontStyle: FontStyle.italic),
+            body: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
+                    child: SizedBox(
+                      height: screenHeight * .05,
+                      child: Center(
+                        child: Text(
+                          '5e Trinkets',
+                          style: TextStyle(
+                            fontFamily: 'Georgia',
+                            fontSize: screenHeight * 0.044,
+                            fontWeight: FontWeight.w500,
+                            color: const Color.fromRGBO(34, 56, 69, 1.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(ctx).size.width * 0.84,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
+                      child: Text(
+                        'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
+                        style: TextStyle(
+                            fontFamily: 'Georgia',
+                            fontSize: MediaQuery.of(ctx).size.height * 0.022,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                  ),
+                  const TextChanger(),
+                ],
               ),
             ),
-          ),
-          const TextChanger(),
-        ],
-      ),
-    ),
-  );
-  });
+          );
+        });
 }
 
 class NumberDDB extends StatefulWidget {
@@ -78,11 +78,12 @@ const List<String> itemTypeList = <String>[
   'Any Trinket',
   'Honorable',
   'Kindred',
-  'Ghoulish',
+  'Macabre',
+  'Mystical',
   'Nature',
   'Romantic',
   'Scholarly',
-  'Strange'
+  'Traveler'
 ];
 const List<String> numberList = <String>['1', '2', '3', '5', '8'];
 

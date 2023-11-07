@@ -1,0 +1,60 @@
+{
+  "descriptors": [
+    {
+      "id": 1,
+      "type": "macabre",
+      "synonyms": [
+        "mummified",
+        "desiccated",
+        "preserved",
+        "nightmarish",
+        "macabre",
+        "petrified"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "foreign",
+      "synonyms": [
+        "foreign",
+        "unknown",
+        "far-off",
+        "planar",
+        "celestial",
+        "abyssal",
+        "faraway",
+        "remote",
+        "outlying"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "scary",
+      "synonyms": [
+        "unsettling",
+        "scary",
+        "alarming",
+        "creepy",
+        "shocking",
+        "horrendous",
+        "disquieting",
+        "perplexing",
+        "troubling",
+        "worrisome",
+        "startling",
+        "ominous",
+        "foreboding",
+        "sinister",
+        "shocking",
+        "unnerving",
+        "disquieting",
+        "perplexing",
+        "troubling",
+        "worrisome",
+        "startling",
+        "ominous",
+        "foreboding"
+      ]
+    }
+  ]
+}

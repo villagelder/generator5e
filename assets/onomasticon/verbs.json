@@ -1,0 +1,54 @@
+{
+  "nouns": [
+    {
+      "id": 1,
+      "type": "ping",
+      "synonyms": [
+        "radiate",
+        "glow",
+        "gleam",
+        "ring",
+        "clang",
+        "ping",
+        "froth",
+        "steam",
+        "effervesce",
+        "foam",
+        "jingle",
+        "resonate",
+        "chime",
+        "glitter",
+        "smolder",
+        "burn",
+        "freeze",
+        "bubble"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "mint",
+      "synonyms": [
+        "mint",
+        "originate",
+        "hail",
+        "fabricate",
+        "fashion"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "forge",
+      "synonyms": [
+        "craft",
+        "forge",
+        "construct",
+        "fashion",
+        "produce",
+        "create",
+        "manufacture",
+        "engineer",
+        "invent"
+      ]
+    }
+  ]
+}

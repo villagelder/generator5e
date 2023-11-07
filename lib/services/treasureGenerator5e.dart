@@ -152,11 +152,11 @@ class TreasureGenerator5e {
       //get coins
       tl.addAll(calculateCoins(trObj, trObj2!, isLegendary));
       //get gems
-      tl.addAll(calculateGems(trObj, trObj2!, isLegendary));
+      tl.addAll(calculateGems(trObj, trObj2, isLegendary));
       //get art
-      tl.addAll(calculateArt(trObj, trObj2!, isLegendary));
+      tl.addAll(calculateArt(trObj, trObj2, isLegendary));
       //get magic items
-      tl.addAll(calculateRandomMagicItems(trObj!, trObj2, isLegendary));
+      tl.addAll(calculateRandomMagicItems(trObj, trObj2, isLegendary));
     }
 
     if (tl.isEmpty) {
@@ -458,7 +458,7 @@ class TreasureGenerator5e {
     miMap.forEach((key, value) {
       String k = key;
       String v = value.toString();
-      String str = '$k';
+      String str = k;
       if (value > 1) {
         str = '$k (x$v)';
       }
