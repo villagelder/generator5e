@@ -233,29 +233,19 @@
     },
     {
       "id": 15,
-      "type": "logo",
+      "type": "monster",
       "synonyms": [
-        "tree",
         "dragon",
-        "coin",
-        "gemstone",
-        "skull",
-        "knot",
-        "ship",
-        "anchor",
-        "wyvern",
-        "beholder",
-        "tower",
-        "castle",
-        "bow",
-        "musket",
-        "sword",
-        "flail",
-        "morningstar",
-        "dagger",
-        "crossbones",
-        "shield",
-        "helm"
+        "creature",
+        "monster",
+        "fiend",
+        "construct",
+        "elemental",
+        "fey",
+        "giant",
+        "undead",
+        "monstrosity",
+        "ooze"
       ]
     },
     {
@@ -691,23 +681,6 @@
         "mudpuppy",
         "siren",
         "bullfrog"
-      ]
-    },
-    {
-      "id": 39,
-      "type": "monster",
-      "synonyms": [
-        "dragon",
-        "creature",
-        "monster",
-        "fiend",
-        "construct",
-        "elemental",
-        "fey",
-        "giant",
-        "undead",
-        "monstrosity",
-        "ooze"
       ]
     },
     {

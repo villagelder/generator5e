@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generator5e/services/trinketGenerator.dart';
 
 class TrinketsPage extends MaterialPageRoute<Null> {
   TrinketsPage()
@@ -193,10 +194,11 @@ class TextChanger extends StatefulWidget {
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
   String dynamicText = 'Roll for trinket.';
+  TrinketGenerator tg = TrinketGenerator();
 
   updateText() {
     setState(() {
-      dynamicText = 'changed';
+      dynamicText = tg.generateTrinket();
       // dynamicText = trGen
       //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
       //     .toString();
