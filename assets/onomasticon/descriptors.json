@@ -2,7 +2,7 @@
   "descriptors": [
     {
       "id": 1,
-      "type": "macabre",
+      "word": "macabre",
       "synonyms": [
         "mummified",
         "desiccated",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "type": "foreign",
+      "word": "foreign",
       "synonyms": [
         "foreign",
         "unknown",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "type": "scary",
+      "word": "scary",
       "synonyms": [
         "unsettling",
         "scary",

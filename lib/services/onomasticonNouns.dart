@@ -10,7 +10,7 @@ class OnomasticonNoun {
   List _nouns = [];
   List<OnoWord> nounsObjList = [];
 
-  OnomasticonNoun(){
+  OnomasticonNoun() {
     readJsonOnomasticon();
     getNounsObjectList();
   }
@@ -27,14 +27,14 @@ class OnomasticonNoun {
   }
 
   String pickWordFromSynonyms(String word) {
-
-    List wordList = getSynonyms(word);
+    List? wordList = getSynonyms(word);
     int i = Utility.getRandomIndexFromListSize(wordList!.length);
     return wordList[i];
   }
 
-  List getSynonyms(String word) {
-    List<OnoWord> objList = nounsObjList.where((noun) => noun.type == word).toList();
+  List? getSynonyms(String word) {
+    List<OnoWord> objList =
+        nounsObjList.where((noun) => noun.word == word).toList();
     return objList[0].synonyms;
   }
 
@@ -181,5 +181,4 @@ class OnomasticonNoun {
   String beastSea() {
     return pickWordFromSynonyms("seaBeast");
   }
-
 }

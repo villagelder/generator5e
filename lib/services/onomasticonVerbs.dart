@@ -10,7 +10,7 @@ class OnomasticonVerb {
   List _verbs = [];
   List<OnoWord> verbsObjList = [];
 
-  OnomasticonVerb(){
+  OnomasticonVerb() {
     readJsonOnomasticon();
     getNounsObjectList();
   }
@@ -26,14 +26,14 @@ class OnomasticonVerb {
     verbsObjList = _verbs.map((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
-  List getSynonyms(String word) {
+  List? getSynonyms(String word) {
     List<OnoWord> objList =
-        verbsObjList.where((noun) => noun.type == word).toList();
+        verbsObjList.where((noun) => noun.word == word).toList();
     return objList[0].synonyms;
   }
 
   String pickWordFromSynonyms(String word) {
-    List wordList = getSynonyms(word);
+    List? wordList = getSynonyms(word);
     int i = Utility.getRandomIndexFromListSize(wordList!.length);
     return wordList[i];
   }

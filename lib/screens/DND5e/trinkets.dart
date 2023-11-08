@@ -197,8 +197,9 @@ class _TextChangerState extends State<TextChanger> {
   TrinketGenerator tg = TrinketGenerator();
 
   updateText() {
+    dynamicText;
     setState(() {
-      dynamicText = tg.generateTrinket();
+      dynamicText = tg.getWord();
       // dynamicText = trGen
       //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
       //     .toString();
