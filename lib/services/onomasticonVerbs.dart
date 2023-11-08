@@ -10,14 +10,14 @@ class OnomasticonVerb {
   List _verbs = [];
   List<OnoWord> verbsObjList = [];
 
-  OnomasticonVerb() {
+  OnomasticonVerb(){
     readJsonOnomasticon();
     getNounsObjectList();
   }
 
   Future<void> readJsonOnomasticon() async {
     final String response =
-    await rootBundle.loadString('assets/onomasticon/verbs.json');
+        await rootBundle.loadString('assets/onomasticon/verbs.json');
     final data = await json.decode(response);
     _verbs = data["verbs"] as List;
   }
@@ -26,15 +26,15 @@ class OnomasticonVerb {
     verbsObjList = _verbs.map((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
-  List<String> getSynonyms(String word) {
-    List<OnoWord> objList = verbsObjList.where((noun) => noun.type == word).toList();
-    return objList[0].elements;
+  List getSynonyms(String word) {
+    List<OnoWord> objList =
+        verbsObjList.where((noun) => noun.type == word).toList();
+    return objList[0].synonyms;
   }
 
-
   String pickWordFromSynonyms(String word) {
-    List<String> wordList = getSynonyms(word);
-    int i = Utility.getRandomIndexFromListSize(wordList.length);
+    List wordList = getSynonyms(word);
+    int i = Utility.getRandomIndexFromListSize(wordList!.length);
     return wordList[i];
   }
 

@@ -12,29 +12,29 @@ class OnomasticonDescriptor {
 
   OnomasticonDescriptor() {
     readJsonOnomasticon();
-    getNounsObjectList();
+    getDescObjectList();
   }
 
   Future<void> readJsonOnomasticon() async {
     final String response =
-    await rootBundle.loadString('assets/onomasticon/descriptors.json');
+        await rootBundle.loadString('assets/onomasticon/descriptors.json');
     final data = await json.decode(response);
-    _descriptors = data["decriptors"] as List;
+    _descriptors = data["descriptors"] as List;
   }
 
-  getNounsObjectList() {
+  getDescObjectList() {
     descObjList = _descriptors.map((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
-  List<String> getSynonyms(String word) {
-    List<OnoWord> objList =  descObjList.where((noun) => noun.type == word).toList();
-    return objList[0].elements;
+  List getSynonyms(String word) {
+    List<OnoWord> objList =
+        descObjList.where((desc) => desc.type == word).toList();
+    return objList[0].synonyms;
   }
 
-
   String pickWordFromSynonyms(String word) {
-    List<String> wordList = getSynonyms(word);
-    int i = Utility.getRandomIndexFromListSize(wordList.length);
+    List wordList = getSynonyms(word);
+    int i = Utility.getRandomIndexFromListSize(wordList!.length);
     return wordList[i];
   }
 

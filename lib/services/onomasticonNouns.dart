@@ -9,14 +9,11 @@ import '../models/onoword.dart';
 class OnomasticonNoun {
   List _nouns = [];
   List<OnoWord> nounsObjList = [];
-  List<OnoWord> tempNounsList = [];
 
-  OnomasticonNoun() {
+  OnomasticonNoun(){
     readJsonOnomasticon();
     getNounsObjectList();
   }
-
-  int roll = 0;
 
   Future<void> readJsonOnomasticon() async {
     final String response =
@@ -25,20 +22,20 @@ class OnomasticonNoun {
     _nouns = data["nouns"] as List;
   }
 
-
-  String pickWordFromSynonyms(String word) {
-    List<String> wordList = getSynonyms(word);
-    int i = Utility.getRandomIndexFromListSize(wordList.length);
-    return wordList[i];
-  }
-
   getNounsObjectList() {
     nounsObjList = _nouns.map((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
-  List<String> getSynonyms(String word) {
+  String pickWordFromSynonyms(String word) {
+
+    List wordList = getSynonyms(word);
+    int i = Utility.getRandomIndexFromListSize(wordList!.length);
+    return wordList[i];
+  }
+
+  List getSynonyms(String word) {
     List<OnoWord> objList = nounsObjList.where((noun) => noun.type == word).toList();
-    return objList[0].elements;
+    return objList[0].synonyms;
   }
 
   String beastAmphibian() {
