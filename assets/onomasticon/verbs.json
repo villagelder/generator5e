@@ -2,7 +2,7 @@
   "verbs": [
     {
       "id": 1,
-      "type": "ping",
+      "word": "ping",
       "synonyms": [
         "radiate",
         "glow",
@@ -11,9 +11,12 @@
         "clang",
         "ping",
         "froth",
+        "hum",
         "steam",
+        "vibrate",
         "effervesce",
         "foam",
+        "twinkle",
         "jingle",
         "resonate",
         "chime",
@@ -26,28 +29,70 @@
     },
     {
       "id": 2,
-      "type": "mint",
+      "word": "mint",
       "synonyms": [
         "mint",
         "originate",
-        "hail",
         "fabricate",
         "fashion"
       ]
     },
     {
       "id": 3,
-      "type": "forge",
+      "word": "forge",
       "synonyms": [
         "craft",
         "forge",
         "construct",
+        "make",
         "fashion",
         "produce",
         "create",
         "manufacture",
         "engineer",
         "invent"
+      ]
+    },
+    {
+      "id": 4,
+      "word": "understand",
+      "synonyms": [
+        "know",
+        "comprehend",
+        "understand",
+        "fathom",
+        "recognize"
+      ]
+    },
+    {
+      "id": 5,
+      "word": "corrode",
+      "synonyms": [
+        "tarnish",
+        "corrode",
+        "rust",
+        "damage"
+      ]
+    },
+    {
+      "id": 6,
+      "word": "depict",
+      "synonyms": [
+        "render",
+        "depict",
+        "show",
+        "portray",
+        "represent"
+      ]
+    },
+    {
+      "id": 7,
+      "word": "dangle",
+      "synonyms": [
+        "hang",
+        "dangle",
+        "swing",
+        "flap"
       ]
     }
   ]

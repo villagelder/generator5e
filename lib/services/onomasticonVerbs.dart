@@ -8,11 +8,18 @@ import '../models/onoword.dart';
 
 class OnomasticonVerb {
   List _verbs = [];
-  List<OnoWord> verbsObjList = [];
+  List<OnoWord> verbObjList = [];
+  bool _isLoaded = false;
 
   OnomasticonVerb() {
-    readJsonOnomasticon();
-    getNounsObjectList();
+    readJsonOnomasticon().then((_) {
+      _isLoaded = true;
+      getVerbObjectList();
+    });
+  }
+
+  bool isLoaded() {
+    return _isLoaded;
   }
 
   Future<void> readJsonOnomasticon() async {
@@ -22,20 +29,37 @@ class OnomasticonVerb {
     _verbs = data["verbs"] as List;
   }
 
-  getNounsObjectList() {
-    verbsObjList = _verbs.map((oJson) => OnoWord.fromJson(oJson)).toList();
+  getVerbObjectList() {
+    verbObjList =
+        _verbs.map<OnoWord>((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
-  List? getSynonyms(String word) {
+  List getSynonyms(String word) {
     List<OnoWord> objList =
-        verbsObjList.where((noun) => noun.word == word).toList();
+        verbObjList.where((desc) => desc.word == word).toList();
     return objList[0].synonyms;
   }
 
   String pickWordFromSynonyms(String word) {
-    List? wordList = getSynonyms(word);
-    int i = Utility.getRandomIndexFromListSize(wordList!.length);
+    List wordList = getSynonyms(word);
+    int i = Utility.getRandomIndexFromListSize(wordList.length);
     return wordList[i];
+  }
+
+  String corrode() {
+    return pickWordFromSynonyms("corrode");
+  }
+
+  String dangle() {
+    return pickWordFromSynonyms("dangle");
+  }
+
+  String depict() {
+    return pickWordFromSynonyms("depict");
+  }
+
+  String forge() {
+    return pickWordFromSynonyms("forge");
   }
 
   String ping() {
@@ -46,7 +70,7 @@ class OnomasticonVerb {
     return pickWordFromSynonyms("mint");
   }
 
-  String forge() {
-    return pickWordFromSynonyms("forge");
+  String understand() {
+    return pickWordFromSynonyms("understand");
   }
 }

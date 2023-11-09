@@ -18,7 +18,7 @@ class OnomasticonDescriptor {
     });
   }
 
-  bool isLoaded(){
+  bool isLoaded() {
     return _isLoaded;
   }
 
@@ -36,7 +36,7 @@ class OnomasticonDescriptor {
 
   List getSynonyms(String word) {
     List<OnoWord> objList =
-        descObjList.where((desc) => desc.type == word).toList();
+        descObjList.where((desc) => desc.word == word).toList();
     return objList[0].synonyms;
   }
 
@@ -56,5 +56,9 @@ class OnomasticonDescriptor {
 
   String scary() {
     return pickWordFromSynonyms("scary");
+  }
+
+  String ancient() {
+    return pickWordFromSynonyms("ancient");
   }
 }

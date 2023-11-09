@@ -2,7 +2,7 @@
   "nouns": [
     {
       "id": 1,
-      "type": "humanoid",
+      "word": "humanoid",
       "synonyms": [
         "goblin",
         "tortle",
@@ -34,8 +34,19 @@
       ]
     },
     {
+      "id": 2,
+      "word": "language",
+      "synonyms": [
+        "dialect",
+        "script",
+        "language",
+        "style",
+        "terminology"
+      ]
+    },
+    {
       "id": 3,
-      "type": "humanoidPart",
+      "word": "humanoidPart",
       "synonyms": [
         "hand",
         "foot",
@@ -49,7 +60,7 @@
     },
     {
       "id": 4,
-      "type": "mineral",
+      "word": "mineral",
       "synonyms": [
         "crystal",
         "iron",
@@ -75,7 +86,7 @@
     },
     {
       "id": 5,
-      "type": "rockPiece",
+      "word": "rockPiece",
       "synonyms": [
         "piece",
         "shard",
@@ -87,7 +98,7 @@
     },
     {
       "id": 6,
-      "type": "preciousMetal",
+      "word": "preciousMetal",
       "synonyms": [
         "copper",
         "silver",
@@ -100,7 +111,7 @@
     },
     {
       "id": 7,
-      "type": "idol",
+      "word": "idol",
       "synonyms": [
         "fetish",
         "idol",
@@ -118,7 +129,7 @@
     },
     {
       "id": 8,
-      "type": "kingdom",
+      "word": "kingdom",
       "synonyms": [
         "dukedom",
         "kingdom",
@@ -134,20 +145,18 @@
     },
     {
       "id": 9,
-      "type": "darkPlace",
+      "word": "darkPlaces",
       "synonyms": [
         "shadows",
         "moonlight",
         "starlight",
         "caverns",
-        "catacombs",
-        "land",
-        "dominion"
+        "catacombs"
       ]
     },
     {
       "id": 10,
-      "type": "armorMetal",
+      "word": "armorMetal",
       "synonyms": [
         "iron",
         "bronze",
@@ -159,26 +168,26 @@
     },
     {
       "id": 11,
-      "type": "game",
+      "word": "game",
       "synonyms": [
         "chess",
         "three-dragon ante",
         "mancala",
         "goose",
         "checkers",
-        "go",
+        "go game",
         "backgammon",
         "patolli",
-        "senet",
-        "mehen",
+        "senet game",
+        "mehen game",
         "nine men's morris",
-        "tafl",
-        "mercenaries"
+        "tafl game",
+        "mercenaries game"
       ]
     },
     {
       "id": 12,
-      "type": "scholarItem",
+      "word": "scholarItem",
       "synonyms": [
         "armillary sphere",
         "astrolabe",
@@ -190,7 +199,7 @@
     },
     {
       "id": 13,
-      "type": "jewelry",
+      "word": "jewelry",
       "synonyms": [
         "ring",
         "necklace",
@@ -209,7 +218,7 @@
     },
     {
       "id": 14,
-      "type": "coin",
+      "word": "coin",
       "synonyms": [
         "tongquian",
         "bar",
@@ -233,7 +242,7 @@
     },
     {
       "id": 15,
-      "type": "monster",
+      "word": "monsterType",
       "synonyms": [
         "dragon",
         "creature",
@@ -250,18 +259,25 @@
     },
     {
       "id": 16,
-      "type": "material",
+      "word": "textile",
       "synonyms": [
         "rope",
         "leather",
         "wool",
+        "lace",
+        "cashmere",
+        "coconut fiber",
+        "palm frond",
+        "hemp",
+        "silk",
+        "flax",
         "cotton",
         "linen"
       ]
     },
     {
       "id": 17,
-      "type": "dream",
+      "word": "dream",
       "synonyms": [
         "vision",
         "omen",
@@ -278,7 +294,7 @@
     },
     {
       "id": 18,
-      "type": "document",
+      "word": "document",
       "synonyms": [
         "deed",
         "certificate",
@@ -292,7 +308,7 @@
     },
     {
       "id": 19,
-      "type": "allMetal",
+      "word": "allMetal",
       "synonyms": [
         "copper",
         "silver",
@@ -312,7 +328,7 @@
     },
     {
       "id": 22,
-      "type": "book",
+      "word": "book",
       "synonyms": [
         "album",
         "treatise",
@@ -340,7 +356,7 @@
     },
     {
       "id": 23,
-      "type": "journal",
+      "word": "journal",
       "synonyms": [
         "journal",
         "diary",
@@ -352,7 +368,7 @@
     },
     {
       "id": 24,
-      "type": "ancient",
+      "word": "ancient",
       "synonyms": [
         "old",
         "ancient",
@@ -368,7 +384,7 @@
     },
     {
       "id": 25,
-      "type": "collection",
+      "word": "collection",
       "synonyms": [
         "set",
         "pair",
@@ -382,7 +398,7 @@
     },
     {
       "id": 26,
-      "type": "symbol",
+      "word": "symbol",
       "synonyms": [
         "design",
         "emblem",
@@ -396,7 +412,7 @@
     },
     {
       "id": 27,
-      "type": "dragon",
+      "word": "dragon",
       "synonyms": [
         "drake",
         "wyvern",
@@ -412,7 +428,7 @@
     },
     {
       "id": 28,
-      "type": "aberration",
+      "word": "aberration",
       "synonyms": [
         "aboleth",
         "ceremorph",
@@ -435,7 +451,7 @@
     },
     {
       "id": 29,
-      "type": "birdBeast",
+      "word": "birdBeast",
       "synonyms": [
         "parrot",
         "falcon",
@@ -470,7 +486,7 @@
     },
     {
       "id": 30,
-      "type": "dinosaurBeast",
+      "word": "dinosaurBeast",
       "synonyms": [
         "parasauolophus",
         "elasmosaurus",
@@ -488,7 +504,7 @@
     },
     {
       "id": 21,
-      "type": "mammalMildBeast",
+      "word": "mammalMildBeast",
       "synonyms": [
         "aardvark",
         "hare",
@@ -514,7 +530,7 @@
     },
     {
       "id": 31,
-      "type": "mammalFierceBeast",
+      "word": "mammalFierceBeast",
       "synonyms": [
         "lion",
         "fox",
@@ -542,7 +558,7 @@
     },
     {
       "id": 32,
-      "type": "apeMonkeyBeast",
+      "word": "apeMonkeyBeast",
       "synonyms": [
         "monkey",
         "ape",
@@ -563,7 +579,7 @@
     },
     {
       "id": 33,
-      "type": "iceAgeBeast",
+      "word": "iceAgeBeast",
       "synonyms": [
         "wooly mammoth",
         "dire wolf",
@@ -578,7 +594,7 @@
     },
     {
       "id": 34,
-      "type": "reptileBeast",
+      "word": "reptileBeast",
       "synonyms": [
         "horned lizard",
         "spiny-tailed lizard",
@@ -595,7 +611,7 @@
     },
     {
       "id": 35,
-      "type": "insectBeast",
+      "word": "insectBeast",
       "synonyms": [
         "louse",
         "bug",
@@ -614,7 +630,7 @@
     },
     {
       "id": 36,
-      "type": "arachnidBeast",
+      "word": "arachnidBeast",
       "synonyms": [
         "spider",
         "scorpion",
@@ -628,7 +644,7 @@
     },
     {
       "id": 37,
-      "type": "seaBeast",
+      "word": "seaBeast",
       "synonyms": [
         "slug",
         "oyster",
@@ -681,6 +697,71 @@
         "mudpuppy",
         "siren",
         "bullfrog"
+      ]
+    },
+    {
+      "id": 39,
+      "word": "symbolOminous",
+      "synonyms": [
+        "raven",
+        "dragon",
+        "claw",
+        "skull",
+        "ghost",
+        "death",
+        "executioner's hood",
+        "knife",
+        "skull and crossbones",
+        "demon",
+        "devil",
+        "crossed swords",
+        "scorpion",
+        "snake",
+        "serpent",
+        "tower",
+        "castle",
+        "star",
+        "web",
+        "clown face",
+        "crescent moon",
+        "tornado",
+        "swirling flame",
+        "wolf",
+        "bear",
+        "lion",
+        "crystal ball",
+        "zombie face",
+        "pentagram"
+      ]
+    },
+    {
+      "id": 40,
+      "word": "monsterTerror",
+      "synonyms": [
+        "creature",
+        "behemoth",
+        "monster",
+        "beast",
+        "giant",
+        "leviathan",
+        "kraken",
+        "monstrosity",
+        "mutant",
+        "alien"
+      ]
+    },
+    {
+      "id": 41,
+      "word": "parcel",
+      "synonyms": [
+        "acre",
+        "half-acre",
+        "large lot",
+        "parcel",
+        "plot",
+        "property",
+        "tract",
+        "palt"
       ]
     }
   ]

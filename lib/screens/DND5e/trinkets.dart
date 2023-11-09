@@ -59,6 +59,7 @@ class TrinketsPage extends MaterialPageRoute<Null> {
           );
         });
 }
+
 TrinketGenerator tg = TrinketGenerator();
 
 class NumberDDB extends StatefulWidget {
@@ -77,11 +78,12 @@ class ItemTypeDDB extends StatefulWidget {
 
 const List<String> itemTypeList = <String>[
   'Any Trinket',
-  'Honorable',
   'Kindred',
   'Macabre',
+  'Martial',
   'Mystical',
   'Nature',
+  'Religious',
   'Romantic',
   'Scholarly',
   'Traveler'
@@ -194,11 +196,12 @@ class TextChanger extends StatefulWidget {
 class _TextChangerState extends State<TextChanger> {
   // Declare the variable
   String dynamicText = 'Roll for trinket.';
-  TrinketGenerator tg = TrinketGenerator();
+  TrinketGenerator trinketGenerator = TrinketGenerator();
 
   updateText() {
-    dynamicText = tg.generateTrinket();
-    setState(()  {
+    dynamicText = trinketGenerator.generateTrinkets(
+        _ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
+    setState(() {
       dynamicText;
       // dynamicText = trGen
       //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)

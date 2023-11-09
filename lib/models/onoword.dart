@@ -1,17 +1,17 @@
 class OnoWord {
   int id;
-  String type;
+  String word;
   List<String> synonyms;
 
-  OnoWord(this.id, this.type, this.synonyms);
+  OnoWord(this.id, this.word, this.synonyms);
 
   factory OnoWord.fromJson(Map<String, dynamic> json) {
-    return OnoWord(json['id'] as int, json['type'] as String,
-       (json['synonyms']).toList(growable: true));
+    return OnoWord(json['id'] as int, json['word'] as String,
+        List<String>.from(json['synonyms']));
   }
 
   @override
   String toString() {
-    return '{ $id, $type, $synonyms }';
+    return '{ $id, $word, $synonyms }';
   }
 }

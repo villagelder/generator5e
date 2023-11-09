@@ -8,8 +8,7 @@
         "desiccated",
         "preserved",
         "nightmarish",
-        "macabre",
-        "petrified"
+        "macabre"
       ]
     },
     {
@@ -54,6 +53,21 @@
         "startling",
         "ominous",
         "foreboding"
+      ]
+    },
+    {
+      "id": 4,
+      "word": "ancient",
+      "synonyms": [
+        "old",
+        "ancient",
+        "age-old",
+        "old-fashioned",
+        "timeworn",
+        "aged",
+        "relic",
+        "antediluvian",
+        "antique"
       ]
     }
   ]
