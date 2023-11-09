@@ -5,7 +5,6 @@ import 'package:generator5e/services/trinketGenerator.dart';
 class TrinketsPage extends MaterialPageRoute<Null> {
   TrinketsPage()
       : super(builder: (BuildContext ctx) {
-          double screenWidth = MediaQuery.of(ctx).size.width;
           double screenHeight = MediaQuery.of(ctx).size.height;
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
@@ -60,6 +59,7 @@ class TrinketsPage extends MaterialPageRoute<Null> {
           );
         });
 }
+TrinketGenerator tg = TrinketGenerator();
 
 class NumberDDB extends StatefulWidget {
   const NumberDDB({super.key});
@@ -197,8 +197,9 @@ class _TextChangerState extends State<TextChanger> {
   TrinketGenerator tg = TrinketGenerator();
 
   updateText() {
-    setState(() {
-      dynamicText = tg.generateTrinket();
+    dynamicText = tg.generateTrinket();
+    setState(()  {
+      dynamicText;
       // dynamicText = trGen
       //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
       //     .toString();

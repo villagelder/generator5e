@@ -9,10 +9,17 @@ import '../models/onoword.dart';
 class OnomasticonDescriptor {
   List _descriptors = [];
   List<OnoWord> descObjList = [];
+  bool _isLoaded = false;
 
   OnomasticonDescriptor() {
-    readJsonOnomasticon();
-    getDescObjectList();
+    readJsonOnomasticon().then((_) {
+      _isLoaded = true;
+      getDescObjectList();
+    });
+  }
+
+  bool isLoaded(){
+    return _isLoaded;
   }
 
   Future<void> readJsonOnomasticon() async {
@@ -23,7 +30,8 @@ class OnomasticonDescriptor {
   }
 
   getDescObjectList() {
-    descObjList = _descriptors.map((oJson) => OnoWord.fromJson(oJson)).toList();
+    descObjList =
+        _descriptors.map<OnoWord>((oJson) => OnoWord.fromJson(oJson)).toList();
   }
 
   List getSynonyms(String word) {
@@ -34,7 +42,7 @@ class OnomasticonDescriptor {
 
   String pickWordFromSynonyms(String word) {
     List wordList = getSynonyms(word);
-    int i = Utility.getRandomIndexFromListSize(wordList!.length);
+    int i = Utility.getRandomIndexFromListSize(wordList.length);
     return wordList[i];
   }
 
