@@ -763,6 +763,296 @@
         "tract",
         "palt"
       ]
+    },
+    {
+      "id": 42,
+      "word": "thingsInPairs",
+      "synonyms": [
+        "gloves",
+        "boots",
+        "dice",
+        "socks",
+        "mittens",
+        "glasses",
+        "cups",
+        "figurines",
+        "earrings",
+        "shoes",
+        "sandals",
+        "undergarments",
+        "tools",
+        "gauntlets",
+        "bracers",
+        "knitting needles"
+      ]
+    },
+    {
+      "id": 43,
+      "word": "soldier",
+      "synonyms": [
+        "mercenary",
+        "legionnaire",
+        "soldier",
+        "companion",
+        "knight",
+        "officer",
+        "cadet",
+        "recruit"
+      ]
+    },
+    {
+      "id": 44,
+      "word": "weaponMelee",
+      "synonyms": [
+        "shortsword",
+        "dagger",
+        "mace",
+        "hand axe",
+        "glaive",
+        "longsword",
+        "flail",
+        "battleaxe",
+        "greataxe",
+        "greatsword",
+        "rapier",
+        "scimitar",
+        "warhammer",
+        "halberd",
+        "pike",
+        "spear",
+        "maul",
+        "war pick",
+        "morningstar",
+        "club",
+        "sickle",
+        "scythe",
+        "light hammer"
+      ]
+    },
+    {
+      "id": 45,
+      "word": "weaponRanged",
+      "synonyms": [
+        "longbow",
+        "shortbow",
+        "light crossbow",
+        "heavy crossbow",
+        "sling",
+        "blowgun",
+        "hand crossbow"
+      ]
+    },
+    {
+      "id": 46,
+      "word": "ammunitionAndThrown",
+      "synonyms": [
+        "bolt",
+        "javelin",
+        "throwing axe",
+        "throwing knife",
+        "arrow",
+        "boomerang",
+        "sai",
+        "spear",
+        "shuriken",
+        "chakram",
+        "sling stone",
+        "bullet",
+        "hand crossbow bolt"
+      ]
+    },
+    {
+      "id": 47,
+      "word": "ammunition",
+      "synonyms": [
+        "hand crossbow bolt",
+        "bolt",
+        "arrow",
+        "sling stone",
+        "bullet"
+      ]
+    },
+    {
+      "id": 48,
+      "word": "pirate",
+      "synonyms": [
+        "pirate",
+        "raider",
+        "bandit",
+        "marauder",
+        "corsair",
+        "privateer"
+      ]
+    },
+    {
+      "id": 49,
+      "word": "heroesAndVillains",
+      "synonyms": [
+        "hero",
+        "villain",
+        "blackguard",
+        "adventurer",
+        "knight",
+        "criminal",
+        "evildoer",
+        "antihero",
+        "champion",
+        "conqueror",
+        "warrior",
+        "conquering hero"
+      ]
+    },
+    {
+      "id": 50,
+      "word": "classesBase",
+      "synonyms": [
+        "fighter",
+        "bard",
+        "druid",
+        "paladin",
+        "artificer",
+        "ranger",
+        "cleric",
+        "wizard",
+        "sorcerer",
+        "rogue",
+        "warlock",
+        "monk"
+      ]
+    },
+    {
+      "id": 51,
+      "word": "classesCaster",
+      "synonyms": [
+        "necromancer",
+        "bard",
+        "druid",
+        "enchanter",
+        "artificer",
+        "conjurer",
+        "cleric",
+        "transmuter",
+        "evoker",
+        "mage",
+        "archmage",
+        "abjurer",
+        "illusionist",
+        "diviner",
+        "bladesinger",
+        "wizard",
+        "sorcerer",
+        "arcane trickster",
+        "warlock",
+        "eldritch knight"
+      ]
+    },
+    {
+      "id": 52,
+      "word": "container",
+      "synonyms": [
+        "container",
+        "urn",
+        "box",
+        "chest",
+        "coffin",
+        "crate",
+        "jug",
+        "pot",
+        "amphorae",
+        "casket",
+        "vase",
+        "jar"
+      ]
+    },
+    {
+      "id": 53,
+      "word": "remains",
+      "synonyms": [
+        "remains",
+        "ashes",
+        "bones",
+        "brain",
+        "heart",
+        "kidney",
+        "lungs",
+        "skin",
+        "head",
+        "stomach"
+      ]
+    },
+    {
+      "id": 54,
+      "word": "familyMember",
+      "synonyms": [
+        "grandfather",
+        "grandmother",
+        "mother",
+        "father",
+        "stepfather",
+        "stepmother",
+        "brother",
+        "sister",
+        "cousin",
+        "son",
+        "daughter",
+        "aunt",
+        "uncle",
+        "great grandfather",
+        "great grandmother",
+        "half-brother",
+        "half-sister"
+      ]
+    },
+    {
+      "id": 55,
+      "word": "armorPiece",
+      "synonyms": [
+        "helm",
+        "cuirass",
+        "plackart",
+        "bracer",
+        "vambrace",
+        "pauldron",
+        "couter",
+        "greave",
+        "gauntlet"
+      ]
+    },
+    {
+      "id": 56,
+      "word": "patrol",
+      "synonyms": [
+        "lookout",
+        "watch",
+        "scout",
+        "reconnaissance",
+        "recon",
+        "guard",
+        "war",
+        "battle",
+        "battle strategy",
+        "war tactics",
+        "prison",
+        "observation",
+        "patrol",
+        "surveillance",
+        "sentry"
+      ]
+    },
+    {
+      "id": 57,
+      "word": "artStyle",
+      "synonyms": [
+        "oil paint",
+        "sketch",
+        "charcoal",
+        "chalk",
+        "watercolor",
+        "fresco",
+        "etching",
+        "engraving",
+        "tempera"
+      ]
     }
   ]
 }

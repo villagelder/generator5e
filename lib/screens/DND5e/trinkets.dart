@@ -78,7 +78,6 @@ class ItemTypeDDB extends StatefulWidget {
 
 const List<String> itemTypeList = <String>[
   'Any Trinket',
-  'Kindred',
   'Macabre',
   'Martial',
   'Mystical',
@@ -86,7 +85,9 @@ const List<String> itemTypeList = <String>[
   'Religious',
   'Romantic',
   'Scholarly',
-  'Traveler'
+  'Sentimental',
+  'Traveler',
+  "Whimsical"
 ];
 const List<String> numberList = <String>['1', '2', '3', '5', '8'];
 
@@ -199,8 +200,8 @@ class _TextChangerState extends State<TextChanger> {
   TrinketGenerator trinketGenerator = TrinketGenerator();
 
   updateText() {
-    dynamicText = trinketGenerator.generateTrinkets(
-        _ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
+    dynamicText = trinketGenerator.generateTrinkets("martial", "5");
+       // _ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
     setState(() {
       dynamicText;
       // dynamicText = trGen

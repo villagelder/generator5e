@@ -94,6 +94,18 @@
         "swing",
         "flap"
       ]
+    },
+    {
+      "id": 8,
+      "word": "inscribe",
+      "synonyms": [
+        "inscribe",
+        "etch",
+        "engrave",
+        "chisel",
+        "carved",
+        "graven"
+      ]
     }
   ]
 }

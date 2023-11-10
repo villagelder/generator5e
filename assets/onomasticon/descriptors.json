@@ -69,6 +69,79 @@
         "antediluvian",
         "antique"
       ]
+    },
+    {
+      "id": 5,
+      "word": "childlike",
+      "synonyms": [
+        "childlike",
+        "small",
+        "cute",
+        "innocent",
+        "cudly",
+        "simple",
+        "delightful",
+        "dainty",
+        "adorable",
+        "charming"
+      ]
+    },
+    {
+      "id": 6,
+      "word": "lostInBattle",
+      "synonyms": [
+        "dead",
+        "lost",
+        "missing",
+        "deceased",
+        "late"
+      ]
+    },
+    {
+      "id": 7,
+      "word": "ornate",
+      "synonyms": [
+        "jeweled",
+        "gilded",
+        "ornate",
+        "elegant",
+        "gaudy",
+        "fancy",
+        "opulent",
+        "magnificent",
+        "dazzling",
+        "ornamented",
+        "resplendent"
+      ]
+    },
+    {
+      "id": 8,
+      "word": "colorsBase",
+      "synonyms": [
+        "white",
+        "gray",
+        "black",
+        "blue",
+        "red",
+        "green",
+        "yellow",
+        "orange",
+        "violet",
+        "purple",
+        "indigo"
+      ]
+    },
+    {
+      "id": 9,
+      "word": "material",
+      "synonyms": [
+        "metal",
+        "wooden",
+        "clay",
+        "stone",
+        "bone",
+        "ivory"
+      ]
     }
   ]
 }

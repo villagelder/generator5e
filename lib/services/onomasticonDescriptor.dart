@@ -61,4 +61,24 @@ class OnomasticonDescriptor {
   String ancient() {
     return pickWordFromSynonyms("ancient");
   }
+
+  String childlike() {
+    return pickWordFromSynonyms("childlike");
+  }
+
+  String lostInBattle() {
+    return pickWordFromSynonyms("lostInBattle");
+  }
+
+  String ornate() {
+    return pickWordFromSynonyms("ornate");
+  }
+
+  String colorsBase() {
+    return pickWordFromSynonyms("colorsBase");
+  }
+
+  String material() {
+    return pickWordFromSynonyms("material");
+  }
 }

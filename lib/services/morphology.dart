@@ -34,4 +34,29 @@ class Morph {
     }
     return "${word}s";
   }
+
+  static String heritage(String race) {
+    race = race.toLowerCase();
+
+    switch (race) {
+      case "dwarf":
+        return "dwarven";
+      case "elf":
+        return "elven";
+      case "half-elf":
+        return "half-elven";
+      case "half-orc":
+        return "half-orcish";
+      case "gnome":
+        return "gnomish";
+      case "orc":
+        return "orcish";
+      case "aarakocra":
+        return "aarakocran";
+      case "aasimar":
+        return "aasimarian";
+      default:
+        return race;
+    }
+  }
 }

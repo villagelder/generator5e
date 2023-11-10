@@ -205,4 +205,69 @@ class OnomasticonNoun {
   String textile() {
     return pickWordFromSynonyms("textile");
   }
+
+  String thingsInPairs() {
+    return pickWordFromSynonyms("thingsInPairs");
+  }
+
+  String soldier() {
+    return pickWordFromSynonyms("soldier");
+  }
+
+  String weaponMelee() {
+    return pickWordFromSynonyms("weaponMelee");
+  }
+
+  String weaponRanged() {
+    return pickWordFromSynonyms("weaponRanged");
+  }
+
+  String ammunitionAndThrown() {
+    return pickWordFromSynonyms("ammunitionAndThrown");
+  }
+
+  String ammunition() {
+    return pickWordFromSynonyms("ammunition");
+  }
+
+  String pirate() {
+    return pickWordFromSynonyms("pirate");
+  }
+
+  String heroesAndVillains() {
+    return pickWordFromSynonyms("heroesAndVillains");
+  }
+
+  String classesBase() {
+    return pickWordFromSynonyms("classesBase");
+  }
+
+  String classesCaster() {
+    return pickWordFromSynonyms("classesCaster");
+  }
+
+  String container() {
+    return pickWordFromSynonyms("container");
+  }
+
+  String remains() {
+    return pickWordFromSynonyms("remains");
+  }
+
+  String familyMember() {
+    return pickWordFromSynonyms("familyMember");
+  }
+
+  String armorPiece() {
+    return pickWordFromSynonyms("armorPiece");
+  }
+
+  String patrol() {
+    return pickWordFromSynonyms("patrol");
+  }
+
+  String artStyle() {
+    return pickWordFromSynonyms("artStyle");
+  }
+
 }
