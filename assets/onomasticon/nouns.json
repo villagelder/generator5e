@@ -1173,6 +1173,233 @@
         "astrology",
         "tarot"
       ]
+    },
+    {
+      "id": 64,
+      "word": "itemsArtistic",
+      "synonyms": [
+        "shell of an egg",
+        "chalice",
+        "mug",
+        "music box",
+        "painting",
+        "illustration",
+        "watercolor picture",
+        "banner",
+        "tapestry",
+        "jewelry box",
+        "small box",
+        "chest",
+        "mirror frame",
+        "scroll",
+        "canvas",
+        "book"
+      ]
+    },
+    {
+      "id": 65,
+      "word": "gemPrecious",
+      "synonyms": [
+        "clear diamond",
+        "green emerald",
+        "red ruby",
+        "blue sapphire",
+        "painting",
+        "illustration",
+        "pink sapphire",
+        "purple tanzanite",
+        "white opal",
+        "black triplet opal"
+      ]
+    },
+    {
+      "id": 66,
+      "word": "lightSource",
+      "synonyms": [
+        "torch",
+        "candle",
+        "lantern",
+        "lamp"
+      ]
+    },
+    {
+      "id": 67,
+      "word": "bag",
+      "synonyms": [
+        "sack",
+        "bag",
+        "pouch",
+        "purse",
+        "handbag",
+        "bursa",
+        "clutch",
+        "coin purse",
+        "coin pag",
+        "gem bag",
+        "packet"
+      ]
+    },
+    {
+      "id": 68,
+      "word": "powder",
+      "synonyms": [
+        "powder",
+        "dust",
+        "flakes",
+        "soot",
+        "granules",
+        "sand",
+        "dirt",
+        "seeds"
+      ]
+    },
+    {
+      "id": 69,
+      "word": "symbolMagic",
+      "synonyms": [
+        "black sun",
+        "hex sign",
+        "magic square",
+        "magic circle",
+        "ankh",
+        "pentacle",
+        "rune",
+        "sigil",
+        "sun cross",
+        "tree of life",
+        "demon horns",
+        "valknut",
+        "triquetra",
+        "wolfsangel",
+        "vegvisir",
+        "veve",
+        "hexagram"
+      ]
+    },
+    {
+      "id": 70,
+      "word": "neckwear",
+      "synonyms": [
+        "scarf",
+        "neckerchief",
+        "handkerchief",
+        "kerchief",
+        "babushka"
+      ]
+    },
+    {
+      "id": 71,
+      "word": "itemClothing",
+      "synonyms": [
+        "shirt",
+        "scarf",
+        "cap",
+        "hat",
+        "cowl",
+        "tunic",
+        "pirate's hat",
+        "breeches",
+        "vest",
+        "coat",
+        "robe",
+        "cloak",
+        "frock",
+        "vestment",
+        "sweater",
+        "sark ",
+        "sombrero",
+        "bowler",
+        "wizard's hat",
+        "neckerchief",
+        "trouser",
+        "knickers",
+        "handkerchief",
+        "kerchief",
+        "babushka"
+      ]
+    },
+    {
+      "id": 72,
+      "word": "potion",
+      "synonyms": [
+        "elixir",
+        "vial",
+        "potion",
+        "bottle",
+        "phial",
+        "ampoule",
+        "philter",
+        "tonic"
+      ]
+    },
+    {
+      "id": 73,
+      "word": "monstrosity",
+      "synonyms": [
+        "yeti",
+        "sphynx",
+        "androsphynx",
+        "ankheg",
+        "assassin bug",
+        "basilisk",
+        "behir",
+        "harpy",
+        "bulette",
+        "carrion crawler",
+        "catobelpas",
+        "cave fisher",
+        "centaur",
+        "chimera",
+        "cockatrice",
+        "darkmantle",
+        "death dog",
+        "displacer beast",
+        "hydra",
+        "doppleganger",
+        "drider",
+        "ettercap",
+        "gorgon",
+        "grick",
+        "manticore",
+        "griffon",
+        "harpy",
+        "medusa",
+        "hippogriff",
+        "hook horror",
+        "minotaur",
+        "peryton",
+        "phase spider",
+        "purple worm",
+        "remorhaz",
+        "roc",
+        "roper",
+        "rust monster",
+        "winter wolf",
+        "tarrasque",
+        "umber hulk",
+        "mimic",
+        "owlbear",
+        "kraken",
+        "lamia"
+      ]
+    },
+    {
+      "id": 74,
+      "word": "ingredients",
+      "synonyms": [
+        "grease",
+        "skin",
+        "nails",
+        "innards",
+        "eye",
+        "wax",
+        "horn",
+        "wing",
+        "scale",
+        "poison",
+        "saliva",
+        "hair"
+      ]
     }
   ]
 }

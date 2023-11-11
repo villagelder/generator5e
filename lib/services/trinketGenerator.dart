@@ -70,7 +70,7 @@ class TrinketGenerator {
   }
 
   String getTrinketMartial() {
-    String trinket = "";
+    String trinket = "a martial trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1:
@@ -144,8 +144,8 @@ class TrinketGenerator {
   }
 
   String getTrinketSentimental() {
-    String trinket = "";
-    int roll = DiceRoller.roll1d10();
+    String trinket = "a sentimental trinket";
+    int roll = DiceRoller.roll1d12();
     switch (roll) {
       case 1:
         return "a tiny ${noun.humanoid()}-crafted music box that plays a song you dimly remember from your childhood";
@@ -178,12 +178,16 @@ class TrinketGenerator {
         String foreign = descriptor.foreign();
         String a = Morph.indefiniteA(foreign);
         return "a small ${noun.toyMedieval()}, a gift from your ${noun.familyMember()} from their travels to $a $foreign ${noun.kingdom()}";
+      case 11:
+        return "a tiny ${noun.itemsArtistic()} that reminds you of your childhood";
+      case 12:
+        return "a small ${noun.toyMedieval()} from your childhood";
     }
     return trinket;
   }
 
   String getTrinketMacabre() {
-    String trinket = "";
+    String trinket = "a macabre trinket";
 
     int roll = DiceRoller.roll1d12();
     switch (roll) {
@@ -222,7 +226,8 @@ class TrinketGenerator {
         String a = Morph.indefiniteA(prMetal);
         return "$a $prMetal skull the size of your hand";
       case 11:
-        return "the shell of an egg painted with scenes of human misery in disturbing detail";
+        String human = Morph.heritage(noun.humanoid());
+        return "the ${noun.itemsArtistic()} painted with scenes of $human misery in disturbing detail";
       case 12:
         return "a ${descriptor.macabre()} ${noun.beastSmall()}";
     }
@@ -230,7 +235,7 @@ class TrinketGenerator {
   }
 
   String getTrinketMystical() {
-    String trinket = "";
+    String trinket = "a mystical trinket";
 
     int roll = DiceRoller.roll1d20();
     switch (roll) {
@@ -256,20 +261,44 @@ class TrinketGenerator {
         String a = Morph.indefiniteA(shard);
         return "$a $shard of ${noun.mineral()} that always feels ${descriptor.feelsLike()} to the touch";
       case 7:
-        return "a vest with one hundred tiny pockets";
-      case 8:  "a small, weightless stone block";
-      case 9: // A gemstone that looks like a lump of coal when examined by anyone but you
-      case 10: // A candle that can't be lit
-      case 11: // A small packet filled with pink dust
-      case 12: // A bronze pentacle with an etching of a rat's head in its center
-      case 13: // A purple handkerchief embroidered with the name of a powerful archmage
-      case 14: // A bit of folded cloth that, when unfolded, turns into a stylish cap
-      case 15: // A vial of dragon blood
-      case 16: // A needle that never bends
-      case 17: // A glass jar containing lard with a label that reads, "Griffon Grease"
+        String clothing = noun.itemClothing();
+        String a = Morph.indefiniteA(clothing);
+        return "$a $clothing with one hundred tiny pockets";
+      case 8:
+       return "a small, weightless ${noun.mineral()} ${noun.rockPiece()}";
+      case 9:
+        String rockPiece = noun.rockPiece();
+        String a = Morph.indefiniteA(rockPiece);
+        return "a ${noun.gemPrecious()} that looks like $a $rockPiece of ${noun.mineral()} when examined by anyone but you";
+      case 10:
+        return "a ${descriptor.colorsBase()} ${noun.lightSource()} that can't be lit";
+      case 11:
+        return "a small ${noun.bag()} filled with ${descriptor.colorsBase()} ${noun.powder()}";
+      case 12:
+        String metal = noun.metalAll();
+        String a = Morph.indefiniteA(metal);
+        return "a $metal ${noun.symbolMagic()} with an etching of ${noun.beastSmall()}'s head";
+      case 13:
+        String color = descriptor.colorsBase();
+        String a = Morph.indefiniteA(color);
+        return "$a $color ${noun.neckwear()} embroidered with the name of of a powerful ${noun.heroesAndVillains()}";
+      case 14:
+        return "a bit of folded ${noun.textile()} that, when unfolded, turns into a stylish ${noun.itemClothing()}";
+      case 15:
+        String potion = noun.potion();
+        String a = Morph.indefiniteA(potion);
+        return "$a $potion of ${noun.humanoidTiny()} blood";
+      case 16: String potion = noun.potion();
+      String a = Morph.indefiniteA(potion);
+      return "$a $potion of ${noun.dragon()} blood";
+      case 17:
+        String mineral = noun.mineral();
+        String a = Morph.indefiniteA(mineral);
+        return '$a $mineral ${noun.container()} containing a strange substance with a label that reads, "${noun.monstrosity()} ${noun.ingredients()}"';
+        // A glass jar containing lard with a label that reads, "Griffon Grease"
       case 18:
         return "a blank ${noun.book()} whose pages refuse to hold writing of any kind";
-      case 19:
+      case 19:// A needle that never bends
       case 20:
       default:
     }
@@ -277,7 +306,7 @@ class TrinketGenerator {
   }
 
   String getTrinketNature() {
-    String trinket = "";
+    String trinket = "a nature trinket";
 
     int roll = DiceRoller.roll1d20();
     switch (roll) {
@@ -306,7 +335,7 @@ class TrinketGenerator {
   }
 
   String getTrinketRomantic() {
-    String trinket = "";
+    String trinket = "a romantic trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1: // An empty glass vial that smells of perfume when opened
@@ -334,7 +363,7 @@ class TrinketGenerator {
   }
 
   String getTrinketScholarly() {
-    String trinket = "";
+    String trinket = "a scholarly trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1: //     return "a ${DiceRoller.roll1d4() + 1}-ounce ${noun.rockPiece()} made from an unknown mineral";
@@ -362,7 +391,7 @@ class TrinketGenerator {
   }
 
   String getTrinketTraveler() {
-    String trinket = "";
+    String trinket = "a traveler trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1:
@@ -403,7 +432,7 @@ class TrinketGenerator {
   }
 
   String getTrinketWhimsical() {
-    String trinket = "";
+    String trinket = "a whimsical trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1: //A pipe that blows bubbles
@@ -429,7 +458,7 @@ class TrinketGenerator {
   }
 
   String getTrinketReligious() {
-    String trinket = "";
+    String trinket = "a religious trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
       case 1: // A tiny silver bell without a clapper
@@ -457,7 +486,7 @@ class TrinketGenerator {
   }
 
   String getTrinketAll() {
-    String trinket = "";
+    String trinket = "a universal trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {}
     return trinket;

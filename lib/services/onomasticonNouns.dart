@@ -293,4 +293,49 @@ class OnomasticonNoun {
   String wizardTraditions() {
     return pickWordFromSynonyms("wizardTraditions");
   }
+
+  String itemsArtistic() {
+    return pickWordFromSynonyms("itemsArtistic");
+  }
+
+  String gemPrecious() {
+    return pickWordFromSynonyms("gemPrecious");
+  }
+
+  String lightSource() {
+    return pickWordFromSynonyms("lightSource");
+  }
+
+  String bag() {
+    return pickWordFromSynonyms("bag");
+  }
+
+  String powder() {
+    return pickWordFromSynonyms("powder");
+  }
+
+  String symbolMagic() {
+    return pickWordFromSynonyms("symbolMagic");
+  }
+
+  String neckwear() {
+    return pickWordFromSynonyms("neckwear");
+  }
+
+  String itemClothing() {
+    return pickWordFromSynonyms("itemClothing");
+  }
+
+  String potion() {
+    return pickWordFromSynonyms("potion");
+  }
+
+  String monstrosity() {
+    return pickWordFromSynonyms("monstrosity");
+  }
+
+  String ingredients() {
+    return pickWordFromSynonyms("ingredients");
+  }
+
 }
