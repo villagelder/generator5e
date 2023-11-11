@@ -8,7 +8,10 @@
         "desiccated",
         "preserved",
         "nightmarish",
-        "macabre"
+        "macabre",
+        "dead",
+        "decaying",
+        "withering"
       ]
     },
     {
@@ -141,6 +144,62 @@
         "stone",
         "bone",
         "ivory"
+      ]
+    },
+    {
+      "id": 10,
+      "word": "gravelyIll",
+      "synonyms": [
+        "sick",
+        "ill",
+        "frail",
+        "dying",
+        "bone",
+        "ivory",
+        "ailing",
+        "feeble",
+        "infirm",
+        "diseased"
+      ]
+    },
+    {
+      "id": 11,
+      "word": "kindly",
+      "synonyms": [
+        "kindly",
+        "thoughtful",
+        "good-hearted",
+        "gentle",
+        "kind",
+        "good-natured",
+        "kindhearted"
+      ]
+    },
+    {
+      "id": 12,
+      "word": "weird",
+      "synonyms": [
+        "strange",
+        "weird",
+        "creepy",
+        "curious",
+        "freaky",
+        "mysterious",
+        "spooky",
+        "unnatural"
+      ]
+    },
+    {
+      "id": 13,
+      "word": "feelsLike",
+      "synonyms": [
+        "warm",
+        "wet",
+        "slimy",
+        "prickly",
+        "cold",
+        "icy",
+        "burning"
       ]
     }
   ]

@@ -270,4 +270,27 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("artStyle");
   }
 
+  String toolSmall() {
+    return pickWordFromSynonyms("toolSmall");
+  }
+
+  String toyMedieval() {
+    return pickWordFromSynonyms("toyMedieval");
+  }
+
+  String itemsMacabre() {
+    return pickWordFromSynonyms("itemsMacabre");
+  }
+
+  String humanoidTiny() {
+    return pickWordFromSynonyms("humanoidTiny");
+  }
+
+  String beastSmall() {
+    return pickWordFromSynonyms("beastSmall");
+  }
+
+  String wizardTraditions() {
+    return pickWordFromSynonyms("wizardTraditions");
+  }
 }

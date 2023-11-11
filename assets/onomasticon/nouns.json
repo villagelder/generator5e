@@ -55,7 +55,9 @@
         "finger",
         "scalp",
         "bone",
-        "shrunken head"
+        "shrunken head",
+        "bit of flesh",
+        "organ"
       ]
     },
     {
@@ -264,6 +266,7 @@
         "rope",
         "leather",
         "wool",
+        "cloth",
         "lace",
         "cashmere",
         "coconut fiber",
@@ -958,6 +961,8 @@
         "crate",
         "jug",
         "pot",
+        "vial",
+        "bottle",
         "amphorae",
         "casket",
         "vase",
@@ -1052,6 +1057,121 @@
         "etching",
         "engraving",
         "tempera"
+      ]
+    },
+    {
+      "id": 58,
+      "word": "toolSmall",
+      "synonyms": [
+        "hand mirror",
+        "knife",
+        "chisel",
+        "awl",
+        "shoehorn",
+        "tape measure",
+        "small hammer",
+        "lock pick",
+        "crowbar",
+        "rake",
+        "scalpel",
+        "ink jar and quill",
+        "shovel",
+        "toolkit",
+        "handsaw"
+      ]
+    },
+    {
+      "id": 59,
+      "word": "toyMedieval",
+      "synonyms": [
+        "ball",
+        "doll",
+        "figurine",
+        "game",
+        "rattle",
+        "spinning top",
+        "etching",
+        "engraving",
+        "tempera",
+        "scopperel",
+        "puppet",
+        "toy horse",
+        "toy lion",
+        "toy knight",
+        "noisemaker",
+        "toy boat"
+      ]
+    },
+    {
+      "id": 60,
+      "word": "itemsMacabre",
+      "synonyms": [
+        "bones",
+        "bone chips",
+        "ashes",
+        "bone dust",
+        "viscera",
+        "intestines",
+        "brains",
+        "teeth",
+        "knucklebones",
+        "teeth",
+        "entrails",
+        "innards",
+        "nail clippsing"
+      ]
+    },
+    {
+      "id": 61,
+      "word": "humanoidTiny",
+      "synonyms": [
+        "fairy",
+        "sprite",
+        "brownie",
+        "pixie",
+        "imp",
+        "fairy dragon",
+        "gnome"
+      ]
+    },
+    {
+      "id": 62,
+      "word": "beastSmall",
+      "synonyms": [
+        "mouse",
+        "worm",
+        "snake",
+        "squirrel",
+        "chipmunk",
+        "snail",
+        "toad",
+        "frog",
+        "lizard",
+        "caterpillar",
+        "bat",
+        "turtle",
+        "spider",
+        "scorpion",
+        "rat",
+        "centipede"
+      ]
+    },
+    {
+      "id": 63,
+      "word": "wizardTraditions",
+      "synonyms": [
+        "aburation",
+        "evocation",
+        "necromancer",
+        "enchantment",
+        "illusion",
+        "conjuration",
+        "transmutation",
+        "divination",
+        "war magic",
+        "bladesinging",
+        "astrology",
+        "tarot"
       ]
     }
   ]

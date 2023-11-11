@@ -81,4 +81,21 @@ class OnomasticonDescriptor {
   String material() {
     return pickWordFromSynonyms("material");
   }
+
+  String gravelyIll() {
+    return pickWordFromSynonyms("gravelyIll");
+  }
+
+  String kindly() {
+    return pickWordFromSynonyms("kindly");
+  }
+
+  String weird() {
+    return pickWordFromSynonyms("weird");
+  }
+
+  String feelsLike() {
+    return pickWordFromSynonyms("feelsLike");
+  }
+
 }

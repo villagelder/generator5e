@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/onomasticonDescriptor.dart';
 import 'package:generator5e/services/onomasticonNouns.dart';
@@ -144,28 +145,39 @@ class TrinketGenerator {
 
   String getTrinketSentimental() {
     String trinket = "";
-    int roll = DiceRoller.roll1d20();
+    int roll = DiceRoller.roll1d10();
     switch (roll) {
-      case 1:  "a tiny ${noun.humanoid()}-crafted music box that plays a song you dimly remember from your childhood";
-      case 2: "a ${noun.weaponMelee()} that belonged to your ${noun.familyMember()}";
-      case 3: // A tiny sketch portrait of a goblin
+      case 1:
+        return "a tiny ${noun.humanoid()}-crafted music box that plays a song you dimly remember from your childhood";
+      case 2:
+        String tool = noun.toolSmall();
+        String a = Morph.indefiniteA(tool);
+        return "$a $tool that belonged to your ${noun.familyMember()}";
+      case 3:
+        String humanoid = noun.humanoid();
+        String a = Morph.indefiniteA(humanoid);
+        return "a tiny ${noun.artStyle()} portrait of $a $humanoid";
       case 4:
+        String humanoid = noun.humanoid();
+        String a = Morph.indefiniteA(humanoid);
+        return "a small ${noun.artStyle()} portrait of your ${noun.familyMember()}";
       case 5:
+        return "a ${noun.jewelry()} from your ${descriptor.gravelyIll()} ${noun.familyMember()}";
       case 6:
+        return "a ${noun.book()} from your ${descriptor.kindly()} ${noun.familyMember()}";
       case 7:
+        return "a locket with a ${noun.artStyle()} portrait of your ${noun.familyMember()} inside";
       case 8:
+        String humanoid = Morph.heritage(noun.humanoid());
+        return "a lock of hair (or horn) from your $humanoid friend";
       case 9:
+        String jewelry = noun.jewelry();
+        String a = Morph.indefiniteA(jewelry);
+        return "$a ${noun.metalPrecious()} $jewelry that is a family heirloom";
       case 10:
-      case 11:
-      case 12:
-      case 13:
-      case 14:
-      case 15:
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-      case 20:
+        String foreign = descriptor.foreign();
+        String a = Morph.indefiniteA(foreign);
+        return "a small ${noun.toyMedieval()}, a gift from your ${noun.familyMember()} from their travels to $a $foreign ${noun.kingdom()}";
     }
     return trinket;
   }
@@ -173,7 +185,7 @@ class TrinketGenerator {
   String getTrinketMacabre() {
     String trinket = "";
 
-    int roll = DiceRoller.roll1d20();
+    int roll = DiceRoller.roll1d12();
     switch (roll) {
       case 1:
         return "a ${descriptor.macabre()} ${noun.humanoid()} ${noun.humanoidPart()}";
@@ -183,27 +195,38 @@ class TrinketGenerator {
         return "a small ${noun.idol()} ${verb.depict()}ing ${Morph.indefiniteA(nightmarish)} $nightmarish ${noun.monsterTerror()} that gives you ${descriptor.scary()} ${Morph.addAnS(dream)}";
       case 3:
         return "a ${noun.textile()} ${noun.jewelry()} from which ${verb.dangle()} ${DiceRoller.roll1d4() + 1} ${descriptor.macabre()} ${noun.humanoid()} ${Morph.addAnS(noun.humanoidPart())}";
-
-      case 4: // A small cloth doll skewered with needles
-      case 5: // A glass jar containing a weird bit of flesh floating in pickling fluid
-      case 6: // A bag containing forty-seven humanoid teeth, one of which is rotten
-      case 7: // A glass vial filled with nail clippings
-      case 8: // A dead sprite inside a clear glass bottle
-      case 9: // A glass eye
-      case 10: // A silver skull the size of a coin
-      case 11: // The shell of an egg painted with scenes of human misery in disturbing detail
-      case 12: // A petrified mouse
-      case 13:
-      case 14:
-      case 15:
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-      case 20:
-      default:
-        return "Lost Trinket";
+      case 4:
+        return "a small ${noun.textile()} doll skewered with needles";
+      case 5:
+        String mineral = noun.mineral();
+        String a = Morph.indefiniteA(mineral);
+        String weird = descriptor.weird();
+        String an = Morph.indefiniteA(weird);
+        return "$a $mineral ${noun.container()} containing $an $weird ${noun.humanoidPart()} floating in pickling fluid";
+      case 6:
+        String container = noun.container();
+        String a = Morph.indefiniteA(container);
+        return "$a $container full of ${noun.humanoid()} ${noun.itemsMacabre()}";
+      case 7:
+        String material = descriptor.material();
+        String a = Morph.indefiniteA(material);
+        return "$a $material ${noun.container()} full of ${noun.humanoid()} ${noun.itemsMacabre()}";
+      case 8:
+        return "a ${descriptor.macabre()} ${noun.humanoidTiny()} inside a ${noun.mineral()} ${noun.container()}";
+      case 9:
+        String material = descriptor.material();
+        String a = Morph.indefiniteA(material);
+        return "$a $material eye";
+      case 10:
+        String prMetal = noun.metalPrecious();
+        String a = Morph.indefiniteA(prMetal);
+        return "$a $prMetal skull the size of your hand";
+      case 11:
+        return "the shell of an egg painted with scenes of human misery in disturbing detail";
+      case 12:
+        return "a ${descriptor.macabre()} ${noun.beastSmall()}";
     }
+    return trinket;
   }
 
   String getTrinketMystical() {
@@ -216,12 +239,25 @@ class TrinketGenerator {
       case 2:
         String smpMetal = noun.metalAll();
         return "${Morph.indefiniteA(smpMetal)} $smpMetal ${noun.jewelry()} that never ${Morph.addAnS(verb.corrode())}";
-      case 3: //An old divination card bearing your likeness
-      case 4: //A glass orb filled with moving smoke
-      case 5: // A brass orb etched with strange runes
-      case 6: //A shard of obsidian that always feels warm to the touch
-      case 7: // A vest with one hundred tiny pockets
-      case 8: // A small, weightless stone block
+      case 3:
+        String old = descriptor.ancient();
+        String an = Morph.indefiniteA(old);
+        return "$an $old ${noun.wizardTraditions()} card bearing your likeness";
+      case 4:
+        String material = descriptor.material();
+        String a = Morph.indefiniteA(material);
+        return "$a $material orb filled with swirling smoke";
+      case 5:
+        String metal = noun.metalAll();
+        String a = Morph.indefiniteA(metal);
+        return "$a $metal orb etched with ${descriptor.weird()} runes";
+      case 6:
+        String shard = noun.rockPiece();
+        String a = Morph.indefiniteA(shard);
+        return "$a $shard of ${noun.mineral()} that always feels ${descriptor.feelsLike()} to the touch";
+      case 7:
+        return "a vest with one hundred tiny pockets";
+      case 8:  "a small, weightless stone block";
       case 9: // A gemstone that looks like a lump of coal when examined by anyone but you
       case 10: // A candle that can't be lit
       case 11: // A small packet filled with pink dust
@@ -231,7 +267,8 @@ class TrinketGenerator {
       case 15: // A vial of dragon blood
       case 16: // A needle that never bends
       case 17: // A glass jar containing lard with a label that reads, "Griffon Grease"
-      case 18: return "a blank ${noun.book()} whose pages refuse to hold writing of any kind";
+      case 18:
+        return "a blank ${noun.book()} whose pages refuse to hold writing of any kind";
       case 19:
       case 20:
       default:
