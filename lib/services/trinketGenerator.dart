@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/onomasticonDescriptor.dart';
 import 'package:generator5e/services/onomasticonNouns.dart';
@@ -390,11 +389,28 @@ class TrinketGenerator {
       case 16:
         return "a coin hanging from a chain given to you by your love";
       case 17:
-        return "a small branch wrapped with ribbon as a gift from your love";
+        return "a small branch wrapped with ${descriptor.colorsBase()} ribbon as a gift from your love";
       case 18:
         return "a decorative shell with the name of your love etched inside";
       case 19:
-        return "a small pendant in the shape of animal, a gift from your love";
+        String animal = "";
+        int roll = DiceRoller.roll1d4();
+        switch (roll) {
+          case 1:
+            animal = noun.beastAmphibian();
+            break;
+          case 2:
+            animal = noun.beastMammalFierce();
+            break;
+          case 3:
+            animal = noun.beastReptile();
+            break;
+          case 4:
+            animal = noun.beastSea();
+            break;
+        }
+        String a = Morph.indefiniteA(animal);
+        return "a small pendant in the shape of $a $animal, a gift from your love";
       case 20:
         String letter = noun.loveExpression();
         String a = Morph.indefiniteA(letter);
@@ -405,28 +421,55 @@ class TrinketGenerator {
 
   String getTrinketScholarly() {
     String trinket = "a scholarly trinket";
-    int roll = DiceRoller.roll1d20();
+    int roll = DiceRoller.roll1d10();
     switch (roll) {
-      case 1: //     return "a ${DiceRoller.roll1d4() + 1}-ounce ${noun.rockPiece()} made from an unknown mineral";
-      case 2: // A multicolored stone disk
-      case 3: // A rectangular metal device with two tiny metal cups on one end that throws sparks when wet
-      case 4: // 	A mechanical canary inside a gnomish lamp
-      case 5: // A metal can that has no opening but sounds as if it is filled with liquid, sand, spiders, or broken glass
-      case 6: // A glass orb filled with water, in which swims a clockwork goldfish
-      case 7: // A gold monocle frame without the lens
-      case 8: // A sheet of parchment upon which is drawn a complex mechanical contraption
-      case 9: // A tiny mechanical crab or spider that moves about when it's not being observed
-      case 10: // A mosaic tile with a multicolored, glazed surface
-      case 11:
-      case 12:
-      case 13:
-      case 14:
-      case 15:
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-      case 20:
+      case 1:
+        return "a ${DiceRoller.roll1d6() + 1}-ounce ${noun.rockPiece()} made from an unknown mineral";
+      case 2:
+        String symbol = noun.symbolMagic();
+        String a = Morph.indefiniteA(symbol);
+        return "a multicolored stone disk ${Morph.pastTense(verb.inscribe())} with $a $symbol";
+      case 3:
+        String geometric = descriptor.geometric();
+        String a = Morph.indefiniteA(geometric);
+        return "$a $geometric ${descriptor.material()} device that ${Morph.addAnS(verb.ping())} when wet";
+      case 4:
+        String itemType = descriptor.itemType();
+        String gnomish = Morph.heritage(noun.humanoid());
+        String an = Morph.indefiniteA(gnomish);
+        String animal = "";
+        int roll = DiceRoller.roll1d4();
+        switch (roll) {
+          case 1:
+            animal = noun.beastBird();
+            break;
+          case 2:
+            animal = noun.beastReptile();
+            break;
+          case 3:
+            animal = noun.beastApeMonkey();
+            break;
+          case 4:
+            animal = noun.beastMammalMild();
+            break;
+        }
+        return "a small $itemType ${noun.beastBird()} inside $an $gnomish lamp";
+      case 5:
+        String material = descriptor.material();
+        String a = Morph.indefiniteA(material);
+        return "$a $material ${noun.container()} that has no opening but sounds hollow with an unknown material inside";
+      case 6:
+        return "a glass orb filled with water, in which swims a clockwork goldfish";
+      case 7:
+        String metal = noun.metalAll();
+        String a = Morph.indefiniteA(metal);
+        return "$a $metal ${noun.eyeGlass()} frame without the lens";
+      case 8:
+        return "a sheet of ${noun.paper()} upon which is drawn a ${descriptor.itemType()} contraption";
+      case 9:
+        return "a tiny ${descriptor.itemType()} ${noun.beastArachnid()} that moves about when it's not being observed";
+      case 10:
+        return "a mosaic tile with a multicolored, glazed surface";
     }
     return trinket;
   }
@@ -452,17 +495,41 @@ class TrinketGenerator {
       case 5:
         String parcel = noun.parcel();
         return "the ${noun.document()} to ${Morph.indefiniteA(parcel)} $parcel of land in a ${noun.kingdom()} unknown to you";
-      case 6: // A tooth from an unknown beast
-      case 7: // An enormous scale, perhaps from a dragon
-      case 8: // A small wooden statuette of a smug halfling
-      case 9: // 	An empty wine bottle bearing a pretty label that says, "The Wizard of Wines Winery, Red Dragon Crush, 331422-W"
-      case 10: // A dragon's bony talon hanging from a plain leather necklace
-      case 11: // A silver spoon with an 'M' engraved on the handle
-      case 12: // An old key
-      case 13: // An indecipherable treasure map
-      case 14: // A cameo carved in the likeness of a hideous person
-      case 15: // An invitation to a party where a murder happened
-      case 16: // Half of a floorplan for a temple, castle, or some other structure
+      case 6:
+        String part = noun.monsterPart();
+        String a = Morph.indefiniteA(part);
+        return "$a $part from an unknown creature";
+      case 7:
+        return "an enormous scale, perhaps from a ${noun.dragon()}";
+      case 8:
+        return "a small ${descriptor.material()} ${noun.idol()} of a smug ${noun.humanoid()}";
+      case 9:
+        String a = DiceRoller.roll1d4().toString();
+        String b = (DiceRoller.roll1d10() - 1).toString();
+        String c = (DiceRoller.roll1d10() - 1).toString();
+        String d = (DiceRoller.roll1d10() - 1).toString();
+        String e = (DiceRoller.roll1d10() - 1).toString();
+        String f = (DiceRoller.roll1d10() - 1).toString();
+        String batch = a + b + c + d + e + f;
+
+        return "an empty ${noun.drinkAlcohol()} bottle bearing a pretty label that says, 'The Artificer of Alcohols Distillery, ${descriptor.colorsBase()} ${noun.dragon()} Series, $batch-A'";
+      case 10:
+        return "a ${noun.dragon()}'s bony talon hanging from a plain ${noun.textile()} necklace";
+      case 11:
+        String metal = descriptor.material();
+        String a = Morph.indefiniteA(metal);
+        return "$a $metal ${noun.utensilsKitchen()} with the letter '${noun.letterCapital()}' engraved on it";
+      case 12:
+        return "an old ${noun.toolSmall()}";
+      case 13:
+        return "an indecipherable treasure map";
+      case 14:
+        "a ${noun.brooch()} carved in the likeness of a hideous ${noun.humanoid()}";
+      case 15:
+        return "an invitation to a party where a murder happened";
+
+      case 16:
+        return "half of a floorplan of a ${noun.building()}";
       case 17: // A receipt of deposit at a bank in a far-flung city
       case 18: // An empty silver snuffbox bearing an inscription on the surface that says "dreams"
       case 19: // An ornate brooch of dwarven design

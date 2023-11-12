@@ -98,4 +98,11 @@ class OnomasticonDescriptor {
     return pickWordFromSynonyms("feelsLike");
   }
 
+  String geometric() {
+    return pickWordFromSynonyms("geometric");
+  }
+
+  String itemType() {
+    return pickWordFromSynonyms("itemType");
+  }
 }

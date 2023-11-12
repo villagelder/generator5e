@@ -469,6 +469,7 @@
         "wren",
         "crow",
         "sparrow",
+        "canary",
         "jay",
         "tern",
         "raven",
@@ -1071,6 +1072,7 @@
         "tape measure",
         "small hammer",
         "needle",
+        "key",
         "lock pick",
         "crowbar",
         "rake",
@@ -1445,6 +1447,138 @@
         "play",
         "painting",
         "love letter"
+      ]
+    },
+    {
+      "id": 78,
+      "word": "eyeGlass",
+      "synonyms": [
+        "pair of glasses",
+        "spyglass",
+        "pair of goggles",
+        "monocle",
+        "set of bifocals",
+        "lorgnette",
+        "loupe",
+        "set of magnifying glasses",
+        "set of binoculars",
+        "pair of spectacles",
+        "set of artificer goggles"
+      ]
+    },
+    {
+      "id": 79,
+      "word": "paper",
+      "synonyms": [
+        "papyrus",
+        "vellum",
+        "paper",
+        "parchment"
+      ]
+    },
+    {
+      "id": 80,
+      "word": "monsterPart",
+      "synonyms": [
+        "paw",
+        "foot",
+        "eyeball",
+        "ear",
+        "finger",
+        "scalp",
+        "bone",
+        "head",
+        "hide",
+        "horn",
+        "wing",
+        "claw",
+        "bit of flesh",
+        "organ"
+      ]
+    },
+    {
+      "id": 81,
+      "word": "drinkAlcohol",
+      "synonyms": [
+        "gin",
+        "whiskey",
+        "ale",
+        "beer",
+        "wine",
+        "mead"
+      ]
+    },
+    {
+      "id": 82,
+      "word": "utensilsKitchen",
+      "synonyms": [
+        "knife",
+        "fork",
+        "bowl",
+        "rolling pin",
+        "serving dish",
+        "dinner plate",
+        "cooking pan",
+        "cooking pot",
+        "mug",
+        "cup",
+        "spoon",
+        "wineglass",
+        "drinking glass"
+      ]
+    },
+    {
+      "id": 83,
+      "word": "letterCapital",
+      "synonyms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    {
+      "id": 84,
+      "word": "brooch",
+      "synonyms": [
+        "brooch",
+        "cameo",
+        "pendant",
+        "pin",
+        "medallion"
+      ]
+    },
+    {
+      "id": 85,
+      "word": "building",
+      "synonyms": [
+        "castle",
+        "keep",
+        "temple",
+        "church",
+        "guildhall"
       ]
     }
   ]

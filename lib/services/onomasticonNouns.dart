@@ -361,4 +361,32 @@ class OnomasticonNoun {
   String loveExpression() {
     return pickWordFromSynonyms("loveExpression");
   }
+
+  String eyeGlass() {
+    return pickWordFromSynonyms("eyeGlass");
+  }
+
+  String paper() {
+    return pickWordFromSynonyms("paper");
+  }
+
+  String drinkAlcohol() {
+    return pickWordFromSynonyms("drinkAlcohol");
+  }
+
+  String utensilsKitchen() {
+    return pickWordFromSynonyms("utensilsKitchen");
+  }
+
+  String letterCapital() {
+    return pickWordFromSynonyms("letterCapital");
+  }
+
+  String brooch() {
+    return pickWordFromSynonyms("brooch");
+  }
+
+  String building() {
+    return pickWordFromSynonyms("building");
+  }
 }

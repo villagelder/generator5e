@@ -222,6 +222,43 @@
         "lustrous",
         "scintillating"
       ]
+    },
+    {
+      "id": 15,
+      "word": "geometric",
+      "synonyms": [
+        "cylindrical",
+        "cubic",
+        "square",
+        "ring-shaped",
+        "spherical",
+        "conical",
+        "linear",
+        "pentagonal",
+        "hexagonal",
+        "icosahedronal",
+        "octagonal",
+        "rectangular",
+        "triangular",
+        "pyramid-shaped",
+        "circular",
+        "geometric"
+      ]
+    },
+    {
+      "id": 16,
+      "word": "itemType",
+      "synonyms": [
+        "mystical",
+        "magical",
+        "mechanical",
+        "simple",
+        "celestial",
+        "mundane",
+        "complex",
+        "automated",
+        "pragmatic"
+      ]
     }
   ]
 }
