@@ -1070,6 +1070,7 @@
         "shoehorn",
         "tape measure",
         "small hammer",
+        "needle",
         "lock pick",
         "crowbar",
         "rake",
@@ -1399,6 +1400,51 @@
         "poison",
         "saliva",
         "hair"
+      ]
+    },
+    {
+      "id": 75,
+      "word": "monsterWinged",
+      "synonyms": [
+        "dragon",
+        "wyvern",
+        "giant bat",
+        "giant vulture",
+        "phoenix",
+        "succubus",
+        "demon",
+        "archon",
+        "angel",
+        "solar"
+      ]
+    },
+    {
+      "id": 76,
+      "word": "monsterHorned",
+      "synonyms": [
+        "dragon",
+        "wyvern",
+        "imp",
+        "demon",
+        "devil",
+        "drake",
+        "minotaur",
+        "celestial auroch",
+        "fiendish bull",
+        "chimera"
+      ]
+    },
+    {
+      "id": 77,
+      "word": "loveExpression",
+      "synonyms": [
+        "poem",
+        "aria",
+        "ode",
+        "story",
+        "play",
+        "painting",
+        "love letter"
       ]
     }
   ]

@@ -265,7 +265,7 @@ class TrinketGenerator {
         String a = Morph.indefiniteA(clothing);
         return "$a $clothing with one hundred tiny pockets";
       case 8:
-       return "a small, weightless ${noun.mineral()} ${noun.rockPiece()}";
+        return "a small, weightless ${noun.mineral()} ${noun.rockPiece()}";
       case 9:
         String rockPiece = noun.rockPiece();
         String a = Morph.indefiniteA(rockPiece);
@@ -288,19 +288,23 @@ class TrinketGenerator {
         String potion = noun.potion();
         String a = Morph.indefiniteA(potion);
         return "$a $potion of ${noun.humanoidTiny()} blood";
-      case 16: String potion = noun.potion();
-      String a = Morph.indefiniteA(potion);
-      return "$a $potion of ${noun.dragon()} blood";
+      case 16:
+        String potion = noun.potion();
+        String a = Morph.indefiniteA(potion);
+        return "$a $potion of ${noun.dragon()} blood";
       case 17:
         String mineral = noun.mineral();
         String a = Morph.indefiniteA(mineral);
         return '$a $mineral ${noun.container()} containing a strange substance with a label that reads, "${noun.monstrosity()} ${noun.ingredients()}"';
-        // A glass jar containing lard with a label that reads, "Griffon Grease"
       case 18:
         return "a blank ${noun.book()} whose pages refuse to hold writing of any kind";
-      case 19:// A needle that never bends
+      case 19:
+        String tool = noun.toolSmall();
+        String a = Morph.indefiniteA(tool);
+        return "$a $tool that never breaks";
       case 20:
-      default:
+        String caster = noun.classesCaster();
+        return "a mysterious wand with the name of an ancient $caster engraved on it";
     }
     return trinket;
   }
@@ -308,28 +312,37 @@ class TrinketGenerator {
   String getTrinketNature() {
     String trinket = "a nature trinket";
 
-    int roll = DiceRoller.roll1d20();
+    int roll = DiceRoller.roll1d10();
     switch (roll) {
-      case 1: // A bright green feather
-      case 2: // A 1-pound egg with a bright red shell
-      case 3: // A dead scarab beetle the size of your hand
-      case 4: // A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body
+      case 1:
+        String glistening = noun.glistening();
+        String a = Morph.indefiniteA(glistening);
+        return "$a $glistening ${descriptor.colorsBase()} feather";
+      case 2:
+        String glistening = noun.glistening();
+        String a = Morph.indefiniteA(glistening);
+        return "a large egg with $a $glistening shell";
+      case 3:
+        "a dead ${noun.beastSmall} the size of your hand";
+      case 4:
+        String material = descriptor.material();
+        String a = Morph.indefiniteA(material);
+        return "$a $material ${noun.container()} that holds a living ${noun.beastSmall()} with a head on each end of its body";
       case 5:
+        return "the chunk of a wing from a ${noun.monsterWinged()}";
       case 6:
+        return "the horn from a ${noun.monsterHorned()}";
       case 7:
+        return "a piece of hide from a ${noun.beastMammalFierce()}";
       case 8:
+        return "the skeleton of a ${noun.beastAmphibian()}";
       case 9:
+        return "a feather from a ${noun.beastBird()}";
       case 10:
-      case 11:
-      case 12:
-      case 13:
-      case 14:
-      case 15:
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-      case 20:
+        String assortment = noun.assortment();
+        String a = Morph.indefiniteA(assortment);
+        String container = noun.container();
+        return "a ${noun.assortment()} of ${Morph.addAnS(noun.beastInsect())} in a decorative $container";
     }
     return trinket;
   }
@@ -338,26 +351,54 @@ class TrinketGenerator {
     String trinket = "a romantic trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
-      case 1: // An empty glass vial that smells of perfume when opened
-      case 2: // A silver teardrop earring made from a real teardrop
+      case 1:
+        return "an empty ${noun.mineral()} ${noun.potion()} that smells of perfume when opened";
+      case 2:
+        String prMetal = noun.metalPrecious();
+        String a = Morph.indefiniteA(prMetal);
+        return "$a $prMetal teardrop earring made from a real teardrop";
       case 3:
+        return "a lock of hair from your true love";
       case 4:
+        String prMetal = noun.metalPrecious();
+        String a = Morph.indefiniteA(prMetal);
+        return "$a $prMetal ${noun.jewelry()} with your lover's name etched on it";
       case 5:
+        return "a tiny ${noun.artStyle()} portrait of your ${noun.humanoid()} love";
       case 6:
+        return "a ${noun.book()} of ${Morph.addAnS(noun.loveExpression())} given to you by your love";
       case 7:
+        return "a ${noun.book()} of ${Morph.addAnS(noun.loveExpression())} that reminds you of your love";
       case 8:
+        String color = descriptor.colorsBase();
+        String a = Morph.indefiniteA(color);
+        return "$a $color ribbon given to you before your journey by your lover";
       case 9:
+        return "a wooden carving that was a gift from your one true love";
       case 10:
+        return "a ${noun.neckwear()} that still smells like your love";
       case 11:
+        return "an enchanted ${noun.jewelry()} from your love";
       case 12:
+        return "a small ${noun.potion()} of your love's perfume on a necklace";
       case 13:
+        return "a pressed flower enclosed in a book from your love";
       case 14:
+        return "a small ${noun.mineral()} carving that reminds you of your love";
       case 15:
+        return "a horn carved with elaborate runes expressing love";
       case 16:
+        return "a coin hanging from a chain given to you by your love";
       case 17:
+        return "a small branch wrapped with ribbon as a gift from your love";
       case 18:
+        return "a decorative shell with the name of your love etched inside";
       case 19:
+        return "a small pendant in the shape of animal, a gift from your love";
       case 20:
+        String letter = noun.loveExpression();
+        String a = Morph.indefiniteA(letter);
+        return "a love $letter written from your love";
     }
     return trinket;
   }

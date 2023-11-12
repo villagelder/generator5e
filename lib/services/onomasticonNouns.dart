@@ -338,4 +338,27 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("ingredients");
   }
 
+  String glistening() {
+    return pickWordFromSynonyms("glistening");
+  }
+
+  String monsterPart() {
+    return pickWordFromSynonyms("monsterPart");
+  }
+
+  String monsterWinged() {
+    return pickWordFromSynonyms("monsterWinged");
+  }
+
+  String monsterHorned() {
+    return pickWordFromSynonyms("monsterHorned");
+  }
+
+  String collection() {
+    return pickWordFromSynonyms("collection");
+  }
+
+  String loveExpression() {
+    return pickWordFromSynonyms("loveExpression");
+  }
 }
