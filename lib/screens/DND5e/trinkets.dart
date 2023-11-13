@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/services/trinketGenerator.dart';
 
-class TrinketsPage extends MaterialPageRoute<Null> {
+class TrinketsPage extends MaterialPageRoute<void> {
   TrinketsPage()
       : super(builder: (BuildContext ctx) {
           double screenHeight = MediaQuery.of(ctx).size.height;
@@ -18,43 +18,45 @@ class TrinketsPage extends MaterialPageRoute<Null> {
               ),
               backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
             ),
-            body: SingleChildScrollView(
-              scrollDirection: Axis.vertical,
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-                    child: SizedBox(
-                      height: screenHeight * .05,
-                      child: Center(
-                        child: Text(
-                          '5e Trinkets',
-                          style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: screenHeight * 0.044,
-                            fontWeight: FontWeight.w500,
-                            color: const Color.fromRGBO(34, 56, 69, 1.0),
-                          ),
+            body: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
+                  child: SizedBox(
+                    height: screenHeight * .05,
+                    child: Center(
+                      child: Text(
+                        '5e Trinkets',
+                        style: TextStyle(
+                          fontFamily: 'Georgia',
+                          fontSize: screenHeight * 0.044,
+                          fontWeight: FontWeight.w500,
+                          color: const Color.fromRGBO(34, 56, 69, 1.0),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: MediaQuery.of(ctx).size.width * 0.84,
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
-                      child: Text(
-                        'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
-                        style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: MediaQuery.of(ctx).size.height * 0.022,
-                            fontStyle: FontStyle.italic),
-                      ),
+                ),
+                SizedBox(
+                  width: MediaQuery.of(ctx).size.width * 0.84,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
+                    child: Text(
+                      'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
+                      style: TextStyle(
+                          fontFamily: 'Georgia',
+                          fontSize: MediaQuery.of(ctx).size.height * 0.022,
+                          fontStyle: FontStyle.italic),
                     ),
                   ),
-                  const TextChanger(),
-                ],
-              ),
+                ),
+                SizedBox(
+                    width: MediaQuery.of(ctx).size.width * 0.84,
+                    child: const Padding(
+                      padding: EdgeInsets.fromLTRB(0, 24, 0, 0),
+                      child: ListViewer(),
+                    )),
+              ],
             ),
           );
         });
@@ -187,6 +189,129 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
   }
 }
 
+class ListViewer extends StatefulWidget {
+  const ListViewer({super.key});
+
+  @override
+  State<ListViewer> createState() => _ListViewerState();
+}
+
+class _ListViewerState extends State<ListViewer> {
+  // Declare the variable
+  List<String> trinketsList = ['Trinkets'];
+  TrinketGenerator trinketGenerator = TrinketGenerator();
+
+  updateList() {
+    trinketsList = trinketGenerator.generateTrinketsArray(
+        _ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
+    setState(() {
+      trinketsList;
+    });
+  }
+
+  @override
+  Widget build(BuildContext ctx) {
+    return Column(
+      children: [
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ItemTypeDDB(),
+            NumberDDB(),
+          ],
+        ),
+
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.84,
+            height: MediaQuery.of(ctx).size.height * 0.1,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                backgroundColor: Colors.lightGreen.shade900,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+              ),
+              onPressed: () => updateList(),
+              child: Text(
+                'Generate Trinket',
+                style: TextStyle(
+                    fontFamily: 'Georgia',
+                    fontSize: MediaQuery.of(ctx).size.height * .035,
+                    fontWeight: FontWeight.w700),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+          child: Column(
+            children: [
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.86,
+                height: MediaQuery.of(ctx).size.height * 0.45,
+                child: Card(
+                  elevation: 0,
+                  color: Colors.blueGrey.shade100,
+                  child: ListView.builder(
+                    key: ObjectKey(trinketsList[0]),
+                    itemCount: trinketsList.length,
+                    itemBuilder: (ctx, index) {
+                      return Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.01, 0, 0),
+                        child: ListTile(
+                          title: Transform.translate(
+                              offset: const Offset(-20, 0),
+                              child: Text(trinketsList[index])),
+                          leading: const Icon(
+                            Icons.nature,
+                            color: Colors.green,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                            side: const BorderSide(
+                                width: 1.5,
+                                color: Color.fromRGBO(0, 102, 0, 1)),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+
+        // Padding(
+        //   padding: EdgeInsets.all(40.0),
+        //   child: Text(dynamicText,
+        //       style: TextStyle(
+        //         fontFamily: 'Georgia',
+        //         fontSize: MediaQuery.of(ctx).size.height * 0.03,
+        //       )),
+        // ),
+        // Padding(
+        //   padding: const EdgeInsets.fromLTRB(0, 32, 0, 0),
+        //   child: IconButton(
+        //     iconSize: 36,
+        //     icon: const Icon(Icons.copy),
+        //     color: Colors.blueGrey.shade900,
+        //     onPressed: () {
+        //       Clipboard.setData(ClipboardData(text: trinketsList.toString()));
+        //     },
+        //   ),
+        // ),
+      ],
+    );
+  }
+}
+
 class TextChanger extends StatefulWidget {
   const TextChanger({super.key});
 
@@ -200,7 +325,8 @@ class _TextChangerState extends State<TextChanger> {
   TrinketGenerator trinketGenerator = TrinketGenerator();
 
   updateText() {
-    dynamicText = trinketGenerator.generateTrinkets(_ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
+    dynamicText = trinketGenerator.generateTrinkets(
+        _ItemTypeDDBState.typeValue, _NumberDDBState.numberValue);
     setState(() {
       dynamicText;
     });
@@ -246,7 +372,7 @@ class _TextChangerState extends State<TextChanger> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(40.0),
+          padding: const EdgeInsets.all(40.0),
           child: Text(dynamicText,
               style: TextStyle(
                 fontFamily: 'Georgia',

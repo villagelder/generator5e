@@ -73,6 +73,52 @@ class TrinketGenerator {
     return sb.toString();
   }
 
+  List<String> generateTrinketsArray(String type, String number) {
+    syncOno();
+    type = type.toLowerCase();
+    List<String> trinketList = [];
+    int n = int.parse(number);
+
+    for (int i = 0; i < n; i++) {
+      switch (type) {
+        case "martial":
+          trinketList.add(getTrinketMartial());
+          break;
+        case "sentimental":
+          trinketList.add(getTrinketSentimental());
+          break;
+        case "macabre":
+          trinketList.add(getTrinketMacabre());
+          break;
+        case "mystical":
+          trinketList.add(getTrinketMystical());
+          break;
+        case "nature":
+          trinketList.add(getTrinketNature());
+          break;
+        case "romantic":
+          trinketList.add(getTrinketRomantic());
+          break;
+        case "scholarly":
+          trinketList.add(getTrinketScholarly());
+          break;
+        case "traveler":
+          trinketList.add(getTrinketTraveler());
+          break;
+        case "religious":
+          trinketList.add(getTrinketReligious());
+          break;
+        case "whimsical":
+          trinketList.add(getTrinketWhimsical());
+          break;
+        default:
+          trinketList.add(getTrinketAll());
+      }
+    }
+
+    return trinketList;
+  }
+
   String getTrinketMartial() {
     String trinket = "a martial trinket";
     int roll = DiceRoller.roll1d20();
@@ -648,25 +694,35 @@ class TrinketGenerator {
     String trinket = "";
     int roll = DiceRoller.roll1d10();
     switch (roll) {
-      case 1: trinket = getTrinketSentimental();
+      case 1:
+        trinket = getTrinketSentimental();
         break;
-      case 2: trinket = getTrinketMacabre();
+      case 2:
+        trinket = getTrinketMacabre();
         break;
-      case 3: trinket = getTrinketMartial();
+      case 3:
+        trinket = getTrinketMartial();
         break;
-      case 4: trinket = getTrinketNature();
+      case 4:
+        trinket = getTrinketNature();
         break;
-      case 5: trinket = getTrinketReligious();
+      case 5:
+        trinket = getTrinketReligious();
         break;
-      case 6: trinket = getTrinketRomantic();
+      case 6:
+        trinket = getTrinketRomantic();
         break;
-      case 7: trinket = getTrinketScholarly();
+      case 7:
+        trinket = getTrinketScholarly();
         break;
-      case 8: trinket = getTrinketMystical();
+      case 8:
+        trinket = getTrinketMystical();
         break;
-      case 9: trinket = getTrinketTraveler();
+      case 9:
+        trinket = getTrinketTraveler();
         break;
-      case 10: trinket = getTrinketWhimsical();
+      case 10:
+        trinket = getTrinketWhimsical();
         break;
     }
     return trinket;
