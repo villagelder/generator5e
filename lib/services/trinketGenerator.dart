@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/onomasticonDescriptor.dart';
 import 'package:generator5e/services/onomasticonNouns.dart';
@@ -208,8 +206,6 @@ class TrinketGenerator {
         String a = Morph.indefiniteA(humanoid);
         return "a tiny ${noun.artStyle()} portrait of $a $humanoid";
       case 4:
-        String humanoid = noun.humanoid();
-        String a = Morph.indefiniteA(humanoid);
         return "a small ${noun.artStyle()} portrait of your ${noun.familyMember()}";
       case 5:
         return "a ${noun.jewelry()} from your ${descriptor.gravelyIll()} ${noun.familyMember()}";
@@ -327,7 +323,7 @@ class TrinketGenerator {
       case 12:
         String metal = noun.metalAll();
         String a = Morph.indefiniteA(metal);
-        return "a $metal ${noun.symbolMagic()} with an etching of ${noun.beastSmall()}'s head";
+        return "$a $metal ${noun.symbolMagic()} with an etching of ${noun.beastSmall()}'s head";
       case 13:
         String color = descriptor.colorsBase();
         String a = Morph.indefiniteA(color);
@@ -392,7 +388,7 @@ class TrinketGenerator {
         String assortment = noun.assortment();
         String a = Morph.indefiniteA(assortment);
         String container = noun.container();
-        return "a ${noun.assortment()} of ${Morph.addAnS(noun.beastInsect())} in a decorative $container";
+        return "$a ${noun.assortment()} of ${Morph.addAnS(noun.beastInsect())} in a decorative $container";
     }
     return trinket;
   }
@@ -464,7 +460,6 @@ class TrinketGenerator {
         return "a small pendant in the shape of $a $animal, a gift from your love";
       case 20:
         String letter = noun.loveExpression();
-        String a = Morph.indefiniteA(letter);
         return "a love $letter written from your love";
     }
     return trinket;
@@ -504,7 +499,7 @@ class TrinketGenerator {
             animal = noun.beastMammalMild();
             break;
         }
-        return "a small $itemType ${noun.beastBird()} inside $an $gnomish lamp";
+        return "a small $itemType $animal inside $an $gnomish lamp";
       case 5:
         String material = descriptor.material();
         String a = Morph.indefiniteA(material);
