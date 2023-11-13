@@ -107,6 +107,19 @@
         "carved",
         "graven"
       ]
+    },
+    {
+      "id": 9,
+      "word": "actionSimple",
+      "synonyms": [
+        "sleep",
+        "sit",
+        "stand",
+        "roar",
+        "attack",
+        "defend",
+        "talk"
+      ]
     }
   ]
 }

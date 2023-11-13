@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/onomasticonDescriptor.dart';
 import 'package:generator5e/services/onomasticonNouns.dart';
@@ -51,6 +53,9 @@ class TrinketGenerator {
         case "religious":
           trinketList.add(getTrinketReligious());
           break;
+        case "whimsical":
+          trinketList.add(getTrinketWhimsical());
+          break;
         default:
           trinketList.add(getTrinketAll());
       }
@@ -75,7 +80,7 @@ class TrinketGenerator {
       case 1:
         return "a pair of old ${noun.thingsInPairs()}";
       case 2:
-        return "";
+        return "a helm handed down from your ${noun.familyMember()}";
       case 3:
         return "a scrap of cloth from an old banner";
       case 4:
@@ -314,11 +319,11 @@ class TrinketGenerator {
     int roll = DiceRoller.roll1d10();
     switch (roll) {
       case 1:
-        String glistening = noun.glistening();
+        String glistening = descriptor.glistening();
         String a = Morph.indefiniteA(glistening);
         return "$a $glistening ${descriptor.colorsBase()} feather";
       case 2:
-        String glistening = noun.glistening();
+        String glistening = descriptor.glistening();
         String a = Morph.indefiniteA(glistening);
         return "a large egg with $a $glistening shell";
       case 3:
@@ -543,60 +548,127 @@ class TrinketGenerator {
     String trinket = "a whimsical trinket";
     int roll = DiceRoller.roll1d20();
     switch (roll) {
-      case 1: //A pipe that blows bubbles
-      case 2: // A blank book whose pages refuse to hold ink, chalk, graphite, or any other substance or marking
-      case 3: // A white, sequined glove sized for a human
-      case 4: // A tiny chest carved to look like it has numerous feet on the bottom
-      case 5: // A whistle made from gold-colored wood
-      case 6: // A small box filled with different-sized buttons
-      case 7: // A tiny cage with no door
-      case 8: // A rabbit's foot
-      case 9: // An alabaster mask
-      case 10: // A nightcap that, when worn, gives you pleasant dreams
-      case 11: // A 1-inch cube, each side painted a different color
-      case 12: // A crystal knob from a door
-      case 13: // A fragment of a beautiful song, written as musical notes on two pieces of parchment
-      case 14: // A fan that, when unfolded, shows a sleeping cat
-      case 15: // A set of bone pipes
-      case 16: // A four-leaf clover pressed inside a book discussing manners and etiquette
-      case 17: // A diary with seven missing pages
-      case 18: // A book that tells the story of a legendary hero's rise and fall, with the last chapter missing
+      case 1:
+        return "a pipe that blows ${noun.itemsWhimsical()}";
+      case 2:
+        return "a blank book whose pages refuse to hold writing of any kind";
+      case 3:
+        String color = descriptor.colorsBase();
+        String a = Morph.indefiniteA(color);
+        return "$a $color, sequined ${noun.itemClothing()} sized for a ${noun.humanoid()}";
+      case 4:
+        String crafted = Morph.pastTense(verb.forge());
+        return "a small ${noun.container()} $crafted to look like it has numerous feet on the bottom";
+      case 5:
+        return "a ${noun.noisemaker()} made from ${descriptor.colorsBase()}-colored wood";
+      case 6:
+        return "a small ${noun.container()} filled with different-sized ${Morph.addAnS(noun.itemSmall())}";
+      case 7:
+        return "a tiny cage with no door";
+      case 8:
+        return "a ${noun.beastMammalMild()}'s foot";
+      case 9:
+        String mineral = noun.mineral();
+        String a = Morph.indefiniteA(mineral);
+        return "$a $mineral mask";
+      case 10:
+        String clothingItem = noun.itemClothing();
+        String a = Morph.indefiniteA(clothingItem);
+        return "$a $clothingItem that, when worn, gives you pleasant dreams";
+      case 11:
+        return "a ${DiceRoller.roll1d6().toString()}-inch cube, each side painted a different color";
+      case 12:
+        String mineral = noun.mineral();
+        String a = Morph.indefiniteA(mineral);
+        return "$a $mineral knob from a door";
+      case 13:
+        return "a fragment of a song, written as musical notes on two pieces of ${noun.paper()}";
+      case 14:
+        String actioning = Morph.addIng(verb.actionSimple());
+        String a = Morph.indefiniteA(actioning);
+        return "a fan that, when unfolded, shows $a $actioning ${noun.beastMammalFierce()}";
+      case 15:
+        return "a set of ${descriptor.material()} pipes";
+      case 16:
+        return "a four-leaf clover pressed inside a book on ${noun.topicBook()}";
+      case 17:
+        return "a ${noun.journal()} with ${(DiceRoller.roll1d12() + 1).toString()} missing pages";
+      case 18:
+        String book = noun.book();
+        String a = Morph.indefiniteA(book);
+        return "$a $book that tells the story of a legendary ${noun.heroesAndVillains()}'s rise and fall";
+      case 19:
+        String book = noun.book();
+        String a = Morph.indefiniteA(book);
+        return "$a $book that tells the story of a legendary ${noun.heroesAndVillains()}'s rise and fall, with the last chapter missing";
+      case 20:
+        return "a set of costume fairy wings that can be worn on your back";
     }
     return trinket;
   }
 
   String getTrinketReligious() {
     String trinket = "a religious trinket";
-    int roll = DiceRoller.roll1d20();
+    int roll = DiceRoller.roll1d4();
     switch (roll) {
-      case 1: // A tiny silver bell without a clapper
-      case 2: //A pyramid of sticky black incense that smells very bad
-      case 3: // An iron holy symbol devoted to an unknown god
-      case 4: // A tiny silver icon of a raven
-      case 5:
-      case 6:
-      case 7:
-      case 8:
-      case 9:
-      case 10:
-      case 11:
-      case 12:
-      case 13:
-      case 14:
-      case 15:
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-      case 20:
+      case 1:
+        return "a tiny silver bell without a clapper";
+      case 2:
+        String shape = noun.shape3D();
+        String a = Morph.indefiniteA(shape);
+
+        return "$a $shape of sticky ${descriptor.colorsBase()} incense that smells very bad";
+      case 3:
+        String metal = noun.metalAll();
+        String a = Morph.indefiniteA(metal);
+        return "$a $metal holy symbol devoted to an unknown god";
+      case 4:
+        int roll = DiceRoller.roll1d4();
+        String animal = "";
+        switch (roll) {
+          case 1:
+            animal = noun.beastBird();
+            break;
+          case 2:
+            animal = noun.beastReptile();
+            break;
+          case 3:
+            animal = noun.beastMammalFierce();
+            break;
+          case 4:
+            animal = noun.beastSea();
+            break;
+        }
+        return "a tiny ${noun.metalPrecious()} ${noun.idol()} of a $animal";
     }
     return trinket;
   }
 
   String getTrinketAll() {
-    String trinket = "a universal trinket";
-    int roll = DiceRoller.roll1d20();
-    switch (roll) {}
+    String trinket = "";
+    int roll = DiceRoller.roll1d10();
+    switch (roll) {
+      case 1: trinket = getTrinketSentimental();
+        break;
+      case 2: trinket = getTrinketMacabre();
+        break;
+      case 3: trinket = getTrinketMartial();
+        break;
+      case 4: trinket = getTrinketNature();
+        break;
+      case 5: trinket = getTrinketReligious();
+        break;
+      case 6: trinket = getTrinketRomantic();
+        break;
+      case 7: trinket = getTrinketScholarly();
+        break;
+      case 8: trinket = getTrinketMystical();
+        break;
+      case 9: trinket = getTrinketTraveler();
+        break;
+      case 10: trinket = getTrinketWhimsical();
+        break;
+    }
     return trinket;
   }
 }

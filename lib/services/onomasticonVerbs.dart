@@ -73,7 +73,12 @@ class OnomasticonVerb {
   String understand() {
     return pickWordFromSynonyms("understand");
   }
+
   String inscribe() {
     return pickWordFromSynonyms("inscribe");
+  }
+
+  String actionSimple() {
+    return pickWordFromSynonyms("actionSimple");
   }
 }

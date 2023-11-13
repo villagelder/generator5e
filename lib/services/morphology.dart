@@ -15,6 +15,16 @@ class Morph {
     return '${word}ed';
   }
 
+  static String addIng(String word) {
+    word = word.toLowerCase();
+
+    if (word.endsWith("e")) {
+      return "${word.substring(0, word.length - 1)}ing";
+    }
+
+    return "${word}ing";
+  }
+
   static String indefiniteA(String word) {
     word = word.toLowerCase();
     if (!vowelsStrict.contains(word[0])) {

@@ -62,6 +62,10 @@ class OnomasticonDescriptor {
     return pickWordFromSynonyms("ancient");
   }
 
+  String glistening() {
+    return pickWordFromSynonyms("glistening");
+  }
+
   String childlike() {
     return pickWordFromSynonyms("childlike");
   }

@@ -338,10 +338,6 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("ingredients");
   }
 
-  String glistening() {
-    return pickWordFromSynonyms("glistening");
-  }
-
   String monsterPart() {
     return pickWordFromSynonyms("monsterPart");
   }
@@ -389,4 +385,25 @@ class OnomasticonNoun {
   String building() {
     return pickWordFromSynonyms("building");
   }
+
+  String itemsWhimsical() {
+    return pickWordFromSynonyms("itemsWhimsical");
+  }
+
+  String noisemaker() {
+    return pickWordFromSynonyms("noisemaker");
+  }
+
+  String itemSmall() {
+    return pickWordFromSynonyms("itemSmall");
+  }
+
+  String topicBook() {
+    return pickWordFromSynonyms("topicBook");
+  }
+
+  String shape3D() {
+    return pickWordFromSynonyms("shape3D");
+  }
+
 }

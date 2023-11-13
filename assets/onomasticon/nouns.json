@@ -68,6 +68,11 @@
         "iron",
         "gold",
         "rock",
+        "brass",
+        "bronze",
+        "ivory",
+        "alabaster",
+        "amber",
         "stone",
         "marble",
         "bone",
@@ -1579,6 +1584,89 @@
         "temple",
         "church",
         "guildhall"
+      ]
+    },
+    {
+      "id": 86,
+      "word": "itemsWhimsical",
+      "synonyms": [
+        "bubbles",
+        "glitter",
+        "farts",
+        "confetti",
+        "ice cream",
+        "rainbows",
+        "snowflakes",
+        "silly string",
+        "ooze",
+        "water",
+        "sparkles"
+      ]
+    },
+    {
+      "id": 87,
+      "word": "noisemaker",
+      "synonyms": [
+        "noisemaker",
+        "whistle",
+        "horn",
+        "vuvuzela",
+        "maraca",
+        "flute",
+        "music pipe"
+      ]
+    },
+    {
+      "id": 88,
+      "word": "itemSmall",
+      "synonyms": [
+        "button",
+        "die",
+        "pebble",
+        "figurine",
+        "coin",
+        "ring"
+      ]
+    },
+    {
+      "id": 89,
+      "word": "topicBook",
+      "synonyms": [
+        "history",
+        "art",
+        "etiquette",
+        "sculpture",
+        "painting",
+        "castle construction",
+        "mathematics",
+        "war tactics",
+        "war history",
+        "chivalry",
+        "wizardry",
+        "cartography",
+        "seafaring",
+        "science",
+        "music",
+        "instrumental music",
+        "choral music",
+        "arcane magic",
+        "divine magic"
+      ]
+    },
+    {
+      "id": 90,
+      "word": "shape3D",
+      "synonyms": [
+        "sphere",
+        "pyramid",
+        "prism",
+        "cube",
+        "torus",
+        "cylinder",
+        "octahedron",
+        "rod",
+        "square pyramid",
+        "cuboid"
       ]
     }
   ]
