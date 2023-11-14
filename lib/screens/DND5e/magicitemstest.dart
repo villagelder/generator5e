@@ -2,49 +2,49 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/services/magicItemGenerator.dart';
 
-class MagicItemsPage extends MaterialPageRoute<void> {
-  MagicItemsPage()
+class MagicItemsPageTest extends MaterialPageRoute<void> {
+  MagicItemsPageTest()
       : super(builder: (BuildContext ctx) {
-        SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
-          return Scaffold(
-            backgroundColor: Colors.blueGrey.shade100,
-            appBar: AppBar(
-              title: const Text(
-                'DragonVault Generators',
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  color: Color.fromRGBO(255, 245, 188, 1.0),
-                ),
-              ),
-              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
-            ),
-            body: SingleChildScrollView(
-              scrollDirection: Axis.vertical,
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-                    child: SizedBox(
-                      height: MediaQuery.of(ctx).size.height * 0.06,
-                      child: Center(
-                        child: Text(
-                          '5e Magic Items',
-                          style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: MediaQuery.of(ctx).size.height * 0.044,
-                            fontWeight: FontWeight.w500,
-                            color: const Color.fromRGBO(34, 56, 69, 1.0),
-                          ),
-                        ),
-                      ),
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
+    return Scaffold(
+      backgroundColor: Colors.blueGrey.shade100,
+      appBar: AppBar(
+        title: const Text(
+          'DragonVault Generators',
+          style: TextStyle(
+            fontFamily: 'Georgia',
+            color: Color.fromRGBO(255, 245, 188, 1.0),
+          ),
+        ),
+        backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
+              child: SizedBox(
+                height: MediaQuery.of(ctx).size.height * 0.06,
+                child: Center(
+                  child: Text(
+                    '5e Magic Items',
+                    style: TextStyle(
+                      fontFamily: 'Georgia',
+                      fontSize: MediaQuery.of(ctx).size.height * 0.044,
+                      fontWeight: FontWeight.w500,
+                      color: const Color.fromRGBO(34, 56, 69, 1.0),
                     ),
                   ),
-                  const ListViewer(),
-                ],
+                ),
               ),
             ),
-          );
-        });
+            const ListViewer(),
+          ],
+        ),
+      ),
+    );
+  });
 }
 
 class NumberDDB extends StatefulWidget {

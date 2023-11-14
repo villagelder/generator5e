@@ -5,6 +5,7 @@ import 'package:generator5e/screens/DND5e/trinkets.dart';
 import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
 import 'magicitems.dart';
+import 'magicitemstest.dart';
 import 'npcs.dart';
 
 class Generators5ePage extends MaterialPageRoute<Null> {
@@ -89,7 +90,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                 backgroundColor: Colors.blueGrey.shade900,
                               ),
                               onPressed: () {
-                                Navigator.push(context, MagicItemsPage());
+                                Navigator.push(context, MagicItemsPageTest());
                               },
                               child: Text(
                                 'Magic Item',
