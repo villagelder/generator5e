@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/services/treasureGenerator5e.dart';
 
-class TreasuresPageTest extends MaterialPageRoute<void> {
-  TreasuresPageTest()
+class TreasuresPage extends MaterialPageRoute<void> {
+  TreasuresPage()
       : super(builder: (BuildContext ctx) {
           SystemChrome.setPreferredOrientations([
             DeviceOrientation.landscapeLeft,

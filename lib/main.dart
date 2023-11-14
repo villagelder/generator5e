@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/screens/DND5e/generators5e.dart';
-import 'package:generator5e/screens/DND5e/treasures.dart';
+import 'package:generator5e/screens/DND5e/treasuregenerator.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations([

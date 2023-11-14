@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/screens/DND5e/spellsets.dart';
-import 'package:generator5e/screens/DND5e/treasures.dart';
-import 'package:generator5e/screens/DND5e/treasurestest.dart';
-import 'package:generator5e/screens/DND5e/trinkets.dart';
+import 'package:generator5e/screens/DND5e/treasuregenerator.dart';
+import 'package:generator5e/screens/DND5e/trinketsGenerator.dart';
 import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
 import 'magicitems.dart';
@@ -68,7 +67,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                 backgroundColor: Colors.blueGrey.shade900,
                               ),
                               onPressed: () {
-                                Navigator.push(context, TreasuresPageTest());
+                                Navigator.push(context, TreasuresPage());
                               },
                               child: Align(
                                 alignment: Alignment.center,
