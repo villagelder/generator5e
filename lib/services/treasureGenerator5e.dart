@@ -23,6 +23,20 @@ class TreasureGenerator5e {
   List<ArtItem> artObjList = [];
   List<TreasureMagicItem> randomMagicItemObjList = [];
   List<Spell> spellsObjList = [];
+  bool _isLoaded = false;
+
+  TreasureGenerator5e() {
+    readJsonTreasureTable().then((_) {
+      _isLoaded = true;
+      getTreasuresObjectList();
+    });
+  }
+
+  sync() {
+    while (!_isLoaded) {
+      Future.delayed(const Duration(milliseconds: 100));
+    }
+  }
 
   int roll = 0;
 
@@ -134,6 +148,33 @@ class TreasureGenerator5e {
     }
 
     return genericScroll;
+  }
+
+  List<String> generateTreasures(String cr, String type) {
+    bool isLegendary = false;
+    List<String> tl = [];
+    sync();
+
+    if (type == 'Legendary') {
+      isLegendary = true;
+      type = 'hoard';
+    }
+
+    Treasures? trObj = rollTreasureBySelections(cr, type);
+    Treasures? trObj2 = rollTreasureBySelections(cr, type);
+
+    if (trObj != null) {
+      //get coins
+      tl.addAll(calculateCoins(trObj, trObj2!, isLegendary));
+      //get gems
+      tl.addAll(calculateGems(trObj, trObj2, isLegendary));
+      //get art
+      tl.addAll(calculateArt(trObj, trObj2, isLegendary));
+      //get magic items
+      tl.addAll(calculateRandomMagicItems(trObj, trObj2, isLegendary));
+    }
+
+    return tl;
   }
 
   String generate(String cr, String type) {

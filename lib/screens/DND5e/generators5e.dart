@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator5e/screens/DND5e/spellsets.dart';
 import 'package:generator5e/screens/DND5e/treasures.dart';
+import 'package:generator5e/screens/DND5e/treasurestest.dart';
 import 'package:generator5e/screens/DND5e/trinkets.dart';
 import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
@@ -13,7 +14,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
       : super(builder: (BuildContext context) {
           SystemChrome.setPreferredOrientations([
             DeviceOrientation.landscapeLeft,
-            DeviceOrientation.landscapeLeft
+            DeviceOrientation.landscapeRight,
           ]);
           double screenWidth = MediaQuery.of(context).size.width;
           double screenHeight = MediaQuery.of(context).size.height;
@@ -67,7 +68,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                 backgroundColor: Colors.blueGrey.shade900,
                               ),
                               onPressed: () {
-                                Navigator.push(context, TreasuresPage());
+                                Navigator.push(context, TreasuresPageTest());
                               },
                               child: Align(
                                 alignment: Alignment.center,

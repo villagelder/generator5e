@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:generator5e/screens/DND5e/generators5e.dart';
 import 'package:generator5e/screens/DND5e/treasures.dart';
 
 void main() {
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]);
   runApp(const MaterialApp(
     title: 'villagelder',
     home: MyApp(),
@@ -21,7 +26,7 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.blueGrey.shade100,
       appBar: AppBar(
         title: const Text(
-          'DragonVault Generators',
+          'Legendary Generators',
           style: TextStyle(
             fontFamily: 'Georgia',
             color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -38,7 +43,7 @@ class MyApp extends StatelessWidget {
                 height: screenHeight * .07,
                 child: Center(
                     child: Text(
-                  'DragonVault',
+                  'Generators',
                   style: TextStyle(
                     fontFamily: 'Georgia',
                     fontWeight: FontWeight.w500,

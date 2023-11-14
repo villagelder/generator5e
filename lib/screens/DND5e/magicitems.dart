@@ -8,7 +8,7 @@ class MagicItemsPage extends MaterialPageRoute<void> {
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault Generators',
+                'Legendary Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
