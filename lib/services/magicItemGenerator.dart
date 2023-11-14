@@ -11,6 +11,21 @@ class MagicItemGenerator5e {
   List<MagicItem> magicItemObjList = [];
   List _spellsJson = [];
   List<Spell> spellsObjList = [];
+  bool _isLoaded = false;
+
+  MagicItemGenerator5e() {
+    readJsonMagicItems().then((_) {
+      _isLoaded = true;
+      getMagicItemsObjectList();
+    });
+
+  }
+
+  sync() {
+    while (!_isLoaded) {
+      Future.delayed(const Duration(milliseconds: 100));
+    }
+  }
 
   Future<void> readJsonMagicItems() async {
     final String response =
@@ -123,5 +138,38 @@ class MagicItemGenerator5e {
     }
 
     return genericScroll;
+  }
+
+  List<String> generateMagicItemsArray(String rarity, String type, String number) {
+    rarity = rarity.toLowerCase();
+    type = type.toLowerCase();
+    List<String> magicItemsList = [];
+    sync();
+
+    magicItemObjList = getMagicItemsByRarityAndType(rarity, type);
+
+    int itemCount = int.parse(number);
+    if (magicItemObjList.length < itemCount) {
+      itemCount = magicItemObjList.length;
+    }
+
+    if (magicItemObjList.isNotEmpty) {
+      for (int i = 0; i < itemCount; i++) {
+        int ix = Utility.getRandomIndexFromListSize(magicItemObjList.length);
+        String magicItem = magicItemObjList[ix].name;
+        if (!magicItemsList.contains(magicItem)) {
+          if (magicItem.contains("Spell Scroll")) {
+            magicItem = randomizeScroll(magicItem);
+          }
+          magicItemsList.add(magicItem);
+        } else {
+          i--;
+          continue;
+        }
+      }
+    }
+
+    return magicItemsList;
+
   }
 }

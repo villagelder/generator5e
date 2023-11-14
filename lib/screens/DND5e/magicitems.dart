@@ -5,6 +5,7 @@ import 'package:generator5e/services/magicItemGenerator.dart';
 class MagicItemsPage extends MaterialPageRoute<Null> {
   MagicItemsPage()
       : super(builder: (BuildContext ctx) {
+        SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
@@ -38,21 +39,7 @@ class MagicItemsPage extends MaterialPageRoute<Null> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: MediaQuery.of(ctx).size.width * 0.84,
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
-                      child: Text(
-                        'Select your magic item Rarity, Type, and Number, then push \'Generate Magic Item\' to '
-                        'generate new magic items.',
-                        style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: MediaQuery.of(ctx).size.height * 0.022,
-                            fontStyle: FontStyle.italic),
-                      ),
-                    ),
-                  ),
-                  const TextChanger(),
+                  const ListViewer(),
                 ],
               ),
             ),
@@ -109,7 +96,7 @@ const List<String> itemTypeList = <String>[
   'Weapon',
   'Wondrous Item'
 ];
-const List<String> numberList = <String>['1', '2', '3', '5', '8'];
+const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
 class _RarityDDBState extends State<RarityDDB> {
   static String rarityValue = rarityList.first;
@@ -306,6 +293,120 @@ class _ItemSubTypeDDBState extends State<ItemSubTypeDDB> {
   }
 }
 
+
+class ListViewer extends StatefulWidget {
+  const ListViewer({super.key});
+
+  @override
+  State<ListViewer> createState() => _ListViewerState();
+}
+
+class _ListViewerState extends State<ListViewer> {
+  // Declare the variable
+  List<String> magicItemsList = ['Magic Items'];
+  MagicItemGenerator5e mig5e = MagicItemGenerator5e();
+
+  updateList() {
+    magicItemsList = mig5e.generateMagicItemsArray(_RarityDDBState.rarityValue,
+        _ItemTypeDDBState.itemValue, _NumberDDBState.numberValue);
+    setState(() {
+      magicItemsList;
+    });
+  }
+
+  @override
+  Widget build(BuildContext ctx) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.845,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                RarityDDB(),
+                NumberDDB(),
+              ],
+            ),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ItemTypeDDB(),
+            ],
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+          child: SizedBox(
+            width: MediaQuery.of(ctx).size.width * 0.84,
+            height: MediaQuery.of(ctx).size.height * 0.1,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                backgroundColor: Colors.lightGreen.shade900,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+              ),
+              onPressed: () => updateList(),
+              child: Text(
+                'Generate Magic Items',
+                style: TextStyle(
+                    fontFamily: 'Georgia',
+                    fontSize: MediaQuery.of(ctx).size.height * .035,
+                    fontWeight: FontWeight.w700),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+              0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
+          child: Column(
+            children: [
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.86,
+                height: MediaQuery.of(ctx).size.height * 0.42,
+                child: Card(
+                  elevation: 0,
+                  color: Colors.blueGrey.shade100,
+                  child: ListView.builder(
+                    key: ObjectKey(magicItemsList[0]),
+                    itemCount: magicItemsList.length,
+                    itemBuilder: (ctx, index) {
+                      return Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.01, 0, 0),
+                        child: ListTile(
+                          title: Text(magicItemsList[index]),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                            side: const BorderSide(
+                                width: 1.5,
+                                color: Color.fromRGBO(0, 102, 0, 1)),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+
+
+      ],
+    );
+  }
+}
+
 class TextChanger extends StatefulWidget {
   const TextChanger({super.key});
 
@@ -319,10 +420,11 @@ class _TextChangerState extends State<TextChanger> {
   MagicItemGenerator5e mig = MagicItemGenerator5e();
 
   updateText() {
+    dynamicText = mig.generateRandomMagicItems(_RarityDDBState.rarityValue,
+        _ItemTypeDDBState.itemValue, int.parse(_NumberDDBState.numberValue));
     setState(() {
-      dynamicText = 'changed';
-      dynamicText = mig.generateRandomMagicItems(_RarityDDBState.rarityValue,
-          _ItemTypeDDBState.itemValue, int.parse(_NumberDDBState.numberValue));
+      dynamicText;
+
     });
   }
 

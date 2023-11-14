@@ -1668,6 +1668,22 @@
         "square pyramid",
         "cuboid"
       ]
+    },
+    {
+      "id": 91,
+      "word": "itemsPersonal",
+      "synonyms": [
+        "snuffbox",
+        "pipe",
+        "cigar box",
+        "coin box",
+        "brooch",
+        "comb",
+        "brush",
+        "key",
+        "knife",
+        "cuboid"
+      ]
     }
   ]
 }

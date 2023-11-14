@@ -406,4 +406,10 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("shape3D");
   }
 
+  String itemsPersonal() {
+    return pickWordFromSynonyms("itemsPersonal");
+  }
+
+
+
 }

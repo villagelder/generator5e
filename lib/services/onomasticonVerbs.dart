@@ -81,4 +81,9 @@ class OnomasticonVerb {
   String actionSimple() {
     return pickWordFromSynonyms("actionSimple");
   }
+
+  String actionBig() {
+    return pickWordFromSynonyms("actionBig");
+  }
+
 }

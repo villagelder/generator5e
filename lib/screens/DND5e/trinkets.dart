@@ -26,7 +26,7 @@ class TrinketsPage extends MaterialPageRoute<void> {
                     height: screenHeight * .05,
                     child: Center(
                       child: Text(
-                        '5e Trinkets',
+                        '5e Trinket Generator',
                         style: TextStyle(
                           fontFamily: 'Georgia',
                           fontSize: screenHeight * 0.044,
@@ -34,19 +34,6 @@ class TrinketsPage extends MaterialPageRoute<void> {
                           color: const Color.fromRGBO(34, 56, 69, 1.0),
                         ),
                       ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: MediaQuery.of(ctx).size.width * 0.84,
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
-                    child: Text(
-                      'Select your type of trinket, number of trinkets, and push \'Generate Trinket\'.',
-                      style: TextStyle(
-                          fontFamily: 'Georgia',
-                          fontSize: MediaQuery.of(ctx).size.height * 0.022,
-                          fontStyle: FontStyle.italic),
                     ),
                   ),
                 ),
@@ -91,7 +78,7 @@ const List<String> itemTypeList = <String>[
   'Traveler',
   "Whimsical"
 ];
-const List<String> numberList = <String>['1', '2', '3', '5', '8'];
+const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
 class _NumberDDBState extends State<NumberDDB> {
   static String numberValue = numberList.first;
@@ -253,7 +240,7 @@ class _ListViewerState extends State<ListViewer> {
             children: [
               SizedBox(
                 width: MediaQuery.of(ctx).size.width * 0.86,
-                height: MediaQuery.of(ctx).size.height * 0.45,
+                height: MediaQuery.of(ctx).size.height * 0.55,
                 child: Card(
                   elevation: 0,
                   color: Colors.blueGrey.shade100,
@@ -265,13 +252,7 @@ class _ListViewerState extends State<ListViewer> {
                         padding: EdgeInsets.fromLTRB(
                             0, MediaQuery.of(ctx).size.height * 0.01, 0, 0),
                         child: ListTile(
-                          title: Transform.translate(
-                              offset: const Offset(-20, 0),
-                              child: Text(trinketsList[index])),
-                          leading: const Icon(
-                            Icons.nature,
-                            color: Colors.green,
-                          ),
+                          title: Text(trinketsList[index]),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0),
                             side: const BorderSide(

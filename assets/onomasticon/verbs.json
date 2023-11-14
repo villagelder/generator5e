@@ -120,6 +120,29 @@
         "defend",
         "talk"
       ]
+    },
+    {
+      "id": 10,
+      "word": "actionBig",
+      "synonyms": [
+        "conquer",
+        "never surrender",
+        "protect",
+        "avenge",
+        "hunt",
+        "destroy",
+        "destroy",
+        "annihilate",
+        "defy",
+        "rebel",
+        "safeguard",
+        "resist",
+        "track",
+        "pray",
+        "dream",
+        "envision",
+        "love"
+      ]
     }
   ]
 }
