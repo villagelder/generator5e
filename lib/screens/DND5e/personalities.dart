@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:generator5e/services/magicItemGenerator.dart';
 
-class MagicItemsPage extends MaterialPageRoute<void> {
-  MagicItemsPage()
+class PersonalitiesPage extends MaterialPageRoute<void> {
+  PersonalitiesPage()
       : super(builder: (BuildContext ctx) {
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
@@ -21,11 +21,11 @@ class MagicItemsPage extends MaterialPageRoute<void> {
         });
 }
 
-class NumberDDB extends StatefulWidget {
-  const NumberDDB({super.key});
+class AlignmentDDB extends StatefulWidget {
+  const AlignmentDDB({super.key});
 
   @override
-  State<NumberDDB> createState() => _NumberDDBState();
+  State<AlignmentDDB> createState() => _AlignmentDDBState();
 }
 
 class ItemTypeDDB extends StatefulWidget {
@@ -42,14 +42,14 @@ class ItemSubTypeDDB extends StatefulWidget {
   State<ItemSubTypeDDB> createState() => _ItemSubTypeDDBState();
 }
 
-class RarityDDB extends StatefulWidget {
-  const RarityDDB({super.key});
+class BackgroundDDB extends StatefulWidget {
+  const BackgroundDDB({super.key});
 
   @override
-  State<RarityDDB> createState() => _RarityDDBState();
+  State<BackgroundDDB> createState() => _BackgroundDDBState();
 }
 
-const List<String> rarityList = <String>[
+const List<String> backgroundList = <String>[
   'Any Rarity',
   'Common',
   'Uncommon',
@@ -72,8 +72,8 @@ const List<String> itemTypeList = <String>[
 ];
 const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
-class _RarityDDBState extends State<RarityDDB> {
-  static String rarityValue = rarityList.first;
+class _BackgroundDDBState extends State<BackgroundDDB> {
+  static String rarityValue = backgroundList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +110,7 @@ class _RarityDDBState extends State<RarityDDB> {
                 rarityValue = value!;
               });
             },
-            items: rarityList.map<DropdownMenuItem<String>>((String value) {
+            items: backgroundList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -123,7 +123,7 @@ class _RarityDDBState extends State<RarityDDB> {
   }
 }
 
-class _NumberDDBState extends State<NumberDDB> {
+class _AlignmentDDBState extends State<AlignmentDDB> {
   static String numberValue = numberList.first;
 
   @override
@@ -280,8 +280,8 @@ class _ListViewerState extends State<ListViewer> {
   MagicItemGenerator5e mig5e = MagicItemGenerator5e();
 
   updateList() {
-    magicItemsList = mig5e.generateMagicItemsArray(_RarityDDBState.rarityValue,
-        _ItemTypeDDBState.itemValue, _NumberDDBState.numberValue);
+    magicItemsList = mig5e.generateMagicItemsArray(_BackgroundDDBState.rarityValue,
+        _ItemTypeDDBState.itemValue, _AlignmentDDBState.numberValue);
     setState(() {
       magicItemsList;
     });
@@ -322,8 +322,8 @@ class _ListViewerState extends State<ListViewer> {
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          RarityDDB(),
-                          NumberDDB(),
+                          BackgroundDDB(),
+                          AlignmentDDB(),
                         ],
                       ),
                     ),

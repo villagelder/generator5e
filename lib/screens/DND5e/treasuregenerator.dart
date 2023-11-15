@@ -58,7 +58,7 @@ class _ListViewerState extends State<ListViewer> {
               width: MediaQuery.of(ctx).size.width * 0.4,
               height: MediaQuery.of(ctx).size.width * 0.44,
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                padding: EdgeInsets.fromLTRB(20,  MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
                   children: [
                     Row(
@@ -78,9 +78,9 @@ class _ListViewerState extends State<ListViewer> {
                         ),
                       ],
                     ),
-                    const Padding(
-                      padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                      child: Row(
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ChallengeRatingDDB(),
@@ -89,7 +89,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.34,
                         height: MediaQuery.of(ctx).size.height * 0.135,

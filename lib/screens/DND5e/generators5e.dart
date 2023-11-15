@@ -72,33 +72,6 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Treasures',
-                                  style: TextStyle(
-                                      fontFamily: 'Georgia',
-                                      fontSize: screenHeight * 0.04,
-                                      fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: screenWidth * 0.20,
-                            height: screenHeight * 0.15,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                backgroundColor: Colors.blueGrey.shade900,
-                              ),
-                              onPressed: () {
-                                Navigator.push(context, TreasuresPage());
-                              },
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Text(
                                   'Treasure',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
@@ -123,8 +96,35 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               onPressed: () {
                                 Navigator.push(context, MagicItemsPage());
                               },
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  'Magic Item',
+                                  style: TextStyle(
+                                      fontFamily: 'Georgia',
+                                      fontSize: screenHeight * 0.04,
+                                      fontWeight: FontWeight.bold,
+                                      color: const Color.fromRGBO(
+                                          255, 245, 188, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: screenWidth * 0.20,
+                            height: screenHeight * 0.15,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                backgroundColor: Colors.blueGrey.shade900,
+                              ),
+                              onPressed: () {
+                                Navigator.push(context, TrinketsPage());
+                              },
                               child: Text(
-                                'Magic Item',
+                                'Trinket',
                                 style: TextStyle(
                                     fontFamily: 'Georgia',
                                     fontSize: screenHeight * 0.04,
@@ -150,7 +150,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Trinket',
+                                  'NPC',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -188,7 +188,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Store',
+                                  'Merchant',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -215,7 +215,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Store',
+                                  'Appearance',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -242,7 +242,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'NPC',
+                                  'Name',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -269,7 +269,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Traits',
+                                  'Personality',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -307,7 +307,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Spells',
+                                  'Ability',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -361,7 +361,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Personality',
+                                  'Spell Set',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
@@ -388,7 +388,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  'Name',
+                                  'Encounter',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,

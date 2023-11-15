@@ -58,14 +58,14 @@ class _ListViewerState extends State<ListViewer> {
               width: MediaQuery.of(ctx).size.width * 0.4,
               height: MediaQuery.of(ctx).size.width * 0.44,
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                padding:  EdgeInsets.fromLTRB(20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SizedBox(
-                          height: MediaQuery.of(ctx).size.height * 0.06,
+                          height: MediaQuery.of(ctx).size.height * 0.044,
                           child: Text(
                             '5e Trinket Generator',
                             style: TextStyle(
@@ -78,9 +78,9 @@ class _ListViewerState extends State<ListViewer> {
                         ),
                       ],
                     ),
-                    const Padding(
-                      padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                      child: Row(
+                     Padding(
+                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.06, 0, 0),
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ItemTypeDDB(),
@@ -89,7 +89,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                       child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.34,
                         height: MediaQuery.of(ctx).size.height * 0.135,
@@ -104,7 +104,7 @@ class _ListViewerState extends State<ListViewer> {
                           ),
                           onPressed: () => updateList(),
                           child: Text(
-                            'Generate Magic Items',
+                            'Generate Trinkets',
                             style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize: MediaQuery.of(ctx).size.height * .04,
@@ -113,18 +113,18 @@ class _ListViewerState extends State<ListViewer> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
-                      child: IconButton(
-                        iconSize: 36,
-                        icon: const Icon(Icons.copy),
-                        color: Colors.blueGrey.shade900,
-                        onPressed: () {
-                          Clipboard.setData(
-                              ClipboardData(text: trinketList.toString()));
-                        },
-                      ),
-                    ),
+                    // Padding(
+                    //   padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+                    //   child: IconButton(
+                    //     iconSize: 36,
+                    //     icon: const Icon(Icons.copy),
+                    //     color: Colors.blueGrey.shade900,
+                    //     onPressed: () {
+                    //       Clipboard.setData(
+                    //           ClipboardData(text: trinketList.toString()));
+                    //     },
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
