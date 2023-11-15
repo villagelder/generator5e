@@ -137,7 +137,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Aspiration",
-      "description": "I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings.",
+      "description": "I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings.",
       "source": "PLHBK"
     },
     {
@@ -216,8 +216,8 @@
       "characteristic": "Flaw",
       "specialty": "0",
       "dieroll": "2",
-      "traitname": "Naive",
-      "description": "I put too much trust in those who wield power within my temple's hierarchy.",
+      "traitname": "Naïve",
+      "description": "I put too much trust in those who wield power within my temple’s hierarchy.",
       "source": "PLHBK"
     },
     {
@@ -357,7 +357,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Gambler",
-      "description": "I'm a born gambler who can't resist taking a risk for a potential payoff.",
+      "description": "I’m a born gambler who can't resist taking a risk for a potential payoff.",
       "source": "PLHBK"
     },
     {
@@ -367,7 +367,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Liar",
-      "description": "I lie about almost everything, even when there's no good reason to.",
+      "description": "I lie about almost everything, even when there’s no good reason to.",
       "source": "PLHBK"
     },
     {
@@ -407,7 +407,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Independence",
-      "description": "I am a free spirit - no one tells me what to do. (Chaotic)",
+      "description": "I am a free spirit— no one tells me what to do. (Chaotic)",
       "source": "PLHBK"
     },
     {
@@ -417,7 +417,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Fairness",
-      "description": "I never target people who can't afford to lose a few coins. (Lawful)",
+      "description": "I never target people who can’t afford to lose a few coins. (Lawful)",
       "source": "PLHBK"
     },
     {
@@ -457,7 +457,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Aspiration",
-      "description": "I'm determined to make something of myself. (Any)",
+      "description": "I’m determined to make something of myself. (Any)",
       "source": "PLHBK"
     },
     {
@@ -477,7 +477,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Despisable Mentor",
-      "description": "I owe everything to my mentor -a horrible person who's probably rotting in jail somewhere.",
+      "description": "I owe everything to my mentor—a horrible person who’s probably rotting in jail somewhere.",
       "source": "PLHBK"
     },
     {
@@ -487,7 +487,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Abject Parent",
-      "description": "Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her.",
+      "description": "Somewhere out there, I have a child who doesn’t know me. I’m making the world better for him or her.",
       "source": "PLHBK"
     },
     {
@@ -497,7 +497,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Lost Regality",
-      "description": "I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me.",
+      "description": "I come from a noble family, and one day I’ll reclaim my lands and title from those who stole them from me.",
       "source": "PLHBK"
     },
     {
@@ -507,7 +507,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Retribution",
-      "description": "A powerful person killed someone I love. Some day soon, I'll have my revenge.",
+      "description": "A powerful person killed someone I love. Some day soon, I’ll have my revenge.",
       "source": "PLHBK"
     },
     {
@@ -517,7 +517,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Amends",
-      "description": "I swindled and ruined a person who didn't deserve it. I seek to atone for my misdeeds but might never be able to forgive myself.",
+      "description": "I swindled and ruined a person who didn’t deserve it. I seek to atone for my misdeeds but might never be able to forgive myself.",
       "source": "PLHBK"
     },
     {
@@ -527,7 +527,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Amorous",
-      "description": "I can't resist a pretty face.",
+      "description": "I can’t resist a pretty face.",
       "source": "PLHBK"
     },
     {
@@ -547,7 +547,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Egoistic",
-      "description": "I'm convinced that no one could ever fool me the way I fool others.",
+      "description": "I’m convinced that no one could ever fool me the way I fool others.",
       "source": "PLHBK"
     },
     {
@@ -557,7 +557,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Greedy",
-      "description": "I'm too greedy for my own good. I can't resist taking a risk if there's money involved.",
+      "description": "I’m too greedy for my own good. I can’t resist taking a risk if there’s money involved.",
       "source": "PLHBK"
     },
     {
@@ -567,7 +567,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Misanthropic",
-      "description": "I can't resist swindling people who are more powerful than me.",
+      "description": "I can’t resist swindling people who are more powerful than me.",
       "source": "PLHBK"
     },
     {
@@ -747,7 +747,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Honor",
-      "description": "I don't steal from others in the trade. (Lawful)",
+      "description": "I don’t steal from others in the trade. (Lawful)",
       "source": "PLHBK"
     },
     {
@@ -787,7 +787,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "People",
-      "description": "I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)",
+      "description": "I’m loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -797,7 +797,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Redemption",
-      "description": "There's a spark of good in everyone. (Good)",
+      "description": "There’s a spark of good in everyone. (Good)",
       "source": "PLHBK"
     },
     {
@@ -807,7 +807,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Beholden",
-      "description": "I'm trying to pay off an old debt I owe to a generous benefactor.",
+      "description": "I’m trying to pay off an old debt I owe to a generous benefactor.",
       "source": "PLHBK"
     },
     {
@@ -847,7 +847,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Redemption",
-      "description": "I'm guilty of a terrible crime. I hope I can redeem myself for it.",
+      "description": "I’m guilty of a terrible crime. I hope I can redeem myself for it.",
       "source": "PLHBK"
     },
     {
@@ -867,7 +867,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Obsessive",
-      "description": "When I see something valuable, I can't think about anything but how to steal it.",
+      "description": "When I see something valuable, I can’t think about anything but how to steal it.",
       "source": "PLHBK"
     },
     {
@@ -887,7 +887,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Ingenuous",
-      "description": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.",
+      "description": "If there’s a plan, I’ll forget it. If I don’t forget it, I’ll ignore it.",
       "source": "PLHBK"
     },
     {
@@ -897,7 +897,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Apparent",
-      "description": "I have a 'tell' that reveals when I'm lying.",
+      "description": "I have a “tell” that reveals when I'm lying.",
       "source": "PLHBK"
     },
     {
@@ -917,7 +917,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Pernicious",
-      "description": "An innocent person is in prison for a crime that I committed. I'm okay with that.",
+      "description": "An innocent person is in prison for a crime that I committed. I’m okay with that.",
       "source": "PLHBK"
     },
     {
@@ -1047,7 +1047,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Romantic",
-      "description": "I'm a hopeless romantic, always searching for that 'special someone.'",
+      "description": "I’m a hopeless romantic, always searching for that “special someone.”",
       "source": "PLHBK"
     },
     {
@@ -1077,7 +1077,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Ostentatious",
-      "description": "I get bitter if I'm not the center of attention.",
+      "description": "I get bitter if I’m not the center of attention.",
       "source": "PLHBK"
     },
     {
@@ -1087,7 +1087,7 @@
       "specialty": "0",
       "dieroll": "7",
       "traitname": "Perfectionist",
-      "description": "I'll settle for nothing less than perfection.",
+      "description": "I’ll settle for nothing less than perfection.",
       "source": "PLHBK"
     },
     {
@@ -1137,7 +1137,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Greed",
-      "description": "I'm only in it for the money and fame. (Evil)",
+      "description": "I’m only in it for the money and fame. (Evil)",
       "source": "PLHBK"
     },
     {
@@ -1147,7 +1147,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "People",
-      "description": "I like seeing the smiles on people's faces when I perform. That's all that matters. (Neutral)",
+      "description": "I like seeing the smiles on people’s faces when I perform. That’s all that matters. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -1177,7 +1177,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Taken",
-      "description": "Someone stole my precious instrument, and someday I'll get it back.",
+      "description": "Someone stole my precious instrument, and someday I’ll get it back.",
       "source": "PLHBK"
     },
     {
@@ -1197,7 +1197,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Reverence",
-      "description": "I idolize a hero of the old tales and measure my deeds against that person's.",
+      "description": "I idolize a hero of the old tales and measure my deeds against that person’s.",
       "source": "PLHBK"
     },
     {
@@ -1227,7 +1227,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Glorious",
-      "description": "I'll do anything to win fame and renown.",
+      "description": "I’ll do anything to win fame and renown.",
       "source": "PLHBK"
     },
     {
@@ -1237,7 +1237,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Amorous",
-      "description": "I'm a sucker for a pretty face.",
+      "description": "I’m a sucker for a pretty face.",
       "source": "PLHBK"
     },
     {
@@ -1287,7 +1287,7 @@
       "specialty": "1",
       "dieroll": "1",
       "traitname": "Tyrant's agents",
-      "description": "I stood up to a tyrant's agents.",
+      "description": "I stood up to a tyrant’s agents.",
       "source": "PLHBK"
     },
     {
@@ -1337,7 +1337,7 @@
       "specialty": "1",
       "dieroll": "6",
       "traitname": "Tyrant's rule",
-      "description": "I broke into a tyrant's castle and stole weapons to arm the people.",
+      "description": "I broke into a tyrant’s castle and stole weapons to arm the people.",
       "source": "PLHBK"
     },
     {
@@ -1347,7 +1347,7 @@
       "specialty": "1",
       "dieroll": "7",
       "traitname": "Tyrant's soldiers",
-      "description": "I trained the peasantry to use farm implements as weapons against a tyrant's soldiers.",
+      "description": "I trained the peasantry to use farm implements as weapons against a tyrant’s soldiers.",
       "source": "PLHBK"
     },
     {
@@ -1377,7 +1377,7 @@
       "specialty": "1",
       "dieroll": "10",
       "traitname": "Hero's commendation",
-      "description": "Recruited into a lord's army, I rose to leadership and was commended for my heroism.",
+      "description": "Recruited into a lord’s army, I rose to leadership and was commended for my heroism.",
       "source": "PLHBK"
     },
     {
@@ -1397,7 +1397,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Advocate",
-      "description": "If someone is in trouble, I'm always ready to lend help.",
+      "description": "If someone is in trouble, I’m always ready to lend help.",
       "source": "PLHBK"
     },
     {
@@ -1427,7 +1427,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Bolster",
-      "description": "I'm confident in my own abilities and do what I can to instill confidence in others.",
+      "description": "I’m confident in my own abilities and do what I can to instill confidence in others.",
       "source": "PLHBK"
     },
     {
@@ -1507,7 +1507,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Sincerity",
-      "description": "There's no good in pretending to be something I'm not. (Neutral)",
+      "description": "There’s no good in pretending to be something I’m not. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -1597,7 +1597,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Predestined",
-      "description": "I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.",
+      "description": "I’m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.",
       "source": "PLHBK"
     },
     {
@@ -1657,7 +1657,7 @@
       "specialty": "1",
       "dieroll": "2",
       "traitname": "Armorers, locksmiths, and finesmiths",
-      "description": "I am familiar with the best armorsmiths and locksmiths and the traders in their wares.",
+      "description": "I am familiar with the best armorsmiths and locksmiths and and the traders in their wares.",
       "source": "PLHBK"
     },
     {
@@ -1687,7 +1687,7 @@
       "specialty": "1",
       "dieroll": "5",
       "traitname": "Carpenters, roofers, and plasterers",
-      "description": "I deal with contractors and engineers of construction all the time.",
+      "description": "I deal with contracters and engineers of construction all the time.",
       "source": "PLHBK"
     },
     {
@@ -1847,7 +1847,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Perfectionist",
-      "description": "I believe that anything worth doing is worth doing right. I can't help it - I'm a perfectionist.",
+      "description": "I believe that anything worth doing is worth doing right. I can’t help it— I’m a perfectionist.",
       "source": "PLHBK"
     },
     {
@@ -1857,7 +1857,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Art snob",
-      "description": "I'm a snob who looks down on those who can't appreciate fine art.",
+      "description": "I’m a snob who looks down on those who can’t appreciate fine art.",
       "source": "PLHBK"
     },
     {
@@ -1877,7 +1877,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Bombastic",
-      "description": "I'm full of witty aphorisms and have a proverb for every occasion.",
+      "description": "I’m full of witty aphorisms and have a proverb for every occasion.",
       "source": "PLHBK"
     },
     {
@@ -1887,7 +1887,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Blunt",
-      "description": "I'm rude to people who lack my commitment to hard work and fair play.",
+      "description": "I’m rude to people who lack my commitment to hard work and fair play.",
       "source": "PLHBK"
     },
     {
@@ -1907,7 +1907,7 @@
       "specialty": "0",
       "dieroll": "7",
       "traitname": "Thrifty",
-      "description": "I don't part with my money easily and will haggle tirelessly to get the best deal possible.",
+      "description": "I don’t part with my money easily and will haggle tirelessly to get the best deal possible.",
       "source": "PLHBK"
     },
     {
@@ -1917,7 +1917,7 @@
       "specialty": "0",
       "dieroll": "8",
       "traitname": "Superior",
-      "description": "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me.",
+      "description": "I’m well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven’t heard of me.",
       "source": "PLHBK"
     },
     {
@@ -1957,7 +1957,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Greed",
-      "description": "I'm only in it for the money. (Evil)",
+      "description": "I’m only in it for the money. (Evil)",
       "source": "PLHBK"
     },
     {
@@ -1967,7 +1967,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "People",
-      "description": "I'm committed to the people I care about, not to ideals. (Neutral)",
+      "description": "I’m committed to the people I care about, not to ideals. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -1997,7 +1997,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Pursuant",
-      "description": "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy.",
+      "description": "I created a great work for someone, and then found them unworthy to receive it. I’m still looking for someone worthy.",
       "source": "PLHBK"
     },
     {
@@ -2017,7 +2017,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Rapturous",
-      "description": "I pursue wealth to secure someone's love.",
+      "description": "I pursue wealth to secure someone’s love.",
       "source": "PLHBK"
     },
     {
@@ -2047,7 +2047,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Acquisitive",
-      "description": "I'll do anything to get my hands on something rare or priceless.",
+      "description": "I’ll do anything to get my hands on something rare or priceless.",
       "source": "PLHBK"
     },
     {
@@ -2057,7 +2057,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Suspicious",
-      "description": "I'm quick to assume that someone is trying to cheat me.",
+      "description": "I’m quick to assume that someone is trying to cheat me.",
       "source": "PLHBK"
     },
     {
@@ -2077,7 +2077,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Covetous",
-      "description": "I'm never satisfied with what I have - I always want more.",
+      "description": "I’m never satisfied with what I have - I always want more.",
       "source": "PLHBK"
     },
     {
@@ -2097,7 +2097,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Envious",
-      "description": "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals.",
+      "description": "I’m horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I’m surrounded by rivals.",
       "source": "PLHBK"
     },
     {
@@ -2127,7 +2127,7 @@
       "specialty": "1",
       "dieroll": "3",
       "traitname": "Improper exile",
-      "description": "I was exiled for a crime I didn't commit.",
+      "description": "I was exiled for a crime I didn’t commit.",
       "source": "PLHBK"
     },
     {
@@ -2187,7 +2187,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Unsociable",
-      "description": "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
+      "description": "I’ve been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
       "source": "PLHBK"
     },
     {
@@ -2227,7 +2227,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Uncivilized",
-      "description": "I'm oblivious to etiquette and social expectations.",
+      "description": "I’m oblivious to etiquette and social expectations.",
       "source": "PLHBK"
     },
     {
@@ -2317,7 +2317,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Self-Knowledge",
-      "description": "If you know yourself, there's nothing left to know. (Any)",
+      "description": "If you know yourself, there’s nothing left to know. (Any)",
       "source": "PLHBK"
     },
     {
@@ -2347,7 +2347,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Seeker",
-      "description": "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
+      "description": "I’m still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
       "source": "PLHBK"
     },
     {
@@ -2427,7 +2427,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Bedeviled",
-      "description": "I'd risk too much to uncover a lost bit of knowledge.",
+      "description": "I’d risk too much to uncover a lost bit of knowledge.",
       "source": "PLHBK"
     },
     {
@@ -2437,7 +2437,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Reticent",
-      "description": "I like keeping secrets and won't share them with anyone.",
+      "description": "I like keeping secrets and won’t share them with anyone.",
       "source": "PLHBK"
     },
     {
@@ -2487,7 +2487,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Imperious",
-      "description": "I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.",
+      "description": "I don’t like to get my hands dirty, and I won’t be caught dead in unsuitable accommodations.",
       "source": "PLHBK"
     },
     {
@@ -2597,7 +2597,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Alliance",
-      "description": "My house's alliance with another noble family must be sustained at all costs.",
+      "description": "My house’s alliance with another noble family must be sustained at all costs.",
       "source": "PLHBK"
     },
     {
@@ -2667,7 +2667,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Irascible",
-      "description": "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.",
+      "description": "I too often hear veiled insults and threats in every word addressed to me, and I’m quick to anger.",
       "source": "PLHBK"
     },
     {
@@ -2807,7 +2807,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Wanderlust",
-      "description": "I'm driven by a wanderlust that led me away from home.",
+      "description": "I’m driven by a wanderlust that led me away from home.",
       "source": "PLHBK"
     },
     {
@@ -2827,7 +2827,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Determined",
-      "description": "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I'd do it again if I had to.",
+      "description": "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I’d do it again if I had to.",
       "source": "PLHBK"
     },
     {
@@ -2847,7 +2847,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Regardful",
-      "description": "I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear.",
+      "description": "I place no stock in wealthy or well-mannered folk. Money and manners won’t save you from a hungry owlbear.",
       "source": "PLHBK"
     },
     {
@@ -2857,7 +2857,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Fiddling",
-      "description": "I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.",
+      "description": "I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.",
       "source": "PLHBK"
     },
     {
@@ -2897,7 +2897,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Greater Good",
-      "description": "It is each person's responsibility to make the most happiness for the whole tribe. (Good)",
+      "description": "It is each person’s responsibility to make the most happiness for the whole tribe. (Good)",
       "source": "PLHBK"
     },
     {
@@ -3017,7 +3017,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Reckless",
-      "description": "There's no room for caution in a life lived to the fullest.",
+      "description": "There’s no room for caution in a life lived to the fullest.",
       "source": "PLHBK"
     },
     {
@@ -3027,7 +3027,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Silent scorn",
-      "description": "I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.",
+      "description": "I remember every insult I’ve received and nurse a silent resentment toward anyone who’s ever wronged me.",
       "source": "PLHBK"
     },
     {
@@ -3057,7 +3057,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Evolution",
-      "description": "Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.",
+      "description": "Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish.",
       "source": "PLHBK"
     },
     {
@@ -3157,7 +3157,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Boastful",
-      "description": "I've read every book in the world's greatest libraries - or I like to boast that I have.",
+      "description": "I've read every book in the world’s greatest libraries - or I like to boast that I have.",
       "source": "PLHBK"
     },
     {
@@ -3167,7 +3167,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Brilliant",
-      "description": "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.",
+      "description": "I'm used to helping out those who aren’t as smart as I am, and I patiently explain anything and everything to others.",
       "source": "PLHBK"
     },
     {
@@ -3177,7 +3177,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Analytical",
-      "description": "There's nothing I like more than a good mystery.",
+      "description": "There’s nothing I like more than a good mystery.",
       "source": "PLHBK"
     },
     {
@@ -3187,7 +3187,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Evenhanded",
-      "description": "I'm willing to listen to every side of an argument before I make my own judgment.",
+      "description": "I’m willing to listen to every side of an argument before I make my own judgment.",
       "source": "PLHBK"
     },
     {
@@ -3217,7 +3217,7 @@
       "specialty": "0",
       "dieroll": "8",
       "traitname": "Paranoid",
-      "description": "I'm convinced that people are always trying to steal my secrets.",
+      "description": "I’m convinced that people are always trying to steal my secrets.",
       "source": "PLHBK"
     },
     {
@@ -3317,7 +3317,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Narrative",
-      "description": "My life's work is a series of tomes related to a specific field of lore.",
+      "description": "My life’s work is a series of tomes related to a specific field of lore.",
       "source": "PLHBK"
     },
     {
@@ -3397,7 +3397,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Brazen",
-      "description": "I can't keep a secret to save my life, or anyone else's.",
+      "description": "I can’t keep a secret to save my life, or anyone else’s.",
       "source": "PLHBK"
     },
     {
@@ -3507,7 +3507,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Freedom",
-      "description": "The sea is freedom -the freedom to go anywhere and do anything. (Chaotic)",
+      "description": "The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)",
       "source": "PLHBK"
     },
     {
@@ -3517,7 +3517,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Mastery",
-      "description": "I'm a predator, and the other ships on the sea are my prey. (Evil)",
+      "description": "I’m a predator, and the other ships on the sea are my prey. (Evil)",
       "source": "PLHBK"
     },
     {
@@ -3527,7 +3527,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "People",
-      "description": "I'm committed to my crewmates, not to ideals. (Neutral)",
+      "description": "I’m committed to my crewmates, not to ideals. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -3537,7 +3537,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Aspiration",
-      "description": "Someday I'll own my own ship and chart my own destiny. (Any)",
+      "description": "Someday I’ll own my own ship and chart my own destiny. (Any)",
       "source": "PLHBK"
     },
     {
@@ -3547,7 +3547,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Loyalty",
-      "description": "I'm loyal to my captain first, everything else second.",
+      "description": "I’m loyal to my captain first, everything else second.",
       "source": "PLHBK"
     },
     {
@@ -3557,7 +3557,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Devotion",
-      "description": "The ship is most important -crewmates and captains come and go.",
+      "description": "The ship is most important—crewmates and captains come and go.",
       "source": "PLHBK"
     },
     {
@@ -3567,7 +3567,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Sentimental",
-      "description": "I'll always remember my first ship.",
+      "description": "I’ll always remember my first ship.",
       "source": "PLHBK"
     },
     {
@@ -3607,7 +3607,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Dutiful",
-      "description": "I follow orders, even if I think they're wrong.",
+      "description": "I follow orders, even if I think they’re wrong.",
       "source": "PLHBK"
     },
     {
@@ -3617,7 +3617,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Lazy",
-      "description": "I'll say anything to avoid having to do extra work.",
+      "description": "I’ll say anything to avoid having to do extra work.",
       "source": "PLHBK"
     },
     {
@@ -3637,7 +3637,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Dissipation",
-      "description": "Once I start drinking, it's hard for me to stop.",
+      "description": "Once I start drinking, it’s hard for me to stop.",
       "source": "PLHBK"
     },
     {
@@ -3647,7 +3647,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Acquisitive",
-      "description": "I can't help but pocket loose coins and other trinkets I come across.",
+      "description": "I can’t help but pocket loose coins and other trinkets I come across.",
       "source": "PLHBK"
     },
     {
@@ -3757,7 +3757,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Traumatized",
-      "description": "I'm haunted by memories of war. I can't get the images of violence out of my mind.",
+      "description": "I’m haunted by memories of war. I can’t get the images of violence out of my mind.",
       "source": "PLHBK"
     },
     {
@@ -3767,7 +3767,7 @@
       "specialty": "0",
       "dieroll": "3",
       "traitname": "Leery",
-      "description": "I've lost too many friends, and I'm slow to make new ones.",
+      "description": "I’ve lost too many friends, and I’m slow to make new ones.",
       "source": "PLHBK"
     },
     {
@@ -3777,7 +3777,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Narrator",
-      "description": "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.",
+      "description": "I’m full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.",
       "source": "PLHBK"
     },
     {
@@ -3867,7 +3867,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Live and Let Live",
-      "description": "Ideals aren't worth killing over or going to war for. (Neutral)",
+      "description": "Ideals aren’t worth killing over or going to war for. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -3917,7 +3917,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Retribution",
-      "description": "I'll never forget the crushing defeat my company suffered or the enemies who dealt it.",
+      "description": "I’ll never forget the crushing defeat my company suffered or the enemies who dealt it.",
       "source": "PLHBK"
     },
     {
@@ -3997,7 +3997,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Obstinate",
-      "description": "I'd rather eat my armor than admit when I'm wrong.",
+      "description": "I’d rather eat my armor than admit when I’m wrong.",
       "source": "PLHBK"
     },
     {
@@ -4057,7 +4057,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Skeptical",
-      "description": "I think anyone who's nice to me is hiding evil intent.",
+      "description": "I think anyone who’s nice to me is hiding evil intent.",
       "source": "PLHBK"
     },
     {
@@ -4067,7 +4067,7 @@
       "specialty": "0",
       "dieroll": "7",
       "traitname": "Filthy",
-      "description": "I don't like to bathe.",
+      "description": "I don’t like to bathe.",
       "source": "PLHBK"
     },
     {
@@ -4127,7 +4127,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "People",
-      "description": "I help the people who help me -that's what keeps us alive. (Neutral)",
+      "description": "I help the people who help me—that’s what keeps us alive. (Neutral)",
       "source": "PLHBK"
     },
     {
@@ -4147,7 +4147,7 @@
       "specialty": "0",
       "dieroll": "1",
       "traitname": "Safeguard",
-      "description": "My town or city is my home, and I'll fight to defend it.",
+      "description": "My town or city is my home, and I’ll fight to defend it.",
       "source": "PLHBK"
     },
     {
@@ -4187,7 +4187,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Fugitive",
-      "description": "I escaped my life of poverty by robbing an important person, and I'm wanted for it.",
+      "description": "I escaped my life of poverty by robbing an important person, and I’m wanted for it.",
       "source": "PLHBK"
     },
     {
@@ -4197,7 +4197,7 @@
       "specialty": "0",
       "dieroll": "6",
       "traitname": "Misfortune",
-      "description": "No one else should have to endure the hardships I've been through.",
+      "description": "No one else should have to endure the hardships I’ve been through.",
       "source": "PLHBK"
     },
     {
@@ -4217,7 +4217,7 @@
       "specialty": "0",
       "dieroll": "2",
       "traitname": "Voracious",
-      "description": "Gold seems like a lot of money to me, and I'll do just about anything for more of it.",
+      "description": "Gold seems like a lot of money to me, and I’ll do just about anything for more of it.",
       "source": "PLHBK"
     },
     {
@@ -4237,7 +4237,7 @@
       "specialty": "0",
       "dieroll": "4",
       "traitname": "Dishonorable",
-      "description": "I'd rather kill someone in their sleep then fight fair.",
+      "description": "I’d rather kill someone in their sleep then fight fair.",
       "source": "PLHBK"
     },
     {
@@ -4247,7 +4247,7 @@
       "specialty": "0",
       "dieroll": "5",
       "traitname": "Unsound",
-      "description": "It's not stealing if I need it more than someone else.",
+      "description": "It’s not stealing if I need it more than someone else.",
       "source": "PLHBK"
     },
     {

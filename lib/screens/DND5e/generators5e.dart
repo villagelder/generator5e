@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generator5e/screens/DND5e/personalities.dart';
 import 'package:generator5e/screens/DND5e/spellsets.dart';
 import 'package:generator5e/screens/DND5e/treasuregenerator.dart';
 import 'package:generator5e/screens/DND5e/trinketsGenerator.dart';
@@ -264,7 +265,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                 backgroundColor: Colors.blueGrey.shade900,
                               ),
                               onPressed: () {
-                                Navigator.push(context, TreasuresPage());
+                                Navigator.push(context, PersonalitiesPage());
                               },
                               child: Align(
                                 alignment: Alignment.center,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/services/magicItemGenerator.dart';
+import 'package:generator5e/services/personalityGenerator.dart';
 
 class PersonalitiesPage extends MaterialPageRoute<void> {
   PersonalitiesPage()
@@ -28,11 +28,11 @@ class AlignmentDDB extends StatefulWidget {
   State<AlignmentDDB> createState() => _AlignmentDDBState();
 }
 
-class ItemTypeDDB extends StatefulWidget {
-  const ItemTypeDDB({super.key});
+class GenTypeDDB extends StatefulWidget {
+  const GenTypeDDB({super.key});
 
   @override
-  State<ItemTypeDDB> createState() => _ItemTypeDDBState();
+  State<GenTypeDDB> createState() => _GenTypeDDBState();
 }
 
 class ItemSubTypeDDB extends StatefulWidget {
@@ -42,6 +42,14 @@ class ItemSubTypeDDB extends StatefulWidget {
   State<ItemSubTypeDDB> createState() => _ItemSubTypeDDBState();
 }
 
+const List<String> alignmentList = <String>[
+  'Any Alignment',
+  'Good',
+  'Neutral',
+  'Evil'
+];
+const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
+
 class BackgroundDDB extends StatefulWidget {
   const BackgroundDDB({super.key});
 
@@ -49,31 +57,21 @@ class BackgroundDDB extends StatefulWidget {
   State<BackgroundDDB> createState() => _BackgroundDDBState();
 }
 
-const List<String> backgroundList = <String>[
-  'Any Rarity',
-  'Common',
-  'Uncommon',
-  'Rare',
-  'Very Rare',
-  'Legendary',
-  'Artifact'
-];
-const List<String> itemTypeList = <String>[
-  'All Items',
-  'Armor',
-  'Potion',
-  'Ring',
-  'Rod',
-  'Scroll',
-  'Staff',
-  'Wand',
-  'Weapon',
-  'Wondrous Item'
-];
-const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
-
 class _BackgroundDDBState extends State<BackgroundDDB> {
-  static String rarityValue = backgroundList.first;
+  PersonalityGenerator personalityGenerator = PersonalityGenerator();
+  String? dropDownValue;
+
+  late Future<List<String>> backgroundsFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    backgroundsFuture = getAllBackgrounds();
+  }
+
+  Future<List<String>> getAllBackgrounds() async {
+    return personalityGenerator.getBackgroundList();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,38 +83,42 @@ class _BackgroundDDBState extends State<BackgroundDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.225,
+      width: MediaQuery.of(context).size.width * 0.34,
       // height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
-          child: DropdownButton<String>(
-            value: rarityValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
-            elevation: 16,
-            style: TextStyle(
-              color: const Color.fromRGBO(38, 50, 56, 1.0),
-              fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.035,
-              fontWeight: FontWeight.w500,
-            ),
-            underline: Container(
-              height: 2,
-              color: Colors.blueGrey,
-            ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                rarityValue = value!;
-              });
-            },
-            items: backgroundList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
+          child: FutureBuilder<List<String>>(
+              future: getAllBackgrounds(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const CircularProgressIndicator();
+                } else if (snapshot.hasError) {
+                  return Text('Error: ${snapshot.error}');
+                } else if (snapshot.hasData) {
+                  var data = snapshot.data!;
+                  if (data.isEmpty) {
+                    return const Text("No data available");
+                  }
+                  return DropdownButton<String>(
+                    value: dropDownValue ?? data[0],
+                    // ... other properties
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        dropDownValue = newValue!;
+                      });
+                    },
+                    items: data.map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      );
+                    }).toList(),
+                  );
+                } else {
+                  return const Text("No data");
+                }
+              }),
         ),
       ),
     );
@@ -171,8 +173,8 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
   }
 }
 
-class _ItemTypeDDBState extends State<ItemTypeDDB> {
-  static String itemValue = itemTypeList.first;
+class _GenTypeDDBState extends State<GenTypeDDB> {
+  static String itemValue = alignmentList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -206,7 +208,7 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
                 itemValue = value!;
               });
             },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
+            items: alignmentList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -220,7 +222,7 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
 }
 
 class _ItemSubTypeDDBState extends State<ItemSubTypeDDB> {
-  static String itemValue = itemTypeList.first;
+  static String itemValue = alignmentList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -254,7 +256,7 @@ class _ItemSubTypeDDBState extends State<ItemSubTypeDDB> {
                 itemValue = value!;
               });
             },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
+            items: alignmentList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -276,14 +278,14 @@ class ListViewer extends StatefulWidget {
 
 class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  List<String> magicItemsList = ['Magic Items'];
-  MagicItemGenerator5e mig5e = MagicItemGenerator5e();
+  List<String> personalityObjList = ['Personality'];
+  PersonalityGenerator pGen = PersonalityGenerator();
 
   updateList() {
-    magicItemsList = mig5e.generateMagicItemsArray(_BackgroundDDBState.rarityValue,
-        _ItemTypeDDBState.itemValue, _AlignmentDDBState.numberValue);
+    //personalityObjList = PersonalitiesPage()
+    personalityObjList;
     setState(() {
-      magicItemsList;
+      personalityObjList;
     });
   }
 
@@ -297,7 +299,8 @@ class _ListViewerState extends State<ListViewer> {
               width: MediaQuery.of(ctx).size.width * 0.4,
               height: MediaQuery.of(ctx).size.width * 0.44,
               child: Padding(
-                padding:  EdgeInsets.fromLTRB(20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
+                padding: EdgeInsets.fromLTRB(
+                    20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
                   children: [
                     Row(
@@ -306,7 +309,7 @@ class _ListViewerState extends State<ListViewer> {
                         SizedBox(
                           height: MediaQuery.of(ctx).size.height * 0.06,
                           child: Text(
-                            '5e Magic Item Generator',
+                            '5e Personality Generator',
                             style: TextStyle(
                               fontFamily: 'Georgia',
                               fontSize: MediaQuery.of(ctx).size.height * 0.044,
@@ -318,26 +321,29 @@ class _ListViewerState extends State<ListViewer> {
                       ],
                     ),
                     Padding(
-                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           BackgroundDDB(),
-                          AlignmentDDB(),
-                        ],
-                      ),
-                    ),
-                     Padding(
-                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ItemTypeDDB(),
+                          // AlignmentDDB(),
                         ],
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          GenTypeDDB(),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                       child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.34,
                         height: MediaQuery.of(ctx).size.height * 0.135,
@@ -352,7 +358,7 @@ class _ListViewerState extends State<ListViewer> {
                           ),
                           onPressed: () => updateList(),
                           child: Text(
-                            'Generate Magic Items',
+                            'Generate Personality',
                             style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize: MediaQuery.of(ctx).size.height * .035,
@@ -381,8 +387,8 @@ class _ListViewerState extends State<ListViewer> {
                             elevation: 0,
                             color: Colors.blueGrey.shade100,
                             child: ListView.builder(
-                              key: ObjectKey(magicItemsList[0]),
-                              itemCount: magicItemsList.length,
+                              key: ObjectKey(personalityObjList[0]),
+                              itemCount: personalityObjList.length,
                               itemBuilder: (ctx, index) {
                                 return Padding(
                                   padding: EdgeInsets.fromLTRB(
@@ -391,7 +397,7 @@ class _ListViewerState extends State<ListViewer> {
                                       0,
                                       0),
                                   child: ListTile(
-                                    title: Text(magicItemsList[index]),
+                                    title: Text(personalityObjList[index]),
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15.0),
                                       side: const BorderSide(
