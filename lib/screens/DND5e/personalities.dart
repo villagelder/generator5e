@@ -4,6 +4,9 @@ import 'package:generator5e/services/personalityGenerator.dart';
 class PersonalitiesPage extends MaterialPageRoute<void> {
   PersonalitiesPage()
       : super(builder: (BuildContext ctx) {
+
+    String? dropDownValue;
+
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
@@ -55,11 +58,16 @@ class BackgroundDDB extends StatefulWidget {
 
   @override
   State<BackgroundDDB> createState() => _BackgroundDDBState();
+
+  String? getDropDownValue(){
+    return _BackgroundDDBState?.dropDownValue;
+  }
 }
 
 class _BackgroundDDBState extends State<BackgroundDDB> {
   PersonalityGenerator personalityGenerator = PersonalityGenerator();
-  String? dropDownValue;
+  static String? dropDownValue;
+
 
   late Future<List<String>> backgroundsFuture;
 
@@ -126,7 +134,7 @@ class _BackgroundDDBState extends State<BackgroundDDB> {
 }
 
 class _AlignmentDDBState extends State<AlignmentDDB> {
-  static String numberValue = numberList.first;
+  static String alignmentValue = numberList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -142,7 +150,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: numberValue,
+            value: alignmentValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: TextStyle(
@@ -157,7 +165,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                numberValue = value!;
+                alignmentValue = value!;
               });
             },
             items: numberList.map<DropdownMenuItem<String>>((String value) {
@@ -278,14 +286,17 @@ class ListViewer extends StatefulWidget {
 
 class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  List<String> personalityObjList = ['Personality'];
-  PersonalityGenerator pGen = PersonalityGenerator();
+  List<String>? traitsList = ['Personality'];
+  PersonalityGenerator personalityGenerator = PersonalityGenerator();
+
+  String? dropDownValue;
+
 
   updateList() {
-    //personalityObjList = PersonalitiesPage()
-    personalityObjList;
+
+    traitsList = personalityGenerator.generate(const BackgroundDDB().getDropDownValue(), _AlignmentDDBState.alignmentValue);
     setState(() {
-      personalityObjList;
+      traitsList;
     });
   }
 
@@ -387,8 +398,8 @@ class _ListViewerState extends State<ListViewer> {
                             elevation: 0,
                             color: Colors.blueGrey.shade100,
                             child: ListView.builder(
-                              key: ObjectKey(personalityObjList[0]),
-                              itemCount: personalityObjList.length,
+                              key: ObjectKey(traitsList?[0]),
+                              itemCount: traitsList?.length,
                               itemBuilder: (ctx, index) {
                                 return Padding(
                                   padding: EdgeInsets.fromLTRB(
@@ -397,7 +408,7 @@ class _ListViewerState extends State<ListViewer> {
                                       0,
                                       0),
                                   child: ListTile(
-                                    title: Text(personalityObjList[index]),
+                                    title: Text(traitsList![index]),
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15.0),
                                       side: const BorderSide(
