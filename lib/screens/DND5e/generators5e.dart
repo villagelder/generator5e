@@ -37,14 +37,14 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
                     child: SizedBox(
-                      height: screenHeight * .05,
+                      height: screenHeight * .07,
                       child: Center(
                           child: Text(
                         '5e Generators',
                         style: TextStyle(
                           fontFamily: 'Georgia',
                           fontWeight: FontWeight.w500,
-                          fontSize: screenHeight * 0.05,
+                          fontSize: screenHeight * 0.07,
                           color: const Color.fromRGBO(38, 50, 56, 1.0),
                         ),
                       )),
@@ -53,7 +53,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                   SizedBox(
                     width: screenWidth * 0.9,
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

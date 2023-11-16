@@ -134,7 +134,7 @@ class _BackgroundDDBState extends State<BackgroundDDB> {
 }
 
 class _AlignmentDDBState extends State<AlignmentDDB> {
-  static String alignmentValue = numberList.first;
+  static String numberValue = numberList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -150,7 +150,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: alignmentValue,
+            value: numberValue,
             icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: TextStyle(
@@ -165,7 +165,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                alignmentValue = value!;
+                numberValue = value!;
               });
             },
             items: numberList.map<DropdownMenuItem<String>>((String value) {
@@ -293,8 +293,8 @@ class _ListViewerState extends State<ListViewer> {
 
 
   updateList() {
-
-    traitsList = personalityGenerator.generate(const BackgroundDDB().getDropDownValue(), _AlignmentDDBState.alignmentValue);
+    personalityGenerator.init();
+    traitsList = personalityGenerator.generate(BackgroundDDB().getDropDownValue(), _AlignmentDDBState.numberValue);
     setState(() {
       traitsList;
     });

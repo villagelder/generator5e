@@ -97,7 +97,7 @@ class _RarityDDBState extends State<RarityDDB> {
             style: TextStyle(
               color: const Color.fromRGBO(38, 50, 56, 1.0),
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.035,
+              fontSize: MediaQuery.of(context).size.height * 0.045,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -146,7 +146,7 @@ class _NumberDDBState extends State<NumberDDB> {
             style: TextStyle(
                 color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.035,
+                fontSize: MediaQuery.of(context).size.height * 0.045,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -194,7 +194,7 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
             style: TextStyle(
                 color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.035,
+                fontSize: MediaQuery.of(context).size.height * 0.045,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -295,9 +295,9 @@ class _ListViewerState extends State<ListViewer> {
           children: [
             SizedBox(
               width: MediaQuery.of(ctx).size.width * 0.4,
-              height: MediaQuery.of(ctx).size.width * 0.44,
               child: Padding(
-                padding:  EdgeInsets.fromLTRB(20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
+                padding: EdgeInsets.fromLTRB(
+                    20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
                   children: [
                     Row(
@@ -309,7 +309,7 @@ class _ListViewerState extends State<ListViewer> {
                             '5e Magic Item Generator',
                             style: TextStyle(
                               fontFamily: 'Georgia',
-                              fontSize: MediaQuery.of(ctx).size.height * 0.044,
+                              fontSize: MediaQuery.of(ctx).size.height * 0.05,
                               fontWeight: FontWeight.w500,
                               color: const Color.fromRGBO(34, 56, 69, 1.0),
                             ),
@@ -318,17 +318,22 @@ class _ListViewerState extends State<ListViewer> {
                       ],
                     ),
                     Padding(
-                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          RarityDDB(),
-                          NumberDDB(),
-                        ],
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      child:  SizedBox(
+                        width: MediaQuery.of(ctx).size.width * 0.4,
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            RarityDDB(),
+                            NumberDDB(),
+                          ],
+                        ),
                       ),
                     ),
-                     Padding(
-                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -337,7 +342,8 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                       child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.34,
                         height: MediaQuery.of(ctx).size.height * 0.135,

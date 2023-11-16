@@ -56,7 +56,6 @@ class _ListViewerState extends State<ListViewer> {
           children: [
             SizedBox(
               width: MediaQuery.of(ctx).size.width * 0.4,
-              height: MediaQuery.of(ctx).size.width * 0.44,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(20,  MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
@@ -70,7 +69,7 @@ class _ListViewerState extends State<ListViewer> {
                             '5e Treasure Generator',
                             style: TextStyle(
                               fontFamily: 'Georgia',
-                              fontSize: MediaQuery.of(ctx).size.height * 0.044,
+                              fontSize: MediaQuery.of(ctx).size.height * 0.06,
                               fontWeight: FontWeight.w500,
                               color: const Color.fromRGBO(34, 56, 69, 1.0),
                             ),
@@ -79,7 +78,7 @@ class _ListViewerState extends State<ListViewer> {
                       ],
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -91,7 +90,7 @@ class _ListViewerState extends State<ListViewer> {
                     Padding(
                       padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: SizedBox(
-                        width: MediaQuery.of(ctx).size.width * 0.34,
+                        width: MediaQuery.of(ctx).size.width * 0.44,
                         height: MediaQuery.of(ctx).size.height * 0.135,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -107,7 +106,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Generate Magic Items',
                             style: TextStyle(
                                 fontFamily: 'Georgia',
-                                fontSize: MediaQuery.of(ctx).size.height * .035,
+                                fontSize: MediaQuery.of(ctx).size.height * .050,
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
@@ -156,6 +155,7 @@ class _ListViewerState extends State<ListViewer> {
                                       0),
                                   child: ListTile(
                                     title: Text(treasureList[index]),
+                                    visualDensity: VisualDensity.compact,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15.0),
                                       side: const BorderSide(
@@ -181,62 +181,6 @@ class _ListViewerState extends State<ListViewer> {
   }
 }
 
-//           return Scaffold(
-//             backgroundColor: Colors.blueGrey.shade100,
-//             appBar: AppBar(
-//               title: const Text(
-//                 'DragonVault Generators',
-//                 style: TextStyle(
-//                   fontFamily: 'Georgia',
-//                   color: Color.fromRGBO(255, 245, 188, 1.0),
-//                 ),
-//               ),
-//               backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
-//             ),
-//             body: SingleChildScrollView(
-//               scrollDirection: Axis.vertical,
-//               child: Column(
-//                 children: [
-//                   Padding(
-//                     padding: EdgeInsets.fromLTRB(
-//                         0, MediaQuery.of(ctx).size.height * 0.0175, 0, 0),
-//                     child: SizedBox(
-//                       height: screenHeight * .05,
-//                       child: Center(
-//                         child: Text(
-//                           '5e Treasure Generator',
-//                           style: TextStyle(
-//                             fontFamily: 'Georgia',
-//                             fontSize: MediaQuery.of(ctx).size.height * 0.044,
-//                             fontWeight: FontWeight.w500,
-//                             color: Color.fromRGBO(34, 56, 69, 1.0),
-//                           ),
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                   SizedBox(
-//                     width: MediaQuery.of(ctx).size.width * 0.84,
-//                     child: Padding(
-//                       padding: EdgeInsets.fromLTRB(0, 12.0, 0, 12.0),
-//                       child: Text(
-//                         'Select your Challenge Rating and Treasure Type, then push \'Generate Treasure\' to '
-//                         'generate new treasure. Scroll to the bottom and push the Copy icon to copy the treasure text.',
-//                         style: TextStyle(
-//                             fontSize: MediaQuery.of(ctx).size.height * 0.024,
-//                             fontFamily: 'Georgia',
-//                             fontStyle: FontStyle.italic),
-//                       ),
-//                     ),
-//                   ),
-//                   const TextChanger(),
-//                 ],
-//               ),
-//             ),
-//           );
-//         });
-// }
-//
 class ChallengeRatingDDB extends StatefulWidget {
   const ChallengeRatingDDB({super.key});
 
@@ -278,7 +222,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
             style: TextStyle(
               color: const Color.fromRGBO(38, 50, 56, 1.0),
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.03,
+              fontSize: MediaQuery.of(context).size.height * 0.045,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -327,7 +271,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
             style: TextStyle(
                 color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.03,
+                fontSize: MediaQuery.of(context).size.height * 0.045,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,

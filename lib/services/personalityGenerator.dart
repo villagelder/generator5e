@@ -124,8 +124,6 @@ class PersonalityGenerator {
       opposedAlignment = "(Evil)";
     } else if (alignment == "Evil"){
       opposedAlignment = "(Good)";
-    } else {
-      opposedAlignment = "(Never-Never)";
     }
 
     //get two traits
@@ -155,7 +153,7 @@ class PersonalityGenerator {
         idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
 
     while (ideal.description.endsWith(opposedAlignment)){
-      ideal = traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
+      ideal = idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
     }
 
     ptList.add("Ideal: ${ideal.traitname}. ${ideal.description}");
@@ -166,7 +164,7 @@ class PersonalityGenerator {
         bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
 
     while (bond.description.endsWith(opposedAlignment)){
-      bond = traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
+      bond = bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
     }
     ptList.add("Bond: ${bond.traitname}. ${bond.description}");
 
@@ -176,7 +174,7 @@ class PersonalityGenerator {
         flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
 
     while (flaw.description.endsWith(opposedAlignment)){
-      flaw = traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
+      flaw = flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
     }
 
     ptList.add("Flaw: ${flaw.traitname}. ${flaw.description}");
