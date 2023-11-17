@@ -35,13 +35,6 @@ class ItemTypeDDB extends StatefulWidget {
   State<ItemTypeDDB> createState() => _ItemTypeDDBState();
 }
 
-class ItemSubTypeDDB extends StatefulWidget {
-  const ItemSubTypeDDB({super.key});
-
-  @override
-  State<ItemSubTypeDDB> createState() => _ItemSubTypeDDBState();
-}
-
 class RarityDDB extends StatefulWidget {
   const RarityDDB({super.key});
 
@@ -79,6 +72,7 @@ class _RarityDDBState extends State<RarityDDB> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
             color: const Color.fromRGBO(38, 50, 56, 1.0),
@@ -91,18 +85,22 @@ class _RarityDDBState extends State<RarityDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
             value: rarityValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
             elevation: 16,
             style: TextStyle(
-              color: const Color.fromRGBO(38, 50, 56, 1.0),
+              color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.045,
+              fontSize: MediaQuery.of(context).size.height * 0.04,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
               height: 2,
-              color: Colors.blueGrey,
+              color: Colors.brown.shade900,
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
@@ -130,9 +128,10 @@ class _NumberDDBState extends State<NumberDDB> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.1,
       // height: MediaQuery.of(context).size.height * 0.075,
@@ -140,17 +139,21 @@ class _NumberDDBState extends State<NumberDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
             value: numberValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
             elevation: 16,
             style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
+                color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.045,
+                fontSize: MediaQuery.of(context).size.height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
-              color: Colors.blueGrey,
+              color: Colors.brown.shade900,
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
@@ -178,9 +181,10 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.34,
       // height: MediaQuery.of(context).size.height * 0.075,
@@ -188,61 +192,17 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
             value: itemValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
-            elevation: 16,
-            style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.045,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.blueGrey,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
             ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                itemValue = value!;
-              });
-            },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ItemSubTypeDDBState extends State<ItemSubTypeDDB> {
-  static String itemValue = itemTypeList.first;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
-      ),
-      // width: MediaQuery.of(context).size.width * 0.4,
-      // height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            value: itemValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
             elevation: 16,
             style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
+                color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.023,
+                fontSize: MediaQuery.of(context).size.height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -289,137 +249,156 @@ class _ListViewerState extends State<ListViewer> {
 
   @override
   Widget build(BuildContext ctx) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            SizedBox(
-              width: MediaQuery.of(ctx).size.width * 0.4,
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(
-                    20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          height: MediaQuery.of(ctx).size.height * 0.06,
-                          child: Text(
-                            '5e Magic Item Generator',
-                            style: TextStyle(
-                              fontFamily: 'Georgia',
-                              fontSize: MediaQuery.of(ctx).size.height * 0.05,
-                              fontWeight: FontWeight.w500,
-                              color: const Color.fromRGBO(34, 56, 69, 1.0),
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+            Colors.amber.shade100,
+            Colors.brown.shade600,
+          ])),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.4,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(
+                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(ctx).size.height * 0.06,
+                            child: Text(
+                              '5e Magic Item Generator',
+                              style: TextStyle(
+                                fontFamily: 'Georgia',
+                                fontSize:
+                                    MediaQuery.of(ctx).size.height * 0.047,
+                                fontWeight: FontWeight.w600,
+                                color: const Color.fromRGBO(85, 0, 0, 1),
+                              ),
                             ),
                           ),
+                        ],
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.4,
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              RarityDDB(),
+                              NumberDDB(),
+                            ],
+                          ),
                         ),
-                      ],
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
-                      child: SizedBox(
-                        width: MediaQuery.of(ctx).size.width * 0.4,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            RarityDDB(),
-                            NumberDDB(),
+                            ItemTypeDDB(),
                           ],
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ItemTypeDDB(),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                      child: SizedBox(
-                        width: MediaQuery.of(ctx).size.width * 0.34,
-                        height: MediaQuery.of(ctx).size.height * 0.135,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor:
-                                const Color.fromRGBO(255, 245, 188, 1.0),
-                            backgroundColor: Colors.lightGreen.shade900,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.34,
+                          height: MediaQuery.of(ctx).size.height * 0.135,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor:
+                                  const Color.fromRGBO(255, 245, 188, 1.0),
+                              backgroundColor:
+                                  const Color.fromRGBO(57, 0, 0, 1.0),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                            ),
+                            onPressed: () => updateList(),
+                            child: Text(
+                              'Generate Magic Items',
+                              style: TextStyle(
+                                  fontFamily: 'Georgia',
+                                  fontSize:
+                                      MediaQuery.of(ctx).size.height * .05,
+                                  fontWeight: FontWeight.w700),
                             ),
                           ),
-                          onPressed: () => updateList(),
-                          child: Text(
-                            'Generate Magic Items',
-                            style: TextStyle(
-                                fontFamily: 'Georgia',
-                                fontSize: MediaQuery.of(ctx).size.height * .05,
-                                fontWeight: FontWeight.w700),
-                          ),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.58,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(ctx).size.height * 0.7,
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0)),
+                              elevation: 2,
+                              color: Colors.brown.shade500,
+                              child: ListView.builder(
+                                key: ObjectKey(magicItemsList[0]),
+                                itemCount: magicItemsList.length,
+                                itemBuilder: (ctx, index) {
+                                  return Padding(
+                                    padding: EdgeInsets.fromLTRB(
+                                        0,
+                                        MediaQuery.of(ctx).size.height * 0.01,
+                                        0,
+                                        0),
+                                    child: ListTile(
+                                      shape: RoundedRectangleBorder(
+                                          side: const BorderSide(width: 2),
+                                          borderRadius:
+                                              BorderRadius.circular(15.0)),
+                                      tileColor: Colors.orange.shade100,
+                                      title: Text(
+                                        magicItemsList[index],
+                                        style: TextStyle(
+                                            fontSize:
+                                                MediaQuery.of(ctx).size.height *
+                                                    0.04),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(ctx).size.width * 0.58,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(
-                        0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: MediaQuery.of(ctx).size.height * 0.7,
-                          child: Card(
-                            elevation: 2,
-                            color: Colors.blueGrey.shade100,
-                            child: ListView.builder(
-                              key: ObjectKey(magicItemsList[0]),
-                              itemCount: magicItemsList.length,
-                              itemBuilder: (ctx, index) {
-                                return Padding(
-                                  padding: EdgeInsets.fromLTRB(
-                                      0,
-                                      MediaQuery.of(ctx).size.height * 0.01,
-                                      0,
-                                      0),
-                                  child: ListTile(
-                                    title: Text(magicItemsList[index]),
-                                    visualDensity: VisualDensity.compact,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(15.0),
-                                      side: const BorderSide(
-                                          width: 1.5,
-                                          color: Color.fromRGBO(0, 102, 0, 1)),
-                                    ),
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
