@@ -20,16 +20,16 @@ class Generators5ePage extends MaterialPageRoute<Null> {
           double screenHeight = MediaQuery.of(context).size.height;
 
           return Scaffold(
-            backgroundColor: Colors.blueGrey.shade100,
+            backgroundColor: Colors.white,
             appBar: AppBar(
               title: const Text(
-                'DragonVault Generators',
+                'Legendary Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
-                  color: Color.fromRGBO(255, 245, 188, 1.0),
+                  color: Colors.white,
                 ),
               ),
-              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+              backgroundColor:const Color.fromRGBO(130, 0, 0, 1),
             ),
             body: Center(
               child: Column(
@@ -44,8 +44,8 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                         style: TextStyle(
                           fontFamily: 'Georgia',
                           fontWeight: FontWeight.w500,
-                          fontSize: screenHeight * 0.07,
-                          color: const Color.fromRGBO(38, 50, 56, 1.0),
+                          fontSize: screenHeight * 0.06,
+                          color: Colors.black,
                         ),
                       )),
                     ),
@@ -62,10 +62,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TreasuresPage());
@@ -76,10 +77,9 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                   'Treasure',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
-                                      fontSize: screenHeight * 0.04,
+                                      fontSize: screenHeight * 0.05,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -89,10 +89,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, MagicItemsPage());
@@ -105,8 +106,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -116,10 +116,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TrinketsPage());
@@ -130,8 +131,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                     fontFamily: 'Georgia',
                                     fontSize: screenHeight * 0.04,
                                     fontWeight: FontWeight.bold,
-                                    color: const Color.fromRGBO(
-                                        255, 245, 188, 1.0)),
+                                    color: Colors.amber.shade50),
                               ),
                             ),
                           ),
@@ -140,10 +140,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TrinketsPage());
@@ -156,8 +157,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -178,10 +178,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TreasuresPage());
@@ -194,8 +195,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -205,10 +205,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TreasuresPage());
@@ -221,8 +222,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                     color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -232,10 +232,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, NPCsPage());
@@ -248,8 +249,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -259,10 +259,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, PersonalitiesPage());
@@ -275,8 +276,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -297,10 +297,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, SpellSetsPage());
@@ -313,8 +314,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -324,10 +324,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, WildMagicPage());
@@ -340,8 +341,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -351,10 +351,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TreasuresPage());
@@ -367,8 +368,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),
@@ -378,10 +378,11 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                             height: screenHeight * 0.15,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
+                                elevation: 4,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
-                                backgroundColor: Colors.blueGrey.shade900,
+                                backgroundColor: Colors.lime.shade900,
                               ),
                               onPressed: () {
                                 Navigator.push(context, TreasuresPage());
@@ -394,8 +395,7 @@ class Generators5ePage extends MaterialPageRoute<Null> {
                                       fontFamily: 'Georgia',
                                       fontSize: screenHeight * 0.04,
                                       fontWeight: FontWeight.bold,
-                                      color: const Color.fromRGBO(
-                                          255, 245, 188, 1.0)),
+                                      color: Colors.amber.shade50),
                                 ),
                               ),
                             ),

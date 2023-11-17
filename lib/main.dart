@@ -23,16 +23,16 @@ class MyApp extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: Colors.blueGrey.shade100,
+      backgroundColor: Colors.amber.shade50,
       appBar: AppBar(
         title: const Text(
           'Legendary Generators',
           style: TextStyle(
             fontFamily: 'Georgia',
-            color: Color.fromRGBO(255, 245, 188, 1.0),
+            color: Colors.white,
           ),
         ),
-        backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+        backgroundColor: const Color.fromRGBO(130, 0, 0, 1),
       ),
       body: Center(
         child: Column(
@@ -43,12 +43,12 @@ class MyApp extends StatelessWidget {
                 height: screenHeight * .07,
                 child: Center(
                     child: Text(
-                  'Generators',
+                  'Legendary Generators',
                   style: TextStyle(
                     fontFamily: 'Georgia',
                     fontWeight: FontWeight.w500,
-                    fontSize: screenHeight * 0.05,
-                    color: const Color.fromRGBO(38, 50, 56, 1.0),
+                    fontSize: screenHeight * 0.06,
+                    color: Colors.black,
                   ),
                 )),
               ),
@@ -60,10 +60,39 @@ class MyApp extends StatelessWidget {
                 height: screenHeight * 0.175,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    elevation: 4,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
-                    backgroundColor: Colors.blueGrey.shade900,
+                    backgroundColor: Colors.lime.shade900,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, Generators5ePage());
+                  },
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text('5e Generators',
+                        style: TextStyle(
+                            fontFamily: 'Georgia',
+                            fontSize: screenHeight * 0.06,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.amber
+                                .shade50)), //const Color.fromRGBO(255, 245, 188, 1.0)),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, screenHeight * .03, 0, 0),
+              child: SizedBox(
+                width: screenWidth * 0.7,
+                height: screenHeight * 0.175,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    backgroundColor: Colors.lime.shade900,
                   ),
                   onPressed: () {
                     Navigator.push(context, TreasuresPage());
@@ -74,9 +103,9 @@ class MyApp extends StatelessWidget {
                       '5e Characters',
                       style: TextStyle(
                           fontFamily: 'Georgia',
-                          fontSize: screenHeight * 0.045,
+                          fontSize: screenHeight * 0.06,
                           fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
+                          color: Colors.amber.shade50),
                     ),
                   ),
                 ),
@@ -92,36 +121,7 @@ class MyApp extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
-                    backgroundColor: Colors.blueGrey.shade900,
-                  ),
-                  onPressed: () {
-                    Navigator.push(context, Generators5ePage());
-                  },
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '5e Generators',
-                      style: TextStyle(
-                          fontFamily: 'Georgia',
-                          fontSize: screenHeight * 0.045,
-                          fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, screenHeight * .03, 0, 0),
-              child: SizedBox(
-                width: screenWidth * 0.7,
-                height: screenHeight * 0.175,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    backgroundColor: Colors.blueGrey.shade900,
+                    backgroundColor: Colors.lime.shade900,
                   ),
                   onPressed: () {
                     Navigator.push(context, TreasuresPage());
@@ -132,9 +132,9 @@ class MyApp extends StatelessWidget {
                       'Other Fantasy Generators',
                       style: TextStyle(
                           fontFamily: 'Georgia',
-                          fontSize: screenHeight * 0.045,
+                          fontSize: screenHeight * 0.06,
                           fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(255, 245, 188, 1.0)),
+                          color: Colors.amber.shade50),
                     ),
                   ),
                 ),
