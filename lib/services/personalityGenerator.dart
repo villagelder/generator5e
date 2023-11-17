@@ -122,7 +122,7 @@ class PersonalityGenerator {
 
     if (alignment == "Good") {
       opposedAlignment = "(Evil)";
-    } else if (alignment == "Evil"){
+    } else if (alignment == "Evil") {
       opposedAlignment = "(Good)";
     }
 
@@ -132,14 +132,14 @@ class PersonalityGenerator {
     Personality t1 =
         traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
 
-    while (t1.description.endsWith(opposedAlignment)){
+    while (t1.description.contains(opposedAlignment)) {
       t1 = traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
     }
 
     Personality t2 =
         traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
 
-    while (t1 == t2 || t2.description.endsWith(opposedAlignment)) {
+    while (t1 == t2 || t2.description.contains(opposedAlignment)) {
       Personality t2 =
           traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
     }
@@ -152,7 +152,7 @@ class PersonalityGenerator {
     Personality ideal =
         idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
 
-    while (ideal.description.endsWith(opposedAlignment)){
+    while (ideal.description.contains(opposedAlignment)) {
       ideal = idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
     }
 
@@ -163,7 +163,7 @@ class PersonalityGenerator {
     Personality bond =
         bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
 
-    while (bond.description.endsWith(opposedAlignment)){
+    while (bond.description.contains(opposedAlignment)) {
       bond = bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
     }
     ptList.add("Bond: ${bond.traitname}. ${bond.description}");
@@ -173,7 +173,7 @@ class PersonalityGenerator {
     Personality flaw =
         flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
 
-    while (flaw.description.endsWith(opposedAlignment)){
+    while (flaw.description.contains(opposedAlignment)) {
       flaw = flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
     }
 

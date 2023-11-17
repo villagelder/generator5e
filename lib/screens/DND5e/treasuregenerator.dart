@@ -57,7 +57,8 @@ class _ListViewerState extends State<ListViewer> {
             SizedBox(
               width: MediaQuery.of(ctx).size.width * 0.4,
               child: Padding(
-                padding: EdgeInsets.fromLTRB(20,  MediaQuery.of(ctx).size.height * 0.04, 20, 0),
+                padding: EdgeInsets.fromLTRB(
+                    20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                 child: Column(
                   children: [
                     Row(
@@ -78,7 +79,8 @@ class _ListViewerState extends State<ListViewer> {
                       ],
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -88,7 +90,8 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.44,
                         height: MediaQuery.of(ctx).size.height * 0.135,
@@ -103,17 +106,18 @@ class _ListViewerState extends State<ListViewer> {
                           ),
                           onPressed: () => updateList(),
                           child: Text(
-                            'Generate Magic Items',
+                            'Generate Treasure',
                             style: TextStyle(
                                 fontFamily: 'Georgia',
-                                fontSize: MediaQuery.of(ctx).size.height * .050,
+                                fontSize: MediaQuery.of(ctx).size.height * .05,
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * .075, 0, 0),
                       child: IconButton(
                         iconSize: 36,
                         icon: const Icon(Icons.copy),
@@ -139,9 +143,9 @@ class _ListViewerState extends State<ListViewer> {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: MediaQuery.of(ctx).size.height * 0.75,
+                          height: MediaQuery.of(ctx).size.height * 0.7,
                           child: Card(
-                            elevation: 0,
+                            elevation: 2,
                             color: Colors.blueGrey.shade100,
                             child: ListView.builder(
                               key: ObjectKey(treasureList[0]),
@@ -222,7 +226,7 @@ class _TreasureTypeDDBState extends State<TreasureTypeDDB> {
             style: TextStyle(
               color: const Color.fromRGBO(38, 50, 56, 1.0),
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.045,
+              fontSize: MediaQuery.of(context).size.height * 0.04,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -271,7 +275,7 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
             style: TextStyle(
                 color: const Color.fromRGBO(38, 50, 56, 1.0),
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.045,
+                fontSize: MediaQuery.of(context).size.height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,

@@ -297,7 +297,7 @@ class _ListViewerState extends State<ListViewer> {
               width: MediaQuery.of(ctx).size.width * 0.4,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
-                    20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
+                    20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
                 child: Column(
                   children: [
                     Row(
@@ -319,8 +319,8 @@ class _ListViewerState extends State<ListViewer> {
                     ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                      child:  SizedBox(
+                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
+                      child: SizedBox(
                         width: MediaQuery.of(ctx).size.width * 0.4,
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -333,7 +333,7 @@ class _ListViewerState extends State<ListViewer> {
                     ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                          0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -361,7 +361,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Generate Magic Items',
                             style: TextStyle(
                                 fontFamily: 'Georgia',
-                                fontSize: MediaQuery.of(ctx).size.height * .035,
+                                fontSize: MediaQuery.of(ctx).size.height * .05,
                                 fontWeight: FontWeight.w700),
                           ),
                         ),
@@ -382,9 +382,9 @@ class _ListViewerState extends State<ListViewer> {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: MediaQuery.of(ctx).size.height * 0.75,
+                          height: MediaQuery.of(ctx).size.height * 0.7,
                           child: Card(
-                            elevation: 0,
+                            elevation: 2,
                             color: Colors.blueGrey.shade100,
                             child: ListView.builder(
                               key: ObjectKey(magicItemsList[0]),
@@ -398,6 +398,7 @@ class _ListViewerState extends State<ListViewer> {
                                       0),
                                   child: ListTile(
                                     title: Text(magicItemsList[index]),
+                                    visualDensity: VisualDensity.compact,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15.0),
                                       side: const BorderSide(
