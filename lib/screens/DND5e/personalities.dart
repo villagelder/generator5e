@@ -199,9 +199,10 @@ class _ListViewerState extends State<ListViewer> {
 
   updateList() {
     personalityGenerator.init();
-    traitsList = personalityGenerator.generate(
-        const BackgroundDDB().getDropDownValue(),
-        _AlignmentDDBState.alignValue);
+    String? bk = const BackgroundDDB().getDropDownValue();
+    bk ??= "Any Background";
+    traitsList = personalityGenerator.generateByBackground(
+        bk, _AlignmentDDBState.alignValue);
     setState(() {
       traitsList;
     });

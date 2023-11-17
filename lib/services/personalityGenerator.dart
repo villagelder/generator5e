@@ -32,14 +32,14 @@ class PersonalityGenerator {
   }
 
   List<Personality> getPersonalityByBackground(String background) {
-    if (background == "Any Background" || background == null) {
+    if (background == null) {
       return personalityObjList;
     }
     return personalityObjList.where((p) => p.background == background).toList();
   }
 
   List<Personality> getTraitsByBackground(String? background) {
-    if (background == "Any Background" || background == null) {
+    if (background == null) {
       return personalityObjList
           .where((p) => p.characteristic == "Trait")
           .toList();
@@ -50,7 +50,7 @@ class PersonalityGenerator {
   }
 
   List<Personality> getBondsByBackground(String? background) {
-    if (background == "Any Background" || background == null) {
+    if (background == null) {
       return personalityObjList
           .where((p) => p.characteristic == "Bond")
           .toList();
@@ -61,7 +61,7 @@ class PersonalityGenerator {
   }
 
   List<Personality> getIdealsByBackground(String? background) {
-    if (background == "Any Background" || background == null) {
+    if (background == null) {
       return personalityObjList
           .where((p) => p.characteristic == "Ideal")
           .toList();
@@ -72,7 +72,7 @@ class PersonalityGenerator {
   }
 
   List<Personality> getFlawsByBackground(String? background) {
-    if (background == "Any Background" || background == null) {
+    if (background == null) {
       return personalityObjList
           .where((p) => p.characteristic == "Flaw")
           .toList();
@@ -88,6 +88,16 @@ class PersonalityGenerator {
     }
 
     List<String> backgroundList = ['Any Background'];
+    for (Personality personality in personalityObjList) {
+      if (!backgroundList.contains(personality.background)) {
+        backgroundList.add(personality.background);
+      }
+    }
+    return backgroundList;
+  }
+
+  List<String> getAllBackgrounds() {
+    List<String> backgroundList = [];
     for (Personality personality in personalityObjList) {
       if (!backgroundList.contains(personality.background)) {
         backgroundList.add(personality.background);
@@ -116,7 +126,7 @@ class PersonalityGenerator {
     return personalityObjList.where((p) => p.characteristic == "Bond").toList();
   }
 
-  List<String>? generate(String? background, String alignment) {
+  List<String>? generateByBackground(String? background, String alignment) {
     List<String> ptList = [];
     String opposedAlignment = "(Never-Never)";
 
@@ -140,8 +150,81 @@ class PersonalityGenerator {
         traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
 
     while (t1 == t2 || t2.description.contains(opposedAlignment)) {
-      Personality t2 =
-          traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
+      t2 = traitsList[Utility.getRandomIndexFromListSize(traitsList.length)];
+    }
+
+    ptList.add("Trait: ${t1.traitname}. ${t1.description}");
+    ptList.add("Trait: ${t2.traitname}. ${t2.description}");
+
+    //get ideal
+    List<Personality> idealsList = getIdealsByBackground(background!);
+    Personality ideal =
+        idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
+
+    while (ideal.description.contains(opposedAlignment)) {
+      ideal = idealsList[Utility.getRandomIndexFromListSize(idealsList.length)];
+    }
+
+    ptList.add("Ideal: ${ideal.traitname}. ${ideal.description}");
+
+    //get bond
+    List<Personality> bondsList = getBondsByBackground(background!);
+    Personality bond =
+        bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
+
+    while (bond.description.contains(opposedAlignment)) {
+      bond = bondsList[Utility.getRandomIndexFromListSize(bondsList.length)];
+    }
+    ptList.add("Bond: ${bond.traitname}. ${bond.description}");
+
+    //get flaw
+    List<Personality> flawsList = getFlawsByBackground(background!);
+    Personality flaw =
+        flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
+
+    while (flaw.description.contains(opposedAlignment)) {
+      flaw = flawsList[Utility.getRandomIndexFromListSize(flawsList.length)];
+    }
+
+    ptList.add("Flaw: ${flaw.traitname}. ${flaw.description}");
+
+    return ptList;
+  }
+
+  List<String>? generateUnabridged(String? background, String alignment) {
+    List<String> ptList = [];
+    String opposedAlignment = "(Never-Never)";
+
+    if (alignment == "Good") {
+      opposedAlignment = "(Evil)";
+    } else if (alignment == "Evil") {
+      opposedAlignment = "(Good)";
+    }
+
+    if (background == "Any Background") {
+      List<String> backgrounds = getAllBackgrounds();
+      String bk =
+          backgrounds[Utility.getRandomIndexFromListSize(backgrounds.length)];
+    }
+    if (background == "Unabridged") {
+      background = null;
+    }
+
+    //get two traits
+    List<Personality> traitsList1 = getTraitsByBackground(background!);
+    List<Personality> traitsList2 = getTraitsByBackground(background!);
+    Personality t1 =
+        traitsList1[Utility.getRandomIndexFromListSize(traitsList1.length)];
+
+    while (t1.description.contains(opposedAlignment)) {
+      t1 = traitsList1[Utility.getRandomIndexFromListSize(traitsList1.length)];
+    }
+
+    Personality t2 =
+        traitsList2[Utility.getRandomIndexFromListSize(traitsList2.length)];
+
+    while (t1 == t2 || t2.description.contains(opposedAlignment)) {
+      t2 = traitsList2[Utility.getRandomIndexFromListSize(traitsList2.length)];
     }
 
     ptList.add("Trait: ${t1.traitname}. ${t1.description}");
