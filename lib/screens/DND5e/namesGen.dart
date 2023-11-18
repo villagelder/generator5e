@@ -22,32 +22,17 @@ class NamesGenPage extends MaterialPageRoute<void> {
         });
 }
 
+const List<String> genderList = [];
+
 class GenderDDB extends StatefulWidget {
   const GenderDDB({super.key});
 
   @override
   State<GenderDDB> createState() => _GenderDDBState();
-
-  String? getDropDownValue() {
-    return _GenderDDBState.dropDownValue;
-  }
 }
 
 class _GenderDDBState extends State<GenderDDB> {
-  NameGenerator5e nameGenerator = NameGenerator5e();
-  static String? dropDownValue;
-
-  late Future<List<String>> racesFuture;
-
-  @override
-  void initState() {
-    super.initState();
-    racesFuture = getAllRacesWithNames();
-  }
-
-  Future<List<String>> getAllRacesWithNames() async {
-    return nameGenerator.getRacesWithNames();
-  }
+  static String numberValue = numberList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -58,57 +43,41 @@ class _GenderDDBState extends State<GenderDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.34,
+      width: MediaQuery.of(context).size.width * 0.1,
       // height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
-          child: FutureBuilder<List<String>>(
-              future: racesFuture,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const CircularProgressIndicator();
-                } else if (snapshot.hasError) {
-                  return Text('Error: ${snapshot.error}');
-                } else if (snapshot.hasData) {
-                  var data = snapshot.data!;
-                  if (data.isEmpty) {
-                    return const Text("No data available");
-                  }
-                  return DropdownButton<String>(
-                    dropdownColor: Colors.brown.shade400,
-                    value: dropDownValue ?? data[0],
-                    icon: Icon(
-                      Icons.arrow_drop_down_outlined,
-                      color: Colors.brown.shade900,
-                    ),
-                    elevation: 16,
-                    style: TextStyle(
-                        color: Colors.amber.shade100,
-                        fontFamily: 'Georgia',
-                        fontSize: MediaQuery.of(context).size.height * 0.04,
-                        fontWeight: FontWeight.w500),
-                    // ... other properties
-                    underline: Container(
-                      height: 2,
-                      color: Colors.brown.shade900,
-                    ),
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        dropDownValue = newValue!;
-                      });
-                    },
-                    items: data.map<DropdownMenuItem<String>>((String value) {
-                      return DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    }).toList(),
-                  );
-                } else {
-                  return const Text("No data");
-                }
-              }),
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: numberValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            elevation: 16,
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                numberValue = value!;
+              });
+            },
+            items: numberList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
         ),
       ),
     );
@@ -207,8 +176,6 @@ class _RaceDDBState extends State<RaceDDB> {
     );
   }
 }
-
-
 
 class ListViewer extends StatefulWidget {
   const ListViewer({super.key});
