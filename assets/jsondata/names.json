@@ -77,7 +77,8 @@
         "Torunn",
         "Ungart"
       ],
-      "nicknames": []
+      "thirdname": [],
+      "moniker": null
     },
     {
       "id": 2,
@@ -140,14 +141,15 @@
         "Verthisathurgiesh",
         "Yarjerit"
       ],
-      "nicknames": [
+      "thirdname": [
         "Climber",
         "Earbender",
         "Leaper",
         "Pious",
         "Shieldbiter",
         "Zealous"
-      ]
+      ],
+      "moniker": null
     },
     {
       "id": 3,
@@ -227,7 +229,7 @@
         "Siannodel (Moonbrook)",
         "Xiloscient (Goldpetal)"
       ],
-      "nicknames": [
+      "thirdname": [
         "Ara",
         "Bryn",
         "Del",
@@ -245,7 +247,8 @@
         "Syllin",
         "Thia",
         "Vall"
-      ]
+      ],
+      "moniker": "childhood"
     },
     {
       "id": 4,
@@ -313,7 +316,7 @@
         "Timbers",
         "Turen"
       ],
-      "nicknames": [
+      "thirdname": [
         "Aleslosh",
         "Ashhearth",
         "Badger",
@@ -327,7 +330,8 @@
         "Pock",
         "Sparklegem",
         "Stumbleduck"
-      ]
+      ],
+      "moniker": "nickname"
     },
     {
       "id": 5,
@@ -388,7 +392,8 @@
         "Tosscobble",
         "Underbough"
       ],
-      "nicknames": []
+      "thirdname": [],
+      "moniker": null
     },
     {
       "id": 6,
@@ -423,7 +428,8 @@
         "Yevelda"
       ],
       "lastnames": [],
-      "nicknames": []
+      "thirdname": [],
+      "moniker": null
     },
     {
       "id": 7,
@@ -461,7 +467,7 @@
         "Theia"
       ],
       "lastnames": [],
-      "nicknames": [
+      "thirdname": [
         "Art",
         "Carrion",
         "Chant",
@@ -483,7 +489,8 @@
         "Temerity",
         "Torment",
         "Weary"
-      ]
+      ],
+      "moniker": "virtue"
     }
   ]
 }
