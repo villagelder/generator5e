@@ -12,17 +12,13 @@ class NameGenerator5e {
   List<Name> namesObjList = [];
   bool _isLoaded = false;
 
-  MagicItemGenerator5e() {
-    readJsonNames().then((_) {
-      _isLoaded = true;
-      getNamesObjectList();
-    });
+  NameGenerator5e() {
+    init();
   }
 
-  sync() {
-    while (!_isLoaded) {
-      Future.delayed(const Duration(milliseconds: 100));
-    }
+  Future<void> init() async {
+    await readJsonNames();
+    getNamesObjectList();
   }
 
   Future<void> readJsonNames() async {
@@ -41,7 +37,6 @@ class NameGenerator5e {
   }
 
   Name getNameObjectByRace(String race) {
-    race = race.toLowerCase();
     return namesObjList.where((n) => n.race == race).toList()[0];
   }
 
@@ -49,7 +44,8 @@ class NameGenerator5e {
     Name nameObj = getNameObjectByRace(race);
     List<String> firstNamesList = [];
     List<String>? lastNamesList = nameObj.lastNames;
-    List<String>? nicknamesList = nameObj.nicknames;
+    List<String>? nicknamesList = nameObj.thirdNames;
+    String? moniker = nameObj.moniker;
 
     if (gender == "Male") {
       firstNamesList = nameObj.maleFirstNames;
@@ -69,7 +65,7 @@ class NameGenerator5e {
       String nickname = nicknamesList[
           Utility.getRandomIndexFromListSize(nicknamesList.length)];
 
-      return "$firstName $lastName $nickname";
+      return "$firstName $lastName -- $moniker: $nickname";
     }
 
     return "$firstName $lastName";
@@ -84,15 +80,17 @@ class NameGenerator5e {
     return namesList;
   }
 
-  List<String> getRacesWithNames() {
-    List<String> races = [];
+  Future<List<String>>getRacesWithNames() async {
+    if (!_isLoaded) {
+      await init();
+    }
 
-    for (Name name in getNamesObjectList()){
-
-      if (!races.contains(name.race)) {
-        races.add(name.race);
+    List<String> racesList = ['Any Race'];
+    for (Name name in namesObjList) {
+      if (!racesList.contains(name.race)) {
+        racesList.add(name.race);
       }
     }
-    return races;
+    return racesList;
   }
 }

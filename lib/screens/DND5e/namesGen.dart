@@ -22,19 +22,85 @@ class NamesGenPage extends MaterialPageRoute<void> {
         });
 }
 
+const List<String> genderList = [
+  "Female",
+  "Male",
+  "Non-binary",
+  "Trans Man",
+  "Trans Woman"
+];
+
 class GenderDDB extends StatefulWidget {
   const GenderDDB({super.key});
 
   @override
   State<GenderDDB> createState() => _GenderDDBState();
-
-  String? getDropDownValue() {
-    return _GenderDDBState.dropDownValue;
-  }
 }
 
 class _GenderDDBState extends State<GenderDDB> {
-  NameGenerator5e nameGenerator = NameGenerator5e();
+  static String genderValue = genderList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.34,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: genderValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                genderValue = value!;
+              });
+            },
+            items: genderList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class RaceDDB extends StatefulWidget {
+  const RaceDDB({super.key});
+
+  @override
+  State<RaceDDB> createState() => _RaceDDBState();
+
+  String? getDropDownValue() {
+    return _RaceDDBState.dropDownValue;
+  }
+}
+
+class _RaceDDBState extends State<RaceDDB> {
+  NameGenerator5e nameGenerator5e = NameGenerator5e();
   static String? dropDownValue;
 
   late Future<List<String>> racesFuture;
@@ -42,11 +108,11 @@ class _GenderDDBState extends State<GenderDDB> {
   @override
   void initState() {
     super.initState();
-    racesFuture = getAllRacesWithNames();
+    racesFuture = getAllRaces();
   }
 
-  Future<List<String>> getAllRacesWithNames() async {
-    return nameGenerator.getRacesWithNames();
+  Future<List<String>> getAllRaces() async {
+    return nameGenerator5e.getRacesWithNames();
   }
 
   @override
@@ -115,101 +181,6 @@ class _GenderDDBState extends State<GenderDDB> {
   }
 }
 
-class RaceDDB extends StatefulWidget {
-  const RaceDDB({super.key});
-
-  @override
-  State<RaceDDB> createState() => _RaceDDBState();
-
-  String? getDropDownValue() {
-    return _RaceDDBState.dropDownValue;
-  }
-}
-
-class _RaceDDBState extends State<RaceDDB> {
-  PersonalityGenerator personalityGenerator = PersonalityGenerator();
-  static String? dropDownValue;
-
-  late Future<List<String>> backgroundsFuture;
-
-  @override
-  void initState() {
-    super.initState();
-    backgroundsFuture = getAllBackgrounds();
-  }
-
-  Future<List<String>> getAllBackgrounds() async {
-    return personalityGenerator.getBackgroundList();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.brown.shade400,
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.34,
-      // height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: FutureBuilder<List<String>>(
-              future: backgroundsFuture,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const CircularProgressIndicator();
-                } else if (snapshot.hasError) {
-                  return Text('Error: ${snapshot.error}');
-                } else if (snapshot.hasData) {
-                  var data = snapshot.data!;
-                  if (data.isEmpty) {
-                    return const Text("No data available");
-                  }
-                  return DropdownButton<String>(
-                    dropdownColor: Colors.brown.shade400,
-                    value: dropDownValue ?? data[0],
-                    icon: Icon(
-                      Icons.arrow_drop_down_outlined,
-                      color: Colors.brown.shade900,
-                    ),
-                    elevation: 16,
-                    style: TextStyle(
-                        color: Colors.amber.shade100,
-                        fontFamily: 'Georgia',
-                        fontSize: MediaQuery.of(context).size.height * 0.04,
-                        fontWeight: FontWeight.w500),
-                    // ... other properties
-                    underline: Container(
-                      height: 2,
-                      color: Colors.brown.shade900,
-                    ),
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        dropDownValue = newValue!;
-                      });
-                    },
-                    items: data.map<DropdownMenuItem<String>>((String value) {
-                      return DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    }).toList(),
-                  );
-                } else {
-                  return const Text("No data");
-                }
-              }),
-        ),
-      ),
-    );
-  }
-}
-
-
-
 class ListViewer extends StatefulWidget {
   const ListViewer({super.key});
 
@@ -219,19 +190,18 @@ class ListViewer extends StatefulWidget {
 
 class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  List<String>? traitsList = ['Personality'];
-  PersonalityGenerator personalityGenerator = PersonalityGenerator();
+  List<String>? namesList = ['Roll for names'];
+  NameGenerator5e nameGenerator5e = NameGenerator5e();
 
   String? dropDownValue;
 
   updateList() {
-    personalityGenerator.init();
-    String? bk = const RaceDDB().getDropDownValue();
-    bk ??= "Any Background";
-    traitsList = personalityGenerator.generateByBackground(
-        bk, _GenderDDBState.alignValue);
+    String? race = const RaceDDB().getDropDownValue();
+    race ??= "Any Race";
+    namesList =
+        nameGenerator5e.generateNames(race, _GenderDDBState.genderValue, 10);
     setState(() {
-      traitsList;
+      namesList;
     });
   }
 
@@ -264,11 +234,11 @@ class _ListViewerState extends State<ListViewer> {
                           SizedBox(
                             height: MediaQuery.of(ctx).size.height * 0.06,
                             child: Text(
-                              '5e Personality Generator',
+                              '5e Names Generator',
                               style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize:
-                                    MediaQuery.of(ctx).size.height * 0.044,
+                                    MediaQuery.of(ctx).size.height * 0.055,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),
@@ -318,7 +288,7 @@ class _ListViewerState extends State<ListViewer> {
                                 ),
                                 onPressed: () => updateList(),
                                 child: Text(
-                                  'Generate Personality',
+                                  'Generate Names',
                                   style: TextStyle(
                                       fontFamily: 'Georgia',
                                       fontSize:
@@ -352,8 +322,8 @@ class _ListViewerState extends State<ListViewer> {
                               elevation: 2,
                               color: Colors.brown.shade500,
                               child: ListView.builder(
-                                key: ObjectKey(traitsList?[0]),
-                                itemCount: traitsList?.length,
+                                key: ObjectKey(namesList?[0]),
+                                itemCount: namesList?.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(
                                     padding: EdgeInsets.fromLTRB(
@@ -368,7 +338,7 @@ class _ListViewerState extends State<ListViewer> {
                                               BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
-                                        traitsList![index],
+                                        namesList![index],
                                         style: TextStyle(
                                             fontSize:
                                                 MediaQuery.of(ctx).size.height *

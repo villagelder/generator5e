@@ -2,7 +2,7 @@
   "names": [
     {
       "id": 1,
-      "race": "dwarf",
+      "race": "Dwarf",
       "malefirstnames": [
         "Adrik",
         "Alberich",
@@ -77,12 +77,12 @@
         "Torunn",
         "Ungart"
       ],
-      "thirdname": [],
-      "moniker": null
+      "thirdnames": [],
+      "moniker": "moniker"
     },
     {
       "id": 2,
-      "race": "dragonborn",
+      "race": "Dragonborn",
       "malefirstnames": [
         "Arjhan",
         "Balasar",
@@ -141,7 +141,7 @@
         "Verthisathurgiesh",
         "Yarjerit"
       ],
-      "thirdname": [
+      "thirdnames": [
         "Climber",
         "Earbender",
         "Leaper",
@@ -149,11 +149,11 @@
         "Shieldbiter",
         "Zealous"
       ],
-      "moniker": null
+      "moniker": "Childhood Name"
     },
     {
       "id": 3,
-      "race": "elf",
+      "race": "Elf",
       "malefirstnames": [
         "Adran",
         "Aelar",
@@ -229,7 +229,7 @@
         "Siannodel (Moonbrook)",
         "Xiloscient (Goldpetal)"
       ],
-      "thirdname": [
+      "thirdnames": [
         "Ara",
         "Bryn",
         "Del",
@@ -248,11 +248,11 @@
         "Thia",
         "Vall"
       ],
-      "moniker": "childhood"
+      "moniker": "Childhood Name"
     },
     {
       "id": 4,
-      "race": "gnome",
+      "race": "Gnome",
       "malefirstnames": [
         "Alston",
         "Alvyn",
@@ -316,7 +316,7 @@
         "Timbers",
         "Turen"
       ],
-      "thirdname": [
+      "thirdnames": [
         "Aleslosh",
         "Ashhearth",
         "Badger",
@@ -331,11 +331,11 @@
         "Sparklegem",
         "Stumbleduck"
       ],
-      "moniker": "nickname"
+      "moniker": "Nickname"
     },
     {
       "id": 5,
-      "race": "halfling",
+      "race": "Halfling",
       "malefirstnames": [
         "Alton",
         "Ander",
@@ -392,12 +392,12 @@
         "Tosscobble",
         "Underbough"
       ],
-      "thirdname": [],
-      "moniker": null
+      "thirdnames": [],
+      "moniker": "moniker"
     },
     {
       "id": 6,
-      "race": "orc",
+      "race": "Orc",
       "malefirstnames": [
         "Dench",
         "Feng",
@@ -428,12 +428,12 @@
         "Yevelda"
       ],
       "lastnames": [],
-      "thirdname": [],
-      "moniker": null
+      "thirdnames": [],
+      "moniker": "moniker"
     },
     {
       "id": 7,
-      "race": "tiefling",
+      "race": "Tiefling",
       "malefirstnames": [
         "Akmenos",
         "Amnon",
@@ -467,7 +467,7 @@
         "Theia"
       ],
       "lastnames": [],
-      "thirdname": [
+      "thirdnames": [
         "Art",
         "Carrion",
         "Chant",
@@ -490,7 +490,7 @@
         "Torment",
         "Weary"
       ],
-      "moniker": "virtue"
+      "moniker": "Virtue Name"
     }
   ]
 }
