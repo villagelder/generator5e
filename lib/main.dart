@@ -4,6 +4,7 @@ import 'package:generator5e/screens/DND5e/generators5e.dart';
 import 'package:generator5e/screens/DND5e/treasuregenerator.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,

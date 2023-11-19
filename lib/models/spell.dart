@@ -5,9 +5,9 @@ import 'package:json_annotation/json_annotation.dart';
 @JsonSerializable()
 class Spell {
   String name;
-  String? description;
+  String description;
   String? higherLevel;
-  String? source;
+  String source;
   String? range;
   String? components;
   String? material;
@@ -15,9 +15,9 @@ class Spell {
   String? duration;
   String? concentration;
   String? castingTime;
-  String? level;
-  String? school;
-  String? classes;
+  String level;
+  String school;
+  String classes;
   String? archetypes;
   String? domains;
   String? oaths;
@@ -48,9 +48,9 @@ class Spell {
   factory Spell.fromJson(Map<String, dynamic> json) {
     return Spell(
         json['name'] as String,
-        json['description'] as String?,
-        json['higherLevel'] as String?,
-        json['source'] as String?,
+        json['description'] as String,
+        json['higherLevel'] as String,
+        json['source'] as String,
         json['range'] as String?,
         json['components'] as String?,
         json['material'] as String?,
@@ -58,9 +58,9 @@ class Spell {
         json['duration'] as String?,
         json['concentration'] as String?,
         json['castingTime'] as String?,
-        json['level'] as String?,
-        json['school'] as String?,
-        json['classes'] as String?,
+        json['level'] as String,
+        json['school'] as String,
+        json['classes'] as String,
         json['archetypes'] as String?,
         json['domains'] as String?,
         json['oaths'] as String?,

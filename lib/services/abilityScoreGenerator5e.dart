@@ -292,12 +292,12 @@ class AbilityScoreGenerator {
 
   Map<String, int> getExtremeArray() {
     Map<String, int> abilitiesMap = {
-      "1": 3,
+      "1": 4,
       "2": 6,
       "3": 7,
       "4": 15,
       "5": 16,
-      "6": 18,
+      "6": 17,
     };
 
     return abilitiesMap;

@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:generator5e/services/magicItemGenerator.dart';
 
@@ -8,21 +6,21 @@ import '../../services/abilityScoreGenerator5e.dart';
 class AbilityGenPage extends MaterialPageRoute<void> {
   AbilityGenPage()
       : super(builder: (BuildContext ctx) {
-    return Scaffold(
-      backgroundColor: Colors.blueGrey.shade100,
-      appBar: AppBar(
-        title: const Text(
-          'Legendary Generators',
-          style: TextStyle(
-            fontFamily: 'Georgia',
-            color: Color.fromRGBO(255, 245, 188, 1.0),
-          ),
-        ),
-        backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
-      ),
-      body: const ListViewer(),
-    );
-  });
+          return Scaffold(
+            backgroundColor: Colors.blueGrey.shade100,
+            appBar: AppBar(
+              title: const Text(
+                'Legendary Generators',
+                style: TextStyle(
+                  fontFamily: 'Georgia',
+                  color: Color.fromRGBO(255, 245, 188, 1.0),
+                ),
+              ),
+              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+            ),
+            body: const ListViewer(),
+          );
+        });
 }
 
 class MethodDDB extends StatefulWidget {
@@ -102,8 +100,6 @@ class _MethodDDBState extends State<MethodDDB> {
   }
 }
 
-
-
 class ListViewer extends StatefulWidget {
   const ListViewer({super.key});
 
@@ -133,9 +129,9 @@ class _ListViewerState extends State<ListViewer> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.amber.shade100,
-                Colors.brown.shade600,
-              ])),
+            Colors.amber.shade100,
+            Colors.brown.shade600,
+          ])),
       child: Column(
         children: [
           Row(
@@ -157,7 +153,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize:
-                                MediaQuery.of(ctx).size.height * 0.047,
+                                    MediaQuery.of(ctx).size.height * 0.047,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),
@@ -187,9 +183,9 @@ class _ListViewerState extends State<ListViewer> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               foregroundColor:
-                              const Color.fromRGBO(255, 245, 188, 1.0),
+                                  const Color.fromRGBO(255, 245, 188, 1.0),
                               backgroundColor:
-                              const Color.fromRGBO(57, 0, 0, 1.0),
+                                  const Color.fromRGBO(57, 0, 0, 1.0),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
@@ -200,7 +196,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                  MediaQuery.of(ctx).size.height * .05,
+                                      MediaQuery.of(ctx).size.height * .05,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -241,14 +237,14 @@ class _ListViewerState extends State<ListViewer> {
                                       shape: RoundedRectangleBorder(
                                           side: const BorderSide(width: 2),
                                           borderRadius:
-                                          BorderRadius.circular(15.0)),
+                                              BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
                                         diceRollsList[index],
                                         style: TextStyle(
                                             fontSize:
-                                            MediaQuery.of(ctx).size.height *
-                                                0.04),
+                                                MediaQuery.of(ctx).size.height *
+                                                    0.04),
                                       ),
                                     ),
                                   );
@@ -269,5 +265,3 @@ class _ListViewerState extends State<ListViewer> {
     );
   }
 }
-
-
