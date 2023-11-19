@@ -49,7 +49,7 @@ class _GenderDDBState extends State<GenderDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.34,
+      width: MediaQuery.of(context).size.width * 0.225,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -76,6 +76,68 @@ class _GenderDDBState extends State<GenderDDB> {
               });
             },
             items: genderList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+List<String> numberList = ["1", "2", "3", "5", "8", "13"];
+
+class NumberDDB extends StatefulWidget {
+  const NumberDDB({super.key});
+
+  @override
+  State<NumberDDB> createState() => _NumberDDBState();
+}
+
+class _NumberDDBState extends State<NumberDDB> {
+  static String numberValue = numberList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.1,
+      // height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: numberValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            elevation: 16,
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                numberValue = value!;
+              });
+            },
+            items: numberList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -199,7 +261,7 @@ class _ListViewerState extends State<ListViewer> {
     String? race = const RaceDDB().getDropDownValue();
     race ??= "Any Race";
     namesList =
-        nameGenerator5e.generateNames(race, _GenderDDBState.genderValue, 10);
+        nameGenerator5e.generateNames(race, _GenderDDBState.genderValue, int.parse(_NumberDDBState.numberValue));
     setState(() {
       namesList;
     });
@@ -259,11 +321,12 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
+                            4, MediaQuery.of(ctx).size.height * 0.04, 3, 0),
                         child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             GenderDDB(),
+                            NumberDDB(),
                           ],
                         ),
                       ),

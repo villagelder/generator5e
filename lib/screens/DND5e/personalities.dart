@@ -60,7 +60,7 @@ class _BackgroundDDBState extends State<BackgroundDDB> {
   }
 
   Future<List<String>> getAllBackgrounds() async {
-    return personalityGenerator.getBackgroundList();
+    return personalityGenerator.getButtonBackgroundList();
   }
 
   @override

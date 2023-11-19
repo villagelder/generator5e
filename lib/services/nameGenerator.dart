@@ -37,6 +37,10 @@ class NameGenerator5e {
   }
 
   Name getNameObjectByRace(String race) {
+    if (race == "Any Race" || race == null) {
+      return namesObjList[
+          Utility.getRandomIndexFromListSize(namesObjList.length)];
+    }
     return namesObjList.where((n) => n.race == race).toList()[0];
   }
 
@@ -45,6 +49,7 @@ class NameGenerator5e {
     List<String> firstNamesList = [];
     List<String>? lastNamesList = nameObj.lastNames;
     List<String>? nicknamesList = nameObj.thirdNames;
+    String lastName = "";
     String? moniker = nameObj.moniker;
 
     if (gender == "Male") {
@@ -58,14 +63,22 @@ class NameGenerator5e {
 
     String firstName = firstNamesList[
         Utility.getRandomIndexFromListSize(firstNamesList.length)];
-    String lastName =
-        lastNamesList[Utility.getRandomIndexFromListSize(lastNamesList.length)];
-
+    if (lastNamesList.isNotEmpty) {
+      lastName = lastNamesList[
+          Utility.getRandomIndexFromListSize(lastNamesList.length)];
+    }
     if (nicknamesList!.isNotEmpty) {
       String nickname = nicknamesList[
           Utility.getRandomIndexFromListSize(nicknamesList.length)];
 
+      if (lastNamesList.isEmpty) {
+        return "$firstName -- $moniker: $nickname";
+      }
       return "$firstName $lastName -- $moniker: $nickname";
+    }
+
+    if (lastNamesList.isEmpty) {
+      return firstName;
     }
 
     return "$firstName $lastName";
@@ -80,7 +93,7 @@ class NameGenerator5e {
     return namesList;
   }
 
-  Future<List<String>>getRacesWithNames() async {
+  Future<List<String>> getRacesWithNames() async {
     if (!_isLoaded) {
       await init();
     }

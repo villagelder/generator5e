@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generator5e/screens/DND5e/abilityGenerator.dart';
 import 'package:generator5e/screens/DND5e/namesGen.dart';
 import 'package:generator5e/screens/DND5e/personalities.dart';
 import 'package:generator5e/screens/DND5e/spellsets.dart';
@@ -322,7 +323,7 @@ class Generators5ePage extends MaterialPageRoute<void> {
                                       const Color.fromRGBO(110, 0, 0, 1.0),
                                 ),
                                 onPressed: () {
-                                  Navigator.push(context, SpellSetsPage());
+                                  Navigator.push(context, AbilityGenPage());
                                 },
                                 child: Align(
                                   alignment: Alignment.center,
