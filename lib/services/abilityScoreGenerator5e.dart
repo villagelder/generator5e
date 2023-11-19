@@ -84,9 +84,17 @@ class AbilityScoreGenerator {
           scores.write("${abilitiesMap[k]}");
         }
       }
-    } else {
+    } else if (methodValue == "Open Classic 3d6 (x7)") {
       for (var k in abilitiesMap.keys) {
-        if (k == "CHA") {
+        if (k == "CHA" || int.parse(k) == 7) {
+          scores.write("${abilitiesMap[k]}");
+          continue;
+        }
+        scores.write("${abilitiesMap[k]}, ");
+      }
+  }else {
+      for (var k in abilitiesMap.keys) {
+        if (k == "CHA" || int.parse(k) == 6) {
           scores.write("${abilitiesMap[k]}");
           continue;
         }

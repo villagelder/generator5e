@@ -379,7 +379,7 @@ class Generators5ePage extends MaterialPageRoute<void> {
                                       const Color.fromRGBO(110, 0, 0, 1.0),
                                 ),
                                 onPressed: () {
-                                  Navigator.push(context, TreasuresPage());
+                                  Navigator.push(context, SpellSetsPage());
                                 },
                                 child: Align(
                                   alignment: Alignment.center,

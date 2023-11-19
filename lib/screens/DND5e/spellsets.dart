@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:generator5e/services/magicItemGenerator.dart';
 
-class SpellSetsPage extends MaterialPageRoute<Null> {
+class SpellSetsPage extends MaterialPageRoute<void> {
   SpellSetsPage()
       : super(builder: (BuildContext ctx) {
-          double screenWidth = MediaQuery.of(ctx).size.width;
-          double screenHeight = MediaQuery.of(ctx).size.height;
           return Scaffold(
             backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'DragonVault Generators',
+                'Legendary Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -19,76 +16,40 @@ class SpellSetsPage extends MaterialPageRoute<Null> {
               ),
               backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
             ),
-            body: SingleChildScrollView(
-              scrollDirection: Axis.vertical,
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-                    child: SizedBox(
-                      height: screenHeight * .05,
-                      child: Center(
-                        child: Text(
-                          '5e Spell Sets',
-                          style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: screenHeight * 0.044,
-                            fontWeight: FontWeight.w500,
-                            color: const Color.fromRGBO(34, 56, 69, 1.0),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: MediaQuery.of(ctx).size.width * 0.84,
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
-                      child: Text(
-                        'Select the class and archetype, then push \'Generate Spell Set\' to '
-                        'generate the spells known.',
-                        style: TextStyle(
-                            fontFamily: 'Georgia',
-                            fontSize: MediaQuery.of(ctx).size.height * 0.022,
-                            fontStyle: FontStyle.italic),
-                      ),
-                    ),
-                  ),
-                  const TextChanger(),
-                ],
-              ),
-            ),
+            body: const ListViewer(),
           );
         });
 }
 
-class FocusDDB extends StatefulWidget {
-  const FocusDDB({super.key});
+class SubclassDDB extends StatefulWidget {
+  const SubclassDDB({super.key});
 
   @override
-  State<FocusDDB> createState() => _FocusDDBState();
+  State<SubclassDDB> createState() => _SubclassDDBState();
 }
 
-class ItemTypeDDB extends StatefulWidget {
-  const ItemTypeDDB({super.key});
+class ClassesDDB extends StatefulWidget {
+  const ClassesDDB({super.key});
 
   @override
-  State<ItemTypeDDB> createState() => _ItemTypeDDBState();
+  State<ClassesDDB> createState() => _ClassesDDBState();
 }
 
-class ClassDDB extends StatefulWidget {
-  const ClassDDB({super.key});
+class NumberDDB extends StatefulWidget {
+  const NumberDDB({super.key});
 
   @override
-  State<ClassDDB> createState() => _ClassDDBState();
+  State<NumberDDB> createState() => _NumberDDBState();
 }
 
 const List<String> classList = <String>[
+  'Any Caster',
   'Artificer',
   'Bard',
   'Cleric',
   'Druid',
   'Fighter',
+  'Monk',
   'Paladin',
   'Ranger',
   'Rogue',
@@ -108,48 +69,129 @@ const List<String> itemTypeList = <String>[
   'Weapon',
   'Wondrous Item'
 ];
-const List<String> focusList = <String>[
-  'Arcane Trickster',
-  'Transmuter',
-  'Eldritch Knight'
+
+const List<String> subclassList = <String>['Subclass'];
+
+const List<String> numberList = <String>[
+  'Any Level',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  '10',
+  '11',
+  '12',
+  '13',
+  '14',
+  '15',
+  '16',
+  '17',
+  '18',
+  '19',
+  '20',
+  'Legendary'
 ];
 
-class _ClassDDBState extends State<ClassDDB> {
-  static String classValue = classList.first;
+class _NumberDDBState extends State<NumberDDB> {
+  static String numberValue = numberList.first;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.16,
+      height: MediaQuery.of(context).size.height * 0.125,
+      // height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: numberValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            elevation: 16,
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                numberValue = value!;
+              });
+            },
+            items: numberList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ClassesDDBState extends State<ClassesDDB> {
+  static String rarityValue = classList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
             color: const Color.fromRGBO(38, 50, 56, 1.0),
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.33,
-      height: MediaQuery.of(context).size.height * 0.075,
+      width: MediaQuery.of(context).size.width * 0.175,
+      height: MediaQuery.of(context).size.height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: classValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
+            dropdownColor: Colors.brown.shade400,
+            value: rarityValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
             elevation: 16,
             style: TextStyle(
-              color: const Color.fromRGBO(38, 50, 56, 1.0),
+              color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.025,
+              fontSize: MediaQuery.of(context).size.height * 0.04,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
               height: 2,
-              color: Colors.blueGrey,
+              color: Colors.brown.shade900,
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                classValue = value!;
+                rarityValue = value!;
               });
             },
             items: classList.map<DropdownMenuItem<String>>((String value) {
@@ -165,42 +207,47 @@ class _ClassDDBState extends State<ClassDDB> {
   }
 }
 
-class _FocusDDBState extends State<FocusDDB> {
-  static String focusValue = focusList.first;
+class _SubclassDDBState extends State<SubclassDDB> {
+  static String subclassValue = subclassList.first;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.46,
-      height: MediaQuery.of(context).size.height * 0.075,
+     width: MediaQuery.of(context).size.width * 0.35,
+      height: MediaQuery.of(context).size.height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<String>(
-            value: focusValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
+            dropdownColor: Colors.brown.shade400,
+            value: subclassValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
             elevation: 16,
             style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
+                color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.025,
+                fontSize: MediaQuery.of(context).size.height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
-              color: Colors.blueGrey,
+              color: Colors.brown.shade900,
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
               setState(() {
-                focusValue = value!;
+                subclassValue = value!;
               });
             },
-            items: focusList.map<DropdownMenuItem<String>>((String value) {
+            items: subclassList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -213,142 +260,181 @@ class _FocusDDBState extends State<FocusDDB> {
   }
 }
 
-class _ItemTypeDDBState extends State<ItemTypeDDB> {
-  static String typeValue = itemTypeList.first;
+class ListViewer extends StatefulWidget {
+  const ListViewer({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade800, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.85,
-      height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            value: typeValue,
-            icon: const Icon(Icons.arrow_drop_down_outlined),
-            elevation: 16,
-            style: TextStyle(
-                color: const Color.fromRGBO(38, 50, 56, 1.0),
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.blueGrey,
-            ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                typeValue = value!;
-              });
-            },
-            items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
-        ),
-      ),
-    );
-  }
+  State<ListViewer> createState() => _ListViewerState();
 }
 
-class TextChanger extends StatefulWidget {
-  const TextChanger({super.key});
-
-  @override
-  State<TextChanger> createState() => _TextChangerState();
-}
-
-class _TextChangerState extends State<TextChanger> {
+class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  String dynamicText = 'Roll for spells.';
-  MagicItemGenerator5e mig = MagicItemGenerator5e();
+  List<String> magicItemsList = ['Magic Items'];
+  MagicItemGenerator5e mig5e = MagicItemGenerator5e();
 
-  updateText() {
+  updateList() {
+    // magicItemsList = mig5e.generateMagicItemsArray(_ClassesDDBState.rarityValue,
+    //     _ItemTypeDDBState.itemValue, _SubclassDDBState.subclassValue);
     setState(() {
-      dynamicText = 'changed';
-      // dynamicText = trGen
-      //     .generate(_RarityDDBState.crValue, _TreasureTypeDDBState.ttValue)
-      //     .toString();
+   //   magicItemsList;
     });
   }
 
   @override
   Widget build(BuildContext ctx) {
-    return Column(
-      children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+            Colors.amber.shade100,
+            Colors.brown.shade600,
+          ])),
+      child: Column(
+        children: [
+          Row(
             children: [
-              ClassDDB(),
-              FocusDDB(),
-            ],
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.fromLTRB(0, 24.0, 0, 0),
-          child: Column(
-            children: [
-              ItemTypeDDB(),
-            ],
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-              0, MediaQuery.of(ctx).size.height * 0.022, 0, 0),
-          child: SizedBox(
-            width: MediaQuery.of(ctx).size.width * 0.84,
-            height: MediaQuery.of(ctx).size.height * 0.1,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
-                backgroundColor: Colors.lightGreen.shade900,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.4,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(
+                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(ctx).size.height * 0.06,
+                            child: Text(
+                              '5e Spell Set Generator',
+                              style: TextStyle(
+                                fontFamily: 'Georgia',
+                                fontSize:
+                                    MediaQuery.of(ctx).size.height * 0.047,
+                                fontWeight: FontWeight.w600,
+                                color: const Color.fromRGBO(85, 0, 0, 1),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                  //      child: SizedBox(
+                   //       width: MediaQuery.of(ctx).size.width * 0.4,
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              ClassesDDB(),
+                              NumberDDB(),
+                            ],
+                          ),
+                    //    ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                      //  child: SizedBox(
+                      //    width: MediaQuery.of(ctx).size.width * 0.4,
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              SubclassDDB(),
+                            ],
+                          ),
+                     //   ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.35,
+                          height: MediaQuery.of(ctx).size.height * 0.125,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor:
+                                  const Color.fromRGBO(255, 245, 188, 1.0),
+                              backgroundColor:
+                                  const Color.fromRGBO(57, 0, 0, 1.0),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                            ),
+                            onPressed: () => updateList(),
+                            child: Text(
+                              'Generate Spell Sets',
+                              style: TextStyle(
+                                  fontFamily: 'Georgia',
+                                  fontSize:
+                                      MediaQuery.of(ctx).size.height * .05,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              onPressed: () => updateText(),
-              child: Text(
-                'Generate Spell Set',
-                style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: MediaQuery.of(ctx).size.height * .035,
-                    fontWeight: FontWeight.w700),
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.58,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(ctx).size.height * 0.7,
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0)),
+                              elevation: 2,
+                              color: Colors.brown.shade500,
+                              child: ListView.builder(
+                                key: ObjectKey(magicItemsList[0]),
+                                itemCount: magicItemsList.length,
+                                itemBuilder: (ctx, index) {
+                                  return Padding(
+                                    padding: EdgeInsets.fromLTRB(
+                                        0,
+                                        MediaQuery.of(ctx).size.height * 0.01,
+                                        0,
+                                        0),
+                                    child: ListTile(
+                                      shape: RoundedRectangleBorder(
+                                          side: const BorderSide(width: 2),
+                                          borderRadius:
+                                              BorderRadius.circular(15.0)),
+                                      tileColor: Colors.orange.shade100,
+                                      title: Text(
+                                        magicItemsList[index],
+                                        style: TextStyle(
+                                            fontSize:
+                                                MediaQuery.of(ctx).size.height *
+                                                    0.04),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
+            ],
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.all(40.0),
-          child: Text(dynamicText,
-              style: TextStyle(
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(ctx).size.height * 0.03,
-              )),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(0, 32, 0, 0),
-          child: IconButton(
-            iconSize: 36,
-            icon: const Icon(Icons.copy),
-            color: Colors.blueGrey.shade900,
-            onPressed: () {
-              Clipboard.setData(ClipboardData(text: dynamicText));
-            },
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
