@@ -24,7 +24,7 @@ class SpellSetGenerator {
     final String response =
         await rootBundle.loadString('assets/jsondata/spellsperlvl.json');
     final data = await json.decode(response);
-    _spellsKnownItems = data["personalities"] as List;
+    _spellsKnownItems = data["spellsKnown"] as List;
   }
 
   getSpellsKnownObjectList() {
