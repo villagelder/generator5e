@@ -42,6 +42,20 @@ class NumberDDB extends StatefulWidget {
   State<NumberDDB> createState() => _NumberDDBState();
 }
 
+const List<String> arcaneList = <String>[
+  'Abjuration',
+  'Bladesinging',
+  'Conjuration',
+  'Divination',
+  'Enchantment',
+  'Evocation',
+  'Illusion',
+  'Necromancy',
+  'Order of Scribes',
+  'Transmutation',
+  'War Magic'
+];
+
 const List<String> classList = <String>[
   'Any Caster',
   'Artificer',
@@ -56,20 +70,8 @@ const List<String> classList = <String>[
   'Warlock',
   'Wizard'
 ];
-const List<String> itemTypeList = <String>[
-  'All Items',
-  'Armor',
-  'Potion',
-  'Ring',
-  'Rod',
-  'Scroll',
-  'Staff',
-  'Wand',
-  'Weapon',
-  'Wondrous Item'
-];
 
-const List<String> subclassList = <String>['Subclass'];
+const List<String> subclassList = <String>['Any Subclass'];
 
 const List<String> numberList = <String>[
   'Any Level',
@@ -156,7 +158,7 @@ class _NumberDDBState extends State<NumberDDB> {
 }
 
 class _ClassesDDBState extends State<ClassesDDB> {
-  static String rarityValue = classList.first;
+  static String classValue = classList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -176,7 +178,7 @@ class _ClassesDDBState extends State<ClassesDDB> {
           alignedDropdown: true,
           child: DropdownButton<String>(
             dropdownColor: Colors.brown.shade400,
-            value: rarityValue,
+            value: classValue,
             icon: Icon(
               Icons.arrow_drop_down_outlined,
               color: Colors.brown.shade900,
@@ -193,9 +195,10 @@ class _ClassesDDBState extends State<ClassesDDB> {
               color: Colors.brown.shade900,
             ),
             onChanged: (String? value) {
-              // This is called when the user selects an item.
+              //set new list for subclass button
+
               setState(() {
-                rarityValue = value!;
+                classValue = value!;
               });
             },
             items: classList.map<DropdownMenuItem<String>>((String value) {
@@ -282,7 +285,7 @@ class _ListViewerState extends State<ListViewer> {
   updateList() {
     spellGen.init();
     spellMap = spellGen.generateSpellSetMap(
-        _ClassesDDBState.rarityValue, _NumberDDBState.numberValue);
+        _ClassesDDBState.classValue, _NumberDDBState.numberValue);
     keys = spellMap.keys;
 
     setState(() {
@@ -345,6 +348,19 @@ class _ListViewerState extends State<ListViewer> {
                           children: [
                             ClassesDDB(),
                             NumberDDB(),
+                          ],
+                        ),
+                        //    ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(.03,
+                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
+                        //      child: SizedBox(
+                        //       width: MediaQuery.of(ctx).size.width * 0.4,
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SubclassDDB(),
                           ],
                         ),
                         //    ),
