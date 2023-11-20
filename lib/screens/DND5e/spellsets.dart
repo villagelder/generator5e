@@ -1,35 +1,40 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:generator5e/services/spellSetGenerator5e.dart';
 
 class SpellSetsPage extends MaterialPageRoute<void> {
   SpellSetsPage()
       : super(builder: (BuildContext ctx) {
-          return Scaffold(
-            backgroundColor: Colors.blueGrey.shade100,
-            appBar: AppBar(
-              title: const Text(
-                'Legendary Generators',
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  color: Color.fromRGBO(255, 245, 188, 1.0),
-                ),
-              ),
-              backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
-            ),
-            body: const ListViewer(),
-          );
-        });
+    return Scaffold(
+      backgroundColor: Colors.blueGrey.shade100,
+      appBar: AppBar(
+        title: const Text(
+          'Legendary Generators',
+          style: TextStyle(
+            fontFamily: 'Georgia',
+            color: Color.fromRGBO(255, 245, 188, 1.0),
+          ),
+        ),
+        backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+      ),
+      body: const ListViewer(),
+    );
+  });
 }
 
 class SubclassDDB extends StatefulWidget {
-  const SubclassDDB({super.key});
+  final List<String> subclassOptions;
+  const SubclassDDB({super.key, required this.subclassOptions});
 
   @override
   State<SubclassDDB> createState() => _SubclassDDBState();
 }
 
 class ClassesDDB extends StatefulWidget {
-  const ClassesDDB({super.key});
+  final Function(String) onClassChanged;
+
+  const ClassesDDB({super.key, required this.onClassChanged});
 
   @override
   State<ClassesDDB> createState() => _ClassesDDBState();
@@ -114,8 +119,14 @@ class _NumberDDBState extends State<NumberDDB> {
               style: BorderStyle.solid,
               width: 2.0),
         ),
-        width: MediaQuery.of(context).size.width * 0.15,
-        height: MediaQuery.of(context).size.height * 0.125,
+        width: MediaQuery
+            .of(context)
+            .size
+            .width * 0.15,
+        height: MediaQuery
+            .of(context)
+            .size
+            .height * 0.125,
         // height: MediaQuery.of(context).size.height * 0.075,
         child: DropdownButtonHideUnderline(
           child: ButtonTheme(
@@ -131,7 +142,10 @@ class _NumberDDBState extends State<NumberDDB> {
               style: TextStyle(
                   color: Colors.amber.shade100,
                   fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.033,
+                  fontSize: MediaQuery
+                      .of(context)
+                      .size
+                      .height * 0.033,
                   fontWeight: FontWeight.w500),
               underline: Container(
                 height: 2,
@@ -171,52 +185,68 @@ class _ClassesDDBState extends State<ClassesDDB> {
             style: BorderStyle.solid,
             width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.175,
-      height: MediaQuery.of(context).size.height * 0.125,
+      width: MediaQuery
+          .of(context)
+          .size
+          .width * 0.175,
+      height: MediaQuery
+          .of(context)
+          .size
+          .height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            dropdownColor: Colors.brown.shade400,
-            value: classValue,
-            icon: Icon(
-              Icons.arrow_drop_down_outlined,
-              color: Colors.brown.shade900,
-            ),
-            elevation: 16,
-            style: TextStyle(
-              color: Colors.amber.shade100,
-              fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.04,
-              fontWeight: FontWeight.w500,
-            ),
-            underline: Container(
-              height: 2,
-              color: Colors.brown.shade900,
-            ),
-            onChanged: (String? value) {
-              //set new list for subclass button
+            alignedDropdown: true,
+            child: DropdownButton<String>(
+                dropdownColor: Colors.brown.shade400,
+                value: classValue,
+                icon: Icon(
+                  Icons.arrow_drop_down_outlined,
+                  color: Colors.brown.shade900,
+                ),
+                elevation: 16,
+                style: TextStyle(
+                  color: Colors.amber.shade100,
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery
+                      .of(context)
+                      .size
+                      .height * 0.04,
+                  fontWeight: FontWeight.w500,
+                ),
+                underline: Container(
+                  height: 2,
+                  color: Colors.brown.shade900,
+                ),
+                onChanged: (String? value) {
+                  setState(() {
+                    classValue = value!;
+                  });
+                },
+                //set new list for subclass button
 
-              setState(() {
-                classValue = value!;
-              });
-            },
-            items: classList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
-        ),
+                widget.onClassChanged(value!);
+
+                items: classList.map<DropdownMenuItem<String>>((String value) {
+        return DropdownMenuItem<String>(
+        value: value,
+        child: Text(value),
+        );
+        }).toList(),
       ),
+    ),)
+    ,
     );
   }
 }
 
 class _SubclassDDBState extends State<SubclassDDB> {
-  static String subclassValue = subclassList.first;
+  String subclassValue;
 
+  @override
+  void initState(){
+    super.initState();
+    subclassValue = widget.subclassOptions.first;
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -226,8 +256,14 @@ class _SubclassDDBState extends State<SubclassDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.34,
-      height: MediaQuery.of(context).size.height * 0.125,
+      width: MediaQuery
+          .of(context)
+          .size
+          .width * 0.34,
+      height: MediaQuery
+          .of(context)
+          .size
+          .height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -242,7 +278,10 @@ class _SubclassDDBState extends State<SubclassDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontSize: MediaQuery
+                    .of(context)
+                    .size
+                    .height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -254,7 +293,7 @@ class _SubclassDDBState extends State<SubclassDDB> {
                 subclassValue = value!;
               });
             },
-            items: subclassList.map<DropdownMenuItem<String>>((String value) {
+            items: widget.subclassOptions.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -306,31 +345,43 @@ class _ListViewerState extends State<ListViewer> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-            Colors.amber.shade100,
-            Colors.brown.shade600,
-          ])),
+                Colors.amber.shade100,
+                Colors.brown.shade600,
+              ])),
       child: Column(
         children: [
           Row(
             children: [
               SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.4,
+                width: MediaQuery
+                    .of(ctx)
+                    .size
+                    .width * 0.4,
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
-                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
+                      20, MediaQuery
+                      .of(ctx)
+                      .size
+                      .height * 0.06, 20, 0),
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.06,
+                            height: MediaQuery
+                                .of(ctx)
+                                .size
+                                .height * 0.06,
                             child: Text(
                               '5e Spell Set Generator',
                               style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize:
-                                    MediaQuery.of(ctx).size.height * 0.047,
+                                MediaQuery
+                                    .of(ctx)
+                                    .size
+                                    .height * 0.047,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),
@@ -340,13 +391,20 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(.03,
-                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
+                            MediaQuery
+                                .of(ctx)
+                                .size
+                                .height * 0.03, 0.03, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            ClassesDDB(),
+                            ClassesDDB(onClassChanged: (selectedClass) {
+                              if (selectedClass == 'Wizard') {
+
+
+                              },  },),
                             NumberDDB(),
                           ],
                         ),
@@ -354,7 +412,10 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(.03,
-                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
+                            MediaQuery
+                                .of(ctx)
+                                .size
+                                .height * 0.03, 0.03, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: const Row(
@@ -367,16 +428,25 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                            0, MediaQuery
+                            .of(ctx)
+                            .size
+                            .height * 0.03, 0, 0),
                         child: SizedBox(
-                          width: MediaQuery.of(ctx).size.width * 0.35,
-                          height: MediaQuery.of(ctx).size.height * 0.125,
+                          width: MediaQuery
+                              .of(ctx)
+                              .size
+                              .width * 0.35,
+                          height: MediaQuery
+                              .of(ctx)
+                              .size
+                              .height * 0.125,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               foregroundColor:
-                                  const Color.fromRGBO(255, 245, 188, 1.0),
+                              const Color.fromRGBO(255, 245, 188, 1.0),
                               backgroundColor:
-                                  const Color.fromRGBO(57, 0, 0, 1.0),
+                              const Color.fromRGBO(57, 0, 0, 1.0),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
@@ -387,7 +457,10 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .05,
+                                  MediaQuery
+                                      .of(ctx)
+                                      .size
+                                      .height * .05,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -398,17 +471,26 @@ class _ListViewerState extends State<ListViewer> {
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.58,
+                width: MediaQuery
+                    .of(ctx)
+                    .size
+                    .width * 0.58,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Padding(
                       padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
+                          0, MediaQuery
+                          .of(ctx)
+                          .size
+                          .height * 0.035, 0, 0),
                       child: Column(
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.7,
+                            height: MediaQuery
+                                .of(ctx)
+                                .size
+                                .height * 0.7,
                             child: Card(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15.0)),
@@ -421,7 +503,10 @@ class _ListViewerState extends State<ListViewer> {
                                   return Padding(
                                     padding: EdgeInsets.fromLTRB(
                                         0,
-                                        MediaQuery.of(ctx).size.height * 0.01,
+                                        MediaQuery
+                                            .of(ctx)
+                                            .size
+                                            .height * 0.01,
                                         0,
                                         0),
                                     child: ListTile(
@@ -429,14 +514,17 @@ class _ListViewerState extends State<ListViewer> {
                                       shape: RoundedRectangleBorder(
                                           side: const BorderSide(width: 2),
                                           borderRadius:
-                                              BorderRadius.circular(15.0)),
+                                          BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
                                         keys.elementAt(index),
                                         style: TextStyle(
                                             fontSize:
-                                                MediaQuery.of(ctx).size.height *
-                                                    0.036),
+                                            MediaQuery
+                                                .of(ctx)
+                                                .size
+                                                .height *
+                                                0.036),
                                       ),
                                       subtitle: Text(
                                           spellMap[keys.elementAt(index)]!),
