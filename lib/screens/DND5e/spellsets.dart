@@ -49,7 +49,6 @@ const List<String> classList = <String>[
   'Cleric',
   'Druid',
   'Eld Knight',
-  'Monk',
   'Paladin',
   'Ranger',
   'Rogue',

@@ -720,7 +720,7 @@
       "castingTime": "1 action",
       "level": "1",
       "school": "Evocation",
-      "classes": "Cleric, Sorcerer, Warlock, Wizard",
+      "classes": "Sorcerer, Warlock, Wizard",
       "archetypes": "Cleric: Light; Warlock: Fiend",
       "domains": "Light",
       "patrons": "Fiend"

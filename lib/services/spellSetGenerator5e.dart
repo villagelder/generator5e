@@ -61,6 +61,9 @@ class SpellSetGenerator {
   }
 
   List<Spell> getSpellsByClassAndLevel(String className, int lvl) {
+    if (className == "Eldritch Knight") {
+      className = "Wizard";
+    }
     List<Spell> spList = spellObjList
         .where((sObj) =>
             sObj.classes.contains(className) && int.parse(sObj.level) == lvl)
@@ -78,6 +81,9 @@ class SpellSetGenerator {
 
   Map<String, String> generateSpellSetMap(String className, String classLevel) {
     int clLevel = 1;
+    if (className == "Eld Knight") {
+      className = "Eldritch Knight";
+    }
     if (classLevel == "Any Level") {
       clLevel = DiceRoller.roll1d20();
     } else if (classLevel == "Legendary") {
@@ -86,11 +92,8 @@ class SpellSetGenerator {
       clLevel = int.parse(classLevel);
     }
     String spellSet = "Level $classLevel Spell Set";
-    if (className == "Wizard" || className == "Eld Knight") {
+    if (className == "Wizard" || className == "Eldritch Knight") {
       spellSet = "Level $classLevel Spellbook";
-      if (className == "Eld Knight") {
-        className = "Eldritch Knight";
-      }
     }
     SpellsKnown spellsKnownObj =
         getSpellsKnownObjClassAndLevel(className, clLevel);
