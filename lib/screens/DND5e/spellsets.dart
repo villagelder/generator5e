@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/services/magicItemGenerator.dart';
 import 'package:generator5e/services/spellSetGenerator5e.dart';
 
 class SpellSetsPage extends MaterialPageRoute<void> {
@@ -49,7 +48,7 @@ const List<String> classList = <String>[
   'Bard',
   'Cleric',
   'Druid',
-  'Fighter',
+  'Eld Knight',
   'Monk',
   'Paladin',
   'Ranger',
@@ -103,48 +102,53 @@ class _NumberDDBState extends State<NumberDDB> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.brown.shade400,
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.16,
-      height: MediaQuery.of(context).size.height * 0.125,
-      // height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            dropdownColor: Colors.brown.shade400,
-            value: numberValue,
-            icon: Icon(
-              Icons.arrow_drop_down_outlined,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 4, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.brown.shade400,
+          borderRadius: BorderRadius.circular(15.0),
+          border: Border.all(
               color: Colors.brown.shade900,
+              style: BorderStyle.solid,
+              width: 2.0),
+        ),
+        width: MediaQuery.of(context).size.width * 0.15,
+        height: MediaQuery.of(context).size.height * 0.125,
+        // height: MediaQuery.of(context).size.height * 0.075,
+        child: DropdownButtonHideUnderline(
+          child: ButtonTheme(
+            alignedDropdown: true,
+            child: DropdownButton<String>(
+              dropdownColor: Colors.brown.shade400,
+              value: numberValue,
+              icon: Icon(
+                Icons.arrow_drop_down_outlined,
+                color: Colors.brown.shade900,
+              ),
+              elevation: 16,
+              style: TextStyle(
+                  color: Colors.amber.shade100,
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery.of(context).size.height * 0.033,
+                  fontWeight: FontWeight.w500),
+              underline: Container(
+                height: 2,
+                color: Colors.brown.shade900,
+              ),
+              onChanged: (String? value) {
+                // This is called when the user selects an item.
+                setState(() {
+                  numberValue = value!;
+                });
+              },
+              items: numberList.map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
             ),
-            elevation: 16,
-            style: TextStyle(
-                color: Colors.amber.shade100,
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.04,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.brown.shade900,
-            ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                numberValue = value!;
-              });
-            },
-            items: numberList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
           ),
         ),
       ),
@@ -220,7 +224,7 @@ class _SubclassDDBState extends State<SubclassDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.35,
+      width: MediaQuery.of(context).size.width * 0.34,
       height: MediaQuery.of(context).size.height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -270,18 +274,25 @@ class ListViewer extends StatefulWidget {
 
 class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  List<String> keys = ['Spell Generator'];
-  Map<String, String> spellMap = {};
+  Iterable<String> keys = ["Spell Set Generator"];
+  Map<String, String> spellMap = {
+    "Spell Set Generator": "Roll for a new spell set."
+  };
   SpellSetGenerator spellGen = SpellSetGenerator();
 
   updateList() {
+    spellGen.init();
     spellMap = spellGen.generateSpellSetMap(
-        _ClassesDDBState.rarityValue, int.parse(_NumberDDBState.numberValue));
-    keys = spellMap.keys as List<String>;
+        _ClassesDDBState.rarityValue, _NumberDDBState.numberValue);
+    keys = spellMap.keys;
 
     setState(() {
       spellMap;
-      keys;
+      if (keys.isEmpty) {
+        keys = ["Spell Set Generator"];
+      } else {
+        keys;
+      }
     });
   }
 
@@ -326,8 +337,8 @@ class _ListViewerState extends State<ListViewer> {
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                        padding: EdgeInsets.fromLTRB(.03,
+                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: const Row(
@@ -338,19 +349,6 @@ class _ListViewerState extends State<ListViewer> {
                           ],
                         ),
                         //    ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                        //  child: SizedBox(
-                        //    width: MediaQuery.of(ctx).size.width * 0.4,
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SubclassDDB(),
-                          ],
-                        ),
-                        //   ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
@@ -402,7 +400,7 @@ class _ListViewerState extends State<ListViewer> {
                               elevation: 2,
                               color: Colors.brown.shade500,
                               child: ListView.builder(
-                                key: ObjectKey(keys[0]),
+                                key: ObjectKey(keys.first),
                                 itemCount: keys.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(
@@ -412,19 +410,21 @@ class _ListViewerState extends State<ListViewer> {
                                         0,
                                         0),
                                     child: ListTile(
+                                      dense: true,
                                       shape: RoundedRectangleBorder(
                                           side: const BorderSide(width: 2),
                                           borderRadius:
                                               BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
-                                        keys[index],
+                                        keys.elementAt(index),
                                         style: TextStyle(
                                             fontSize:
                                                 MediaQuery.of(ctx).size.height *
-                                                    0.04),
+                                                    0.036),
                                       ),
-                                      subtitle: Text(spellMap[keys[index]]!),
+                                      subtitle: Text(
+                                          spellMap[keys.elementAt(index)]!),
                                     ),
                                   );
                                 },

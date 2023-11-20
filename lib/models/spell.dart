@@ -49,7 +49,7 @@ class Spell {
     return Spell(
         json['name'] as String,
         json['description'] as String,
-        json['higherLevel'] as String,
+        json['higherLevel'] as String?,
         json['source'] as String,
         json['range'] as String?,
         json['components'] as String?,

@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:generator5e/services/diceRoller.dart';
-import 'package:collection/collection.dart';
 import 'package:generator5e/services/utility.dart';
 
 import '../models/spell.dart';
@@ -28,14 +27,14 @@ class SpellSetGenerator {
 
   Future<void> readJsonSpells() async {
     final String response =
-    await rootBundle.loadString('assets/jsondata/spell.json');
+        await rootBundle.loadString('assets/jsondata/spell.json');
     final data = await json.decode(response);
-    _spellsKnownItems = data["spells"] as List;
+    _spellsItems = data["spell"] as List;
   }
 
   Future<void> readJsonSpellsKnown() async {
     final String response =
-    await rootBundle.loadString('assets/jsondata/spellsperlvl.json');
+        await rootBundle.loadString('assets/jsondata/spellsperlvl.json');
     final data = await json.decode(response);
     _spellsKnownItems = data["spellsKnown"] as List;
   }
@@ -50,36 +49,54 @@ class SpellSetGenerator {
         _spellsItems.map((spJson) => Spell.fromJson(spJson)).toList();
   }
 
-  SpellsKnown getSpellObjClassAndLevel(String className, int level) {
-    return spellsKnownObjList.where(
-            (sk) =>
-        sk.className == className && sk.level == level) as SpellsKnown;
+  SpellsKnown getSpellsKnownObjClassAndLevel(String className, int level) {
+    return spellsKnownObjList
+        .where((sk) => sk.className == className && sk.level == level)
+        .toList()[0];
   }
 
   List<Spell> getSpellsByClass(String className) {
     return spellObjList.where((sObj) => sObj.classes.contains(className))
-    as List<Spell>;
+        as List<Spell>;
   }
 
   List<Spell> getSpellsByClassAndLevel(String className, int lvl) {
-    return spellObjList.where((sObj) =>
-    sObj.classes.contains(className) && int.parse(sObj.level) == lvl)
-    as List<Spell>;
+    List<Spell> spList = spellObjList
+        .where((sObj) =>
+            sObj.classes.contains(className) && int.parse(sObj.level) == lvl)
+        .toList();
+    return spList;
   }
 
-  List<Spell> getSpellsByClassAndLevelAndSchool(String className, int lvl,
-      String school) {
+  List<Spell> getSpellsByClassAndLevelAndSchool(
+      String className, int lvl, String school) {
     return spellObjList.where((sObj) =>
-    sObj.classes.contains(className) &&
+        sObj.classes.contains(className) &&
         int.parse(sObj.level) == lvl &&
         sObj.school == school) as List<Spell>;
   }
 
-  Map<String, String> generateSpellSetMap(String className, int classLevel) {
+  Map<String, String> generateSpellSetMap(String className, String classLevel) {
+    int clLevel = 1;
+    if (classLevel == "Any Level") {
+      clLevel = DiceRoller.roll1d20();
+    } else if (classLevel == "Legendary") {
+      clLevel = 20;
+    } else {
+      clLevel = int.parse(classLevel);
+    }
+    String spellSet = "Level $classLevel Spell Set";
+    if (className == "Wizard" || className == "Eld Knight") {
+      spellSet = "Level $classLevel Spellbook";
+      if (className == "Eld Knight") {
+        className = "Eldritch Knight";
+      }
+    }
     SpellsKnown spellsKnownObj =
-    getSpellObjClassAndLevel(className, classLevel);
+        getSpellsKnownObjClassAndLevel(className, clLevel);
 
     Map<String, String> spellMap = {
+      "$className": spellSet,
       "Cantrips": "",
       "Level 1": "",
       "Level 2": "",
@@ -92,46 +109,46 @@ class SpellSetGenerator {
       "Level 9": "",
     };
 
-    int spellsKnown = 0;
+    int numSpells = 0;
 
     //level loop
     for (int i = 0; i < 10; i++) {
       switch (i) {
         case 0:
-          spellsKnown = spellsKnownObj.cantrips;
+          numSpells = spellsKnownObj.cantrips;
           break;
         case 1:
-          spellsKnown = spellsKnownObj.lvl1;
+          numSpells = spellsKnownObj.lvl1;
           break;
         case 2:
-          spellsKnown = spellsKnownObj.lvl2;
+          numSpells = spellsKnownObj.lvl2;
           break;
         case 3:
-          spellsKnown = spellsKnownObj.lvl3;
+          numSpells = spellsKnownObj.lvl3;
           break;
         case 4:
-          spellsKnown = spellsKnownObj.lvl4;
+          numSpells = spellsKnownObj.lvl4;
           break;
         case 5:
-          spellsKnown = spellsKnownObj.lvl5;
+          numSpells = spellsKnownObj.lvl5;
           break;
         case 6:
-          spellsKnown = spellsKnownObj.lvl6;
+          numSpells = spellsKnownObj.lvl6;
           break;
         case 7:
-          spellsKnown = spellsKnownObj.lvl7;
+          numSpells = spellsKnownObj.lvl7;
           break;
         case 8:
-          spellsKnown = spellsKnownObj.lvl8;
+          numSpells = spellsKnownObj.lvl8;
           break;
         case 9:
-          spellsKnown = spellsKnownObj.lvl9;
+          numSpells = spellsKnownObj.lvl9;
           break;
       }
 
       //cantrips
       if (i == 0) {
-        for (int c = 0; c < spellsKnown; c++) {
+        for (int c = 0; c < numSpells; c++) {
           String spell = getRandomSpellNameClassAndLevel(className, i);
           if (c == 0) {
             spellMap["Cantrips"] = spell;
@@ -146,11 +163,12 @@ class SpellSetGenerator {
         }
       } else {
         //spell level
-        for (int d = 0; d < spellsKnown; d++) {
+        for (int d = 0; d < numSpells; d++) {
           String spell = getRandomSpellNameClassAndLevel(className, i);
 
           if (d == 0) {
-            spellMap["lvl$i"] = getRandomSpellNameClassAndLevel(className, i);
+            spellMap["Level $i"] =
+                getRandomSpellNameClassAndLevel(className, i);
             continue;
           }
 
@@ -158,7 +176,7 @@ class SpellSetGenerator {
           while (spells!.contains(spell)) {
             spell = getRandomSpellNameClassAndLevel(className, i);
           }
-          spellMap["lvl$i"] = "${spells!}, $spell";
+          spellMap["Level $i"] = "${spells!}, $spell";
         }
       }
     }
@@ -180,5 +198,4 @@ class SpellSetGenerator {
         spellList[Utility.getRandomIndexFromListSize(spellList.length)].name;
     return spellName;
   }
-
 }
