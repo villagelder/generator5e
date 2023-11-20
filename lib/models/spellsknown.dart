@@ -2,7 +2,7 @@ class SpellsKnown {
   String className;
   int level;
   int cantrips;
-  int spellsKnown;
+  String spellsKnown;
   int lvl1;
   int lvl2;
   int lvl3;
@@ -35,7 +35,7 @@ class SpellsKnown {
         json['className'] as String,
         json['level'] as int,
         json['cantrips'] as int,
-        json['spellsKnown'] as int,
+        json['spellsKnown'] as String,
         json['lvl1'] as int,
         json['lvl2'] as int,
         json['lvl3'] as int,

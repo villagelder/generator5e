@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:generator5e/services/magicItemGenerator.dart';
+import 'package:generator5e/services/spellSetGenerator5e.dart';
 
 class SpellSetsPage extends MaterialPageRoute<void> {
   SpellSetsPage()
@@ -219,7 +220,7 @@ class _SubclassDDBState extends State<SubclassDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-     width: MediaQuery.of(context).size.width * 0.35,
+      width: MediaQuery.of(context).size.width * 0.35,
       height: MediaQuery.of(context).size.height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -269,14 +270,18 @@ class ListViewer extends StatefulWidget {
 
 class _ListViewerState extends State<ListViewer> {
   // Declare the variable
-  List<String> magicItemsList = ['Magic Items'];
-  MagicItemGenerator5e mig5e = MagicItemGenerator5e();
+  List<String> keys = ['Spell Generator'];
+  Map<String, String> spellMap = {};
+  SpellSetGenerator spellGen = SpellSetGenerator();
 
   updateList() {
-    // magicItemsList = mig5e.generateMagicItemsArray(_ClassesDDBState.rarityValue,
-    //     _ItemTypeDDBState.itemValue, _SubclassDDBState.subclassValue);
+    spellMap = spellGen.generateSpellSetMap(
+        _ClassesDDBState.rarityValue, int.parse(_NumberDDBState.numberValue));
+    keys = spellMap.keys as List<String>;
+
     setState(() {
-   //   magicItemsList;
+      spellMap;
+      keys;
     });
   }
 
@@ -323,29 +328,29 @@ class _ListViewerState extends State<ListViewer> {
                       Padding(
                         padding: EdgeInsets.fromLTRB(
                             0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                  //      child: SizedBox(
-                   //       width: MediaQuery.of(ctx).size.width * 0.4,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              ClassesDDB(),
-                              NumberDDB(),
-                            ],
-                          ),
-                    //    ),
+                        //      child: SizedBox(
+                        //       width: MediaQuery.of(ctx).size.width * 0.4,
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            ClassesDDB(),
+                            NumberDDB(),
+                          ],
+                        ),
+                        //    ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
                             0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
-                      //  child: SizedBox(
-                      //    width: MediaQuery.of(ctx).size.width * 0.4,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              SubclassDDB(),
-                            ],
-                          ),
-                     //   ),
+                        //  child: SizedBox(
+                        //    width: MediaQuery.of(ctx).size.width * 0.4,
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SubclassDDB(),
+                          ],
+                        ),
+                        //   ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
@@ -397,8 +402,8 @@ class _ListViewerState extends State<ListViewer> {
                               elevation: 2,
                               color: Colors.brown.shade500,
                               child: ListView.builder(
-                                key: ObjectKey(magicItemsList[0]),
-                                itemCount: magicItemsList.length,
+                                key: ObjectKey(keys[0]),
+                                itemCount: keys.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(
                                     padding: EdgeInsets.fromLTRB(
@@ -413,12 +418,13 @@ class _ListViewerState extends State<ListViewer> {
                                               BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
-                                        magicItemsList[index],
+                                        keys[index],
                                         style: TextStyle(
                                             fontSize:
                                                 MediaQuery.of(ctx).size.height *
                                                     0.04),
                                       ),
+                                      subtitle: Text(spellMap[keys[index]]!),
                                     ),
                                   );
                                 },
