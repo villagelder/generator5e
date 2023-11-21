@@ -211,7 +211,6 @@ class _ClassesDDBState extends State<ClassesDDB> {
 }
 
 class _SubclassDDBState extends State<SubclassDDB> {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -335,8 +334,8 @@ class _ListViewerState extends State<ListViewer> {
 
   updateList() {
     spellGen.init();
-    spellMap = spellGen.generateSpellSetMap(
-        _ClassesDDBState.classValue, _NumberDDBState.numberValue);
+    spellMap = spellGen.generateSpellSetMap(_ClassesDDBState.classValue,
+        subclassValue, _NumberDDBState.numberValue);
     keys = spellMap.keys;
 
     setState(() {

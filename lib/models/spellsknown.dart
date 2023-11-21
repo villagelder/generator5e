@@ -1,3 +1,6 @@
+import 'package:json_annotation/json_annotation.dart';
+
+@JsonSerializable()
 class SpellsKnown {
   String className;
   int level;
@@ -30,7 +33,7 @@ class SpellsKnown {
       this.lvl9,
       this.source);
 
-  factory SpellsKnown.fromJson(dynamic json) {
+  factory SpellsKnown.fromJson(Map<String, dynamic> json) {
     return SpellsKnown(
         json['className'] as String,
         json['level'] as int,
@@ -47,6 +50,23 @@ class SpellsKnown {
         json['lvl9'] as int,
         json['source'] as String);
   }
+
+  Map<String, dynamic> toJson() => {
+        'className': className,
+        'level': level,
+        'cantrips': cantrips,
+        'spellsKnown': spellsKnown,
+        'lvl1': lvl1,
+        'lvl2': lvl2,
+        'lvl3': lvl3,
+        'lvl4': lvl4,
+        'lvl5': lvl5,
+        'lvl6': lvl6,
+        'lvl7': lvl7,
+        'lvl8': lvl8,
+        'lvl9': lvl9,
+        'source': source,
+      };
 
   @override
   String toString() {

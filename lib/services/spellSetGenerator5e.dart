@@ -12,7 +12,6 @@ class SpellSetGenerator {
   List<SpellsKnown> spellsKnownObjList = [];
   List _spellsItems = [];
   List<Spell> spellObjList = [];
-  bool _isLoaded = false;
 
   SpellSetGenerator() {
     init();
@@ -79,11 +78,10 @@ class SpellSetGenerator {
         sObj.school == school) as List<Spell>;
   }
 
-  Map<String, String> generateSpellSetMap(String className, String classLevel) {
+  Map<String, String> generateSpellSetMap(
+      String className, String subclass, String classLevel) {
     int clLevel = 1;
-    if (className == "Eld Knight") {
-      className = "Eldritch Knight";
-    }
+
     if (classLevel == "Any Level") {
       clLevel = DiceRoller.roll1d20();
     } else if (classLevel == "Legendary") {
@@ -91,15 +89,16 @@ class SpellSetGenerator {
     } else {
       clLevel = int.parse(classLevel);
     }
-    String spellSet = "Level $classLevel Spell Set";
-    if (className == "Wizard" || className == "Eldritch Knight") {
-      spellSet = "Level $classLevel Spellbook";
+
+    String spellSet = "Level ${classLevel.toString()}, $subclass, Spell Set";
+    if (className == "Wizard" || subclass == "Eldritch Knight") {
+      spellSet = "Level ${classLevel.toString()} Spellbook";
     }
     SpellsKnown spellsKnownObj =
         getSpellsKnownObjClassAndLevel(className, clLevel);
 
     Map<String, String> spellMap = {
-      "$className": spellSet,
+      className: spellSet,
       "Cantrips": "",
       "Level 1": "",
       "Level 2": "",
@@ -111,6 +110,11 @@ class SpellSetGenerator {
       "Level 8": "",
       "Level 9": "",
     };
+
+    if (className == "Wizard") {
+      spellMap = getWizardSubclassSpells(
+          spellsKnownObj, spellMap, className, subclass);
+    }
 
     int numSpells = 0;
 
@@ -153,7 +157,7 @@ class SpellSetGenerator {
       if (i == 0) {
         for (int c = 0; c < numSpells; c++) {
           String spell = getRandomSpellNameClassAndLevel(className, i);
-          if (c == 0) {
+          if (spellMap["Cantrips"] == "") {
             spellMap["Cantrips"] = spell;
             continue;
           }
@@ -162,14 +166,14 @@ class SpellSetGenerator {
           while (spells!.contains(spell)) {
             spell = getRandomSpellNameClassAndLevel(className, i);
           }
-          spellMap["Cantrips"] = "${spells!}, $spell";
+          spellMap["Cantrips"] = "$spells, $spell";
         }
       } else {
         //spell level
         for (int d = 0; d < numSpells; d++) {
           String spell = getRandomSpellNameClassAndLevel(className, i);
 
-          if (d == 0) {
+          if (spellMap["Level $i"] == "") {
             spellMap["Level $i"] =
                 getRandomSpellNameClassAndLevel(className, i);
             continue;
@@ -179,7 +183,7 @@ class SpellSetGenerator {
           while (spells!.contains(spell)) {
             spell = getRandomSpellNameClassAndLevel(className, i);
           }
-          spellMap["Level $i"] = "${spells!}, $spell";
+          spellMap["Level $i"] = "$spells, $spell";
         }
       }
     }
@@ -200,5 +204,64 @@ class SpellSetGenerator {
     String spellName =
         spellList[Utility.getRandomIndexFromListSize(spellList.length)].name;
     return spellName;
+  }
+
+  Map<String, String> getSubclassFocusSpells(
+      SpellsKnown spellsKnown, String className, String subclass, int level) {
+    String spellSet = "Level ${level.toString()}, $subclass, Spell Set";
+    if (className == "Wizard" || subclass == "Eldritch Knight") {
+      spellSet = "Level ${level.toString()} Spellbook";
+    }
+    Map<String, String> spellMap = {
+      className: spellSet,
+      "Cantrips": "",
+      "Level 1": "",
+      "Level 2": "",
+      "Level 3": "",
+      "Level 4": "",
+      "Level 5": "",
+      "Level 6": "",
+      "Level 7": "",
+      "Level 8": "",
+      "Level 9": "",
+    };
+
+    return spellMap;
+  }
+
+  Map<String, String> getWizardSubclassSpells(
+    SpellsKnown spellsKnown,
+    Map<String, String> spellMap,
+    String className,
+    String subclass,
+  ) {
+    List<Spell> spells = [];
+
+    if (subclass != "Bladesinging" ||
+        subclass != "Order of Scribes" ||
+        subclass != "School of War") {
+      String school = subclass.replaceFirst("School of ", "");
+
+      //add spells by school per spell level, if >0 in spells known
+
+      String jsonSpellsKnown = jsonEncode(spellsKnown);
+      var jsonspk = jsonDecode(jsonSpellsKnown);
+      for (var prop in jsonspk) {
+        if (prop == "Cantrips" && jsonspk[prop] > 0) {
+          spells = getSpellsByClassAndLevelAndSchool(className, 0, school);
+          spellMap[prop] =
+              spells[Utility.getRandomIndexFromListSize(spells.length)].name;
+        }
+
+        if (prop.toString().contains("lvl") && jsonspk[prop] > 0) {
+          String level = prop.toString().replaceFirst("lvl", "to");
+          int lvl = int.parse(level.replaceFirst("lvl", ""));
+          spells = getSpellsByClassAndLevelAndSchool(className, lvl, school);
+          spellMap[prop] =
+              spells[Utility.getRandomIndexFromListSize(spells.length)].name;
+        }
+      }
+    }
+    return spellMap;
   }
 }
