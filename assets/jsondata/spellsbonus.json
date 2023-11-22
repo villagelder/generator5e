@@ -1,0 +1,507 @@
+{
+  "bonusSpells": [
+    {
+      "classname": "Artificer",
+      "subclass": "Alchemist",
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Healing Word",
+        "Ray of Sickness"
+      ],
+      "level2": [
+        "Flaming Sphere",
+        "Melf's Acid Arrow"
+      ],
+      "level3": [
+        "Gaseous Form",
+        "Mass Healing Word"
+      ],
+      "level4": [
+        "Blight",
+        "Death Ward"
+      ],
+      "level5": [
+        "Cloudkill",
+        "Raise Dead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Artificer",
+      "subclass": "Armorer",
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Magic Missile",
+        "Thunderwave"
+      ],
+      "level2": [
+        "Mirror Image",
+        "Shatter"
+      ],
+      "level3": [
+        "Hypnotic Pattern",
+        "Lightning Bolt"
+      ],
+      "level4": [
+        "Fire Shield",
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Passwall",
+        "Wall of Force"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Artificer",
+      "subclass": "Artillerist",
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Shield",
+        "Thunderwave"
+      ],
+      "level2": [
+        "Scorching Ray",
+        "Shatter"
+      ],
+      "level3": [
+        "Fireball",
+        "Wind Wall"
+      ],
+      "level4": [
+        "Ice Storm",
+        "Wall of Fire"
+      ],
+      "level5": [
+        "Cone of Cold",
+        "Wall of Force"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Artificer",
+      "subclass": "Battle Smith",
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Heroism",
+        "Shield"
+      ],
+      "level2": [
+        "Branding Smith",
+        "Warding Bond"
+      ],
+      "level3": [
+        "Aura of Vitality",
+        "Conjure Barrage"
+      ],
+      "level4": [
+        "Aura of Purity",
+        "Fire Shield"
+      ],
+      "level5": [
+        "Bansishing Smite",
+        "Mass Cure Wounds"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Arcana Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Detect Magic",
+        "Magic Missile"
+      ],
+      "level2": [
+        "Magic Weapon",
+        "Nystul's Magic Aura"
+      ],
+      "level3": [
+        "Dispel Magic",
+        "Magic Circle"
+      ],
+      "level4": [
+        "Arcane Eye",
+        "Leomund's Secret Chest"
+      ],
+      "level5": [
+        "Planar Binding",
+        "Teleportation Circle"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Death Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "False Life",
+        "Ray of Sickness"
+      ],
+      "level2": [
+        "Blindness/Deafness",
+        "Ray of Enfeeblement"
+      ],
+      "level3": [
+        "Animate Dead",
+        "Vampiric Touch"
+      ],
+      "level4": [
+        "Blight",
+        "Death Ward"
+      ],
+      "level5": [
+        "Antilife Shell",
+        "Cloudkill"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Forge Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Identify",
+        "Searing Smite"
+      ],
+      "level2": [
+        "Heat Metal",
+        "Magic Weapon"
+      ],
+      "level3": [
+        "Elemental Weapon",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Fabricate",
+        "Wall of Fire"
+      ],
+      "level5": [
+        "Animate Objects",
+        "Creation"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Grave Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Bane",
+        "False Life"
+      ],
+      "level2": [
+        "Gentle Repose",
+        "Ray of Enfeeblement"
+      ],
+      "level3": [
+        "Revivify",
+        "Vampiric Touch"
+      ],
+      "level4": [
+        "Blight",
+        "Death Ward"
+      ],
+      "level5": [
+        "Antilife Shell",
+        "Raise Dead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Knowledge Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Command",
+        "Identify"
+      ],
+      "level2": [
+        "Augury",
+        "Suggestion"
+      ],
+      "level3": [
+        "Nondetection",
+        "Speak with Dead"
+      ],
+      "level4": [
+        "Arcane Eye",
+        "Confusion"
+      ],
+      "level5": [
+        "Legend Lore",
+        "Scrying"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Template",
+      "subclass": "",
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    }
+  ]
+}

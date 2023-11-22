@@ -91,7 +91,6 @@ class SpellSetGenerator {
     } else {
       clLevel = int.parse(classLevel);
     }
-
     String spellSet = "Level ${classLevel.toString()}, $subclass, Spell Set";
     if (className == "Wizard" || subclass == "Eldritch Knight") {
       spellSet = "Level ${classLevel.toString()} Spellbook";

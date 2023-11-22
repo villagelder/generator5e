@@ -99,53 +99,48 @@ class _NumberDDBState extends State<NumberDDB> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(0, 0, 4, 0),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.brown.shade400,
-          borderRadius: BorderRadius.circular(15.0),
-          border: Border.all(
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.15,
+      height: MediaQuery.of(context).size.height * 0.125,
+      // height: MediaQuery.of(context).size.height * 0.075,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: numberValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
               color: Colors.brown.shade900,
-              style: BorderStyle.solid,
-              width: 2.0),
-        ),
-        width: MediaQuery.of(context).size.width * 0.15,
-        height: MediaQuery.of(context).size.height * 0.125,
-        // height: MediaQuery.of(context).size.height * 0.075,
-        child: DropdownButtonHideUnderline(
-          child: ButtonTheme(
-            alignedDropdown: true,
-            child: DropdownButton<String>(
-              dropdownColor: Colors.brown.shade400,
-              value: numberValue,
-              icon: Icon(
-                Icons.arrow_drop_down_outlined,
-                color: Colors.brown.shade900,
-              ),
-              elevation: 16,
-              style: TextStyle(
-                  color: Colors.amber.shade100,
-                  fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.033,
-                  fontWeight: FontWeight.w500),
-              underline: Container(
-                height: 2,
-                color: Colors.brown.shade900,
-              ),
-              onChanged: (String? value) {
-                // This is called when the user selects an item.
-                setState(() {
-                  numberValue = value!;
-                });
-              },
-              items: numberList.map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
             ),
+            elevation: 16,
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.033,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                numberValue = value!;
+              });
+            },
+            items: numberList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -163,9 +158,7 @@ class _ClassesDDBState extends State<ClassesDDB> {
         color: Colors.brown.shade400,
         borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
-            color: const Color.fromRGBO(38, 50, 56, 1.0),
-            style: BorderStyle.solid,
-            width: 2.0),
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.175,
       height: MediaQuery.of(context).size.height * 0.125,
@@ -213,49 +206,53 @@ class _ClassesDDBState extends State<ClassesDDB> {
 class _SubclassDDBState extends State<SubclassDDB> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.brown.shade400,
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.34,
-      height: MediaQuery.of(context).size.height * 0.125,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            dropdownColor: Colors.brown.shade400,
-            value: widget.selectedSubclass,
-            icon: Icon(
-              Icons.arrow_drop_down_outlined,
+    return Flexible(
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.brown.shade400,
+          borderRadius: BorderRadius.circular(15.0),
+          border: Border.all(
               color: Colors.brown.shade900,
+              style: BorderStyle.solid,
+              width: 2.0),
+        ),
+        width: MediaQuery.of(context).size.width * 0.35,
+        height: MediaQuery.of(context).size.height * 0.125,
+        child: DropdownButtonHideUnderline(
+          child: ButtonTheme(
+            alignedDropdown: true,
+            child: DropdownButton<String>(
+              dropdownColor: Colors.brown.shade400,
+              value: widget.selectedSubclass,
+              icon: Icon(
+                Icons.arrow_drop_down_outlined,
+                color: Colors.brown.shade900,
+              ),
+              elevation: 16,
+              style: TextStyle(
+                  color: Colors.amber.shade100,
+                  fontFamily: 'Georgia',
+                  fontSize: MediaQuery.of(context).size.height * 0.04,
+                  fontWeight: FontWeight.w500),
+              underline: Container(
+                height: 2,
+                color: Colors.brown.shade900,
+              ),
+              onChanged: (String? newValue) {
+                // This is called when the user selects an item.
+                widget.onSubclassChanged(newValue!);
+                // setState(() {
+                //   subclassValue = newValue!;
+                // });
+              },
+              items: widget.subclassOptions
+                  .map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
             ),
-            elevation: 16,
-            style: TextStyle(
-                color: Colors.amber.shade100,
-                fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.04,
-                fontWeight: FontWeight.w500),
-            underline: Container(
-              height: 2,
-              color: Colors.brown.shade900,
-            ),
-            onChanged: (String? newValue) {
-              // This is called when the user selects an item.
-              widget.onSubclassChanged(newValue!);
-              // setState(() {
-              //   subclassValue = newValue!;
-              // });
-            },
-            items: widget.subclassOptions
-                .map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
           ),
         ),
       ),
@@ -389,35 +386,41 @@ class _ListViewerState extends State<ListViewer> {
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(.03,
-                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ClassesDDB(
-                              onClassChanged: updateSubclassOptions,
-                            ),
-                            const NumberDDB(),
-                          ],
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.35,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              ClassesDDB(
+                                onClassChanged: updateSubclassOptions,
+                              ),
+                              NumberDDB(),
+                            ],
+                          ),
                         ),
                         //    ),
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(.03,
-                            MediaQuery.of(ctx).size.height * 0.03, 0.03, 0),
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SubclassDDB(
-                              subclassOptions: currentSubclassOptions,
-                              selectedSubclass: subclassValue,
-                              onSubclassChanged: handleSubclassChange,
-                            ),
-                          ],
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.35,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SubclassDDB(
+                                subclassOptions: currentSubclassOptions,
+                                selectedSubclass: subclassValue,
+                                onSubclassChanged: handleSubclassChange,
+                              ),
+                            ],
+                          ),
                         ),
                         //    ),
                       ),
@@ -495,7 +498,13 @@ class _ListViewerState extends State<ListViewer> {
                                                     0.036),
                                       ),
                                       subtitle: Text(
-                                          spellMap[keys.elementAt(index)]!),
+                                        spellMap[keys.elementAt(index)]!,
+                                        style: TextStyle(
+                                            fontSize:
+                                                MediaQuery.of(ctx).size.height *
+                                                    0.03,
+                                            fontStyle: FontStyle.italic),
+                                      ),
                                     ),
                                   );
                                 },
@@ -575,7 +584,7 @@ const List<String> circleList = <String>[
 const List<String> artificerList = <String>[
   'Alchemist',
   'Armorer',
-  'Artilerrist',
+  'Artillerist',
   'Battle Smith'
 ];
 
