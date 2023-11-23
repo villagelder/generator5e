@@ -91,15 +91,24 @@ class SpellSetGenerator {
     } else {
       clLevel = int.parse(classLevel);
     }
-    String spellSet = "Level ${classLevel.toString()}, $subclass, Spell Set";
+    String title = "$className ($subclass)";
+    String subtitle = "Level $classLevel Spell Set";
     if (className == "Wizard" || subclass == "Eldritch Knight") {
-      spellSet = "Level ${classLevel.toString()} Spellbook";
+      subtitle = "Level $classLevel Spellbook";
     }
-    SpellsKnown spellsKnownObj =
-        getSpellsKnownObjClassAndLevel(className, clLevel);
+    SpellsKnown spellsKnownObj;
 
+    if (subclass == "Eldritch Knight") {
+      spellsKnownObj =
+          getSpellsKnownObjClassAndLevel("Eldritch Knight", clLevel);
+    } else if (subclass == "Arcane Trickster") {
+      spellsKnownObj =
+          getSpellsKnownObjClassAndLevel("Arcane Trickster", clLevel);
+    } else {
+      spellsKnownObj = getSpellsKnownObjClassAndLevel(className, clLevel);
+    }
     Map<String, String> spellMap = {
-      className: spellSet,
+      title: subtitle,
       "Cantrips": "",
       "Level 1": "",
       "Level 2": "",
@@ -115,6 +124,12 @@ class SpellSetGenerator {
     if (className == "Wizard") {
       spellMap = getWizardSubclassSpells(
           spellsKnownObj, spellMap, className, subclass);
+    } else if (subclass == "Eldritch Knight") {
+      spellMap = getWizardSubclassSpells(
+          spellsKnownObj, spellMap, "Wizard", "Evocation");
+    } else if (subclass == "Arcane Trickster") {
+      spellMap = getWizardSubclassSpells(
+          spellsKnownObj, spellMap, "Wizard", "Illusion");
     }
 
     int numSpells = 0;
@@ -201,6 +216,9 @@ class SpellSetGenerator {
   }
 
   String getRandomSpellNameClassAndLevel(String className, int lvl) {
+    if (className == "Fighter" || className == "Rogue") {
+      className = "Wizard";
+    }
     List<Spell> spellList = getSpellsByClassAndLevel(className, lvl);
     String spellName =
         spellList[Utility.getRandomIndexFromListSize(spellList.length)].name;
@@ -211,12 +229,14 @@ class SpellSetGenerator {
       Map<String, String> spellMap, String className, String subclass) {
     List<Spell> spells = [];
     String school = "Abjuration";
-    //bladesinging
+
     if (subclass == "Bladesinging") {
       school = "Conjuration";
     } else if (subclass == "Order of Scribes") {
       school = "Divination";
     } else if (subclass == "School of War") {
+      school = "Evocation";
+    } else if (subclass == "Eldritch Knight") {
       school = "Evocation";
     } else {
       school = subclass.replaceFirst("School of ", "");

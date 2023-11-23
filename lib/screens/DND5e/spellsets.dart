@@ -456,65 +456,61 @@ class _ListViewerState extends State<ListViewer> {
                   ),
                 ),
               ),
-              SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.58,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.7,
-                            child: Card(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15.0)),
-                              elevation: 2,
-                              color: Colors.brown.shade500,
-                              child: ListView.builder(
-                                key: ObjectKey(keys.first),
-                                itemCount: keys.length,
-                                itemBuilder: (ctx, index) {
-                                  return Padding(
-                                    padding: EdgeInsets.fromLTRB(
-                                        0,
-                                        MediaQuery.of(ctx).size.height * 0.01,
-                                        0,
-                                        0),
-                                    child: ListTile(
-                                      dense: true,
-                                      shape: RoundedRectangleBorder(
-                                          side: const BorderSide(width: 2),
-                                          borderRadius:
-                                              BorderRadius.circular(15.0)),
-                                      tileColor: Colors.orange.shade100,
-                                      title: Text(
-                                        keys.elementAt(index),
-                                        style: TextStyle(
-                                            fontSize:
-                                                MediaQuery.of(ctx).size.height *
-                                                    0.036),
-                                      ),
-                                      subtitle: Text(
-                                        spellMap[keys.elementAt(index)]!,
-                                        style: TextStyle(
-                                            fontSize:
-                                                MediaQuery.of(ctx).size.height *
-                                                    0.03,
-                                            fontStyle: FontStyle.italic),
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
+              Expanded(
+                //width: MediaQuery.of(ctx).size.width * 0.58,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0, vertical: 8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SizedBox(
+                        height: MediaQuery.of(ctx).size.height * 0.75,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0)),
+                          elevation: 2,
+                          color: Colors.brown.shade500,
+                          child: ListView.builder(
+                            key: ObjectKey(keys.first),
+                            itemCount: keys.length,
+                            itemBuilder: (ctx, index) {
+                              return Padding(
+                                padding: EdgeInsets.fromLTRB(
+                                    0,
+                                    MediaQuery.of(ctx).size.height * 0.01,
+                                    0,
+                                    0),
+                                child: ListTile(
+                                  dense: true,
+                                  shape: RoundedRectangleBorder(
+                                      side: const BorderSide(width: 2),
+                                      borderRadius:
+                                          BorderRadius.circular(15.0)),
+                                  tileColor: Colors.orange.shade100,
+                                  title: Text(
+                                    keys.elementAt(index),
+                                    style: TextStyle(
+                                        fontSize:
+                                            MediaQuery.of(ctx).size.height *
+                                                0.034),
+                                  ),
+                                  subtitle: Text(
+                                    spellMap[keys.elementAt(index)]!,
+                                    style: TextStyle(
+                                        fontSize:
+                                            MediaQuery.of(ctx).size.height *
+                                                0.03,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                ),
+                              );
+                            },
                           ),
-                        ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
