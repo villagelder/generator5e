@@ -465,7 +465,7 @@ class _ListViewerState extends State<ListViewer> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       SizedBox(
-                        height: MediaQuery.of(ctx).size.height * 0.75,
+                        height: MediaQuery.of(ctx).size.height * 0.73,
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),

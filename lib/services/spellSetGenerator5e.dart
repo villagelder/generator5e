@@ -83,18 +83,19 @@ class SpellSetGenerator {
   Map<String, String> generateSpellSetMap(
       String className, String subclass, String classLevel) {
     int clLevel = 1;
-
+    String subtitleLevel = classLevel;
     if (classLevel == "Any Level") {
       clLevel = DiceRoller.roll1d20();
+      subtitleLevel = clLevel.toString();
     } else if (classLevel == "Legendary") {
       clLevel = 20;
     } else {
       clLevel = int.parse(classLevel);
     }
     String title = "$className ($subclass)";
-    String subtitle = "Level $classLevel Spell Set";
-    if (className == "Wizard" || subclass == "Eldritch Knight") {
-      subtitle = "Level $classLevel Spellbook";
+    String subtitle = "Level $subtitleLevel Spell Set";
+    if (classLevel == "Legendary") {
+      subtitle = "$classLevel Spell Set";
     }
     SpellsKnown spellsKnownObj;
 
@@ -107,6 +108,38 @@ class SpellSetGenerator {
     } else {
       spellsKnownObj = getSpellsKnownObjClassAndLevel(className, clLevel);
     }
+
+    if (classLevel == "Legendary") {
+      if (subclass == "Eldritch Knight" ||
+          className == "Paladin" ||
+          className == "Ranger" ||
+          className == "Warlock") {
+        spellsKnownObj.cantrips += 2;
+        spellsKnownObj.lvl1 += 3;
+        spellsKnownObj.lvl2 += 2;
+        spellsKnownObj.lvl3 += 1;
+        spellsKnownObj.lvl4 += 1;
+        spellsKnownObj.lvl5 += 1;
+      } else if (subclass == "Arcane Trickster") {
+        spellsKnownObj.cantrips += 1;
+        spellsKnownObj.lvl1 += 2;
+        spellsKnownObj.lvl2 += 1;
+        spellsKnownObj.lvl3 += 1;
+        spellsKnownObj.lvl4 += 1;
+      } else {
+        spellsKnownObj.cantrips += 2;
+        spellsKnownObj.lvl1 += 3;
+        spellsKnownObj.lvl2 += 2;
+        spellsKnownObj.lvl3 += 1;
+        spellsKnownObj.lvl4 += 1;
+        spellsKnownObj.lvl5 += 1;
+        spellsKnownObj.lvl6 += 1;
+        spellsKnownObj.lvl7 += 1;
+        spellsKnownObj.lvl8 += 1;
+        spellsKnownObj.lvl9 += 1;
+      }
+    }
+
     Map<String, String> spellMap = {
       title: subtitle,
       "Cantrips": "",

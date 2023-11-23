@@ -344,9 +344,537 @@
     },
     {
       "classname": "Cleric",
-      "subclass": "Domain",
+      "subclass": "Life Domain",
       "cantrips": [],
       "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Bless",
+        "Cure Wounds"
+      ],
+      "level2": [
+        "Lesser Restoration",
+        "Spiritual Weapon"
+      ],
+      "level3": [
+        "Beacon of Hope",
+        "Revivify"
+      ],
+      "level4": [
+        "Death Ward",
+        "Guardian of Faith"
+      ],
+      "level5": [
+        "Mass Cure Wounds",
+        "Raise Dead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Light Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Burning Hands",
+        "Faerie Fire"
+      ],
+      "level2": [
+        "Flaming Sphere",
+        "Scorching Ray"
+      ],
+      "level3": [
+        "Daylight",
+        "Fireball"
+      ],
+      "level4": [
+        "Guardian of Faith",
+        "Wall of Fire"
+      ],
+      "level5": [
+        "Flame Strike",
+        "Scrying"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Nature Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Animal Friendship",
+        "Speak with Animals"
+      ],
+      "level2": [
+        "Barkskin",
+        "Spike Growth"
+      ],
+      "level3": [
+        "Plant Growth",
+        "Wind Wall"
+      ],
+      "level4": [
+        "Dominate Beast",
+        "Grasping Vine"
+      ],
+      "level5": [
+        "Insect Plague",
+        "Tree Stride"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Order Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Command",
+        "Heroism"
+      ],
+      "level2": [
+        "Hold Person",
+        "Zone of Truth"
+      ],
+      "level3": [
+        "Mass Healing Word",
+        "Slow"
+      ],
+      "level4": [
+        "Compulsion",
+        "Locate Creature"
+      ],
+      "level5": [
+        "Commune",
+        "Dominate Person"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Peace Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Heroism",
+        "Sanctuary"
+      ],
+      "level2": [
+        "Aid",
+        "Warding Bond"
+      ],
+      "level3": [
+        "Beacon of Hope",
+        "Sending"
+      ],
+      "level4": [
+        "Aura of Purity",
+        "Otiluke's Resilient Sphere"
+      ],
+      "level5": [
+        "Greater Restoration",
+        "Rary's Telepathic Bond"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Tempest Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Fog Cloud",
+        "Thunderwave"
+      ],
+      "level2": [
+        "Gust of Wind",
+        "Shatter"
+      ],
+      "level3": [
+        "Call Lightning",
+        "Sleet Storm"
+      ],
+      "level4": [
+        "Control Water",
+        "Ice Storm"
+      ],
+      "level5": [
+        "Destructive Wave",
+        "Insect Plague"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Trickery Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Charm Person",
+        "Disguise Self"
+      ],
+      "level2": [
+        "Mirror Image",
+        "Pass Without Trace"
+      ],
+      "level3": [
+        "Blink",
+        "Dispel Magic"
+      ],
+      "level4": [
+        "Dimension Door",
+        "Polymorph"
+      ],
+      "level5": [
+        "Dominate Person",
+        "Modify Memory"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Twilight Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Faerie Fire",
+        "Sleep"
+      ],
+      "level2": [
+        "Moonbeam",
+        "See Invisibility"
+      ],
+      "level3": [
+        "Aura of Vitality",
+        "Leomund's Tiny Hut"
+      ],
+      "level4": [
+        "Aura of Life",
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Circle of Power",
+        "Mislead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "War Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Divine Favor",
+        "Shield of Faith"
+      ],
+      "level2": [
+        "Magic Weapon",
+        "Spiritual Weapon"
+      ],
+      "level3": [
+        "Crusader's Mantle",
+        "Spirit Guardians"
+      ],
+      "level4": [
+        "Freedom of Movement",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Flame Strike",
+        "Hold Monster"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Blood Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "False Life",
+        "Sleep"
+      ],
+      "level2": [
+        "Hold Person",
+        "Ray of Enfeeblement"
+      ],
+      "level3": [
+        "Haste",
+        "Slow"
+      ],
+      "level4": [
+        "Blight",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Dominate Person",
+        "Hold Monster"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Cleric",
+      "subclass": "Moon Domain",
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Faerie Fire",
+        "Silent Image"
+      ],
+      "level2": [
+        "Invisibility",
+        "Moonbeam"
+      ],
+      "level3": [
+        "Hypnotic Pattern",
+        "Major Image"
+      ],
+      "level4": [
+        "Greater Invisibility",
+        "Hallucinatory Terrain"
+      ],
+      "level5": [
+        "Dream",
+        "Passwall"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Druid",
+      "subclass": "Circle of Spores",
+      "cantrips": [],
+      "minforlvl1": 2,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Chill Touch"
+      ],
+      "level2": [
+        "Blindness/Deafness",
+        "Gentle Repose"
+      ],
+      "level3": [
+        "Animate Dead",
+        "Gaseous Form"
+      ],
+      "level4": [
+        "Blight",
+        "Confusion"
+      ],
+      "level5": [
+        "Cloudkill",
+        "Contagion"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
+      "cantrips": [],
+      "minforlvl1": 2,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [
+        "Hold Person",
+        "Spike Growth"
+      ],
+      "level3": [
+        "Sleet Storm",
+        "Slow"
+      ],
+      "level4": [
+        "Freedom of Movement",
+        "Ice Storm"
+      ],
+      "level5": [
+        "Commune with Nature",
+        "Cone of Cold"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Coast",
+      "cantrips": [],
+      "minforlvl1": 2,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [
+        "Mirror Image",
+        "Misty Step"
+      ],
+      "level3": [
+        "Water Breathing",
+        "Water Walk"
+      ],
+      "level4": [
+        "Control Water",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Conjure Elemental",
+        "Scrying"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
+      "cantrips": [],
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
@@ -366,10 +894,11 @@
       "level9": []
     },
     {
-      "classname": "Cleric",
-      "subclass": "Domain",
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
       "cantrips": [],
-      "minforlvl1": 1,
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
@@ -389,10 +918,11 @@
       "level9": []
     },
     {
-      "classname": "Cleric",
-      "subclass": "Domain",
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
       "cantrips": [],
-      "minforlvl1": 1,
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
@@ -412,10 +942,11 @@
       "level9": []
     },
     {
-      "classname": "Cleric",
-      "subclass": "Domain",
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
       "cantrips": [],
-      "minforlvl1": 1,
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
@@ -435,10 +966,11 @@
       "level9": []
     },
     {
-      "classname": "Cleric",
-      "subclass": "Domain",
+      "classname": "Druid",
+      "subclass": "Circle of the Land",
+      "choice": "Arctic",
       "cantrips": [],
-      "minforlvl1": 1,
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
@@ -458,10 +990,33 @@
       "level9": []
     },
     {
-      "classname": "Cleric",
-      "subclass": "Domain",
+      "classname": "Druid",
+      "subclass": "",
       "cantrips": [],
-      "minforlvl1": 1,
+      "minforlvl1": 2,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [],
+      "level2": [],
+      "level3": [],
+      "level4": [],
+      "level5": [],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Druid",
+      "subclass": "",
+      "cantrips": [],
+      "minforlvl1": 2,
       "minforlvl2": 3,
       "minforlvl3": 5,
       "minforlvl4": 7,
