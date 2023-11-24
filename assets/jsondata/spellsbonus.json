@@ -3,6 +3,7 @@
     {
       "classname": "Artificer",
       "subclass": "Alchemist",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 3,
       "minforlvl2": 5,
@@ -41,6 +42,7 @@
     {
       "classname": "Artificer",
       "subclass": "Armorer",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 3,
       "minforlvl2": 5,
@@ -79,6 +81,7 @@
     {
       "classname": "Artificer",
       "subclass": "Artillerist",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 3,
       "minforlvl2": 5,
@@ -117,6 +120,7 @@
     {
       "classname": "Artificer",
       "subclass": "Battle Smith",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 3,
       "minforlvl2": 5,
@@ -155,6 +159,7 @@
     {
       "classname": "Cleric",
       "subclass": "Arcana Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -193,6 +198,7 @@
     {
       "classname": "Cleric",
       "subclass": "Death Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -231,6 +237,7 @@
     {
       "classname": "Cleric",
       "subclass": "Forge Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -269,6 +276,7 @@
     {
       "classname": "Cleric",
       "subclass": "Grave Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -307,6 +315,7 @@
     {
       "classname": "Cleric",
       "subclass": "Knowledge Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -345,6 +354,7 @@
     {
       "classname": "Cleric",
       "subclass": "Life Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -383,6 +393,7 @@
     {
       "classname": "Cleric",
       "subclass": "Light Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -421,6 +432,7 @@
     {
       "classname": "Cleric",
       "subclass": "Nature Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -459,6 +471,7 @@
     {
       "classname": "Cleric",
       "subclass": "Order Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -497,6 +510,7 @@
     {
       "classname": "Cleric",
       "subclass": "Peace Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -535,6 +549,7 @@
     {
       "classname": "Cleric",
       "subclass": "Tempest Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -573,6 +588,7 @@
     {
       "classname": "Cleric",
       "subclass": "Trickery Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -611,6 +627,7 @@
     {
       "classname": "Cleric",
       "subclass": "Twilight Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -649,6 +666,7 @@
     {
       "classname": "Cleric",
       "subclass": "War Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -687,6 +705,7 @@
     {
       "classname": "Cleric",
       "subclass": "Blood Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -725,6 +744,7 @@
     {
       "classname": "Cleric",
       "subclass": "Moon Domain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 1,
       "minforlvl2": 3,
@@ -763,6 +783,7 @@
     {
       "classname": "Druid",
       "subclass": "Circle of Spores",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -801,6 +822,7 @@
       "classname": "Druid",
       "subclass": "Circle of the Land",
       "choice": "Arctic",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -837,6 +859,7 @@
       "classname": "Druid",
       "subclass": "Circle of the Land",
       "choice": "Coast",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -872,7 +895,8 @@
     {
       "classname": "Druid",
       "subclass": "Circle of the Land",
-      "choice": "Arctic",
+      "choice": "Desert",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -884,10 +908,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Blur",
+        "Silence"
+      ],
+      "level3": [
+        "Create Food and Water",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Blight",
+        "Hallucinatory Terrain"
+      ],
+      "level5": [
+        "Insect Plague",
+        "Wall of Stone"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -896,7 +932,8 @@
     {
       "classname": "Druid",
       "subclass": "Circle of the Land",
-      "choice": "Arctic",
+      "choice": "Forest",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -908,10 +945,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Barkskin",
+        "Spider Climb"
+      ],
+      "level3": [
+        "Call Lightning",
+        "Plant Growth"
+      ],
+      "level4": [
+        "Divination",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Commune with Nature",
+        "Tree Stride"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -920,7 +969,8 @@
     {
       "classname": "Druid",
       "subclass": "Circle of the Land",
-      "choice": "Arctic",
+      "choice": "Grassland",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -932,10 +982,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Invisibility",
+        "Pass without Trace"
+      ],
+      "level3": [
+        "Daylight",
+        "Haste"
+      ],
+      "level4": [
+        "Divination",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Dream",
+        "Insect Plague"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -944,7 +1006,8 @@
     {
       "classname": "Druid",
       "subclass": "Circle of the Land",
-      "choice": "Arctic",
+      "choice": "Mountain",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -956,10 +1019,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Spider Climb",
+        "Spike Growth"
+      ],
+      "level3": [
+        "Lightning Bolt",
+        "Meld into Stone"
+      ],
+      "level4": [
+        "Stone Shape",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Passwall",
+        "Wall of Stone"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -968,7 +1043,8 @@
     {
       "classname": "Druid",
       "subclass": "Circle of the Land",
-      "choice": "Arctic",
+      "choice": "Swamp",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -980,10 +1056,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Darkness",
+        "Acid Arrow"
+      ],
+      "level3": [
+        "Water Walk",
+        "Stinking Cloud"
+      ],
+      "level4": [
+        "Freedom of Movement",
+        "Locate Creature"
+      ],
+      "level5": [
+        "Insect Plague",
+        "Scrying"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -991,7 +1079,9 @@
     },
     {
       "classname": "Druid",
-      "subclass": "",
+      "subclass": "Circle of the Land",
+      "choice": "Underdark",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -1003,10 +1093,22 @@
       "minforlvl8": 21,
       "minforlvl9": 21,
       "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level2": [
+        "Spider Climb",
+        "Web"
+      ],
+      "level3": [
+        "Gaseous Form",
+        "Stinking Cloud"
+      ],
+      "level4": [
+        "Greater Invisibility",
+        "Stone Shape"
+      ],
+      "level5": [
+        "Cloudkill",
+        "Insect Plague"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -1014,7 +1116,8 @@
     },
     {
       "classname": "Druid",
-      "subclass": "",
+      "subclass": "Circle of Wildfire",
+      "expanded": false,
       "cantrips": [],
       "minforlvl1": 2,
       "minforlvl2": 3,
@@ -1025,11 +1128,1285 @@
       "minforlvl7": 21,
       "minforlvl8": 21,
       "minforlvl9": 21,
-      "level1": [],
-      "level2": [],
-      "level3": [],
-      "level4": [],
-      "level5": [],
+      "level1": [
+        "Burning Hands",
+        "Cure Wounds"
+      ],
+      "level2": [
+        "Flaming Sphere",
+        "Scorching Ray"
+      ],
+      "level3": [
+        "Plant Growth",
+        "Revivify"
+      ],
+      "level4": [
+        "Aura of Life",
+        "Fire Shield"
+      ],
+      "level5": [
+        "Flame Strike",
+        "Mass Cure Wounds"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of Conquest",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Armor of Agathys",
+        "Command"
+      ],
+      "level2": [
+        "Hold Person",
+        "Spiritual Weapon"
+      ],
+      "level3": [
+        "Bestow Curse",
+        "Fear"
+      ],
+      "level4": [
+        "Dominate Beast",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Cloudkill",
+        "Dominate Person"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of Devotion",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Protection from Evil and Good",
+        "Sanctuary"
+      ],
+      "level2": [
+        "Lesser Restoration",
+        "Zone of Truth"
+      ],
+      "level3": [
+        "Beacon of Hope",
+        "Dispel Magic"
+      ],
+      "level4": [
+        "Freedom of Movement",
+        "Guardian of Faith"
+      ],
+      "level5": [
+        "Commune",
+        "Flame Strike"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of Glory",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Guiding Bolt",
+        "Heroism"
+      ],
+      "level2": [
+        "Enhance Ability",
+        "Magic Weapon"
+      ],
+      "level3": [
+        "Haste",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Compulsion",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Commune",
+        "Flame Strike"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of Redemption",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Sanctuary",
+        "Sleep"
+      ],
+      "level2": [
+        "Calm Emotions",
+        "Hold Person"
+      ],
+      "level3": [
+        "Counterspell",
+        "Hypnotic Pattern"
+      ],
+      "level4": [
+        "Otiluke's Resilient Sphere",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Hold Monster",
+        "Wall of Force"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of the Ancients",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Ensnaring Strike",
+        "Speak with Animals"
+      ],
+      "level2": [
+        "Misty Step",
+        "Moonbeam"
+      ],
+      "level3": [
+        "Plant Growth",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Ice Storm",
+        "Stoneskin"
+      ],
+      "level5": [
+        "Commune with Nature",
+        "Tree Stride"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of the Crown",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Command",
+        "Compelled Duel"
+      ],
+      "level2": [
+        "Warding Bond",
+        "Zone of Truth"
+      ],
+      "level3": [
+        "Aura of Vitality",
+        "Spirit Guardians"
+      ],
+      "level4": [
+        "Banishment",
+        "Guardian of Faith"
+      ],
+      "level5": [
+        "Circle of Power",
+        "Geas"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of the Watchers",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Alarm",
+        "Detect Magic"
+      ],
+      "level2": [
+        "Moonbeam",
+        "See Invisibility"
+      ],
+      "level3": [
+        "Counterspell",
+        "Nondetection"
+      ],
+      "level4": [
+        "Aura of Purity",
+        "Banishment"
+      ],
+      "level5": [
+        "Hold Monster",
+        "Scrying"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of Vengeance",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Bane",
+        "Hunter's Mark"
+      ],
+      "level2": [
+        "Hold Person",
+        "Misty Step"
+      ],
+      "level3": [
+        "Haste",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Banishment",
+        "Dimension Door"
+      ],
+      "level5": [
+        "Hold Monster",
+        "Scrying"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Paladin",
+      "subclass": "Oath of the Open Sea",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Create or Destroy Water",
+        "Expeditious Retreat"
+      ],
+      "level2": [
+        "Augury",
+        "Misty Step"
+      ],
+      "level3": [
+        "Calling Lightning",
+        "Freedom of the Waves"
+      ],
+      "level4": [
+        "Control Water",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Commune with Nature",
+        "Freedom of the Winds"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Fey Wanderer",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Charm Person"
+      ],
+      "level2": [
+        "Misty Step"
+      ],
+      "level3": [
+        "Dispel Magic"
+      ],
+      "level4": [
+        "Dimension Door"
+      ],
+      "level5": [
+        "Mislead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Gloom Stalker",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Disguise Self"
+      ],
+      "level2": [
+        "Rope Trick"
+      ],
+      "level3": [
+        "Fear"
+      ],
+      "level4": [
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Seeming"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Horizen Walker",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Protection from Evil and Good"
+      ],
+      "level2": [
+        "Misty Step"
+      ],
+      "level3": [
+        "Haste"
+      ],
+      "level4": [
+        "Banishment"
+      ],
+      "level5": [
+        "Teleportation Circle"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Monster Slayer",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Protection from Evil and Good"
+      ],
+      "level2": [
+        "Zone of Truth"
+      ],
+      "level3": [
+        "Magic Circle"
+      ],
+      "level4": [
+        "Banishment"
+      ],
+      "level5": [
+        "Hold Monster"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Fey Wanderer",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Charm Person"
+      ],
+      "level2": [
+        "Misty Step"
+      ],
+      "level3": [
+        "Dispel Magic"
+      ],
+      "level4": [
+        "Dimension Door"
+      ],
+      "level5": [
+        "Mislead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Ranger",
+      "subclass": "Swarmkeeper",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 3,
+      "minforlvl2": 5,
+      "minforlvl3": 9,
+      "minforlvl4": 13,
+      "minforlvl5": 17,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Faerie Fire",
+        "Mage Hand"
+      ],
+      "level2": [
+        "Web"
+      ],
+      "level3": [
+        "Gaseous Form"
+      ],
+      "level4": [
+        "Arcane Eye"
+      ],
+      "level5": [
+        "Insect Plague"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Aberrant Mind",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Arms of Hadar",
+        "Dissonant Whispers",
+        "Mind Sliver"
+      ],
+      "level2": [
+        "Calm Emotions",
+        "Detect Thoughts"
+      ],
+      "level3": [
+        "Hunger of Hadar",
+        "Sending"
+      ],
+      "level4": [
+        "Evard's Black Tentacles",
+        "Summon Aberration"
+      ],
+      "level5": [
+        "Rary's Telepathic Bond",
+        "Telekinesis"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Clockwork Magic",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Alarm",
+        "Protection from Evil and Good"
+      ],
+      "level2": [
+        "Aid",
+        "Lesser Restoration"
+      ],
+      "level3": [
+        "Dispel Magic",
+        "Protection from Energy"
+      ],
+      "level4": [
+        "Freedom of Movement",
+        "Summon Construct"
+      ],
+      "level5": [
+        "Greater Restoration",
+        "Wall of Force"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Lunar Magic",
+      "choice": "Full Moon",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Shield"
+      ],
+      "level2": [
+        "Lesser Restoration"
+      ],
+      "level3": [
+        "Dispel Magic"
+      ],
+      "level4": [
+        "Death Ward"
+      ],
+      "level5": [
+        "Rary's Telepathic Bond"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Lunar Magic",
+      "choice": "New Moon",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Ray of Sickness"
+      ],
+      "level2": [
+        "Blindness/Deafness"
+      ],
+      "level3": [
+        "Vampiric"
+      ],
+      "level4": [
+        "Confusion"
+      ],
+      "level5": [
+        "Hold Monster"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Lunar Magic",
+      "choice": "Crescent Moon",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Color Spray"
+      ],
+      "level2": [
+        "Alter Self"
+      ],
+      "level3": [
+        "Phantom Steed"
+      ],
+      "level4": [
+        "Hallucinatory"
+      ],
+      "level5": [
+        "Mislead"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Sorcerer",
+      "subclass": "Runechild",
+      "expanded": false,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Longstrider",
+        "Protection from Evil and Good"
+      ],
+      "level2": [
+        "Lesser Restoration",
+        "Protection from Poison"
+      ],
+      "level3": [
+        "Glyph of Warding",
+        "Magic Circle"
+      ],
+      "level4": [
+        "Death Ward",
+        "Freedom of Movement"
+      ],
+      "level5": [
+        "Greater Restoration",
+        "Telekinesis"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Archfey",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Faerie Fire",
+        "Sleep"
+      ],
+      "level2": [
+        "Calm Emotions",
+        "Phantasmal Force"
+      ],
+      "level3": [
+        "Blink",
+        "Plant Growth"
+      ],
+      "level4": [
+        "Dominate Beast",
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Dominate Person",
+        "Seeming"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Celestial",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Cure Wounds",
+        "Guiding Bolt"
+      ],
+      "level2": [
+        "Flaming Sphere",
+        "Lesser Restoration"
+      ],
+      "level3": [
+        "Daylight",
+        "Revivify"
+      ],
+      "level4": [
+        "Guardian of Faith",
+        "Wall of Fire"
+      ],
+      "level5": [
+        "Flme Strike",
+        "Greater Restoration"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Fathomless",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Create or Destroy Water",
+        "Thunderwave"
+      ],
+      "level2": [
+        "Gust of Wind",
+        "Silence"
+      ],
+      "level3": [
+        "Lightning Bolt",
+        "Sleet Storm"
+      ],
+      "level4": [
+        "Control Water",
+        "Summon Elemental"
+      ],
+      "level5": [
+        "Bigby's Hand",
+        "Cone of Cold"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Fiend",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Burning Hands",
+        "Command"
+      ],
+      "level2": [
+        "Blindness/Deafness",
+        "Schorching Ray"
+      ],
+      "level3": [
+        "Fireball",
+        "Stinking Cloud"
+      ],
+      "level4": [
+        "Fire Shield",
+        "Wall of Fire"
+      ],
+      "level5": [
+        "Flame Strike",
+        "Hallow"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Genie",
+      "choice": "Dao",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Detect Evil and Good",
+        "Sanctuary"
+      ],
+      "level2": [
+        "Phantasmal Force",
+        "Spike Growth"
+      ],
+      "level3": [
+        "Create Food and Water",
+        "Meld into Stone"
+      ],
+      "level4": [
+        "Phantasmal Killer",
+        "Stone Shape"
+      ],
+      "level5": [
+        "Creation",
+        "Wall of Stone"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": [
+        "Wish"
+      ]
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Genie",
+      "choice": "Djinni",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Detect Evil and Good",
+        "Thunderwve"
+      ],
+      "level2": [
+        "Phantasmal Force",
+        "Gust of Wind"
+      ],
+      "level3": [
+        "Create Food and Water",
+        "Wind Wall"
+      ],
+      "level4": [
+        "Phantasmal Killer",
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Creation",
+        "Seeming"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": [
+        "Wish"
+      ]
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Genie",
+      "choice": "Efreeti",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Detect Evil and Good",
+        "Burning Hands"
+      ],
+      "level2": [
+        "Phantasmal Force",
+        "Scorching Ray"
+      ],
+      "level3": [
+        "Create Food and Water",
+        "Fireball"
+      ],
+      "level4": [
+        "Phantasmal Killer",
+        "Fire Shield"
+      ],
+      "level5": [
+        "Creation",
+        "Flame Strike"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": [
+        "Wish"
+      ]
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Genie",
+      "choice": "Marid",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Detect Evil and Good",
+        "Fog Cloud"
+      ],
+      "level2": [
+        "Phantasmal Force",
+        "Blur"
+      ],
+      "level3": [
+        "Create Food and Water",
+        "Sleet Storm"
+      ],
+      "level4": [
+        "Phantasmal Killer",
+        "Control Water"
+      ],
+      "level5": [
+        "Creation",
+        "Cone of Cold"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": [
+        "Wish"
+      ]
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Great Old One",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Dissonant Whispers",
+        "Tasha's Hideous Laughter"
+      ],
+      "level2": [
+        "Detect Thoughts",
+        "Phantasmal Force"
+      ],
+      "level3": [
+        "Clairvoyance",
+        "Sending"
+      ],
+      "level4": [
+        "Dominate Beast",
+        "Evard's Black Tentacles"
+      ],
+      "level5": [
+        "Dominate Person",
+        "Telekinesis"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "Hexblade",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Shield",
+        "Wrathful Smite"
+      ],
+      "level2": [
+        "Blur",
+        "Branding Smite"
+      ],
+      "level3": [
+        "Blink",
+        "Elemental Weapon"
+      ],
+      "level4": [
+        "Phantasmal Killer",
+        "Staggering Smite"
+      ],
+      "level5": [
+        "Banishing Smite",
+        "Cone of Cold"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Undead",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "Bane",
+        "False Life"
+      ],
+      "level2": [
+        "Blindness/Deafness",
+        "Phantasmal Force"
+      ],
+      "level3": [
+        "Phantom Steed",
+        "Speak with Dead"
+      ],
+      "level4": [
+        "Death Ward",
+        "Greater Invisibility"
+      ],
+      "level5": [
+        "Antilife Shell",
+        "Cloudkill"
+      ],
+      "level6": [],
+      "level7": [],
+      "level8": [],
+      "level9": []
+    },
+    {
+      "classname": "Warlock",
+      "subclass": "The Undying",
+      "expanded": true,
+      "cantrips": [],
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
+      "minforlvl6": 21,
+      "minforlvl7": 21,
+      "minforlvl8": 21,
+      "minforlvl9": 21,
+      "level1": [
+        "False Life",
+        "Ray of Sickness"
+      ],
+      "level2": [
+        "Blindness/Deafness",
+        "Silence"
+      ],
+      "level3": [
+        "Feign Death",
+        "Speak with Dead"
+      ],
+      "level4": [
+        "Aura of Life",
+        "Death Ward"
+      ],
+      "level5": [
+        "Contagion",
+        "Legend Lore"
+      ],
       "level6": [],
       "level7": [],
       "level8": [],
@@ -1038,12 +2415,13 @@
     {
       "classname": "Template",
       "subclass": "",
+      "expanded": false,
       "cantrips": [],
-      "minforlvl1": 3,
-      "minforlvl2": 5,
-      "minforlvl3": 9,
-      "minforlvl4": 13,
-      "minforlvl5": 17,
+      "minforlvl1": 1,
+      "minforlvl2": 3,
+      "minforlvl3": 5,
+      "minforlvl4": 7,
+      "minforlvl5": 9,
       "minforlvl6": 21,
       "minforlvl7": 21,
       "minforlvl8": 21,
