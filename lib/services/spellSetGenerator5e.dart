@@ -12,8 +12,6 @@ import '../models/spellsknown.dart';
 class SpellSetGenerator {
   List _spellsKnownItems = [];
   List<SpellsKnown> spellsKnownObjList = [];
-  List _bonusSpellsItems = [];
-  List<BonusSpells> bonusSpellsObjList = [];
   List _spellsItems = [];
   List<Spell> spellObjList = [];
 
@@ -39,19 +37,7 @@ class SpellSetGenerator {
     final String response =
         await rootBundle.loadString('assets/jsondata/spellsperlvl.json');
     final data = await json.decode(response);
-    _spellsKnownItems = data["spellsKnown"] as List;
-  }
-
-  Future<void> readJsonBonusSpells() async {
-    final String response =
-    await rootBundle.loadString('assets/jsondata/spellsbonus.json');
-    final data = await json.decode(response);
-    _spellsKnownItems = data["spellsKnown"] as List;
-  }
-
-  getBonusSpellsObjectList() {
-    bonusSpellsObjList =
-        _bonusSpellsItems.map((bJson) => BonusSpells.fromJson(bJson)).toList();
+    _spellsKnownItems = data["bonusSpells"] as List;
   }
 
   getSpellsKnownObjectList() {
@@ -68,14 +54,6 @@ class SpellSetGenerator {
     return spellsKnownObjList
         .where((sk) => sk.className == className && sk.level == level)
         .toList()[0];
-  }
-
-  BonusSpells getBonusSpellsByClassAndSubclass(String className, String subclass) {
-    return bonusSpellsObjList.where((bs) => bs.classname == className && bs.subclass == subclass).toList()[0];
-  }
-
-  BonusSpells getBonusSpellsByClassAndSubclassAndChoice(String className, String subclass, String choice) {
-    return bonusSpellsObjList.where((bs) => bs.classname == className && bs.subclass == subclass && bs.choice == choice).toList()[0];
   }
 
   List<Spell> getSpellsByClass(String className) {
