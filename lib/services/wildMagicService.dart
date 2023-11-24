@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:generator5e/models/wildmagicitem.dart';
 import 'package:generator5e/services/diceRoller.dart';
-import 'package:generator5e/services/utility.dart';
 
 class WildMagicService {
   List _wildMagicItems = [];
@@ -36,8 +35,23 @@ class WildMagicService {
 
   String getWildMagicSurgeByType(String type) {
     WildMagicItem wildMagicItem = getWildMagicItemByTitle(type);
-    int roll = DiceRoller.roll1d100();
+    int roll = DiceRoller.getTotalRollFromDice(wildMagicItem.dice);
 
     return wildMagicItem.table[roll.toString()].toString();
+  }
+
+  List<String> getWildMagicSurgeListByType(String type, String number) {
+    int num = int.parse(number);
+    List<String> surgeList = [];
+    for (int i = 0; i < num; i++) {
+      String surge = getWildMagicSurgeByType(type);
+
+      while (surgeList.contains(surge)) {
+        surge = getWildMagicSurgeByType(type);
+      }
+      surgeList.add(surge);
+    }
+
+    return surgeList;
   }
 }

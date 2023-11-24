@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:core';
 
 import 'package:flutter/services.dart';
-import 'package:generator5e/models/bonusspells.dart';
 import 'package:generator5e/services/diceRoller.dart';
 import 'package:generator5e/services/utility.dart';
 
@@ -37,7 +36,7 @@ class SpellSetGenerator {
     final String response =
         await rootBundle.loadString('assets/jsondata/spellsperlvl.json');
     final data = await json.decode(response);
-    _spellsKnownItems = data["bonusSpells"] as List;
+    _spellsKnownItems = data["spellsKnown"] as List;
   }
 
   getSpellsKnownObjectList() {

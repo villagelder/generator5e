@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generator5e/screens/DND5e/WildMagicGenerator.dart';
 import 'package:generator5e/screens/DND5e/abilityGenerator.dart';
 import 'package:generator5e/screens/DND5e/namesGen.dart';
 import 'package:generator5e/screens/DND5e/personalities.dart';
 import 'package:generator5e/screens/DND5e/spellsets.dart';
 import 'package:generator5e/screens/DND5e/treasuregenerator.dart';
 import 'package:generator5e/screens/DND5e/trinketsGenerator.dart';
-import 'package:generator5e/screens/DND5e/wildmagic.dart';
 
 import 'magicitems.dart';
-import 'npcs.dart';
 
 class Generators5ePage extends MaterialPageRoute<void> {
   Generators5ePage()
@@ -351,7 +350,7 @@ class Generators5ePage extends MaterialPageRoute<void> {
                                       const Color.fromRGBO(110, 0, 0, 1.0),
                                 ),
                                 onPressed: () {
-                                  Navigator.push(context, WildMagicPage());
+                                  Navigator.push(context, WildMagicGenPage());
                                 },
                                 child: Align(
                                   alignment: Alignment.center,

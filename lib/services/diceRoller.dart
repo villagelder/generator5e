@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:collection/collection.dart';
 
 class DiceRoller {
@@ -19,6 +20,22 @@ class DiceRoller {
       diceList.add(rollDie(sides));
     }
     return diceList;
+  }
+
+  static List<int> parseDice(String diceWord) {
+    diceWord = diceWord.toLowerCase();
+    List<int> dice = [];
+    List<String> arr = diceWord.split("d");
+    for (String w in arr) {
+      dice.add(int.parse(w));
+    }
+    return dice;
+  }
+
+  static int getTotalRollFromDice(String diceWord) {
+    List<int> dice = parseDice(diceWord);
+
+    return rollDiceAndSum(dice[0], dice[1]);
   }
 
   static int rollDiceAndSum(int n, int sides) {

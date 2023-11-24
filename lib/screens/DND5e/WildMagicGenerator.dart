@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/services/magicItemGenerator.dart';
+import 'package:flutter/services.dart';
 import 'package:generator5e/services/wildMagicService.dart';
-
-import '../../services/abilityScoreGenerator5e.dart';
 
 class WildMagicGenPage extends MaterialPageRoute<void> {
   WildMagicGenPage()
       : super(builder: (BuildContext ctx) {
+          SystemChrome.setPreferredOrientations([
+            DeviceOrientation.landscapeLeft,
+            DeviceOrientation.landscapeRight,
+          ]);
+          // double screenWidth = MediaQuery.of(ctx).size.width;
+          // double screenHeight = MediaQuery.of(ctx).size.height;
+
           return Scaffold(
-            backgroundColor: Colors.blueGrey.shade100,
             appBar: AppBar(
               title: const Text(
-                'Wild Magic Generator',
+                'Legendary Generators',
                 style: TextStyle(
                   fontFamily: 'Georgia',
                   color: Color.fromRGBO(255, 245, 188, 1.0),
@@ -24,73 +28,6 @@ class WildMagicGenPage extends MaterialPageRoute<void> {
         });
 }
 
-class MethodDDB extends StatefulWidget {
-  const MethodDDB({super.key});
-
-  @override
-  State<MethodDDB> createState() => _MethodDDBState();
-}
-
-const List<String> methodList = <String>[
-  'Wild Magic'
-];
-
-class _MethodDDBState extends State<MethodDDB> {
-  static String methodValue = methodList.first;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.brown.shade400,
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-            color: const Color.fromRGBO(38, 50, 56, 1.0),
-            style: BorderStyle.solid,
-            width: 2.0),
-      ),
-      width: MediaQuery.of(context).size.width * 0.34,
-      // height: MediaQuery.of(context).size.height * 0.075,
-      child: DropdownButtonHideUnderline(
-        child: ButtonTheme(
-          alignedDropdown: true,
-          child: DropdownButton<String>(
-            dropdownColor: Colors.brown.shade400,
-            value: methodValue,
-            icon: Icon(
-              Icons.arrow_drop_down_outlined,
-              color: Colors.brown.shade900,
-            ),
-            elevation: 16,
-            style: TextStyle(
-              color: Colors.amber.shade100,
-              fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.04,
-              fontWeight: FontWeight.w500,
-            ),
-            underline: Container(
-              height: 2,
-              color: Colors.brown.shade900,
-            ),
-            onChanged: (String? value) {
-              // This is called when the user selects an item.
-              setState(() {
-                methodValue = value!;
-              });
-            },
-            items: methodList.map<DropdownMenuItem<String>>((String value) {
-              return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
-              );
-            }).toList(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class ListViewer extends StatefulWidget {
   const ListViewer({super.key});
 
@@ -99,14 +36,14 @@ class ListViewer extends StatefulWidget {
 }
 
 class _ListViewerState extends State<ListViewer> {
-  String surge = "Roll for Wild Magic Surge";
   WildMagicService wildMagicService = WildMagicService();
+  List<String> wildMagicList = ['Roll for Wild Magic Surge'];
 
   updateList() {
-    surge = asg5e.generateDiceRolls(_MethodDDBState.methodValue);
-
+    wildMagicList = wildMagicService.getWildMagicSurgeListByType(
+        _SurgeTypeDDBState.typeValue, _NumberDDBState.numberValue);
     setState(() {
-      surge;
+      wildMagicList;
     });
   }
 
@@ -129,7 +66,7 @@ class _ListViewerState extends State<ListViewer> {
                 width: MediaQuery.of(ctx).size.width * 0.4,
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
-                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
+                      20, MediaQuery.of(ctx).size.height * 0.04, 20, 0),
                   child: Column(
                     children: [
                       Row(
@@ -138,11 +75,10 @@ class _ListViewerState extends State<ListViewer> {
                           SizedBox(
                             height: MediaQuery.of(ctx).size.height * 0.06,
                             child: Text(
-                              '5e Abilities Generator',
+                              '5e Wild Magic Generator',
                               style: TextStyle(
                                 fontFamily: 'Georgia',
-                                fontSize:
-                                    MediaQuery.of(ctx).size.height * 0.047,
+                                fontSize: MediaQuery.of(ctx).size.height * 0.05,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),
@@ -153,14 +89,12 @@ class _ListViewerState extends State<ListViewer> {
                       Padding(
                         padding: EdgeInsets.fromLTRB(
                             0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
-                        child: SizedBox(
-                          width: MediaQuery.of(ctx).size.width * 0.34,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              MethodDDB(),
-                            ],
-                          ),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SurgeTypeDDB(),
+                            NumberDDB(),
+                          ],
                         ),
                       ),
                       Padding(
@@ -181,7 +115,7 @@ class _ListViewerState extends State<ListViewer> {
                             ),
                             onPressed: () => updateList(),
                             child: Text(
-                              'Generate Ability Scores',
+                              'Generate Surge',
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
@@ -213,8 +147,8 @@ class _ListViewerState extends State<ListViewer> {
                               elevation: 2,
                               color: Colors.brown.shade500,
                               child: ListView.builder(
-                                key: ObjectKey(diceRollsList[0]),
-                                itemCount: diceRollsList.length,
+                                key: ObjectKey(wildMagicList[0]),
+                                itemCount: wildMagicList.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(
                                     padding: EdgeInsets.fromLTRB(
@@ -229,7 +163,7 @@ class _ListViewerState extends State<ListViewer> {
                                               BorderRadius.circular(15.0)),
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
-                                        diceRollsList[index],
+                                        wildMagicList[index],
                                         style: TextStyle(
                                             fontSize:
                                                 MediaQuery.of(ctx).size.height *
@@ -250,6 +184,126 @@ class _ListViewerState extends State<ListViewer> {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class NumberDDB extends StatefulWidget {
+  const NumberDDB({super.key});
+
+  @override
+  State<NumberDDB> createState() => _NumberDDBState();
+}
+
+class SurgeTypeDDB extends StatefulWidget {
+  const SurgeTypeDDB({super.key});
+
+  @override
+  State<SurgeTypeDDB> createState() => _SurgeTypeDDBState();
+}
+
+const List<String> surgeTypeList = <String>['Wild Magic Surge'];
+const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
+
+class _NumberDDBState extends State<NumberDDB> {
+  static String numberValue = numberList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.1,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: numberValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.0375,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                numberValue = value!;
+              });
+            },
+            items: numberList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SurgeTypeDDBState extends State<SurgeTypeDDB> {
+  static String typeValue = surgeTypeList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.23,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: typeValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            elevation: 16,
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.0375,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                typeValue = value!;
+              });
+            },
+            items: surgeTypeList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
       ),
     );
   }

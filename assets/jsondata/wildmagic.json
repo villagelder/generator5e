@@ -2,6 +2,7 @@
   "wildmagic": [
     {
       "title": "Wild Magic Surge",
+      "dice": "1d100",
       "table": {
         "1": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.",
         "2": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.",
@@ -35,7 +36,7 @@
         "30": "You teleport up to 60 feet to an unoccupied space of your choice that you can see.",
         "31": "You are transported to the Astral Plane until the end of your next turn, after which time you return to the space you previously occupied or the nearest unoccupied space if that space is occupied.",
         "32": "You are transported to the Astral Plane until the end of your next turn, after which time you return to the space you previously occupied or the nearest unoccupied space if that space is occupied.",
-        "13": "Maximize the damage of the next damaging spell you cast within the next minute.",
+        "33": "Maximize the damage of the next damaging spell you cast within the next minute.",
         "34": "Maximize the damage of the next damaging spell you cast within the next minute.",
         "35": "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older.",
         "36": "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older.",
@@ -67,7 +68,7 @@
         "62": "For the next minute, you must shout when you speak.",
         "63": "You cast fog cloud centered on yourself.",
         "64": "You cast fog cloud centered on yourself.",
-        "66": "Up to three creatures you choose within 30 feet of you take 4d10 lightning damage.",
+        "65": "Up to three creatures you choose within 30 feet of you take 4d10 lightning damage.",
         "66": "Up to three creatures you choose within 30 feet of you take 4d10 lightning damage.",
         "67": "You are frightened by the nearest creature until the end of your next turn.",
         "68": "You are frightened by the nearest creature until the end of your next turn.",
