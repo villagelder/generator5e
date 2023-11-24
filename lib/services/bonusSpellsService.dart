@@ -8,6 +8,10 @@ class BonusSpellsService {
   List _bonusSpellsItems = [];
   List<BonusSpells> bonusSpellsObjList = [];
 
+  BonusSpellsService(){
+    init();
+  }
+
   Future<void> init() async {
     await readJsonBonusSpells();
     getBonusSpellsObjectList();
@@ -41,4 +45,11 @@ class BonusSpellsService {
             bs.choice == choice)
         .toList()[0];
   }
+
+  Map<String, String> addBonusSpells(Map<String, String> spellMap, String className, String subclass, String choice, String classLevel) {
+
+    return spellMap;
+  }
+
+
 }
