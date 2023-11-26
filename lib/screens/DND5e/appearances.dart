@@ -302,6 +302,142 @@ class _ListViewerState extends State<ListViewer> {
   List<String> currentSubraceOptions = subraceList;
   String selectedRace = raceList.first;
   String subraceValue = subraceList.first;
+  List<bool> checkboxStates = [true, true, true, true, true, true];
+
+  void _showOptionsModal(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (BuildContext context) {
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setModalState) {
+            return Container(
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                    Colors.amber.shade100,
+                    Colors.brown.shade600,
+                  ])),
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Text(
+                      'More Appearance Options',
+                      style: TextStyle(
+                        fontFamily: 'Georgia',
+                        fontSize: MediaQuery.of(context).size.height * 0.047,
+                        fontWeight: FontWeight.w600,
+                        color: const Color.fromRGBO(85, 0, 0, 1),
+                      ),
+                    ),
+                  ]),
+                  // ... First row of CheckboxListTiles, wrapped in a StatefulBuilder
+                  Row(
+                    children: [
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Physicality'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[0],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[0] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Facial Hair'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[1],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[1] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Markings'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[2],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[2] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Tattoos'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[3],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[3] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Diseases'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[4],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[4] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: const Text('Accessories'),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxStates[5],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxStates[5] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                  // .
+                  //
+                  // .. The rest of the CheckboxListTiles
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
+                      backgroundColor: const Color.fromRGBO(57, 0, 0, 1.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                    ),
+                    child: Text('Close'),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
 
   void handleSubraceChange(String newSubrace) {
     setState(() {
@@ -395,7 +531,7 @@ class _ListViewerState extends State<ListViewer> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.05,
+                            height: MediaQuery.of(ctx).size.height * 0.06,
                             child: Text(
                               '5e Appearance Generator',
                               style: TextStyle(
@@ -411,7 +547,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: SizedBox(
@@ -430,7 +566,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: SizedBox(
@@ -451,111 +587,35 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
-                        //      child: SizedBox(
-                        //       width: MediaQuery.of(ctx).size.width * 0.4,
+                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Checkbox(
-                                          value: selectedCheckboxes[0],
-                                          onChanged: (bool? value) {
-                                            setState(() {
-                                              selectedCheckboxes[0] =
-                                                  value ?? false;
-                                            });
-                                          },
-                                        ),
-                                        const Expanded(
-                                            child: Wrap(
-                                          children: [
-                                            Text("Facial Hair"),
-                                          ],
-                                        )),
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                          height: MediaQuery.of(ctx).size.height * 0.125,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.amber.shade100,
+                              backgroundColor: Colors.brown.shade400,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                                side: BorderSide(
+                                    color: Colors.brown.shade900, width: 2),
                               ),
-                              Expanded(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Checkbox(
-                                          value: selectedCheckboxes[1],
-                                          onChanged: (bool? value) {
-                                            setState(() {
-                                              selectedCheckboxes[1] =
-                                                  value ?? false;
-                                            });
-                                          },
-                                        ),
-                                        const Expanded(
-                                            child: Wrap(
-                                          children: [
-                                            Text("Scars & Tattoos"),
-                                          ],
-                                        )),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Checkbox(
-                                          value: selectedCheckboxes[2],
-                                          onChanged: (bool? value) {
-                                            setState(() {
-                                              selectedCheckboxes[2] =
-                                                  value ?? false;
-                                            });
-                                          },
-                                        ),
-                                        Expanded(
-                                            child: Wrap(
-                                          children: [
-                                            Text(
-                                              "Disorders/Diseases",
-                                              style: TextStyle(
-                                                fontSize: MediaQuery.of(ctx)
-                                                        .size
-                                                        .height *
-                                                    0.03,
-                                              ),
-                                            ),
-                                          ],
-                                        )),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              // Add more checkboxes as needed
-                            ],
+                            ),
+                            onPressed: () => _showOptionsModal(ctx),
+                            child: Text(
+                              'More Options',
+                              style: TextStyle(
+                                  fontFamily: 'Georgia',
+                                  fontSize:
+                                      MediaQuery.of(ctx).size.height * .044,
+                                  fontWeight: FontWeight.w700),
+                            ),
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
                           height: MediaQuery.of(ctx).size.height * 0.125,
