@@ -119,7 +119,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .05,
+                                      MediaQuery.of(ctx).size.height * .044,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -323,83 +323,3 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
   }
 }
 
-// class TextChanger extends StatefulWidget {
-//   const TextChanger({super.key});
-//
-//   @override
-//   State<TextChanger> createState() => _TextChangerState();
-// }
-//
-// class _TextChangerState extends State<TextChanger> {
-//   // Declare the variable
-//   TreasureGenerator5e trGen = TreasureGenerator5e();
-//   String dynamicText = 'Roll for treasure.';
-//
-//   updateText() {
-//     dynamicText = trGen
-//         .generate(
-//             _ChallengeRatingDDBState.crValue, _TreasureTypeDDBState.ttValue)
-//         .toString();
-//     setState(() {
-//       dynamicText;
-//     });
-//   }
-//
-//   @override
-//   Widget build(BuildContext ctx) {
-//     return Padding(
-//       padding:
-//           EdgeInsets.fromLTRB(0, MediaQuery.of(ctx).size.height * 0.015, 0, 0),
-//       child: Column(
-//         children: [
-//           const Row(
-//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//             children: [
-//               ChallengeRatingDDB(),
-//               TreasureTypeDDB(),
-//             ],
-//           ),
-//           Padding(
-//             padding: EdgeInsets.fromLTRB(
-//                 0, MediaQuery.of(ctx).size.width * 0.06, 0, 0),
-//             child: SizedBox(
-//               width: MediaQuery.of(ctx).size.width * 0.863,
-//               height: MediaQuery.of(ctx).size.width * 0.18,
-//               child: ElevatedButton(
-//                 style: ElevatedButton.styleFrom(
-//                   foregroundColor: const Color.fromRGBO(255, 245, 188, 1.0),
-//                   backgroundColor: Colors.lightGreen.shade900,
-//                   shape: RoundedRectangleBorder(
-//                     borderRadius: BorderRadius.circular(15),
-//                   ),
-//                 ),
-//                 onPressed: () => updateText(),
-//                 child: Text(
-//                   'Generate Treasure',
-//                   style: TextStyle(
-//                       fontFamily: 'Georgia',
-//                       fontSize: MediaQuery.of(ctx).size.height * .035,
-//                       fontWeight: FontWeight.w700),
-//                 ),
-//               ),
-//             ),
-//           ),
-//           Padding(
-//             padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-//             child: SizedBox(
-//               width: MediaQuery.of(ctx).size.width * 0.7,
-//               child: Text(
-//                 dynamicText,
-//                 style: TextStyle(
-//                   fontFamily: 'Georgia',
-//                   fontSize: MediaQuery.of(ctx).size.height * 0.03,
-//                 ),
-//               ),
-//             ),
-//           ),
-
-//         ],
-//       ),
-//     );
-//   }
-// }

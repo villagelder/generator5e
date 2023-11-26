@@ -64,7 +64,7 @@ const List<String> raceList = <String>[
   'Tiefling'
 ];
 
-const List<String> subclassList = <String>['Choose a Subclass'];
+const List<String> subraceList = <String>['Choose a Subrace'];
 
 const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
@@ -80,7 +80,7 @@ class _NumberDDBState extends State<NumberDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.15,
+      width: MediaQuery.of(context).size.width * 0.1,
       height: MediaQuery.of(context).size.height * 0.125,
       // height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
@@ -134,7 +134,7 @@ class _RacesDDBState extends State<RacesDDB> {
         border: Border.all(
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
-      width: MediaQuery.of(context).size.width * 0.175,
+      width: MediaQuery.of(context).size.width * 0.17,
       height: MediaQuery.of(context).size.height * 0.125,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -177,6 +177,66 @@ class _RacesDDBState extends State<RacesDDB> {
   }
 }
 
+const List<String> genderList = ["Female", "Male", "Non-binary"];
+
+class GenderDDB extends StatefulWidget {
+  const GenderDDB({super.key});
+
+  @override
+  State<GenderDDB> createState() => _GenderDDBState();
+}
+
+class _GenderDDBState extends State<GenderDDB> {
+  static String genderValue = genderList.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.brown.shade400,
+        borderRadius: BorderRadius.circular(15.0),
+        border: Border.all(
+            color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
+      ),
+      width: MediaQuery.of(context).size.width * 0.17,
+      child: DropdownButtonHideUnderline(
+        child: ButtonTheme(
+          alignedDropdown: true,
+          child: DropdownButton<String>(
+            dropdownColor: Colors.brown.shade400,
+            value: genderValue,
+            icon: Icon(
+              Icons.arrow_drop_down_outlined,
+              color: Colors.brown.shade900,
+            ),
+            style: TextStyle(
+                color: Colors.amber.shade100,
+                fontFamily: 'Georgia',
+                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontWeight: FontWeight.w500),
+            underline: Container(
+              height: 2,
+              color: Colors.brown.shade900,
+            ),
+            onChanged: (String? value) {
+              // This is called when the user selects an item.
+              setState(() {
+                genderValue = value!;
+              });
+            },
+            items: genderList.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _SubraceDDBState extends State<SubraceDDB> {
   @override
   Widget build(BuildContext context) {
@@ -190,7 +250,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               style: BorderStyle.solid,
               width: 2.0),
         ),
-        width: MediaQuery.of(context).size.width * 0.35,
+        width: MediaQuery.of(context).size.width * 0.23,
         height: MediaQuery.of(context).size.height * 0.125,
         child: DropdownButtonHideUnderline(
           child: ButtonTheme(
@@ -215,9 +275,6 @@ class _SubraceDDBState extends State<SubraceDDB> {
               onChanged: (String? newValue) {
                 // This is called when the user selects an item.
                 widget.onSubraceChanged(newValue!);
-                // setState(() {
-                //   subclassValue = newValue!;
-                // });
               },
               items: widget.subraceOptions
                   .map<DropdownMenuItem<String>>((String value) {
@@ -242,13 +299,13 @@ class ListViewer extends StatefulWidget {
 }
 
 class _ListViewerState extends State<ListViewer> {
-  List<String> currentSubraceOptions = subclassList;
+  List<String> currentSubraceOptions = subraceList;
   String selectedRace = raceList.first;
-  String subraceValue = subclassList.first;
+  String subraceValue = subraceList.first;
 
-  void handleSubclassChange(String newSubclass) {
+  void handleSubraceChange(String newSubrace) {
     setState(() {
-      subraceValue = newSubclass;
+      subraceValue = newSubrace;
     });
   }
 
@@ -310,6 +367,8 @@ class _ListViewerState extends State<ListViewer> {
     });
   }
 
+  List<bool> selectedCheckboxes = [false, false, false];
+
   @override
   Widget build(BuildContext ctx) {
     return Container(
@@ -329,16 +388,16 @@ class _ListViewerState extends State<ListViewer> {
                 width: MediaQuery.of(ctx).size.width * 0.4,
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
-                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
+                      10, MediaQuery.of(ctx).size.height * 0.05, 10, 0),
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.06,
+                            height: MediaQuery.of(ctx).size.height * 0.05,
                             child: Text(
-                              '5e Spell Set Generator',
+                              '5e Appearance Generator',
                               style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize:
@@ -363,7 +422,7 @@ class _ListViewerState extends State<ListViewer> {
                               RacesDDB(
                                 onRaceChanged: updateSubraceOptions,
                               ),
-                              NumberDDB(),
+                              const GenderDDB(),
                             ],
                           ),
                         ),
@@ -371,23 +430,128 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               SubraceDDB(
                                 subraceOptions: currentSubraceOptions,
                                 selectedSubrace: subraceValue,
-                                onSubraceChanged: handleSubclassChange,
+                                onSubraceChanged: handleSubraceChange,
                               ),
+                              const NumberDDB(),
                             ],
                           ),
                         ),
                         //    ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
+                        //      child: SizedBox(
+                        //       width: MediaQuery.of(ctx).size.width * 0.4,
+                        child: SizedBox(
+                          width: MediaQuery.of(ctx).size.width * 0.35,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Checkbox(
+                                          value: selectedCheckboxes[0],
+                                          onChanged: (bool? value) {
+                                            setState(() {
+                                              selectedCheckboxes[0] =
+                                                  value ?? false;
+                                            });
+                                          },
+                                        ),
+                                        const Expanded(
+                                            child: Wrap(
+                                          children: [
+                                            Text("Facial Hair"),
+                                          ],
+                                        )),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Checkbox(
+                                          value: selectedCheckboxes[1],
+                                          onChanged: (bool? value) {
+                                            setState(() {
+                                              selectedCheckboxes[1] =
+                                                  value ?? false;
+                                            });
+                                          },
+                                        ),
+                                        const Expanded(
+                                            child: Wrap(
+                                          children: [
+                                            Text("Scars & Tattoos"),
+                                          ],
+                                        )),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Checkbox(
+                                          value: selectedCheckboxes[2],
+                                          onChanged: (bool? value) {
+                                            setState(() {
+                                              selectedCheckboxes[2] =
+                                                  value ?? false;
+                                            });
+                                          },
+                                        ),
+                                        Expanded(
+                                            child: Wrap(
+                                          children: [
+                                            Text(
+                                              "Disorders/Diseases",
+                                              style: TextStyle(
+                                                fontSize: MediaQuery.of(ctx)
+                                                        .size
+                                                        .height *
+                                                    0.03,
+                                              ),
+                                            ),
+                                          ],
+                                        )),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              // Add more checkboxes as needed
+                            ],
+                          ),
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
@@ -407,11 +571,11 @@ class _ListViewerState extends State<ListViewer> {
                             ),
                             onPressed: () => updateList(),
                             child: Text(
-                              'Generate Spell Sets',
+                              'Generate Appearance',
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .05,
+                                      MediaQuery.of(ctx).size.height * .044,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -500,10 +664,16 @@ const List<String> dragonbornList = <String>[
   "White"
 ];
 
-const List<String> dwarfList = <String>["Any Subrace","Hill", "Mountain", "Duergar"];
+const List<String> dwarfList = <String>[
+  "Any Subrace",
+  "Hill",
+  "Mountain",
+  "Duergar"
+];
 
 const List<String> humanList = <String>[
-  "Any Subrace","Aboriginal",
+  "Any Subrace",
+  "Aboriginal",
   "Amerindian",
   "Arab",
   "Asian, Central",
@@ -517,7 +687,11 @@ const List<String> humanList = <String>[
 ];
 
 const List<String> elfList = <String>[
- "Any Subrace", "High","Wood","Dark","Half-elf"
+  "Any Subrace",
+  "High",
+  "Wood",
+  "Dark",
+  "Half-elf"
 ];
 
 const List<String> gnomeList = <String>[
@@ -527,19 +701,11 @@ const List<String> gnomeList = <String>[
   "Rock"
 ];
 
-const List<String> halflingList = <String>[
-  "Any Subrace", "Lightfoot", "Stout"
-];
+const List<String> halflingList = <String>["Any Subrace", "Lightfoot", "Stout"];
 
-const List<String> anyList = <String>[
-  "Any Subrace"
-];
+const List<String> anyList = <String>["Any Subrace"];
 
-const List<String> orcList = <String>[
-  "Any Subrace",
-  "Standard",
-  "Half-orc"
-];
+const List<String> orcList = <String>["Any Subrace", "Standard", "Half-orc"];
 
 const List<String> tieflingList = <String>[
   "Baalzebul",

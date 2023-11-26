@@ -446,7 +446,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .05,
+                                      MediaQuery.of(ctx).size.height * .044,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
