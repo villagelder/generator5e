@@ -545,6 +545,142 @@
         "heliotrope",
         "violet"
       ]
+    },
+    {
+      "id": 29,
+      "word": "muscular",
+      "synonyms": [
+        "athletic",
+        "brawny",
+        "robust",
+        "sinewy",
+        "muscled",
+        "mighty",
+        "ripped",
+        "powerful",
+        "strong",
+        "vigorous",
+        "muscular",
+        "strapping",
+        "sturdy",
+        "bruising",
+        "herculean",
+        "hulky",
+        "tough",
+        "well-built"
+      ]
+    },
+    {
+      "id": 30,
+      "word": "agile",
+      "synonyms": [
+        "lithe",
+        "agile",
+        "quick",
+        "energetic",
+        "sinewy",
+        "spirited",
+        "lively",
+        "limber",
+        "active",
+        "fleet",
+        "mercurial",
+        "dexterous",
+        "swift",
+        "athletic"
+      ]
+    },
+    {
+      "id": 30,
+      "word": "thin",
+      "synonyms": [
+        "starved",
+        "lean",
+        "gangly",
+        "leaky",
+        "underweight",
+        "undernourished",
+        "scrawny",
+        "twiggy",
+        "skinny",
+        "thin",
+        "narrow",
+        "meager",
+        "slim",
+        "small",
+        "gaunt",
+        "bony"
+      ]
+    },
+    {
+      "id": 31,
+      "word": "hefty",
+      "synonyms": [
+        "bulky",
+        "fat",
+        "hefty",
+        "chunky",
+        "heavy",
+        "meaty",
+        "plump",
+        "paunchy",
+        "well-fed",
+        "broad",
+        "beefy",
+        "husky",
+        "potbellied",
+        "solid",
+        "stocky",
+        "stout",
+        "obese",
+        "heavyset",
+        "gaunt",
+        "plumpish",
+        "oversized",
+        "portly",
+        "brawny",
+        "thickset"
+      ]
+    },
+    {
+      "id": 32,
+      "word": "attractive",
+      "synonyms": [
+        "shapely",
+        "pleasing",
+        "attractive",
+        "seductive",
+        "arousing",
+        "sexy",
+        "sensual",
+        "steamy",
+        "cuddly",
+        "sensuous",
+        "titillating"
+      ]
+    },
+    {
+      "id": 33,
+      "word": "unattractive",
+      "synonyms": [
+        "unappealing",
+        "repulsive",
+        "grotesque",
+        "dull",
+        "ugly",
+        "ordinary",
+        "hideous",
+        "average",
+        "frightful",
+        "repelling",
+        "monstrous",
+        "unalluring",
+        "unsightly",
+        "homely",
+        "plain",
+        "commonplace",
+        "common"
+      ]
     }
   ]
 }

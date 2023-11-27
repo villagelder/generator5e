@@ -1684,7 +1684,21 @@
         "knife",
         "cuboid"
       ]
+    },
+    {
+      "id": 92,
+      "word": "body",
+      "synonyms": [
+        "physique",
+        "build",
+        "silhouette",
+        "frame",
+        "body",
+        "figure",
+        "form",
+        "figure",
+        "shape"
+      ]
     }
-
   ]
 }

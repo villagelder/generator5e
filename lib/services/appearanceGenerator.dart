@@ -46,6 +46,12 @@ class AbilityScoreGenerator {
   String generateAppearance(String race, String subrace, String gender, Map<String, bool> checkboxMap) {
     AppearanceItem appObj = getAppearanceObjectByRace(race);
 
+    StringBuffer sb = StringBuffer();
+    sb.write("$gender $subrace $race");
+
+
+
+
     //race, subrace appearance
 
 
@@ -53,7 +59,7 @@ class AbilityScoreGenerator {
 
 
     //checkbox Map
-    //Physicality
+    //Build
     //Facial Hair
     //Markings
     //Tattoos
