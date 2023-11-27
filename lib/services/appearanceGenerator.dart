@@ -43,25 +43,20 @@ class AbilityScoreGenerator {
     return appearanceObjList.where((n) => n.race == race).toList()[0];
   }
 
-  String generateAppearance(String race, String subrace, String gender, Map<String, bool> checkboxMap) {
+  String generateAppearance(String race, String subrace, String gender,
+      Map<String, bool> checkboxMap) {
     AppearanceItem appObj = getAppearanceObjectByRace(race);
 
-    //race, subrace appearance
-
-
+    //race, subrace
     //gender
-
-
-    //checkbox Map
+    //hair
+    //eyes, nose, mouth, ears
     //Physicality
-    //Facial Hair
-    //Markings
+    //Skin tone
+    //Scars
     //Tattoos
     //Ailments
-    //Accessories
-
-
-
+    //Clothing
 
     String appearance = "";
     return appearance;

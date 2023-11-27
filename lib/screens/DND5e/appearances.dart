@@ -150,7 +150,7 @@ class _RacesDDBState extends State<RacesDDB> {
             style: TextStyle(
               color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.04,
+              fontSize: MediaQuery.of(context).size.height * 0.036,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -213,7 +213,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontSize: MediaQuery.of(context).size.height * 0.036,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -267,7 +267,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               style: TextStyle(
                   color: Colors.amber.shade100,
                   fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.04,
+                  fontSize: MediaQuery.of(context).size.height * 0.036,
                   fontWeight: FontWeight.w500),
               underline: Container(
                 height: 2,
@@ -306,7 +306,6 @@ class _ListViewerState extends State<ListViewer> {
   Map<String, bool> checkboxMapStates = {
     "Build": true,
     "Skin Tone": true,
-    "Facial Hair": true,
     "Scars": true,
     "Tattoos": true,
     "Ailments": true,
@@ -386,24 +385,6 @@ class _ListViewerState extends State<ListViewer> {
                       Expanded(
                         child: CheckboxListTile(
                           title: Text(
-                            'Facial Hair',
-                            style: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
-                            ),
-                          ),
-                          activeColor: Colors.brown.shade500,
-                          value: checkboxMapStates["Facial Hair"],
-                          onChanged: (bool? value) {
-                            setModalState(() {
-                              checkboxMapStates["Facial Hair"] = value!;
-                            });
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: CheckboxListTile(
-                          title: Text(
                             'Scars',
                             style: TextStyle(
                               fontSize:
@@ -474,24 +455,6 @@ class _ListViewerState extends State<ListViewer> {
                           onChanged: (bool? value) {
                             setModalState(() {
                               checkboxMapStates["Clothing"] = value!;
-                            });
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: CheckboxListTile(
-                          title: Text(
-                            'Extras',
-                            style: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
-                            ),
-                          ),
-                          activeColor: Colors.brown.shade500,
-                          value: checkboxMapStates["Extras"],
-                          onChanged: (bool? value) {
-                            setModalState(() {
-                              checkboxMapStates["Extras"] = value!;
                             });
                           },
                         ),
@@ -716,7 +679,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .044,
+                                      MediaQuery.of(ctx).size.height * .04,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
