@@ -2,8 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:generator5e/models/appearanceitem.dart';
-import 'package:generator5e/services/diceRoller.dart';
-import 'package:collection/collection.dart';
 import 'package:generator5e/services/utility.dart';
 
 class AbilityScoreGenerator {
@@ -45,8 +43,25 @@ class AbilityScoreGenerator {
     return appearanceObjList.where((n) => n.race == race).toList()[0];
   }
 
-  String generateAppearance(String race, String gender) {
+  String generateAppearance(String race, String subrace, String gender, Map<String, bool> checkboxMap) {
     AppearanceItem appObj = getAppearanceObjectByRace(race);
+
+    //race, subrace appearance
+
+
+    //gender
+
+
+    //checkbox Map
+    //Physicality
+    //Facial Hair
+    //Markings
+    //Tattoos
+    //Ailments
+    //Accessories
+
+
+
 
     String appearance = "";
     return appearance;

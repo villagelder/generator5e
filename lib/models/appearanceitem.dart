@@ -2,7 +2,7 @@ import 'dart:core';
 
 class AppearanceItem {
   String race;
-  List<String> subraces;
+  String subrace;
   String frillName;
   List<String> frillTypes;
   List<String> frillColors;
@@ -14,7 +14,7 @@ class AppearanceItem {
 
   AppearanceItem(
       this.race,
-      this.subraces,
+      this.subrace,
       this.frillName,
       this.frillTypes,
       this.frillColors,
@@ -27,7 +27,7 @@ class AppearanceItem {
   factory AppearanceItem.fromJson(dynamic json) {
     return AppearanceItem(
         json['race'] as String,
-        List<String>.from(json['subraces']),
+        json['subraces'] as String,
         json['frillName'] as String,
         List<String>.from(json['frillTypes']),
         List<String>.from(json['frillColors']),
@@ -40,7 +40,7 @@ class AppearanceItem {
 
   @override
   String toString() {
-    return '{ $race, $subraces, $frillName, $frillTypes, $frillColors, $skinColors,'
+    return '{ $race, $subrace, $frillName, $frillTypes, $frillColors, $skinColors,'
         '$descriptors, $eyeColors, $hairstyles, $facialHair }';
   }
 }

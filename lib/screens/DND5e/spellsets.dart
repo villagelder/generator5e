@@ -460,52 +460,55 @@ class _ListViewerState extends State<ListViewer> {
                 //width: MediaQuery.of(ctx).size.width * 0.58,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0, vertical: 8.0),
+                      horizontal: 12.0, vertical: 8.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
                         height: MediaQuery.of(ctx).size.height * 0.73,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0)),
-                          elevation: 2,
-                          color: Colors.brown.shade500,
-                          child: ListView.builder(
-                            key: ObjectKey(keys.first),
-                            itemCount: keys.length,
-                            itemBuilder: (ctx, index) {
-                              return Padding(
-                                padding: EdgeInsets.fromLTRB(
-                                    0,
-                                    MediaQuery.of(ctx).size.height * 0.01,
-                                    0,
-                                    0),
-                                child: ListTile(
-                                  dense: true,
-                                  shape: RoundedRectangleBorder(
-                                      side: const BorderSide(width: 2),
-                                      borderRadius:
-                                          BorderRadius.circular(15.0)),
-                                  tileColor: Colors.orange.shade100,
-                                  title: Text(
-                                    keys.elementAt(index),
-                                    style: TextStyle(
-                                        fontSize:
-                                            MediaQuery.of(ctx).size.height *
-                                                0.034),
+                        child: Center(
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0)),
+                            elevation: 2,
+                            color: Colors.brown.shade500,
+                            child: ListView.builder(
+                              key: ObjectKey(keys.first),
+                              itemCount: keys.length,
+                              itemBuilder: (ctx, index) {
+                                return Padding(
+                                  padding: EdgeInsets.fromLTRB(
+                                      0,
+                                      MediaQuery.of(ctx).size.height * 0.01,
+                                      0,
+                                      0),
+                                  child: ListTile(
+                                    dense: true,
+                                    shape: RoundedRectangleBorder(
+                                        side: const BorderSide(width: 2),
+                                        borderRadius:
+                                            BorderRadius.circular(15.0)),
+                                    tileColor: Colors.orange.shade100,
+                                    title: Text(
+                                      keys.elementAt(index),
+                                      style: TextStyle(
+                                          fontSize:
+                                              MediaQuery.of(ctx).size.height *
+                                                  0.034),
+                                    ),
+                                    subtitle: Text(
+                                      spellMap[keys.elementAt(index)]!,
+                                      style: TextStyle(
+                                          fontSize:
+                                              MediaQuery.of(ctx).size.height *
+                                                  0.03,
+                                          fontStyle: FontStyle.italic),
+                                    ),
                                   ),
-                                  subtitle: Text(
-                                    spellMap[keys.elementAt(index)]!,
-                                    style: TextStyle(
-                                        fontSize:
-                                            MediaQuery.of(ctx).size.height *
-                                                0.03,
-                                        fontStyle: FontStyle.italic),
-                                  ),
-                                ),
-                              );
-                            },
+                                );
+                              },
+                            ),
                           ),
                         ),
                       ),

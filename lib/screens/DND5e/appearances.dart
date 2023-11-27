@@ -66,7 +66,7 @@ const List<String> raceList = <String>[
 
 const List<String> subraceList = <String>['Choose a Subrace'];
 
-const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
+const List<String> numberList = <String>['1', '2', '3'];
 
 class _NumberDDBState extends State<NumberDDB> {
   static String numberValue = numberList.first;
@@ -81,7 +81,7 @@ class _NumberDDBState extends State<NumberDDB> {
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.1,
-      height: MediaQuery.of(context).size.height * 0.125,
+      height: MediaQuery.of(context).size.height * 0.12,
       // height: MediaQuery.of(context).size.height * 0.075,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
@@ -135,7 +135,7 @@ class _RacesDDBState extends State<RacesDDB> {
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.17,
-      height: MediaQuery.of(context).size.height * 0.125,
+      height: MediaQuery.of(context).size.height * 0.12,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -199,6 +199,7 @@ class _GenderDDBState extends State<GenderDDB> {
             color: Colors.brown.shade900, style: BorderStyle.solid, width: 2.0),
       ),
       width: MediaQuery.of(context).size.width * 0.17,
+      height: MediaQuery.of(context).size.height * 0.12,
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
@@ -251,7 +252,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               width: 2.0),
         ),
         width: MediaQuery.of(context).size.width * 0.23,
-        height: MediaQuery.of(context).size.height * 0.125,
+        height: MediaQuery.of(context).size.height * 0.12,
         child: DropdownButtonHideUnderline(
           child: ButtonTheme(
             alignedDropdown: true,
@@ -302,7 +303,16 @@ class _ListViewerState extends State<ListViewer> {
   List<String> currentSubraceOptions = subraceList;
   String selectedRace = raceList.first;
   String subraceValue = subraceList.first;
-  List<bool> checkboxStates = [true, true, true, true, true, true];
+  Map<String, bool> checkboxMapStates = {
+    "Build": true,
+    "Skin Tone": true,
+    "Facial Hair": true,
+    "Scars": true,
+    "Tattoos": true,
+    "Ailments": true,
+    "Clothing": true,
+    "Extras": true,
+  };
 
   void _showOptionsModal(BuildContext context) {
     showModalBottomSheet(
@@ -339,36 +349,72 @@ class _ListViewerState extends State<ListViewer> {
                     children: [
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Physicality'),
+                          title: Text(
+                            'Build',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[0],
+                          value: checkboxMapStates["Build"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[0] = value!;
+                              checkboxMapStates["Build"] = value!;
                             });
                           },
                         ),
                       ),
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Facial Hair'),
+                          title: Text(
+                            'Skin Tone',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[1],
+                          value: checkboxMapStates["Skin Tone"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[1] = value!;
+                              checkboxMapStates["Skin Tone"] = value!;
                             });
                           },
                         ),
                       ),
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Markings'),
+                          title: Text(
+                            'Facial Hair',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[2],
+                          value: checkboxMapStates["Facial Hair"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[2] = value!;
+                              checkboxMapStates["Facial Hair"] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: Text(
+                            'Scars',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxMapStates["Scars"],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxMapStates["Scars"] = value!;
                             });
                           },
                         ),
@@ -380,43 +426,78 @@ class _ListViewerState extends State<ListViewer> {
                     children: [
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Tattoos'),
+                          title: Text(
+                            'Tattoos',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[3],
+                          value: checkboxMapStates["Tattoos"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[3] = value!;
+                              checkboxMapStates["Tattoos"] = value!;
                             });
                           },
                         ),
                       ),
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Diseases'),
+                          title: Text(
+                            'Ailments',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[4],
+                          value: checkboxMapStates["Ailments"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[4] = value!;
+                              checkboxMapStates["Ailments"] = value!;
                             });
                           },
                         ),
                       ),
                       Expanded(
                         child: CheckboxListTile(
-                          title: const Text('Accessories'),
+                          title: Text(
+                            'Clothing',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
                           activeColor: Colors.brown.shade500,
-                          value: checkboxStates[5],
+                          value: checkboxMapStates["Clothing"],
                           onChanged: (bool? value) {
                             setModalState(() {
-                              checkboxStates[5] = value!;
+                              checkboxMapStates["Clothing"] = value!;
+                            });
+                          },
+                        ),
+                      ),
+                      Expanded(
+                        child: CheckboxListTile(
+                          title: Text(
+                            'Extras',
+                            style: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.035,
+                            ),
+                          ),
+                          activeColor: Colors.brown.shade500,
+                          value: checkboxMapStates["Extras"],
+                          onChanged: (bool? value) {
+                            setModalState(() {
+                              checkboxMapStates["Extras"] = value!;
                             });
                           },
                         ),
                       ),
                     ],
                   ),
-                  // .
                   //
                   // .. The rest of the CheckboxListTiles
                   ElevatedButton(
@@ -590,7 +671,7 @@ class _ListViewerState extends State<ListViewer> {
                             0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
-                          height: MediaQuery.of(ctx).size.height * 0.125,
+                          height: MediaQuery.of(ctx).size.height * 0.12,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               foregroundColor: Colors.amber.shade100,
@@ -618,7 +699,7 @@ class _ListViewerState extends State<ListViewer> {
                             0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
-                          height: MediaQuery.of(ctx).size.height * 0.125,
+                          height: MediaQuery.of(ctx).size.height * 0.12,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               foregroundColor:

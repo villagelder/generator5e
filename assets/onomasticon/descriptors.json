@@ -126,16 +126,14 @@
         "gray",
         "black",
         "brown",
-        "tan",
+        "beige",
         "blue",
         "red",
         "pink",
         "green",
         "yellow",
-        "yellow-green",
         "orange",
         "violet",
-        "purple",
         "indigo"
       ]
     },
@@ -260,6 +258,294 @@
         "automated",
         "pragmatic"
       ]
+    },
+    {
+      "id": 17,
+      "word": "hornShapes",
+      "synonyms": [
+        "curving downward",
+        "tips flaring up",
+        "curving upwards",
+        "curving slightly backwards in an arc",
+        "curving backwards",
+        "straight upward",
+        "straight forward",
+        "curving upwards in a smooth arc",
+        "curving outwards in a smooth arc",
+        "curving downwards in a smooth arc",
+        "curving outward",
+        "curving upward in a sweeping arc",
+        "cork-screw twists",
+        "curved",
+        "conical",
+        "sharply curved",
+        "heavily ridged",
+        "spiral",
+        "hook-shaped",
+        "curved upwards then inwards",
+        "gently curved"
+      ]
+    },
+    {
+      "id": 17,
+      "word": "hornDescriptors",
+      "synonyms": [
+        "sturdy",
+        "smooth",
+        "long",
+        "short",
+        "tiny",
+        "shiny",
+        "tapered",
+        "small",
+        "compact",
+        "big",
+        "heavy",
+        "slender",
+        "sturdy",
+        "thick",
+        "immense"
+      ]
+    },
+    {
+      "id": 18,
+      "word": "colorHueWhite",
+      "synonyms": [
+        "white",
+        "alabaster",
+        "snow",
+        "ivory",
+        "cream",
+        "chalk",
+        "pearl",
+        "linen",
+        "eggshell",
+        "cotton",
+        "marshmallow",
+        "vanilla",
+        "magnolia",
+        "porcelain",
+        "antique",
+        "seashell",
+        "daisy",
+        "coconut",
+        "ghost",
+        "frost"
+      ]
+    },
+    {
+      "id": 19,
+      "word": "colorHueGray",
+      "synonyms": [
+        "charcoal",
+        "slate",
+        "gunmetal",
+        "ash",
+        "gray",
+        "steel",
+        "iron",
+        "pewter",
+        "silver",
+        "smoke",
+        "dove",
+        "stone",
+        "fog",
+        "graphite",
+        "anchor",
+        "shadow",
+        "flint",
+        "oyster",
+        "cool",
+        "warm",
+        "platinum"
+      ]
+    },
+    {
+      "id": 20,
+      "word": "colorHueBlack",
+      "synonyms": [
+        "jet",
+        "charcoal",
+        "midnight",
+        "ink",
+        "onyx",
+        "black",
+        "obsidian",
+        "smoke",
+        "shadow",
+        "raven",
+        "sable",
+        "pitch",
+        "ebony"
+      ]
+    },
+    {
+      "id": 21,
+      "word": "colorHueBrown",
+      "synonyms": [
+        "sienna",
+        "taupe",
+        "sepia",
+        "burnt sienna",
+        "umber",
+        "brown",
+        "beige",
+        "mahogany",
+        "caramel",
+        "tawny",
+        "bronze",
+        "walnut",
+        "cinnamon",
+        "mocha",
+        "mocha",
+        "khaki"
+      ]
+    },
+    {
+      "id": 22,
+      "word": "colorHueBlue",
+      "synonyms": [
+        "sky",
+        "teal",
+        "cornflower",
+        "cerulean",
+        "sapphire",
+        "navy",
+        "azure",
+        "blue",
+        "teal",
+        "indigo",
+        "baby",
+        "midnight",
+        "royal",
+        "prussian",
+        "periwinkle",
+        "cobalt",
+        "turquoise"
+      ]
+    },
+    {
+      "id": 23,
+      "word": "colorHueRed",
+      "synonyms": [
+        "crimson",
+        "scarlet",
+        "burgundy",
+        "maroon",
+        "red",
+        "vermilion",
+        "carmine",
+        "fire brick",
+        "cherry",
+        "coral",
+        "tomato",
+        "cardinal",
+        "rose",
+        "sangria",
+        "raspberry"
+      ]
+    },
+    {
+      "id": 24,
+      "word": "colorHuePink",
+      "synonyms": [
+        "pink",
+        "blush",
+        "rose",
+        "magenta",
+        "flamingo",
+        "fuchsia",
+        "ballet",
+        "cherry blossom",
+        "hot",
+        "raspberry",
+        "baby",
+        "petal",
+        "coral",
+        "bubble gum"
+      ]
+    },
+    {
+      "id": 25,
+      "word": "colorHueGreen",
+      "synonyms": [
+        "emerald",
+        "forest",
+        "hunter",
+        "kelly",
+        "seafoam",
+        "lime",
+        "pistachio",
+        "chartreuse",
+        "jade",
+        "fern",
+        "moss",
+        "sage",
+        "green",
+        "olive",
+        "mint"
+      ]
+    },
+    {
+      "id": 26,
+      "word": "colorHueOrange",
+      "synonyms": [
+        "mango",
+        "orange",
+        "carrot",
+        "amber",
+        "sunset",
+        "tangerine",
+        "marigold",
+        "persimmon",
+        "apricot",
+        "rust",
+        "peach",
+        "pumpkin"
+      ]
+    },
+    {
+      "id": 27,
+      "word": "colorHueYellow",
+      "synonyms": [
+        "lemon",
+        "canary",
+        "daffodil",
+        "maize",
+        "flaxen",
+        "honey",
+        "mustard",
+        "citrine",
+        "gold",
+        "banana",
+        "butter",
+        "saffron",
+        "sunflower"
+      ]
+    },
+    {
+      "id": 28,
+      "word": "colorHueViolet",
+      "synonyms": [
+        "lavender",
+        "amethyst",
+        "lilac",
+        "mauve",
+        "royal",
+        "grape",
+        "purple",
+        "plum",
+        "mulberry",
+        "wisteria",
+        "Byzantine",
+        "fuchsia",
+        "orchid",
+        "eggplant",
+        "periwinkle",
+        "heliotrope",
+        "violet"
+      ]
     }
   ]
 }
+
