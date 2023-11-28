@@ -150,7 +150,7 @@ class _RacesDDBState extends State<RacesDDB> {
             style: TextStyle(
               color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.036,
+              fontSize: MediaQuery.of(context).size.height * 0.04,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -213,7 +213,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.036,
+                fontSize: MediaQuery.of(context).size.height * 0.04,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -267,7 +267,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               style: TextStyle(
                   color: Colors.amber.shade100,
                   fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.036,
+                  fontSize: MediaQuery.of(context).size.height * 0.04,
                   fontWeight: FontWeight.w500),
               underline: Container(
                 height: 2,
@@ -304,13 +304,12 @@ class _ListViewerState extends State<ListViewer> {
   String selectedRace = raceList.first;
   String subraceValue = subraceList.first;
   Map<String, bool> checkboxMapStates = {
-    "Build": true,
-    "Skin Tone": true,
-    "Scars": true,
-    "Tattoos": true,
-    "Ailments": true,
-    "Clothing": true,
-    "Extras": true,
+    "Build": false,
+    "Skin Tone": false,
+    "Scars": false,
+    "Tattoos": false,
+    "Ailments": false,
+    "Clothing": false,
   };
 
   void _showOptionsModal(BuildContext context) {
@@ -352,7 +351,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Build',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -370,7 +369,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Skin Tone',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -388,7 +387,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Scars',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -411,7 +410,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Tattoos',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -429,7 +428,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Ailments',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -447,7 +446,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Clothing',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -679,7 +678,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .04,
+                                      MediaQuery.of(ctx).size.height * .044,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
