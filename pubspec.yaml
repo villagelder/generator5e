@@ -34,6 +34,7 @@ dependencies:
   provider:
   flutter_screenutil:
   path:
+  http:
   json_annotation:
   json_serializable:
   responsive_framework:

@@ -20,7 +20,7 @@
     },
     {
       "race": "dragonborn",
-      "subraces": "blue",
+      "subrace": "blue",
       "skinColors": [
         "blue",
         "violet",
@@ -39,7 +39,7 @@
     },
     {
       "race": "dragonborn",
-      "subraces": "red",
+      "subrace": "red",
       "skinColors": [
         "red",
         "white",
@@ -57,7 +57,7 @@
     },
     {
       "race": "dragonborn",
-      "subraces": "green",
+      "subrace": "green",
       "skinColors": [
         "green",
         "yellow",
@@ -79,7 +79,7 @@
     },
     {
       "race": "dragonborn",
-      "subraces": "white",
+      "subrace": "white",
       "skinColors": [
         "white",
         "blue",
@@ -91,6 +91,84 @@
         "green",
         "orange",
         "yellow",
+        "white",
+        "red",
+        "violet",
+        "gray"
+      ]
+    },
+    {
+      "race": "dragonborn",
+      "subrace": "brass",
+      "skinColors": [
+        "white",
+        "blue",
+        "brass",
+        "black",
+        "red",
+        "violet",
+        "green",
+        "gray"
+      ],
+      "eyeColors": [
+        "green",
+        "orange",
+        "yellow",
+        "gold",
+        "white",
+        "red",
+        "blue",
+        "violet",
+        "gray"
+      ]
+    },
+    {
+      "race": "dragonborn",
+      "subrace": "bronze",
+      "skinColors": [
+        "white",
+        "blue",
+        "bronze",
+        "gold",
+        "silver",
+        "black",
+        "red",
+        "violet",
+        "green",
+        "gray"
+      ],
+      "eyeColors": [
+        "green",
+        "orange",
+        "yellow",
+        "bronze",
+        "black",
+        "white",
+        "red",
+        "violet",
+        "gray"
+      ]
+    },
+    {
+      "race": "dragonborn",
+      "subrace": "copper",
+      "skinColors": [
+        "white",
+        "blue",
+        "bronze",
+        "copper",
+        "black",
+        "red",
+        "violet",
+        "green",
+        "gray"
+      ],
+      "eyeColors": [
+        "green",
+        "orange",
+        "yellow",
+        "copper",
+        "black",
         "white",
         "red",
         "violet",

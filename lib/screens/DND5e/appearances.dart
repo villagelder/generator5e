@@ -97,7 +97,7 @@ class _NumberDDBState extends State<NumberDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.033,
+                fontSize: MediaQuery.of(context).size.height * 0.036,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -150,7 +150,7 @@ class _RacesDDBState extends State<RacesDDB> {
             style: TextStyle(
               color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.04,
+              fontSize: MediaQuery.of(context).size.height * 0.036,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -213,7 +213,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.04,
+                fontSize: MediaQuery.of(context).size.height * 0.036,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -267,7 +267,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               style: TextStyle(
                   color: Colors.amber.shade100,
                   fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.04,
+                  fontSize: MediaQuery.of(context).size.height * 0.036,
                   fontWeight: FontWeight.w500),
               underline: Container(
                 height: 2,
@@ -336,7 +336,7 @@ class _ListViewerState extends State<ListViewer> {
                       'More Appearance Options',
                       style: TextStyle(
                         fontFamily: 'Georgia',
-                        fontSize: MediaQuery.of(context).size.height * 0.047,
+                        fontSize: MediaQuery.of(context).size.height * 0.04,
                         fontWeight: FontWeight.w600,
                         color: const Color.fromRGBO(85, 0, 0, 1),
                       ),
@@ -650,7 +650,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .044,
+                                      MediaQuery.of(ctx).size.height * .04,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -678,7 +678,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .044,
+                                      MediaQuery.of(ctx).size.height * .04,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
