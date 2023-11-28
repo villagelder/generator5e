@@ -304,14 +304,12 @@ class _ListViewerState extends State<ListViewer> {
   String selectedRace = raceList.first;
   String subraceValue = subraceList.first;
   Map<String, bool> checkboxMapStates = {
-    "Build": true,
-    "Skin Tone": true,
-    "Facial Hair": true,
-    "Scars": true,
-    "Tattoos": true,
-    "Ailments": true,
-    "Clothing": true,
-    "Extras": true,
+    "Build": false,
+    "Skin Tone": false,
+    "Scars": false,
+    "Tattoos": false,
+    "Ailments": false,
+    "Clothing": false,
   };
 
   void _showOptionsModal(BuildContext context) {
@@ -353,7 +351,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Build',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -371,7 +369,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Skin Tone',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -386,28 +384,10 @@ class _ListViewerState extends State<ListViewer> {
                       Expanded(
                         child: CheckboxListTile(
                           title: Text(
-                            'Facial Hair',
-                            style: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
-                            ),
-                          ),
-                          activeColor: Colors.brown.shade500,
-                          value: checkboxMapStates["Facial Hair"],
-                          onChanged: (bool? value) {
-                            setModalState(() {
-                              checkboxMapStates["Facial Hair"] = value!;
-                            });
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: CheckboxListTile(
-                          title: Text(
                             'Scars',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -430,7 +410,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Tattoos',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -448,7 +428,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Ailments',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -466,7 +446,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Clothing',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
+                                  MediaQuery.of(context).size.height * 0.036,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -474,24 +454,6 @@ class _ListViewerState extends State<ListViewer> {
                           onChanged: (bool? value) {
                             setModalState(() {
                               checkboxMapStates["Clothing"] = value!;
-                            });
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: CheckboxListTile(
-                          title: Text(
-                            'Extras',
-                            style: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.height * 0.035,
-                            ),
-                          ),
-                          activeColor: Colors.brown.shade500,
-                          value: checkboxMapStates["Extras"],
-                          onChanged: (bool? value) {
-                            setModalState(() {
-                              checkboxMapStates["Extras"] = value!;
                             });
                           },
                         ),

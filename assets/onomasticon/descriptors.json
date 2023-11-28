@@ -126,7 +126,6 @@
         "gray",
         "black",
         "brown",
-        "beige",
         "blue",
         "red",
         "pink",
@@ -134,7 +133,7 @@
         "yellow",
         "orange",
         "violet",
-        "indigo"
+        "metallic"
       ]
     },
     {
@@ -309,7 +308,7 @@
     },
     {
       "id": 18,
-      "word": "colorHueWhite",
+      "word": "white",
       "synonyms": [
         "white",
         "alabaster",
@@ -335,7 +334,7 @@
     },
     {
       "id": 19,
-      "word": "colorHueGray",
+      "word": "gray",
       "synonyms": [
         "charcoal",
         "slate",
@@ -362,7 +361,7 @@
     },
     {
       "id": 20,
-      "word": "colorHueBlack",
+      "word": "black",
       "synonyms": [
         "jet",
         "charcoal",
@@ -381,7 +380,7 @@
     },
     {
       "id": 21,
-      "word": "colorHueBrown",
+      "word": "brown",
       "synonyms": [
         "sienna",
         "taupe",
@@ -403,7 +402,7 @@
     },
     {
       "id": 22,
-      "word": "colorHueBlue",
+      "word": "blue",
       "synonyms": [
         "sky",
         "teal",
@@ -426,7 +425,7 @@
     },
     {
       "id": 23,
-      "word": "colorHueRed",
+      "word": "red",
       "synonyms": [
         "crimson",
         "scarlet",
@@ -447,7 +446,7 @@
     },
     {
       "id": 24,
-      "word": "colorHuePink",
+      "word": "pink",
       "synonyms": [
         "pink",
         "blush",
@@ -467,7 +466,7 @@
     },
     {
       "id": 25,
-      "word": "colorHueGreen",
+      "word": "green",
       "synonyms": [
         "emerald",
         "forest",
@@ -488,7 +487,7 @@
     },
     {
       "id": 26,
-      "word": "colorHueOrange",
+      "word": "orange",
       "synonyms": [
         "mango",
         "orange",
@@ -506,7 +505,7 @@
     },
     {
       "id": 27,
-      "word": "colorHueYellow",
+      "word": "yellow",
       "synonyms": [
         "lemon",
         "canary",
@@ -525,7 +524,7 @@
     },
     {
       "id": 28,
-      "word": "colorHueViolet",
+      "word": "violet",
       "synonyms": [
         "lavender",
         "amethyst",
@@ -680,6 +679,368 @@
         "plain",
         "commonplace",
         "common"
+      ]
+    },
+    {
+      "id": 34,
+      "word": "earsSmallDesc",
+      "synonyms": [
+        "small",
+        "delicate",
+        "whisper-soft",
+        "flat",
+        "whimsical",
+        "glowing",
+        "tucked",
+        "round",
+        "velvety",
+        "rosy-tipped",
+        "dainty",
+        "petite",
+        "frost-nipped",
+        "protruding",
+        "sculpted"
+      ]
+    },
+    {
+      "id": 35,
+      "word": "earsBigDesc",
+      "synonyms": [
+        "big",
+        "cauliflower",
+        "glowing",
+        "bulbous",
+        "velvety",
+        "shell-like",
+        "bat-like",
+        "velvety",
+        "haggard",
+        "mangled",
+        "shadow-hugged",
+        "ragged",
+        "massive",
+        "wrinkled",
+        "protruding",
+        "large",
+        "fleshy",
+        "hairy"
+      ]
+    },
+    {
+      "id": 36,
+      "word": "eyesDesc",
+      "synonyms": [
+        "sparkling",
+        "large",
+        "gentle",
+        "innocent",
+        "piercing",
+        "steely",
+        "misty",
+        "almond-shaped",
+        "wise",
+        "beady",
+        "icy",
+        "veiled",
+        "glinting",
+        "honeyed",
+        "glassy",
+        "sorrowful",
+        "glaring",
+        "peering",
+        "mouse-like",
+        "pensive",
+        "thoughtful",
+        "narrow",
+        "gem-like",
+        "squinting",
+        "unassuming",
+        "judgmental",
+        "crinkled",
+        "coy",
+        "wary",
+        "darting",
+        "inquisitive"
+      ]
+    },
+    {
+      "id": 37,
+      "word": "colorDesc",
+      "synonyms": [
+        "dark",
+        "jet",
+        "glossy",
+        "subtle highlighted",
+        "subtle",
+        "ashen",
+        "pastel",
+        "slate",
+        "powder",
+        "charcoal",
+        "blood",
+        "intense",
+        "scarlet",
+        "bright",
+        "sandy",
+        "shiny",
+        "creamy",
+        "bold",
+        "oily",
+        "highlighted",
+        "medium",
+        "frosted",
+        "smoky",
+        "light",
+        "cool",
+        "burnt",
+        "midnight",
+        "copper",
+        "golden",
+        "warm",
+        "marbled",
+        "silvery",
+        "neutral",
+        "soft",
+        "deep",
+        "rich",
+        "graying",
+        "icy"
+      ]
+    },
+    {
+      "id": 38,
+      "word": "facialHair",
+      "synonyms": [
+        "payot",
+        "chin curtain beard",
+        "sideburns and moustache",
+        "horsesoe moustache",
+        "sideburns with goatee",
+        "handlebar moustache",
+        "bushy sideburns",
+        "pencil moustache",
+        "flared sideburns",
+        "walrus moustache",
+        "pyramid moustache",
+        "mutton chop sideburns",
+        "ducktail beard",
+        "beard with sideburns",
+        "moustache and soul patch",
+        "moustache",
+        "tapered sideburns",
+        "beard with no sideburns",
+        "sideburns",
+        "anchor beard",
+        "painter's brush moustache",
+        "English moustache",
+        "short braided beard",
+        "long braided beard",
+        "long Dwarven beard",
+        "Bandholz beard",
+        "Viking beard",
+        "balbo beard",
+        "Dali moustache",
+        "villain moustache",
+        "soldier moustache",
+        "small brush moustache",
+        "lampshade moustache",
+        "curated moustache",
+        "chevron moustache",
+        "natural moustache",
+        "rider moustache",
+        "forked beard",
+        "full beard",
+        "long full beard",
+        "long stubble",
+        "clean shaven",
+        "goatee",
+        "extended goatee",
+        "imperial goatee",
+        "hulihee sideburns",
+        "thin sideburns",
+        "side whiskers",
+        "long sideburns",
+        "Fu Manchu moustache",
+        "Van Dyke beard",
+        "beard",
+        "unkempt beard",
+        "soul patch",
+        "stubble"
+      ]
+    },
+    {
+      "id": 39,
+      "word": "skinHairDesc",
+      "synonyms": [
+        "dark",
+        "jet",
+        "glossy",
+        "subtle highlighted",
+        "subtle",
+        "ashen",
+        "pastel",
+        "slate",
+        "powder",
+        "charcoal",
+        "blood",
+        "intense",
+        "scarlet",
+        "bright",
+        "sandy",
+        "shiny",
+        "creamy",
+        "bold",
+        "oily",
+        "highlighted",
+        "medium",
+        "frosted",
+        "smoky",
+        "light",
+        "cool",
+        "burnt",
+        "midnight",
+        "copper",
+        "golden",
+        "warm",
+        "platinum",
+        "marbled",
+        "silvery",
+        "neutral",
+        "soft",
+        "deep",
+        "rich",
+        "graying",
+        "icy"
+      ]
+    },
+    {
+      "id": 40,
+      "word": "metallic",
+      "synonyms": [
+        "platinum",
+        "gold",
+        "electrum",
+        "copper",
+        "bronze",
+        "brass",
+        "silver"
+      ]
+    },
+    {
+      "id": 41,
+      "word": "gold",
+      "synonyms": [
+        "yellow gold",
+        "rose gold",
+        "bronze gold",
+        "gold",
+        "antique gold",
+        "champagne gold",
+        "pale gold",
+        "antique gold",
+        "green gold",
+        "red gold",
+        "rich gold"
+      ]
+    },
+    {
+      "id": 42,
+      "word": "platinum",
+      "synonyms": [
+        "platinum",
+        "white platinum",
+        "gray platinum",
+        "metallic platinum",
+        "pale platinum",
+        "gunmetal platinum",
+        "smoky platinum",
+        "icy platinum",
+        "pearl platinum",
+        "blue platinum"
+      ]
+    },
+    {
+      "id": 43,
+      "word": "electrum",
+      "synonyms": [
+        "electrum",
+        "pale electrum",
+        "rich electrum",
+        "silvery electrum",
+        "golden electrum",
+        "antique electrum",
+        "muted electrum",
+        "brushed electrum",
+        "champagne electrum",
+        "twilight electrum"
+      ]
+    },
+    {
+      "id": 44,
+      "word": "copper",
+      "synonyms": [
+        "copper",
+        "bright copper",
+        "burnished copper",
+        "rose copper",
+        "bronze copper",
+        "antique copper",
+        "reddish copper",
+        "golden copper",
+        "pale copper",
+        "patina copper"
+      ]
+    },
+    {
+      "id": 45,
+      "word": "bronze",
+      "synonyms": [
+        "bronze",
+        "golden bronze",
+        "antique bronze",
+        "brushed bronze",
+        "pale bronze",
+        "patina bronze",
+        "chocolate bronze",
+        "rose bronze",
+        "metallic bronze",
+        "dark bronze",
+        "reddish bronze"
+      ]
+    },
+    {
+      "id": 46,
+      "word": "brass",
+      "synonyms": [
+        "brass",
+        "bright brass",
+        "antique brass",
+        "brushed brass",
+        "pale brass",
+        "yellow brass",
+        "greenish brass",
+        "rose brass",
+        "golden brass",
+        "burnished brass",
+        "reddish brass"
+      ]
+    },
+    {
+      "id": 47,
+      "word": "silver",
+      "synonyms": [
+        "silver",
+        "icy silver",
+        "antique silver",
+        "brushed silver",
+        "pewter silver",
+        "gunmetal silver",
+        "chrome silver",
+        "moonlight silver",
+        "nickel silver",
+        "platinum silver",
+        "bluish silver",
+        "greenish silver"
       ]
     }
   ]
