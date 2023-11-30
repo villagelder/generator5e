@@ -33,6 +33,7 @@ dependencies:
   english_words:
   provider:
   flutter_screenutil:
+  dotenv:
   path:
   http:
   json_annotation:

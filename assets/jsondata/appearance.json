@@ -176,270 +176,248 @@
       ]
     },
     {
-      "race": "dwarf",
-      "subraces": [
-        "hill",
-        "mountain",
-        "duergar"
+      "race": "dragonborn",
+      "subrace": "gold",
+      "skinColors": [
+        "white",
+        "bronze",
+        "gold",
+        "black",
+        "red",
+        "violet",
+        "green",
+        "gray"
       ],
+      "eyeColors": [
+        "green",
+        "orange",
+        "blue",
+        "yellow",
+        "copper",
+        "black",
+        "white",
+        "red",
+        "violet",
+        "gray"
+      ]
+    },
+    {
+      "race": "dragonborn",
+      "subrace": "silver",
+      "skinColors": [
+        "white",
+        "copper",
+        "silver",
+        "black",
+        "red",
+        "violet",
+        "green",
+        "gray"
+      ],
+      "eyeColors": [
+        "white",
+        "copper",
+        "silver",
+        "blue",
+        "black",
+        "orange",
+        "red",
+        "yellow",
+        "violet",
+        "green",
+        "gray"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "subrace": "hill",
       "frillName": "hair",
       "frillTypes": [],
       "frillColors": [
         "black",
-        "midnight black",
-        "violet black",
-        "ebony",
-        "blue black",
-        "plum black",
-        "brown",
-        "raven black",
-        "chocolate brown",
-        "sangria",
-        "strawberry blonde",
-        "golden brown",
-        "red",
-        "auburn red",
-        "cinnamon brown",
-        "cayenne red",
-        "copper red",
-        "ruby",
-        "red",
-        "ginger",
-        "crimson",
-        "mint blonde",
-        "blonde",
-        "coffee brown",
-        "burgundy",
-        "diamond blonde",
-        "sandy blonde",
-        "caramel",
-        "honey blonde",
-        "amber",
-        "beige blonde",
-        "champagne blonde",
-        "vanilla blonde",
-        "white",
-        "fire red",
-        "ochre",
-        "nutmeg",
-        "violet-red",
-        "coral red",
-        "gold",
-        "orange",
-        "garnet",
-        "red ombre",
-        "bronze",
-        "strawberry blonde",
-        "peachy orange",
-        "apricot orange",
-        "snowy gray",
-        "indigo",
-        "chestnut",
-        "pearl white",
-        "salt and pepper"
+        "gray",
+        "brown"
       ],
       "skinColors": [
-        "light brown",
-        "light neutral beige",
-        "fair yellow",
-        "very fair",
-        "dark brown",
-        "bronze",
-        "gray",
-        "light gray",
-        "dark gray",
-        "deep bronze",
-        "golden beige",
-        "black",
-        "espresso",
-        "chestnut",
-        "medium beige",
-        "pinkish-beige",
-        "ebony",
-        "chocolate brown",
-        "apricot",
-        "light beige",
-        "blue-gray",
-        "slate gray",
-        "porcelain",
-        "ivory",
-        "rust red",
-        "yellow ochre",
-        "light tan",
-        "dark tan",
-        "ruddy red",
-        "deep brown",
-        "coal black",
-        "olive",
-        "dark olive",
-        "light olive",
-        "peach"
-      ],
-      "descriptors": [
-        "dark",
-        "jet",
-        "glossy",
-        "subtle highlighted",
-        "subtle",
-        "ashen",
-        "pastel",
-        "slate",
-        "powder",
-        "charcoal",
-        "blood",
-        "intense",
-        "scarlet",
-        "bright",
-        "sandy",
-        "shiny",
-        "creamy",
-        "bold",
-        "oily",
-        "highlighted",
-        "medium",
-        "frosted",
-        "smoky",
-        "light",
-        "cool",
-        "burnt",
-        "midnight",
-        "copper",
-        "golden",
-        "warm",
-        "platinum",
-        "marbled",
-        "silvery",
-        "neutral",
-        "soft",
-        "deep",
-        "rich",
-        "graying",
-        "icy"
+        "brown",
+        "beige"
       ],
       "eyeColors": [
         "blue",
-        "violet",
-        "gold",
-        "silver",
-        "copper",
-        "green",
-        "amber",
+        "black",
         "brown",
-        "yellow",
-        "red",
+        "violet",
         "green",
-        "white",
-        "indigo",
+        "gray"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "subrace": "mountain",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
         "black",
         "gray",
+        "brown"
+      ],
+      "skinColors": [
+        "brown",
+        "beige"
+      ],
+      "eyeColors": [
+        "blue",
+        "black",
+        "brown",
+        "violet",
+        "green",
+        "gray"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "subrace": "gray",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
+        "black",
+        "gray"
+      ],
+      "skinColors": [
+        "brown",
+        "beige"
+      ],
+      "eyeColors": [
+        "blue",
+        "black",
+        "violet",
+        "gray"
+      ]
+    },
+    {
+      "race": "elf",
+      "subrace": "high",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
+        "black",
+        "copper",
+        "blonde",
+        "gray",
+        "white"
+      ],
+      "skinColors": [
+        "brown",
+        "bronze"
+      ],
+      "eyeColors": [
+        "gold",
+        "violet",
+        "gray",
+        "blue",
+        "silver"
+      ]
+    },
+    {
+      "race": "elf",
+      "subrace": "wood",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
+        "black",
+        "copper",
+        "brown",
+        "blonde",
+        "gray",
+        "white"
+      ],
+      "skinColors": [
+        "brown",
+        "copper",
+        "green",
+        "bronze"
+      ],
+      "eyeColors": [
+        "gold",
+        "violet",
+        "brown",
+        "gray",
+        "green",
+        "blue",
+        "silver"
+      ]
+    },
+    {
+      "race": "elf",
+      "subrace": "dark",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
+        "black",
+        "violet",
+        "blue",
+        "gray",
+        "white"
+      ],
+      "skinColors": [
+        "gray",
+        "black"
+      ],
+      "eyeColors": [
+        "violet",
+        "gray",
+        "green",
         "orange",
-        "teal",
-        "ruby",
-        "amethyst",
-        "garnet"
+        "bronze",
+        "copper",
+        "red",
+        "yellow",
+        "blue",
+        "silver"
+      ]
+    },
+    {
+      "race": "elf",
+      "subrace": "half-elf",
+      "frillName": "hair",
+      "frillTypes": [],
+      "frillColors": [
+        "black",
+        "copper",
+        "blonde",
+        "green",
+        "red",
+        "blue",
+        "orange",
+        "gray",
+        "brown",
+        "white"
       ],
-      "hairstyles": [
-        "bald",
-        "close cut",
-        "pony tail",
-        "dreadlocks",
-        "short cropped",
-        "comb over",
-        "bun",
-        "top knot",
-        "plait",
-        "pigtail",
-        "undercut",
-        "Caesar cut",
-        "mohawk",
-        "high roll",
-        "wavy",
-        "rolled",
-        "beehive",
-        "bouffant",
-        "oseledets",
-        "spiky",
-        "pageboy",
-        "curtained",
-        "kiss curled",
-        "bowl cut",
-        "long hair",
-        "flattop",
-        "fontagne",
-        "frizz",
-        "feathered",
-        "short afro",
-        "big afro",
-        "curly top",
-        "wavy long",
-        "wavy medium length",
-        "mullet",
-        "braids",
-        "pompadour",
-        "corn rows"
+      "skinColors": [
+        "brown",
+        "gray",
+        "black",
+        "white",
+        "green",
+        "beige",
+        "bronze"
       ],
-      "facialFrill": [
-        "payot",
-        "chin curtain beard",
-        "sideburns and moustache",
-        "horsesoe moustache",
-        "sideburns with goatee",
-        "handlebar moustache",
-        "bushy sideburns",
-        "pencil moustache",
-        "flared sideburns",
-        "walrus moustache",
-        "pyramid moustache",
-        "mutton chop sideburns",
-        "ducktail beard",
-        "beard with sideburns",
-        "moustache and soul patch",
-        "moustache",
-        "tapered sideburns",
-        "beard with no sideburns",
-        "sideburns",
-        "anchor beard",
-        "painter's brush moustache",
-        "English moustache",
-        "short braided beard",
-        "long braided beard",
-        "long Dwarven beard",
-        "Bandholz beard",
-        "Viking beard",
-        "balbo beard",
-        "Dali moustache",
-        "villain moustache",
-        "soldier moustache",
-        "small brush moustache",
-        "lampshade moustache",
-        "curated moustache",
-        "chevron moustache",
-        "natural moustache",
-        "rider moustache",
-        "forked beard",
-        "full beard",
-        "long full beard",
-        "long stubble",
-        "clean shaven",
-        "goatee",
-        "extended goatee",
-        "imperial goatee",
-        "hulihee sideburns",
-        "thin sideburns",
-        "side whiskers",
-        "long sideburns",
-        "Fu Manchu moustache",
-        "Van Dyke beard",
-        "beard",
-        "beard",
-        "unkempt beard",
-        "soul patch",
-        "stubble"
+      "eyeColors": [
+        "gold",
+        "black",
+        "orange",
+        "copper",
+        "brown",
+        "violet",
+        "green",
+        "gray",
+        "blue",
+        "silver"
       ]
     },
     {
       "race": "human",
-      "subraces": [
+      "subrace": [
         "Aboriginal",
         "Amerindian",
         "Arab",
@@ -709,7 +687,7 @@
     },
     {
       "race": "elf",
-      "subraces": [
+      "subrace": [
         "high",
         "wood",
         "dark",
@@ -1002,7 +980,7 @@
     },
     {
       "race": "gnome",
-      "subraces": [
+      "subrace": [
         "deep",
         "forest",
         "rock"
@@ -1294,7 +1272,7 @@
     },
     {
       "race": "halfling",
-      "subraces": [
+      "subrace": [
         "lightfoot",
         "stout"
       ],
@@ -1559,7 +1537,7 @@
     },
     {
       "race": "orc",
-      "subraces": [
+      "subrace": [
         "half-orc",
         "standard"
       ],
@@ -1850,7 +1828,7 @@
     },
     {
       "race": "tiefling",
-      "subraces": [
+      "subrace": [
         "Baalzebul",
         "Dispater",
         "Fierna",
