@@ -410,6 +410,19 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("itemsPersonal");
   }
 
+  String facialHair() {
+    return pickWordFromSynonyms("facialHair");
+  }
 
+  String shirt() {
+    return pickWordFromSynonyms("shirt");
+  }
 
+  String frill() {
+    return pickWordFromSynonyms("frill");
+  }
+
+  String body() {
+    return pickWordFromSynonyms("body");
+  }
 }
