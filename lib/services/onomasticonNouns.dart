@@ -134,6 +134,10 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("humanoidPart");
   }
 
+  String facePart() {
+    return pickWordFromSynonyms("facePart");
+  }
+
   String idol() {
     return pickWordFromSynonyms("idol");
   }

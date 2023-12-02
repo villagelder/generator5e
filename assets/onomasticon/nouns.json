@@ -1821,6 +1821,25 @@
         "culottes",
         "pumpkin hose"
       ]
+    },
+    {
+      "id": 97,
+      "word": "facePart",
+      "synonyms": [
+        "left eyebrow",
+        "right eye",
+        "right ear",
+        "left ear",
+        "nose",
+        "forehead",
+        "lip",
+        "head",
+        "right cheek",
+        "left cheek",
+        "chin",
+        "left eye",
+        "right eyebrow"
+      ]
     }
   ]
 }

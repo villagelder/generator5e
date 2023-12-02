@@ -1133,6 +1133,37 @@
         "hook-shaped",
         "straight line"
       ]
+    },
+    {
+      "id": 53,
+      "word": "average",
+      "facialFrill": [
+        "average",
+        "regular",
+        "everyday",
+        "common",
+        "middling",
+        "medium",
+        "mediocre",
+        "ordinary"
+      ]
+    },
+    {
+      "id": 54,
+      "word": "weak",
+      "facialFrill": [
+        "weak",
+        "soft",
+        "spindly",
+        "sickly",
+        "wavering",
+        "unsteady",
+        "feeble",
+        "weakened",
+        "frail",
+        "flimsy",
+        "languorous"
+      ]
     }
   ]
 }

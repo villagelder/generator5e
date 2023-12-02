@@ -30,7 +30,7 @@ class AbilityScoreGenerator {
 
   Future<void> readJsonAppearances() async {
     final String response =
-        await rootBundle.loadString('assets/jsondata/appearance.json');
+    await rootBundle.loadString('assets/jsondata/appearance.json');
     final data = await json.decode(response);
     _appearanceitems = data["appearance"] as List;
   }
@@ -48,7 +48,7 @@ class AbilityScoreGenerator {
   AppearanceItem getAppearanceObjectByRace(String race) {
     if (race == "Any Race" || race == null) {
       return appearanceObjList[
-          Utility.getRandomIndexFromListSize(appearanceObjList.length)];
+      Utility.getRandomIndexFromListSize(appearanceObjList.length)];
     }
     return appearanceObjList.where((n) => n.race == race).toList()[0];
   }
@@ -81,56 +81,142 @@ class AbilityScoreGenerator {
         facialHair = "no facial hair";
       }
       sb.write(
-          " ${pronouns["subject"]} has ${Morph.indefiniteA(face)} $face with ${Morph.indefiniteA(face)} $facialHair");
+          " ${pronouns["subject"]} has ${Morph.indefiniteA(
+              face)} $face with ${Morph.indefiniteA(face)} $facialHair");
     }
 
-    if (checkboxMap["Build"] == true) {}
-    if (checkboxMap["Skin Tone"] == true) {}
-    if (checkboxMap["Scars"] == true) {}
-    if (checkboxMap["Tattoos"] == true) {}
-    if (checkboxMap["Ailment"] == true) {}
-    if (checkboxMap["Clothing"] == true) {}
-    //Build, Scar - This dwarf has a robust build with a jagged scar on his forehead.
-    //Tattoo - He has a celtic knot tattoo on his forearm.
-    //Ailment - He walks with a limp from a battle wound long ago.
-    //Clothing - He wears a white linen shirt and brown pants.
+    if (checkboxMap["Build"] == true) {
+      String build = getBuild();
+      sb.write(" The $race has ${Morph.indefiniteA(build)} $build");
+    }
 
-    //gender race, subrace
+    if (checkboxMap["Skin Tone"] == true) {
+      String skin = getSkinTone(appObj);
+      sb.write(" with $skin");
+    }
+    if (checkboxMap["Scars"] == true) {
+      String scar = getScar();
+      sb.write(
+          " and ${Morph.indefiniteA(
+              scar)} $scar on ${pronouns["possessive"]} ${noun.facePart()}");
+    }
+    if (checkboxMap["Tattoos"] == true) {
+      String tattoo = getTattoo();
+      sb.write("${pronouns["Subject"]} has ${Morph.indefiniteA(
+          tattoo)} $tattoo on ${pronouns["Possessive"]} ${noun.facePart()}");
+          }
+    if (checkboxMap["Ailment"] == true){
+      String ailment = getAilment();
+
+      sb.write(ailment);
+      }
+      if (checkboxMap["Clothing"] == true) {}
+      //Build, Scar - This dwarf has a robust build with a jagged scar on his forehead.
+      //Tattoo - He has a celtic knot tattoo on his forearm.
+      //Ailment - He walks with a limp from a battle wound long ago.
+      //Clothing - He wears a white linen shirt and brown pants.
+
+      //gender race, subrace
 //hair, eyes, ears
-    //facial hair
+      //facial hair
 
-    //A gender subrace race (optional skin tone) with eyes and hair. Optional face and ears.
-    //Pronoun has a build
-    //with a scar
-    //with a tattoo
-    //Pronoun appears to have an ailment
-    //Pronoun is wearing clothing
+      //A gender subrace race (optional skin tone) with eyes and hair. Optional face and ears.
+      //Pronoun has a build
+      //with a scar
+      //with a tattoo
+      //Pronoun appears to have an ailment
+      //Pronoun is wearing clothing
 
-    //checkbox Map
-    //Build
-    //Skin tone
-    //Scars
-    //Tattoos
-    //Ailments
-    //Clothing
+      //checkbox Map
+      //Build
+      //Skin tone
+      //Scars
+      //Tattoos
+      //Ailments
+      //Clothing
 
-    String appearance = "";
-    return appearance;
+      String appearance = "";
+      return appearance;
+    }
+
+  String getScar() {
+    return "${descriptor.scarShape()} scar";
   }
 
-  String getSkinToneByRaceSubrace(String race, String subrace) {
-    String skin = "";
+  String getSkinTone(AppearanceItem appItem) {
+    String skinColor = descriptor.variantFromBase(appItem.skinColors[
+    Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+    String skin = "${descriptor.skinOrHairColorDescription()} $skinColor skin";
 
+    int roll = DiceRoller.roll1d6();
+
+    if (roll > 4) {
+      String skinColor2 = descriptor.variantFromBase(appItem.skinColors[
+      Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+
+      while (skinColor == skinColor2) {
+        skinColor2 = descriptor.variantFromBase(appItem.skinColors[
+        Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+      }
+      return "${descriptor
+          .skinOrHairColorDescription()} $skinColor tinged with $skinColor2 skin";
+    }
     return skin;
+  }
+
+  String getBuild() {
+    String build = "";
+    int r = DiceRoller.roll1d12();
+
+    switch (r) {
+      case 2:
+        build = descriptor.hefty();
+        break;
+      case 3:
+        build = descriptor.thin();
+        break;
+      case 4:
+        build = descriptor.average();
+        break;
+      case 5:
+        build = descriptor.agile();
+        break;
+      case 6:
+        build = descriptor.muscular();
+        break;
+      case 7:
+        build = "${descriptor.agile()} and ${descriptor.attractive()}";
+        break;
+      case 8:
+        build = "${descriptor.muscular()} and ${descriptor.attractive()}";
+        break;
+      case 9:
+        build = "${descriptor.thin()} and ${descriptor.weak()}";
+        break;
+      case 10:
+        build = "${descriptor.hefty()} but ${descriptor.muscular()}";
+        break;
+      case 11:
+        build = "${descriptor.thin()} but ${descriptor.agile()}";
+        break;
+      case 12:
+        build = "${descriptor.muscular()} and ${descriptor.agile()}";
+        break;
+      default:
+        build = descriptor.weak();
+        break;
+    }
+
+    return build;
   }
 
   Map<String, String> getPronouns(String gender) {
     gender = gender.toLowerCase();
 
     Map<String, String> pronounsMap = {
-      "possessive": "",
-      "object": "",
-      "subject": ""
+      "Possessive": "",
+      "Object": "",
+      "Subject": ""
     };
 
     if (gender == "female") {
@@ -148,5 +234,14 @@ class AbilityScoreGenerator {
     }
 
     return pronounsMap;
+  }
+
+  String getTattoo() {
+    return "${descriptor.colorsBase()} ${noun.symbolOminous()} tattoo";
+  }
+
+  String getAilment() {
+    String ailment = "";
+    return ailment;
   }
 }
