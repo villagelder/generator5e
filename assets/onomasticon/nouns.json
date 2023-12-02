@@ -1840,6 +1840,172 @@
         "left eye",
         "right eyebrow"
       ]
+    },
+    {
+      "id": 98,
+      "word": "humanoidMajorPart",
+      "synonyms": [
+        "body",
+        "right shoulder",
+        "right arm",
+        "left shoulder",
+        "back",
+        "right forearm",
+        "left thigh",
+        "left leg",
+        "left forearm",
+        "right thigh",
+        "right foot",
+        "left hand",
+        "left calf",
+        "back of neck",
+        "chest",
+        "neck",
+        "left foot",
+        "right calf",
+        "left arm",
+        "right hand",
+        "right arm",
+        "stomach"
+      ]
+    },
+    {
+      "id": 99,
+      "word": "disease",
+      "synonyms": [
+        "medusa's gaze",
+        "yellow fever",
+        "mindrot",
+        "slime sweat",
+        "cackle fever",
+        "rat fever",
+        "assassin's poison",
+        "death tremors",
+        "mad monkey pox",
+        "blue rot",
+        "rumble disease",
+        "lycanthrope",
+        "icy fever",
+        "festering",
+        "sewer plague",
+        "shivering sickness",
+        "basilisk's rot"
+      ]
+    },
+    {
+      "id": 100,
+      "word": "symptom",
+      "synonyms": [
+        "tremors",
+        "twitching",
+        "itching",
+        "pain",
+        "festering wounds",
+        "spasms",
+        "burning sensation",
+        "numbness",
+        "tenderness",
+        "convulsions",
+        "paralysis",
+        "soreness",
+        "aches",
+        "partial paralysis"
+      ]
+    },
+    {
+      "id": 101,
+      "word": "lostSenses",
+      "synonyms": [
+        "muteness",
+        "loss of touch",
+        "anosmia",
+        "deafness",
+        "blindness"
+      ]
+    },
+    {
+      "id": 102,
+      "word": "damageType",
+      "synonyms": [
+        "bludgeoning",
+        "piercing",
+        "slashing",
+        "fire",
+        "cold",
+        "poison",
+        "necrotic",
+        "psychic",
+        "force",
+        "lightning",
+        "thunder",
+        "acid",
+        "magic",
+        "elemental"
+      ]
+    },
+    {
+      "id": 103,
+      "word": "symptomMental",
+      "synonyms": [
+        "depression",
+        "stress attacks",
+        "paranoia",
+        "sleep disorder",
+        "delusions",
+        "panic attacks",
+        "forgetfulness",
+        "hallucinations",
+        "amnesia",
+        "sadness"
+      ]
+    },
+    {
+      "id": 104,
+      "word": "battle",
+      "synonyms": [
+        "war",
+        "crusades",
+        "raid",
+        "battle",
+        "combat",
+        "skirmish"
+      ]
+    },
+    {
+      "id": 105,
+      "word": "monsterUndead",
+      "synonyms": [
+        "skeleton archer",
+        "allip",
+        "owlbear skeleton",
+        "zombie",
+        "bone naga",
+        "revenant",
+        "ghost",
+        "will 'o wisp",
+        "minotaur skeleton",
+        "ghast",
+        "specter",
+        "vampire wizard",
+        "skeletal knight",
+        "minotaur zombie",
+        "phantom warrior",
+        "death hound",
+        "ogre skeleton",
+        "ogre zombie",
+        "giant skeleton",
+        "mummy",
+        "vampire",
+        "ghoul",
+        "dread warrior",
+        "wight",
+        "wraith",
+        "dracolich",
+        "bodak",
+        "death knight",
+        "lich",
+        "skeleton warrior"
+      ]
     }
   ]
 }

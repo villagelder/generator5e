@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:generator5e/services/spellSetGenerator5e.dart';
+import 'package:generator5e/services/appearanceGenerator.dart';
 
 class AppearancePage extends MaterialPageRoute<void> {
   AppearancePage()
@@ -312,6 +312,9 @@ class _ListViewerState extends State<ListViewer> {
     "Clothing": false,
   };
 
+  List<String> appearanceList = ["Roll for a new appearance."];
+  AppearanceGenerator appGen = AppearanceGenerator();
+
   void _showOptionsModal(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -524,29 +527,19 @@ class _ListViewerState extends State<ListViewer> {
     });
   }
 
-  Iterable<String> keys = ["Appearance Generator"];
-  Map<String, String> spellMap = {
-    "Appearance Generator": "Roll for a new appearance."
-  };
-  SpellSetGenerator spellGen = SpellSetGenerator();
-
   updateList() {
-    spellGen.init();
-    spellMap = spellGen.generateSpellSetMap(
-        _RacesDDBState.raceValue, subraceValue, _NumberDDBState.numberValue);
-    keys = spellMap.keys;
-
+    appearanceList = appGen.getAppearances(
+        _RacesDDBState.raceValue,
+        subraceValue,
+        _GenderDDBState.genderValue,
+        checkboxMapStates,
+        _NumberDDBState.numberValue);
     setState(() {
-      spellMap;
-      if (keys.isEmpty) {
-        keys = ["Spell Set Generator"];
-      } else {
-        keys;
-      }
+      appearanceList;
     });
   }
 
-  List<bool> selectedCheckboxes = [false, false, false];
+  // List<bool> selectedCheckboxes = [false, false, false];
 
   @override
   Widget build(BuildContext ctx) {
@@ -704,8 +697,8 @@ class _ListViewerState extends State<ListViewer> {
                           elevation: 2,
                           color: Colors.brown.shade500,
                           child: ListView.builder(
-                            key: ObjectKey(keys.first),
-                            itemCount: keys.length,
+                            key: ObjectKey(appearanceList.first),
+                            itemCount: appearanceList.length,
                             itemBuilder: (ctx, index) {
                               return Padding(
                                 padding: EdgeInsets.fromLTRB(
@@ -721,19 +714,11 @@ class _ListViewerState extends State<ListViewer> {
                                           BorderRadius.circular(15.0)),
                                   tileColor: Colors.orange.shade100,
                                   title: Text(
-                                    keys.elementAt(index),
+                                    appearanceList.elementAt(index),
                                     style: TextStyle(
                                         fontSize:
                                             MediaQuery.of(ctx).size.height *
                                                 0.034),
-                                  ),
-                                  subtitle: Text(
-                                    spellMap[keys.elementAt(index)]!,
-                                    style: TextStyle(
-                                        fontSize:
-                                            MediaQuery.of(ctx).size.height *
-                                                0.03,
-                                        fontStyle: FontStyle.italic),
                                   ),
                                 ),
                               );

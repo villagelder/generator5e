@@ -1037,7 +1037,7 @@
     {
       "id": 49,
       "word": "blonde",
-      "facialFrill": [
+      "synonyms": [
         "bleached",
         "honey",
         "beige",
@@ -1058,7 +1058,7 @@
     {
       "id": 50,
       "word": "eyeShape",
-      "facialFrill": [
+      "synonyms": [
         "almond-shaped",
         "round",
         "hooded",
@@ -1084,7 +1084,7 @@
     {
       "id": 52,
       "word": "faceShape",
-      "facialFrill": [
+      "synonyms": [
         "diamond-shaped",
         "square",
         "long",
@@ -1112,7 +1112,7 @@
     {
       "id": 52,
       "word": "scarShape",
-      "facialFrill": [
+      "synonyms": [
         "straight",
         "slash",
         "parallel",
@@ -1137,7 +1137,7 @@
     {
       "id": 53,
       "word": "average",
-      "facialFrill": [
+      "synonyms": [
         "average",
         "regular",
         "everyday",
@@ -1151,7 +1151,7 @@
     {
       "id": 54,
       "word": "weak",
-      "facialFrill": [
+      "synonyms": [
         "weak",
         "soft",
         "spindly",
@@ -1163,6 +1163,77 @@
         "frail",
         "flimsy",
         "languorous"
+      ]
+    },
+    {
+      "id": 55,
+      "word": "injured",
+      "synonyms": [
+        "mangled",
+        "crippled",
+        "smashed",
+        "disfigured",
+        "maimed",
+        "mutilated",
+        "deformed",
+        "marred",
+        "withered",
+        "crushed",
+        "hobbled",
+        "burned",
+        "debilitated",
+        "disintegrated",
+        "impaired",
+        "severed"
+      ]
+    },
+    {
+      "id": 56,
+      "word": "partially",
+      "synonyms": [
+        "partially",
+        "not completely",
+        "somewhat",
+        "partly"
+      ]
+    },
+    {
+      "id": 57,
+      "word": "residual",
+      "synonyms": [
+        "residual",
+        "lasting",
+        "protracted",
+        "rooted",
+        "lingering",
+        "continuing",
+        "recurring",
+        "incurable",
+        "enduring",
+        "lifelong",
+        "remaining"
+      ]
+    },
+    {
+      "id": 58,
+      "word": "dangerous",
+      "synonyms": [
+        "dangerous",
+        "cruel",
+        "murderous",
+        "baneful",
+        "grim",
+        "terrible",
+        "ruthless",
+        "nasty",
+        "slaying",
+        "fatal",
+        "lethal",
+        "savage",
+        "bloodthirsty",
+        "violent",
+        "unrelenting",
+        "deadly"
       ]
     }
   ]

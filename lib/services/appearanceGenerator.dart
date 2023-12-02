@@ -10,7 +10,7 @@ import 'package:generator5e/services/utility.dart';
 import 'onomasticonDescriptor.dart';
 import 'onomasticonVerbs.dart';
 
-class AbilityScoreGenerator {
+class AppearanceGenerator {
   List _appearanceitems = [];
   List<AppearanceItem> appearanceObjList = [];
   bool _isLoaded = false;
@@ -19,7 +19,13 @@ class AbilityScoreGenerator {
   OnomasticonNoun noun = OnomasticonNoun();
   OnomasticonVerb verb = OnomasticonVerb();
 
-  AbilityScoreGenerator() {
+  syncOno() {
+    while (!descriptor.isLoaded() && !noun.isLoaded() && !verb.isLoaded()) {
+      Future.delayed(const Duration(milliseconds: 100));
+    }
+  }
+
+  AppearanceGenerator() {
     init();
   }
 
@@ -30,7 +36,7 @@ class AbilityScoreGenerator {
 
   Future<void> readJsonAppearances() async {
     final String response =
-    await rootBundle.loadString('assets/jsondata/appearance.json');
+        await rootBundle.loadString('assets/jsondata/appearance.json');
     final data = await json.decode(response);
     _appearanceitems = data["appearance"] as List;
   }
@@ -48,9 +54,22 @@ class AbilityScoreGenerator {
   AppearanceItem getAppearanceObjectByRace(String race) {
     if (race == "Any Race" || race == null) {
       return appearanceObjList[
-      Utility.getRandomIndexFromListSize(appearanceObjList.length)];
+          Utility.getRandomIndexFromListSize(appearanceObjList.length)];
     }
+    race = race.toLowerCase();
     return appearanceObjList.where((n) => n.race == race).toList()[0];
+  }
+
+  List<String> getAppearances(String race, String subrace, String gender,
+      Map<String, bool> checkboxMap, String number) {
+    List<String> appearances = [];
+    int num = int.parse(number);
+    for (int a = 0; a < num; a++) {
+      String app = generateAppearance(race, subrace, gender, checkboxMap);
+      appearances.add(app);
+    }
+
+    return appearances;
   }
 
   String generateAppearance(String race, String subrace, String gender,
@@ -81,8 +100,7 @@ class AbilityScoreGenerator {
         facialHair = "no facial hair";
       }
       sb.write(
-          " ${pronouns["subject"]} has ${Morph.indefiniteA(
-              face)} $face with ${Morph.indefiniteA(face)} $facialHair");
+          " ${pronouns["subject"]} has ${Morph.indefiniteA(face)} $face with ${Morph.indefiniteA(face)} $facialHair");
     }
 
     if (checkboxMap["Build"] == true) {
@@ -97,47 +115,22 @@ class AbilityScoreGenerator {
     if (checkboxMap["Scars"] == true) {
       String scar = getScar();
       sb.write(
-          " and ${Morph.indefiniteA(
-              scar)} $scar on ${pronouns["possessive"]} ${noun.facePart()}");
+          " and ${Morph.indefiniteA(scar)} $scar on ${pronouns["possessive"]} ${noun.facePart()}");
     }
     if (checkboxMap["Tattoos"] == true) {
       String tattoo = getTattoo();
-      sb.write("${pronouns["Subject"]} has ${Morph.indefiniteA(
-          tattoo)} $tattoo on ${pronouns["Possessive"]} ${noun.facePart()}");
-          }
-    if (checkboxMap["Ailment"] == true){
-      String ailment = getAilment();
-
-      sb.write(ailment);
-      }
-      if (checkboxMap["Clothing"] == true) {}
-      //Build, Scar - This dwarf has a robust build with a jagged scar on his forehead.
-      //Tattoo - He has a celtic knot tattoo on his forearm.
-      //Ailment - He walks with a limp from a battle wound long ago.
-      //Clothing - He wears a white linen shirt and brown pants.
-
-      //gender race, subrace
-//hair, eyes, ears
-      //facial hair
-
-      //A gender subrace race (optional skin tone) with eyes and hair. Optional face and ears.
-      //Pronoun has a build
-      //with a scar
-      //with a tattoo
-      //Pronoun appears to have an ailment
-      //Pronoun is wearing clothing
-
-      //checkbox Map
-      //Build
-      //Skin tone
-      //Scars
-      //Tattoos
-      //Ailments
-      //Clothing
-
-      String appearance = "";
-      return appearance;
+      sb.write(
+          "${pronouns["Subject"]} has ${Morph.indefiniteA(tattoo)} $tattoo on ${pronouns["Possessive"]} ${noun.facePart()}");
     }
+    if (checkboxMap["Ailment"] == true) {
+      String ailment = getAilment(pronouns);
+
+      sb.write("${pronouns["subject"]} ${verb.suffersFrom()} $ailment");
+    }
+    if (checkboxMap["Clothing"] == true) {}
+
+    return sb.toString();
+  }
 
   String getScar() {
     return "${descriptor.scarShape()} scar";
@@ -145,21 +138,20 @@ class AbilityScoreGenerator {
 
   String getSkinTone(AppearanceItem appItem) {
     String skinColor = descriptor.variantFromBase(appItem.skinColors[
-    Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+        Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
     String skin = "${descriptor.skinOrHairColorDescription()} $skinColor skin";
 
     int roll = DiceRoller.roll1d6();
 
     if (roll > 4) {
       String skinColor2 = descriptor.variantFromBase(appItem.skinColors[
-      Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+          Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
 
       while (skinColor == skinColor2) {
         skinColor2 = descriptor.variantFromBase(appItem.skinColors[
-        Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
+            Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
       }
-      return "${descriptor
-          .skinOrHairColorDescription()} $skinColor tinged with $skinColor2 skin";
+      return "${descriptor.skinOrHairColorDescription()} $skinColor tinged with $skinColor2 skin";
     }
     return skin;
   }
@@ -240,8 +232,81 @@ class AbilityScoreGenerator {
     return "${descriptor.colorsBase()} ${noun.symbolOminous()} tattoo";
   }
 
-  String getAilment() {
+  String getAilment(Map<String, String> pronouns) {
     String ailment = "";
+
+    int roll = DiceRoller.roll1d6();
+    switch (roll) {
+      case 3: //residual symptoms of disease
+        String residual = descriptor.residual();
+        String symptoms = "${noun.symptom()}s";
+        String disease = noun.disease();
+        ailment =
+            "$residual $symptoms of $disease on ${pronouns["possessive"]} ${noun.humanoidMajorPart()}";
+
+        break;
+      case 4: //magical injury
+        String monster = "";
+        int r = DiceRoller.roll1d12();
+        switch (r) {
+          case 1:
+            monster = noun.aberration();
+            break;
+          case 2:
+            monster = noun.monstrosity();
+            break;
+          case 3:
+            monster = noun.monsterUndead();
+            break;
+          case 4:
+            monster = noun.battle();
+            break;
+          case 5:
+            monster = noun.dragon();
+            break;
+          default:
+            monster = noun.soldier();
+            break;
+        }
+        ailment =
+            "${noun.damageType()} damage to ${pronouns["possessive"]} ${noun.humanoidMajorPart()} from ${Morph.indefiniteA(monster)} $monster";
+
+      case 5: //has a loss of a sense from a magical injury
+        String creature = "";
+        int d = DiceRoller.roll1d12();
+        switch (d) {
+          case 1:
+            creature = noun.aberration();
+            break;
+          case 2:
+            creature = noun.monstrosity();
+            break;
+          case 3:
+            creature = noun.monsterUndead();
+            break;
+          case 4:
+            creature = noun.battle();
+            break;
+          case 5:
+            creature = noun.dragon();
+            break;
+          default:
+            creature = noun.soldier();
+            break;
+        }
+
+        ailment =
+            "${noun.lostSenses()} caused by ${Morph.indefiniteA(creature)} $creature";
+        break;
+      case 6: //senses
+        ailment =
+            "${noun.symptom()} on ${pronouns["possessive"]} ${noun.humanoidMajorPart()} caused by ${noun.disease()}";
+        break;
+      default:
+        ailment =
+            "${noun.symptom()} on ${pronouns["possessive"]} ${noun.facePart()} caused by ${noun.disease()}";
+        break;
+    }
     return ailment;
   }
 }

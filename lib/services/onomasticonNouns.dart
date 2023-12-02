@@ -422,11 +422,39 @@ class OnomasticonNoun {
     return pickWordFromSynonyms("shirt");
   }
 
+  String monsterUndead() {
+    return pickWordFromSynonyms("monsterUndead");
+  }
+
+  String battle() {
+    return pickWordFromSynonyms("battle");
+  }
+
   String frill() {
     return pickWordFromSynonyms("frill");
   }
 
   String body() {
     return pickWordFromSynonyms("body");
+  }
+
+  String disease() {
+    return pickWordFromSynonyms("disease");
+  }
+
+  String symptom() {
+    return pickWordFromSynonyms("symptom");
+  }
+
+  String lostSenses() {
+    return pickWordFromSynonyms("lostSenses");
+  }
+
+  String damageType() {
+    return pickWordFromSynonyms("damageType");
+  }
+
+  String humanoidMajorPart() {
+    return pickWordFromSynonyms("humanoidMajorPart");
   }
 }

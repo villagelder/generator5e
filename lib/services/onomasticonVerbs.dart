@@ -86,4 +86,7 @@ class OnomasticonVerb {
     return pickWordFromSynonyms("actionBig");
   }
 
+  String suffersFrom() {
+    return pickWordFromSynonyms("suffersFrom");
+  }
 }

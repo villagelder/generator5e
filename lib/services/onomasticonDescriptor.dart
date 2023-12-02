@@ -325,6 +325,10 @@ class OnomasticonDescriptor {
     return pickWordFromSynonyms("scarShape");
   }
 
+  String residual() {
+    return pickWordFromSynonyms("residual");
+  }
+
   List<String> biColorsBase() {
     List<String> colors = [];
     colors.add(colorsBase());

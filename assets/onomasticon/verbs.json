@@ -143,6 +143,16 @@
         "envision",
         "love"
       ]
+    },
+    {
+      "id": 11,
+      "word": "suffersFrom",
+      "synonyms": [
+        "suffers from",
+        "endures",
+        "languishes from",
+        "agonizes over"
+      ]
     }
   ]
 }
