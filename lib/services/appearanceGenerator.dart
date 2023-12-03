@@ -84,9 +84,15 @@ class AppearanceGenerator {
 
     Map<String, String> pronouns = getPronouns(gender);
     StringBuffer sb = StringBuffer();
-    //Base - A male mountain dwarf with frosted brown hair in a feathered hairstyle.
+    //Base - A male mountain dwarf
     sb.write(
-        "A $gender $subrace $race in a ${descriptor.hairstyles()} hairstyle.");
+        "A ${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()} with");
+    String build = getBuild();
+
+    if (checkboxMap["Build"] == true) {
+      String body = noun.body();
+      sb.write(" ${Morph.indefiniteA(build)} $build $body, ");
+    }
 
     //Base - He has an oval face with a beard, wide-set brown eyes and big, broad ears.
     String face = descriptor.faceShape();
@@ -96,36 +102,56 @@ class AppearanceGenerator {
       int roll = DiceRoller.roll1d6();
       if ((race == "Elf" || race == "Halfling") && roll < 6) {
         facialHair = "no facial hair";
-      } else if (roll < 4) {
+      } else if (roll < 2) {
         facialHair = "no facial hair";
       }
-      sb.write(
-          " ${pronouns["subject"]} has ${Morph.indefiniteA(face)} $face with ${Morph.indefiniteA(face)} $facialHair");
-    }
 
-    if (checkboxMap["Build"] == true) {
-      String build = getBuild();
-      sb.write(" The $race has ${Morph.indefiniteA(build)} $build");
+      sb.write(
+          " ${Morph.indefiniteA(face)} $face face with $facialHair and");
+    } else {
+      sb.write(" ${Morph.indefiniteA(face)} $face face and");
+    }
+    String style = descriptor.hairstyles();
+    if (style == "bald") {
+      sb.write(" a bald head.");
+    } else {
+      sb.write(" ${Morph.indefiniteA(style)} $style hairstyle.");
     }
 
     if (checkboxMap["Skin Tone"] == true) {
       String skin = getSkinTone(appObj);
-      sb.write(" with $skin");
+      sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin");
+    }
+
+    if (checkboxMap["Scars"] == true && checkboxMap["Tattoos"] == true) {
+     sb.write(".");
     }
     if (checkboxMap["Scars"] == true) {
       String scar = getScar();
-      sb.write(
-          " and ${Morph.indefiniteA(scar)} $scar on ${pronouns["possessive"]} ${noun.facePart()}");
+
+      if (checkboxMap["Skin Tone"] == true) {
+        sb.write(
+            " with ${Morph.indefiniteA(scar)} $scar on ${pronouns["Object"]?.toLowerCase()} ${noun.facePart()}.");
+      } else {
+        sb.write(
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(scar)} $scar on ${pronouns["Possessive"]?.toLowerCase()} ${noun.facePart()}.");
+      }
     }
     if (checkboxMap["Tattoos"] == true) {
       String tattoo = getTattoo();
-      sb.write(
-          "${pronouns["Subject"]} has ${Morph.indefiniteA(tattoo)} $tattoo on ${pronouns["Possessive"]} ${noun.facePart()}");
+
+      if (checkboxMap["Scars"] == false && checkboxMap["Skin Tone"] == false) {
+        sb.write(
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(tattoo)} $tattoo on ${pronouns["Possessive"]?.toLowerCase()} ${noun.facePart()}");
+      } else {
+        sb.write(
+            " and ${pronouns["Subject"]?.toLowerCase()} ${pronouns["Have"]?.toLowerCase()} ${Morph.indefiniteA(tattoo)} $tattoo on ${pronouns["Possessive"]?.toLowerCase()} ${noun.facePart()}");
+      }
     }
     if (checkboxMap["Ailment"] == true) {
       String ailment = getAilment(pronouns);
 
-      sb.write("${pronouns["subject"]} ${verb.suffersFrom()} $ailment");
+      sb.write(" The $race ${verb.suffersFrom()} $ailment.");
     }
     if (checkboxMap["Clothing"] == true) {}
 
@@ -206,23 +232,25 @@ class AppearanceGenerator {
     gender = gender.toLowerCase();
 
     Map<String, String> pronounsMap = {
-      "Possessive": "",
-      "Object": "",
-      "Subject": ""
+      "Possessive": "", //her, his, their
+      "Object": "", //him, her, them
+      "Subject": "", //she, he, they
+      "Have": "has"
     };
 
     if (gender == "female") {
-      pronounsMap["Possessive"] = "Hers";
-      pronounsMap["Objective"] = "Her";
+      pronounsMap["Possessive"] = "Her";
+      pronounsMap["Object"] = "Her";
       pronounsMap["Subject"] = "She";
     } else if (gender == "male") {
       pronounsMap["Possessive"] = "His";
-      pronounsMap["Objective"] = "Him";
+      pronounsMap["Object"] = "Him";
       pronounsMap["Subject"] = "He";
     } else {
-      pronounsMap["Possessive"] = "Theirs";
-      pronounsMap["Objective"] = "Their";
+      pronounsMap["Possessive"] = "Their";
+      pronounsMap["Object"] = "Their";
       pronounsMap["Subject"] = "They";
+      pronounsMap["Have"] = "have";
     }
 
     return pronounsMap;
