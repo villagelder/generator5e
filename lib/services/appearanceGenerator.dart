@@ -56,8 +56,28 @@ class AppearanceGenerator {
       return appearanceObjList[
           Utility.getRandomIndexFromListSize(appearanceObjList.length)];
     }
-    race = race.toLowerCase();
     return appearanceObjList.where((n) => n.race == race).toList()[0];
+  }
+
+  String getRandomSubraceOfRace(String race) {
+    List<String> tieflingList = <String>[
+      "Baalzebul",
+      "Dispater",
+      "Fierna",
+      "Glasya",
+      "Levistus",
+      "Mammon",
+      "Mephistopheles",
+      "Zariel"
+    ];
+    if (race == "Tiefling") {
+      return tieflingList[
+          Utility.getRandomIndexFromListSize(tieflingList.length)];
+    }
+
+    List<AppearanceItem> objList =
+        appearanceObjList.where((n) => n.race == race).toList();
+    return objList[Utility.getRandomIndexFromListSize(objList.length)].subrace;
   }
 
   List<String> getAppearances(String race, String subrace, String gender,
@@ -74,19 +94,29 @@ class AppearanceGenerator {
 
   String generateAppearance(String race, String subrace, String gender,
       Map<String, bool> checkboxMap) {
-    // "Build": false,
-    // "Skin Tone": false,
-    // "Scars": false,
-    // "Tattoos": false,
-    // "Ailments": false,
-    // "Clothing": false,
     AppearanceItem appObj = getAppearanceObjectByRace(race);
+    if (race == "Any Race") {
+      race = appObj.race;
+      subrace = appObj.subrace;
+    }
+    List<String> genderList = ["Female", "Male", "Non-binary"];
+    if (gender == "Any Gender") {
+      gender =
+          genderList[Utility.getRandomIndexFromListSize(genderList.length)];
+    }
 
+    if (subrace == "Any Subrace") {
+      subrace = getRandomSubraceOfRace(race);
+    }
     Map<String, String> pronouns = getPronouns(gender);
     StringBuffer sb = StringBuffer();
-    //Base - A male mountain dwarf
-    sb.write(
-        "A ${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()} with");
+    //gender subrace race
+    if (race == "Tiefling" || race == "Human") {
+      sb.write("A ${gender.toLowerCase()} $subrace ${race.toLowerCase()} with");
+    } else {
+      sb.write(
+          "A ${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()} with");
+    }
     String build = getBuild();
 
     if (checkboxMap["Build"] == true) {
@@ -106,8 +136,22 @@ class AppearanceGenerator {
         facialHair = "no facial hair";
       }
 
-      sb.write(
-          " ${Morph.indefiniteA(face)} $face face with $facialHair and");
+      if (facialHair.contains("sideburns")) {
+        if (sb.toString().contains(" with")) {
+          sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
+        } else {
+          sb.write(
+              " ${Morph.indefiniteA(face)} $face face with $facialHair and");
+        }
+      } else {
+        if (sb.toString().contains(" with")) {
+          sb.write(
+              " ${Morph.indefiniteA(face)} $face face, ${Morph.indefiniteA(facialHair)} $facialHair and");
+        } else {
+          sb.write(
+              " ${Morph.indefiniteA(face)} $face face with ${Morph.indefiniteA(facialHair)} $facialHair and");
+        }
+      }
     } else {
       sb.write(" ${Morph.indefiniteA(face)} $face face and");
     }
@@ -124,7 +168,7 @@ class AppearanceGenerator {
     }
 
     if (checkboxMap["Scars"] == true && checkboxMap["Tattoos"] == true) {
-     sb.write(".");
+      sb.write(".");
     }
     if (checkboxMap["Scars"] == true) {
       String scar = getScar();

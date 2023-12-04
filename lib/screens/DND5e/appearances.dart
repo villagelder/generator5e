@@ -66,7 +66,7 @@ const List<String> raceList = <String>[
 
 const List<String> subraceList = <String>['Choose a Subrace'];
 
-const List<String> numberList = <String>['1', '2', '3'];
+const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
 class _NumberDDBState extends State<NumberDDB> {
   static String numberValue = numberList.first;
@@ -177,7 +177,7 @@ class _RacesDDBState extends State<RacesDDB> {
   }
 }
 
-const List<String> genderList = ["Female", "Male", "Non-binary"];
+const List<String> genderList = ["Any Gender", "Female", "Male", "Non-binary"];
 
 class GenderDDB extends StatefulWidget {
   const GenderDDB({super.key});
@@ -796,6 +796,7 @@ const List<String> anyList = <String>["Any Subrace"];
 const List<String> orcList = <String>["Any Subrace", "Standard", "Half-orc"];
 
 const List<String> tieflingList = <String>[
+  "Any Subrace",
   "Baalzebul",
   "Dispater",
   "Fierna",

@@ -1,11 +1,11 @@
 {
   "appearance": [
     {
-      "race": "dragonborn",
-      "subrace": "black",
+      "race": "Dragonborn",
+      "subrace": "Black",
       "frillName": "frill",
       "skinColors": [
-        "black",
+        "Black",
         "grey",
         "white",
         "yellow",
@@ -35,8 +35,8 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "blue",
+      "race": "Dragonborn",
+      "subrace": "Blue",
       "frillName": "frill",
       "skinColors": [
         "blue",
@@ -70,8 +70,8 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "red",
+      "race": "Dragonborn",
+      "subrace": "Red",
       "frillName": "frill",
       "skinColors": [
         "red",
@@ -104,8 +104,8 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "green",
+      "race": "Dragonborn",
+      "subrace": "Green",
       "frillName": "frill",
       "skinColors": [
         "green",
@@ -113,7 +113,7 @@
         "white",
         "gray",
         "orange",
-        "black",
+        "Black",
         "brown"
       ],
       "eyeColors": [
@@ -142,8 +142,8 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "white",
+      "race": "Dragonborn",
+      "subrace": "White",
       "frillName": "frill",
       "skinColors": [
         "white",
@@ -178,14 +178,14 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "brass",
+      "race": "Dragonborn",
+      "subrace": "Brass",
       "frillName": "frill",
       "skinColors": [
         "white",
         "blue",
         "brass",
-        "black",
+        "Black",
         "red",
         "violet",
         "green",
@@ -219,8 +219,8 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "bronze",
+      "race": "Dragonborn",
+      "subrace": "Bronze",
       "frillName": "frill",
       "skinColors": [
         "white",
@@ -228,7 +228,7 @@
         "bronze",
         "gold",
         "silver",
-        "black",
+        "Black",
         "red",
         "violet",
         "green",
@@ -239,7 +239,7 @@
         "orange",
         "yellow",
         "bronze",
-        "black",
+        "Black",
         "white",
         "red",
         "violet",
@@ -262,15 +262,15 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "copper",
+      "race": "Dragonborn",
+      "subrace": "Copper",
       "frillName": "frill",
       "skinColors": [
         "white",
         "blue",
         "bronze",
         "copper",
-        "black",
+        "Black",
         "red",
         "violet",
         "green",
@@ -281,7 +281,7 @@
         "orange",
         "yellow",
         "copper",
-        "black",
+        "Black",
         "white",
         "red",
         "violet",
@@ -304,14 +304,14 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "gold",
+      "race": "Dragonborn",
+      "subrace": "Gold",
       "frillName": "frill",
       "skinColors": [
         "white",
         "bronze",
         "gold",
-        "black",
+        "Black",
         "red",
         "violet",
         "green",
@@ -323,7 +323,7 @@
         "blue",
         "yellow",
         "copper",
-        "black",
+        "Black",
         "white",
         "red",
         "violet",
@@ -346,14 +346,14 @@
       "hairColors": []
     },
     {
-      "race": "dragonborn",
-      "subrace": "silver",
+      "race": "Dragonborn",
+      "subrace": "Silver",
       "frillName": "frill",
       "skinColors": [
         "white",
         "copper",
         "silver",
-        "black",
+        "Black",
         "red",
         "violet",
         "green",
@@ -364,7 +364,7 @@
         "copper",
         "silver",
         "blue",
-        "black",
+        "Black",
         "orange",
         "red",
         "yellow",
@@ -389,12 +389,12 @@
       "hairColors": []
     },
     {
-      "race": "dwarf",
-      "subrace": "hill",
+      "race": "Dwarf",
+      "subrace": "Hill",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "gray",
         "brown"
       ],
@@ -404,7 +404,7 @@
       ],
       "eyeColors": [
         "blue",
-        "black",
+        "Black",
         "brown",
         "violet",
         "green",
@@ -412,12 +412,12 @@
       ]
     },
     {
-      "race": "dwarf",
-      "subrace": "mountain",
+      "race": "Dwarf",
+      "subrace": "Mountain",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "gray",
         "brown"
       ],
@@ -427,7 +427,7 @@
       ],
       "eyeColors": [
         "blue",
-        "black",
+        "Black",
         "brown",
         "violet",
         "green",
@@ -435,12 +435,12 @@
       ]
     },
     {
-      "race": "dwarf",
-      "subrace": "gray",
+      "race": "Dwarf",
+      "subrace": "Gray",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "gray"
       ],
       "skinColors": [
@@ -449,18 +449,18 @@
       ],
       "eyeColors": [
         "blue",
-        "black",
+        "Black",
         "violet",
         "gray"
       ]
     },
     {
-      "race": "elf",
+      "race": "Elf",
       "subrace": "high",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "copper",
         "blonde",
         "gray",
@@ -479,12 +479,12 @@
       ]
     },
     {
-      "race": "elf",
-      "subrace": "wood",
+      "race": "Elf",
+      "subrace": "Wood",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "copper",
         "brown",
         "blonde",
@@ -508,12 +508,12 @@
       ]
     },
     {
-      "race": "elf",
-      "subrace": "dark",
+      "race": "Elf",
+      "subrace": "Dark",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "violet",
         "blue",
         "gray",
@@ -521,7 +521,7 @@
       ],
       "skinColors": [
         "gray",
-        "black"
+        "Black"
       ],
       "eyeColors": [
         "violet",
@@ -537,12 +537,12 @@
       ]
     },
     {
-      "race": "elf",
-      "subrace": "half-elf",
+      "race": "Elf",
+      "subrace": "Half-elf",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "copper",
         "blonde",
         "green",
@@ -556,7 +556,7 @@
       "skinColors": [
         "brown",
         "gray",
-        "black",
+        "Black",
         "white",
         "green",
         "beige",
@@ -564,7 +564,7 @@
       ],
       "eyeColors": [
         "gold",
-        "black",
+        "Black",
         "orange",
         "copper",
         "brown",
@@ -576,12 +576,12 @@
       ]
     },
     {
-      "race": "human",
-      "subrace": "aboriginal",
+      "race": "Human",
+      "subrace": "Aboriginal",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "copper",
         "blonde",
         "red",
@@ -596,7 +596,7 @@
       ],
       "eyeColors": [
         "gold",
-        "black",
+        "Black",
         "orange",
         "copper",
         "brown",
@@ -608,12 +608,12 @@
       ]
     },
     {
-      "race": "human",
-      "subrace": "amerindian",
+      "race": "Human",
+      "subrace": "Amerindian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "black",
+        "Black",
         "blonde",
         "red",
         "brown"
@@ -628,8 +628,8 @@
       ]
     },
     {
-      "race": "human",
-      "subrace": "arab",
+      "race": "Human",
+      "subrace": "Arab",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -648,13 +648,13 @@
       ]
     },
     {
-      "race": "human",
-      "subrace": "asian, central",
+      "race": "Human",
+      "subrace": "Central Asian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
@@ -671,13 +671,13 @@
       ]
     },
     {
-      "race": "human",
-      "subrace": "asian, east",
+      "race": "Human",
+      "subrace": "East Asian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
@@ -691,24 +691,24 @@
         "gray",
         "silver",
         "gold",
-        "black",
+        "Black",
         "brown",
         "green",
         "bronze"
       ]
     },
     {
-      "race": "human",
-      "subrace": "black",
+      "race": "Human",
+      "subrace": "West African",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
-        "black",
+        "Black",
         "bronze"
       ],
       "eyeColors": [
@@ -717,15 +717,93 @@
         "gray",
         "silver",
         "gold",
-        "black",
+        "Black",
         "brown",
         "green",
         "bronze"
       ]
     },
     {
-      "race": "human",
-      "subrace": "caucasian",
+      "race": "Human",
+      "subrace": "North African",
+      "frillName": "hair",
+      "frillTypes": [],
+      "hairColors": [
+        "brown",
+        "Black"
+      ],
+      "skinColors": [
+        "brown",
+        "Black",
+        "bronze"
+      ],
+      "eyeColors": [
+        "copper",
+        "blue",
+        "gray",
+        "silver",
+        "gold",
+        "Black",
+        "brown",
+        "green",
+        "bronze"
+      ]
+    },
+    {
+      "race": "Human",
+      "subrace": "Central African",
+      "frillName": "hair",
+      "frillTypes": [],
+      "hairColors": [
+        "brown",
+        "Black"
+      ],
+      "skinColors": [
+        "brown",
+        "Black",
+        "bronze"
+      ],
+      "eyeColors": [
+        "copper",
+        "blue",
+        "gray",
+        "silver",
+        "gold",
+        "Black",
+        "brown",
+        "green",
+        "bronze"
+      ]
+    },
+    {
+      "race": "Human",
+      "subrace": "East African",
+      "frillName": "hair",
+      "frillTypes": [],
+      "hairColors": [
+        "brown",
+        "Black"
+      ],
+      "skinColors": [
+        "brown",
+        "Black",
+        "bronze"
+      ],
+      "eyeColors": [
+        "copper",
+        "blue",
+        "gray",
+        "silver",
+        "gold",
+        "Black",
+        "brown",
+        "green",
+        "bronze"
+      ]
+    },
+    {
+      "race": "Human",
+      "subrace": "Caucasian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -734,11 +812,11 @@
         "blonde",
         "white",
         "gray",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
-        "black",
+        "Black",
         "bronze"
       ],
       "eyeColors": [
@@ -747,15 +825,15 @@
         "gray",
         "silver",
         "gold",
-        "black",
+        "Black",
         "brown",
         "green",
         "bronze"
       ]
     },
     {
-      "race": "human",
-      "subrace": "iranian",
+      "race": "Human",
+      "subrace": "Iranian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -763,11 +841,11 @@
         "red",
         "gray",
         "blonde",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
-        "black",
+        "Black",
         "beige",
         "bronze"
       ],
@@ -777,21 +855,21 @@
         "gray",
         "silver",
         "gold",
-        "black",
+        "Black",
         "brown",
         "green",
         "bronze"
       ]
     },
     {
-      "race": "human",
-      "subrace": "indian",
+      "race": "Human",
+      "subrace": "Indian",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
         "gray",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
@@ -802,45 +880,14 @@
         "copper",
         "gray",
         "gold",
-        "black",
+        "Black",
         "brown",
         "bronze"
       ]
     },
     {
-      "race": "human",
-      "subrace": "mulatto",
-      "frillName": "hair",
-      "frillTypes": [],
-      "hairColors": [
-        "brown",
-        "gray",
-        "blonde",
-        "red",
-        "copper",
-        "black"
-      ],
-      "skinColors": [
-        "brown",
-        "black",
-        "beige",
-        "bronze"
-      ],
-      "eyeColors": [
-        "copper",
-        "gray",
-        "green",
-        "gold",
-        "silver",
-        "blue",
-        "black",
-        "brown",
-        "bronze"
-      ]
-    },
-    {
-      "race": "human",
-      "subrace": "mestizo",
+      "race": "Human",
+      "subrace": "Mulatto",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -849,10 +896,11 @@
         "blonde",
         "red",
         "copper",
-        "black"
+        "Black"
       ],
       "skinColors": [
         "brown",
+        "Black",
         "beige",
         "bronze"
       ],
@@ -863,14 +911,14 @@
         "gold",
         "silver",
         "blue",
-        "black",
+        "Black",
         "brown",
         "bronze"
       ]
     },
     {
-      "race": "gnome",
-      "subrace": "forest",
+      "race": "Human",
+      "subrace": "Mestizo",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -879,7 +927,37 @@
         "blonde",
         "red",
         "copper",
-        "black"
+        "Black"
+      ],
+      "skinColors": [
+        "brown",
+        "beige",
+        "bronze"
+      ],
+      "eyeColors": [
+        "copper",
+        "gray",
+        "green",
+        "gold",
+        "silver",
+        "blue",
+        "Black",
+        "brown",
+        "bronze"
+      ]
+    },
+    {
+      "race": "Gnome",
+      "subrace": "Forest",
+      "frillName": "hair",
+      "frillTypes": [],
+      "hairColors": [
+        "brown",
+        "gray",
+        "blonde",
+        "red",
+        "copper",
+        "Black"
       ],
       "skinColors": [
         "brown",
@@ -895,14 +973,14 @@
         "gold",
         "silver",
         "blue",
-        "black",
+        "Black",
         "brown",
         "bronze"
       ]
     },
     {
-      "race": "gnome",
-      "subrace": "rock",
+      "race": "Gnome",
+      "subrace": "Rock",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -924,13 +1002,13 @@
       ]
     },
     {
-      "race": "gnome",
-      "subrace": "deep",
+      "race": "Gnome",
+      "subrace": "Deep",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "black",
+        "Black",
         "gray"
       ],
       "skinColors": [
@@ -940,31 +1018,31 @@
       ],
       "eyeColors": [
         "gray",
-        "black",
+        "Black",
         "silver",
         "blue"
       ]
     },
     {
-      "race": "halfling",
-      "subrace": "lightfoot",
+      "race": "Halfling",
+      "subrace": "Lightfoot",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
         "blonde",
-        "black",
+        "Black",
         "gray"
       ],
       "skinColors": [
         "brown",
         "beige",
         "gray",
-        "black"
+        "Black"
       ],
       "eyeColors": [
         "gray",
-        "black",
+        "Black",
         "brown",
         "green",
         "silver",
@@ -972,14 +1050,14 @@
       ]
     },
     {
-      "race": "halfling",
-      "subrace": "stout",
+      "race": "Halfling",
+      "subrace": "Stout",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
         "brown",
         "blonde",
-        "black",
+        "Black",
         "gray"
       ],
       "skinColors": [
@@ -988,7 +1066,7 @@
       ],
       "eyeColors": [
         "gray",
-        "black",
+        "Black",
         "brown",
         "green",
         "silver",
@@ -996,8 +1074,8 @@
       ]
     },
     {
-      "race": "tiefling",
-      "subrace": "any",
+      "race": "Tiefling",
+      "subrace": "Any Subrace",
       "frillName": "hair",
       "frillTypes": [
         "bull",
@@ -1021,14 +1099,14 @@
         "brown",
         "blonde",
         "red",
-        "black",
+        "Black",
         "white",
         "gray"
       ],
       "skinColors": [
         "brown",
         "red",
-        "black",
+        "Black",
         "bronze",
         "copper",
         "beige"
@@ -1036,7 +1114,7 @@
       "eyeColors": [
         "gray",
         "red",
-        "black",
+        "Black",
         "copper",
         "gold",
         "bronze",
