@@ -5,7 +5,7 @@
       "subrace": "Black",
       "frillName": "frill",
       "skinColors": [
-        "Black",
+        "black",
         "grey",
         "white",
         "yellow",
@@ -113,7 +113,7 @@
         "white",
         "gray",
         "orange",
-        "Black",
+        "black",
         "brown"
       ],
       "eyeColors": [
@@ -185,7 +185,7 @@
         "white",
         "blue",
         "brass",
-        "Black",
+        "black",
         "red",
         "violet",
         "green",
@@ -228,7 +228,7 @@
         "bronze",
         "gold",
         "silver",
-        "Black",
+        "black",
         "red",
         "violet",
         "green",
@@ -239,7 +239,7 @@
         "orange",
         "yellow",
         "bronze",
-        "Black",
+        "black",
         "white",
         "red",
         "violet",
@@ -270,7 +270,7 @@
         "blue",
         "bronze",
         "copper",
-        "Black",
+        "black",
         "red",
         "violet",
         "green",
@@ -281,7 +281,7 @@
         "orange",
         "yellow",
         "copper",
-        "Black",
+        "black",
         "white",
         "red",
         "violet",
@@ -311,7 +311,7 @@
         "white",
         "bronze",
         "gold",
-        "Black",
+        "black",
         "red",
         "violet",
         "green",
@@ -323,7 +323,7 @@
         "blue",
         "yellow",
         "copper",
-        "Black",
+        "black",
         "white",
         "red",
         "violet",
@@ -353,7 +353,7 @@
         "white",
         "copper",
         "silver",
-        "Black",
+        "black",
         "red",
         "violet",
         "green",
@@ -364,7 +364,7 @@
         "copper",
         "silver",
         "blue",
-        "Black",
+        "black",
         "orange",
         "red",
         "yellow",
@@ -394,7 +394,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "gray",
         "brown"
       ],
@@ -404,7 +404,7 @@
       ],
       "eyeColors": [
         "blue",
-        "Black",
+        "black",
         "brown",
         "violet",
         "green",
@@ -417,7 +417,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "gray",
         "brown"
       ],
@@ -427,7 +427,7 @@
       ],
       "eyeColors": [
         "blue",
-        "Black",
+        "black",
         "brown",
         "violet",
         "green",
@@ -440,7 +440,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "gray"
       ],
       "skinColors": [
@@ -449,7 +449,7 @@
       ],
       "eyeColors": [
         "blue",
-        "Black",
+        "black",
         "violet",
         "gray"
       ]
@@ -460,7 +460,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "copper",
         "blonde",
         "gray",
@@ -484,7 +484,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "copper",
         "brown",
         "blonde",
@@ -513,7 +513,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "violet",
         "blue",
         "gray",
@@ -521,7 +521,7 @@
       ],
       "skinColors": [
         "gray",
-        "Black"
+        "black"
       ],
       "eyeColors": [
         "violet",
@@ -542,7 +542,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "copper",
         "blonde",
         "green",
@@ -556,7 +556,7 @@
       "skinColors": [
         "brown",
         "gray",
-        "Black",
+        "black",
         "white",
         "green",
         "beige",
@@ -564,7 +564,7 @@
       ],
       "eyeColors": [
         "gold",
-        "Black",
+        "black",
         "orange",
         "copper",
         "brown",
@@ -581,7 +581,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "copper",
         "blonde",
         "red",
@@ -596,7 +596,7 @@
       ],
       "eyeColors": [
         "gold",
-        "Black",
+        "black",
         "orange",
         "copper",
         "brown",
@@ -613,7 +613,7 @@
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
-        "Black",
+        "black",
         "blonde",
         "red",
         "brown"
@@ -654,7 +654,7 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
@@ -677,7 +677,7 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
@@ -691,7 +691,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -704,11 +704,11 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "bronze"
       ],
       "eyeColors": [
@@ -717,7 +717,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -730,11 +730,11 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "bronze"
       ],
       "eyeColors": [
@@ -743,7 +743,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -756,11 +756,11 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "bronze"
       ],
       "eyeColors": [
@@ -769,7 +769,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -782,11 +782,11 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "bronze"
       ],
       "eyeColors": [
@@ -795,7 +795,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -812,11 +812,11 @@
         "blonde",
         "white",
         "gray",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "bronze"
       ],
       "eyeColors": [
@@ -825,7 +825,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -841,11 +841,11 @@
         "red",
         "gray",
         "blonde",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "beige",
         "bronze"
       ],
@@ -855,7 +855,7 @@
         "gray",
         "silver",
         "gold",
-        "Black",
+        "black",
         "brown",
         "green",
         "bronze"
@@ -869,7 +869,7 @@
       "hairColors": [
         "brown",
         "gray",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
@@ -880,7 +880,7 @@
         "copper",
         "gray",
         "gold",
-        "Black",
+        "black",
         "brown",
         "bronze"
       ]
@@ -896,11 +896,11 @@
         "blonde",
         "red",
         "copper",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
-        "Black",
+        "black",
         "beige",
         "bronze"
       ],
@@ -911,7 +911,7 @@
         "gold",
         "silver",
         "blue",
-        "Black",
+        "black",
         "brown",
         "bronze"
       ]
@@ -927,7 +927,7 @@
         "blonde",
         "red",
         "copper",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
@@ -941,7 +941,7 @@
         "gold",
         "silver",
         "blue",
-        "Black",
+        "black",
         "brown",
         "bronze"
       ]
@@ -957,7 +957,7 @@
         "blonde",
         "red",
         "copper",
-        "Black"
+        "black"
       ],
       "skinColors": [
         "brown",
@@ -973,7 +973,7 @@
         "gold",
         "silver",
         "blue",
-        "Black",
+        "black",
         "brown",
         "bronze"
       ]
@@ -1008,7 +1008,7 @@
       "frillTypes": [],
       "hairColors": [
         "brown",
-        "Black",
+        "black",
         "gray"
       ],
       "skinColors": [
@@ -1018,7 +1018,7 @@
       ],
       "eyeColors": [
         "gray",
-        "Black",
+        "black",
         "silver",
         "blue"
       ]
@@ -1031,18 +1031,18 @@
       "hairColors": [
         "brown",
         "blonde",
-        "Black",
+        "black",
         "gray"
       ],
       "skinColors": [
         "brown",
         "beige",
         "gray",
-        "Black"
+        "black"
       ],
       "eyeColors": [
         "gray",
-        "Black",
+        "black",
         "brown",
         "green",
         "silver",
@@ -1057,7 +1057,7 @@
       "hairColors": [
         "brown",
         "blonde",
-        "Black",
+        "black",
         "gray"
       ],
       "skinColors": [
@@ -1066,7 +1066,7 @@
       ],
       "eyeColors": [
         "gray",
-        "Black",
+        "black",
         "brown",
         "green",
         "silver",
@@ -1099,14 +1099,14 @@
         "brown",
         "blonde",
         "red",
-        "Black",
+        "black",
         "white",
         "gray"
       ],
       "skinColors": [
         "brown",
         "red",
-        "Black",
+        "black",
         "bronze",
         "copper",
         "beige"
@@ -1114,7 +1114,7 @@
       "eyeColors": [
         "gray",
         "red",
-        "Black",
+        "black",
         "copper",
         "gold",
         "bronze",
@@ -1126,6 +1126,38 @@
         "violet",
         "silver",
         "blue"
+      ]
+    },
+    {
+      "race": "Orc",
+      "subrace": "Standard",
+      "frillName": "hair",
+      "frillTypes": [],
+      "hairColors": [
+        "brown",
+        "gray",
+        "green",
+        "black"
+      ],
+      "skinColors": [
+        "brown",
+        "black",
+        "gray",
+        "green"
+      ],
+      "eyeColors": [
+        "copper",
+        "gray",
+        "green",
+        "orange",
+        "gold",
+        "yellow",
+        "silver",
+        "red",
+        "blue",
+        "black",
+        "brown",
+        "bronze"
       ]
     }
   ]

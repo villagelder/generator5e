@@ -70,9 +70,16 @@ class AppearanceGenerator {
       "Mephistopheles",
       "Zariel"
     ];
+    List<String> orcList = <String>["Standard", "Half-orc"];
+
     if (race == "Tiefling") {
       return tieflingList[
           Utility.getRandomIndexFromListSize(tieflingList.length)];
+    }
+
+    if (race == "Orc") {
+      return orcList[
+      Utility.getRandomIndexFromListSize(orcList.length)];
     }
 
     List<AppearanceItem> objList =
@@ -113,6 +120,10 @@ class AppearanceGenerator {
     //gender subrace race
     if (race == "Tiefling" || race == "Human") {
       sb.write("A ${gender.toLowerCase()} $subrace ${race.toLowerCase()} with");
+    } else if (race == "Orc" && subrace == "Standard") {
+      sb.write("A ${gender.toLowerCase()} ${race.toLowerCase()} with");
+    } else if (subrace == "Half-elf" || subrace == "Half-orc") {
+      sb.write("A ${gender.toLowerCase()} ${subrace.toLowerCase()} with");
     } else {
       sb.write(
           "A ${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()} with");
@@ -144,7 +155,9 @@ class AppearanceGenerator {
               " ${Morph.indefiniteA(face)} $face face with $facialHair and");
         }
       } else {
-        if (sb.toString().contains(" with")) {
+        if (facialHair == "no facial hair" && sb.toString().contains(" with")) {
+          sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
+        } else if (sb.toString().contains(" with")) {
           sb.write(
               " ${Morph.indefiniteA(face)} $face face, ${Morph.indefiniteA(facialHair)} $facialHair and");
         } else {
@@ -164,18 +177,15 @@ class AppearanceGenerator {
 
     if (checkboxMap["Skin Tone"] == true) {
       String skin = getSkinTone(appObj);
-      sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin");
+      sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin and ");
     }
 
-    if (checkboxMap["Scars"] == true && checkboxMap["Tattoos"] == true) {
-      sb.write(".");
-    }
     if (checkboxMap["Scars"] == true) {
       String scar = getScar();
 
       if (checkboxMap["Skin Tone"] == true) {
         sb.write(
-            " with ${Morph.indefiniteA(scar)} $scar on ${pronouns["Object"]?.toLowerCase()} ${noun.facePart()}.");
+            " ${Morph.indefiniteA(scar)} $scar on ${pronouns["Possessive"]?.toLowerCase()} ${noun.facePart()}.");
       } else {
         sb.write(
             " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(scar)} $scar on ${pronouns["Possessive"]?.toLowerCase()} ${noun.facePart()}.");
