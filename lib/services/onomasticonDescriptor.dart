@@ -357,4 +357,8 @@ class OnomasticonDescriptor {
     colors.add(variantFromBase(color2));
     return colors;
   }
+
+  String colorRefined(String colorBase) {
+    return variantFromBase(colorBase);
+  }
 }

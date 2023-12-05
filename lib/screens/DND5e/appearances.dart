@@ -177,7 +177,13 @@ class _RacesDDBState extends State<RacesDDB> {
   }
 }
 
-const List<String> genderList = ["Any Gender", "Female", "Male", "Non-binary"];
+const List<String> genderList = [
+  "Any Gender",
+  "Female",
+  "Male",
+  "Non-binary",
+  "Any Binary"
+];
 
 class GenderDDB extends StatefulWidget {
   const GenderDDB({super.key});

@@ -78,8 +78,7 @@ class AppearanceGenerator {
     }
 
     if (race == "Orc") {
-      return orcList[
-      Utility.getRandomIndexFromListSize(orcList.length)];
+      return orcList[Utility.getRandomIndexFromListSize(orcList.length)];
     }
 
     List<AppearanceItem> objList =
@@ -112,6 +111,12 @@ class AppearanceGenerator {
           genderList[Utility.getRandomIndexFromListSize(genderList.length)];
     }
 
+    if (gender == "Any Binary") {
+      genderList.remove("Non-binary");
+      gender =
+          genderList[Utility.getRandomIndexFromListSize(genderList.length)];
+    }
+
     if (subrace == "Any Subrace") {
       subrace = getRandomSubraceOfRace(race);
     }
@@ -137,8 +142,15 @@ class AppearanceGenerator {
 
     //Base - He has an oval face with a beard, wide-set brown eyes and big, broad ears.
     String face = descriptor.faceShape();
-    String facialHair =
-        "${descriptor.skinOrHairColorDescription()} ${noun.facialHair()}";
+    if (appObj.hairColors!.isNotEmpty) {}
+
+    String hairColor = "";
+    if (appObj.hairColors.isNotEmpty) {
+      hairColor = appObj.hairColors[
+          Utility.getRandomIndexFromListSize(appObj.hairColors.length)];
+    }
+
+    String facialHair = "$hairColor colored ${noun.facialHair()}";
     if (gender != "Female") {
       int roll = DiceRoller.roll1d6();
       if ((race == "Elf" || race == "Halfling") && roll < 6) {
@@ -147,7 +159,7 @@ class AppearanceGenerator {
         facialHair = "no facial hair";
       }
 
-      if (facialHair.contains("sideburns")) {
+      if (facialHair.contains("sideburns") || facialHair.contains("stubble")) {
         if (sb.toString().contains(" with")) {
           sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
         } else {
@@ -172,12 +184,17 @@ class AppearanceGenerator {
     if (style == "bald") {
       sb.write(" a bald head.");
     } else {
-      sb.write(" ${Morph.indefiniteA(style)} $style hairstyle.");
+      if (style.contains("dreadlocks")) {
+        sb.write(" ${descriptor.colorRefined(hairColor)} $hairColor $style.");
+      } else {
+        sb.write(
+            " ${Morph.indefiniteA(style)} ${descriptor.colorRefined(hairColor)} $hairColor $style hairstyle.");
+      }
     }
 
     if (checkboxMap["Skin Tone"] == true) {
       String skin = getSkinTone(appObj);
-      sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin and ");
+      sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin and");
     }
 
     if (checkboxMap["Scars"] == true) {

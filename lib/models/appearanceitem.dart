@@ -6,8 +6,8 @@ class AppearanceItem {
   String frillName;
   List<String> skinColors;
   List<String> eyeColors;
-  List<String>? frillTypes;
-  List<String>? hairColors;
+  List<String> frillTypes;
+  List<String> hairColors;
 
   AppearanceItem(this.race, this.subrace, this.frillName, this.skinColors,
       this.eyeColors, this.frillTypes, this.hairColors);
