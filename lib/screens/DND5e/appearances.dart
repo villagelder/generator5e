@@ -97,7 +97,7 @@ class _NumberDDBState extends State<NumberDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.036,
+                fontSize: MediaQuery.of(context).size.height * 0.033,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -150,7 +150,7 @@ class _RacesDDBState extends State<RacesDDB> {
             style: TextStyle(
               color: Colors.amber.shade100,
               fontFamily: 'Georgia',
-              fontSize: MediaQuery.of(context).size.height * 0.036,
+              fontSize: MediaQuery.of(context).size.height * 0.033,
               fontWeight: FontWeight.w500,
             ),
             underline: Container(
@@ -219,7 +219,7 @@ class _GenderDDBState extends State<GenderDDB> {
             style: TextStyle(
                 color: Colors.amber.shade100,
                 fontFamily: 'Georgia',
-                fontSize: MediaQuery.of(context).size.height * 0.036,
+                fontSize: MediaQuery.of(context).size.height * 0.033,
                 fontWeight: FontWeight.w500),
             underline: Container(
               height: 2,
@@ -273,7 +273,7 @@ class _SubraceDDBState extends State<SubraceDDB> {
               style: TextStyle(
                   color: Colors.amber.shade100,
                   fontFamily: 'Georgia',
-                  fontSize: MediaQuery.of(context).size.height * 0.036,
+                  fontSize: MediaQuery.of(context).size.height * 0.033,
                   fontWeight: FontWeight.w500),
               underline: Container(
                 height: 2,
@@ -360,7 +360,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Build',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -378,7 +378,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Skin Tone',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -396,7 +396,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Scars',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -419,7 +419,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Tattoos',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -437,7 +437,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Ailments',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -455,7 +455,7 @@ class _ListViewerState extends State<ListViewer> {
                             'Clothing',
                             style: TextStyle(
                               fontSize:
-                                  MediaQuery.of(context).size.height * 0.036,
+                                  MediaQuery.of(context).size.height * 0.033,
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
@@ -566,7 +566,7 @@ class _ListViewerState extends State<ListViewer> {
                 width: MediaQuery.of(ctx).size.width * 0.4,
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
-                      10, MediaQuery.of(ctx).size.height * 0.05, 10, 0),
+                      20, MediaQuery.of(ctx).size.height * 0.06, 20, 0),
                   child: Column(
                     children: [
                       Row(
@@ -579,7 +579,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                 fontFamily: 'Georgia',
                                 fontSize:
-                                    MediaQuery.of(ctx).size.height * 0.047,
+                                    MediaQuery.of(ctx).size.height * 0.04,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),
@@ -589,7 +589,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.025, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: SizedBox(
@@ -600,7 +600,7 @@ class _ListViewerState extends State<ListViewer> {
                               RacesDDB(
                                 onRaceChanged: updateSubraceOptions,
                               ),
-                              const GenderDDB(),
+                              GenderDDB(),
                             ],
                           ),
                         ),
@@ -608,7 +608,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         //      child: SizedBox(
                         //       width: MediaQuery.of(ctx).size.width * 0.4,
                         child: SizedBox(
@@ -629,7 +629,7 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
                           height: MediaQuery.of(ctx).size.height * 0.12,
@@ -649,7 +649,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .04,
+                                      MediaQuery.of(ctx).size.height * .035,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
@@ -657,10 +657,10 @@ class _ListViewerState extends State<ListViewer> {
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(
-                            0, MediaQuery.of(ctx).size.height * 0.02, 0, 0),
+                            0, MediaQuery.of(ctx).size.height * 0.03, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.35,
-                          height: MediaQuery.of(ctx).size.height * 0.12,
+                          height: MediaQuery.of(ctx).size.height * 0.125,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               foregroundColor:
@@ -724,7 +724,7 @@ class _ListViewerState extends State<ListViewer> {
                                     style: TextStyle(
                                         fontSize:
                                             MediaQuery.of(ctx).size.height *
-                                                0.034),
+                                                0.03),
                                   ),
                                 ),
                               );

@@ -398,7 +398,7 @@ class _ListViewerState extends State<ListViewer> {
                               ClassesDDB(
                                 onClassChanged: updateSubclassOptions,
                               ),
-                              NumberDDB(),
+                              const NumberDDB(),
                             ],
                           ),
                         ),
@@ -446,7 +446,7 @@ class _ListViewerState extends State<ListViewer> {
                               style: TextStyle(
                                   fontFamily: 'Georgia',
                                   fontSize:
-                                      MediaQuery.of(ctx).size.height * .044,
+                                      MediaQuery.of(ctx).size.height * .04,
                                   fontWeight: FontWeight.w700),
                             ),
                           ),
