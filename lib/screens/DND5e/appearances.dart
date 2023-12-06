@@ -177,13 +177,7 @@ class _RacesDDBState extends State<RacesDDB> {
   }
 }
 
-const List<String> genderList = [
-  "Any Gender",
-  "Female",
-  "Male",
-  "Non-binary",
-  "Any Binary"
-];
+const List<String> genderList = ["Any Gender", "Female", "Male", "Non-binary"];
 
 class GenderDDB extends StatefulWidget {
   const GenderDDB({super.key});
@@ -578,8 +572,7 @@ class _ListViewerState extends State<ListViewer> {
                               '5e Appearance Generator',
                               style: TextStyle(
                                 fontFamily: 'Georgia',
-                                fontSize:
-                                    MediaQuery.of(ctx).size.height * 0.04,
+                                fontSize: MediaQuery.of(ctx).size.height * 0.04,
                                 fontWeight: FontWeight.w600,
                                 color: const Color.fromRGBO(85, 0, 0, 1),
                               ),

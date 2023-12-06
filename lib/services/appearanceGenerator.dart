@@ -98,6 +98,80 @@ class AppearanceGenerator {
     return appearances;
   }
 
+  String makeAnAppearance(String race, String subrace, String gender,
+      Map<String, bool> checkboxMap) {
+    Map<String, String> appMap = {
+      "race": "",
+      "build": "",
+      "skin": "",
+      "facialhair": "",
+      "hair": "",
+      "face": "",
+      "frill": "",
+      "tail": "",
+      "scar": "",
+      "tattoo": "",
+      "ailment": "",
+      "clothing": ""
+    };
+
+    Map<String, String> pronouns = getPronouns(gender);
+
+    AppearanceItem appObj = getAppearanceObjectByRace(race);
+    if (race == "Any Race") {
+      race = appObj.race;
+      subrace = appObj.subrace;
+    }
+    //Race and Gender
+    List<String> genderList = ["Female", "Male", "Non-binary"];
+    if (gender == "Any Gender") {
+      gender =
+          genderList[Utility.getRandomIndexFromListSize(genderList.length)];
+    }
+
+    if (subrace == "Any Subrace") {
+      subrace = getRandomSubraceOfRace(race);
+    }
+    if (race == "Tiefling" || race == "Human") {
+      appMap["race"] = "${gender.toLowerCase()} $subrace ${race.toLowerCase()}";
+    } else if (race == "Orc" && subrace == "Standard") {
+      appMap["race"] = "${gender.toLowerCase()} ${race.toLowerCase()}";
+    } else if (subrace == "Half-elf" || subrace == "Half-orc") {
+      appMap["race"] = "${gender.toLowerCase()} ${subrace.toLowerCase()}";
+    } else {
+      appMap["race"] =
+          "${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()}";
+    }
+
+    //Build
+    appMap["build"] = getBuild();
+
+    //Skin
+    appMap["skin"] = getSkinTone(appObj);
+
+    //Facial Hair
+    appMap["hair"] = getFacialHair(appObj);
+
+    //Hair
+    appMap["hair"] = getHair(appObj);
+    //Face
+
+    //Frill
+
+    //Tail
+
+    //Scar
+
+    //Tattoo
+
+    //Ailment
+
+    //Clothing
+
+    String appearance = "";
+    return appearance;
+  }
+
   String generateAppearance(String race, String subrace, String gender,
       Map<String, bool> checkboxMap) {
     AppearanceItem appObj = getAppearanceObjectByRace(race);
@@ -107,12 +181,6 @@ class AppearanceGenerator {
     }
     List<String> genderList = ["Female", "Male", "Non-binary"];
     if (gender == "Any Gender") {
-      gender =
-          genderList[Utility.getRandomIndexFromListSize(genderList.length)];
-    }
-
-    if (gender == "Any Binary") {
-      genderList.remove("Non-binary");
       gender =
           genderList[Utility.getRandomIndexFromListSize(genderList.length)];
     }
@@ -142,56 +210,67 @@ class AppearanceGenerator {
 
     //Base - He has an oval face with a beard, wide-set brown eyes and big, broad ears.
     String face = descriptor.faceShape();
-    if (appObj.hairColors!.isNotEmpty) {}
 
-    String hairColor = "";
-    if (appObj.hairColors.isNotEmpty) {
-      hairColor = appObj.hairColors[
-          Utility.getRandomIndexFromListSize(appObj.hairColors.length)];
-    }
-
-    String facialHair = "$hairColor colored ${noun.facialHair()}";
-    if (gender != "Female") {
-      int roll = DiceRoller.roll1d6();
-      if ((race == "Elf" || race == "Halfling") && roll < 6) {
-        facialHair = "no facial hair";
-      } else if (roll < 2) {
-        facialHair = "no facial hair";
+    if (race != "Dragonborn") {
+      String hairColor = "";
+      if (appObj.hairColors.isNotEmpty) {
+        hairColor = appObj.hairColors[
+            Utility.getRandomIndexFromListSize(appObj.hairColors.length)];
       }
 
-      if (facialHair.contains("sideburns") || facialHair.contains("stubble")) {
-        if (sb.toString().contains(" with")) {
-          sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
+      String facialHair = "$hairColor colored ${noun.facialHair()}";
+      if (gender != "Female") {
+        int roll = DiceRoller.roll1d6();
+        if ((race == "Elf" || race == "Halfling") && roll < 6) {
+          facialHair = "no facial hair";
+        } else if (roll < 2) {
+          facialHair = "no facial hair";
+        }
+
+        if (facialHair.contains("sideburns") ||
+            facialHair.contains("stubble")) {
+          if (sb.toString().contains(" with")) {
+            sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
+          } else {
+            sb.write(
+                " ${Morph.indefiniteA(face)} $face face with $facialHair and");
+          }
         } else {
-          sb.write(
-              " ${Morph.indefiniteA(face)} $face face with $facialHair and");
+          if (facialHair == "no facial hair" &&
+              sb.toString().contains(" with")) {
+            sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
+          } else if (sb.toString().contains(" with")) {
+            sb.write(
+                " ${Morph.indefiniteA(face)} $face face, ${Morph.indefiniteA(facialHair)} $facialHair and");
+          } else {
+            sb.write(
+                " ${Morph.indefiniteA(face)} $face face with ${Morph.indefiniteA(facialHair)} $facialHair and");
+          }
         }
       } else {
-        if (facialHair == "no facial hair" && sb.toString().contains(" with")) {
-          sb.write(" ${Morph.indefiniteA(face)} $face face, $facialHair and");
-        } else if (sb.toString().contains(" with")) {
-          sb.write(
-              " ${Morph.indefiniteA(face)} $face face, ${Morph.indefiniteA(facialHair)} $facialHair and");
+        sb.write(" ${Morph.indefiniteA(face)} $face face and");
+      }
+      String style = descriptor.hairstyles();
+      if (style == "bald") {
+        sb.write(" a bald head.");
+      } else {
+        if (style.contains("dreadlocks")) {
+          sb.write(" ${descriptor.colorRefined(hairColor)} $hairColor $style.");
         } else {
           sb.write(
-              " ${Morph.indefiniteA(face)} $face face with ${Morph.indefiniteA(facialHair)} $facialHair and");
+              " ${Morph.indefiniteA(style)} ${descriptor.colorRefined(hairColor)} $hairColor $style hairstyle.");
         }
       }
     } else {
-      sb.write(" ${Morph.indefiniteA(face)} $face face and");
-    }
-    String style = descriptor.hairstyles();
-    if (style == "bald") {
-      sb.write(" a bald head.");
-    } else {
-      if (style.contains("dreadlocks")) {
-        sb.write(" ${descriptor.colorRefined(hairColor)} $hairColor $style.");
+      if (checkboxMap["Build"] == false) {
+        sb.write(" ${Morph.indefiniteA(face)} $face face.");
       } else {
-        sb.write(
-            " ${Morph.indefiniteA(style)} ${descriptor.colorRefined(hairColor)} $hairColor $style hairstyle.");
+        String sentence = sb.toString().replaceFirst(",", "");
+        sb.clear();
+        sb.write(sentence);
+        sb.write("and ${Morph.indefiniteA(face)} $face face.");
       }
     }
-
     if (checkboxMap["Skin Tone"] == true) {
       String skin = getSkinTone(appObj);
       sb.write(" ${pronouns["Subject"]} ${pronouns["Have"]} $skin and");
@@ -234,9 +313,11 @@ class AppearanceGenerator {
   }
 
   String getSkinTone(AppearanceItem appItem) {
-    String skinColor = descriptor.variantFromBase(appItem.skinColors[
-        Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
-    String skin = "${descriptor.skinOrHairColorDescription()} $skinColor skin";
+    String base = appItem.skinColors[
+        Utility.getRandomIndexFromListSize(appItem.skinColors.length)];
+    String skinColor = descriptor.variantFromBase(base);
+    String skin =
+        "${descriptor.skinOrHairColorDescription()} $skinColor $base skin";
 
     int roll = DiceRoller.roll1d6();
 
@@ -296,7 +377,7 @@ class AppearanceGenerator {
         break;
     }
 
-    return build;
+    return "$build ${noun.body()}";
   }
 
   Map<String, String> getPronouns(String gender) {
@@ -407,5 +488,17 @@ class AppearanceGenerator {
         break;
     }
     return ailment;
+  }
+
+  String getHair(AppearanceItem appObj) {
+    String hair = "";
+
+    return hair;
+  }
+
+  String getFacialHair(AppearanceItem appObj) {
+    String facialHair = "";
+
+    return facialHair;
   }
 }
