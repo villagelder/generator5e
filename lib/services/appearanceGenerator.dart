@@ -115,8 +115,6 @@ class AppearanceGenerator {
       "clothing": "" //He wears clothing.
     };
 
-    Map<String, String> pronouns = getPronouns(gender);
-
     AppearanceItem appObj = getAppearanceObjectByRace(race);
     if (race == "Any Race") {
       race = appObj.race;
@@ -128,6 +126,8 @@ class AppearanceGenerator {
       gender =
           genderList[Utility.getRandomIndexFromListSize(genderList.length)];
     }
+
+    Map<String, String> pronouns = getPronouns(gender);
 
     if (subrace == "Any Subrace") {
       subrace = getRandomSubraceOfRace(race);
@@ -143,7 +143,7 @@ class AppearanceGenerator {
           "${gender.toLowerCase()} ${subrace.toLowerCase()} ${race.toLowerCase()}";
     }
 
-    if (race != "Dragonborn") {
+    if (race != "Dragonborn" && gender != "Female") {
       String hairColor = appObj.hairColors[
           Utility.getRandomIndexFromListSize(appObj.hairColors.length)];
 
@@ -204,44 +204,40 @@ class AppearanceGenerator {
         sb.write(".");
       }
     }
+    String hairA = "";
+    if (appMap["hair"]!.isNotEmpty && !appMap["hair"]!.contains("dreadlocks")) {
+      hairA = "${Morph.indefiniteA(appMap["hair"]!)} ";
+    }
+    String facialhairA = "";
+    if (appMap["facialhair"]!.isNotEmpty &&
+        (!appMap["facialhair"]!.contains("stubble") &&
+            !appMap["facialhair"]!.contains("no facial hair") &&
+            !appMap["facialhair"]!.contains("whiskers") &&
+            !appMap["facialhair"]!.contains("sideburns"))) {
+      facialhairA = "${Morph.indefiniteA(appMap["facialhair"]!)} ";
+    }
 
     if (appMap["face"]!.isNotEmpty) {
       if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isNotEmpty) {
-        if (appMap["facialhair"]!.contains("stubble") ||
-            appMap["facialhair"]!.contains("no facial hair") ||
-            appMap["facialhair"]!.contains("whiskers") ||
-            appMap["facialhair"]!.contains("sideburns")) {
-          sb.write(
-              " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} with ${appMap["facialhair"]}.");
-        } else {
-          sb.write(
-              " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} with ${Morph.indefiniteA(appMap["facialhair"]!)} ${appMap["facialhair"]}.");
-        }
+        sb.write(
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]} with $facialhairA${appMap["facialhair"]}.");
       } else if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]}.");
       } else if (appMap["hair"]!.isEmpty && appMap["facialhair"]!.isNotEmpty) {
-        if (appMap["facialhair"]!.contains("stubble") ||
-            appMap["facialhair"]!.contains("no facial hair") ||
-            appMap["facialhair"]!.contains("whiskers") ||
-            appMap["facialhair"]!.contains("sideburns")) {
-          sb.write(
-              " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} with ${appMap["facialhair"]}.");
-        } else {
-          sb.write(
-              " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} with ${Morph.indefiniteA(appMap["facialhair"]!)} ${appMap["facialhair"]}.");
-        }
+        sb.write(
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} with $facialhairA${appMap["facialhair"]}.");
       }
     } else if (appMap["face"]!.isEmpty) {
       if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} and ${Morph.indefiniteA(appMap["facialhair"]!)} ${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} and $facialhairA${appMap["facialhair"]}.");
       } else if (appMap["hair"]!.isEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} $hairA${appMap["hair"]}.");
       } else {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["facialhair"]!)} ${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} $facialhairA${appMap["facialhair"]}.");
       }
     }
 
@@ -352,8 +348,6 @@ class AppearanceGenerator {
   }
 
   Map<String, String> getPronouns(String gender) {
-    gender = gender.toLowerCase();
-
     Map<String, String> pronounsMap = {
       "Possessive": "", //her, his, their
       "Object": "", //him, her, them
@@ -361,11 +355,11 @@ class AppearanceGenerator {
       "Have": "has"
     };
 
-    if (gender == "female") {
+    if (gender == "Female") {
       pronounsMap["Possessive"] = "Her";
       pronounsMap["Object"] = "Her";
       pronounsMap["Subject"] = "She";
-    } else if (gender == "male") {
+    } else if (gender == "Male") {
       pronounsMap["Possessive"] = "His";
       pronounsMap["Object"] = "Him";
       pronounsMap["Subject"] = "He";
@@ -486,6 +480,7 @@ class AppearanceGenerator {
         facialHair = "no facial hair";
       }
     }
+
     return facialHair;
   }
 
