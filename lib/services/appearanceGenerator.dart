@@ -255,7 +255,7 @@ class AppearanceGenerator {
       sb.write(
           "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} and ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}");
     } else if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isEmpty) {
-      sb.write("${pronouns["Subject"]} ${pronouns["Have"]} ${appMap["scar"]}.");
+      sb.write("${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]}.");
     } else if (appMap["scar"]!.isEmpty && appMap["tattoo"]!.isNotEmpty) {
       sb.write(
           "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
@@ -296,7 +296,7 @@ class AppearanceGenerator {
         skinColor2 = descriptor.variantFromBase(appItem.skinColors[
             Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
       }
-      return "${descriptor.skinOrHairColorDescription()} $skinColor tinged with $skinColor2 skin";
+      return "${descriptor.skinOrHairColorDescription()} $skinColor tinged with $base skin";
     }
     return skin;
   }
