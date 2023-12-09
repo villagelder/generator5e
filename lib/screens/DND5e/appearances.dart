@@ -304,11 +304,11 @@ class _ListViewerState extends State<ListViewer> {
   String selectedRace = raceList.first;
   String subraceValue = subraceList.first;
   Map<String, bool> checkboxMapStates = {
-    "Build": false,
-    "Skin Tone": false,
-    "Scars": false,
-    "Tattoos": false,
-    "Ailments": false,
+    "Build": true,
+    "Skin Tone": true,
+    "Scars": true,
+    "Tattoos": true,
+    "Ailments": true,
     "Clothing": false,
   };
 
@@ -453,6 +453,7 @@ class _ListViewerState extends State<ListViewer> {
                             ),
                           ),
                           activeColor: Colors.brown.shade500,
+                          enabled: false,
                           value: checkboxMapStates["Clothing"],
                           onChanged: (bool? value) {
                             setModalState(() {

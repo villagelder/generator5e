@@ -170,7 +170,7 @@ class AppearanceGenerator {
     }
 
     if (checkboxMap["Tattoos"] == true) {
-      appMap["tattoo"] = getTattoo();
+      appMap["tattoo"] = getTattoo(pronouns);
     }
 
     if (checkboxMap["Ailments"] == true) {
@@ -253,23 +253,24 @@ class AppearanceGenerator {
 
     if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isNotEmpty) {
       sb.write(
-          "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} and ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}");
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()} and ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
     } else if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isEmpty) {
-      sb.write("${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]}.");
+      sb.write(
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()}.");
     } else if (appMap["scar"]!.isEmpty && appMap["tattoo"]!.isNotEmpty) {
       sb.write(
-          "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
     }
 
     if (appMap["ailment"]!.isNotEmpty && appMap["clothing"]!.isNotEmpty) {
       sb.write(
-          "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["ailment"]!)} ${appMap["ailment"]} and ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}");
+          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["ailment"]!)} ${appMap["ailment"]} and ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
     } else if (appMap["ailment"]!.isNotEmpty && appMap["clothing"]!.isEmpty) {
       sb.write(
-          "${pronouns["Subject"]} ${pronouns["Have"]} ${appMap["ailment"]}.");
+          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["ailment"]!)} ${appMap["ailment"]}.");
     } else if (appMap["ailment"]!.isEmpty && appMap["clothing"]!.isNotEmpty) {
       sb.write(
-          "${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
+          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
     }
 
     return sb.toString();
@@ -373,8 +374,8 @@ class AppearanceGenerator {
     return pronounsMap;
   }
 
-  String getTattoo() {
-    return "${descriptor.colorsBase()} ${noun.symbolOminous()} tattoo";
+  String getTattoo(Map<String, String> pronouns) {
+    return "${descriptor.colorsBase()} ${noun.symbolOminous()} tattoo on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()}";
   }
 
   String getAilment(Map<String, String> pronouns) {
@@ -387,7 +388,7 @@ class AppearanceGenerator {
         String symptoms = "${noun.symptom()}s";
         String disease = noun.disease();
         ailment =
-            "$residual $symptoms of $disease on ${pronouns["possessive"]} ${noun.humanoidMajorPart()}";
+            "$residual $symptoms of $disease on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()}";
 
         break;
       case 4: //magical injury
@@ -414,10 +415,11 @@ class AppearanceGenerator {
             break;
         }
         ailment =
-            "${noun.damageType()} damage to ${pronouns["possessive"]} ${noun.humanoidMajorPart()} from ${Morph.indefiniteA(monster)} $monster";
+            "${noun.damageType()} damage to ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()} from ${Morph.indefiniteA(monster)} $monster";
 
       case 5: //has a loss of a sense from a magical injury
         String creature = "";
+        String battle = noun.battle();
         int d = DiceRoller.roll1d12();
         switch (d) {
           case 1:
@@ -441,15 +443,15 @@ class AppearanceGenerator {
         }
 
         ailment =
-            "${noun.lostSenses()} caused by ${Morph.indefiniteA(creature)} $creature";
+            "${noun.lostSenses()} caused by ${Morph.indefiniteA(battle)} $battle with ${Morph.indefiniteA(creature)} $creature";
         break;
       case 6: //senses
         ailment =
-            "${noun.symptom()} on ${pronouns["possessive"]} ${noun.humanoidMajorPart()} caused by ${noun.disease()}";
+            "${noun.symptom()} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()} caused by ${noun.disease()}";
         break;
       default:
         ailment =
-            "${noun.symptom()} on ${pronouns["possessive"]} ${noun.facePart()} caused by ${noun.disease()}";
+            "${noun.symptom()} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.facePart()} caused by ${noun.disease()}";
         break;
     }
     return ailment;
@@ -457,14 +459,20 @@ class AppearanceGenerator {
 
   String getHair(String hairColor) {
     String style = descriptor.hairstyles();
+    String refinedColor = descriptor.colorRefined(hairColor);
+
+    while (refinedColor == hairColor) {
+      refinedColor = descriptor.colorRefined(hairColor);
+    }
+
     if (style == "bald") {
       style = "bald head";
     } else {
       if (style.contains("dreadlocks")) {
-        style = "${descriptor.colorRefined(hairColor)} $hairColor $style";
+        style = "$refinedColor $hairColor $style";
       } else {
         style =
-            "${descriptor.colorRefined(hairColor)} $hairColor $style hairstyle";
+            "$refinedColor $hairColor $style hairstyle";
       }
     }
     return style;
