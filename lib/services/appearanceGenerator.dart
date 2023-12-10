@@ -51,12 +51,22 @@ class AppearanceGenerator {
     return appearanceObjList;
   }
 
-  AppearanceItem getAppearanceObjectByRace(String race) {
+  AppearanceItem getAppearanceObjectByRaceAndSubrace(
+      String race, String subrace) {
     if (race == "Any Race" || race == null) {
       return appearanceObjList[
           Utility.getRandomIndexFromListSize(appearanceObjList.length)];
     }
-    return appearanceObjList.where((n) => n.race == race).toList()[0];
+    if (subrace == "Any Subrace") {
+      List<AppearanceItem> appearanceItems =
+          appearanceObjList.where((n) => n.race == race).toList();
+      return appearanceItems[
+          Utility.getRandomIndexFromListSize(appearanceItems.length)];
+    }
+
+    return appearanceObjList
+        .where((n) => n.race == race && n.subrace == subrace)
+        .toList()[0];
   }
 
   String getRandomSubraceOfRace(String race) {
@@ -106,6 +116,7 @@ class AppearanceGenerator {
       "skin": "", //and color skin.
       "facialhair": "", //and facial hair
       "hair": "", //with a hairstyle
+      "eyes": "",
       "face": "", //He has a slender face
       "frill": "", //He has frill
       "tail": "", // and a tail
@@ -115,11 +126,11 @@ class AppearanceGenerator {
       "clothing": "" //He wears clothing.
     };
 
-    AppearanceItem appObj = getAppearanceObjectByRace(race);
-    if (race == "Any Race") {
-      race = appObj.race;
-      subrace = appObj.subrace;
-    }
+    AppearanceItem appObj = getAppearanceObjectByRaceAndSubrace(race, subrace);
+
+    race = appObj.race;
+    subrace = appObj.subrace;
+
     //Race and Gender
     List<String> genderList = ["Female", "Male", "Non-binary"];
     if (gender == "Any Gender") {
@@ -129,9 +140,6 @@ class AppearanceGenerator {
 
     Map<String, String> pronouns = getPronouns(gender);
 
-    if (subrace == "Any Subrace") {
-      subrace = getRandomSubraceOfRace(race);
-    }
     if (race == "Tiefling" || race == "Human") {
       appMap["race"] = "${gender.toLowerCase()} $subrace ${race.toLowerCase()}";
     } else if (race == "Orc" && subrace == "Standard") {
@@ -152,6 +160,8 @@ class AppearanceGenerator {
     }
 
     appMap["face"] = getFace();
+
+    appMap["eyes"] = getEyes(appObj);
 
     appMap["frill"] = getFrill(appObj);
 
@@ -191,7 +201,7 @@ class AppearanceGenerator {
     if (appMap["build"]!.isNotEmpty) {
       if (appMap["skin"]!.isNotEmpty) {
         sb.write(
-            " with ${Morph.indefiniteA(appMap["build"]!)} ${appMap["build"]} and ${appMap["skin"]}.");
+            " with ${Morph.indefiniteA(appMap["build"]!)} ${appMap["build"]} and ${appMap["skin"]}");
       } else {
         sb.write(
             " with ${Morph.indefiniteA(appMap["build"]!)} ${appMap["build"]}.");
@@ -199,7 +209,7 @@ class AppearanceGenerator {
     } else {
       if (appMap["skin"]!.isNotEmpty) {
         sb.write(
-            " with ${Morph.indefiniteA(appMap["skin"]!)} ${appMap["skin"]}.");
+            " with ${Morph.indefiniteA(appMap["skin"]!)} ${appMap["skin"]}");
       } else {
         sb.write(".");
       }
@@ -220,25 +230,29 @@ class AppearanceGenerator {
     if (appMap["face"]!.isNotEmpty) {
       if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]} with $facialhairA${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]} with $facialhairA${appMap["facialhair"]}");
       } else if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} and $hairA${appMap["hair"]}");
       } else if (appMap["hair"]!.isEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} with $facialhairA${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["face"]!)} ${appMap["face"]} with $facialhairA${appMap["facialhair"]}");
       }
     } else if (appMap["face"]!.isEmpty) {
       if (appMap["hair"]!.isNotEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} and $facialhairA${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["hair"]!)} ${appMap["hair"]} and $facialhairA${appMap["facialhair"]}");
       } else if (appMap["hair"]!.isEmpty && appMap["facialhair"]!.isNotEmpty) {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} $hairA${appMap["hair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} $hairA${appMap["hair"]}");
       } else {
         sb.write(
-            " ${pronouns["Subject"]} ${pronouns["Have"]} $facialhairA${appMap["facialhair"]}.");
+            " ${pronouns["Subject"]} ${pronouns["Have"]} $facialhairA${appMap["facialhair"]}");
       }
+    }
+
+    if (appMap["eyes"]!.isNotEmpty) {
+      sb.write(" and ${appMap["eyes"]}.");
     }
 
     if (appMap["frill"]!.isNotEmpty && appMap["tail"]!.isNotEmpty) {
@@ -253,24 +267,24 @@ class AppearanceGenerator {
 
     if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isNotEmpty) {
       sb.write(
-          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()} and ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
+          " This ${subrace.toLowerCase()} ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()} and ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
     } else if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isEmpty) {
       sb.write(
-          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()}.");
+          " This ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["scar"]!)} ${appMap["scar"]} on ${pronouns["Possessive"]!.toLowerCase()} ${noun.humanoidMajorPart()}.");
     } else if (appMap["scar"]!.isEmpty && appMap["tattoo"]!.isNotEmpty) {
       sb.write(
-          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
+          " This ${subrace.toLowerCase()} has ${Morph.indefiniteA(appMap["tattoo"]!)} ${appMap["tattoo"]}.");
     }
 
     if (appMap["ailment"]!.isNotEmpty && appMap["clothing"]!.isNotEmpty) {
       sb.write(
-          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["ailment"]!)} ${appMap["ailment"]} and ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${appMap["ailment"]} and ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
     } else if (appMap["ailment"]!.isNotEmpty && appMap["clothing"]!.isEmpty) {
       sb.write(
-          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["ailment"]!)} ${appMap["ailment"]}.");
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${appMap["ailment"]}.");
     } else if (appMap["ailment"]!.isEmpty && appMap["clothing"]!.isNotEmpty) {
       sb.write(
-          " The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
+          " ${pronouns["Subject"]} ${pronouns["Have"]} ${Morph.indefiniteA(appMap["clothing"]!)} ${appMap["clothing"]}.");
     }
 
     return sb.toString();
@@ -287,6 +301,15 @@ class AppearanceGenerator {
     String skin =
         "${descriptor.skinOrHairColorDescription()} $skinColor $base skin";
 
+    if (appItem.race == "Dragonborn") {
+      int roll = DiceRoller.roll1d4();
+      if (roll < 4) {
+        return "${descriptor.skinOrHairColorDescription()} ${appItem.subrace.toLowerCase()} scales";
+      }
+
+      return "${descriptor.skinOrHairColorDescription()} ${appItem.subrace.toLowerCase()} and $skinColor $base scales";
+    }
+
     int roll = DiceRoller.roll1d8();
 
     if (roll > 7) {
@@ -297,7 +320,7 @@ class AppearanceGenerator {
         skinColor2 = descriptor.variantFromBase(appItem.skinColors[
             Utility.getRandomIndexFromListSize(appItem.skinColors.length)]);
       }
-      return "${descriptor.skinOrHairColorDescription()} $skinColor tinged with $base skin";
+      return "${descriptor.skinOrHairColorDescription()} $base tinged with $skinColor skin";
     }
     return skin;
   }
@@ -471,8 +494,7 @@ class AppearanceGenerator {
       if (style.contains("dreadlocks")) {
         style = "$refinedColor $hairColor $style";
       } else {
-        style =
-            "$refinedColor $hairColor $style hairstyle";
+        style = "$refinedColor $hairColor $style hairstyle";
       }
     }
     return style;
@@ -493,16 +515,28 @@ class AppearanceGenerator {
   }
 
   String getFrill(AppearanceItem appObj) {
-    String frill = "";
-    return frill;
+    String frill = appObj.frillTypes[
+        Utility.getRandomIndexFromListSize(appObj.frillTypes.length)];
+    String color = appObj.skinColors[
+        Utility.getRandomIndexFromListSize(appObj.skinColors.length)];
+
+    return "$color $frill";
   }
 
   String getTail(AppearanceItem appObj) {
-    String tail = "";
+    String color = appObj
+        .eyeColors[Utility.getRandomIndexFromListSize(appObj.eyeColors.length)];
     return tail;
   }
 
   String getFace() {
     return "${descriptor.faceShape()} face";
+  }
+
+  String getEyes(AppearanceItem appearanceItem) {
+    List<String> eyeColors = appearanceItem.eyeColors;
+    String color =
+        eyeColors[Utility.getRandomIndexFromListSize(eyeColors.length)];
+    return "${descriptor.eyesDescription()} $color eyes";
   }
 }

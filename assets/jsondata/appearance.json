@@ -19,17 +19,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -54,17 +56,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -88,17 +92,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -126,17 +132,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -162,17 +170,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -203,17 +213,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -246,17 +258,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -288,17 +302,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -330,17 +346,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -373,17 +391,19 @@
         "gray"
       ],
       "frillTypes": [
-        "bull",
+        "bull horns",
         "spine sail",
         "forehead ",
-        "ram",
-        "scutes",
-        "bumps",
+        "ram horn",
+        "large scutes",
+        "small scutes",
+        "bump horns",
         "neck plate",
         "ossicones",
         "leathery neck frill",
         "bony neck frill",
-        "spikes",
+        "neck spikes",
+        "back spikes",
         "spinal ridge"
       ],
       "hairColors": []
@@ -436,7 +456,7 @@
     },
     {
       "race": "Dwarf",
-      "subrace": "Gray",
+      "subrace": "Duergar",
       "frillName": "hair",
       "frillTypes": [],
       "hairColors": [
@@ -1112,6 +1132,22 @@
         "beige"
       ],
       "eyeColors": [
+        "gray",
+        "red",
+        "black",
+        "copper",
+        "gold",
+        "bronze",
+        "platinum",
+        "yellow",
+        "brown",
+        "orange",
+        "green",
+        "violet",
+        "silver",
+        "blue"
+      ],
+      "tails": [
         "gray",
         "red",
         "black",
