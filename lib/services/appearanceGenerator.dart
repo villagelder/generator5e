@@ -515,18 +515,38 @@ class AppearanceGenerator {
   }
 
   String getFrill(AppearanceItem appObj) {
-    String frill = appObj.frillTypes[
-        Utility.getRandomIndexFromListSize(appObj.frillTypes.length)];
+    if (appObj.race == "Dragonborn") {
+      String frill = appObj.frillTypes[
+          Utility.getRandomIndexFromListSize(appObj.frillTypes.length)];
+      String color = appObj.skinColors[
+          Utility.getRandomIndexFromListSize(appObj.skinColors.length)];
+      return "$color $frill";
+    }
+    return "";
+  }
+
+  String getTieflingTail(AppearanceItem appObj) {
+    int roll = DiceRoller.roll1d6();
+    String length = "";
+    if (roll > 5) {
+      length = "short ";
+    } else if (roll > 3) {
+      length = "long ";
+    }
+
+    String type =
+        appObj.tails![Utility.getRandomIndexFromListSize(appObj.tails!.length)];
     String color = appObj.skinColors[
         Utility.getRandomIndexFromListSize(appObj.skinColors.length)];
-
-    return "$color $frill";
+    return "$length$color $type tail";
   }
 
   String getTail(AppearanceItem appObj) {
-    String color = appObj
-        .eyeColors[Utility.getRandomIndexFromListSize(appObj.eyeColors.length)];
-    return tail;
+    if (appObj.race == "Tiefling") {
+      return getTieflingTail(appObj);
+    }
+
+    return "";
   }
 
   String getFace() {

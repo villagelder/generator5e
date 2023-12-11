@@ -8,9 +8,10 @@ class AppearanceItem {
   List<String> eyeColors;
   List<String> frillTypes;
   List<String> hairColors;
+  List<String>? tails;
 
   AppearanceItem(this.race, this.subrace, this.frillName, this.skinColors,
-      this.eyeColors, this.frillTypes, this.hairColors);
+      this.eyeColors, this.frillTypes, this.hairColors, this.tails);
 
   factory AppearanceItem.fromJson(dynamic json) {
     return AppearanceItem(
@@ -20,12 +21,13 @@ class AppearanceItem {
         List<String>.from(json['skinColors']),
         List<String>.from(json['eyeColors']),
         List<String>.from(json['frillTypes']),
-        List<String>.from(json['hairColors']));
+        List<String>.from(json['hairColors']),
+        List<String>.from(json['tails']));
   }
 
   @override
   String toString() {
     return '{ $race, $subrace, $frillName, $frillTypes, $skinColors,'
-        '$eyeColors }';
+        '$eyeColors, $tails }';
   }
 }

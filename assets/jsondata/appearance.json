@@ -1148,20 +1148,20 @@
         "blue"
       ],
       "tails": [
-        "gray",
-        "red",
-        "black",
-        "copper",
-        "gold",
-        "bronze",
-        "platinum",
-        "yellow",
-        "brown",
-        "orange",
-        "green",
-        "violet",
-        "silver",
-        "blue"
+        "spade-tipped",
+        "skinny",
+        "stripped",
+        "arrow-tipped",
+        "fat",
+        "bumpy",
+        "spotted",
+        "forked",
+        "plump",
+        "snakelike",
+        "reticulated",
+        "barbed",
+        "furry",
+        "spiked"
       ]
     },
     {
