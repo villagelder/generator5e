@@ -21,33 +21,33 @@ class MerchantPage extends MaterialPageRoute<void> {
         });
 }
 
-class AlignmentDDB extends StatefulWidget {
-  const AlignmentDDB({super.key});
+class CitySizeDDB extends StatefulWidget {
+  const CitySizeDDB({super.key});
 
   @override
-  State<AlignmentDDB> createState() => _AlignmentDDBState();
+  State<CitySizeDDB> createState() => _CitySizeDDBState();
 }
 
-const List<String> alignmentList = <String>[
-  'Any Alignment',
-  'Good',
-  'Neutral',
-  'Evil'
+const List<String> citySizeList = <String>[
+  'Any Size',
+  'Village',
+  'Town',
+  'City',
+  'Large City'
 ];
-const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
-class BackgroundDDB extends StatefulWidget {
-  const BackgroundDDB({super.key});
+class WaresDDB extends StatefulWidget {
+  const WaresDDB({super.key});
 
   @override
-  State<BackgroundDDB> createState() => _BackgroundDDBState();
+  State<WaresDDB> createState() => _WaresDDBState();
 
   String? getDropDownValue() {
-    return _BackgroundDDBState.dropDownValue;
+    return _WaresDDBState.dropDownValue;
   }
 }
 
-class _BackgroundDDBState extends State<BackgroundDDB> {
+class _WaresDDBState extends State<WaresDDB> {
   PersonalityGenerator personalityGenerator = PersonalityGenerator();
   static String? dropDownValue;
 
@@ -129,8 +129,8 @@ class _BackgroundDDBState extends State<BackgroundDDB> {
   }
 }
 
-class _AlignmentDDBState extends State<AlignmentDDB> {
-  static String alignValue = alignmentList.first;
+class _CitySizeDDBState extends State<CitySizeDDB> {
+  static String alignValue = citySizeList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -170,7 +170,7 @@ class _AlignmentDDBState extends State<AlignmentDDB> {
                 alignValue = value!;
               });
             },
-            items: alignmentList.map<DropdownMenuItem<String>>((String value) {
+            items: citySizeList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
@@ -199,10 +199,10 @@ class _ListViewerState extends State<ListViewer> {
 
   updateList() {
     personalityGenerator.init();
-    String? bk = const BackgroundDDB().getDropDownValue();
+    String? bk = const WaresDDB().getDropDownValue();
     bk ??= "Any Background";
     traitsList = personalityGenerator.generateByBackground(
-        bk, _AlignmentDDBState.alignValue);
+        bk, _CitySizeDDBState.alignValue);
     setState(() {
       traitsList;
     });
@@ -255,7 +255,7 @@ class _ListViewerState extends State<ListViewer> {
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            BackgroundDDB(),
+                            WaresDDB(),
                             // AlignmentDDB(),
                           ],
                         ),
@@ -266,7 +266,7 @@ class _ListViewerState extends State<ListViewer> {
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            AlignmentDDB(),
+                            CitySizeDDB(),
                           ],
                         ),
                       ),

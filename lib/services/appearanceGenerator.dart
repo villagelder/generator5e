@@ -13,7 +13,6 @@ import 'onomasticonVerbs.dart';
 class AppearanceGenerator {
   List _appearanceitems = [];
   List<AppearanceItem> appearanceObjList = [];
-  bool _isLoaded = false;
 
   OnomasticonDescriptor descriptor = OnomasticonDescriptor();
   OnomasticonNoun noun = OnomasticonNoun();
@@ -87,10 +86,6 @@ class AppearanceGenerator {
           Utility.getRandomIndexFromListSize(tieflingList.length)];
     }
 
-    if (race == "Orc") {
-      return orcList[Utility.getRandomIndexFromListSize(orcList.length)];
-    }
-
     List<AppearanceItem> objList =
         appearanceObjList.where((n) => n.race == race).toList();
     return objList[Utility.getRandomIndexFromListSize(objList.length)].subrace;
@@ -128,8 +123,24 @@ class AppearanceGenerator {
 
     AppearanceItem appObj = getAppearanceObjectByRaceAndSubrace(race, subrace);
 
+    const List<String> tieflingList = <String>[
+      "Baalzebul",
+      "Dispater",
+      "Fierna",
+      "Glasya",
+      "Levistus",
+      "Mammon",
+      "Mephistopheles",
+      "Zariel"
+    ];
+
     race = appObj.race;
     subrace = appObj.subrace;
+
+    if (race == "Tiefling" && subrace == "Any Subrace") {
+      subrace =
+          tieflingList[Utility.getRandomIndexFromListSize(tieflingList.length)];
+    }
 
     //Race and Gender
     List<String> genderList = ["Female", "Male", "Non-binary"];
@@ -140,7 +151,9 @@ class AppearanceGenerator {
 
     Map<String, String> pronouns = getPronouns(gender);
 
-    if (race == "Tiefling" || race == "Human") {
+    if (race == "Tiefling") {
+      appMap["race"] = "${gender.toLowerCase()} $subrace $race";
+    } else if (race == "Human") {
       appMap["race"] = "${gender.toLowerCase()} $subrace ${race.toLowerCase()}";
     } else if (race == "Orc" && subrace == "Standard") {
       appMap["race"] = "${gender.toLowerCase()} ${race.toLowerCase()}";
@@ -257,12 +270,12 @@ class AppearanceGenerator {
 
     if (appMap["frill"]!.isNotEmpty && appMap["tail"]!.isNotEmpty) {
       sb.write(
-          "The $race has ${appMap["frill"]} and ${Morph.indefiniteA(appMap["tail"]!)} ${appMap["tail"]}");
+          "The ${race.toLowerCase()} has ${appMap["frill"]} and ${Morph.indefiniteA(appMap["tail"]!)} ${appMap["tail"]}");
     } else if (appMap["frill"]!.isNotEmpty && appMap["tail"]!.isEmpty) {
-      sb.write("The $race has ${appMap["frill"]}.");
+      sb.write("The ${race.toLowerCase()} has ${appMap["frill"]}.");
     } else if (appMap["frill"]!.isEmpty && appMap["tail"]!.isNotEmpty) {
       sb.write(
-          "The $race has ${Morph.indefiniteA(appMap["tail"]!)} ${appMap["tail"]}.");
+          "The ${race.toLowerCase()} has ${Morph.indefiniteA(appMap["tail"]!)} ${appMap["tail"]}.");
     }
 
     if (appMap["scar"]!.isNotEmpty && appMap["tattoo"]!.isNotEmpty) {
