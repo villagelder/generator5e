@@ -344,7 +344,7 @@ class _ListViewerState extends State<ListViewer> {
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.58,
+                width: MediaQuery.of(ctx).size.width * 0.28,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -362,6 +362,59 @@ class _ListViewerState extends State<ListViewer> {
                               color: Colors.brown.shade500,
                               child: ListView.builder(
                                 key: ObjectKey(magicItemsList[0]),
+                                itemCount: magicItemsList.length,
+                                itemBuilder: (ctx, index) {
+                                  return Padding(
+                                    padding: EdgeInsets.fromLTRB(
+                                        0,
+                                        MediaQuery.of(ctx).size.height * 0.01,
+                                        0,
+                                        0),
+                                    child: ListTile(
+                                      shape: RoundedRectangleBorder(
+                                          side: const BorderSide(width: 2),
+                                          borderRadius:
+                                              BorderRadius.circular(15.0)),
+                                      dense: true,
+                                      tileColor: Colors.orange.shade100,
+                                      title: Text(
+                                        magicItemsList[index],
+                                        style: TextStyle(
+                                            fontSize:
+                                                MediaQuery.of(ctx).size.height *
+                                                    0.04),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: MediaQuery.of(ctx).size.width * 0.28,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(
+                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(ctx).size.height * 0.7,
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0)),
+                              elevation: 2,
+                              color: Colors.brown.shade500,
+                              child: ListView.builder(
+                                key: ObjectKey(magicItemsList[1]),
                                 itemCount: magicItemsList.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(

@@ -42,6 +42,15 @@ class _ListViewerState extends State<ListViewer> {
   updateList() {
     treasureList = trGen.generateTreasures(
         _ChallengeRatingDDBState.crValue, _TreasureTypeDDBState.ttValue);
+    StringBuffer stringBuffer = StringBuffer();
+    for (int i = 0; i < treasureList.length; i++) {
+      if (i != treasureList.length - 1) {
+        stringBuffer.write("${treasureList[i]}, ");
+      } else {
+        stringBuffer.write(treasureList[i]);
+      }
+    }
+    treasureList = [stringBuffer.toString()];
     setState(() {
       treasureList;
     });
@@ -322,4 +331,3 @@ class _ChallengeRatingDDBState extends State<ChallengeRatingDDB> {
     );
   }
 }
-
