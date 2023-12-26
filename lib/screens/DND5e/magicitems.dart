@@ -375,6 +375,7 @@ class _ListViewerState extends State<ListViewer> {
                                           side: const BorderSide(width: 2),
                                           borderRadius:
                                               BorderRadius.circular(15.0)),
+                                      dense: true,
                                       tileColor: Colors.orange.shade100,
                                       title: Text(
                                         magicItemsList[index],

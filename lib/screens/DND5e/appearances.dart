@@ -529,6 +529,7 @@ class _ListViewerState extends State<ListViewer> {
   }
 
   updateList() {
+    appGen.init();
     appearanceList = appGen.getAppearances(
         _RacesDDBState.raceValue,
         subraceValue,

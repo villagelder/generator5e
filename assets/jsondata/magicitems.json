@@ -1143,7 +1143,7 @@
     {
       "id": 96,
       "name": "Wand of Web",
-      "type": "potion",
+      "type": "wondrous item",
       "subtypes": "Can only be attuned by a spellcaster",
       "total": "",
       "detail": "",
@@ -3290,7 +3290,7 @@
     },
     {
       "id": 999,
-      "name": "name",
+      "name": "Boots Of Striding And Springing",
       "type": "wondrous item",
       "subtypes": "",
       "total": "",
