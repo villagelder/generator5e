@@ -108,30 +108,55 @@ class MagicItemGenerator5e {
 
     List<MagicItem> magicItems = getMagicItemsByRarityAndType(rarity, type);
 
-    int itemCount = int.parse(number);
-    if (magicItems.length < itemCount) {
-      itemCount = magicItems.length;
-    }
-
-    if (magicItems.isNotEmpty) {
-      for (int i = 0; i < itemCount; i++) {
-        int ix = Utility.getRandomIndexFromListSize(magicItems.length);
-        String magicItem = magicItems[ix].name;
-        if (magicItem.contains("spell scroll")) {
-          magicItem = randomizeScroll(magicItem);
-        }
-
-        if (!magicItemsList.contains(magicItem)) {
-          magicItemsList.add(magicItem);
-        } else {
-          i--;
-          continue;
-        }
+    if (type == "scroll") {
+      if (rarity == "artifact") {
+        magicItemsList.add("no items found for this value");
+        return magicItemsList;
       }
-    }else {
-      magicItemsList.add("no items found for this value");
+      return getScrollsArray(magicItems, number);
+    } else {
+      int itemCount = int.parse(number);
+      if (magicItems.length < itemCount) {
+        itemCount = magicItems.length;
+      }
+
+      if (magicItems.isNotEmpty) {
+        for (int i = 0; i < itemCount; i++) {
+          int ix = Utility.getRandomIndexFromListSize(magicItems.length);
+          String magicItem = magicItems[ix].name;
+          if (magicItem.contains("spell scroll")) {
+            magicItem = randomizeScroll(magicItem);
+          }
+
+          if (!magicItemsList.contains(magicItem)) {
+            magicItemsList.add(magicItem);
+          } else {
+            i--;
+            continue;
+          }
+        }
+      } else {
+        magicItemsList.add("no items found for this value");
+      }
     }
 
     return magicItemsList;
+  }
+
+  List<String> getScrollsArray(List<MagicItem> magicItems, String number) {
+    int n = int.parse(number);
+    List<String> scrolls = [];
+
+    for (int i = 0; i < n; i++) {
+      String genScroll =
+          magicItems[Utility.getRandomIndexFromListSize(magicItems.length)]
+              .name;
+      String spellScroll = randomizeScroll(genScroll);
+      while (scrolls.contains(spellScroll)) {
+        spellScroll = randomizeScroll(genScroll);
+      }
+      scrolls.add(spellScroll);
+    }
+    return scrolls;
   }
 }
