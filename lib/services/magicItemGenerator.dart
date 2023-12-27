@@ -71,51 +71,6 @@ class MagicItemGenerator5e {
         .toList();
   }
 
-  String generateRandomMagicItems(String rarity, String type, int n) {
-    rarity = rarity.toLowerCase();
-    type = type.toLowerCase();
-    List<String> magicItemsList = [];
-    initMagicItems();
-
-    magicItemObjList = getMagicItemsByRarityAndType(rarity, type);
-
-    int itemCount = n;
-    if (magicItemObjList.length < itemCount) {
-      itemCount = magicItemObjList.length;
-    }
-
-    if (magicItemObjList.isNotEmpty) {
-      for (int i = 0; i < itemCount; i++) {
-        int ix = Utility.getRandomIndexFromListSize(magicItemObjList.length);
-        String magicItem = magicItemObjList[ix].name;
-        if (magicItem.contains("spell scroll")) {
-          magicItem = randomizeScroll(magicItem);
-        }
-
-        if (!magicItemsList.contains(magicItem)) {
-          magicItemsList.add(magicItem);
-        } else {
-          i--;
-          continue;
-        }
-      }
-    }
-
-    if (magicItemsList.isEmpty) {
-      return "No magic items were found.";
-    }
-    var items = StringBuffer();
-    for (int i = 0; i < magicItemsList.length; i++) {
-      if (i != magicItemsList.length - 1) {
-        items.write('• ${magicItemsList[i]}\n');
-      } else {
-        items.write('• ${magicItemsList[i]}');
-      }
-    }
-
-    return items.toString();
-  }
-
   getSpellsObjectList() {
     spellsObjList = _spellsJson.map((sJson) => Spell.fromJson(sJson)).toList();
   }
@@ -151,17 +106,17 @@ class MagicItemGenerator5e {
     type = type.toLowerCase();
     List<String> magicItemsList = [];
 
-    magicItemObjList = getMagicItemsByRarityAndType(rarity, type);
+    List<MagicItem> magicItems = getMagicItemsByRarityAndType(rarity, type);
 
     int itemCount = int.parse(number);
-    if (magicItemObjList.length < itemCount) {
-      itemCount = magicItemObjList.length;
+    if (magicItems.length < itemCount) {
+      itemCount = magicItems.length;
     }
 
-    if (magicItemObjList.isNotEmpty) {
+    if (magicItems.isNotEmpty) {
       for (int i = 0; i < itemCount; i++) {
-        int ix = Utility.getRandomIndexFromListSize(magicItemObjList.length);
-        String magicItem = magicItemObjList[ix].name;
+        int ix = Utility.getRandomIndexFromListSize(magicItems.length);
+        String magicItem = magicItems[ix].name;
         if (magicItem.contains("spell scroll")) {
           magicItem = randomizeScroll(magicItem);
         }
@@ -173,6 +128,8 @@ class MagicItemGenerator5e {
           continue;
         }
       }
+    }else {
+      magicItemsList.add("no items found for this value");
     }
 
     return magicItemsList;

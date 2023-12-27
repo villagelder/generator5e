@@ -22,21 +22,27 @@ class MagicItemsPage extends MaterialPageRoute<void> {
 }
 
 class NumberDDB extends StatefulWidget {
-  const NumberDDB({super.key});
+  final Function(String) onNumberChanged;
+
+  NumberDDB({super.key, required this.onNumberChanged});
 
   @override
   State<NumberDDB> createState() => _NumberDDBState();
 }
 
 class ItemTypeDDB extends StatefulWidget {
-  const ItemTypeDDB({super.key});
+  final Function(String) onItemTypeChanged;
+
+  ItemTypeDDB({super.key, required this.onItemTypeChanged});
 
   @override
   State<ItemTypeDDB> createState() => _ItemTypeDDBState();
 }
 
 class RarityDDB extends StatefulWidget {
-  const RarityDDB({super.key});
+  final Function(String) onRarityChanged;
+
+  RarityDDB({super.key, required this.onRarityChanged});
 
   @override
   State<RarityDDB> createState() => _RarityDDBState();
@@ -66,7 +72,7 @@ const List<String> itemTypeList = <String>[
 const List<String> numberList = <String>['1', '2', '3', '5', '8', '13'];
 
 class _RarityDDBState extends State<RarityDDB> {
-  static String rarityValue = rarityList.first;
+  String rarityValue = rarityList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -104,9 +110,12 @@ class _RarityDDBState extends State<RarityDDB> {
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
-              setState(() {
-                rarityValue = value!;
-              });
+              if (value != null) {
+                setState(() {
+                  rarityValue = value;
+                });
+                widget.onRarityChanged(value);
+              }
             },
             items: rarityList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
@@ -157,9 +166,12 @@ class _NumberDDBState extends State<NumberDDB> {
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
-              setState(() {
-                numberValue = value!;
-              });
+              if (value != null) {
+                setState(() {
+                  numberValue = value;
+                });
+              widget.onNumberChanged(value);
+              }
             },
             items: numberList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
@@ -175,7 +187,7 @@ class _NumberDDBState extends State<NumberDDB> {
 }
 
 class _ItemTypeDDBState extends State<ItemTypeDDB> {
-  static String itemValue = itemTypeList.first;
+  String itemValue = itemTypeList.first;
 
   @override
   Widget build(BuildContext context) {
@@ -210,9 +222,12 @@ class _ItemTypeDDBState extends State<ItemTypeDDB> {
             ),
             onChanged: (String? value) {
               // This is called when the user selects an item.
-              setState(() {
-                itemValue = value!;
-              });
+              if (value != null) {
+                setState(() {
+                  itemValue = value!;
+                });
+                widget.onItemTypeChanged(value);
+              }
             },
             items: itemTypeList.map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
@@ -235,13 +250,38 @@ class ListViewer extends StatefulWidget {
 }
 
 class _ListViewerState extends State<ListViewer> {
+  String selectedRarity = rarityList.first;
+  String selectedItemType = itemTypeList.first;
+  String selectedNumber = numberList.first;
+
   // Declare the variable
   List<String> magicItemsList = ['Magic Items'];
   MagicItemGenerator5e mig5e = MagicItemGenerator5e();
 
-  updateList() {
-    magicItemsList = mig5e.generateMagicItemsArray(_RarityDDBState.rarityValue,
-        _ItemTypeDDBState.itemValue, _NumberDDBState.numberValue);
+  void onRarityChanged(String newValue) {
+    setState(() {
+      selectedRarity = newValue;
+    });
+    updateList();
+  }
+
+  void onItemTypeChanged(String newValue) {
+    setState(() {
+      selectedItemType = newValue;
+    });
+    updateList();
+  }
+
+  void onNumberChanged(String newValue) {
+    setState(() {
+      selectedNumber = newValue;
+    });
+    updateList();
+  }
+
+  void updateList() {
+    magicItemsList = mig5e.generateMagicItemsArray(
+        selectedRarity, selectedItemType, selectedNumber);
     setState(() {
       magicItemsList;
     });
@@ -292,11 +332,11 @@ class _ListViewerState extends State<ListViewer> {
                             0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
                         child: SizedBox(
                           width: MediaQuery.of(ctx).size.width * 0.4,
-                          child: const Row(
+                          child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              RarityDDB(),
-                              NumberDDB(),
+                              RarityDDB(onRarityChanged: onRarityChanged),
+                              NumberDDB(onNumberChanged: onNumberChanged),
                             ],
                           ),
                         ),
@@ -304,10 +344,12 @@ class _ListViewerState extends State<ListViewer> {
                       Padding(
                         padding: EdgeInsets.fromLTRB(
                             0, MediaQuery.of(ctx).size.height * 0.04, 0, 0),
-                        child: const Row(
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            ItemTypeDDB(),
+                            ItemTypeDDB(
+                              onItemTypeChanged: onItemTypeChanged,
+                            ),
                           ],
                         ),
                       ),
@@ -344,7 +386,7 @@ class _ListViewerState extends State<ListViewer> {
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.28,
+                width: MediaQuery.of(ctx).size.width * 0.58,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -362,59 +404,6 @@ class _ListViewerState extends State<ListViewer> {
                               color: Colors.brown.shade500,
                               child: ListView.builder(
                                 key: ObjectKey(magicItemsList[0]),
-                                itemCount: magicItemsList.length,
-                                itemBuilder: (ctx, index) {
-                                  return Padding(
-                                    padding: EdgeInsets.fromLTRB(
-                                        0,
-                                        MediaQuery.of(ctx).size.height * 0.01,
-                                        0,
-                                        0),
-                                    child: ListTile(
-                                      shape: RoundedRectangleBorder(
-                                          side: const BorderSide(width: 2),
-                                          borderRadius:
-                                              BorderRadius.circular(15.0)),
-                                      dense: true,
-                                      tileColor: Colors.orange.shade100,
-                                      title: Text(
-                                        magicItemsList[index],
-                                        style: TextStyle(
-                                            fontSize:
-                                                MediaQuery.of(ctx).size.height *
-                                                    0.04),
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: MediaQuery.of(ctx).size.width * 0.28,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(
-                          0, MediaQuery.of(ctx).size.height * 0.035, 0, 0),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: MediaQuery.of(ctx).size.height * 0.7,
-                            child: Card(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15.0)),
-                              elevation: 2,
-                              color: Colors.brown.shade500,
-                              child: ListView.builder(
-                                key: ObjectKey(magicItemsList[1]),
                                 itemCount: magicItemsList.length,
                                 itemBuilder: (ctx, index) {
                                   return Padding(
